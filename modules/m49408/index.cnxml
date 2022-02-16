@@ -1,0 +1,4680 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Forma polar de los números complejos</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49408</md:content-id>
+  <md:title>Forma polar de los números complejos</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Graficar números complejos en el plano complejo.</item>
+<item>Hallar el valor absoluto de un número complejo.</item>
+<item>Escribir números complejos en forma polar.</item>
+<item>Convertir un número complejo de forma polar a rectangular.</item>
+<item>Hallar productos de números complejos en forma polar.</item>
+<item>Hallar cocientes de números complejos en forma polar.</item>
+<item>Hallar potencias de números complejos en forma polar.</item>
+<item>Hallar raíces de números complejos en forma polar.</item>
+</list></md:abstract>
+  <md:uuid>5217ca36-7905-420a-b241-8d24df993e56</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165137543411">"Dios hizo los números enteros; todo lo demás es obra del hombre”. Esta célebre cita del matemático alemán del siglo XIX Leopold <term class="no-emphasis" id="term-00001">Kronecker</term> sienta las bases de esta sección sobre la forma polar de un número complejo. Los números complejos fueron inventados por personas y representan más de mil años de investigación y lucha continúa por parte de matemáticos como <term class="no-emphasis" id="term-00002">Pitágoras</term>, <term class="no-emphasis" id="term-00003">Descartes</term>, De Moivre, <term class="no-emphasis" id="term-00004">Euler</term>, <term class="no-emphasis" id="term-00005">Gauss</term> y otros. Los números complejos respondieron a preguntas que durante siglos habían desconcertado a las mentes más brillantes de la ciencia.</para><para id="fs-id1165134035955">La primera vez que vimos los números complejos fue en la sección <link document="m51255">Números complejos</link>. En esta sección, nos centraremos en la mecánica de trabajo con los números complejos: conversión de números complejos de la forma polar a la forma rectangular y viceversa, interpretación de números complejos en el esquema de aplicaciones y aplicación del teorema de Moivre.</para><section id="fs-id1165133355948"><title>Graficar números complejos en el plano complejo.</title><para id="fs-id1165134037549">Trazar un <term class="no-emphasis" id="term-00006">número complejo</term> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi></m:mrow>
+</m:math> es similar a trazar un número real, excepto que el eje horizontal representa la parte real del número, <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y el eje vertical representa la parte imaginaria del número, <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<note id="fs-id1165137938490" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165134079788"><emphasis>Dado un número complejo <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> trácelo en el plano complejo.</emphasis></para><list id="fs-id1165133192906" list-type="enumerated" number-style="arabic"><item>Marque el eje horizontal como eje <emphasis effect="italics">real</emphasis> y el eje vertical como <emphasis effect="italics">eje imaginario.</emphasis></item>
+<item>Trace el punto en el plano complejo moviendo las unidades de <m:math>
+ <m:mrow>
+  <m:mi>las unidades</m:mi></m:mrow>
+</m:math> en la dirección horizontal y las unidades de <m:math>
+ <m:mrow>
+  <m:mi>las unidades b</m:mi></m:mrow>
+</m:math> en la dirección vertical.</item>
+</list></note>
+
+<example id="Example_08_05_01">
+<exercise id="fs-id1165137628795">
+<problem id="fs-id1165137465062">
+<title>Trazar un número complejo en el plano complejo</title>
+<para id="fs-id1165134331107">Trace el número complejo <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> en el <term class="no-emphasis" id="term-00007">plano complejo</term>.</para>
+</problem>
+<solution id="fs-id1165137834397">
+<para id="fs-id1165137704829">Desde el origen, muévase dos unidades en la dirección horizontal positiva y tres unidades en la dirección vertical negativa. Vea la <link target-id="Figure_08_05_001"/>.</para>
+
+
+<figure id="Figure_08_05_001" class="small"><media id="fs-id1165132034236" alt="Trazado de 2 –3i en el plano complejo (2 en el eje real, –3 en el eje imaginario).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_001.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-id1165135581219" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_08_05_01">
+ <problem id="fs-id1165135586379"><para id="fs-id1165135514726">Trace el punto <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> en el plano complejo.</para></problem>
+<solution id="fs-id1165134167302">
+
+<media id="fs-id1165137938804" alt="Trazado de 1 + 5i en el plano complejo (1 en el eje real, 5 en el eje imaginario)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_002.jpg"/>
+</media>
+
+</solution>
+</exercise>
+</note></section><section id="fs-id1165137542524">
+<title>Hallar el valor absoluto de un número complejo</title>
+<para id="fs-id1165134325179">El primer paso para trabajar con un número complejo en forma <term class="no-emphasis" id="term-00008">polar</term> es calcular el valor absoluto. El valor absoluto de un número complejo es igual a su <term class="no-emphasis" id="term-00009">magnitud</term>, o <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Mide la distancia del origen a un punto en el plano. Por ejemplo, el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> en la <link target-id="Figure_08_05_003"/>, muestra <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><figure id="Figure_08_05_003" class="small"><media id="fs-id1165134293070" alt="El trazado de 2 + 4i en el plano complejo y su magnitud, |z| = rad 20.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_003.jpg"/>
+</media>
+</figure><note id="fs-id1165134541127">
+
+<title>Valor absoluto de un número complejo</title>
+<para id="fs-id1165133353946">Dado <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> un número complejo, el valor absoluto de <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi></m:mrow>
+</m:math> se define como</para>
+<equation id="fs-id1165135340598" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165134199373">Es la distancia del origen al punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165135203416">Observe que el valor absoluto de un número real da la distancia del número desde 0, mientras que el valor absoluto de un número complejo da la distancia del número desde el origen, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</note>
+
+
+<example id="Example_08_05_02">
+<exercise id="fs-id1165137921556">
+<problem id="fs-id1165135190837">
+<title>Hallar el valor absoluto de un número complejo con un radical</title>
+<para id="fs-id1165134232230">Halle el valor absoluto de <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mo>- −</m:mo><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133024224">
+<para id="fs-id1165137464603">Con la fórmula tenemos</para>
+
+  <equation id="fs-id1165137602050" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mn>5</m:mn>
+            </m:msqrt>
+            </m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mn>6</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165133324050">Vea la <link target-id="Figure_08_05_004"/>.</para><figure id="Figure_08_05_004" class="small"><media id="fs-id1165135333398" alt="El trazado de z=(rad5 - i) en el plano complejo y su magnitud rad6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_004.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-id1165137461107" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_05_02">
+<problem id="fs-id1165137553007"><para id="fs-id1165134401602">Halle el valor absoluto del número complejo <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>- −</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>  </para></problem>
+<solution id="fs-id1165137771102"><para id="fs-id1165135403265">13</para></solution>
+</exercise>
+</note>
+
+<example id="Example_08_05_03">
+<exercise id="fs-id1165137454990">
+<problem id="fs-id1165137645660">
+<title>Hallar el valor absoluto de un número complejo</title>
+<para id="fs-id1165137662370">Dados <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> halle <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137419461">
+<para id="fs-id1165133233012">Con la fórmula tenemos</para><equation id="fs-id1165137410180" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mn>3</m:mn>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mo>+</m:mo><m:mn>16</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>25</m:mn></m:mrow>
+        </m:msqrt>
+
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135553504">El valor absoluto <m:math>
+ <m:mrow>
+  <m:mrow><m:mi>c</m:mi></m:mrow></m:mrow>
+</m:math> es 5. Vea la <link target-id="Figure_08_05_005"/>. </para><figure id="Figure_08_05_005" class="small"><media id="fs-id1165135194751" alt="El trazado de (3 –4i) en el plano complejo y su magnitud |z| = 5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_005.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137911592" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_05_03">
+<problem id="fs-id1165137812757"><para id="fs-id1165137812758">Dados <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>7</m:mn><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> halle <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137643164"><para id="fs-id1165135237187"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>50</m:mn></m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165135530150">
+<title>Escribir números complejos en forma polar</title>
+<para id="fs-id1165132928617">La <term id="term-00010">forma polar de un número complejo</term> expresa un número en términos de un ángulo <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> y su distancia desde el origen <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Dado un número complejo en <term class="no-emphasis" id="term-00011">forma rectangular</term> expresado como <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> utilizamos las mismas fórmulas de conversión que para escribir el número en forma trigonométrica:</para>
+  	<equation id="fs-id1165137442107" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135161485">Revisamos estas relaciones en la <link target-id="Figure_08_05_006"/>.</para>
+
+<figure id="Figure_08_05_006" class="small"><media id="fs-id1165135508549" alt="El triángulo representado en el plano complejo (el eje x es real, el eje y es imaginario). La base está a lo largo del eje x/real, la altura es algún valor y/imaginario en Q 1 y la hipotenusa r se extiende desde el origen hasta ese punto (x + yi) en Q 1. El ángulo en el origen es theta. Hay un arco que pasa por (x + yi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_006.jpg"/>
+</media>
+</figure><para id="fs-id1165135245777">Usamos el término <emphasis>módulo</emphasis> para representar el valor absoluto de un número complejo o la distancia desde el origen al punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> El módulo, entonces, es el mismo que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> el radio en forma polar. Usamos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> para indicar el ángulo de dirección (igual que con las coordenadas polares). Al sustituir, tenemos</para><equation id="fs-id1165137835830" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><note id="fs-id1165135505465"><label>una etiqueta de nota general</label><title>Forma polar de un número complejo</title>
+
+<para id="fs-id1165137643584">Escribir un número complejo en forma polar implica las siguientes fórmulas de conversión:</para>
+  <equation id="fs-id1165134566530" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134073108">Al hacer una sustitución directa, tenemos</para>
+  <equation id="fs-id1165135613632" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137628482">donde <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> es el <term id="term-00012">módulo</term> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> es el <term id="term-00013">argumento</term>. A menudo utilizamos la abreviatura <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mtext>cis</m:mtext><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> para representar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></note><example id="Example_08_05_04">
+<exercise id="fs-id1165137454742">
+<problem id="fs-id1165132959045">
+<title>Expresión de un número complejo mediante coordenadas polares</title>
+<para id="fs-id1165137804036">Exprese el número complejo <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> mediante coordenadas polares.</para>
+</problem>
+<solution id="fs-id1165137595455">
+<para id="fs-id1165137803541">En el plano complejo, el número <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> es lo mismo que <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Al escribirlo en forma polar, tenemos que calcular <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> primero. </para>
+
+  <equation id="fs-id1165137483073" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mn>0</m:mn>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mn>4</m:mn>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>16</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137540200">A continuación, examinamos <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> En coordenadas polares, el número complejo <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> se puede escribir como <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mspace width="0.3em"/><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Vea la <link target-id="Figure_08_05_007"/>.</para><figure id="Figure_08_05_007" class="small"><media id="fs-id1165137460482" alt="El trazado de z=4i en el plano complejo, también muestra que en coordenadas polares sería (4,pi/2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_007.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-id1165135175110" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_05_04">
+<problem id="fs-id1165134550614"><para id="fs-id1165134550616">Exprese <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mspace width="0.3em"/><m:mtext>cis</m:mtext><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> en forma polar.</para></problem>
+<solution id="fs-id1165137397894"><para id="fs-id1165137397895"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_08_05_05">
+<exercise id="fs-id1165135533080">
+<problem id="fs-id1165137851363">
+<title>Hallar la forma polar de un número complejo</title>
+<para id="fs-id1165133097232">Halle la forma polar de <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134077346">
+<para id="fs-id1165135499750">Primero, halle el valor de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165137405565" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msup>
+           <m:mn>4</m:mn>
+           <m:mn>2</m:mn>
+          </m:msup>
+          </m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>32</m:mn></m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165133141427">Halle el ángulo <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> mediante la fórmula:</para><equation id="fs-id1165133155817" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>–</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mrow>
+        <m:mn>4</m:mn><m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+        </m:mrow>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi></m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:msqrt>
+           <m:mn>2 </m:mn>
+          </m:msqrt>
+          </m:mrow>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165134184438">Así, la solución es <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135475905" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_05_05">
+<problem id="fs-id1165137451880"><para id="fs-id1165137451882">Escriba <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:math> en forma polar.</para></problem>
+<solution id="fs-id1165137603699"><para id="fs-id1165137603700"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+
+<section id="fs-id1165135311667">
+<title>Conversión de un número complejo de la forma polar a la rectangular</title>
+<para id="fs-id1165135664797">Convertir un número complejo de la forma polar a la rectangular es cuestión de evaluar lo que se da y utilizar la propiedad distributiva. En otras palabras, dado que <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> primero evalúe las funciones trigonométricas <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Entonces, multiplique por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><example id="Example_08_05_06"><exercise id="fs-id1165135187864">
+<problem id="fs-id1165135187866">
+<title>Conversión de la forma polar a la rectangular</title>
+<para id="fs-id1165137732869">Convierta el número complejo dado de la forma polar a la rectangular:</para>
+<equation id="fs-id1165137732872" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165137827978">
+<para id="fs-id1165134279359">Para comenzar evaluamos las expresiones trigonométricas.</para>
+
+<equation id="eip-id811719" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mspace width="0.3em"/><m:mtext>y</m:mtext><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="eip-id1472898">Después de la sustitución, el número complejo es</para>
+  <equation id="fs-id1165137723445" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mi>i</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135517158">Aplicamos la propiedad distributiva:</para>
+  <equation id="fs-id1165135517161" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msqrt>
+           <m:mn>3</m:mn>
+          </m:msqrt>
+          </m:mrow>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+        <m:mo>+</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+        <m:mi>i</m:mi></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>12</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+        </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>12</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>6</m:mn><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137733561">La forma rectangular del punto dado en forma compleja es <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example><example id="Example_08_05_07">
+<exercise id="fs-id1165135571758">
+<problem id="fs-id1165135571760">
+<title>Hallar la forma rectangular de un número complejo</title>
+<para id="fs-id1165137844019">Halle la forma rectangular del número complejo dado <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165133210162">
+<para id="fs-id1165134537174">Si <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> primero determinamos <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mn>12</m:mn></m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mn>5</m:mn>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>13</m:mn><m:mtext>. </m:mtext></m:mrow>
+</m:math> Hallamos entonces que <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165137443057" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>13</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>13</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>12</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>13</m:mn>
+         </m:mrow>
+        </m:mfrac>
+        <m:mo>+</m:mo><m:mfrac>
+         <m:mn>5</m:mn>
+         <m:mrow>
+          <m:mn>13</m:mn>
+         </m:mrow>
+        </m:mfrac>
+        <m:mi>i</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135160119">La forma rectangular del número dado en forma compleja es <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135511380" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_05_06">
+<problem id="fs-id1165137571081"><para id="fs-id1165137571082">Convierta el número complejo en forma rectangular:</para>
+  <equation id="fs-id1165137571086" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mfrac>
+     <m:mrow>
+      <m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mfrac>
+     <m:mrow>
+      <m:mn>11</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</equation>
+</problem>
+<solution id="fs-id1165137444688"><para id="fs-id1165137444689"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165134324933">
+<title>Hallar productos de números complejos en forma polar</title>
+<para id="fs-id1165137660156">Ahora, que podemos convertir los números complejos a la forma polar, aprenderemos a realizar operaciones con los números complejos en forma polar. En el resto de esta sección trabajaremos con fórmulas desarrolladas por el matemático francés Abraham <term class="no-emphasis" id="term-00014">De Moivre</term> (1667-1754). Estas fórmulas han hecho que trabajar con productos, cocientes, potencias y raíces de números complejos sea mucho más sencillo de lo que parece. Las reglas se basan en la multiplicación de los módulos y la suma de los argumentos.</para><note id="fs-id1165137473607">
+
+<title>Productos de números complejos en forma polar </title>
+<para id="fs-id1165135178402">Si los valores de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces el producto de estos números se da como:</para><equation id="fs-id1165137844291" class="unnumbered"><label/> <m:math display="block">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mi>c</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>z</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mrow><m:mo>[</m:mo> <m:mrow>
+           <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+             <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>1</m:mn>
+             </m:msub>
+             <m:mo>+</m:mo><m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>2</m:mn>
+             </m:msub>
+
+            </m:mrow>
+           <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+             <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>1</m:mn>
+             </m:msub>
+             <m:mo>+</m:mo><m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>2</m:mn>
+             </m:msub>
+
+            </m:mrow>
+           <m:mo>)</m:mo></m:mrow>
+          </m:mrow> <m:mo>]</m:mo></m:mrow>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msub>
+           <m:mi>c</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>z</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo><m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+           <m:mi>r</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msub>
+             <m:mi>θ</m:mi>
+             <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo><m:msub>
+             <m:mi>θ</m:mi>
+             <m:mn>2</m:mn>
+            </m:msub>
+
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137738246">Observe que el producto exige multiplicar los módulos y sumar los ángulos.</para>
+</note>
+
+<example id="Example_08_05_08">
+<exercise id="fs-id1165137665678">
+<problem id="fs-id1165137665680">
+<title>Hallar el producto de dos números complejos en forma polar </title>
+<para id="fs-id1165137583978">Halle el producto de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> dado que <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135369384">
+<para id="fs-id1165137531259">Siga la fórmula</para>
+
+<equation id="fs-id1165137531262" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>c</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo>+</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80°</m:mn><m:mo>+</m:mo><m:mn>145°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>c</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>225°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>225°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>c</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>c</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mo>-</m:mo><m:mfrac>
+        <m:mrow>
+         <m:msqrt>
+          <m:mn>2 </m:mn>
+         </m:msqrt>
+
+        </m:mrow>
+        <m:mn>2 </m:mn>
+       </m:mfrac>
+       <m:mo>+</m:mo><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>–</m:mo><m:mfrac>
+          <m:mrow>
+           <m:msqrt>
+            <m:mn>2 </m:mn>
+           </m:msqrt>
+
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>c</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2 </m:mn>
+      </m:msqrt>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:msqrt>
+       <m:mn>2 </m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+</section>
+
+<section id="fs-id1165137736474">
+<title>Hallar cocientes de números complejos en forma polar</title>
+<para id="fs-id1165134389944">El cociente de dos números complejos en forma polar es el cociente de los dos módulos y la diferencia de los dos argumentos.</para>
+
+<note id="fs-id1165137892433">
+
+<title>Cocientes de números complejos en forma polar</title>
+<para id="fs-id1165135541727">Si los valores de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces el cociente de estos números es</para><equation id="fs-id1165135316034" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>c</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mrow><m:mo>[</m:mo> <m:mrow>
+     <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo>-</m:mo><m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>2</m:mn>
+       </m:msub>
+       </m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo>-</m:mo><m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>2</m:mn>
+       </m:msub>
+       </m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>≠</m:mo><m:mn>0</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      </m:mrow>
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msub>
+       <m:mi>θ</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>-</m:mo><m:msub>
+       <m:mi>θ</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="1em"/><m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>≠</m:mo><m:mn>0</m:mn><m:mspace width="0.3em"/>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation>
+<para id="fs-id1165135332827">Observe que los módulos se dividen y los ángulos se restan.</para>
+</note>
+
+<note id="fs-id1165137897028" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135189946"><emphasis>Dados dos números complejos en forma polar, calcule el cociente </emphasis></para>
+<list id="fs-id1165135260707" list-type="enumerated" number-style="arabic"><item>Divida <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Halle <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>-</m:mo><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Sustituya los resultados en la fórmula: <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Sustituya <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> y sustituya <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>-</m:mo><m:msub>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item>Calcule las nuevas expresiones trigonométricas y multiplique por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+</list></note>
+
+<example id="Example_08_05_09">
+<exercise id="fs-id1165134329605">
+<problem id="fs-id1165134329607">
+<title>Hallar el cociente de dos números complejos </title>
+<para id="fs-id1165135436548">Halle el cociente de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165133318744">
+<para id="fs-id1165134129652">Con la fórmula tenemos</para>
+
+<equation id="fs-id1165134129655" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>c</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo>- −</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>213°</m:mn><m:mo>- −</m:mo><m:mn>33°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>c</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>180°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>180°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>c</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>c</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>0</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msub>
+         <m:mi>c</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135593394" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_05_07">
+<problem id="fs-id1165134568987"><para id="fs-id1165134568988">Halle el producto y el cociente de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>150°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135707943"><para id="fs-id1165135707944"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>;</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>c</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mi>i</m:mi></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+
+<section id="fs-id1165137673550">
+<title>Hallar potencias de números complejos en forma polar</title>
+<para id="fs-id1165137673556">El cálculo de potencias de números complejos se simplifica enormemente con <term id="term-00015">el teorema de Moivre</term>. Establece que, para un número entero positivo <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo><m:msup>
+   <m:mi>c</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  </m:mrow>
+</m:math> se calcula elevando el módulo a <m:math>
+ <m:mrow>
+  <m:mi> </m:mi><m:mtext>enésimo</m:mtext></m:mrow>
+</m:math> potencia y multiplicando el argumento por <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Es el método estándar utilizado en las matemáticas modernas.</para><note id="fs-id1165135388434">
+
+<title>Teorema de Moivre</title>
+<para id="fs-id1165133349328">Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> es un número complejo, entonces</para><equation id="fs-id1165135299806" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>c</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>r</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mrow><m:mo>[</m:mo> <m:mrow>
+     <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+     <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+     <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>]</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mi>c</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mo>=</m:mo><m:msup>
+     <m:mi>r</m:mi>
+     <m:mi>n</m:mi>
+    </m:msup>
+    <m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137846221">donde <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi></m:mrow>
+</m:math> es un número entero positivo.</para>
+</note>
+
+<example id="Example_08_05_10">
+<exercise id="fs-id1165133103896">
+<problem id="fs-id1165133103898">
+<title>Evaluación de una expresión mediante el teorema de Moivre</title>
+<para id="fs-id1165131884600">Evalúe la expresión <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> mediante el teorema de Moivre.</para>
+</problem>
+<solution id="fs-id1165132959150">
+<para id="fs-id1165132959153">Como el teorema de Moivre se aplica a números complejos escritos en forma polar, debemos escribir primero <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en forma polar. Hallemos <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165135365743" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mn>1</m:mn>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mn>1</m:mn>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mn>2 </m:mn>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135200427">Luego calculamos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Si utilizamos la fórmula <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> da como resultado</para><equation id="fs-id1165134130860" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135415590">Use el teorema de Moivre para evaluar la expresión.</para><equation id="fs-id1165135415594" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>r</m:mi>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo stretchy="false">[</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msqrt>
+           <m:mn>2 </m:mn>
+          </m:msqrt>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mfrac>
+          <m:mi>π</m:mi>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>5</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>4</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:msqrt>
+       <m:mn>2</m:mn>
+      </m:msqrt>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mo>-</m:mo><m:mfrac>
+        <m:mrow>
+         <m:msqrt>
+          <m:mn>2 </m:mn>
+         </m:msqrt>
+
+        </m:mrow>
+        <m:mn>2 </m:mn>
+       </m:mfrac>
+       <m:mo>+</m:mo><m:mi>i</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>–</m:mo><m:mfrac>
+          <m:mrow>
+           <m:msqrt>
+            <m:mn>2 </m:mn>
+           </m:msqrt>
+
+          </m:mrow>
+          <m:mn>2</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>i</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+</section>
+<section id="fs-id1165135204415">
+<title>Hallar raíces de números complejos en forma polar</title>
+<para id="fs-id1165135204421">Para hallar la <term class="no-emphasis" id="term-00016">raíz <emphasis effect="italics">enésima</emphasis></term> de un número complejo en forma polar, usamos el <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mtext>enésimo</m:mtext></m:mrow>
+</m:math> o <term class="no-emphasis" id="term-00017">teorema de Moivre</term> y se eleva el número complejo a una potencia con exponente racional. Hay varias maneras de representar una fórmula para hallar <m:math> <m:mrow>
+  <m:mspace width="0.3em"/><m:mi>raíces</m:mi><m:mtext>enésimas</m:mtext></m:mrow>
+</m:math> de números complejos en forma polar.</para><note id="fs-id1165135420398"><label>Una etiqueta de nota general</label><title>El teorema de raíz a la <emphasis effect="italics">n</emphasis></title>
+
+<para id="fs-id1165135436403">Para calcular la <m:math>
+ <m:mrow>
+  <m:mi>raíz</m:mi><m:mtext>enésima</m:mtext></m:mrow>
+</m:math> de un número complejo en forma polar, use la fórmula dada</para>
+<equation id="fs-id1165134281475" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>n</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>r</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>n</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mfrac>
+      <m:mi>θ</m:mi>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+     <m:mo>+</m:mo><m:mfrac>
+      <m:mrow>
+       <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+      </m:mrow>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mfrac>
+      <m:mi>θ</m:mi>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+     <m:mo>+</m:mo><m:mfrac>
+      <m:mrow>
+       <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+      </m:mrow>
+      <m:mi>n</m:mi>
+     </m:mfrac>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134485535">donde <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mo>.</m:mo><m:mspace width="1em"/><m:mo>.</m:mo><m:mspace width="1em"/><m:mo>.</m:mo><m:mspace width="1em"/><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>n</m:mi><m:mo>- −</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> Añadimos <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi></m:mrow>
+   <m:mi>n</m:mi>
+  </m:mfrac>
+  <m:mspace width="0.3em"/></m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>θ</m:mi>
+   <m:mi>n</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> para obtener las raíces periódicas.</para>
+</note><example id="Example_08_05_11">
+<exercise id="fs-id1165133341021">
+<problem id="fs-id1165133341023">
+<title>Hallar la raíz <emphasis effect="italics">enésima</emphasis> de un número complejo</title>
+<para id="fs-id1165133046793">Evaluar las raíces cúbicas de <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137656965">
+<para id="fs-id1165137656967">Tenemos</para>
+
+  <equation id="fs-id1165137656970" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>8</m:mn>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mfrac>
+            <m:mrow>
+             <m:mn>2</m:mn><m:mi>π</m:mi>
+            </m:mrow>
+            <m:mn>3</m:mn>
+           </m:mfrac>
+
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mfrac>
+            <m:mrow>
+             <m:mn>2</m:mn><m:mi>π</m:mi>
+            </m:mrow>
+            <m:mn>3</m:mn>
+           </m:mfrac>
+
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134060257">Habrá tres raíces: <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mn>2.</m:mn></m:mrow>
+</m:math> Cuando <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> tenemos</para>
+  <equation id="fs-id1165135365831" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135510902">Cuando <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> tenemos</para>
+  <equation id="fs-id1165134258392" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>6</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>6</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable><m:mtext>    Sume </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mtext> a cada ángulo.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>8</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>8</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134311190">Cuando <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> tenemos</para><equation id="fs-id1165133221800" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mrow><m:mo>[</m:mo> <m:mrow>
+       <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>12</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mfrac>
+          <m:mrow>
+           <m:mn>2</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mrow>
+           <m:mn>12</m:mn><m:mi>π</m:mi>
+          </m:mrow>
+          <m:mn>9</m:mn>
+         </m:mfrac>
+
+        </m:mrow>
+       <m:mo>)</m:mo></m:mrow>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mtext> a cada ángulo.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>14</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mn>14</m:mn><m:mi>π</m:mi>
+           </m:mrow>
+           <m:mn>9</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133102510">Recuerde hallar el denominador común para simplificar las fracciones en situaciones como esta. Para <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> la simplificación del ángulo es</para>
+<equation id="fs-id1165134192876" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>2</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135404709" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135404715">
+<problem id="fs-id1165135404718"><para id="fs-id1165135329823">Halle las cuatro raíces cuartas de <m:math>
+ <m:mrow>
+  <m:mn>16</m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134356866">
+<para id="fs-id1165133111152"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para><para id="fs-id1165134234229"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>120°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para><para id="fs-id1165137428218"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>210°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>210°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para><para id="fs-id1165134166590"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>300°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>300°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165133361907" class="precalculus media media-notitle">
+<label>Recursos multimedia</label>
+<para id="fs-id1165133361914">Acceda a estos recursos en línea para obtener más información y practicar formas polares de números complejos.</para>
+  <list id="fs-id1165135329691">
+<item><link url="http://openstax.org/l/prodquocomplex">El producto y el cociente de números complejos en forma trigonométrica</link></item>
+  <item><link url="http://openstax.org/l/demoivre">Teorema de Moivre</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165134129902" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165134129908"><item>Números complejos de la forma <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi></m:mrow>
+</m:math> se trazan en el plano complejo de forma similar a como se trazan las coordenadas rectangulares en el plano rectangular. Identifique el eje <emphasis effect="italics">x</emphasis> como eje <emphasis effect="italics">real </emphasis> y el eje <emphasis effect="italics">y</emphasis> como eje <emphasis effect="italics">imaginario</emphasis>. Vea el <link target-id="Example_08_05_01"/>.</item>
+<item>El valor absoluto de un número complejo es el mismo que su magnitud. Es la distancia del origen al punto: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>z</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>a</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>b</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Vea el <link target-id="Example_08_05_02"/> y el <link target-id="Example_08_05_03"/>.</item>
+<item>Para escribir números complejos en forma polar, usamos las fórmulas <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Entonces, <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Vea el <link target-id="Example_08_05_04"/> y el <link target-id="Example_08_05_05"/>.</item>
+<item>Para convertir de la forma polar a la forma rectangular, primero hay que evaluar las funciones trigonométricas. A continuación, multiplique por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Vea el <link target-id="Example_08_05_06"/> y el <link target-id="Example_08_05_07"/>.</item>
+<item>Para calcular el producto de dos números complejos, multiplique los dos módulos y sume los dos ángulos. Evalúe las funciones trigonométricas y multiplique usando la propiedad distributiva. Vea el <link target-id="Example_08_05_08"/>.</item>
+<item>Para hallar el cociente de dos números complejos en forma polar, calcule el cociente de los dos módulos y la diferencia de los dos ángulos. Vea el <link target-id="Example_08_05_09"/>.</item>
+<item>Para calcular la potencia de un número complejo <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> eleve <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> a la potencia <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y multiplique <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> entre <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+Vea el <link target-id="Example_08_05_10"/>.
+<item>Hallar las raíces de un número complejo es lo mismo que elevar un número complejo a una potencia, pero utilizando un exponente racional. Vea el <link target-id="Example_08_05_11"/>.</item>
+
+
+
+  <section id="fs-id1165134370081" class="section-exercises">
+<title>Ejercicios de la sección</title>
+  <section id="fs-id1165135613677">
+  <title>Verbal</title>
+<exercise id="fs-id1165135613682">
+<problem id="fs-id1165135613684">
+<para id="fs-id1165135613686">Un número complejo es <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Explique cada parte.</para>
+</problem>
+<solution id="fs-id1165134395224">
+<para id="fs-id1165134395227">
+<emphasis effect="italics">a</emphasis> es la parte real, <emphasis effect="italics">b</emphasis> es la parte imaginaria y <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135586313">
+<problem id="fs-id1165131926307">
+<para id="fs-id1165131926309">¿Qué representa el valor absoluto de un número complejo?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165131926314">
+<problem id="fs-id1165131926316">
+<para id="fs-id1165131926319">¿Cómo se convierte un número complejo en forma polar?</para>
+</problem>
+<solution id="fs-id1165131926323">
+<para id="fs-id1165131926325">La forma polar convierte las partes real e imaginaria del número complejo en forma polar usando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134205897">
+<problem id="fs-id1165134205899">
+<para id="fs-id1165134205901">¿Cómo se calcula el producto de dos números complejos?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134205906">
+<problem id="fs-id1165133309248">
+<para id="fs-id1165133309250">¿Qué es el teorema de Moivre y para qué sirve?</para></problem>
+<solution id="fs-id1165133309255">
+<para id="fs-id1165133309257"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>r</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>i</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> Se usa para simplificar la forma polar cuando un número ha sido elevado a una potencia. </para>
+</solution>
+</exercise>
+
+  </section>
+
+  <section id="fs-id1165134183779">
+  <title>Algebraicos</title>
+  <para id="fs-id1165135665413">En los siguientes ejercicios, halle el valor absoluto del número complejo dado.</para>
+<exercise id="fs-id1165135665416">
+<problem id="fs-id1165135665418">
+<para id="fs-id1165135665420"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>+</m:mo><m:mtext>​</m:mtext><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134385720">
+<problem id="fs-id1165134385722">
+<para id="fs-id1165134385725"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mtext>​</m:mtext><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135499578">
+<para id="fs-id1165135499580"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135541528">
+<problem id="fs-id1165134481951">
+<para id="fs-id1165134481953"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135633877">
+<problem id="fs-id1165135633879">
+<para id="fs-id1165135633881"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+  <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133213891">
+<para id="fs-id1165133213893"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mn>38</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135694472">
+<problem id="fs-id1165135694474">
+<para id="fs-id1165137843211"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137843226">
+<problem id="fs-id1165137843228">
+<para id="fs-id1165134116954"> <m:math>
+ <m:mrow>
+  <m:mn>2,2</m:mn><m:mo>- −</m:mo><m:mn>3,1</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134116972">
+<para id="fs-id1165137843105"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mn>14,45</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+  <para id="fs-id1165134386618">En los siguientes ejercicios, escriba el número complejo en forma polar.</para>
+<exercise id="fs-id1165134386621">
+<problem id="fs-id1165134386623">
+<para id="fs-id1165134386625"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134178500">
+<problem id="fs-id1165134178502">
+<para id="fs-id1165134178504"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mo>- −</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134129997">
+<para id="fs-id1165134129999"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>333,4°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+<exercise id="fs-id1165132959023">
+<problem id="fs-id1165132959025">
+<para id="fs-id1165132959027"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>–</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mtext>​</m:mtext><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135633990">
+<problem id="fs-id1165135633992">
+<para id="fs-id1165135317569"> <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165131993571">
+<para id="fs-id1165131993573"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135207298">
+<problem id="fs-id1165135207300">
+<para id="fs-id1165135207302"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+
+<para id="fs-id1165135499587">En los siguientes ejercicios, convierta el número complejo de forma polar a rectangular.</para>
+<exercise id="fs-id1165135499590">
+<problem id="fs-id1165135499592">
+<para id="fs-id1165135499594"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165135367688">
+<para id="fs-id1165135367691"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mi>i</m:mi><m:mfrac>
+   <m:mn>7</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135532374">
+<problem id="fs-id1165135532376">
+<para id="fs-id1165135407393"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134089467">
+<problem id="fs-id1165134089469">
+<para id="fs-id1165134089471"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165134573209">
+<para id="fs-id1165134573211"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134190676">
+<problem id="fs-id1165134190678">
+<para id="fs-id1165134190680"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>25°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135388835">
+<problem id="fs-id1165135388838">
+<para id="fs-id1165135388840"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135640462">
+<para id="fs-id1165135640464"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>1,5</m:mn><m:mo>- −</m:mo><m:mi>i</m:mi><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+    </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135519200">
+<problem id="fs-id1165135519202">
+<para id="fs-id1165135519205"> <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>100°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+
+  <para id="fs-id1165134357546">En los siguientes ejercicios, calcule <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  </m:mrow>
+</m:math> en forma polar.</para>
+<exercise id="fs-id1165133078076" class="material-set-2">
+<problem id="fs-id1165133078079">
+<para id="fs-id1165134130033"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>116°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.3em"/><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>82°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135419732">
+<para id="fs-id1165135419734"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>198°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134430434" class="material-set-2">
+<problem id="fs-id1165134430436">
+<para id="fs-id1165134430438"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>205°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>118°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137756875" class="material-set-2">
+<problem id="fs-id1165137756878">
+<para id="fs-id1165137756880"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>60°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135472921">
+<para id="fs-id1165135472923"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>180°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134093149" class="material-set-2">
+<problem id="fs-id1165134093151">
+<para id="fs-id1165133023575"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165131863233" class="material-set-2">
+<problem id="fs-id1165131863235">
+<para id="fs-id1165131863237"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>15</m:mn></m:mrow>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mrow>
+      <m:mn>12</m:mn></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165133077994">
+<para id="fs-id1165135518168"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>17</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mrow>
+      <m:mn>24</m:mn></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134088751" class="material-set-2">
+<problem id="fs-id1165134088753">
+<para id="fs-id1165134088755"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+  <para id="fs-id1165135662421">En los siguientes ejercicios, calcule <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>c</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math> en forma polar.</para>
+<exercise id="fs-id1165134160326" class="material-set-2">
+<problem id="fs-id1165134160328">
+<para id="fs-id1165134160330"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>21</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>135°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>65°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+  <solution id="fs-id1165134174904">
+<para id="fs-id1165134174906"> <m:math>
+ <m:mrow>
+  <m:mn>7</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>70°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134221768" class="material-set-2">
+<problem id="fs-id1165134221770">
+<para id="fs-id1165134221772"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>90°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>60°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134325223" class="material-set-2">
+<problem id="fs-id1165134325225">
+<para id="fs-id1165131863137"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>15</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>40°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137480080">
+<para id="fs-id1165137480082"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>80°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134279277" class="material-set-2">
+<problem id="fs-id1165134279279">
+<para id="fs-id1165134279281"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135652331" class="material-set-2">
+<problem id="fs-id1165134401618">
+<para id="fs-id1165134401620"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>π</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165134388962">
+<para id="fs-id1165134388964"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134534047" class="material-set-2">
+<problem id="fs-id1165134534049">
+<para id="fs-id1165134534051"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>z</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+  <para id="fs-id1165133028482">En los siguientes ejercicios, calcule las potencias de cada número complejo en forma polar.</para>
+
+<exercise id="fs-id1165133028485">
+<problem id="fs-id1165133028487">
+<para id="fs-id1165133028489">Calcule <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>45°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165133349423">
+<para id="fs-id1165133349425"> <m:math>
+ <m:mrow>
+  <m:mn>125</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>135°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135523252">
+<problem id="fs-id1165135523254">
+<para id="fs-id1165135523256">Calcule <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>70°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135440037">
+<problem id="fs-id1165135440039">
+<para id="fs-id1165135440041">Calcule <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135512799">
+<para id="fs-id1165135512801"> <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165134113850">
+<problem id="fs-id1165134113852">
+<para id="fs-id1165135619413">Calcule <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134070876">
+<problem id="fs-id1165134070879">
+<para id="fs-id1165134070881">Calcule <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>z</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mrow>
+      <m:mn>16</m:mn></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134177544">
+<para id="fs-id1165134177546"> <m:math>
+ <m:mrow>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134128415">
+<problem id="fs-id1165134128417">
+<para id="fs-id1165134128419">Calcule <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+  <para id="fs-id1165135352989">En los siguientes ejercicios, evalúe cada raíz.</para>
+
+<exercise id="fs-id1165135352992">
+<problem id="fs-id1165134039259">
+<para id="fs-id1165134039261">Evalúe la raíz cúbica de <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>27</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>240°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135609212">
+<para id="fs-id1165135609214"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>80°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>200°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>3</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>320°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165135170392">
+<problem id="fs-id1165135170394">
+<para id="fs-id1165135170396">Evalúe la raíz cuadrada de <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>16</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>100°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134534293">
+<problem id="fs-id1165133243591">
+<para id="fs-id1165133243593">Evalúe la raíz cúbica de <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135238453">
+<para id="fs-id1165137780013"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mroot>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>9</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mroot>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>8</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>9</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mroot>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>14</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>9</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134378611">
+<problem id="fs-id1165134378613">
+<para id="fs-id1165134378615">Evalúe la raíz cuadrada de <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mtext>cis</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mi>π</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134356902">
+<problem id="fs-id1165134356904">
+<para id="fs-id1165134356906">Evalúe la raíz cuadrada de <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi></m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165131907304">
+<para id="fs-id1165131907306"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>15</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+  </section>
+  <section id="fs-id1165135586834">
+  <title>Gráficos</title>
+
+  <para id="fs-id1165137895099">En los siguientes ejercicios, trace el número complejo en el plano complejo.</para>
+<exercise id="fs-id1165137895102">
+<problem id="fs-id1165137895104">
+<para id="fs-id1165137895107"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135621933"><problem id="fs-id1165135621935">
+<para id="fs-id1165135621938"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133221775"><media id="fs-id1165133221780" alt="Trazado de –3 –3i en el plano complejo (–3 en el eje real, –3 en el eje imaginario).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_202.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165135457049">
+<problem id="fs-id1165135457051">
+<para id="fs-id1165135457054"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137835713"><problem id="fs-id1165137835715">
+<para id="fs-id1165137835717"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133260388"><media id="fs-id1165133260393" alt="Trazado de –1 –5i en el plano complejo (–1 en el eje real, –5 en el eje imaginario).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_204.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165135664876">
+<problem id="fs-id1165135664878">
+<para id="fs-id1165135664880"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135251281"><problem id="fs-id1165135251283">
+<para id="fs-id1165135251285"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135702570"><media id="fs-id1165135702576" alt="Trazado de 2i en el plano complejo (0 en el eje real, 2 en el eje imaginario).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_206.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165134254413">
+<problem id="fs-id1165134254415">
+<para id="fs-id1165134254418"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134254432"><problem id="fs-id1165135160374">
+<para id="fs-id1165135160376"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135672734"><media id="fs-id1165135672739" alt="Trazado de 6 –2i en el plano complejo (6 en el eje real, –2 en el eje imaginario).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_208.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165135672751">
+<problem id="fs-id1165135672753">
+<para id="fs-id1165133359361"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133359380"><problem id="fs-id1165137580684">
+<para id="fs-id1165137580686"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137580704">
+<media id="fs-id1165132949966" alt="Trazado de 1 –4i en el plano complejo (1 en el eje real, –4 en el eje imaginario).">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_05_210.jpg"/>
+  </media></solution></exercise></section>
+  <section id="fs-id1165132949979">
+  <title>En tecnología</title>
+
+
+
+<para id="fs-id1165137647538">En los siguientes ejercicios, calcule todas las respuestas redondeadas a la centésima más cercana.</para>
+
+<exercise id="fs-id1165137647541">
+<problem id="fs-id1165137647543">
+<para id="fs-id1165137647545">Utilice la función de rectangular a polar de la calculadora gráfica para cambiar <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> a la forma polar.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135186955">
+<problem id="fs-id1165135186958">
+<para id="fs-id1165135186960">Utilice la función de rectangular a polar de la calculadora gráfica para cambiar <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> a la forma polar.</para>
+</problem>
+<solution id="fs-id1165134329643">
+<para id="fs-id1165132972772"> <m:math>
+ <m:mrow>
+  <m:mn>3,61</m:mn><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>0,59</m:mn><m:mi>i</m:mi></m:mrow>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165133243512">
+<problem id="fs-id1165133243514">
+<para id="fs-id1165133243516">Utilice la función de rectangular a polar de la calculadora gráfica para cambiar <m:math>
+ <m:mrow>
+ <m:mo>- −</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>8</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math> a la forma polar.</para></problem>
+</exercise>
+<exercise id="fs-id1165135189784">
+<problem id="fs-id1165135189786">
+<para id="fs-id1165135189788">Utilice la función de polar a rectangular de la calculadora gráfica para cambiar <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>120°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> a la forma rectangular.</para></problem>
+<solution id="fs-id1165135694966">
+<para id="fs-id1165135694969"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>3,46</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165132945471">
+<problem id="fs-id1165132945473">
+<para id="fs-id1165132945475">Utilice la función de polar a rectangular de la calculadora gráfica para cambiar <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>45°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> a la forma rectangular.</para></problem>
+</exercise>
+<exercise id="fs-id1165135546054">
+<problem id="fs-id1165135546056">
+<para id="fs-id1165135546058">Utilice la función de polar a rectangular de la calculadora gráfica para cambiar <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi mathvariant="normal">cis</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>210°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> a la forma rectangular.</para></problem>
+<solution id="fs-id1165135252140">
+<para id="fs-id1165135252142"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>4,33</m:mn><m:mo>- −</m:mo><m:mn>2,50</m:mn><m:mi>i</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</section>
+</section>
+
+
+<glossary>
+<definition id="fs-id1165135344835">
+<term>argumento</term> <meaning id="fs-id1165135344841">el ángulo asociado a un número complejo; el ángulo entre la línea del origen al punto y el eje real positivo</meaning>
+</definition>
+<definition id="fs-id1165135344846">
+<term>Teorema de Moivre</term>
+<meaning id="fs-id1165134357535">fórmula utilizada para calcular <m:math>
+ <m:mrow>
+  <m:mi>la</m:mi><m:mtext>enésimo</m:mtext></m:mrow>
+</m:math> potencia o raíces <emphasis effect="italics">enésimas</emphasis> de un número complejo; afirma que, para un número entero positivo <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo><m:msup>
+   <m:mi>c</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  </m:mrow>
+</m:math> se calcula elevando el módulo a <m:math>
+ <m:mrow>
+  <m:mi> </m:mi><m:mtext>enésimo</m:mtext></m:mrow>
+</m:math> potencia y multiplicando los ángulos por <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi></m:mrow>
+</m:math>
+</meaning>
+</definition>
+<definition id="fs-id1165134279306">
+<term>módulo</term>
+<meaning id="fs-id1165134279312">el valor absoluto de un número complejo o la distancia del origen al punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>;</m:mo></m:mrow>
+</m:math> también llamado la amplitud</meaning></definition>
+<definition id="fs-id1165133162992">
+<term>forma polar de un número complejo</term>
+<meaning id="fs-id1165133162998">un número complejo expresado en términos de un ángulo <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> y su distancia desde el origen <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>;</m:mo></m:mrow>
+</m:math> se puede calcular mediante fórmulas de conversión <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>
+</meaning></definition>
+</glossary>
+</m:math></item></list></section></content></document>

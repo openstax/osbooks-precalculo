@@ -1,0 +1,5933 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Funciones exponenciales</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49361</md:content-id>
+  <md:title>Funciones exponenciales</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Evaluar funciones exponenciales.</item>
+<item>Hallar la ecuación de una función exponencial.</item>
+<item>Utilizar las fórmulas de interés compuesto.</item>
+<item>Evaluar funciones exponenciales con base <m:math><m:mi>e</m:mi></m:math>.</item>
+</list></md:abstract>
+  <md:uuid>694d2eea-4135-47f3-8c06-60472f7e967c</md:uuid>
+</metadata>
+
+<content>
+<section id="eip-625" class="coreq-skills"><section id="eip-530" class="learning-objectives"><title>Objetivos de aprendizaje</title><list id="eip-896"><item>Hallar el valor de una función (exponencial). (IA 3.5.3)</item>
+<item>Graficar las funciones exponenciales. (IA 10.2.1)</item>
+</list></section><section id="eip-842"><title>Objetivo 1: Hallar el valor de una función (exponencial). (IA 3.5.3)</title><note id="eip-857"><title>Vocabulario.</title><para id="eip-677">Para la función <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>, ________ es la <term id="term-00001">variable independiente</term>, ya que puede ser cualquier valor del dominio y ________ es la <term id="term-00002">variable dependiente</term>, ya que su valor depende de ________ .</para><para id="eip-618">Muchos acontecimientos naturales y aplicaciones de la vida real pueden modelarse mediante funciones exponenciales. Por ejemplo, el crecimiento demográfico, la propagación de los virus, la desintegración radiactiva y el interés compuesto siguen patrones exponenciales.</para></note>
+
+<note id="eip-593"><title>Definición: la función exponencial es una función de la forma </title><m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>x</m:mi></m:msup></m:math> donde <m:math><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:math> y <m:math><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn></m:math> <para id="eip-idm241573600"><emphasis effect="bold">Ejemplos:</emphasis> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo stretchy="false">)</m:mo></m:mrow><m:mi>x</m:mi></m:msup><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:msup><m:mn>13</m:mn><m:mi>x</m:mi></m:msup></m:math> </para><para id="eip-480">Observe que, en la función exponencial, la variable es el exponente. En nuestras funciones hasta ahora, las variables eran la base.</para><media id="fs-id1167833017914" alt="Esta figura muestra tres funciones: f de x es igual a 3x negativo más 4, que se marca como lineal; f de x es igual a 2x al cuadrado más 5x menos 3, que se marca como cuadrática; y f de x es igual a 6 a la potencia de x, que se marca como exponencial. En las funciones marcadas como lineales y cuadráticas, x es la base. En la función marcada como exponencial, x es el exponente de base 6.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_10_02_001_img.jpg"/>
+</media><para id="eip-882"><emphasis effect="bold">Evaluar una función</emphasis> es el proceso de hallar el valor de f(x) para un valor dado de x.</para></note><example id="eip-832"><para id="eip-190">Evalúe la función <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mi>x</m:mi></m:msup></m:math> para los valores dados</para><exercise id="eip-724"><problem id="eip-675">
+<list id="eip-697" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:math>
+  </item>
+<item><span class="token">Ⓑ</span> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>-1</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+  </item>
+<item><span class="token">Ⓒ</span> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo></m:math>
+  </item></list></problem>
+
+<solution id="eip-432">
+  <list id="eip-idm407332208" list-type="labeled-item" class="circled"><item><span class="token">Ⓐ</span> Sustituya x por 2 y halle el valor de la función <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mn>2 </m:mn></m:msup><m:mo>=</m:mo><m:mn>9</m:mn></m:math></item>
+<item><span class="token">Ⓑ</span> Sustituya x por -1 y halle el valor de la función <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mrow><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math>
+
+  </item>
+<item><span class="token">Ⓒ</span> Sustituya x por 2h y simplifique, de ser posible <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mrow><m:mn>2</m:mn><m:mi>h</m:mi></m:mrow></m:msup></m:math>
+
+  </item></list></solution>
+</exercise></example><section id="eip-251" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-621">Halle el valor de una función exponencial.</para><exercise id="eip-139"><problem id="eip-647">
+  <para id="eip-477">Evalúe la función <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>2 </m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:msup></m:math> para los valores dados <list id="eip-idm608603961" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓑ</span> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>-2</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓒ</span> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo></m:math>
+     </item>
+</list></para>
+</problem>
+</exercise><exercise id="eip-129"><problem id="eip-798">
+  <para id="eip-270">También hallaremos el valor de la función cuando resolvemos problemas de aplicación que implican funciones exponenciales. <newline/> Las primas de Medicare. La prima mensual de la Parte B de Medicare para la mayoría de los beneficiarios que son mayores de 65 años de edad ha aumentado considerablemente desde 1975. La prima mensual ha pasado de unos 7 dólares en 1975 a 110,50 dólares en 2011 (Fuente: Centros de Servicios de Medicare y Medicaid). La siguiente función exponencial modela el aumento de la prima:<newline/> <m:math><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>080</m:mn><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:msup></m:math> donde x es el número de años desde 1975. <newline/> Estimación de la prima mensual de la Parte B de Medicare en 1985, en 1992 y en 2002. (Tenga en cuenta que x es el número de años transcurridos desde 1975, por lo que para 1985, x=10). Redondee al dólar más cercano.</para>
+</problem>
+</exercise><exercise id="eip-316"><problem id="eip-416">
+  <para id="eip-749">
+    Podemos calcular el <emphasis effect="bold">interés compuesto</emphasis> al utilizar <m:math><m:mi>A</m:mi><m:mo>=</m:mo><m:mi>P</m:mi><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mi>r</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi><m:mi>t</m:mi></m:mrow></m:msup></m:math>, <newline/> Donde A es la cantidad de dinero, P es el monto de capital, t es el número de años, r es el tipo de interés y n es el número de veces que se han capitalizado los intereses al año.<newline/> Supongamos que se invierten 960 dólares a un interés del 7 %, capitalizado semestralmente <list id="eip-idm603281648" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> Halle la función para el importe al que crece la inversión después de <emphasis effect="italics">t</emphasis> años.
+     </item>
+     <item>
+          <span class="token">Ⓑ</span> Calcule el importe de dinero en la cuenta a <emphasis effect="italics">t=1</emphasis>, 6, 10, 15 y 20 años.
+     </item></list></para>
+</problem>
+</exercise></section></section><section id="eip-824"><title>Objetivo 2: Graficar las funciones exponenciales. (IA 10.2.1)</title><section id="eip-918" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-888">
+Graficar las funciones exponenciales.
+</para><exercise id="eip-873"><problem id="eip-841">
+  <para id="eip-650">Grafique la función exponencial <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math> haciendo una tabla.
+  <table id="eip-123" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table>
+<media id="fs-id1167834017914" alt=".">
+<image mime-type="image/jpeg" src="../../media/blankplot6.4-01c0.png"/>
+</media></para></problem>
+</exercise><exercise id="eip-956"><problem id="eip-845">
+  <para id="eip-651">Grafique la función exponencial <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:msup></m:math> haciendo una tabla.
+  <table id="eip-122" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><media id="fs-id1167834017414" alt=".">
+<image mime-type="image/jpeg" src="../../media/blankplot6.4-01c0.png"/>
+</media><newline/> ¿Cómo se compara con el gráfico de <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math>?</para></problem>
+</exercise><exercise id="eip-970"><problem id="eip-893">
+  <para id="eip-792">Grafique <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mi>x</m:mi></m:msup></m:math>, <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>4</m:mn><m:mi>x</m:mi></m:msup></m:math>, <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>2,5</m:mn><m:mi>x</m:mi></m:msup></m:math> en la misma ventana de visualización utilizando una calculadora gráfica o un programa. ¿Cuál es la relación entre la base a y la forma del gráfico?
+
+  </para></problem></exercise><exercise id="eip-357"><problem id="eip-38">
+  <para id="eip-870">
+    Grafique <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>0,2</m:mn><m:mi>x</m:mi></m:msup></m:math>, <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>0,4</m:mn><m:mi>x</m:mi></m:msup></m:math>, <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>0,7</m:mn><m:mi>x</m:mi></m:msup></m:math> en la misma ventana de visualización utilizando una calculadora gráfica o un programa. ¿Cuál es la relación entre la base a y la forma del gráfico?
+  </para>
+</problem></exercise><exercise id="eip-204"><problem id="eip-133">
+  <para id="eip-633">Complete las <emphasis effect="bold">Propiedades de la función exponencial</emphasis> <newline/> <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>x</m:mi></m:msup><m:mo>,</m:mo><m:mo> </m:mo><m:mo> </m:mo><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo> </m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn></m:math> <newline/> ¿Es continua? <space count="15" effect="underline"/><newline/> ¿Es biunívoca? <space count="15" effect="underline"/><newline/> Dominio <space count="15" effect="underline"/><newline/> Rango <space count="15" effect="underline"/><newline/> Es creciente si <space count="15" effect="underline"/><newline/> Es decreciente si <space count="15" effect="underline"/><newline/> Asíntotas <space count="15" effect="underline"/><newline/> Intersecciones<space count="15" effect="underline"/></para></problem>
+</exercise></section><para id="eip-147">El número <emphasis effect="italics">e</emphasis>, <emphasis effect="bold">e ≈ 2,718281827</emphasis>, es como el número π en el sentido de que utilizamos un símbolo para representarlo porque su representación decimal nunca se detiene ni se repite. El número irracional <emphasis effect="italics">e</emphasis> se denomina base natural o número de Euler en honor al matemático suizo Leonhard Euler.</para><para id="eip-772">La función exponencial cuya base es e, <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>e</m:mn><m:mi>x</m:mi></m:msup></m:math> se denomina <term id="term-00003">función exponencial natural</term>.</para><section id="eip-635" class="practice-perfect"><title>La práctica hace la perfección</title><exercise id="eip-510"><problem id="eip-811">
+  <para id="eip-620">Grafique la función exponencial <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup></m:math> haciendo una tabla.
+  <table id="eip-138" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+<row>
+<entry align="center"/>
+<entry align="center"/>
+  </row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><media id="fs-id1167834013914" alt=".">
+<image mime-type="image/jpeg" src="../../media/blankplot6.4-01c0.png"/>
+</media><newline/> ¿Cuál es el dominio de <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math>?<newline/> ¿Cuál es el rango de <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math>?</para></problem>
+</exercise></section></section></section><para id="fs-id1165137640062">La India es el segundo país más poblado del mundo, con unos <m:math>
+<m:mrow>
+<m:mn>1,39</m:mn>
+</m:mrow>
+</m:math> mil millones de habitantes en 2021. La población crece a un ritmo de aproximadamente <m:math>
+<m:mrow>
+<m:mn>1,2</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> cada año<footnote id="fs-id1165135184203">http://www.worldometers.info/world-population/. Consultado el 24 de febrero de 2014.</footnote>. Si este ritmo continúa, la población de la India superará a la de China en el año <m:math>
+<m:mrow>
+<m:mn>2027</m:mn>
+</m:mrow>
+</m:math> Cuando las poblaciones crecen rápidamente, a menudo decimos que el crecimiento es "exponencial", lo que significa que algo asciende muy rápidamente. Sin embargo, para un matemático, el término <emphasis effect="italics">crecimiento exponencial </emphasis>tiene un significado muy específico. En esta sección, echaremos un vistazo a las <emphasis effect="italics">funciones exponenciales</emphasis>, que modelan este tipo de crecimiento rápido.</para>
+
+<section id="fs-id1165135159940">
+<title>Identificación de funciones exponenciales</title>
+<para id="fs-id1165137446191">Al explorar el crecimiento lineal, observamos una tasa de cambio constante: una cifra constante en la que la producción aumenta por cada incremento de unidad en la entrada. Por ejemplo, en la ecuación <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la pendiente nos indica que la salida aumenta en 3 cada vez que la entrada aumenta en 1. El escenario del ejemplo de la población de la India es diferente porque tenemos un cambio <emphasis effect="italics">porcentual</emphasis> por unidad de tiempo (en lugar de un cambio constante) en el número de personas.</para>
+
+<section id="fs-id1165137477143"><title>Definir una función exponencial</title><para id="fs-id1165137553324">Un estudio reveló que el porcentaje de la población que es vegana en Estados Unidos se duplicó de 2009 a 2011. En 2011, el 2,5 % de la población era vegana, tras adherirse a una dieta que no incluye ningún producto de origen animal: sin carne, aves, pescado, lácteos ni huevos. Si este ritmo continúa, los veganos representarán el 10 % de la población estadounidense en 2015, el 40 % en 2019 y el 80 % en 2021.</para><para id="fs-id1165134069131">¿Qué significa exactamente <emphasis effect="italics">crecer exponencialmente</emphasis>? ¿Qué tiene en común la palabra <emphasis effect="italics">doble </emphasis>con el <emphasis effect="italics">porcentaje de aumento</emphasis>? La gente usa estas palabras erróneamente. ¿Se utilizan correctamente estas palabras? Ciertamente, las palabras aparecen con frecuencia en los medios de comunicación. <list id="fs-id1165134042783" list-type="bulleted">
+<item>El <emphasis>cambio porcentual </emphasis>se refiere a un <emphasis effect="italics">cambio</emphasis> basado en un <emphasis effect="italics">porcentaje</emphasis> de la cantidad original.</item>
+<item>El <emphasis>crecimiento exponencial </emphasis>se refiere a un <emphasis effect="italics">aumento</emphasis> basado en una tasa de cambio multiplicativa constante a lo largo de incrementos iguales de tiempo, es decir, un aumento <emphasis effect="italics">porcentual</emphasis> de la cantidad original con el paso del tiempo.</item>
+<item>El <term id="term-00004">decaimiento exponencial</term> se refiere a una <emphasis effect="italics">disminución</emphasis> basada en una tasa de cambio multiplicativa constante a lo largo de incrementos iguales de tiempo, es decir, una disminución <emphasis effect="italics">porcentual</emphasis> de la cantidad original con el paso del tiempo.</item>
+</list></para>
+
+<para id="fs-id1165137760753">Para entender claramente el <term class="no-emphasis" id="term-00005">crecimiento exponencial</term>, contrastémoslo con el <term class="no-emphasis" id="term-00006">crecimiento lineal</term>. Construiremos dos funciones. La primera función es exponencial. Empezaremos con una entrada de 0 y aumentaremos cada entrada en 1. Duplicaremos las correspondientes salidas consecutivas. La segunda función es lineal. Empezaremos con una entrada de 0 y aumentaremos cada entrada en 1. Sumaremos 2 a las salidas consecutivas correspondientes. Vea el <link target-id="Table_04_01_01"/>.</para>
+<table id="Table_04_01_01" summary="La tabla tiene ocho filas y tres columnas. La primera columna se denomina &quot;x&quot;, que va de 0 a 6; la segunda columna se denomina &quot;f(x)=2^x&quot;; y la tercera columna se denomina &quot;g(x) = 2x&quot;. Los siguientes valores son para la función f: (0, 1), (1, 2), (2, 4), (3, 8), (4, 16), (5, 32), y (6, 64). Los siguientes valores son para la función g: (0, 0), (1, 2), (2, 4), (3, 6), (4, 8), (5, 10), y (6, 12).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="center">1</entry>
+<entry align="center">0</entry>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="center">2</entry>
+<entry align="center">2 </entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="center">4</entry>
+<entry align="center">4</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="center">8</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center">4</entry>
+<entry align="center">16</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center">5</entry>
+<entry align="center">32</entry>
+<entry align="center">10</entry>
+</row>
+<row>
+<entry align="center">6</entry>
+<entry align="center">64</entry>
+<entry align="center">12</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-id1165135190676">A partir de la <link target-id="Table_04_01_01"/>, podemos deducir que, en lo que respecta a estas dos funciones, el crecimiento exponencial empequeñece al crecimiento lineal.</para><list id="fs-id1165137725808"><item>El <emphasis>crecimiento exponencial </emphasis>se refiere a que el valor original a partir del rango aumenta en el <emphasis effect="italics">mismo porcentaje</emphasis> en incrementos iguales, hallados en el dominio.</item>
+<item>El <emphasis>crecimiento lineal</emphasis> se refiere a que el valor original a partir del rango se incrementa en la <emphasis effect="italics">misma cantidad</emphasis> en incrementos iguales, hallados en el dominio.</item>
+</list><para id="fs-id1165137561507">Aparentemente, la diferencia entre "el mismo porcentaje" y "la misma cantidad" es bastante significativa. En el caso del crecimiento exponencial, en incrementos iguales, la tasa de cambio multiplicativa constante daba como resultado la duplicación de la producción cada vez que la entrada aumentaba en uno. En el caso del crecimiento lineal, la tasa de cambio sumatoria constante sobre incrementos iguales daba como resultado la suma de 2 a la salida cada vez que la entrada se incrementaba en uno.</para><para id="fs-id1165135445949">La forma general de la <term class="no-emphasis" id="term-00007">función exponencial</term> es <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es cualquier número distinto a cero, <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> es un número real positivo, que no sea igual a 1.</para><list id="fs-id1165137635065"><item>Si los valores de <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>></m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la función crece a un ritmo proporcional a su tamaño.</item>
+<item>Si los valores de <m:math>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la función decae a un ritmo proporcional a su tamaño.</item>
+</list><para id="fs-id1165137465225">Veamos la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> de nuestro ejemplo. Crearemos una tabla (<link target-id="Table_04_01_02"/>) para determinar las salidas correspondientes durante un intervalo en el dominio de <m:math>
+
+<m:mrow>
+<m:mi>- −</m:mi><m:mn>3</m:mn>
+</m:mrow>
+
+</m:math> con <m:math>
+
+<m:mrow>
+<m:mn>3.</m:mn>
+</m:mrow>
+
+</m:math>
+</para><table id="Table_04_01_02" summary="Esta tabla tiene dos filas y ocho columnas. La primera fila está marcada como &quot;x&quot; y la segunda como &quot;f(x)=2^x&quot;. Al leer las columnas como pares ordenados, tenemos los siguientes valores: (-3, 2^(-3)=1/8), (-2, 2^(-2)=1/4), (-1, 2^(-1)=1/2), (0, 2^(0)=1), (1, 2^(1)=2), (2, 2^(2)=4), and (3, 2^(3)=8).">
+<tgroup cols="8"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mi>x</m:mi>
+</m:math> </emphasis>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mn>1</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mn>2 </m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mn>3</m:mn>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>0</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>1</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="fs-id1165137640874">Examinemos el gráfico de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> al trazar los pares ordenados que observamos en la tabla en la <link target-id="CNX_Precalc_Figure_04_01_006"/>, y luego hagamos algunas observaciones.</para>
+
+<figure id="CNX_Precalc_Figure_04_01_006" class="medium">
+<media id="fs-id1165137571891" alt="Gráfico de las funciones de las empresas A y B, cuyos valores se encuentran en la tabla anterior.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_006.jpg"/>
+</media>
+</figure><para id="fs-id1165137408862">Definamos el comportamiento del gráfico de la función exponencial <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> y destaquemos algunas de sus características principales.</para><list id="fs-id1165137566018" list-type="bulleted"><item>el dominio es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>el rango es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>a medida que <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>∞</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>a medida que <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> es siempre creciente,</item>
+<item>el gráfico de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> nunca tocará el eje <emphasis effect="italics">x</emphasis> porque la base dos elevada a cualquier exponente nunca tiene el resultado de cero.</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> es la asíntota horizontal.</item>
+<item>la intersección en <emphasis effect="italics">y</emphasis> es 1.</item>
+</list>
+<note id="fs-id1165137442472">
+
+<title>Función exponencial</title>
+<para id="fs-id1165137911387">Para cualquier número real <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la función exponencial es aquella con la forma</para>
+<equation id="Equation_4_1_1" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+</m:mrow>
+</m:math> </equation><para id="eip-751">donde</para><list id="fs-id1165137401680" list-type="bulleted"><item> <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es un número real distinto a cero, denominado valor inicial, en tanto que</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> es cualquier número real positivo, tal que <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </item>
+<item>El dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> son todos números reales.</item>
+<item>El rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> son todos números reales positivos si <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </item>
+<item>El rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> son todos los números reales negativos si <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </item>
+<item>La intersección en <emphasis effect="italics">y</emphasis> es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y la asíntota horizontal es <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_04_01_01"><exercise id="fs-id1165137387381">
+<problem id="fs-id1165137659178">
+<title>Identificar funciones exponenciales</title>
+<para id="fs-id1165137601478">¿Cuáles de las siguientes ecuaciones <emphasis effect="italics">no</emphasis> son funciones exponenciales?</para>
+<list id="fs-id1165135176602">
+<item> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> grandes. </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>j</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+</list>
+</problem>
+<solution id="fs-id1165134108513">
+<para id="fs-id1165137698136">Por definición, la función exponencial tiene una constante como base y una variable independiente como exponente. Así, <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> no representa ninguna función exponencial porque la base es una variable independiente. De hecho, <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> es una función potencia.</para>
+<para id="fs-id1165137612252">Recordemos que la base <emphasis effect="italics">b </emphasis>de la función exponencial es siempre una constante positiva, y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> Por lo tanto, <m:math>
+<m:mrow>
+<m:mi>j</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>−2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> no representa ninguna función exponencial porque la base, <m:math>
+<m:mrow>
+<m:mn>−2</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> es menor que <m:math>
+<m:mrow>
+<m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example><note id="fs-id1165137436342" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_01"><problem id="fs-id1165137862673"><para id="fs-id1165137424249">¿Cuáles de las siguientes ecuaciones representan funciones exponenciales?</para>
+<list id="fs-id1165135161022" list-type="bulleted">
+<item> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>0,875</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1,75</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:mi>j</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>1095,6</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+</list>
+</problem>
+<solution id="fs-id1165137597685">
+<para id="fs-id1165137714559"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>0,875</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>j</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>1095,6</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> representan funciones exponenciales.</para>
+</solution>
+</exercise></note>
+</section></section>
+
+<section id="fs-id1165137640042">
+<title>Evaluar funciones exponenciales</title>
+<para id="fs-id1165137784783">Recordemos que la base de la función exponencial debe ser un número real positivo, distinto a <m:math>
+<m:mrow>
+<m:mn>1.</m:mn>
+</m:mrow>
+</m:math> ¿Por qué limitamos la base <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> a valores positivos? Para garantizar que las salidas sean números reales. Observe lo que ocurre si la base no es positiva:</para><list id="fs-id1165137754880" list-type="bulleted">
+<item>Supongamos que <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>9</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>9</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>9</m:mn>
+</m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> que no es un número real.</item>
+</list>
+
+<para id="fs-id1165137563360">¿Por qué limitamos la base a valores positivos que no sean <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Porque la base <m:math>
+<m:mrow>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:math> da como resultado la función constante. Observe lo que ocurre si la base es <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>:</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<list id="fs-id1165137400268" list-type="bulleted">
+<item>Supongamos que <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> Entonces <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> para cualquier valor de <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list>
+
+<para id="fs-id1165137459694">Para evaluar una función exponencial con la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> simplemente sustituimos <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> con el valor dado, y calculamos la potencia resultante. Por ejemplo:</para>
+
+<para id="fs-id1165135403544">Supongamos que <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> ¿Qué es <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="eip-id1165137643186" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mspace width="0.5em"/><m:mtext/>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Sustituya </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>8</m:mn><m:mspace width="0.5em"/><m:mtext/>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Evalúe la potencia</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137849020">Para evaluar una función exponencial con una forma distinta a la básica, es importante seguir el orden de las operaciones. Por ejemplo:</para>
+
+<para id="fs-id1165137849024">Supongamos que <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> ¿Qué es <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="eip-id1165134086025" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>30</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>30</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Sustituya </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>30</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mn>8</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mspace width="0.5em"/><m:mtext/>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Simplifique la potencia primero</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>240</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Multiplique</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137841073">Observe que, de no seguirse el orden de las operaciones, el resultado sería incorrecto:</para>
+
+<equation id="eip-id1165135320147" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>≠</m:mo><m:msup>
+<m:mrow>
+<m:mn>60</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>216.000</m:mn>
+</m:mrow>
+</m:math> </equation><example id="Example_04_01_02">
+<exercise id="fs-id1165137455430">
+<problem id="fs-id1165137455432">
+<title>Evaluar funciones exponenciales</title>
+<para id="fs-id1165137767841">Supongamos que <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Evalúe <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> sin usar la calculadora.</para></problem>
+<solution id="fs-id1165135429364">
+<para id="fs-id1165137598173">Siga el orden de las operaciones. Preste atención a los paréntesis.</para>
+<equation id="eip-id1165135208555" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Sustituya </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Sume los exponentes</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>5</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Simplifique la potencia</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>135</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Multiplique</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137843864" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_02">
+<problem id="fs-id1165137762786">
+<para id="fs-id1165137762788">Supongamos que <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Evalúe <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> utilizando una calculadora. Redondee a cuatro decimales.</para>
+</problem>
+<solution id="fs-id1165137637369">
+<para id="fs-id1165135543522"> <m:math>
+<m:mrow>
+<m:mn>5,5556</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<section id="fs-id1165137439018"><title>Definir el crecimiento exponencial</title><para id="fs-id1165137748523">Dado que el resultado de las funciones exponenciales aumenta muy rápidamente, el término "crecimiento exponencial" se utiliza a menudo en el lenguaje cotidiano para describir cualquier cosa que crezca o aumente rápidamente. Sin embargo, el crecimiento exponencial puede definirse con mayor precisión en un sentido matemático. Si la tasa de crecimiento es proporcional a la cantidad presente, la función modela un crecimiento exponencial.</para>
+
+<note id="fs-id1165137564690">
+
+<title>Crecimiento exponencial</title>
+<para id="fs-id1165137834019">Una función que modela el <term id="term-00008">crecimiento exponencial</term> crece a una tasa proporcional a la cantidad presente. Para cualquier número real <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> y cualquier número real positivo <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> una función de crecimiento exponencial tiene la forma</para><equation id="fs-id1165137851784" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mtext/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+</m:mrow>
+</m:math> </equation><para id="eip-626">donde</para><list id="fs-id1165137863819"><item> <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es el valor inicial o de partida de la función.</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> es el factor de crecimiento o multiplicador de crecimiento por unidad <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>.</item>
+</list></note>
+
+<para id="fs-id1165137644244">En términos generales, tenemos una <emphasis effect="italics">función exponencial</emphasis>, en la que una base constante se eleva a un exponente variable. Para diferenciar entre funciones lineales y exponenciales, consideremos dos empresas, A y B. La empresa A tiene 100 tiendas y se expande con la inauguración de 50 tiendas al año, por lo que su crecimiento puede representarse mediante la función <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> La empresa B tiene 100 tiendas y se expande al aumentar el número de tiendas en un 50 % cada año, por lo que su crecimiento puede representarse mediante la función <m:math>
+<m:mrow>
+<m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165135512493">Algunos años de crecimiento de estas empresas se ilustran en la <link target-id="Table_04_01_05"/>.</para>
+<table id="Table_04_01_05" summary="La tabla tiene seis filas y tres columnas. La primera columna se denomina &quot;Año, x&quot;, que va de 0 a 3; la segunda columna se denomina &quot;Tiendas, empresa A&quot;, que tiene una función de A(x) = 100+50x; y la tercera columna se denomina &quot;Tiendas, empresa B&quot;, que tiene una función de B(x)=100(1+0,5)^x. Los siguientes valores corresponden a la función de la empresa A: (0, 100), (1, 150), (2, 200), y (3, 250). Los siguientes valores son para la función de la empresa B: (0, 100), (1, 150), (2, 225), y (3, 337,5).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center">Año, <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center">Tiendas, empresa A</entry>
+<entry align="center">Tiendas, empresa B</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+<m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mn>0</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>0</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>100</m:mn>
+</m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+<m:mn>1</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>150</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>1</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>150</m:mn>
+</m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+<m:mn>2 </m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>200</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>225</m:mn>
+</m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+<m:mn>3</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>250</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>337,5</m:mn>
+</m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137653733">Los gráficos que comparan el número de tiendas de cada empresa en el lapso de cinco años se muestran en la <link target-id="CNX_Precalc_Figure_04_01_001"/><emphasis>.</emphasis> Podemos ver que, con el crecimiento exponencial, el número de tiendas aumenta mucho más rápidamente que con el crecimiento lineal.</para>
+
+<figure id="CNX_Precalc_Figure_04_01_001" class="small">
+<media id="fs-id1165137933223" alt="Gráfico de las funciones de las empresas A y B, cuyos valores se encuentran en la tabla anterior.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_001.jpg"/>
+</media>
+
+<caption>El gráfico muestra el número de tiendas que las empresas A y B han abierto en el lapso de cinco años.</caption></figure><para id="fs-id1165135209682">Observe que el dominio de ambas funciones es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y el rango en ambas funciones es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Después del año 1, la empresa B siempre tiene más tiendas que la empresa A.</para>
+
+<para id="fs-id1165137836429">Ahora, nos centraremos en la función que representa el número de tiendas de la empresa B, <m:math>
+<m:mrow>
+<m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> En esta función exponencial, 100 representa el número inicial de tiendas, 0,50 representa la tasa de crecimiento y <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>0,5</m:mn><m:mo>=</m:mo><m:mn>1,5</m:mn>
+</m:mrow>
+</m:math> representa el factor de crecimiento. En términos más generales, podemos escribir esta función como <m:math>
+<m:mrow>
+<m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde 100 es el valor inicial, <m:math>
+<m:mrow>
+<m:mn>1,5</m:mn>
+</m:mrow>
+</m:math> se denomina la <emphasis effect="italics">base</emphasis>, y <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> se denomina el <emphasis effect="italics">exponente</emphasis>.</para>
+
+<example id="Example_04_01_03">
+<exercise id="fs-id1165137535640">
+<problem id="fs-id1165137535642">
+<title>Evaluar un modelo exponencial en el mundo real</title>
+<para id="fs-id1165135541867">Al principio de esta sección, aprendimos que la población de la India era de unos <m:math>
+<m:mrow>
+<m:mn>1,25</m:mn>
+</m:mrow>
+</m:math> mil millones en el año 2013, con una tasa de crecimiento anual de aproximadamente <m:math>
+<m:mrow>
+<m:mn>1,2</m:mn><m:mi>%</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Esta situación está representada por la función de crecimiento <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1,25</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,012</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> es el número de años transcurridos desde <m:math>
+<m:mrow>
+<m:mn>2013.</m:mn>
+</m:mrow>
+</m:math> A la milésima más cercana, ¿cuál será la población de la India en <m:math>
+<m:mrow>
+<m:mtext>2031?</m:mtext>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137786632">
+<para id="fs-id1165137786635">Para estimar la población en 2031, evaluamos los modelos para <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>18</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> porque 2031 es <m:math>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+</m:math> años después de 2013. Redondeando a la milésima más cercana,</para><equation id="eip-id1165135657117" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1,25</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,012</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>≈</m:mo><m:mn>1,549</m:mn>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135394343">En el año 2031 habrá unos 1.549 millones de habitantes en India.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135536569" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_03">
+<problem id="fs-id1165137635312">
+<para id="fs-id1165137635314">La población de China era de unos 1.390 millones de habitantes en el año 2013, a una tasa de crecimiento anual de aproximadamente <m:math>
+<m:mrow>
+<m:mn>0,6</m:mn><m:mi>%</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Esta situación está representada por la función de crecimiento <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1,39</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,006</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> es el número de años transcurridos desde <m:math>
+<m:mrow>
+<m:mn>2013.</m:mn>
+</m:mrow>
+</m:math> A la milésima más cercana, ¿cuál será la población de China en el año 2031? ¿Cómo se compara esto con la predicción de población que hicimos para la India en el <link target-id="Example_04_01_03"/>?</para></problem>
+<solution id="fs-id1165134200184">
+<para id="fs-id1165134200186">Alrededor de <m:math>
+<m:mrow>
+<m:mn>1,548</m:mn>
+</m:mrow>
+</m:math> millones de habitantes; en el año 2031, la población de la India superará a la de China en unos 0,001 mil millones, es decir, 1 millón de personas.</para>
+</solution>
+</exercise>
+</note>
+</section></section><section id="fs-id1165135526980">
+<title>Hallar ecuaciones de funciones exponenciales</title>
+<para id="fs-id1165135526985">En los ejemplos anteriores, se nos dio una función exponencial, que luego evaluamos para una entrada dada. A veces nos dan información acerca de una función exponencial sin conocer la función explícitamente. Debemos utilizar la información para escribir primero la forma de la función y luego determinar las constantes <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y evaluar la función.</para>
+<note id="fs-id1165135369632" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135180102"><emphasis>Dados dos puntos de datos, escribir un modelo exponencial.</emphasis></para>
+<list id="fs-id1165135180107" list-type="enumerated" number-style="arabic"><item>Si uno de los puntos de datos tiene la forma <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> entonces <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es el valor inicial. Utilizando <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> sustituya el segundo punto en la ecuación <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> y resolver para <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Si ninguno de los puntos de datos tiene la forma <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> sustituya ambos puntos en dos ecuaciones con la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Resuelva el sistema que resulta de dos ecuaciones en dos incógnitas para hallar <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Con el <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> determinados en los pasos anteriores, escriba la función exponencial en la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_04_01_04">
+<exercise id="fs-id1165137580876"><problem id="fs-id1165137580878">
+<title>Escribir un modelo exponencial cuando se conoce el valor inicial</title>
+<para id="fs-id1165137667588">En 2006, se introdujeron 80 ciervos en un refugio de vida silvestre. En 2012, la población había aumentado a 180 ciervos. La población crecía exponencialmente. Escriba una función exponencial <m:math>
+<m:mrow>
+<m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> que represente a la población <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>N</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> de ciervos a lo largo del tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135188416">
+<para id="fs-id1165135188418">Supongamos que nuestra variable independiente <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> es el número de años posteriores a 2006. Así, la información dada en el problema puede escribirse en pares de entrada-salida: (0, 80) y (6, 180). Observe que, al elegir como variable de entrada los años posteriores a 2006, nos hemos dado el valor inicial de la función, <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>80.</m:mn>
+</m:mrow>
+</m:math> Ahora podemos sustituir el segundo punto en la ecuación <m:math>
+<m:mrow>
+<m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:msup>
+<m:mi>b</m:mi>
+<m:mi>t</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> para calcular <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> </para>
+<equation id="eip-id1165135432669" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>80</m:mn><m:msup>
+       <m:mi>b</m:mi>
+       <m:mi>t</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mn>180</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>80</m:mn><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>6</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya utilizando el punto </m:mtext><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>180</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>6</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida y escriba en términos mínimos</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mn>9</m:mn>
+           <m:mn>4</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aísle </m:mtext><m:mi>b</m:mi><m:mspace width="0.5em"/><m:mtext>mediante el empleo de las propiedades de los exponentes</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>≈</m:mo><m:mn>1,1447</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Redondee a 4 decimales</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135193230"><emphasis>NOTA:</emphasis> <emphasis effect="italics">A menos que se indique lo contrario, no se redondean los cálculos intermedios. A continuación, redondee la respuesta final a cuatro lugares para el resto de esta sección.</emphasis></para>
+<para id="fs-id1165137705073">El modelo exponencial con respecto a la población de ciervos es <m:math>
+<m:mrow>
+<m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,1447</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> (Observe que esta función exponencial modela el crecimiento a corto plazo. A medida que la entrada crece, el resultado será cada vez mayor, tanto así que el modelo podría no servir a largo plazo).</para>
+<para id="fs-id1165137724117">Podemos representar gráficamente nuestro modelo para observar el crecimiento demográfico de ciervos en el refugio con el paso del tiempo. Observe que el gráfico en la <link target-id="CNX_Precalc_Figure_04_01_002"/> pasa por los puntos iniciales dados en el problema, <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>80</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mtext>6</m:mtext><m:mo>,</m:mo><m:mn>180</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> También podemos ver que el dominio de la función es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y el rango de la función es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>80</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<figure id="CNX_Precalc_Figure_04_01_002" class="small"><media id="fs-id1165137598921" alt="Gráfico de la función exponencial, N(t) = 80(1,1447)^t, con puntos marcados en (0, 80) y (6, 180).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_002.jpg"/>
+</media>
+
+<caption>Gráfico que muestra la población de ciervos a lo largo del tiempo, <m:math>
+<m:mrow>
+<m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,1447</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> años después de 2006</caption></figure></solution>
+</exercise></example>
+
+<note id="fs-id1165137761908" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_04">
+<problem id="fs-id1165135496544">
+<para id="fs-id1165135496547">La población de lobos crece exponencialmente. En 2011 se contabilizaron <m:math>
+<m:mrow>
+<m:mn>129</m:mn>
+</m:mrow>
+</m:math> lobos. Para <m:math>
+<m:mrow>
+<m:mtext>2013,</m:mtext>
+</m:mrow>
+</m:math> la población había alcanzado los 236 lobos. ¿Qué dos puntos se pueden utilizar para derivar una ecuación exponencial que modele esta situación? Escriba la ecuación que represente la población <m:math>
+<m:mrow>
+<m:mi>N</m:mi>
+</m:mrow>
+</m:math> de lobos a lo largo del tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137737094">
+<para id="fs-id1165137737097"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>129</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>236</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>129</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mtext>1</m:mtext><m:mtext>0,3526</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_04_01_05"><exercise id="fs-id1165135411399">
+<problem id="fs-id1165135411402">
+<title>Escribir un modelo exponencial cuando no se conoce el valor inicial</title>
+<para id="fs-id1165135411407">Halle una función exponencial que pase por los puntos <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135646190">
+<para id="fs-id1165135646192">Como no tenemos el valor inicial, sustituimos ambos puntos en una ecuación de la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> y luego resolvemos el sistema para <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><list id="fs-id1165134044679" list-type="bulleted">
+<item>Al sustituir <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> da como resultado <m:math>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>b</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+<item>Al sustituir <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> da como resultado <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>b</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </item>
+</list>
+<para id="fs-id1165135361777">Utilice la primera ecuación para resolver <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> en términos de <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> <newline/>
+
+</para>
+<media id="eip-id1619372" alt=".." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_007.jpg"/>
+</media>
+<para id="fs-id1165135180085">Sustituya <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> en la segunda ecuación, y resuelva para <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math>
+
+</para>
+<media id="eip-id2591037" alt=".." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_008.jpg"/>
+</media>
+<para id="fs-id1165137761627">Utilice el valor de <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> en la primera ecuación para resolver el valor de <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> <newline/>
+</para>
+<media id="eip-id2811781" alt=".." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_009.jpg"/>
+</media>
+<para id="fs-id1165135168188">Así, la ecuación es <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2,4492</m:mn><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0,6389</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165135482016">Podemos graficar nuestro modelo para comprobar nuestro trabajo. Observe que el gráfico en la <link target-id="CNX_Precalc_Figure_04_01_003"/> pasa por los puntos iniciales dados en el problema, <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>6</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>1</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> El gráfico es un ejemplo de función de <term class="no-emphasis" id="term-00009">decaimiento exponencial</term>.</para>
+
+<figure id="CNX_Precalc_Figure_04_01_003" class="small">
+<media id="fs-id1165137400606" alt="Gráfico de la función exponencial, f(x)=2,4492(0,6389)^x, con puntos etiquetados en (-2, 6) y (2, 1).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_003.jpg"/>
+</media>
+<caption>El gráfico de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2,4492</m:mn><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0,6389</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> modela el decaimiento exponencial.</caption>
+</figure>
+</solution>
+</exercise>
+</example><note id="ti_11_04_01" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135169306">
+<problem id="fs-id1165135169308">
+<para id="fs-id1165135169310">Dados los dos puntos <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>4,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> halle la ecuación de la función exponencial que pasa por estos dos puntos.</para>
+</problem>
+<solution id="fs-id1165137732255">
+<para id="fs-id1165137732257"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137737999" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137738004"><emphasis>¿Dos puntos siempre determinan una única función exponencial?</emphasis></para>
+<para id="fs-id1165137663981"><emphasis effect="italics">Sí, siempre que los dos puntos estén por encima del eje x o por debajo del eje x y tengan coordenadas x diferentes. Tenga en cuenta que también necesitamos saber que el gráfico es, de hecho, una función exponencial. No todos los gráficos que parecen exponenciales lo son realmente. Tenemos que saber que el gráfico se basa en un modelo que muestra el mismo porcentaje de crecimiento con cada aumento unitario de <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> que en muchos casos del mundo real implica tiempo.</emphasis></para></note>
+
+<note id="fs-id1165137771573" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137771578"><emphasis>Dado el gráfico de una función exponencial, escribir su ecuación.</emphasis></para><list id="fs-id1165137771583" list-type="enumerated" number-style="arabic"><item>En primer lugar, identifique dos puntos del gráfico. Elija la intersección en <emphasis effect="italics">y</emphasis> como uno de los dos puntos siempre que sea posible. Intente elegir puntos que estén lo más separados posible para reducir el error de redondeo.</item>
+<item>Si uno de los puntos de datos es la intersección en <emphasis effect="italics">y</emphasis> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>, entonces <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es el valor inicial. Utilizando <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> sustituya el segundo punto en la ecuación <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> y resolver para <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Si ninguno de los puntos de datos tiene la forma <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> sustituya ambos puntos en dos ecuaciones con la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Resuelva el sistema que resulta de dos ecuaciones en dos incógnitas para hallar <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Escriba la función exponencial, <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_04_01_06"><exercise id="fs-id1165137806415">
+<problem id="fs-id1165137806417">
+<title>Escribir una función exponencial dado su gráfico</title>
+<para id="fs-id1165135524507">Halle una ecuación para la función exponencial graficada en la <link target-id="CNX_Precalc_Figure_04_01_004"/>.</para>
+
+<figure id="CNX_Precalc_Figure_04_01_004" class="medium">
+<media id="fs-id1165135524517" alt="Gráfico de función exponencial creciente con puntos notables en (0, 3) y (2, 12).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_004.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135415647">
+<para id="fs-id1165135415649">Podemos elegir la intersección en <emphasis effect="italics">y</emphasis> del gráfico, <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> como nuestro primer punto. Esto nos da el valor inicial, <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> A continuación, elija un punto de la curva a cierta distancia de <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> que tiene coordenadas enteras. Uno de estos puntos es <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-id1165134216216" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext> </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+       <m:mi>b</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Escriba la forma general de una ecuación exponencial</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext> </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>b</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya el valor inicial 3 por </m:mtext><m:mi>a</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>12</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya el 12 por </m:mtext><m:mi>y</m:mi><m:mspace width="0.5em"/><m:mtext>y 2 por </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext> </m:mtext><m:mn>4</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre 3</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext> </m:mtext><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mn>2</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tome la raíz cuadrada</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137769996">Dado que nos limitamos a los valores positivos de <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> utilizaremos <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> Sustituya <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> en la forma estándar para obtener la ecuación <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+</example><note id="fs-id1165135169326" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_04_01_06">
+<problem id="fs-id1165135431682">
+<para id="fs-id1165135431684">Halle una ecuación para la función exponencial graficada en la <link target-id="CNX_Precalc_Figure_04_01_005"/>.</para>
+<figure id="CNX_Precalc_Figure_04_01_005" class="small">
+<media id="fs-id1165135206178" alt="Gráfico de función creciente con un punto etiquetado en (0, sqrt(2)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_01_005.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135191210">
+<para id="fs-id1165135191213"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mn>2 </m:mn>
+</m:msqrt>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msqrt>
+<m:mn>2 </m:mn>
+</m:msqrt>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Las respuestas pueden variar debido al error de redondeo. La respuesta debería estar muy cerca de <m:math>
+<m:mrow>
+<m:mn>1,4142</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,4142</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note><note id="fs-id1165137936929" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137936934"><emphasis>Dados dos puntos de la curva de una función exponencial, utilizar la calculadora gráfica para la ecuación.</emphasis></para>
+<list id="fs-id1165135369319" list-type="enumerated" number-style="arabic"><item>Pulse <emphasis>[STAT].</emphasis></item>
+<item>Borre las entradas existentes en las columnas <emphasis>L1</emphasis> o <emphasis>L2.</emphasis></item>
+<item>En <emphasis>L1</emphasis>, introduzca las coordenadas dadas de la <emphasis effect="italics">x</emphasis>.</item>
+<item>En <emphasis>L2</emphasis>, introduzca las correspondientes coordenadas de la <emphasis effect="italics">y</emphasis>.</item>
+<item>Pulse de nuevo <emphasis>[STAT] </emphasis>. Lleve el cursor a la derecha hasta <emphasis>CALC</emphasis>, desplácese hasta <emphasis>ExpReg (regresión exponencial)</emphasis>, y pulse <emphasis>[ENTER].</emphasis></item>
+<item>La pantalla muestra los valores de <emphasis effect="italics">a</emphasis> y <emphasis effect="italics">b</emphasis> en la ecuación exponencial <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⋅</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math>.</item>
+</list></note>
+
+<example id="Example_04_01_07">
+<exercise id="fs-id1165137748679">
+<problem id="fs-id1165137748681">
+<title>Usar la calculadora gráfica para una función exponencial</title>
+<para id="fs-id1165137748687">Utilice una calculadora gráfica para hallar la ecuación exponencial que incluya los puntos <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>24,8</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>198,4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137738185">
+<para id="fs-id1165137843706">Siga las directrices anteriores. Primero pulse <emphasis>[STAT]</emphasis>, <emphasis>[EDIT]</emphasis>, <emphasis>[1: Edit…], </emphasis>y borre las listas <emphasis>L1</emphasis> y <emphasis>L2</emphasis>. A continuación, en la columna <emphasis>L1</emphasis>, introduzca las coordenadas de la <emphasis effect="italics">x</emphasis>, 2 y 5. Haga lo mismo en la columna <emphasis>L2</emphasis> con las coordenadas de la <emphasis effect="italics">y</emphasis>, 24,8 y 198,4. </para>
+<para id="fs-id1165137639756">Ahora pulse <emphasis>[STAT]</emphasis>, <emphasis>[CALC]</emphasis>, <emphasis>[0: ExpReg] </emphasis>y presione <emphasis>[ENTER]</emphasis>. Los valores <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>6,2</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+</m:mrow>
+se mostrarán</m:math>. La ecuación exponencial es <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6,2</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mn>2</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137771710" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_07_01_07">
+<problem id="fs-id1165137656116">
+<para id="fs-id1165137656119">Utilice una calculadora gráfica para hallar la ecuación exponencial que incluye los puntos (3, 75,98) y (6, 481,07).</para>
+</problem>
+<solution id="fs-id1165137656124">
+<para id="fs-id1165137651684"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>≈</m:mo><m:mn>12</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>1,85</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137871708">
+<title>Aplicar la fórmula del interés compuesto</title>
+<para id="fs-id1165137447026">Los instrumentos de ahorro en los que las ganancias se reinvierten continuamente, como los fondos de inversión y las cuentas de jubilación, utilizan el <term id="term-00010">interés compuesto</term>. El término <emphasis effect="italics">compuesto</emphasis> se refiere a los intereses devengados no solo sobre el valor original, sino sobre el valor acumulado de la cuenta.</para><para id="fs-id1165137447037">La <term id="term-00011">tasa anual equivalente (TAE)</term> de una cuenta, también llamada <term id="term-00012">tasa nominal</term>, es el tipo de interés anual que devenga una cuenta de inversión. El término <emphasis effect="italics">nominal</emphasis> se utiliza cuando la capitalización se produce un número de veces distinto de una vez al año. De hecho, cuando se capitalizan los intereses más de una vez al año, ¡el tipo de interés efectivo acaba siendo <emphasis effect="italics">mayor</emphasis> que el nominal! Se trata de una poderosa herramienta para invertir.</para><para id="fs-id1165135160118">Podemos calcular el interés compuesto con la fórmula del interés compuesto, que es una función exponencial de las variables tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> capital <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> TAE <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y el número de periodos de capitalización en un año <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-986" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mi>e</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137935717">Por ejemplo, observe la <link target-id="Table_04_01_03"/>, que muestra el resultado de invertir 1.000 dólares al 10 % durante un año. Observe cómo el valor de la cuenta aumenta a medida que aumenta la frecuencia de la capitalización.</para><table id="Table_04_01_03" summary="Esta tabla tiene seis filas y dos columnas. La primera columna se denomina &quot;Frecuencia&quot; y la segunda, &quot;Valor después de 1 año&quot;. Al leer las filas de izquierda a derecha, tenemos que anualmente se valora a 100, semestralmente a 102,50, trimestralmente a 103,81, mensualmente a 104,71 y diariamente a 105,16.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+<entry align="center">Frecuencia</entry>
+<entry align="center">Valor después de 1 año</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">Anualmente</entry>
+<entry align="center">$1.100</entry>
+</row>
+<row>
+<entry align="center">Semestralmente</entry>
+<entry align="center">$1.102,50</entry>
+</row>
+<row>
+<entry align="center">Trimestralmente</entry>
+<entry align="center">$1.103,81</entry>
+</row>
+<row>
+<entry align="center">Mensualmente</entry>
+<entry align="center">$1.104,71</entry>
+</row>
+<row>
+<entry align="center">Diariamente</entry>
+<entry align="center">$1.105,16</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><note id="fs-id1165137793679">
+
+<title>La fórmula del interés compuesto</title>
+<para id="fs-id1165135184167">El <emphasis>interés compuesto</emphasis> puede calcularse mediante la fórmula</para>
+<equation id="fs-id1165135184172" class="unnumbered">
+  <label/><m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mi>e</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </equation><para id="eip-237">donde</para><list id="fs-id1165137448453">
+<item> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> es el valor de la cuenta,</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> se mide en años,</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math> es el importe inicial de la cuenta, a menudo denominado capital, o más generalmente valor actual,</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>r</m:mi>
+</m:mrow>
+</m:math> es la tasa anual equivalente (TAE) expresada en decimales, y</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math> es el número de periodos de capitalización en un año.</item>
+</list>
+</note>
+
+<example id="Example_04_01_08"><exercise id="fs-id1165135422940">
+<problem id="fs-id1165137812820">
+<title>Calcular el interés compuesto</title>
+<para id="fs-id1165137812825">Si invertimos 3.000 dólares en una cuenta de inversión que paga un 3 % de interés compuesto trimestralmente, ¿cuánto valdrá la cuenta dentro de 10 años?</para>
+</problem>
+<solution id="fs-id1165137812830">
+<para id="fs-id1165137812832">Dado que estamos empezando con 3.000 dólares, <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>=</m:mo><m:mn>3.000.</m:mn>
+</m:mrow>
+</m:math> Nuestro tipo de interés es del 3 %, por lo que <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mspace width="0.5em"/><m:mtext/><m:mo>=</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>0,03.</m:mn>
+</m:mrow>
+</m:math> Ya que capitalizamos trimestralmente, esto significa 4 veces al año, así que <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn>
+</m:mrow>
+</m:math> Queremos saber el valor de la cuenta en 10 años, por lo que buscamos <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> el valor cuando <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mspace width="0.5em"/><m:mtext/><m:mo>=</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>10.</m:mn>
+</m:mrow>
+</m:math> </para>
+<equation id="eip-id1402796" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+           <m:mi>r</m:mi>
+           <m:mi>n</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la fórmula del interés compuesto</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>3.000</m:mn><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mn>0,03</m:mn>
+           </m:mrow>
+           <m:mn>4</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>4⋅10</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya utilizando los valores dados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>≈</m:mo><m:mtext>$</m:mtext><m:mn>4.045,05</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Redondee a dos decimales</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137694040">La cuenta tendrá un valor de unos 4.045,05 dólares en 10 años.</para>
+</solution>
+</exercise>
+</example><note id="fs-id1165137694046" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_08">
+<problem id="fs-id1165137694055">
+<para id="fs-id1165135180428">Una inversión inicial de 100.000 dólares a un interés del 12 % se capitaliza semanalmente (utilice 52 semanas en un año). ¿Cuánto valdrá la inversión dentro de 30 años?</para>
+</problem>
+<solution id="fs-id1165135180434">
+<para id="fs-id1165135180436">unos 3.644.675,88 dólares</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_04_01_09"><exercise id="fs-id1165135180446"><problem id="fs-id1165135175321">
+<title>Usar la fórmula del interés compuesto para resolver el capital</title>
+<para id="fs-id1165135175327">El plan 529 es un plan de ahorro para la universidad que permite a los familiares invertir dinero para pagar la futura matrícula universitaria de un hijo; la cuenta crece libre de impuestos. Lily quiere crear una cuenta 529 para su nueva nieta y quiere que la cuenta crezca hasta 40.000 dólares en 18 años. Cree que la cuenta ganará un tipo de interés compuesto de 6 % semestralmente (dos veces al año). Al dólar más cercano, ¿cuánto tendrá que invertir Lily en la cuenta ahora?</para>
+</problem>
+<solution id="fs-id1165135175338">
+<para id="fs-id1165137664627">El tipo de interés nominal es del 6 %, por lo que <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,06.</m:mn>
+</m:mrow>
+</m:math> El interés se capitaliza dos veces al año, por lo que <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> </para>
+<para id="fs-id1165135209414">Queremos calcular la inversión inicial, <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> necesaria para que el valor de la cuenta sea de 40.000 dólares en <m:math>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+</m:math> años. Sustituya los valores dados en la fórmula del interés compuesto y resuelva para <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-id1165131884554" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+           <m:mi>r</m:mi>
+           <m:mi>n</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la fórmula del interés compuesto</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>40,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mn>0,06</m:mn>
+           </m:mrow>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>18</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:msup>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya utilizando los valores dados </m:mtext><m:mi>A</m:mi><m:mtext>, </m:mtext><m:mi>r</m:mi><m:mo>,</m:mo><m:mo> </m:mo><m:mi>n</m:mi><m:mtext>y </m:mtext><m:mi>t</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>40,000</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1,03</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>36</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplifique</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>40,000</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mn>1,03</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>36</m:mn>
+         </m:mrow>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>P</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aísle </m:mtext><m:mi>P</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>P</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>≈</m:mo><m:mtext>$</m:mtext><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>801</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida y redondee al dólar más cercano</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137937589">Lily tendrá que invertir 13.801 dólares para tener 40.000 dólares en 18 años.</para>
+</solution>
+</exercise></example><note id="fs-id1165137937596" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_9">
+<problem id="fs-id1165135176727">
+<para id="fs-id1165135176729">Consulte el <link target-id="Example_04_01_09"/>. Al dólar más cercano, ¿cuánto necesitaría invertir Lily si la cuenta se capitaliza trimestralmente?</para>
+</problem>
+<solution id="fs-id1165135176736">
+<para id="fs-id1165135176738">$13.693</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137724961"><title>Evaluar funciones con base <emphasis effect="italics">e</emphasis></title><para id="fs-id1165135684369">Como hemos visto anteriormente, el importe ganado en una cuenta aumenta a medida que aumenta la frecuencia de capitalización. La <link target-id="Table_04_01_04"/> muestra que el aumento de la capitalización anual a la semestral es mayor que el aumento de la mensual a la diaria. Esto podría llevarnos a preguntarnos si este patrón continuará.</para>
+<para id="fs-id1165135684377">Examine el valor de 1 dólar invertido al 100 % de interés durante 1 año, capitalizado a diversas frecuencias, que figuran en la <link target-id="Table_04_01_04"/>.</para><table id="Table_04_01_04" summary="La tabla tiene nueve filas y tres columnas. La primera columna se denomina &quot;Frecuencia&quot;, la segunda columna se denomina &quot;A(t)=(1+1/n)^x&quot; y la tercera columna se denomina &quot;Valor&quot;. Al leer las filas de izquierda a derecha, tenemos que Anualmente tiene el valor de entrada de (1+1/1)^1 que es igual a $2, y Semestralmente tiene el valor de entrada de (1+1/2)^2 que es igual a $2,25, Trimestralmente tiene el valor de entrada de (1+1/4)^4 que es igual a $2,441406, Mensualmente tiene el valor de entrada de (1+1/12)^12 que es igual a $2. 613035, Diariamente tiene el valor de entrada de (1+1/365)^365 que es igual a $2,714567, Por hora tiene el valor de entrada de (1+1/8766)^8766 que es igual a $2,718127, Uno por minuto tiene el valor de entrada de (1+1/525960)^525960 que es igual a $2,718279, y Una vez por segundo tiene el valor de entrada de (1+1/31557600)^31557600 que es igual a $2,718282.">
+<title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center">Frecuencia</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">Valor</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">Anualmente</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>1</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>1</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2</entry>
+</row>
+<row>
+<entry align="center">Semestralmente</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,25</entry>
+</row>
+<row>
+<entry align="center">Trimestralmente</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,441406</entry>
+</row>
+<row>
+<entry align="center">Mensualmente</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,613035</entry>
+</row>
+<row>
+<entry align="center">Diariamente</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,714567</entry>
+</row>
+<row>
+<entry align="center">Por hora</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mtext>8760</m:mtext>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mtext>8760</m:mtext>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,718127</entry>
+</row>
+<row>
+<entry align="center">Una vez por minuto</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mtext>525600</m:mtext>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mtext>525600</m:mtext>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,718279</entry>
+</row>
+<row>
+<entry align="center">Una vez por segundo</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>31536000</m:mn></m:mrow></m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>31536000</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </entry>
+<entry align="center">$2,718282</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para id="fs-id1165137828146">Estos valores parecen acercarse a un límite a medida que <m:math>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math> aumenta sin límites. De hecho, como <m:math>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math> aumenta cada vez más, la expresión <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> se acerca a un número utilizado con tanta frecuencia en matemáticas que hasta tiene su propio nombre: la letra <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Este valor es un número irracional, lo que significa que su expansión decimal se eterniza sin repetirse. A continuación, se muestra su aproximación con seis decimales.</para>
+
+<note id="fs-id1165135511324"><title>El número <m:math><m:mi>e</m:mi></m:math> </title>
+
+
+<para id="fs-id1165135511335">La letra <emphasis effect="italics">e</emphasis> representa el número irracional</para>
+<equation id="eip-id1165135378658" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>,</m:mo><m:mtext>dado que</m:mtext><m:mspace width="0.5em"/><m:mi>n</m:mi><m:mspace width="0.5em"/><m:mtext>aumenta sin límites</m:mtext>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165135369344">La letra <emphasis effect="italics">e </emphasis>se utiliza como base para muchos modelos exponenciales en el mundo real. Para trabajar con la base <emphasis effect="italics">e</emphasis>, utilizamos la aproximación, <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>≈</m:mo><m:mn>2,718282.</m:mn>
+</m:mrow>
+</m:math> El matemático suizo Leonhard Euler (1707-1783), nombró la constante, quien investigó y descubrió por primera vez muchas de sus propiedades.</para>
+</note><example id="Example_04_01_10">
+<exercise id="fs-id1165135344893"><problem id="fs-id1165135344895">
+<title>Usar la calculadora para hallar las potencias de <emphasis effect="italics">e</emphasis></title>
+<para id="fs-id1165135545973">Calcule <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>3,14</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Redondee a cinco decimales.</para>
+</problem>
+<solution id="fs-id1165135192743">
+<para id="fs-id1165135192745">En una calculadora, pulse el botón denominado <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> La ventana muestra <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mi>e</m:mi><m:mo>^</m:mo><m:mo stretchy="false">(</m:mo><m:mspace width="0.5em"/><m:mtext/>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Escriba <m:math>
+<m:mrow>
+<m:mn>3,14</m:mn>
+</m:mrow>
+</m:math> y luego cierre el paréntesis, <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mo stretchy="false">)</m:mo> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Pulse [ENTER]. Redondee a <m:math>
+<m:mrow>
+<m:mn>5</m:mn>
+</m:mrow>
+</m:math> decimales, <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>3,14</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>≈</m:mo><m:mn>23,10387.</m:mn>
+</m:mrow>
+</m:math> Precaución: Muchas calculadoras científicas tienen un botón "Exp", que se utiliza para introducir números en notación científica. No se utiliza para calcular potencias de <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137447188" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_01_10">
+<problem id="fs-id1165135348435">
+<para id="fs-id1165135348437">Utilice una calculadora para hallar <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Redondee a cinco decimales.</para>
+</problem>
+<solution id="fs-id1165135176286">
+<para id="fs-id1165135176288"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>0,5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>≈</m:mo><m:mn>0,60653</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137827923">
+<title>Investigar el crecimiento continuo</title>
+<para id="fs-id1165137827929">Hasta ahora hemos trabajado con bases racionales para funciones exponenciales. Sin embargo, en la mayoría de los fenómenos del mundo real, se utiliza <emphasis effect="italics">e </emphasis>como base de las funciones exponenciales. Los modelos exponenciales que utilizan <m:math>
+<m:mrow>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math> como base se denominan <emphasis effect="italics">modelos de crecimiento o decaimiento continuo</emphasis>. Vemos estos modelos en las finanzas, la informática y la mayoría de las ciencias, como la física, la toxicología y la dinámica de fluidos.</para>
+
+<note id="fs-id1165137664673">
+
+<title>La fórmula del crecimiento o decaimiento continuo</title>
+<para id="fs-id1165135453868">En todos los números reales <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y todos los números positivos <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> el crecimiento o decaimiento continuo se representa con la fórmula</para>
+
+<equation id="fs-id1165135536370" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>r</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+</m:mrow>
+</m:math> </equation><para id="eip-101">donde</para><list id="fs-id1165135152052" list-type="bulleted"><item> <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es el valor inicial,</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>r</m:mi>
+</m:mrow>
+</m:math> es la tasa de crecimiento continuo por unidad de tiempo,</item>
+<item>y <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> es el tiempo transcurrido.</item>
+</list><para id="fs-id1165135560686">Si los valores de <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math>, entonces la fórmula representa crecimiento continuo. Si los valores de <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math>, entonces la fórmula representa decaimiento continuo.</para>
+
+<para id="fs-id1165137812323">En las aplicaciones empresariales, la fórmula de crecimiento continuo se denomina fórmula de composición continua y adopta la forma</para>
+
+<equation id="eip-id1165134324899" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>r</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math>
+</equation><para id="eip-962">donde</para><list id="fs-id1165137827330" list-type="bulleted"><item> <m:math>
+<m:mrow>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math> es el capital o la inversión inicial,</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>r</m:mi>
+</m:mrow>
+</m:math> es la tasa de crecimiento o de interés por unidad de tiempo,</item>
+<item>y <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> es el periodo o plazo de la inversión.</item>
+</list></note><note id="fs-id1165135411368" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135411373"><emphasis>Dados el valor inicial, la tasa de crecimiento o decaimiento y el tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> resolver una función de crecimiento o decaimiento continuo.</emphasis></para><list id="fs-id1165135511371" list-type="enumerated" number-style="arabic"><item>Utilice la información del problema para determinar <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math>, el valor inicial de la función.</item>
+<item>Utilice la información del problema para determinar la tasa de crecimiento <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> <list id="fs-id1165135188096" list-type="enumerated" number-style="lower-alpha">
+<item>Si el problema se refiere al crecimiento continuo, entonces <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </item>
+<item>Si el problema se refiere al decaimiento continuo, entonces <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </item>
+</list>
+</item>
+<item>Utilice la información del problema para determinar el tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Sustituya la información dada en la fórmula de crecimiento continuo y resuelva para <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_04_01_11"><exercise id="fs-id1165137835464">
+<problem id="fs-id1165137835466">
+<title>Calcular el crecimiento continuo</title>
+<para id="fs-id1165137835472">Alguien invierte 1.000 dólares en una cuenta que devenga un tipo de interés nominal del 10 % anual, capitalizado continuamente. ¿Cuánto había en la cuenta al final de un año?</para>
+</problem>
+<solution id="fs-id1165137694203">
+<para id="fs-id1165137694205">Dado que el valor de la cuenta es creciente, se trata de un problema de composición continua con tasa de crecimiento <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,10.</m:mn>
+</m:mrow>
+</m:math> La inversión inicial fue de 1.000 dólares, por lo que <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>=</m:mo><m:mn>1000.</m:mn>
+</m:mrow>
+</m:math> Utilizamos la fórmula de capitalización continua para calcular el valor después de <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> año: </para>
+<equation id="eip-id1165133351794" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la fórmula de capitalización continua</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>1.000</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>e</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>0,1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya los valores conocidos por </m:mtext><m:mi>P</m:mi><m:mo>,</m:mo><m:mo> </m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>y </m:mtext><m:mi>t</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>≈</m:mo><m:mn>1.105,17</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice una calculadora para estimar</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137895288">La cuenta tiene un valor de 1.105,17 dólares al cabo de un año.</para>
+</solution>
+</exercise>
+</example><note id="fs-id1165137895295" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_04_01_11">
+<problem id="fs-id1165137895303">
+<para id="fs-id1165137895305">Alguien invierte 100.000 dólares a un tipo de interés nominal del 12 % anual, capitalizado continuamente. ¿Cuál será el valor de la inversión dentro de 30 años?</para>
+</problem>
+<solution id="fs-id1165134389976">
+<para id="fs-id1165134389978">$3.659.823,44</para>
+</solution>
+</exercise>
+</note><example id="Example_04_01_12"><exercise id="fs-id1165134389988">
+<problem id="fs-id1165134389990">
+<title>Calcular el decaimiento continuo</title>
+<para id="fs-id1165137803700">El radón 222 decae a un ritmo continuo del 17,3 % al día. ¿A cuánto ascenderán 100 mg de radón 222 en 3 días?</para>
+</problem>
+<solution id="fs-id1165137803706">
+<para id="fs-id1165137803708">Dado que la sustancia decae, la tasa, <m:math>
+<m:mrow>
+<m:mn>17,3</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math>, es negativa. Así que, <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mspace width="0.5em"/><m:mtext/><m:mo>=</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>- −</m:mo><m:mn>0,173.</m:mn>
+</m:mrow>
+</m:math> La cantidad inicial de radón 222 era de <m:math>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:math> mg, por lo que <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>100.</m:mn>
+</m:mrow>
+</m:math> Utilizamos la fórmula de decaimiento continuo para calcular el valor después de <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> días: </para>
+<equation id="eip-id1165137779893" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mi>r</m:mi><m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la fórmula de crecimiento continuo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>100</m:mn><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>0,173</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:msup>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya los valores conocidos por </m:mtext><m:mi>a</m:mi><m:mo>,</m:mo><m:mo> </m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>y </m:mtext><m:mi>t</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>≈</m:mo><m:mn>59,5115</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice una calculadora para estimar</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137697132">Por lo que quedarán 59,5115 mg de radón 222.</para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165135348462" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_04_01_12">
+<problem id="fs-id1165135348470">
+<para id="fs-id1165135348472">Con los datos del <link target-id="Example_04_01_12"/>, ¿cuánta cantidad de radón 222 quedará después de un año?</para>
+</problem>
+<solution id="fs-id1165135245732">
+<para id="fs-id1165135245734">3.77E-26 (Esta es la notación de la calculadora para el número escrito como <m:math>
+<m:mrow>
+<m:mn>3,77</m:mn><m:mo>×</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>26</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> en notación científica. Aunque la salida de una función exponencial nunca es cero, este número está tan cerca de cero que, a los efectos prácticos, podemos aceptar el cero como respuesta).</para>
+</solution>
+</exercise>
+</note><note id="fs-id1165135191186" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165135191191">Acceda a estos recursos en línea para obtener más información y practicar con las funciones exponenciales.</para>
+<list id="fs-id1165135191194" list-type="bulleted">
+<item><link url="http://openstax.org/l/expgrowth">Función de crecimiento exponencial</link></item>
+<item><link url="http://openstax.org/l/compoundint">Interés compuesto</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165135264762" class="key-equations"><title>Ecuaciones clave</title><table id="fs-id2306479" summary="..." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+
+<tbody>
+<row>
+<entry align="center">definición de la función exponencial</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>x</m:mi>
+  </m:msup>
+  <m:mtext>, donde  </m:mtext><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+<row>
+<entry align="center">definición de crecimiento exponencial</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>x</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>donde </m:mtext><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">fórmula del interés compuesto</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+           <m:mi>r</m:mi>
+           <m:mi>n</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+      <m:mo> </m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>donde</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.5em"/><m:mtext>es el valor de la cuenta en el tiempo </m:mtext><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>t</m:mi><m:mspace width="0.5em"/><m:mtext>es el número de años</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mspace width="0.5em"/><m:mtext>es la inversión inicial, a menudo denominada capital</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mspace width="0.5em"/><m:mtext>es la tasa anual equivalente (TAE) o tipo nominal</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>n</m:mi><m:mspace width="0.5em"/><m:mtext>es el número de periodos de capitalización en un año</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">fórmula de crecimiento continuo</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mi>t</m:mi>
+   </m:mrow>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>donde</m:mtext>
+ </m:mrow>
+</m:math> <newline/> <m:math>
+ <m:mi>t</m:mi>
+</m:math> es el número de periodos de tiempo unitarios de crecimiento <newline/> <m:math>
+ <m:mi>a</m:mi>
+</m:math> es el importe inicial (en la fórmula de capitalización continua, a se sustituye por P, que es el importe de capital) <newline/> <m:math>
+ <m:mi>e</m:mi>
+</m:math> es la constante matemática, <m:math>
+ <m:mrow><m:mi>e</m:mi><m:mo>≈</m:mo><m:mn>2,718282</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165137846440" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137846446" list-type="bulleted">
+<item>La función exponencial se define como aquella con una constante positiva distinta de <m:math>
+<m:mrow>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:math> elevado a un exponente variable. Vea el <link target-id="Example_04_01_01"/>.</item>
+<item>Una función se evalúa al resolver en un valor específico. Vea el <link target-id="Example_04_01_02"/> y el <link target-id="Example_04_01_03"/>.</item>
+<item>Se puede encontrar un modelo exponencial cuando se conocen la tasa de crecimiento y el valor inicial. Vea el <link target-id="Example_04_01_04"/>.</item>
+<item>Se puede encontrar un modelo exponencial cuando se conocen los dos puntos de datos del modelo. Vea el <link target-id="Example_04_01_05"/>.</item>
+<item>Se puede encontrar un modelo exponencial cuando se utilizan dos puntos de datos del gráfico del modelo. Vea el <link target-id="Example_04_01_06"/>.</item>
+<item>Se puede encontrar un modelo exponencial cuando se utilizan dos puntos de datos del gráfico y una calculadora. Vea el <link target-id="Example_04_01_07"/>.</item>
+<item>El valor de una cuenta en cualquier momento <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> puede calcularse mediante la fórmula del interés compuesto cuando se conocen el importe de capital, el tipo de interés anual y los periodos de capitalización. Vea el <link target-id="Example_04_01_08"/>.</item>
+<item>La inversión inicial de una cuenta puede hallarse con la fórmula del interés compuesto cuando se conocen el valor de la cuenta, el tipo de interés anual, los periodos de capitalización y la duración de la cuenta. Vea el <link target-id="Example_04_01_09"/>.</item>
+<item>El número <m:math>
+<m:mrow>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math> es una constante matemática que se utiliza a menudo como base de los modelos de crecimiento y decaimiento exponencial en el mundo real. Su aproximación decimal es <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>≈</m:mo><m:mn>2,718282.</m:mn>
+</m:mrow>
+</m:math> </item>
+<item>Las calculadoras científicas y gráficas tienen la clave <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow> <m:mo>]</m:mo></m:mrow>
+</m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mi>exp</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow> <m:mo>]</m:mo></m:mrow>
+</m:mrow>
+</m:math> para calcular las potencias de <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Vea el <link target-id="Example_04_01_10"/><emphasis>.</emphasis></item>
+<item>Los modelos de crecimiento o decaimiento continuo son modelos exponenciales que utilizan <m:math>
+<m:mrow>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math> como base. Los modelos de crecimiento y decaimiento continuo pueden encontrarse cuando se conocen el valor inicial y la tasa de crecimiento o decaimiento. Vea el <link target-id="Example_04_01_11"/> y el <link target-id="Example_04_01_12"/>.</item>
+</list></section>
+
+<section id="fs-id1165137406918" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165137406922">
+<title>Verbales</title>
+<exercise id="fs-id1165137406928">
+<problem id="fs-id1165137406930">
+<para id="fs-id1165137406932">Explique por qué los valores de una función exponencial creciente acabarán superando los de una función lineal creciente.</para>
+</problem>
+<solution id="fs-id1165137406938">
+<para id="fs-id1165137406940">Las funciones lineales tienen una tasa de cambio constante. Las funciones exponenciales aumentan con base en un porcentaje del original.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135536244">
+<problem id="fs-id1165135536246">
+<para id="fs-id1165135536249">Dada una fórmula para una función exponencial, ¿es posible determinar si la función crece o decae exponencialmente con tan solo mirar la fórmula? Explique.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135536255">
+<problem id="fs-id1165135536258">
+<para id="fs-id1165135536260">El diccionario Oxford define la palabra <emphasis effect="italics">nominal</emphasis> como un valor "declarado o expresado, pero que no necesariamente corresponde exactamente al valor real".<footnote id="fs-id1165135189873">Diccionario Oxford. http://oxforddictionaries.com/us/definition/american_english/nomina.</footnote> Desarrolle un argumento razonable de por qué el término <emphasis effect="italics">tasa nominal</emphasis> se utiliza para describir la tasa anual equivalente de una cuenta de inversión que capitaliza el interés.</para></problem>
+<solution id="fs-id1165135189885">
+<para id="fs-id1165135189887">Cuando se capitaliza el interés, el porcentaje de los intereses devengados sobre el capital acaba siendo mayor que la tasa anual equivalente de la cuenta de inversión. Así pues, la tasa anual equivalente no corresponde necesariamente al interés real devengado, que es la propia definición de <emphasis effect="italics">nominal</emphasis>.</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165134340071">
+<title>Algebraicos </title>
+<para id="fs-id1165134340076">En los siguientes ejercicios, identifique si el enunciado representa una función exponencial. Explique.</para>
+
+<exercise id="fs-id1165134340080">
+<problem id="fs-id1165134340082">
+<para id="fs-id1165134340084">El aumento promedio anual de la población de una manada de lobos es de 25.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137737593">
+<problem id="fs-id1165137737595">
+<para id="fs-id1165137737598">Una población de bacterias disminuye en un factor de <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> cada <m:math>
+<m:mrow>
+<m:mn>24</m:mn>
+</m:mrow>
+</m:math> horas.</para>
+</problem>
+<solution id="fs-id1165137416069">
+<para id="fs-id1165135582265">exponencial; la población disminuye a una tasa proporcional.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135582271">
+<problem id="fs-id1165135582273">
+<para id="fs-id1165135582275">El valor de una colección de monedas ha aumentado en <m:math>
+<m:mrow>
+<m:mn>3,25</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> anualmente en los últimos <m:math>
+<m:mrow>
+<m:mn>20</m:mn>
+</m:mrow>
+</m:math> años.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135414352">
+<problem id="fs-id1165135414354">
+<para id="fs-id1165135318974">Por cada sesión de entrenamiento, un entrenador personal cobra a sus clientes <m:math>
+<m:mrow>
+<m:mtext>$</m:mtext><m:mn>5</m:mn>
+</m:mrow>
+</m:math> menos que la sesión de entrenamiento anterior.</para></problem>
+<solution id="fs-id1165135318995">
+<para id="fs-id1165135318997">no es exponencial; la carga disminuye en una cantidad constante en cada visita, por lo que el enunciado representa una función lineal.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135191053">
+<problem id="fs-id1165135191056">
+<para id="fs-id1165135191058">La altura de un proyectil en el tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> viene representada por la función <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>4,9</m:mn><m:msup>
+<m:mi>t</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>18</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>40.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137767849">En los siguientes ejercicios, considere este escenario: Por cada año <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la población de un bosque de árboles viene representada por la función <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>115</m:mn><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>1,025</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> En un bosque vecino, la población del mismo tipo de árbol viene representada por la función <m:math>
+<m:mrow>
+<m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>82</m:mn><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>1,029</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> (Redondee las respuestas al número entero más cercano).</para>
+
+<exercise id="fs-id1165135570343">
+<problem id="fs-id1165135570345">
+<para id="fs-id1165135570347">¿Cuál es el bosque cuya población crece más rápidamente?</para>
+</problem>
+<solution id="fs-id1165135570352">
+<para id="fs-id1165135570355">El bosque representado por la función <m:math>
+ <m:mrow><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>82</m:mn><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>1,029</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>t</m:mi>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165134049940">
+<problem id="fs-id1165134049942">
+<para id="fs-id1165137755646">¿Qué bosque tenía inicialmente un mayor número de árboles? ¿Por cuántos?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137755651">
+<problem id="fs-id1165137755653">
+<para id="fs-id1165137755656">Suponiendo que los modelos de crecimiento de la población sigan representando el crecimiento de los bosques, ¿qué bosque tendrá un mayor número de árboles después de <m:math>
+<m:mrow>
+<m:mn>20</m:mn>
+</m:mrow>
+</m:math> años? ¿Por cuántos?</para>
+</problem>
+<solution id="fs-id1165137761058">
+<para id="fs-id1165137761061">Después de <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>20</m:mn>
+</m:mrow>
+</m:math> años, el bosque A tendrá <m:math>
+<m:mrow>
+<m:mn>43</m:mn>
+</m:mrow>
+</m:math> más árboles que el bosque B.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135508291">
+<problem id="fs-id1165135508293">
+<para id="fs-id1165135508295">Suponiendo que los modelos de crecimiento de la población sigan representando el crecimiento de los bosques, ¿qué bosque tendrá un mayor número de árboles después de <m:math>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:math> años? ¿Por cuántos?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137828270">
+<problem id="fs-id1165137828272">
+<para id="fs-id1165137828274">Analice los resultados de los cuatro ejercicios anteriores. Suponiendo que los modelos de crecimiento demográfico sigan representando el crecimiento de los bosques, ¿qué bosque tendrá mayor número de árboles a largo plazo? ¿Por qué? ¿Cuáles son los factores que influirían en la validez a largo plazo del modelo de crecimiento exponencial?</para>
+</problem>
+<solution id="fs-id1165137407578">
+<para id="fs-id1165137407580">Las respuestas variarán. Respuesta de muestra: Durante algunos años, la población del bosque A superará cada vez más al bosque B. Sin embargo, dado que el bosque B crece en realidad a un ritmo más rápido, la población acabará siendo mayor que la del bosque A y se mantendrá así mientras se mantengan los modelos de crecimiento demográfico. Algunos factores que influirían en la validez a largo plazo del modelo de crecimiento exponencial son la sequía, una plaga que elimine la población y otros factores ambientales y biológicos.</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137407590">En los siguientes ejercicios, determine si la ecuación representa crecimiento exponencial, decaimiento exponencial o ninguno de los dos. Explique.</para>
+
+<exercise id="fs-id1165137407594">
+<problem id="fs-id1165137407597">
+<para id="fs-id1165135560752"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>300</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>-</m:mo><m:mi>t</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135252048">
+<problem id="fs-id1165135252050">
+<para id="fs-id1165135252052"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>220</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,06</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135209944">
+<para id="fs-id1165135209946">crecimiento exponencial; el factor de crecimiento, <m:math>
+<m:mrow>
+<m:mn>1,06</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> es mayor que <m:math>
+<m:mrow>
+<m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137806960">
+<problem id="fs-id1165137806962">
+<para id="fs-id1165137806964"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>16,5</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,025</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135519282">
+<problem id="fs-id1165135519284">
+<para id="fs-id1165135519286"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>701</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0,97</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135397288">
+<para id="fs-id1165135397290">decaimiento exponencial; el factor de decaimiento, <m:math>
+<m:mrow>
+<m:mn>0,97</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> está entre <m:math>
+<m:mrow>
+<m:mn>0</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165135176427">En los siguientes ejercicios, halle la fórmula de una función exponencial que pase por los dos puntos dados.</para>
+
+<exercise id="fs-id1165135176432">
+<problem id="fs-id1165135176434">
+<para id="fs-id1165135176436"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>750</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137770026">
+<problem id="fs-id1165137770029">
+<para id="fs-id1165137770031"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2000</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137735589">
+<para id="fs-id1165135478535"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2000</m:mn><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>0,1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135189914">
+<problem id="fs-id1165135189916">
+<para id="fs-id1165135189919"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mn>24</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137400553">
+<problem id="fs-id1165137400555">
+<para id="fs-id1165137400557"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165135187318">
+<para id="fs-id1165135187320"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>2,93</m:mn><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>0,699</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135180070">
+<problem id="fs-id1165135180073">
+<para id="fs-id1165135180075"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165134154588">En los siguientes ejercicios, determine si la tabla puede representar una función lineal, exponencial o ninguna de las dos. Si resulta ser exponencial, halle una función que pase por los puntos.</para>
+
+<exercise id="fs-id1165134154593">
+<problem id="fs-id1165134154595">
+<table id="fs-id1165134154597" summary="" class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3 </entry>
+<entry align="center">4 </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">70</entry>
+<entry align="center">40</entry>
+<entry align="center">10</entry>
+<entry align="center">-20</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137680442">
+<para id="fs-id1165137680445">Lineal</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137680450">
+<problem id="fs-id1165137680452">
+<table id="fs-id1165137680454" summary="" class="unnumbered"><label/><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3 </entry>
+<entry align="center">4 </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">70</entry>
+<entry align="center">49</entry>
+<entry align="center">34,3</entry>
+<entry align="center">24,01</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-id1165135237063">
+<problem id="fs-id1165135237065">
+<table id="fs-id1165135237067" summary="" class="unnumbered"><label/><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3 </entry>
+<entry align="center">4 </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">80</entry>
+<entry align="center">61</entry>
+<entry align="center">42,9</entry>
+<entry align="center">25,61</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137761697">
+<para id="fs-id1165137761699">Ninguna de las dos</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137761705"><problem id="fs-id1165137761707">
+<table id="fs-id1165137761709" summary="" class="unnumbered"><label/>
+<title/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3 </entry>
+<entry align="center">4 </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">10</entry>
+<entry align="center">20</entry>
+<entry align="center">40</entry>
+<entry align="center">80</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise><exercise id="fs-id1165135161247">
+<problem id="fs-id1165135161249">
+<table id="fs-id1165137749151" summary="" class="unnumbered"><label/><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3 </entry>
+<entry align="center">4 </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">-3,25</entry>
+<entry align="center">2</entry>
+<entry align="center">7,25</entry>
+<entry align="center">12,5</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137874537">
+<para id="fs-id1165137874539">Lineal</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137874544">En los siguientes ejercicios, utilice la fórmula del interés compuesto, <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<exercise id="fs-id1165135435597">
+<problem id="fs-id1165135435599">
+<para id="fs-id1165135435601">Al cabo de un determinado número de años, el valor de una cuenta de inversión viene representado por la ecuación <m:math>
+<m:mrow><m:mi>A</m:mi><m:mo>=</m:mo>
+<m:mn>10</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>0,04</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>120</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> ¿Cuál es el valor de la cuenta?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135527075">
+<problem id="fs-id1165135527077">
+<para id="fs-id1165135527079">¿Cuál fue el depósito inicial realizado en la cuenta en el ejercicio anterior?</para>
+</problem>
+<solution id="fs-id1165135527084">
+<para id="fs-id1165135527086"> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>250</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134042860">
+<problem id="fs-id1165134042862">
+<para id="fs-id1165134042865">¿Cuántos años llevaba la cuenta del ejercicio anterior acumulando intereses?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134042870">
+<problem id="fs-id1165134042872">
+<para id="fs-id1165134042874">Se abre una cuenta con un depósito inicial de 6.500 dólares y se devenga <m:math>
+<m:mrow>
+<m:mn>3,6</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> de interés compuesto semestralmente. ¿Qué valor tendrá la cuenta en <m:math>
+<m:mrow>
+<m:mn>20</m:mn>
+</m:mrow>
+</m:math> años?</para>
+</problem>
+<solution id="fs-id1165137749553">
+<para id="fs-id1165137749555"> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>268,58</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135196890">
+<problem id="fs-id1165135196892">
+<para id="fs-id1165135196894">¿Cuánto más habría valido la cuenta del ejercicio anterior si los intereses se acumularan semanalmente?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135196900">
+<problem id="fs-id1165135196902">
+<para id="fs-id1165137831959">Resuelva la fórmula del interés compuesto para el importe de capital, <m:math>
+<m:mrow>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math>.</para>
+</problem>
+<solution id="fs-id1165137831975">
+<para id="fs-id1165137831977"> <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>n</m:mi><m:mi>e</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134234548">
+<problem id="fs-id1165134234550">
+<para id="fs-id1165134234552">Utilice la fórmula determinada en el ejercicio anterior para calcular el depósito inicial de una cuenta que vale <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>14</m:mn><m:mo>,</m:mo><m:mn>472,74</m:mn>
+</m:mrow>
+</m:math> después de devengar <m:math>
+<m:mrow>
+<m:mn>5,5</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> de interés compuesto mensualmente para <m:math>
+<m:mrow>
+<m:mn>5</m:mn>
+</m:mrow>
+</m:math> años. (Redondee al dólar más cercano).</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135415804">
+<problem id="fs-id1165135415806">
+<para id="fs-id1165135415808">Cuánto más valdría la cuenta de los dos ejercicios anteriores si devengara intereses por <m:math>
+<m:mrow>
+<m:mn>5</m:mn>
+</m:mrow>
+</m:math> años más?</para>
+</problem>
+<solution id="fs-id1165135415827">
+<para id="fs-id1165135415829"> <m:math>
+ <m:mrow>
+  <m:mi>$</m:mi><m:mn>4.572,56</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135528933">
+<problem id="fs-id1165135528935">
+<para id="fs-id1165135528937">Utilice las propiedades de los exponentes racionales para resolver la fórmula del interés compuesto para el tipo de interés, <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137836684">
+<problem id="fs-id1165137836687">
+<para id="fs-id1165137836689">Utilice la fórmula determinada en el ejercicio anterior para calcular el tipo de interés de una cuenta que se capitalizaba semestralmente, con un depósito inicial de 9.000 dólares y ascendía a 13.373,53 dólares después de 10 años.</para></problem>
+<solution id="fs-id1165135487075">
+<para id="fs-id1165135487077"> <m:math>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134071602">
+<problem id="fs-id1165134071604">
+<para id="fs-id1165134071606">Utilice la fórmula determinada en el ejercicio anterior para calcular el tipo de interés de una cuenta que se capitalizaba mensualmente, con un depósito inicial de 5.500 dólares y ascendía a 38.455 dólares después de 30 años.</para></problem>
+</exercise>
+
+<para id="fs-id1165135441763">En los siguientes ejercicios, determine si la ecuación representa el crecimiento continuo, el decaimiento continuo o ninguno de los dos. Explique.</para>
+
+<exercise id="fs-id1165135441768">
+<problem id="fs-id1165135441770">
+<para id="fs-id1165135441772"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3742 </m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>e</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>0,75</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135336087">
+<para id="fs-id1165135336089">crecimiento continuo; la tasa de crecimiento es mayor que <m:math>
+<m:mrow>
+<m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135336105">
+<problem id="fs-id1165135336107">
+<para id="fs-id1165135336109"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>150</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>e</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>3,25</m:mn>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135545718">
+<problem id="fs-id1165135545721">
+<para id="fs-id1165135545723"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2,25</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>e</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135191882">
+<para id="fs-id1165135191884">decaimiento continuo; la tasa de crecimiento es inferior a <m:math>
+<m:mrow>
+<m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135191900">
+<problem id="fs-id1165135191902">
+<para id="fs-id1165135191904">Supongamos que se abre una cuenta de inversión con un depósito inicial de <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+</m:mrow>
+</m:math> devengando <m:math>
+<m:mrow>
+<m:mn>7,2</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> de interés compuesto continuamente. ¿Cuánto valdrá la cuenta después de <m:math>
+<m:mrow>
+<m:mn>30</m:mn>
+</m:mrow>
+</m:math> años?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135471130">
+<problem id="fs-id1165135471132">
+<para id="fs-id1165135471134">¿Cuánto menos valdría la cuenta del ejercicio 42 después de <m:math>
+<m:mrow>
+<m:mn>30</m:mn>
+</m:mrow>
+</m:math> años si se capitaliza mensualmente en su lugar?</para>
+</problem>
+<solution id="fs-id1165135190851">
+<para id="fs-id1165135190853"> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>669,42</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+
+</section>
+<section id="fs-id1165135190869">
+<title>Numéricos</title>
+<para id="fs-id1165135421696">En los siguientes ejercicios, evalúe cada función. Redondee las respuestas a cuatro decimales, si es necesario.</para>
+
+<exercise id="fs-id1165135421700">
+<problem id="fs-id1165135421702">
+<para id="fs-id1165135421704"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137811660">
+<problem id="fs-id1165137811662">
+<para id="fs-id1165135245591"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135415781">
+<para id="fs-id1165135415783"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135593586">
+<problem id="fs-id1165135593588">
+<para id="fs-id1165135593590"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135185903">
+<problem id="fs-id1165135185905">
+<para id="fs-id1165135185907"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135500970">
+<para id="fs-id1165135500972"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mo>- −</m:mo><m:mn>0,2707</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135508316">
+<problem id="fs-id1165135508318">
+<para id="fs-id1165135508320"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2,7</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>4</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1,5</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165134222572">
+<problem id="fs-id1165134222574">
+<para id="fs-id1165134222576"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1,2</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>0,3</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135510681">
+<para id="fs-id1165135510683"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>483,8146</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137749955">
+<problem id="fs-id1165137749957">
+<para id="fs-id1165137749959"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165137843692">
+<title>En tecnología </title>
+<para id="fs-id1165137843697">En los siguientes ejercicios, utilice una calculadora gráfica para hallar la ecuación de una función exponencial dados los puntos en la curva.</para>
+
+<exercise id="fs-id1165137843702">
+<problem id="fs-id1165137843704">
+<para id="fs-id1165135251278"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>375</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137715431">
+<para id="fs-id1165137715433"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mn>5</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137740770">
+<problem id="fs-id1165137740772">
+<para id="fs-id1165137740775"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>222,62</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>77,456</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135209922">
+<problem id="fs-id1165135209924">
+<para id="fs-id1165135209926"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>29,495</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>150</m:mn><m:mo>,</m:mo><m:mn>730,89</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135347282">
+<para id="fs-id1165135347284"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>≈</m:mo><m:mn>18</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>1,025</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135409820">
+<problem id="fs-id1165135409822">
+<para id="fs-id1165135409824"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2,909</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>0,005</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135545870">
+<problem id="fs-id1165135545872">
+<para id="fs-id1165135545874"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>11.310,035</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>25,356365.2</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135255110">
+<para id="fs-id1165135255112"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>≈</m:mo><m:mn>0,2</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>1,95</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+
+</section>
+<section id="fs-id1165134388205">
+<title>Extensiones </title>
+
+<exercise id="fs-id1165134388210">
+<problem id="fs-id1165134388212">
+<para id="fs-id1165134388214">El <emphasis effect="italics">porcentaje de rendimiento anual</emphasis> (annual percentage yield, APY) de una cuenta de inversión es una representación del tipo de interés real obtenido en una cuenta de capitalización. Se basa en un período de capitalización de un año. Demuestre que el APY de una cuenta que se capitaliza mensualmente se puede determinar con la fórmula <m:math>
+<m:mrow>
+<m:mtext>APY</m:mtext><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135499889">
+<problem id="fs-id1165135499891">
+<para id="fs-id1165135499893">Repita el ejercicio anterior para hallar la fórmula del APY en una cuenta que se capitaliza diariamente. Utilice los resultados de este ejercicio y del anterior para desarrollar una función <m:math>
+<m:mrow>
+<m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> para el APY de cualquier cuenta que capitalice <m:math>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math> veces al año.</para>
+</problem>
+<solution id="fs-id1165135530489">
+<para id="fs-id1165135530491"> <m:math>
+<m:mrow>
+<m:mtext>APY</m:mtext><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mi>a</m:mi>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>365</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:msup>
+<m:mo>-</m:mo><m:mi>a</m:mi>
+</m:mrow>
+<m:mi>a</m:mi>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>a</m:mi><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>1</m:mn>
+</m:mrow> <m:mo>]</m:mo></m:mrow>
+</m:mrow>
+<m:mi>a</m:mi>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>365</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135408530">
+<problem id="fs-id1165135408533">
+<para id="fs-id1165135408535">Recordemos que la función exponencial es cualquier ecuación escrita en la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⋅</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>a</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>b</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:math> son números positivos y <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1.</m:mn><m:mo> </m:mo>
+</m:mrow>
+</m:math> Cualquier número positivo <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>b</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:math> puede escribirse como <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo> </m:mo>
+</m:mrow>
+</m:math> para algún valor de <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>n</m:mi>
+</m:mrow>
+</m:math>. Utilice este hecho para reescribir la fórmula de una función exponencial que emplee el número <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>e</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:math> como base.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165134108543">
+<problem id="fs-id1165134108546">
+<para id="fs-id1165134108548">En una función de decaimiento exponencial, la base del exponente es un valor entre 0 y 1. Por lo tanto, para algún número <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>></m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la función de decaimiento exponencial puede escribirse como <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>b</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Utilice esta fórmula, junto con el hecho de que <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> para demostrar que una función de decaimiento exponencial adopta la forma <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>e</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>n</m:mi><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> para algún número positivo <m:math>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:math>.</para></problem>
+<solution id="fs-id1165135661465">
+<para id="fs-id1165135661467">Supongamos que <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> es la función de decaimiento exponencial <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>b</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>></m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> Entonces para algún número <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>b</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>n</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>e</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>n</m:mi><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137848892">
+<problem id="fs-id1165137848894">
+<para id="fs-id1165137848897">La fórmula del importe <m:math>
+<m:mrow>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math> en una cuenta de inversión con un tipo de interés nominal <m:math>
+<m:mrow>
+<m:mi>r</m:mi>
+</m:mrow>
+</m:math> en cualquier tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> viene dada por <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>e</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>r</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math> es la cantidad de capital depositada inicialmente en una cuenta que se capitaliza continuamente. Demuestre que el porcentaje de los intereses devengados con respecto al capital en cualquier momento <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> se puede calcular con la fórmula <m:math>
+<m:mrow>
+<m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>r</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+</section>
+<section id="fs-id1165137705181">
+<title>Aplicaciones en el mundo real</title>
+
+<exercise id="fs-id1165137705187">
+<problem id="fs-id1165137705189">
+<para id="fs-id1165137705191">La población de zorros de una determinada región tiene una tasa de crecimiento anual del 9 %. En el año 2012, se contabilizaron 23.900 zorros en la zona. ¿Cuál es la población de zorros prevista para el año 2020?</para></problem>
+<solution id="fs-id1165135205873">
+<para id="fs-id1165135434782"> <m:math>
+<m:mrow>
+<m:mn>47</m:mn><m:mo>,</m:mo><m:mn>622</m:mn>
+</m:mrow>
+</m:math> zorros.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135434802">
+<problem id="fs-id1165135434804">
+<para id="fs-id1165135434806">Un científico comienza con 100 miligramos de una sustancia radiactiva que decae exponencialmente. Después de 35 horas, quedan 50 mg de la sustancia. ¿Cuántos miligramos quedarán después de 54 horas?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135236978">
+<problem id="fs-id1165135236980">
+<para id="fs-id1165135236982">En el año 1985, una casa estaba valorada en 110.000 dólares. En el año 2005, se había revalorizado hasta los 145.000 dólares. ¿Cuál fue la tasa de crecimiento anual entre 1985 y 2005? Supongamos que el valor siguió creciendo en el mismo porcentaje. ¿Cuál era el valor de la casa en el año 2010?</para></problem>
+<solution id="fs-id1165134086071">
+<para id="fs-id1165134086074"> <m:math>
+<m:mrow>
+<m:mn>1,39</m:mn><m:mi>%</m:mi><m:mo>;</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>155</m:mn><m:mo>,</m:mo><m:mn>368,09</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135432945">
+<problem id="fs-id1165135432947">
+<para id="fs-id1165135432949">Un automóvil fue valorado en 38.000 dólares en el año 2007. En 2013, se había depreciado hasta los 11.000 dólares Si sigue bajando en el mismo porcentaje, ¿cuál será su valor en 2017?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135176224">
+<problem id="fs-id1165135176226">
+<para id="fs-id1165135176228">Jaylen quiere ahorrar 54.000 dólares para la cuota inicial de una casa. ¿Cuánto tendrá que invertir en una cuenta a una TAE al 8,2 %, con capitalización diaria, para alcanzar su objetivo en 5 años?</para></problem>
+<solution id="fs-id1165135208510">
+<para id="fs-id1165135208512"> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>35</m:mn><m:mo>,</m:mo><m:mn>838,76</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135311577">
+<problem id="fs-id1165135311579">
+<para id="fs-id1165135311581">Kyoko tiene 10.000 dólares que quiere invertir. Su banco tiene varias cuentas de inversión para elegir, todas ellas con capitalización diaria. Su objetivo es tener 15.000 dólares para cuando termine sus estudios de posgrado dentro de 6 años. ¿Cuál debería ser el tipo de interés anual mínimo para alcanzar su objetivo? <emphasis effect="italics">(Pista</emphasis>: resuelva la fórmula del interés compuesto para el tipo de interés).</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135337738">
+<problem id="fs-id1165135337740">
+<para id="fs-id1165135337742">Alyssa abrió una cuenta de jubilación a una TAE de 7,25 % en el año 2000. Su depósito inicial fue de 13.500 dólares. ¿Cuánto valdrá la cuenta en 2025 si los intereses se capitalizan mensualmente? ¿Cuánto más ganaría si los intereses se capitalizaran continuamente?</para></problem>
+<solution id="fs-id1165135567423">
+<para id="fs-id1165135567426"> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>82</m:mn><m:mo>,</m:mo><m:mn>247,78</m:mn><m:mo>;</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>$</m:mi><m:mn>449,75</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135567460">
+<problem id="fs-id1165135567462">
+<para id="fs-id1165135567464">Se ha abierto una cuenta de inversión con un tipo de interés anual del 7 %, con un depósito inicial de 4.000 dólares. Compare los valores de la cuenta después de 9 años, con los intereses capitalizados anualmente, trimestralmente, mensualmente y de forma continua.</para></problem>
+</exercise>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1165135397912">
+<term>tasa anual equivalente (TAE)</term>
+<meaning id="fs-id1165135397918">el tipo de interés anual que se devenga en una cuenta de inversión, también llamada <emphasis effect="italics">tasa nominal</emphasis></meaning>
+</definition>
+
+<definition id="fs-id1165135397926">
+<term>interés compuesto</term>
+<meaning id="fs-id1165135397932">los intereses devengados sobre el saldo total, no solo en el importe de capital</meaning>
+</definition>
+
+<definition id="fs-id1165137838635">
+<term>crecimiento exponencial</term>
+<meaning id="fs-id1165137838640">un modelo que crece con una tasa proporcional al importe presente</meaning>
+</definition>
+
+<definition id="fs-id1165137838644">
+<term>tasa nominal</term>
+<meaning id="fs-id1165137838650">el tipo de interés anual que se devenga en una cuenta de inversión, también llamada <emphasis effect="italics">tasa anual equivalente</emphasis></meaning>
+</definition>
+</glossary>
+</document>

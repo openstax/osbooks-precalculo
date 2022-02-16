@@ -1,0 +1,3366 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Dominio y rango</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49304</md:content-id>
+  <md:title>Dominio y rango</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Halle el dominio de una función definida por una ecuación.</item>
+<item>Graficar funciones definidas por partes.</item>
+</list></md:abstract>
+  <md:uuid>1ca91f2c-f989-40da-b8cc-b930d5c0ad36</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165137404978">Las películas de terror y de suspenso son populares y, muy a menudo, muy rentables. Cuando se incluyen actores de gran presupuesto, lugares de rodaje y efectos especiales, los estudios cuentan con una audiencia aún mayor para tener éxito. Consideremos cinco grandes obras de suspenso/terror de principios del siglo XXI: <emphasis effect="italics">Soy Leyenda</emphasis>, <emphasis effect="italics">Hannibal</emphasis>, <emphasis effect="italics">El Aro</emphasis>, <emphasis effect="italics">La Maldición</emphasis> y <emphasis effect="italics">El Conjuro</emphasis>. La <link target-id="Figure_01_02_001"/> muestra la cantidad en dólares que recaudó cada una de esas películas cuando se estrenaron, así como la venta de entradas para las películas de terror en general por año. Observe que podemos utilizar los datos para crear una función de la cantidad que ganó cada película o el total de ventas de entradas de todas las películas de terror por año. Al crear varias funciones utilizando los datos, podemos identificar diferentes variables dependientes e independientes, y podemos analizar los datos y las funciones para determinar el <term class="no-emphasis" id="term-00001">dominio</term> y el rango. En esta sección, investigaremos métodos para determinar el dominio y el rango de funciones como estas.</para><figure id="Figure_01_02_001">
+<media id="fs-id1165135435537" alt="Dos gráficas donde la primera es la de las cinco películas de terror más taquilleras de los años 2000 a 2003 y la de la participación en el mercado de las películas de terror por año">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_001-f298.jpg"/>
+</media>
+<caption>Basado en datos recopilados por www.the-numbers.com.<footnote id="fs-id1165137758551">The Numbers: Donde los datos y el negocio del cine se encuentran. "Box Office History for Horror Movies” (Historial de la taquilla de las películas de terror). http://www.the-numbers.com/market/genre/Horror. Consultado el 24/3/2014</footnote></caption>
+</figure>
+
+<section id="fs-id1165135193832">
+<title>Halle el dominio de una función definida por una ecuación.</title>
+<para id="fs-id1165135445896">En <link document="m49301">Funciones y notación de funciones</link>, se introdujeron los conceptos de <term class="no-emphasis" id="term-00002">dominio y rango</term>. En esta sección, practicaremos la determinación de dominios y rangos para funciones específicas. Tenga en cuenta que, al determinar los dominios y los rangos, tenemos que considerar lo que es físicamente posible o significativo en los ejemplos del mundo real, como la venta de entradas y el año en el ejemplo anterior de las películas de terror. También hay que tener en cuenta lo que está matemáticamente permitido. Por ejemplo, no podemos incluir ningún valor de entrada que nos lleve a tomar una raíz par de un número negativo si el dominio y el rango consisten en números reales. O en una función expresada como fórmula, no podemos incluir ningún valor de entrada en el dominio que nos lleve a dividir entre 0.</para><para id="fs-id1165135453892">Podemos visualizar el dominio como una "zona de espera" que contiene "materias primas" para una "máquina funcional" y el rango como otra "zona de espera" para los productos de la máquina. Vea el <link target-id="Figure_01_02_002"/>.</para><figure id="Figure_01_02_002" class="small">
+<media id="fs-id1165137737552" alt="Diagrama de cómo una función vincula dos relaciones.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_002-9aef.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137761714">Podemos escribir el <term class="no-emphasis" id="term-00003">dominio y rango</term> en <term id="term-00004">notación intervalo</term>, que utiliza valores entre paréntesis para describir un conjunto de números. En la notación intervalo, utilizamos un corchete “[“ cuando el conjunto incluye el punto final y un paréntesis “(“ para indicar que el punto final no está incluido o que el intervalo no está acotado. Por ejemplo, si una persona tiene 100 dólares para gastar, tendría que expresar el intervalo que es mayor que 0 y menor o igual que 100 y escribir <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>100</m:mn>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Más adelante hablaremos con más detalle de la notación intervalo.</para><para id="fs-id1165135320406">Vamos a centrar nuestra atención en encontrar el dominio de una función de la que se proporciona una ecuación. A menudo, encontrar el dominio de tales funciones implica recordar tres formas diferentes. En primer lugar, si la función no tiene denominador o tiene una raíz impar, considere si el dominio podrían ser todos los números reales. En segundo lugar, si hay un denominador en la ecuación de la función, excluya los valores en el dominio que obligan al denominador a ser cero. En tercer lugar, si hay una raíz par, considere la posibilidad de excluir los valores que harían que el radicando fuera negativo.</para>
+
+<para id="fs-id1165137552233">Antes de empezar, repasemos las convenciones de la notación intervalo:</para>
+<list id="fs-id1165135673417" list-type="bulleted">
+<item>El término más pequeño del intervalo se escribe primero.</item>
+<item>El término más grande del intervalo se escribe en segundo lugar, tras una coma.</item>
+<item>Los paréntesis, “(“ o “)”, se utilizan para indicar que un punto final no está incluido, lo que se denomina exclusivo.</item>
+<item>Los corchetes, “[“ o “]”, se utilizan para indicar que un punto final está incluido, lo que se denomina inclusivo.</item>
+</list>
+
+<para id="fs-id1165137807384">Vea la <link target-id="Figure_01_02_029"/> para un resumen de la notación intervalo.</para><figure id="Figure_01_02_029"><media id="fs-id1165137406680" alt="Resumen de la notación intervalo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_029n.jpg"/>
+</media>
+</figure><example id="Example_01_02_01">
+<exercise id="fs-id1165137661548"><problem id="fs-id1165137772018">
+<title>Hallar el dominio de una función como un conjunto de pares ordenados </title>
+<para id="fs-id1165137920768">Halle el <term class="no-emphasis" id="term-00005">dominio</term> de la siguiente función <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>20</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>30</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>40</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math>.</para></problem>
+<solution id="fs-id1165135329797">
+<para id="fs-id1165135508343">Primero identifique los valores de entrada. El valor de entrada es la primera coordenada de un <term class="no-emphasis" id="term-00006">par ordenado</term>. No hay restricciones, ya que los pares ordenados simplemente se enumeran. El dominio es el conjunto de las primeras coordenadas de los pares ordenados.</para>
+
+<equation id="fs-id1165137451888" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137569901" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135333722"><problem id="fs-id1165137852040"><para id="fs-id1165137852041">Halle el dominio de la función:</para>
+<para id="fs-id1165137466017"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>–4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>−8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>−12</m:mn><m:mo stretchy="false">)</m:mo>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137501477"><para id="fs-id1165137704712"> <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>15</m:mn><m:mo>}</m:mo>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+<note id="fs-id1165134225655" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165134355557"><emphasis>Dada una función escrita en forma de ecuación, halle el dominio.</emphasis></para>
+<list id="fs-id1165134187286" list-type="enumerated" number-style="arabic"><item>Identifique los valores de entrada.</item>
+<item>Identifique cualquier restricción en la entrada y excluya esos valores del dominio.</item>
+<item>Escriba el dominio en forma de intervalo, si es posible.</item>
+</list></note>
+
+<example id="Example_01_02_02">
+<exercise id="fs-id1165137767649">
+<problem id="fs-id1165137761307">
+<title>Hallar el dominio de una función</title>
+<para id="fs-id1165137645656">Halle el dominio de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135684349">
+<para id="fs-id1165137594433">El valor de entrada, mostrado por la variable <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> en la ecuación, se eleva al cuadrado y luego el resultado se reduce en uno. Cualquier número real puede ser elevado al cuadrado y luego ser rebajado en uno, por lo que no hay restricciones en el dominio de esta función. El dominio es el conjunto de los números reales.</para><para id="fs-id1165135309759">En forma de intervalo, el dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135639906" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137733850"><problem id="fs-id1165137871971"><para id="fs-id1165137871972">Halle el dominio de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137809848"><para id="fs-id1165137809849"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</para></solution></exercise></note>
+
+<note id="fs-id1165137417188" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137473617"><emphasis>Dada una función escrita en forma de ecuación que incluye una fracción, halle el dominio.</emphasis></para>
+<list id="fs-id1165137463251" list-type="enumerated" number-style="arabic"><item>Identifique los valores de entrada.</item>
+<item>Identifique cualquier restricción en la entrada. Si hay un denominador en la fórmula de la función, ponga el denominador igual a cero y resuelva para <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>. Si la fórmula de la función contiene una raíz par, establezca el radicando mayor o igual a 0, y luego resuelva.</item>
+<item>Escriba el dominio en forma de intervalo, asegurándose de excluir cualquier valor restringido del dominio.</item>
+</list></note>
+
+<example id="Example_01_02_03">
+<exercise id="fs-id1165137722406">
+<problem id="fs-id1165135484119">
+<title>Hallar el dominio de una función con denominador </title>
+<para id="fs-id1165137647592">Halle el <term class="no-emphasis" id="term-00007">dominio</term> de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135641743">
+<para id="fs-id1165137565519">Cuando hay un denominador, queremos incluir solo los valores de la entrada que no obligan al denominador a ser cero. Por lo tanto, pondremos el denominador igual a 0 y resolveremos para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165137736620" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135192763">Ahora, excluiremos el 2 del dominio. Las respuestas son todos los números reales donde <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>></m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> Podemos utilizar un símbolo conocido como la unión, <m:math>
+<m:mrow>
+<m:mo>∪</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> para combinar los dos conjuntos. En notación intervalo, escribimos la solución <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>-∞</m:mi><m:mo>,</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para><figure id="Image_01_02_028"><media id="fs-id1165137434263" alt="Gráfica de línea de x=!2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_028n.jpg"/>
+</media>
+</figure><para id="fs-id1165134036054">En forma de intervalo, el dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165133349280" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137437630"><problem id="fs-id1165137771815"><para id="fs-id1165137442339">Halle el dominio de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137436024">
+<para id="fs-id1165135186314"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</para></solution></exercise>
+</note>
+
+<note id="fs-id1165135527005" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137733733"><emphasis>Dada una función escrita en forma de ecuación que incluye una raíz par, halle el dominio.</emphasis></para>
+<list id="fs-id1165137820030" list-type="enumerated" number-style="arabic"><item>Identifique los valores de entrada.</item>
+<item>Como hay una raíz par, excluya cualquier número real que dé lugar a un número negativo en el radicando. Establezca el radicando mayor o igual a cero y resuelva para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</item>
+<item>La(s) solución(es) son el dominio de la función. Si es posible, escriba la respuesta en forma de intervalo.</item>
+</list></note>
+
+<example id="Example_01_02_04">
+<exercise id="fs-id1165135160109">
+<problem id="fs-id1165137735699">
+<title>Hallar el dominio de una función con una raíz par</title>
+<para id="fs-id1165137466144">Halle el <term class="no-emphasis" id="term-00008">dominio</term> de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>7</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137451129">
+<para id="fs-id1165137453224">Cuando hay una raíz par en la fórmula, excluimos cualquier número real que dé lugar a un número negativo en el radicando.</para>
+
+<para id="fs-id1165137749755">Establezca el radicando mayor o igual a cero y resuelva para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165137727831" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>7</m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>- −</m:mo><m:mn>7</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>7</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow>
+</m:math>
+
+</equation>
+
+<para id="fs-id1165137422794">Ahora, excluiremos cualquier número mayor que 7 del dominio. Las respuestas son todos los números reales menores o iguales a <m:math>
+<m:mrow>
+<m:mn>7</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>7</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137737842" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137933139"><problem id="fs-id1165137933140"><para id="fs-id1165137452448">Halle el dominio de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137832331"><para id="fs-id1165137832332"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mo>- −</m:mo><m:mfrac>
+<m:mn>5</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow> <m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</para></solution></exercise>
+</note>
+
+<note id="fs-id1165134328219" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+
+<para id="fs-id1165137659456"><emphasis>¿Puede haber funciones en las que el dominio y el rango no se intersequen en absoluto?</emphasis></para>
+<para id="fs-id1165137937737"><emphasis effect="italics">Sí. Por ejemplo, la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> tiene como dominio el conjunto de todos los números reales positivos, pero tiene como rango el conjunto de todos los números reales negativos. Como ejemplo más extremo, las entradas y salidas de una función pueden ser categorías completamente diferentes (por ejemplo, nombres de días de la semana como entradas y números como salidas, como en una gráfica de asistencia), en estos casos el dominio y el rango no tienen elementos en común.</emphasis></para></note>
+</section>
+<section id="fs-id1165137677916">
+<title>Usar notaciones para especificar el dominio y el rango</title>
+<para id="fs-id1165137410091">En los ejemplos anteriores, utilizamos inecuaciones y listas para describir el dominio de las funciones. También podemos utilizar desigualdades, u otros enunciados que puedan definir conjuntos de valores o datos, para describir el comportamiento de la variable en la <term id="term-00009">notación del constructor de conjuntos</term>. Por ejemplo, <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mi>x</m:mi><m:mo>|</m:mo><m:mn>10</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>30</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math> describe el comportamiento de <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> en la notación del constructor de conjuntos. Las llaves <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mo>}</m:mo>
+</m:mrow>
+</m:math> se leen como "el conjunto de", y la barra vertical | se lee como "tal que", por lo que leeríamos <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mi>x</m:mi><m:mo>|</m:mo><m:mn>10</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>30</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math> como "el conjunto de valores <emphasis effect="italics">x</emphasis> tales que 10 es menor o igual que <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> es menos de 30”.</para>
+<para id="fs-id1165135207589">La <link target-id="Figure_01_02_003"/> compara la notación de inecuación, la notación del constructor de conjuntos y la notación intervalos.</para>
+
+<figure id="Figure_01_02_003">
+<media id="fs-id1165135315543" alt="Resumen de las notaciones para las inecuaciones, del constructor de conjuntos y los intervalos.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_003-832b.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137911528">Para combinar dos intervalos utilizando la notación de inecuación o la notación del constructor de conjuntos, utilizamos la palabra "o" Como hemos visto en los ejemplos anteriores, utilizamos el símbolo de unión, <m:math>
+<m:mrow>
+<m:mo>∪</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> para combinar dos intervalos no conectados. Por ejemplo, la unión de los conjuntos <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>}</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo>
+</m:mrow>
+</m:math> es el conjunto <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Es el conjunto de todos los elementos que pertenecen a uno <emphasis effect="italics">u</emphasis> otro (o a ambos) de los dos conjuntos originales. En el caso de conjuntos con un número finito de elementos como este, no es necesario enumerar los elementos en orden ascendente de valor numérico. Si los dos conjuntos originales tienen algunos elementos en común, esos elementos deben figurar solo una vez en el conjunto de unión. Para conjuntos de números reales en intervalos, otro ejemplo de unión es</para>
+<equation id="fs-id1165135311695" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mrow><m:mi>x</m:mi><m:mo>|</m:mo></m:mrow><m:mtext>  </m:mtext><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>3</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow> <m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation>
+<note id="fs-id1165137641795">
+
+<title>Notación del constructor de conjuntos y notación intervalo</title>
+<para id="fs-id1165137663670">La <emphasis>notación del constructor de conjuntos </emphasis>es un método para especificar un conjunto de elementos que satisfacen una determinada condición. Tiene la forma <m:math>
+ <m:mrow>
+<m:mo>{</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mspace width="0.5em"/><m:mtext>enunciado de </m:mtext><m:mi>x</m:mi><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> que se lee como "el conjunto de todos los <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> tales que el enunciado sobre <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> es cierto”. Por ejemplo,</para>
+<equation id="fs-id1165137543047" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mi>x</m:mi><m:mo>|</m:mo><m:mn>4</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>12</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165135190272">La <emphasis>notación intervalo</emphasis> es una forma de describir conjuntos que incluyen todos los números reales entre un límite inferior que puede o no incluirse y un límite superior que puede o no incluirse. Los valores de los puntos finales aparecen entre corchetes o paréntesis. Un corchete indica la inclusión en el conjunto, y un paréntesis indica la exclusión del conjunto. Por ejemplo,</para>
+<equation id="fs-id1165137443063" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mn>12</m:mn>
+</m:mrow> <m:mo>]</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation></note>
+
+<note id="fs-id1165137805770" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137423878"><emphasis>Dada una gráfica de líneas, describa el conjunto de valores utilizando la notación intervalo.</emphasis></para><list id="fs-id1165134032280" list-type="enumerated" number-style="arabic"><item>Identifique los intervalos que se incluirán en el conjunto determinando dónde se superpone la línea gruesa a la línea real.</item>
+<item>En el extremo izquierdo de cada intervalo, utilice “[“ con cada valor final que deba incluirse en el conjunto (punto sólido) o “(“ para cada valor final excluido (punto abierto).</item>
+<item>En el extremo derecho de cada intervalo, utilice “]” con cada valor final que deba incluirse en el conjunto (punto relleno) o “)” para cada valor final excluido (punto abierto).</item>
+<item>Utilice el símbolo de unión <m:math>
+<m:mrow>
+<m:mo>∪</m:mo>
+</m:mrow>
+</m:math> para combinar todos los intervalos en un solo conjunto.</item>
+</list></note>
+
+<example id="Example_01_02_05"><exercise id="fs-id1165134342702">
+<problem id="fs-id1165137803670">
+<title>Describir conjuntos en la línea de números reales</title>
+<para id="fs-id1165137592069">Describa los intervalos de valores mostrados en la <link target-id="Figure_01_02_004"/> utilizando la notación de inecuación, la notación del constructor de conjuntos y la notación intervalo.</para><figure id="Figure_01_02_004" class="small">
+<media id="fs-id1165135177575" alt="Gráfica de línea de 1&lt;=x&lt;=3 y 5&lt;x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_004-13c7.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135412904"><para id="fs-id1165135412905">Para describir los valores, <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> incluidos en los intervalos indicados, diríamos que " <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es un número real mayor o igual que 1 y menor o igual que 3, o un número real mayor que 5".</para>
+<table id="fs-id1165137447518" summary=".." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>Inecuación</emphasis></entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mtext>o</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+
+
+<row>
+<entry align="center"><emphasis>Notación del constructor de conjuntos</emphasis></entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mi>x</m:mi><m:mo>|</m:mo><m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mtext>o</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>5</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Notación intervalo</emphasis></entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">]</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165135500794">Recuerde que, al escribir o leer la notación intervalo, el uso de un corchete significa que el límite está incluido en el conjunto. El uso de un paréntesis significa que el límite no está incluido en el conjunto.</para>
+</solution>
+</exercise></example>
+
+
+
+<note id="fs-id1165137779165" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_02_03">
+<problem id="fs-id1165135175087"><para id="fs-id1165135341412">Dada <link target-id="Figure_01_02_005"/>, especifique el conjunto graficado en</para>
+<list id="fs-id1165137595582" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> palabras</item>
+<item><span class="token">Ⓑ</span> notación del constructor de conjuntos</item>
+<item><span class="token">Ⓒ</span> notación de intervalos</item>
+</list>
+<figure id="Figure_01_02_005" class="small">
+<media id="fs-id1165137424715" alt="Gráfica de línea de -2&lt;=x, -1&lt;=x&lt;3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_005-eba2.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135209390"><para id="fs-id1165135188577">
+<list id="fs-id1165135528963" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> valores menores o iguales a -2, o valores mayores o iguales a -1 y menores a 3;</item>
+<item><span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mi>x</m:mi><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn><m:mspace width="0.5em"/><m:mtext>o</m:mtext><m:mspace width="0.5em"/><m:mo>- −</m:mo><m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math>;</item>
+<item><span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">]</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</item>
+</list>
+</para>
+</solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id1165137653855">
+<title>Hallar el dominio y el rango de las gráficas</title>
+<para id="fs-id1165135161404">Otra forma de identificar el dominio y el rango de las funciones es mediante el uso de gráficas. Dado que el dominio se refiere al conjunto de posibles valores de entrada, el dominio de una gráfica consiste en todos los valores de entrada mostrados en el eje <emphasis effect="italics">x</emphasis>. El rango es el conjunto de posibles valores de salida, que se muestran en el eje <emphasis effect="italics">Y</emphasis>. Tenga en cuenta que si la gráfica continúa más allá de la porción que podemos ver, el dominio y el rango pueden ser mayores que los valores visibles. Vea el <link target-id="Figure_01_02_006"/>.</para><figure id="Figure_01_02_006" class="small">
+<media id="fs-id1165137432156" alt="Gráfica de un polinomio que muestra que el eje x es el dominio y el eje y es el rango">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_006-aec6.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137597994">Podemos observar que la gráfica se extiende horizontalmente desde <m:math>
+<m:mrow>
+<m:mn>−5</m:mn>
+</m:mrow>
+</m:math> a la derecha sin límite, por lo que el dominio es <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>−5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> La extensión vertical de la gráfica son todos los valores del rango <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn>
+ </m:mrow>
+</m:math> y por debajo, por lo que el rango es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mi>-∞</m:mi><m:mo>,</m:mo><m:mn>5</m:mn>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Observe que el dominio y el rango se escriben siempre de menor a mayor valor, o de izquierda a derecha, para el dominio, y de la parte inferior de la gráfica a la superior para el rango.</para><example id="Example_01_02_06">
+<exercise id="fs-id1165137561401">
+<problem id="fs-id1165137599824">
+<title>Encontrar el dominio y el rango de una gráfica</title>
+<para id="fs-id1165135187604">Halle el dominio y el rango de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> cuya gráfica se muestra en la <link target-id="Figure_01_02_007"/>.</para>
+
+<figure id="Figure_01_02_007" class="small">
+<media id="fs-id1165137805567" alt="Gráfica de una función de (-3, 1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_007-940d.jpg"/>
+</media>
+</figure>
+
+</problem>
+<solution id="fs-id1165137575085">
+<para id="fs-id1165137768165">Podemos observar que la extensión horizontal de la gráfica es de -3 a 1, por lo que el dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+
+<para id="fs-id1165131968670">La extensión vertical de la gráfica es de 0 a -4, por lo que el rango es <m:math>
+<m:mrow>
+<m:mrow> <m:mo>[</m:mo> <m:mrow>
+<m:mo>- −</m:mo><m:mn>4</m:mn>
+</m:mrow> </m:mrow><m:mo>,</m:mo><m:mrow> <m:mn>0</m:mn> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Vea la <link target-id="Figure_01_02_008"/>.</para><figure id="Figure_01_02_008" class="small"><media id="fs-id1165137937577" alt="La gráfica de la función anterior muestra el dominio y el rango.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_008_new.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+<example id="Example_01_02_07">
+<exercise id="fs-id1165134182686"><problem id="fs-id1165137461643">
+<title>Hallar el dominio y el rango a partir de una gráfica de la producción de petróleo</title>
+<para id="fs-id1165137443324">Calcule el dominio y el rango de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> cuya gráfica se muestra en la <link target-id="Figure_01_02_009"/>.</para><figure id="Figure_01_02_009" class="small"><media id="fs-id1165135186977" alt="Gráfica de la producción de crudo de Alaska en el que el eje y son los miles de barriles por día y el eje - (negativo) son los años.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_009-e7be.jpg"/>
+</media>
+<caption>(crédito: modificación del trabajo de la Administración de Información Energética de EE. UU.)<footnote id="fs-id1165135445728">http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=MCRFPAK2&amp;f=A.</footnote></caption></figure></problem>
+<solution id="fs-id1165137444311">
+<para id="fs-id1165137476085">La cantidad de entrada en el eje horizontal es "años", que representamos con la variable <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> para el tiempo. La cantidad de salida es "miles de barriles de petróleo al día", que representamos con la variable <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> para barriles. La gráfica puede continuar a la izquierda y a la derecha más allá de lo que se ve, pero basándonos en la parte que es visible, podemos determinar el dominio como <m:math>
+<m:mrow>
+<m:mn>1973</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>2008</m:mn>
+</m:mrow>
+</m:math> y el rango como aproximadamente <m:math>
+<m:mrow>
+<m:mn>180</m:mn><m:mo>≤</m:mo><m:mi>b</m:mi><m:mo>≤</m:mo><m:mn>2010</m:mn>
+</m:mrow>
+</m:math>
+</para>
+
+<para id="fs-id1165137747998">En notación intervalo, el dominio es [1973, 2008], y el rango es aproximadamente [180, 2010]. Para el dominio y el rango, aproximamos los valores más pequeños y más grandes, ya que no caen exactamente en las líneas de la cuadrícula.</para></solution>
+</exercise></example>
+
+<note id="fs-id1165135545972" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_01_02_04"><problem id="fs-id1165137644581"><para id="fs-id1165137644582">Dada la <link target-id="Figure_01_02_010"/>, identifique el dominio y el rango utilizando la notación intervalo.</para>
+<figure id="Figure_01_02_010" class="small">
+<media id="fs-id1165137827275" alt="Gráfica del aumento de la población mundial en el que el eje y representa los millones de personas y el eje x el año.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_010-d86a.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165137705252"><para id="fs-id1165134079741">dominio =[1950,2002] rango = [47 000 000,89 000 000]</para></solution>
+</exercise></note><note id="fs-id1165137434590" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137812796"><emphasis>¿El dominio y el rango de una función pueden coincidir?</emphasis></para>
+<para id="fs-id1165137433394"><emphasis effect="italics">Sí. Por ejemplo, el dominio y el rango de la función de raíz cúbica son el conjunto de todos los números reales.</emphasis></para>
+</note>
+</section>
+
+<section id="fs-id1165134384565"><title>Hallar dominios y rangos de las funciones de la caja de herramientas</title><para id="fs-id1165137419914">Ahora volveremos a nuestro conjunto de funciones de la caja de herramientas para determinar el dominio y el rango de cada una.</para>
+
+<figure id="Figure_01_02_011" class="small"><media id="fs-id1165137661673" alt="Función constante f(x)=c.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_011-7288.jpg"/>
+</media>
+<caption>Para la <emphasis>función constante</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> el dominio consiste en todos los números reales; no hay restricciones en la entrada. El único valor de salida es la constante <m:math>
+<m:mrow>
+<m:mi>c</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> por lo que el rango es el conjunto <m:math>
+<m:mrow>
+<m:mo>{</m:mo><m:mi>c</m:mi><m:mo>}</m:mo></m:mrow>
+</m:math> que contiene este único elemento. En notación intervalo, esto se escribe como <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mi>c</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo stretchy="false">]</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> el intervalo que comienza y termina con <m:math>
+<m:mrow>
+<m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</caption></figure><figure id="Figure_01_02_012" class="small"><media id="fs-id1165137543965" alt="Función de identidad f(x)=x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_012-7156.jpg"/>
+</media>
+<caption>Para la <emphasis>función de identidad</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> no hay ninguna restricción en <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Tanto el dominio como el rango son el conjunto de todos los números reales.</caption></figure><figure id="Figure_01_02_013" class="small"><media id="fs-id1165137757797" alt="Función absoluta f(x)=|x|.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_013-f38f.jpg"/>
+</media>
+<caption>Para la <emphasis>función de valor absoluto</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> no hay ninguna restricción en <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Sin embargo, como el valor absoluto se define como una distancia de 0, la salida solo puede ser mayor o igual a 0.</caption></figure><figure id="Figure_01_02_014" class="small"><media id="fs-id1165137448012" alt="Función cuadrática f(x)=x^2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_014-babe.jpg"/>
+</media>
+<caption>Para la <emphasis>función cuadrática</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>,</m:mo></m:mrow>
+</m:math> el dominio son todos los números reales ya que la extensión horizontal de la gráfica es toda la recta de números reales. Dado que la gráfica no incluye ningún valor negativo para el rango, este es solo números reales no negativos.</caption></figure><figure id="Figure_01_02_015" class="small"><media id="fs-id1165137660840" alt="Función cúbica f(x)-x^3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_015-2cf1.jpg"/>
+</media>
+<caption>Para la <emphasis>función cúbica</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>,</m:mo></m:mrow>
+</m:math> el dominio son todos los números reales porque la extensión horizontal de la gráfica es toda la recta de números reales. Lo mismo ocurre con la extensión vertical de la gráfica, por lo que el dominio y el rango incluyen todos los números reales.</caption></figure><figure id="Figure_01_02_016" class="small"><media id="fs-id1165137582779" alt="Función recíproca f(x)=1/x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_016-44f1.jpg"/>
+</media>
+<caption>Para la <emphasis>función recíproca</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> no podemos dividir entre 0, por lo que debemos excluir el 0 del dominio. Además, 1 dividido entre cualquier valor nunca puede ser 0, por lo que el rango tampoco incluirá 0. En la notación del constructor de conjuntos, también podríamos escribir <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>}</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el conjunto de todos los números reales que no son cero.</caption></figure><figure id="Figure_01_02_017" class="small"><media id="fs-id1165133004481" alt="Función recíproca al cuadrado f(x)=1/x^2">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_017-7cac.jpg"/>
+</media>
+<caption>Para la <emphasis>función recíproca al cuadrado</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> no podemos dividir entre <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que debemos excluir <m:math>
+ <m:mn>0</m:mn>
+</m:math> del dominio. Tampoco hay <m:math>
+ <m:mi>x</m:mi>
+</m:math> que puede dar una salida de 0, por lo que también se excluye el 0 del rango. Observe que la salida de esta función es siempre positiva debido al cuadrado en el denominador, por lo que el rango solo incluye números positivos.</caption></figure><figure id="Figure_01_02_018" class="small"><media id="fs-id1165137401809" alt="Función de raíz cuadrada f(x)=sqrt(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_018-edda.jpg"/>
+</media>
+<caption>Para la <emphasis>función de raíz cuadrada</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mrow/>
+</m:mroot>
+<m:mo>,</m:mo></m:mrow>
+</m:math> no podemos sacar la raíz cuadrada de un número real negativo, por lo que el dominio debe ser 0 o mayor. El rango también excluye los números negativos porque la raíz cuadrada de un número positivo <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> se define como positivo, aunque el cuadrado del número negativo <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:math> también nos da <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </caption></figure><figure id="Figure_01_02_019" class="small"><media id="fs-id1165137730429" alt="Función de raíz cúbica f(x)=x^(1/3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_019-5e97.jpg"/>
+</media>
+<caption>Para la <emphasis>función de raíz cúbica</emphasis> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+<m:mo>,</m:mo></m:mrow>
+</m:math> el dominio y el rango incluyen todos los números reales. Observe que no hay problema en tomar una raíz cúbica, o cualquier raíz entera impar, de un número negativo, y la salida resultante es negativa (es una función impar).</caption></figure><note id="fs-id1165137462732" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137611181"><emphasis>Dada la fórmula de una función, determine el dominio y el rango.</emphasis></para>
+<list id="fs-id1165137405229" list-type="enumerated" number-style="arabic">
+<item>Excluya del dominio cualquier valor de entrada que resulte en una división entre cero.</item>
+<item>Excluya del dominio cualquier valor de entrada que tenga salidas numéricas no reales (o indefinidas).</item>
+<item>Utilice los valores de entrada válidos para determinar el rango de los valores de salida.</item>
+<item>Observe la gráfica de la función y los valores de la tabla para confirmar el comportamiento real de la función.</item>
+</list>
+</note>
+
+<example id="Example_01_02_08">
+<exercise id="fs-id1165137558723"><problem id="fs-id1165137464274">
+<title>Encontrar el dominio y el rango usando las funciones de la caja de herramientas</title>
+<para id="fs-id1165135613224">Halle el dominio y el rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135458670">
+<para id="fs-id1165137527861">No hay restricciones en cuanto al dominio, ya que cualquier número real puede ser elevado al cubo y luego restado del resultado.</para>
+
+<para id="fs-id1165135208585">El dominio es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y el rango también es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise></example>
+
+<example id="Example_01_02_09">
+<exercise id="fs-id1165137448155">
+<problem id="fs-id1165137661316">
+<title>Hallar el dominio y el rango </title>
+<para id="fs-id1165137419507">Halle el dominio y el rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137871182">
+<para id="fs-id1165137855321">No podemos evaluar la función en <m:math>
+<m:mrow>
+<m:mn>−1</m:mn>
+</m:mrow>
+</m:math> porque la división entre cero es indefinida. El dominio es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>–1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>–1</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Como la función nunca es cero, excluimos el 0 del rango. El rango es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</example>
+
+<example id="Example_01_02_10">
+<exercise id="fs-id1165137574740"><problem id="fs-id1165135641583">
+<title>Hallar el dominio y el rango </title>
+<para id="fs-id1165137661054">Halle el dominio y el rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137584342">
+<para id="fs-id1165137596350">No podemos sacar la raíz cuadrada de un número negativo, por lo que el valor dentro del radical debe ser no negativo.</para>
+<equation id="eip-id1165137567088" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>≥</m:mo><m:mn>0</m:mn><m:mtext> cuando </m:mtext><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>- −</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137465335">El dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165137544393">A continuación, encontramos el rango. Sabemos que <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y el valor de la función aumenta a medida que <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> aumenta sin límite superior. Concluimos que el rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow>
+<m:mrow> <m:mo>[</m:mo> <m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mrow> <m:mi>∞</m:mi> <m:mo>)</m:mo></m:mrow>
+</m:mrow> </m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+<commentary id="fs-id1165137572635">
+<title>Análisis </title>
+<para id="fs-id1165137437183">La <link target-id="Figure_01_02_020"/> representa la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+
+
+<figure id="Figure_01_02_020" class="small">
+<media id="fs-id1165135582217" alt="Gráfica de una función de raíz cuadrada en (-4, 0).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_020-d001.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137430800" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_02_05">
+<problem id="fs-id1165137475544"><para id="fs-id1165137475545">Halle el dominio y el rango de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137833252"><para id="fs-id1165137725047">dominio: <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi></m:mrow></m:mrow><m:mo>,</m:mo><m:mrow><m:mn>2 </m:mn> <m:mo>]</m:mo></m:mrow><m:mo>;</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi></m:mrow></m:mrow><m:mo>,</m:mo><m:mrow><m:mn>0</m:mn> <m:mo>]</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165135440477">
+<title>Graficar funciones definidas por partes</title>
+<para id="fs-id1165137409262">A veces, nos encontramos con una función que requiere más de una fórmula para obtener la salida dada. Por ejemplo, en las funciones de la caja de herramientas, introducimos la función de valor absoluto <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Con un dominio de todos los números reales y un rango de valores mayor o igual a 0, el <term class="no-emphasis" id="term-00010">valor absoluto</term> puede definirse como la <term class="no-emphasis" id="term-00011">magnitud</term>, o <term class="no-emphasis" id="term-00012">módulo</term>, de un valor de un número real sin importar el signo. Es la distancia desde el 0 en la línea numérica. Todas estas definiciones requieren que la salida sea mayor o igual a 0.</para><para id="fs-id1165137558775">Si introducimos 0, o un valor positivo, la salida es la misma que la entrada.</para>
+<equation id="fs-id1165135194329" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137529947">Si introducimos un valor negativo, la salida es la opuesta a la entrada.</para>
+<equation id="fs-id1165133112779" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137863778">Ya que esto requiere dos procesos o piezas diferentes, la función de valor absoluto es un ejemplo de función a trozos. Una <term id="term-00013">función definida a trozos</term> es una función en la que se utiliza más de una fórmula para definir la salida sobre diferentes trozos del dominio.</para><para id="fs-id1165134042316">Utilizamos funciones a trozos para describir situaciones en las que una regla o relación cambia cuando el valor de entrada cruza ciertos "límites". Por ejemplo, a menudo nos encontramos con situaciones en las que el costo por pieza de un determinado artículo se descuenta una vez que el número de pedidos supera un determinado valor. Las categorías impositivas son otro ejemplo real de funciones definidas a trozos. Por ejemplo, consideremos un sistema fiscal simple en el que los ingresos hasta 10 000 dólares se gravan al 10 %, y cualquier ingreso adicional se grava al 20 %. El impuesto sobre una renta total <m:math>
+<m:mrow>
+<m:mi>S</m:mi></m:mrow>
+</m:math> sería <m:math>
+<m:mrow>
+<m:mn>0,1</m:mn><m:mi>S</m:mi></m:mrow>
+</m:math> si <m:math>
+ <m:mrow>
+  <m:mi>S</m:mi><m:mo>≤</m:mo><m:mtext>$</m:mtext><m:mn>10</m:mn><m:mtext>.</m:mtext><m:mn>000</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mtext>$</m:mtext><m:mn>1.000</m:mn><m:mo>+</m:mo><m:mn>0,2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo>- −</m:mo><m:mtext>$</m:mtext><m:mn>10</m:mn><m:mtext>.</m:mtext><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> si <m:math>
+ <m:mrow>
+  <m:mi>S</m:mi><m:mo>></m:mo><m:mtext>$</m:mtext><m:mn>10</m:mn><m:mtext>,</m:mtext><m:mn>000.</m:mn>
+ </m:mrow>
+</m:math> </para><note id="fs-id1165137531241">
+
+<title>Función definida a trozos</title>
+<para id="fs-id1165135504970">Una función definida a trozos es una función en la que se utiliza más de una fórmula para definir la salida. Cada fórmula tiene su propio dominio, y el dominio de la función es la unión de todos estos dominios más pequeños. Anotamos esta idea así:</para>
+<equation id="fs-id1165137482244" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mtext>fórmula 1     si </m:mtext><m:mi>x</m:mi><m:mtext> está en el dominio 1</m:mtext>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mtext>fórmula 2     si </m:mtext><m:mi>x</m:mi><m:mtext> está en el dominio 2</m:mtext>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mtext>fórmula 3     si </m:mtext><m:mi>x</m:mi><m:mtext> está en el dominio 3</m:mtext>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137543841">En notación definida a trozos, la función de valor absoluto es</para>
+<equation id="fs-id1165135190749" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>x</m:mi><m:mtext>    si  </m:mtext><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mtext>  si  </m:mtext><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mrow></m:mrow>
+</m:math>
+</equation>
+</note>
+
+<note id="fs-id1165137768426" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137823161"><emphasis>Dada una función definida a trozos, escriba la fórmula e identifique el dominio de cada intervalo. </emphasis></para>
+<list id="fs-id1165135443772" list-type="enumerated" number-style="arabic">
+<item>Identifique los intervalos a los que se aplican las diferentes reglas.</item>
+<item>Determine las fórmulas que describan cómo calcular una salida a partir de una entrada en cada intervalo.</item>
+<item>Utilice llaves y enunciado “si” para escribir la función.</item>
+</list>
+</note>
+
+<example id="Example_01_02_11">
+<exercise id="fs-id1165137452506">
+<problem id="fs-id1165135321994">
+<title>Escribir una función definida a trozos</title>
+<para id="fs-id1165137834905">El museo cobra 5 dólares por persona por una visita guiada con un grupo de 1 a 9 personas o una tarifa fija de 50 dólares por un grupo de 10 o más personas. Escriba una <term class="no-emphasis" id="term-00014">función</term> que relacione el número de personas, <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> al costo, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137807421">
+<para id="fs-id1165135331729">Se necesitarán dos fórmulas diferentes. Para valores <emphasis effect="italics">n</emphasis> inferiores a 10, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>n</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Para los valores de <m:math>
+<m:mrow>
+<m:mi>n</m:mi></m:mrow>
+</m:math> que son 10 o más, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>=</m:mo><m:mn>50.</m:mn></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165135208951" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>n</m:mi></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>n</m:mi><m:mo>&lt;</m:mo><m:mn>10</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>50</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>10</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation>
+</solution>
+<commentary id="fs-id1165135436578">
+<title>Análisis </title>
+<para id="fs-id1165135196985">La función se representa en la <link target-id="Figure_01_02_021"/>. La gráfica es una línea diagonal desde <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> a <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+</m:math> y una constante después. En este ejemplo, las dos fórmulas coinciden en el punto de encuentro donde <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> pero no todas las funciones definidas a trozos tienen esta propiedad.</para><figure id="Figure_01_02_021" class="small">
+<media id="fs-id1165137419948" alt="Gráfica de C(n).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_021.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<example id="Example_01_02_12">
+<exercise id="fs-id1165135436662">
+<problem id="fs-id1165135436664">
+<title>Trabajar con una función definida a trozos</title>
+<para id="fs-id1165137938645">Una empresa de telefonía móvil utiliza la siguiente función para determinar el costo, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> en dólares para <m:math>
+<m:mrow>
+<m:mi>g</m:mi></m:mrow>
+</m:math> gigabytes de transferencia de datos.</para>
+<equation id="fs-id1165137660470" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>25</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>g</m:mi><m:mo>&lt;</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>25</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135193798">Encuentra el costo de utilizar 1,5 gigabytes de datos y el coste de utilizar 4 gigabytes de datos.</para></problem>
+<solution id="fs-id1165135177567">
+<para id="fs-id1165134373545">Para hallar el costo de utilizar 1,5 gigabytes de datos, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1,5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> buscamos primero en qué parte del dominio se encuentra nuestra entrada. Como 1,5 es menor que 2, utilizamos la primera fórmula.</para>
+
+<equation id="fs-id1165134300204" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1,5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>$</m:mtext><m:mn>25</m:mn>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135440213">Para hallar el costo de utilizar 4 gigabytes de datos, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> vemos que nuestra entrada de 4 es mayor que 2, así que utilizamos la segunda fórmula.</para>
+<equation id="fs-id1165135383665" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>+</m:mo><m:mn>10</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>$</m:mtext><m:mn>45</m:mn>
+</m:mrow>
+</m:math> </equation></solution>
+<commentary id="fs-id1165137634432">
+<title>Análisis </title>
+<para id="fs-id1165137601265">La función se representa en la <link target-id="Figure_01_02_022"/>. Podemos ver dónde cambia la función de una constante a una identidad desplazada y estirada en <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> Trazamos las gráficas de las diferentes fórmulas en un conjunto común de ejes, asegurándonos de que cada fórmula se aplica en su propio dominio. </para><figure id="Figure_01_02_022" class="">
+<media id="fs-id1165135453346" alt="Gráfica de C(g)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_022-75d8.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137600493" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135532516"><emphasis>Dada una función definida a trozos, dibuje una gráfica.</emphasis></para>
+<list id="fs-id1165137588539" list-type="enumerated" number-style="arabic"><item>Indique en el eje <emphasis effect="italics">x</emphasis> los límites definidos por los intervalos en cada trozo del dominio.</item>
+<item>Para cada trozo del dominio, grafique en ese intervalo usando la ecuación correspondiente a ese trozo. No grafique dos funciones en un intervalo porque violaría el criterio de una función.</item>
+</list></note>
+
+<example id="Example_01_02_13">
+<exercise id="fs-id1165137781618"><problem id="fs-id1165135412870">
+<title>Graficar una función definida a trozos</title>
+<para id="fs-id1165137838785">Dibuje una gráfica de la función.</para>
+<equation id="fs-id1165137475346" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>3</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>x</m:mi>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>></m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165135487148">
+<para id="fs-id1165135487150">Cada una de las funciones de los componentes es de nuestra biblioteca de funciones de la caja de herramientas, por lo que conocemos sus formas. Podemos imaginarnos la gráfica de cada función y luego limitarla al dominio indicado. En los puntos finales del dominio, dibujamos círculos abiertos para indicar que el punto final no está incluido debido a una desigualdad menor que o mayor que; dibujamos un círculo cerrado donde el punto final está incluido debido a una desigualdad menor que o igual que o mayor que.</para><para id="fs-id1165137642848">La <link target-id="Figure_01_02_023"/> muestra los tres componentes de la función definida a trozos graficados en sistemas de coordenadas separados.</para>
+
+<figure id="Figure_01_02_023">
+<media id="fs-id1165137439226" alt="Gráfica de cada parte de la función definida a trozos f(x)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_023abc-8709.jpg"/>
+</media>
+<caption>(a) <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mtext> si  </m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> (b) <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mtext> si 1&lt; </m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> (c) <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mtext>  si </m:mtext><m:mi>x</m:mi><m:mo>></m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</caption>
+</figure>
+
+<para id="fs-id1165137676209">Ahora que hemos dibujado cada pieza individualmente, las combinamos en el mismo plano de coordenadas. Vea el <link target-id="Figure_01_02_026"/>.</para>
+
+<figure id="Figure_01_02_026" class="small">
+<media id="fs-id1165137646696" alt="Gráfica de la función completa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_026-e20a.jpg"/>
+</media>
+</figure>
+</solution>
+<commentary id="fs-id1165135188517">
+<title>Análisis </title>
+<para id="fs-id1165134389893">Observe que la gráfica pasa la prueba de la línea vertical incluso en <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math> porque los puntos <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>2 </m:mn></m:mrow>  <m:mo>)</m:mo></m:mrow></m:mrow></m:math> no forman parte de la gráfica de la función, aunque <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> sí lo son.</para></commentary>
+</exercise></example>
+
+<note id="fs-id1165137762558" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_02_06"><problem id="fs-id1165137692562"><para id="fs-id1165137692563">Grafique la siguiente función definida a trozos.</para>
+<equation id="fs-id1165137433350" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>></m:mo><m:mn>4</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137784656">
+<media id="fs-id1165134302462" alt="Gráfica de f(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_027-55b5.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<note id="fs-id1165137810682" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+
+<para id="fs-id1165137527804"><emphasis>¿Se puede aplicar más de una fórmula de una función definida a trozos a un valor del dominio?</emphasis></para>
+<para id="fs-id1165137464467"><emphasis effect="italics">No. Cada valor corresponde a una ecuación de una fórmula definida a trozos.</emphasis></para>
+</note>
+<note id="fs-id1165135190393" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165137627040">Acceda a estos recursos en línea para obtener instrucciones adicionales y practicar con el dominio y el rango.</para>
+<list id="fs-id1165135189954">
+<item><link url="http://openstax.org/l/domainsqroot">Dominio y rango de las funciones de raíz cuadrada</link></item>
+<item><link url="http://openstax.org/l/determinedomain">Determinar el dominio y el rango</link></item>
+<item><link url="http://openstax.org/l/drgraph">Hallar el dominio y el rango dada la gráfica</link></item>
+<item><link url="http://openstax.org/l/drtable">Hallar el dominio y el rango dada una tabla</link></item>
+<item><link url="http://openstax.org/l/drcoordinate">Hallar el dominio y el rango dados los puntos en un plano de coordenadas</link></item>
+</list>
+</note>
+</section>
+<section id="fs-id1165134077347" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137591772">
+<item>El dominio de una función incluye todos los valores reales de entrada que no nos harían intentar una operación matemática indefinida, como dividir entre cero o sacar la raíz cuadrada de un número negativo.</item>
+<item>El dominio de una función puede determinarse enumerando los valores de entrada de un conjunto de pares ordenados. Vea el <link target-id="Example_01_02_01"/>.</item>
+<item>El dominio de una función también puede determinarse identificando los valores de entrada de una función escrita como una ecuación. Vea el <link target-id="Example_01_02_02"/>, el <link target-id="Example_01_02_03"/> y el <link target-id="Example_01_02_04"/>.</item>
+<item>Los valores de los intervalos representados en una recta numérica pueden describirse utilizando la notación de inecuación, la notación del constructor de conjuntos y la notación intervalo. Vea el <link target-id="Example_01_02_05"/>.</item>
+<item>Para muchas funciones, el dominio y el rango se pueden determinar a partir de una gráfica. Vea el <link target-id="Example_01_02_06"/> y el <link target-id="Example_01_02_07"/>.</item>
+<item>La comprensión de las funciones de la caja de herramientas puede utilizarse para encontrar el dominio y el rango de las funciones relacionadas. Vea el <link target-id="Example_01_02_08"/>, el <link target-id="Example_01_02_09"/> y el <link target-id="Example_01_02_10"/>.</item>
+<item>Una función definida a trozos se describe con más de una fórmula. Vea el <link target-id="Example_01_02_11"/> y el <link target-id="Example_01_02_12"/>.</item>
+<item>Una función definida a trozos se puede graficar utilizando cada fórmula algebraica en su subdominio asignado. Vea el <link target-id="Example_01_02_13"/>.</item>
+</list></section>
+
+
+<section id="fs-id1165135176628" class="section-exercises">
+<title>Ejercicios de la sección</title>
+<section id="fs-id1165135172218">
+<title>Verbales</title>
+<exercise id="fs-id1165137665109">
+<problem id="fs-id1165135245908">
+<para id="fs-id1165135245910">¿Por qué el dominio difiere para las distintas funciones?</para>
+</problem>
+<solution id="fs-id1165134199600">
+<para id="fs-id1165135613709">El dominio de una función depende de qué valores de la variable independiente hacen que la función sea indefinida o imaginaria.</para></solution>
+</exercise>
+<exercise id="fs-id1165135440209">
+<problem id="fs-id1165135533141">
+<para id="fs-id1165135533143">¿Cómo se determina el dominio de una función definida por una ecuación?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137635386">
+<problem id="fs-id1165135390940">
+<para id="fs-id1165135390942">Explique por qué el dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math> es diferente del dominio de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mrow/>
+</m:mroot>
+<m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137727146">
+<para id="fs-id1165137727148">No hay ninguna restricción para <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> por <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math> porque se puede tomar la raíz cúbica de cualquier número real. Así que el dominio son todos los números reales, <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Cuando se trata del conjunto de los números reales, no se puede sacar la raíz cuadrada de los números negativos. Así que los valores de <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> están restringidos para <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mrow/>
+</m:mroot>
+</m:mrow>
+</m:math> a números no negativos y el dominio es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134042454">
+<problem id="fs-id1165134042457">
+<para id="fs-id1165137438149">Al describir conjuntos de números utilizando la notación intervalo, ¿cuándo se utiliza un paréntesis y cuándo un corchete?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134211324">
+<problem id="fs-id1165137446310">
+<para id="fs-id1165137446313">¿Cómo se grafica una función definida a trozos?</para>
+</problem>
+<solution id="fs-id1165137574335">
+<para id="fs-id1165135415726">Grafique cada fórmula de la función definida a trozos sobre su correspondiente dominio. Utilice la misma escala para el eje <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> y para el eje <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> para cada gráfica. Indique los puntos finales inclusivos con un círculo sólido y los puntos finales exclusivos con un círculo abierto. Utilice una flecha para indicar <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mi>∞</m:mi>
+</m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mi>∞</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Combine las gráficas para encontrar la gráfica de la función definida a trozos. </para></solution>
+</exercise>
+</section>
+<section id="fs-id1165137771069">
+<title>Algebraicos</title>
+<para id="fs-id1165137408926">En los siguientes ejercicios, halle el dominio de cada función utilizando la notación intervalo.</para>
+<exercise id="fs-id1165137833819">
+<problem id="fs-id1165137833821">
+<para id="fs-id1165135500745"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137854912">
+<problem id="fs-id1165134312130">
+<para id="fs-id1165134312132"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137731586">
+<para id="fs-id1165137731589"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135512534">
+<problem id="fs-id1165135512537">
+<para id="fs-id1165137804475"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137473385">
+<problem id="fs-id1165137473388">
+<para id="fs-id1165134374059"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137451053">
+<para id="fs-id1165137451055"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135192268">
+<problem id="fs-id1165135192270">
+<para id="fs-id1165137725224"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137629066">
+<problem id="fs-id1165137483196">
+<para id="fs-id1165137483198"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mrow/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+     <m:mrow/>
+    </m:mroot>
+
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para></problem>
+<solution id="fs-id1165134192936">
+<para id="fs-id1165137463777"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137807107">
+<problem id="fs-id1165137551129">
+<para id="fs-id1165137551131"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134259277">
+<problem id="fs-id1165134259279">
+<para id="fs-id1165135186001"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134058389">
+<para id="fs-id1165137836596"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135503751">
+<problem id="fs-id1165134156030">
+<para id="fs-id1165134156032"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165133276237">
+<problem id="fs-id1165133276240">
+<para id="fs-id1165137784864"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137454548">
+<para id="fs-id1165134170171"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137810520">
+<problem id="fs-id1165137810522">
+<para id="fs-id1165137532795"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135548992">
+<problem id="fs-id1165135634123">
+<para id="fs-id1165135634125"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>22</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137528909">
+<para id="fs-id1165137528911"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135593402">
+<problem id="fs-id1165135593404">
+<para id="fs-id1165137771850"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135191342">
+<problem id="fs-id1165134284474">
+<para id="fs-id1165134284476"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>250</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135256053">
+<para id="fs-id1165135256055"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137921795">
+<problem id="fs-id1165137921797">
+<para id="fs-id1165137532172"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137476914">
+<problem id="fs-id1165137476916">
+<para id="fs-id1165137726504"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137647829">
+<para id="fs-id1165137564959"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135185292">
+<problem id="fs-id1165137640755">
+<para id="fs-id1165137640757"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135252252">
+<problem id="fs-id1165137611840">
+<para id="fs-id1165137611842"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137611238">
+<para id="fs-id1165137538970"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137601712">
+<problem id="fs-id1165137601714">
+<para id="fs-id1165137657487"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mi>x</m:mi>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137628472">
+<problem id="fs-id1165137651574">
+<para id="fs-id1165137651576"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>9</m:mn><m:mi>x</m:mi></m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>81</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135188135">
+<para id="fs-id1165137809882"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>9</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>9</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>9</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137469452">
+<problem id="fs-id1165137469454">
+<para id="fs-id1165137635293">Halle el dominio de la función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>50</m:mn><m:mi>x</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math> al:</para>
+<list id="fs-id1165137938832" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> utilizar el álgebra.</item>
+<item><span class="token">Ⓑ</span> graficar la función en el radicando y determinar los intervalos en el eje <emphasis effect="italics">x</emphasis> para los cuales el radicando es no negativo.</item>
+</list></problem>
+</exercise>
+</section>
+<section id="fs-id1165137580833">
+<title>Gráficos</title>
+<para id="fs-id1165135186809">En los siguientes ejercicios, escriba el dominio y el rango de cada función utilizando la notación intervalo.</para>
+
+<exercise id="fs-id1165135168172"><problem id="fs-id1165137647479">
+
+<media id="fs-id1165137891294" alt="Gráfica de una función de (2, 8]." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_202-95dc.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137820038">
+<para id="fs-id1165137424631"> dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo stretchy="false">]</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> rango <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165135160181"><problem id="fs-id1165135160183">
+
+<media id="fs-id1165137837830" alt="Gráfica de una función de [4, 8)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_203-38f5.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137723404"><problem id="fs-id1165137809982">
+
+<media id="fs-id1165137733767" alt="Gráfica de una función de [-4, 4]." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_204-d2ad.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137847285">
+<para id="fs-id1165137541038"> dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 4],</m:mtext></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 2]</m:mtext></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137590678"><problem id="fs-id1165134168421">
+
+<media id="fs-id1165137837060" alt="Gráfica de una función de [2, 6]." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_205-5a91.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137737326"><problem id="fs-id1165137737328">
+
+<media id="fs-id1165134129572" alt="Gráfica de una función de [-5, 3)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_206-059d.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137657479">
+<para id="fs-id1165137657482">dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137404973"><problem id="fs-id1165137404975">
+
+<media id="fs-id1165134305418" alt="Gráfica de una función de [-3, 2)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_207-ec92.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137544188"><problem id="fs-id1165137437269">
+
+<media id="fs-id1165137447903" alt="Gráfica de una función desde (-infinito, 2]." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_208-7f09.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137445711">
+<para id="fs-id1165137445713"> dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165135176309"><problem id="fs-id1165134323791">
+
+<media id="fs-id1165135192955" alt="Gráfica de una función desde [-4, infinito)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_209-37f5.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137642580"><problem id="fs-id1165137642582">
+
+<media id="fs-id1165134482733" alt="Gráfica de una función de [-6, -1/6]U[1/6, 6]/." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_210-a5dd.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165134043582">
+<para id="fs-id1165135335983">dominio: <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mn>6</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>;</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mn>6</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137442385"><problem id="fs-id1165137812572">
+
+<media id="fs-id1165137645308" alt="Gráfica de una función desde (-2,5, infinito)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_211-3cb1.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137851981"><problem id="fs-id1165137851983">
+
+<media id="fs-id1165137602824" alt="Gráfica de una función desde [-3, infinito)." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_212-f3f3.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137575572">
+<para id="fs-id1165137601170">dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><para id="fs-id1165137785119">En los siguientes ejercicios, dibuje una gráfica de la función definida a trozos. Escriba el dominio en notación intervalo.</para>
+
+<exercise id="fs-id1165137462167">
+<problem id="fs-id1165137408525">
+<para id="fs-id1165137408527"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si</m:mtext>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si</m:mtext>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137562309"><problem id="fs-id1165134328320">
+<para id="fs-id1165134328322"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>si</m:mtext>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>si</m:mtext>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow> </m:mrow>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135481131">
+<para id="fs-id1165135481133">dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137662700" alt="Gráfico de f(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_214.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165137628033">
+<problem id="fs-id1165137658060">
+<para id="fs-id1165137658062"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135641679"><problem id="fs-id1165135641681">
+<para id="fs-id1165133402089"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mn>3</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137500956"><para id="fs-id1165135532432"> dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137474386" alt="Gráfico de f(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_216.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165135192719">
+<problem id="fs-id1165135192721">
+<para id="fs-id1165137400953"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd>
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mtext>      si </m:mtext><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr>
+     <m:mtd>
+      <m:mrow>
+       <m:mn>1</m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mtext>  si </m:mtext><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137594981"><problem id="fs-id1165135210029">
+<para id="fs-id1165135210031"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="right">
+    <m:mtr columnalign="right">
+     <m:mtd columnalign="right">
+      <m:mrow>
+       <m:mtable columnalign="right">
+        <m:mtr columnalign="right">
+         <m:mtd columnalign="right">
+          <m:mrow>
+           <m:msup>
+            <m:mi>x</m:mi>
+            <m:mn>2 </m:mn>
+           </m:msup>
+
+          </m:mrow>
+         </m:mtd>
+        </m:mtr>
+        <m:mtr columnalign="right">
+         <m:mtd columnalign="right">
+          <m:mrow>
+           <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+          </m:mrow>
+         </m:mtd>
+        </m:mtr>
+
+       </m:mtable>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mspace width="0.5em"/><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137667233">
+<para id="fs-id1165135382142"> dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135188662" alt="Gráfico de f(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_218.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165137571389">
+<problem id="fs-id1165137433000">
+<para id="fs-id1165137433002"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137407891"><problem id="fs-id1165137554125">
+<para id="fs-id1165137554127"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd>
+      <m:mrow>
+       <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr>
+     <m:mtd>
+      <m:mn>1</m:mn>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137401041">
+<para id="fs-id1165134252896">dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135432997" alt="Gráfico de f(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_220.jpg"/>
+</media>
+
+</solution>
+</exercise></section>
+<section id="fs-id1165134118450">
+<title>Numéricos</title>
+<para id="fs-id1165135188383">En los siguientes ejercicios, dada cada función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>,</m:mo></m:mrow></m:math> evaluar <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><exercise id="fs-id1165137471865">
+<problem id="fs-id1165137471867">
+<para id="fs-id1165134043731"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si</m:mtext>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si</m:mtext>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134122954">
+<problem id="fs-id1165134122956">
+<para id="fs-id1165135168423"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mn>1</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mo>- −</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>0</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>></m:mo><m:mo>- −</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137804494">
+<para id="fs-id1165137804496"> <m:math>
+<m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137556768">
+<problem id="fs-id1165137423742">
+<para id="fs-id1165137423744"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>≤</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>></m:mo><m:mo>- −</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137469026">Para los siguientes ejercicios, dada cada función <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> evaluar <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><exercise id="fs-id1165134380351">
+<problem id="fs-id1165134380353">
+<para id="fs-id1165137678245"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137476514">
+<para id="fs-id1165137476516"> <m:math>
+<m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>34</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137693713">
+<problem id="fs-id1165137679373">
+<para id="fs-id1165137679375"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>+</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137715004">
+<problem id="fs-id1165137715006">
+<para id="fs-id1165137715008"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>x</m:mi></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>3</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mtext>si</m:mtext></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135699157">
+<para id="fs-id1165137401550"> <m:math>
+<m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo></m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>16</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137837869">En los siguientes ejercicios, escriba el dominio de la función definida a trozos en notación intervalo.</para>
+
+<exercise id="fs-id1165137837872">
+<problem id="fs-id1165135341427">
+<para id="fs-id1165135341429"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext> si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137704661">
+<problem id="fs-id1165137704664">
+<para id="fs-id1165137704666"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>2 </m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext> si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn></m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135420410">
+<para id="fs-id1165135570357">dominio: <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137772429">
+<problem id="fs-id1165137772431">
+<para id="fs-id1165137675983"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd>
+      <m:mrow>
+       <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr>
+     <m:mtd>
+      <m:mrow>
+       <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mtext>si</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+</section>
+<section id="fs-id1165135194497">
+<title>En tecnología</title>
+<exercise id="fs-id1165137780865"><problem id="fs-id1165137780867">
+<para id="fs-id1165135641711">Grafique <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> en la ventana de visualización <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>-0,5</m:mn><m:mo>,</m:mo><m:mn>-0,1</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0,1</m:mn><m:mo>,</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Determine el rango correspondiente para la ventana de visualización. Muestre las gráficas.</para></problem>
+<solution id="fs-id1165137501974">
+
+<media id="fs-id1165134258632" alt="Gráfica de la ecuación de [-0,5, -0,1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_221.jpg"/>
+</media>
+
+<para id="fs-id1165135191028">ventana: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>0,5</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>0,1</m:mn><m:mo stretchy="false">]</m:mo><m:mo>;</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>100</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137442910" alt="Gráfica de la ecuación de [0,1, 0,5].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_02_222-1958.jpg"/>
+</media>
+
+<para id="fs-id1165134378637">ventana: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0,1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0,5</m:mn><m:mo stretchy="false">]</m:mo><m:mo>;</m:mo></m:mrow>
+</m:math> rango: <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>100</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165131911953">
+<problem id="fs-id1165137842479">
+<para id="fs-id1165137842481">Grafique <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math> en la ventana de visualización <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>-0,5</m:mn><m:mo>,</m:mo><m:mn>-0,1</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0,1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0,5</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Determine el rango correspondiente para la ventana de visualización. Muestre los gráficos.</para></problem>
+</exercise>
+</section>
+<section id="fs-id1165137733672">
+<title> Extensión</title>
+<exercise id="fs-id1165137442197">
+<problem id="fs-id1165133221851">
+<para id="fs-id1165133221853">Supongamos que el rango de una función <m:math>
+<m:mrow>
+<m:mi>f</m:mi></m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>8</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> ¿Cuál es el rango de <m:math>
+<m:mrow>
+<m:mo>|</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>|</m:mo><m:mo>?</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134555582">
+<para id="fs-id1165134555584"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>8</m:mn><m:mo stretchy="false">]</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137679047">
+<problem id="fs-id1165137679049">
+<para id="fs-id1165133410011">Cree una función cuyo rango sean todos los números reales no negativos.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135209378">
+<problem id="fs-id1165135209380">
+<para id="fs-id1165137645593">Cree una función en la que el dominio sea <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>></m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133210812">
+<para id="fs-id1165137779064">Muchas respuestas. Una función es <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id1165137832031">
+<title> Aplicaciones en el mundo real</title>
+<exercise id="fs-id1165135511303"><problem id="fs-id1165135511305">
+<para id="fs-id1165135336103">La altura <m:math>
+<m:mrow>
+<m:mi>h</m:mi></m:mrow>
+</m:math> de un proyectil es una función del tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi></m:mrow>
+</m:math> que está en el aire. La altura en pies para <m:math>
+<m:mrow>
+<m:mi>t</m:mi></m:mrow>
+</m:math> segundos viene dada por la función <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>–16</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>96</m:mn><m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿Cuál es el dominio de la función? ¿Qué significa el dominio en el contexto del problema?</para></problem>
+<!--<solution id="fs-id1165137446701">
+<para id="fs-id1165137758760"> The domain is <m:math>
+<m:mrow>
+<m:mtext>&#8201;</m:mtext><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>&#160;</m:mtext><m:mn>6</m:mn><m:mo stretchy="false">]</m:mo><m:mo>;</m:mo><m:mtext>&#8201;</m:mtext></m:mrow>
+</m:math> it takes 6 seconds for the projectile to leave the ground and return to the ground</para>
+</solution>-->
+</exercise><exercise id="fs-id1165137406705">
+<problem id="fs-id1165137406708">
+<para id="fs-id1165133045371">El costo en dólares de hacer <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> artículos viene dada por la función <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>500.</m:mn></m:mrow>
+</m:math>
+</para>
+<list id="fs-id1165137862357" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> El costo fijo se determina cuando se producen cero artículos. Halle el costo fijo de este artículo.</item>
+<item><span class="token">Ⓑ</span> ¿Cuál es el costo de fabricación de 25 artículos?</item>
+<item><span class="token">Ⓒ</span> Supongamos que el costo máximo permitido es de 1500 dólares. ¿Cuáles son el dominio y el rango de la función de costos, <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo></m:mrow>
+</m:math>
+</item>
+</list></problem>
+</exercise>
+</section>
+</section></content>
+
+<glossary>
+<definition id="fs-id1165135445751">
+<term>notación intervalo</term>
+<meaning id="fs-id1165135190252">un método para describir un conjunto que incluye todos los números entre un límite inferior y un límite superior; los valores inferior y superior se enumeran entre paréntesis o corchetes: un corchete que indica la inclusión en el conjunto y un paréntesis indica la exclusión</meaning>
+</definition>
+
+<definition id="fs-id1165135487256">
+<term>función definida a trozos</term>
+<meaning id="fs-id1165137452169">una función en la que se utiliza más de una fórmula para definir la salida</meaning>
+</definition>
+
+<definition id="fs-id1165137863188">
+<term>notación del constructor de conjuntos</term>
+<meaning id="fs-id1165137863193">un método para describir un conjunto mediante una regla que todos sus miembros obedecen; tiene la forma <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mi>x</m:mi><m:mo>|</m:mo><m:mspace width="0.5em"/><m:mtext>enunciado de </m:mtext><m:mi>x</m:mi><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</meaning>
+</definition>
+</glossary>
+</document>

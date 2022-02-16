@@ -1,0 +1,3102 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Triángulos no rectángulos: Ley de senos</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49404</md:content-id>
+  <md:title>Triángulos no rectángulos: Ley de senos</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Utilizar la ley de los senos para resolver triángulos oblicuos.</item>
+<item>Calcular el área de un triángulo oblicuo con la función seno.</item>
+<item>Resolver problemas aplicados con la ley de los senos.</item>
+</list></md:abstract>
+  <md:uuid>aea1516b-dcb8-4853-a3b6-b15775067250</md:uuid>
+</metadata>
+
+<content>
+
+ <para id="fs-id1165137805976">Para garantizar la seguridad de los más de 5.000 aviones estadounidenses que vuelan simultáneamente en horas punta, los controladores aéreos los supervisan y se comunican con ellos tras recibir los datos del robusto sistema de balizas de radar. Supongamos que dos estaciones de radar, situadas a 20 millas de distancia, detectan una aeronave entre ellas. El ángulo de elevación medido por la primera estación es de 35 grados, mientras que el <term class="no-emphasis" id="term-00001">ángulo de elevación</term> medido por la segunda estación es de 15 grados. ¿Cómo podemos determinar la altitud de la aeronave? Vemos en la <link target-id="Figure_08_01_001"/> que el triángulo formado por la aeronave y las dos estaciones no es un triángulo rectángulo, por lo que no podemos utilizar lo que sabemos al respecto. En esta sección, descubriremos cómo resolver problemas que implican <term class="no-emphasis" id="term-00002">triángulos no rectángulos</term>.</para>
+
+ <figure id="Figure_08_01_001" class="small"><media id="fs-id1165134487538" alt="Un diagrama de un triángulo en el que los vértices son la primera estación terrestre, la segunda estación terrestre y el avión en el aire entre ellas. El ángulo entre la primera estación terrestre y el avión es de 15 grados, y el ángulo entre la segunda estación y el avión es de 35 grados. El lado entre las dos estaciones tiene una longitud de 20 millas. Hay una línea de puntos perpendicular al lado del suelo que conecta el vértice del avión con el suelo: una línea de altitud.">
+   <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_001.jpg"/>
+  </media>
+ </figure><section id="fs-id1165137629477">
+    <title>Usar la ley de los senos para resolver triángulos oblicuos</title><para id="fs-id1165132912724">En cualquier triángulo, podemos trazar una <term id="term-00003">altitud</term>, una línea perpendicular desde un vértice hasta el lado opuesto, para formar dos triángulos rectángulos. Sin embargo, sería preferible tener métodos que podamos aplicar directamente a los triángulos no rectángulos sin tener que crear primero triángulos rectángulos.</para>
+    <para id="fs-id1165137737731">Cualquier triángulo que no sea un triángulo rectángulo es un <term id="term-00004">triángulo oblicuo</term>. Resolver un triángulo oblicuo significa calcular las medidas de los tres ángulos y los tres lados. Para ello, tenemos que empezar con al menos tres de estos valores, incluso al menos uno de los lados. Investigaremos tres posibles situaciones de problemas de triángulos oblicuos:</para>
+    <list id="fs-id1165135347529" list-type="enumerated" number-style="arabic"><item><emphasis>ALA (ángulo-lado-ángulo)</emphasis>. Conocemos las medidas de dos ángulos y el lado incluido. Vea el <link target-id="Figure_08_01_002"/>.
+
+    <figure id="Figure_08_01_002" class="small"><media id="fs-id1165135342808" alt="Un triángulo oblicuo formado por los ángulos alfa, beta y gamma. Los valores de alfa y gamma son conocidos, así como el lado opuesto a beta, entre alfa y gamma.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_002.jpg"/>
+      </media>
+    </figure></item>
+      <item><term id="term-00005">AAL (ángulo-ángulo-lado).</term> Conocemos las medidas de dos ángulos y un lado que no está entre los ángulos conocidos. Vea el <link target-id="Figure_08_01_003"/>.
+
+    <figure id="Figure_08_01_003" class="small"><media id="fs-id1165137612260" alt="Un triángulo oblicuo formado por los ángulos alfa, beta y gamma. Se conocen el alfa y el gamma, así como el lado opuesto al alfa, entre el beta y el gamma.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_003.jpg"/>
+      </media>
+    </figure></item>
+      <item><term id="term-00006">LLA (lado-lado-ángulo).</term> Conocemos las medidas de dos lados y un ángulo que no está entre los lados conocidos. Vea el <link target-id="Figure_08_01_004"/>.
+    <figure id="Figure_08_01_004" class="small"><media id="fs-id1165137637362" alt="Un triángulo oblicuo formado por los ángulos alfa, beta y gamma. Alfa es el único ángulo conocido. Se conocen dos lados. El primero es opuesto a alfa, entre beta y gamma, y el segundo es opuesto a gamma, entre alfa y beta.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_004.jpg"/>
+      </media>
+    </figure></item>
+    </list><para id="fs-id1165131837001">Saber cómo enfocar cada una de estas situaciones nos permite resolver triángulos oblicuos sin tener que soltar una perpendicular para formar dos triángulos rectángulos. En su lugar, podemos utilizar el hecho de que la relación entre la medida de uno de los ángulos y la longitud de su lado opuesto será igual a las otras dos relaciones entre la medida del ángulo y el lado opuesto. Veamos cómo se deriva esta afirmación considerando el triángulo que se muestra en la <link target-id="Figure_08_01_005"/>.</para>
+
+    <figure id="Figure_08_01_005" class="small"><media id="fs-id1165134325097" alt="Triángulo oblicuo formado por los lados a, b y c, y los ángulos alfa, beta y gamma. El lado c es el ángulo opuesto a gamma y es la base horizontal del triángulo. El lado b es opuesto al ángulo beta, y el lado a es opuesto al ángulo alfa. Hay una línea punteada perpendicular (altitud) desde el ángulo gamma hasta la base horizontal c.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_005.jpg"/>
+      </media>
+    </figure><para id="fs-id1165135430238">Utilizando las relaciones del triángulo rectángulo, sabemos que <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>h</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>h</m:mi>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Resolviendo ambas ecuaciones para <m:math>
+      <m:mrow>
+<m:mi>h</m:mi></m:mrow>
+    </m:math> da dos expresiones diferentes para <m:math>
+      <m:mrow>
+<m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </para><equation id="fs-id1165134041961" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mi>h</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mspace width="0.3em"/><m:mtext>y</m:mtext><m:mspace width="0.3em"/><m:mi>h</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+    </m:math>
+    </equation><para id="fs-id1165135436248">A continuación, igualamos las expresiones.</para>
+    <equation id="fs-id1165133454469" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>a</m:mi><m:mi>b</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>a</m:mi><m:mi>b</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique ambos lados por</m:mtext><m:mspace width="0.3em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mi>a</m:mi><m:mi>b</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137472984">Del mismo modo, podemos comparar los otros cocientes.</para><equation id="fs-id1165134113891" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+   </m:mrow>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+   </m:mrow>
+   <m:mi>c</m:mi>
+  </m:mfrac>
+  <m:mspace width="0.3em"/><m:mtext>y</m:mtext><m:mspace width="0.3em"/><m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+   </m:mrow>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+   </m:mrow>
+   <m:mi>c</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135353701">En conjunto, estas relaciones reciben el nombre de <emphasis>ley de los senos</emphasis>.</para>
+    <equation id="fs-id1165137456728" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+          <m:mi>a</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo><m:mfrac>
+          <m:mrow>
+            <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+          <m:mi>b</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo><m:mfrac>
+          <m:mrow>
+            <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+          <m:mi>c</m:mi>
+        </m:mfrac>
+      </m:mrow>
+    </m:math>
+    </equation><para id="fs-id1165137663291">Observe la forma estándar de etiquetar los triángulos: el ángulo <m:math>
+      <m:mrow>
+<m:mi>α</m:mi></m:mrow>
+    </m:math> (alfa) es el lado opuesto <m:math>
+      <m:mrow>
+<m:mi>a</m:mi><m:mo>;</m:mo></m:mrow>
+    </m:math> el ángulo <m:math>
+      <m:mrow>
+<m:mi>β</m:mi></m:mrow>
+    </m:math> (beta) es el lado opuesto <m:math>
+      <m:mrow>
+<m:mi>b</m:mi><m:mo>;</m:mo></m:mrow>
+    </m:math> y el ángulo <m:math>
+      <m:mrow>
+<m:mi>γ</m:mi></m:mrow>
+    </m:math> (gamma) es el lado opuesto <m:math>
+      <m:mrow>
+<m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Vea la <link target-id="Figure_08_01_006"/>.</para>
+    <para id="fs-id1165137935659">Al calcular los ángulos y los lados, lleve los valores exactos hasta la respuesta final. Por lo general, las respuestas finales se redondean a la décima más cercana, a menos que se especifique lo contrario.</para><figure id="Figure_08_01_006" class="small"><media id="fs-id1165135487150" alt="Un triángulo con etiquetas estándar.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_006.jpg"/>
+      </media>
+    </figure><note id="fs-id1165133141415">
+
+      <title>Ley de senos</title>
+      <para id="fs-id1165134076025">Dado un triángulo con ángulos y lados opuestos etiquetados como en la <link target-id="Figure_08_01_006"/>, el cociente entre la medida de un ángulo y la longitud de su lado opuesto será igual a los otros dos cocientes entre la medida del ángulo y el lado opuesto. Todas las proporciones serán iguales. La <term id="term-00007">ley de los senos</term> se basa en las proporciones y se presenta simbólicamente de dos maneras.</para>
+      <equation id="fs-id1165137423030" class="unnumbered"><label/> <m:math display="block">
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+            <m:mi>a</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+            <m:mi>b</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+            <m:mi>c</m:mi>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>
+      </equation><equation id="fs-id1165137641714" class="unnumbered"><label/> <m:math display="block">
+        <m:mrow>
+          <m:mfrac>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mi>b</m:mi>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+            <m:mi>c</m:mi>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>
+      </equation><para id="fs-id1165137600232">Para resolver un triángulo oblicuo, utilice cualquier par de cocientes aplicables.</para>
+      </note>
+
+    <example id="Example_08_01_01">
+      <exercise id="fs-id1165135456696">
+        <problem id="fs-id1165137662067">
+          <title>Resolver dos lados y un ángulo desconocidos de un triángulo AAL</title>
+          <para id="fs-id1165134554335">Resuelva el triángulo que se muestra en la <link target-id="Figure_08_01_007"/> a la décima más cercana.</para>
+
+          <figure id="Figure_08_01_007" class="small"><media id="fs-id1165134155184" alt="Un triángulo oblicuo con etiquetas estándar. El ángulo alfa es de 50 grados, el ángulo gamma es de 30 grados y el lado a es de longitud 10. El lado b es la base horizontal.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_007.jpg"/>
+            </media>
+          </figure></problem>
+        <solution id="fs-id1165135441699">
+          <para id="fs-id1165134323533">Los tres ángulos deben sumar 180 grados. A partir de esto, podemos determinar que </para><equation id="fs-id1165135262620" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>50°</m:mn><m:mo>- −</m:mo><m:mn>30°</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>100°</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137900235">Para hallar un lado desconocido, necesitamos conocer el ángulo correspondiente y un cociente conocido. Sabemos que el ángulo <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>50°</m:mn>
+ </m:mrow>
+</m:math> y su lado correspondiente <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>10.</m:mn></m:mrow>
+          </m:math> Podemos utilizar la siguiente proporción de la ley de los senos para determinar la longitud de <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para><equation id="fs-id1165137735634" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mi>c</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique ambos lados por</m:mtext><m:mspace width="0.3em"/><m:mi>c</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique por el recíproco para aislar</m:mtext><m:mspace width="0.3em"/><m:mi>c</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>6,5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135171592">Del mismo modo, resuelva para <m:math>
+            <m:mrow>
+              <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> establecemos otra proporción.</para>
+          <equation id="fs-id1165135185939" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow><m:mfrac>
+           <m:mrow>
+            <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>10</m:mn>
+           </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>b</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique ambos lados por</m:mtext><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique por el recíproco para aislar</m:mtext><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>12,9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133064370">Por lo tanto, el conjunto completo de ángulos y lados es</para>
+          <equation id="fs-id1165133064373" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>50°</m:mn><m:mspace width="1em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>100°</m:mn><m:mspace width="1em"/><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>12,9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>30°</m:mn><m:mspace width="1em"/><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>6,5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+       </exercise>
+        </example>
+
+    <note id="fs-id1165134164931" class="precalculus try">
+      <label>Ejercicio</label>
+      <exercise id="ti_08_01_01">
+        <problem id="fs-id1165135313600"><para id="fs-id1165135313601">Resuelva el triángulo que se muestra en la <link target-id="Figure_08_01_008"/> a la décima más cercana.</para>
+
+        <figure id="Figure_08_01_008" class="small"><media id="fs-id1165132957318" alt="Un triángulo oblicuo con etiquetas estándar. El ángulo alfa es de 98 grados, el ángulo gamma es de 43 grados y el lado b es de longitud 22. El lado b es la base horizontal.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_008.jpg"/>
+          </media>
+        </figure></problem>
+        <solution id="fs-id1165132912639">
+          <para id="fs-id1165132912641"> <m:math>
+            <m:mtable columnalign="left">
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>α</m:mi><m:mo>=</m:mo><m:msup>
+                    <m:mn>98</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup><m:mspace width="1em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>34,6</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>β</m:mi><m:mo>=</m:mo><m:msup>
+                    <m:mn>39</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup><m:mspace width="1em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>22</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>γ</m:mi><m:mo>=</m:mo><m:msup>
+                    <m:mn>43</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup><m:mspace width="1em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>23,8</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+
+          </m:math>
+          </para>
+        </solution>
+      </exercise>
+     </note>
+     </section>
+  <section id="fs-id1165135199352">
+    <title>Usar la ley de los senos para resolver triángulos LLA</title><para id="fs-id1165133361407">Podemos utilizar la ley de los senos para resolver cualquier triángulo oblicuo, aunque algunas soluciones pueden no ser sencillas. En algunos casos, más de un triángulo puede satisfacer los criterios dados, lo que describimos como un <term id="term-00008">caso ambiguo</term>. Los triángulos clasificados como LLA, aquellos en los que conocemos las longitudes de dos lados y la medida del ángulo opuesto a uno de los lados dados, pueden dar lugar a una o dos soluciones, o incluso a ninguna solución.</para><note id="fs-id1165134481112"><title>Posibles resultados de los triángulos LLA</title>
+
+      <para id="fs-id1165134193487">Los triángulos oblicuos de la categoría LLA pueden tener cuatro resultados diferentes. La <link target-id="Figure_08_01_009"/> ilustra las soluciones con los lados conocidos <m:math>
+        <m:mrow>
+          <m:mi>a</m:mi></m:mrow>
+      </m:math> y <m:math>
+        <m:mrow>
+          <m:mi>b</m:mi></m:mrow>
+      </m:math> y ángulo conocido <m:math>
+        <m:mrow>
+          <m:mi>α</m:mi><m:mo>.</m:mo></m:mrow>
+      </m:math>
+      </para>
+
+      <figure id="Figure_08_01_009" class="medium"><media id="fs-id1165134155097" alt="Hay cuatro intentos de triángulos oblicuos en una fila, todos con etiquetas estándar. El lado c es la base horizontal. En el primer intento de triángulo, el lado a es menor que la altura de la altitud. Dado que el lado a no puede llegar al lado c, no hay triángulo. En el segundo intento de triángulo, el lado a es igual a la longitud de la altura, por lo que el lado a forma un ángulo recto con el lado c. En el tercer intento de triángulo, el lado a es mayor que la altura de la altitud y menor que el lado b, por lo que el lado a puede formar un ángulo agudo u obtuso con el lado c. En el cuarto intento de triángulo, el lado a es mayor o igual que el lado b, por lo que el lado a forma un ángulo agudo con el lado c.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_009n.png"/>
+        </media>
+      </figure></note><example id="Example_08_01_02"><exercise id="fs-id1165135547547"><problem id="fs-id1165131893624">
+          <title>Resolver un triángulo LLA oblicuo</title>
+          <para id="fs-id1165131893629">Resuelva el triángulo en la <link target-id="Figure_08_01_010"/> para el lado que falta y calcule las medidas de los ángulos que faltan a la décima más cercana.</para>
+
+          <figure id="Figure_08_01_010" class="small"><media id="fs-id1165135299841" alt="Un triángulo oblicuo con etiquetas estándar en el que el lado a es de longitud 6, el lado b es de longitud 8 y el ángulo alfa es de 35 grados.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_010.jpg"/>
+            </media>
+          </figure></problem>
+
+        <solution id="fs-id1165135390986">
+          <para id="fs-id1165135390988">Utilice la ley de los senos para hallar el ángulo <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi></m:mrow>
+          </m:math> y el ángulo <m:math>
+            <m:mrow>
+              <m:mi>γ</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> y luego el lado <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math> Al resolver <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> tenemos la proporción</para>
+
+          <equation id="fs-id1165137832935" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mn>0,7648</m:mn><m:mo>≈</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>0,7648</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>49,9°</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>49,9°</m:mn><m:mo/>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134284386">Sin embargo, en el diagrama, el ángulo <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi></m:mrow>
+          </m:math> parece ser un ángulo obtuso y puede ser mayor de 90°. ¿Cómo conseguimos un ángulo agudo, y cómo calculamos la medida de <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>?</m:mo></m:mrow>
+          </m:math> Investiguemos más a fondo. Al dejar caer una perpendicular desde <m:math>
+            <m:mrow>
+              <m:mi>γ</m:mi></m:mrow>
+          </m:math> y ver el triángulo desde una perspectiva de ángulo recto, tenemos la <link target-id="Figure_08_01_011"/>. Podría haber un segundo triángulo que se ajuste a los criterios dados.</para><figure id="Figure_08_01_011" class="small"><media id="fs-id1165135173349" alt="Triángulo oblicuo, construido a partir del anterior con etiquetas primarias estándar. El lado a tiene una longitud de 6, el lado b tiene una longitud de 8, y el ángulo alfa primo es de 35 grados. Se adjunta un triángulo isósceles, donde se utiliza el lado a como uno de sus catetos congruentes y el ángulo complementario al ángulo beta como uno de sus ángulos base congruentes. El otro ángulo congruente se denomina beta primo, y toda la nueva base horizontal, que se extiende desde el lado original c, se denomina c primo. Hay una línea puntuada de altitud desde el ángulo gamma primo hasta el lado c primo.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_011.jpg"/>
+          </media>
+        </figure><para id="fs-id1165135173358">El ángulo complementario a <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi></m:mrow>
+          </m:math> es aproximadamente igual a 49,9°, lo que significa que <m:math>
+ <m:mrow>
+  <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>49,9°</m:mn><m:mo>=</m:mo><m:mn>130,1°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> (Recuerde que la función seno es positiva tanto en el primero como en el segundo cuadrante). Al resolver para <m:math>
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> tenemos</para><equation id="fs-id1165134081388" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>35°</m:mn><m:mo>- −</m:mo><m:mn>130,1°</m:mn><m:mo>≈</m:mo><m:mn>14,9°</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134261684">A continuación, podemos utilizar estas medidas para resolver el otro triángulo. Dado que <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>γ</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              </m:mrow>
+          </m:math> es complementario a la suma de <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>α</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              </m:mrow>
+          </m:math> y <m:math>
+            <m:mrow>
+              <m:msup>
+              <m:mi>β</m:mi>
+              <m:mo>′</m:mo>
+              </m:msup>
+              <m:mo>,</m:mo></m:mrow>
+          </m:math> tenemos</para><equation id="fs-id1165134129904" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>γ</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>35°</m:mn><m:mo>- −</m:mo><m:mn>49,9°</m:mn><m:mo>≈</m:mo><m:mn>95,1°</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135416361">Ahora tenemos que hallar <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi></m:mrow>
+          </m:math> y <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>c</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              <m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para>
+        <para id="fs-id1165137696701">Tenemos</para>
+          <equation id="fs-id1165135468093" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14,9°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.3em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14,9°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>≈</m:mo><m:mn>2,7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133210009">Finalmente,</para>
+          <equation id="fs-id1165134430446" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>c</m:mi>
+         <m:mo>′</m:mo>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>95,1°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>c</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>95,1°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>≈</m:mo><m:mn>10,4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134357379">En resumen, hay dos triángulos con un ángulo de 35°, un lado adyacente de 8 y un lado opuesto de 6, como se muestra en la <link target-id="Figure_08_01_012"/>.</para>
+<figure id="Figure_08_01_012" class="medium"><media id="fs-id1165137694956" alt="Hay dos triángulos con etiquetas estándar. El triángulo a es el original. Tiene ángulos alfa de 35 grados, beta de 130,1 grados y gamma de 14,9 grados. Tiene lados a = 6, b = 8, y c es aproximadamente 2,7. El triángulo b es el triángulo ampliado. Tiene ángulos alfa primo = 35 grados, ángulo beta primo = 49,9 grados y ángulo gamma primo = 95,1 grados. Tiene el lado a primo = 6, el lado b primo = 8, y el lado c primo es aproximadamente 10,4.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_012ab.jpg"/>
+          </media>
+        </figure><para id="fs-id1165137694965">Sin embargo, estábamos buscando los valores para el triángulo con un ángulo obtuso <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math> Podemos verlos en el primer triángulo (a) en la <link target-id="Figure_08_01_012"/>.</para></solution>
+      </exercise></example><note id="fs-id1165135378681" class="precalculus try">
+      <label>Ejercicio</label>
+      <exercise id="ti_08_01_03"><problem id="fs-id1165135378691"><para id="fs-id1165135378692">Dados <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>80°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>120</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+          <m:mrow>
+            <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>121</m:mn><m:mo>,</m:mo></m:mrow>
+        </m:math> halle el lado y los ángulos que faltan. Si hay más de una solución posible, muestre ambas.</para></problem>
+
+        <solution id="fs-id1165135555468">
+      <para id="fs-id1165135555470">Solución 1</para>
+          <equation id="fs-id1165135555473" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>80°</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>120</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>83,2°</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>121</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>16,8°</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>35,2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165132945457">Solución 2</para>
+          <equation id="fs-id1165132945460" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>α</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>80°</m:mn><m:mspace width="0.3em"/><m:msup>
+       <m:mi>a</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>120</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>β</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo><m:mn>96,8°</m:mn><m:mspace width="0.3em"/><m:msup>
+       <m:mi>b</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>121</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>γ</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo><m:mn>3,2°</m:mn><m:mspace width="0.3em"/><m:msup>
+       <m:mi>c</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo><m:mn>6,8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+      </exercise></note>
+
+    <example id="Example_08_01_03"><exercise id="fs-id1165135510889"><problem id="fs-id1165135510891">
+          <title>Resolver los lados y ángulos desconocidos de un triángulo LLA</title>
+          <para id="fs-id1165135510897">En el triángulo que se muestra en la <link target-id="Figure_08_01_014"/>, resuelva el lado y los ángulos desconocidos. Redondee sus respuestas a la décima más cercana.</para>
+
+          <figure id="Figure_08_01_014" class="small"><media id="fs-id1165134170053" alt="Un triángulo oblicuo con etiquetas estándar. El lado b es 9, el lado c es 12, y el ángulo gamma es 85. El ángulo alfa, el ángulo beta y el lado a son desconocidos.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_014.jpg"/>
+            </media>
+          </figure></problem>
+        <solution id="fs-id1165137893341">
+          <para id="fs-id1165137893343">Al momento de elegir el par de proporciones de la ley de los senos que vaya a utilizar, fíjese en la información que se da. En este caso, conocemos el ángulo <m:math>
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>85°</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y su lado correspondiente <m:math>
+            <m:mrow>
+              <m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow>
+          </m:math> y conocemos el lado <m:math>
+            <m:mrow>
+              <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+          </m:math> Utilizaremos esta proporción para resolver <m:math>
+            <m:mrow>
+              <m:mi>β</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para><equation id="fs-id1165134373519" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aísle la incógnita</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134081707">Para hallar <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>,</m:mo></m:mrow>
+        </m:math> aplique la función seno inversa. La función seno inversa arrojará un único resultado, pero tenga en cuenta que puede haber dos valores para <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>.</m:mo></m:mrow>
+        </m:math> Es importante verificar el resultado, ya que puede haber dos soluciones viables, una sola solución (el caso habitual) o ninguna.</para><equation id="fs-id1165135523278" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>9</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85°</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>12</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>0,7471</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>48,3°</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135494473">En este caso, si restamos <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi></m:mrow>
+        </m:math> de 180°, hallamos que puede haber otra solución posible. Así, <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>48,3°</m:mn><m:mo>≈</m:mo><m:mn>131,7°</m:mn><m:mo>.</m:mo></m:mrow>
+        </m:math> Para comprobar la solución, reste ambos ángulos, 131,7° y 85°, de 180°. Esto da</para><equation id="fs-id1165134361390" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>85°</m:mn><m:mo>- −</m:mo><m:mn>131,7°</m:mn><m:mo>≈</m:mo><m:mo>- −</m:mo><m:mn>36,7°</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133227613">lo cual es imposible, y por lo tanto <m:math>
+ <m:mrow>
+  <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>48,3°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+        </para><para id="fs-id1165131907329">Para hallar los valores que faltan, calculamos <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>180°</m:mn><m:mo>- −</m:mo><m:mn>85°</m:mn><m:mo>- −</m:mo><m:mn>48,3°</m:mn><m:mo>≈</m:mo><m:mn>46,7°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ahora, solo el lado <m:math>
+          <m:mrow>
+            <m:mi>a</m:mi></m:mrow>
+        </m:math> es necesario. Utilice la ley de los senos para resolver <m:math>
+          <m:mrow>
+            <m:mi>a</m:mi></m:mrow>
+        </m:math> por una de las proporciones.</para><equation id="fs-id1165135199437" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable columnalign="left">
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow><m:mfrac>
+               <m:mrow>
+                <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+               </m:mrow>
+               <m:mrow>
+                <m:mn>12</m:mn>
+               </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo><m:mfrac>
+               <m:mrow>
+                <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>46,7</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+               </m:mrow>
+               <m:mi>a</m:mi>
+              </m:mfrac>
+
+             </m:mrow>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>46,7</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>46,7</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>°</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>≈</m:mo><m:mn>8,8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165131962245">El conjunto completo de soluciones para el triángulo dado es</para>
+
+          <equation id="fs-id1165131962248" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>46,7°</m:mn><m:mspace width="1em"/><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>8,8</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>48,3°</m:mn><m:mspace width="1em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>85°</m:mn><m:mspace width="1em"/><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+        </exercise></example><note id="fs-id1165135417780" class="precalculus try">
+      <label>Ejercicio</label>
+      <exercise id="ti_08_01_02">
+        <problem id="fs-id1165137892396">
+          <para id="fs-id1165137892398">Dados <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>80°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> halle el lado y los ángulos que faltan. Si hay más de una solución posible, muestre ambas. Redondee sus respuestas a la décima más cercana. </para></problem>
+        <solution id="fs-id1165131893780">
+<para id="fs-id1165131893782"> <m:math>
+          <m:mrow>
+            <m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>5,7°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>94,3°</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>101,3</m:mn></m:mrow>
+        </m:math>
+        </para>
+        </solution>
+        </exercise>
+        </note>
+
+    <example id="Example_08_01_04">
+      <exercise id="fs-id1165134532777">
+        <problem id="fs-id1165134532779">
+          <title>Hallar los triángulos que satisfagan los criterios dados</title>
+          <para id="fs-id1165135546063">Halle todos los triángulos posibles si un lado tiene longitud 4 frente a un ángulo de 50°, y el otro lado tiene longitud 10.</para>
+        </problem>
+        <solution id="fs-id1165135546069">
+          <para id="fs-id1165135546071">Con la información dada, podemos resolver el ángulo opuesto al lado de longitud 10. Vea el <link target-id="Figure_08_01_015"/>.</para>
+
+          <equation id="fs-id1165137900104" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>1,915</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><figure id="Figure_08_01_015" class="small"><media id="fs-id1165137701660" alt="Un triángulo incompleto. Un lado tiene longitud 4 frente a un ángulo de 50 grados, y el otro lado tiene longitud 10 frente al ángulo a. El lado de la longitud 4 es demasiado corto para alcanzar el lado de la longitud 10, por lo que no hay un tercer ángulo.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_015.jpg"/>
+          </media>
+        </figure><para id="fs-id1165135202531">Podemos detenernos aquí sin hallar el valor de <m:math>
+            <m:mrow>
+              <m:mi>α</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math> Debido a que el rango de la función seno es <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>[</m:mo> <m:mrow>
+                <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+          </m:math> es imposible que el valor del seno sea 1,915. De hecho, la introducción de <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mrow>
+                  <m:mi>sen</m:mi></m:mrow>
+                <m:mrow>
+                  <m:mo>- −</m:mo><m:mn>1</m:mn></m:mrow>
+              </m:msup>
+              <m:mrow><m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>1,915</m:mn></m:mrow>
+                <m:mo>)</m:mo></m:mrow></m:mrow>
+          </m:math> en una calculadora gráfica genera un DOMINIO DE ERROR. Por lo tanto, no se pueden dibujar triángulos con las dimensiones proporcionadas.</para></solution>
+       </exercise>
+        </example>
+
+    <note id="fs-id1165137812541" class="precalculus try">
+      <label>Ejercicio</label>
+      <exercise id="ti_08_01_05">
+        <problem id="fs-id1165137761651"><para id="fs-id1165137761652">Determine el número de triángulos posibles dado <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>31</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>26</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>48°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>         </para></problem>
+        <solution id="fs-id1165132079317">
+<para id="fs-id1165135650686">dos</para>
+</solution>
+      </exercise>
+    </note>
+  </section>
+
+  <section id="fs-id1165135650693">
+    <title> Calcular el área de un triángulo oblicuo mediante la función seno</title>
+    <para id="fs-id1165135317533">Ahora que podemos resolver un triángulo para los valores que faltan, podemos utilizar algunos de esos valores y la función seno para calcular el área de un triángulo oblicuo. Recordemos que la fórmula del área de un triángulo viene dada por <m:math>
+      <m:mrow>
+<m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>b</m:mi><m:mi>h</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> donde <m:math>
+      <m:mrow>
+<m:mi>b</m:mi></m:mrow>
+    </m:math> es la base y <m:math>
+      <m:mrow>
+<m:mi>h</m:mi></m:mrow>
+    </m:math> es la altura. En los triángulos oblicuos, debemos hallar <m:math>
+      <m:mrow>
+<m:mi>h</m:mi></m:mrow>
+    </m:math> antes de poder utilizar la fórmula del área. Al observar los dos triángulos en la <link target-id="Figure_08_01_016"/>, uno agudo y otro obtuso, podemos dejar caer una perpendicular que represente la altura y luego aplicar la propiedad trigonométrica <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>opuesto</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>hipotenusa</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> para escribir una ecuación del área en triángulos oblicuos. En el triángulo agudo, tenemos <m:math>
+      <m:mrow>
+<m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mfrac>
+          <m:mi>h</m:mi>
+          <m:mi>c</m:mi>
+        </m:mfrac>
+        </m:mrow>
+    </m:math> o <m:math>
+      <m:mrow>
+        <m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Sin embargo, en el triángulo obtuso, dejamos caer la perpendicular fuera del triángulo y extendemos la base <m:math>
+      <m:mrow>
+<m:mi>b</m:mi></m:mrow>
+    </m:math> para formar un triángulo rectángulo. El ángulo utilizado en el cálculo es <m:math>
+      <m:mrow>
+<m:msup>
+          <m:mi>α</m:mi>
+          <m:mo>′</m:mo>
+        </m:msup>
+        <m:mo>,</m:mo></m:mrow>
+    </m:math> o <m:math>
+      <m:mrow>
+<m:mn>180</m:mn><m:mo>- −</m:mo><m:mi>α</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math>
+      </para><figure id="Figure_08_01_016"><media id="fs-id1165134181795" alt="Dos triángulos oblicuos con etiquetas estándar. Ambos tienen una línea punteada de altitud h, extendida desde el ángulo beta hasta el lado de la base horizontal b. En el primero, que es un triángulo agudo, la altitud está dentro del triángulo. En el segundo, que es un triángulo obtuso, la altitud h está fuera del triángulo. ">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_016.jpg"/>
+      </media>
+    </figure><para id="fs-id1165135546803">Por lo tanto,</para>
+    <equation id="fs-id1165135546806" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2 </m:mn>
+        </m:mfrac>
+        <m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mtext>base</m:mtext></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+            <m:mrow>
+              <m:mtext>altura</m:mtext></m:mrow>
+            <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+        <m:mi>b</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </equation><para id="fs-id1165135502020">De la misma manera,</para>
+    <equation id="fs-id1165135502023" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+        <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>a</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+        <m:mi>a</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </equation><note id="fs-id1165135317669">
+
+      <title>Área de un triángulo oblicuo</title>
+      <para id="fs-id1165135317678">La fórmula del área de un triángulo oblicuo viene dada por</para>
+      <equation id="fs-id1165134386652" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>b</m:mi><m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134557988">Esto equivale a la mitad del producto de dos lados y el seno de su ángulo incluido.</para>
+      </note>
+
+    <example id="Example_08_01_05">
+      <exercise id="fs-id1165135177780">
+        <problem id="fs-id1165135177782">
+          <title>Calcular el área de un triángulo oblicuo</title>
+          <para id="fs-id1165135177787">Calcule el área de un triángulo con lados <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>90</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>52</m:mn><m:mo>,</m:mo></m:mrow>
+          </m:math> y el ángulo <m:math>
+ <m:mrow>
+  <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>102°</m:mn><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Redondee el área al número entero más cercano.</para></problem>
+        <solution id="fs-id1165137502457">
+          <para id="fs-id1165137502459">Utilizando la fórmula, tenemos</para>
+
+        <equation id="fs-id1165137502463" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mn>90</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>52</m:mn><m:mo stretchy="false">)</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>102°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Área</m:mtext><m:mo>≈</m:mo><m:mn>2289 </m:mn><m:mspace width="0.3em"/><m:mtext>unidades</m:mtext><m:mspace width="0.3em"/><m:mtext>al cuadrado</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+      </exercise>
+    </example>
+
+    <note id="fs-id1165137419119" class="precalculus try">
+      <label>Ejercicio</label>
+      <exercise id="ti_08_01_06">
+        <problem id="fs-id1165137423575"><para id="fs-id1165137423576">Calcule el área del triángulo dado <m:math>
+ <m:mrow>
+  <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>42°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7,2</m:mn><m:mspace width="0.3em"/><m:mtext>pies</m:mtext><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3,4</m:mn><m:mspace width="0.3em"/><m:mtext>pies</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Redondee el área a la décima más cercana.</para></problem>
+        <solution id="fs-id1165135168061">
+<para id="fs-id1165135168063">alrededor de <m:math>
+          <m:mrow>
+            <m:mn>8,2</m:mn></m:mrow>
+        </m:math> pies cuadrados</para>
+        </solution>
+        </exercise>
+       </note>
+  </section>
+
+  <section id="fs-id1165135381204">
+    <title> Resolver problemas aplicados mediante la ley de los senos</title>
+    <para id="fs-id1165137628654">Cuanto más estudiamos las aplicaciones trigonométricas, más descubrimos que son innumerables. Algunas son situaciones planas, tipo diagrama, pero muchas aplicaciones de cálculo, ingeniería y física implican tres dimensiones y movimiento.</para><example id="Example_08_01_06"><exercise id="fs-id1165137628663"><problem id="fs-id1165134041227">
+          <title>Calcular la altitud</title>
+          <para id="fs-id1165134041232">Calcule la altitud de la aeronave en el problema presentado al comienzo de esta sección, que se muestra en la <link target-id="Figure_08_01_017"/>. Redondee la altitud a la décima de milla más cercana.</para>
+
+          <figure id="Figure_08_01_017" class="small"><media id="fs-id1165134122936" alt="Un diagrama de un triángulo en el que los vértices son la primera estación terrestre, la segunda estación terrestre y el avión en el aire entre ellas. El ángulo entre la primera estación terrestre y el avión es de 15 grados, y el ángulo entre la segunda estación y el avión es de 35 grados. El lado entre las dos estaciones tiene una longitud de 20 millas. Hay una línea punteada que denota la altitud, perpendicular al lado del suelo que conecta el vértice de la aeronave con el suelo.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_017.jpg"/>
+            </media>
+          </figure></problem>
+        <solution id="fs-id1165132972747">
+          <para id="fs-id1165132972749">Para determinar la elevación de la aeronave, primero calculamos la distancia desde una estación hasta la aeronave, como el lado <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> y luego utilizamos las relaciones de triángulo rectángulo para calcular la altura del avión, <m:math>
+            <m:mrow>
+              <m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para><para id="fs-id1165137732703">Debido a que los ángulos del triángulo suman 180 grados, el ángulo desconocido deberá ser 180°-15°-35°=130°. Este ángulo es opuesto al lado de longitud 20, lo que nos permite establecer una relación de la ley de senos.</para><equation id="fs-id1165134246237" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable columnalign="left">
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow><m:mfrac>
+           <m:mrow>
+            <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>130°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>20</m:mn>
+           </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mi>a</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>a</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>130°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>20</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>35°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>130°</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>14,98</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165133102541">La distancia entre una estación y la aeronave es de unas 14,98 millas.</para>
+          <para id="fs-id1165133102544">Ahora, que conocemos <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> podemos utilizar las relaciones de triángulo rectángulo para resolver <m:math>
+            <m:mrow>
+              <m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+          </m:math>
+          </para>
+          <equation id="fs-id1165135172284" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>opuesto</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>hipotenusa</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mi>h</m:mi>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mi>h</m:mi>
+       <m:mrow>
+        <m:mn>14,98</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>h</m:mi><m:mo>=</m:mo><m:mn>14,98</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15°</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>h</m:mi><m:mo>≈</m:mo><m:mn>3,88</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137722150">La aeronave está a una altitud de aproximadamente 3,9 millas.</para>
+        </solution>
+        </exercise></example><note id="fs-id1165137722156" class="precalculus try">
+      <label/>
+      <exercise id="ti_08_01_07">
+        <problem id="fs-id1165133197151">
+          <para id="fs-id1165133197153">El diagrama que se muestra en la <link target-id="Figure_08_01_018"/> representa la altura de un dirigible que sobrevuela un estadio de fútbol. Calcule la altura del dirigible si el ángulo de elevación en la zona del extremo sur, punto A, es de 70°, el ángulo de elevación desde la zona del extremo norte, punto <m:math>
+            <m:mrow>
+              <m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+          </m:math> es de 62°, y la distancia entre los puntos de visión de las dos zonas de anotación es de 145 yardas.</para><figure id="Figure_08_01_018" class="small"><media id="fs-id1165137715412" alt="Triángulo oblicuo formado por tres vértices A, B y C. Los vértices A y B son puntos en el suelo, y el vértice C es el dirigible en el aire entre ellos. La distancia entre A y B es de 145 yardas. El ángulo en el vértice A es de 70 grados, y el ángulo en el vértice B es de 62 grados.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_018.jpg"/>
+          </media>
+        </figure></problem>
+        <solution id="fs-id1165134380826">
+          <para id="fs-id1165134380829">161,9 yardas.</para>
+        </solution>
+      </exercise>
+    </note>
+
+    <note id="fs-id1165137896860" class="precalculus media media-notitle"><label>Media</label>
+      <para id="fs-id1165137896866">Acceda a estos recursos en línea para obtener más información y practicar las aplicaciones trigonométricas.</para>
+ <list id="eip-id1165135341252">
+ <item><link url="http://openstax.org/l/sinesbasic">Ley de los senos: Nociones elementales</link></item>
+     <item><link url="http://openstax.org/l/sinesambiguous">Ley de los senos: El caso ambiguo</link></item>
+</list>
+    </note></section>
+
+<section id="fs-id1165137732417" class="key-equations"><title>Ecuaciones clave</title><table id="eip-id2728866" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Ley de senos</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+       </m:mrow>
+       <m:mi>c</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>b</m:mi>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>c</m:mi>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+<row>
+<entry>Área para triángulos oblicuos</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>b</m:mi><m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>α</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>c</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>β</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mspace width="1em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>a</m:mi><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>γ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165135252053" class="key-concepts">
+    <title>Conceptos clave</title>
+   <list id="fs-id1165135428315" list-type="bulleted"><item>La ley de los senos puede utilizarse para resolver triángulos oblicuos, que son triángulos no rectángulos.</item>
+    <item>Según la ley de los senos, el cociente entre la medida de uno de los ángulos y la longitud de su lado opuesto es igual a los otros dos cocientes entre la medida del ángulo y el lado opuesto.</item>
+     <item>Hay tres casos posibles: ALA, AAL, LLA. En función de la información facilitada, podemos elegir la ecuación adecuada para dar con la solución solicitada. Vea el <link target-id="Example_08_01_01"/>.</item>
+    <item>El caso ambiguo surge cuando un triángulo oblicuo puede tener diferentes resultados.</item>
+     <item>Hay tres casos posibles que surgen de la disposición de LLA: una solución única, dos soluciones posibles y ninguna solución. Vea el <link target-id="Example_08_01_02"/> y el <link target-id="Example_08_01_03"/>.</item>
+     <item>La ley de los senos se puede utilizar para resolver triángulos con criterios dados. Vea el <link target-id="Example_08_01_04"/>.</item>
+     <item>La fórmula general del área de los triángulos se traduce en triángulos oblicuos tras hallar primero el valor de la altura correspondiente. Vea el <link target-id="Example_08_01_05"/>.</item>
+     <item>Hay muchas aplicaciones trigonométricas. A menudo se pueden resolver al dibujar primero un diagrama de la información dada y utilizar después la ecuación apropiada. Vea el <link target-id="Example_08_01_06"/>.</item>
+   </list></section>
+
+  <section id="fs-id1165134534154" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165134534157">
+<title>Verbales</title>
+
+<exercise id="fs-id1165134534162">
+  <problem id="fs-id1165134534164">
+    <para id="fs-id1165137762314">Describa la altitud de un triángulo.</para>
+  </problem>
+<solution id="fs-id1165137762318">
+<para id="fs-id1165137762320">La altitud se extiende desde cualquier vértice hasta el lado opuesto o hasta la línea que contiene al lado opuesto en un ángulo de 90°.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134167308">
+<problem id="fs-id1165134167310">
+<para id="fs-id1165134167312">Compare los triángulos rectángulos y los oblicuos.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134167318">
+<problem id="fs-id1165134314755">
+<para id="fs-id1165134314757">¿Cuándo utilizar la ley de los senos para hallar el ángulo que falta?</para>
+</problem>
+  <solution id="fs-id1165134314761">
+<para id="fs-id1165134314763">Cuando los valores conocidos son el lado opuesto al ángulo que falta y otro lado y su ángulo opuesto. </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135528433">
+<problem id="fs-id1165135528435">
+<para id="fs-id1165135528437">En la ley de los senos, ¿cuál es la relación entre el ángulo en el numerador y el lado en el denominador?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135528444">
+<problem id="fs-id1165135195290">
+<para id="fs-id1165135195293">¿Qué tipo de triángulo da lugar a un caso ambiguo?</para>
+</problem>
+<solution id="fs-id1165135195297">
+<para id="fs-id1165135195299">Un triángulo con dos lados dados y un ángulo no incluido. </para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165134237172">
+<title>Algebraicos</title>
+  <para id="fs-id1165134237178">En los siguientes ejercicios, supongamos que <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>β</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>γ</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Resuelva cada triángulo, si es posible. Redondee cada respuesta a la décima más cercana.</para>
+<exercise id="fs-id1165135525976">
+  <problem id="fs-id1165135525978">
+    <para id="fs-id1165135525980"> <m:math>
+      <m:mrow>
+        <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>43°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>69°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165134258493">
+  <problem id="fs-id1165134258495">
+    <para id="fs-id1165134258497"> <m:math>
+      <m:mrow>
+        <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>35°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>73°</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133243549">
+  <para id="fs-id1165135639128"> <m:math>
+    <m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>72°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>12,0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>19,9</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165134480947">
+  <problem id="fs-id1165134480949">
+    <para id="fs-id1165134480951"> <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>60°</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135702707">
+  <problem id="fs-id1165135518130">
+    <para id="fs-id1165135518132"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>60°</m:mn></m:mrow>
+        <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>100°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165137911000">
+  <para id="fs-id1165137911002"> <m:math>
+    <m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>20°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>4,5</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>1,6</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165135367533">
+  <problem id="fs-id1165135367535">
+    <para id="fs-id1165133402068"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>95°</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>30°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+
+  <para id="fs-id1165134148228">En los siguientes ejercicios, utilice la ley de los senos para resolver el lado que falta en cada triángulo oblicuo. Redondee cada respuesta a la centésima más cercana. Supongamos que el ángulo <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> el ángulo <m:math>
+    <m:mrow>
+      <m:mi>B</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> y el ángulo <m:math>
+    <m:mrow>
+      <m:mi>C</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </para><exercise id="fs-id1165137619092">
+  <problem id="fs-id1165137619094">
+    <para id="fs-id1165137619096">Halle el lado <m:math>
+      <m:mrow>
+<m:mi>b</m:mi></m:mrow>
+    </m:math> cuando <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>37°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>49°</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn></m:mrow>
+    </m:math>
+    </para>
+  </problem>
+<solution id="fs-id1165137701948">
+  <para id="fs-id1165137701950"> <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>3,78</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135497737">
+  <problem id="fs-id1165135497739">
+    <para id="fs-id1165135497741">Halle el lado <m:math>
+      <m:mrow>
+<m:mi>a</m:mi></m:mrow>
+    </m:math> cuando <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>132°</m:mn><m:mo>,</m:mo><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>23°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165133361987">
+  <problem id="fs-id1165133361989">
+    <para id="fs-id1165133361991">Halle el lado <m:math>
+      <m:mrow>
+<m:mi>c</m:mi></m:mrow>
+    </m:math> cuando <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>=</m:mo><m:mn>37°</m:mn><m:mo>,</m:mo><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>21°</m:mn><m:mo/><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>23.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133300613">
+  <para id="fs-id1165133300616"> <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>13,70</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+  <para id="fs-id1165135541644">Para los siguientes ejercicios, supongamos que <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>β</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>γ</m:mi></m:mrow>
+  </m:math> es el lado opuesto <m:math>
+    <m:mrow>
+      <m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Determine si no hay ningún triángulo, un triángulo o dos triángulos. A continuación, resuelva cada triángulo, si es posible. Redondee cada respuesta a la décima más cercana.</para>
+<exercise id="fs-id1165137894577">
+  <problem id="fs-id1165137894579">
+    <para id="fs-id1165137894581"> <m:math>
+      <m:mrow>
+        <m:mi>α</m:mi><m:mo>=</m:mo><m:mn>119°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>26</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165134389853">
+  <problem id="fs-id1165134389855">
+    <para id="fs-id1165134389858"> <m:math>
+      <m:mrow>
+        <m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>113°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>32</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133317685">
+  <para id="fs-id1165133317687">un triángulo, <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>50,3°</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>16,7°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>26,7</m:mn></m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165135634360">
+  <problem id="fs-id1165135634363">
+    <para id="fs-id1165135442377"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3,5</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>5,3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>γ</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>80°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165135521227">
+  <problem id="fs-id1165135521229">
+    <para id="fs-id1165135521231"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>17</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>35°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165134224075">
+  <para id="fs-id1165135518098">dos triángulos, <m:math>
+    <m:mrow>
+      <m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>54,3°</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>90,7°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>20,9</m:mn></m:mrow>
+  </m:math> o <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>γ</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>125,7°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>β</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>19,3°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>6,9</m:mn>
+ </m:mrow>
+</m:math>   </para></solution></exercise>
+<exercise id="fs-id1165134073101">
+  <problem id="fs-id1165134073103">
+    <para id="fs-id1165134192805"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>20,5</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>35,0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>β</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>25°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165135426390">
+  <problem id="fs-id1165135347186">
+    <para id="fs-id1165135347188"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>α</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/><m:mn>43°</m:mn></m:mrow>
+    </m:math>
+    </para>
+  </problem>
+<solution id="fs-id1165134032288">
+  <para id="fs-id1165134032290">dos triángulos, <m:math>
+    <m:mrow><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>75,7°</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>γ</m:mi><m:mo>≈</m:mo><m:mn>61,3°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≈</m:mo><m:mn>9,9</m:mn></m:mrow>
+  </m:math> o <m:math>
+ <m:mrow><m:msup>
+   <m:mi>β</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>18,3°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>γ</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>118,7°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>3,2</m:mn>
+ </m:mrow>
+</m:math>   </para></solution>
+</exercise>
+<exercise id="fs-id1165133359520">
+  <problem id="fs-id1165133359522">
+    <para id="fs-id1165133359524"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>=</m:mo><m:mn>24°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165134122771">
+  <problem id="fs-id1165134122740">
+    <para id="fs-id1165134122743"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/><m:mn>10°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135353721">
+  <para id="fs-id1165135353723">dos triángulos, <m:math>
+    <m:mrow><m:mi>α</m:mi><m:mo>≈</m:mo><m:mn>143,2°</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>≈</m:mo><m:mn>26,8°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>≈</m:mo><m:mn>17,3</m:mn></m:mrow>
+  </m:math> o <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>α</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>16,8°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>β</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>153,2°</m:mn><m:mo>,</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>8,3</m:mn>
+ </m:mrow>
+</m:math>   </para></solution>
+</exercise>
+<exercise id="fs-id1165135291787">
+  <problem id="fs-id1165135291789">
+    <para id="fs-id1165135291792"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2,3</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>1,8</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo><m:mn>28°</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165131940272">
+  <problem id="fs-id1165134113869">
+    <para id="fs-id1165134113872"> <m:math>
+      <m:mrow>
+        <m:mi>β</m:mi><m:mo>=</m:mo><m:mn>119°</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>8,2</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>11,3</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135515868">
+<para id="fs-id1165135515870">no hay triángulo posible.</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135515875">En los siguientes ejercicios, utilice la ley de los senos para resolver, si es posible, el lado o ángulo que falta para cada triángulo o triángulos en el caso ambiguo. Redondee cada respuesta a la décima más cercana.</para>
+
+<exercise id="fs-id1165135515880">
+  <problem id="fs-id1165134367921">
+    <para id="fs-id1165134367923">Halle el ángulo <m:math>
+      <m:mi>A</m:mi>
+    </m:math> cuando <m:math>
+      <m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>22°.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165133141464">
+  <problem id="fs-id1165133141466">
+    <para id="fs-id1165133141468">Halle el ángulo <m:math>
+      <m:mrow>
+        <m:mi>A</m:mi></m:mrow>
+    </m:math> cuando <m:math>
+      <m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mn>20°.</m:mn><m:mo/></m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165133388236">
+  <para id="fs-id1165133388238"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>≈</m:mo><m:mn>47,8°</m:mn></m:mrow>
+  </m:math> o <m:math>
+    <m:mrow>
+      <m:msup>
+        <m:mi>A</m:mi>
+        <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>≈</m:mo>
+        <m:mrow>
+          <m:mn>132,2°</m:mn></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165133310446">
+  <problem id="fs-id1165133310448">
+    <para id="fs-id1165133310450">Halle el ángulo <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> cuando <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mn>12°</m:mn><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+
+<para id="fs-id1165135550008">En los siguientes ejercicios, calcule el área del triángulo con las medidas dadas. Redondee cada respuesta a la décima más cercana.</para>
+
+<exercise id="fs-id1165135550012">
+  <problem id="fs-id1165134177575">
+    <para id="fs-id1165134177577"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mi>β</m:mi><m:mo>=</m:mo><m:mspace width="0.3em"/>
+          <m:mrow>
+            <m:mn>35°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135697825">
+  <para id="fs-id1165135697827"> <m:math>
+    <m:mrow>
+      <m:mn>8,6</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134235787">
+  <problem id="fs-id1165134235789">
+    <para id="fs-id1165131880468"> <m:math>
+      <m:mrow>
+        <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mi>α</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>28°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+<exercise id="fs-id1165135363342">
+  <problem id="fs-id1165135363344">
+    <para id="fs-id1165135363346"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>75°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135307836">
+  <para id="fs-id1165135307838"> <m:math>
+    <m:mrow>
+      <m:mn>370,9</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137643361">
+  <problem id="fs-id1165137643363">
+    <para id="fs-id1165137643365"> <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7,2</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>4,5</m:mn><m:mo>,</m:mo><m:mi>γ</m:mi><m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>43°</m:mn></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165134257560">
+<title>Gráficos</title>
+  <para id="fs-id1165134257566">En los siguientes ejercicios, calcule la longitud del lado <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math> Redondee a la décima más cercana.</para>
+
+<exercise id="fs-id1165135363188"><problem id="fs-id1165135363190">
+
+<media id="fs-id1165135363197" alt="Un triángulo con un ángulo de 50 grados y un lado opuesto de longitud 10. Otro ángulo es de 70 grados con el lado opuesto de longitud x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_201.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165133199362">
+  <para id="fs-id1165133199364"> <m:math>
+    <m:mrow>
+      <m:mn>12,3</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165137765789"><problem id="fs-id1165137765791">
+<media id="fs-id1165137765797" alt="Un triángulo con un ángulo = 120 grados. Otro ángulo es de 25 grados con el lado opuesto = x. El lado adyacente a los ángulos de 25 y 120 grados tiene una longitud de 6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_202.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165134156060"><problem id="fs-id1165134156062">
+<media id="fs-id1165137529464" alt="Un triángulo. Un ángulo es de 45 grados con el lado opuesto = x. Otro ángulo es de 75 grados. El lado adyacente a los ángulos de 45 y 75 grados = 15.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_203.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165137529474">
+  <para id="fs-id1165134081222"> <m:math>
+    <m:mrow>
+      <m:mn>12,2</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165137931158"><problem id="fs-id1165137931160">
+<media id="fs-id1165137931167" alt="Un triángulo. Un ángulo es de 40 grados con el lado opuesto = x. Otro ángulo es de 110 grados con el lado opuesto = 18.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_204.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165133307610"><problem id="fs-id1165133307612">
+<media id="fs-id1165135641451" alt="Un triángulo. Un ángulo es de 50 grados con el lado opuesto = x. Otro ángulo es de 42 grados con el lado opuesto = 14.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_205.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165135641462">
+  <para id="fs-id1165135641464"> <m:math>
+    <m:mrow>
+      <m:mn>16,0</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135181103"><problem id="fs-id1165134149774">
+<media id="fs-id1165134149780" alt="Un triángulo. Un ángulo es de 111 grados con el lado opuesto = x. Otro ángulo es de 22 grados. El lado adyacente a los ángulos de 111 y 22 grados = 8,6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_206.jpg"/>
+</media>
+  </problem>
+</exercise><para id="fs-id1165135246602">En los siguientes ejercicios, calcule la medida del ángulo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> si es posible. Redondee a la décima más cercana.</para><exercise id="fs-id1165135246606"><problem id="fs-id1165135246608">
+<media id="fs-id1165135333725" alt="Un triángulo. Uno de los ángulos es de 98 grados con el lado opuesto = 10. Otro ángulo es de x grados con el lado opuesto = 5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_207.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165135333736">
+  <para id="fs-id1165135333738"> <m:math>
+    <m:mrow>
+        <m:mrow>
+          <m:mn>29,7°</m:mn></m:mrow>
+    </m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165133249126"><problem id="fs-id1165133249129">
+<media id="fs-id1165134271323" alt="Un triángulo. Un ángulo es de 37 grados con el lado opuesto = 11. Otro ángulo es de x grados con el lado opuesto = 8.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_208.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165134271335"><problem id="fs-id1165134271337">
+<media id="fs-id1165135442505" alt="Un triángulo. Un ángulo es de 22 grados con el lado opuesto = 5. Otro ángulo es de x grados con el lado opuesto = 13.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_209.jpg"/>
+</media>
+</problem>
+  <solution id="fs-id1165133300591">
+    <para id="fs-id1165133300594"> <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>76,9°</m:mn><m:mtext>o</m:mtext><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>103,1°</m:mn></m:mrow>
+    </m:math>
+    </para>
+  </solution>
+</exercise><exercise id="fs-id1165131880286"><problem id="fs-id1165131880288">
+<media id="fs-id1165137832518" alt="Un triángulo. Un ángulo es de 59 grados con el lado opuesto = 5,7. Otro ángulo es de x grados con el lado opuesto = 5,3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_210.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165137832530"><problem id="fs-id1165132005056">
+    <para id="fs-id1165132005058">Observe que <m:math>
+      <m:mrow>
+<m:mi>x</m:mi></m:mrow>
+    </m:math> es un ángulo obtuso.</para>
+<media id="fs-id1165134328319" alt="Un triángulo. Un ángulo es de 55 grados con el lado opuesto = 21. Otro ángulo es de x grados con el lado opuesto = 24.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_211.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165137450859">
+  <para id="fs-id1165137450861"> <m:math>
+    <m:mrow>
+      <m:mn>110,6°</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135600243"><problem id="fs-id1165135600245">
+<media id="fs-id1165133023578" alt="Un triángulo. Un ángulo es de 65 grados con el lado opuesto = 10. Otro ángulo es de x grados con el lado opuesto = 12.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_212.jpg"/>
+</media>
+  </problem>
+</exercise><para id="fs-id1165133023590">En el siguiente ejercicio, resuelva el triángulo. Redondee cada respuesta a la décima más cercana.</para><exercise id="fs-id1165134185460"><problem id="fs-id1165134185462">
+<media id="fs-id1165134185468" alt="Un triángulo. Un ángulo es de 93 grados con el lado opuesto = 32,6. Otro lado es de 24,1.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_214.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165137456555">
+  <para id="fs-id1165137456557"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mo>≈</m:mo><m:mn>39,4</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>C</m:mi><m:mo>≈</m:mo><m:mn>47,6</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>B</m:mi><m:mi>C</m:mi><m:mo>≈</m:mo><m:mn>20,7</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135505462"><problem id="fs-id1165135505464">
+<para id="fs-id1165134263915">En los siguientes ejercicios, calcule el área de cada triángulo. Redondee cada respuesta a la décima más cercana.
+</para><media id="fs-id1165131894562" alt="Un triángulo. Un ángulo es de 30 grados. Los dos lados adyacentes a ese ángulo son de 10 y 16.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_215.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165137899950"><problem id="fs-id1165137899952">
+<media id="fs-id1165137899959" alt="Un triángulo. Un ángulo es de 25 grados. Los dos lados adyacentes a ese ángulo son de 18 y 15.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_216.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165134068913">
+  <para id="fs-id1165134068915"> <m:math>
+    <m:mrow>
+      <m:mn>57,1</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution></exercise><exercise id="fs-id1165135633912"><problem id="fs-id1165135633914">
+<media id="fs-id1165135633921" alt="Un triángulo. Un ángulo es de 51 grados con el lado opuesto = 3,5. Los otros dos lados son de 4,5 y 2,9.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_217.jpg"/>
+</media>
+  </problem>
+</exercise><exercise id="fs-id1165137810101"><problem id="fs-id1165137810104">
+<media id="fs-id1165135400875" alt="Un triángulo. Un ángulo es de 58 grados con el lado opuesto desconocido. Otro ángulo es de 51 grados con el lado opuesto = 9. El lado adyacente a los dos ángulos dados es de 11.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_218.jpg"/>
+</media>
+  </problem>
+<solution id="fs-id1165135400886">
+  <para id="fs-id1165137888190"> <m:math>
+    <m:mrow>
+      <m:mn>42,0</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise><exercise id="fs-id1165135512599"><problem id="fs-id1165135512601">
+<media id="fs-id1165135512608" alt="Un triángulo. Un ángulo es de 40 grados con el lado opuesto = 18. Uno de los otros lados es de 25.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_219.jpg"/>
+</media>
+ </problem>
+</exercise><exercise id="fs-id1165135388763"><problem id="fs-id1165135388765">
+<media id="fs-id1165135388772" alt="Un triángulo. Un ángulo es de 115 grados con el lado opuesto = 50. Otro ángulo es de 30 grados con el lado opuesto = 30.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_220.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165134384443">
+  <para id="fs-id1165134384445"> <m:math>
+    <m:mrow>
+      <m:mn>430,2</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise></section>
+<section id="fs-id1165134418962">
+<title>Extensiones</title>
+  <exercise id="fs-id1165133088145"><problem id="fs-id1165133088147">
+      <para id="fs-id1165133088149">Halle el radio del círculo en la <link target-id="Figure_08_01_221"/>. Redondee a la décima más cercana.</para>
+  <figure id="Figure_08_01_221" class="small">
+    <media id="fs-id1165135694392" alt="Un triángulo inscrito en un círculo. Dos de los catetos son radios. El ángulo central formado por los radios es de 145 grados, y el lado opuesto es de 3.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_221.jpg"/>
+    </media>
+  </figure>
+    </problem>
+  </exercise><exercise id="fs-id1165135149916"><problem id="fs-id1165135149918"><para id="fs-id1165137734376">Halle el diámetro del círculo en la <link target-id="Figure_08_01_222"/>. Redondee a la décima más cercana.</para>
+  <figure id="Figure_08_01_222" class="small"><media id="fs-id1165135149928" alt="Un triángulo inscrito en un círculo. Dos de los catetos son radios. El ángulo central formado por los radios es de 110 grados, y el lado opuesto es de 8,3.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_222.jpg"/>
+    </media>
+  </figure></problem>
+<solution id="fs-id1165135506392">
+  <para id="fs-id1165135506394"> <m:math>
+    <m:mrow>
+      <m:mn>10,1</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+  </exercise><exercise id="fs-id1165134391079">
+    <problem id="fs-id1165134391081">
+      <para id="fs-id1165134391083">Halle <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>∠</m:mo><m:mi>A</m:mi><m:mi>D</m:mi><m:mi>C</m:mi>
+ </m:mrow>
+</m:math> en la <link target-id="Figure_08_01_223"/>. Redondee a la décima más cercana.</para><figure id="Figure_08_01_223" class="small"><media id="fs-id1165135698485" alt="Un triángulo dentro de un triángulo. El triángulo exterior está formado por los vértices A, B y D. El lado B D es la base. El triángulo interior comparte los vértices A y B. El último vértice C está situado en el lado de la base del triángulo exterior entre los vértices B y D. El ángulo B es de 60 grados, el lado A D es 10 y el lado A C es 9. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_223.jpg"/>
+</media>
+</figure></problem>
+  </exercise>
+
+<exercise id="fs-id1165135500668">
+  <problem id="fs-id1165135500670">
+    <para id="fs-id1165135500672">Halle <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mi>D</m:mi></m:mrow>
+</m:math> en la <link target-id="Figure_08_01_224"/>. Redondee a la décima más cercana.</para><figure id="Figure_08_01_224" class="small"><media id="fs-id1165134317924" alt="Un triángulo dentro de un triángulo. El triángulo exterior está formado por los vértices A, B y D. El lado B D es la base. El triángulo interior comparte los vértices A y B. El último vértice C está situado en el lado de la base del triángulo exterior entre los vértices B y D. El ángulo B es de 53 grados, el ángulo D es de 44 grados, el lado A B es 12 y el lado A C es 13.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_224.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135186220">
+  <para id="fs-id1165135186222"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mi>D</m:mi><m:mo>≈</m:mo><m:mspace width="0.3em"/><m:mn>13,8</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165133091580">
+  <problem id="fs-id1165133091582">
+    <para id="fs-id1165133091585">Resuelva ambos triángulos en la <link target-id="Figure_08_01_225"/>. Redondee cada respuesta a la décima más cercana.</para>
+<figure id="Figure_08_01_225" class="small"><media id="fs-id1165135483111" alt="Dos triángulos formados por la intersección de las líneas A D y B C. Se cruzan en el punto E. El primer triángulo está formado por los vértices A, B y E, mientras que el segundo triángulo está formado por los vértices C, E y D. El ángulo A es de 48 grados, el lado A B es de 4,2, el ángulo D es de 48 grados y el lado C D es de 2. El ángulo A E B es de 46 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_225.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165135483123">
+  <problem id="fs-id1165135483125">
+    <para id="fs-id1165134331094">Halle <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mi>B</m:mi></m:mrow>
+    </m:math> en el paralelogramo que se muestra en la <link target-id="Figure_08_01_226"/>.</para>
+
+<figure id="Figure_08_01_226" class="small"><media id="fs-id1165135556655" alt="Un paralelogramo con vértices A, B, C y D. Hay una diagonal del vértice B al vértice C. El ángulo A es de 130 grados, el ángulo D es de 130 grados, el lado B D es de 10 y la diagonal B C es de 12.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_226.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135690080">
+  <para id="fs-id1165135690082"> <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi><m:mi>B</m:mi><m:mo>≈</m:mo><m:mn>2,8</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134408479">
+  <problem id="fs-id1165134408482"><para id="fs-id1165137807079">Resuelva el triángulo en la <link target-id="Figure_08_01_227"/>. (Pista: Dibuje una perpendicular desde <m:math>
+    <m:mrow>
+      <m:mi>H</m:mi></m:mrow>
+  </m:math> hasta <m:math>
+    <m:mrow>
+      <m:mi>J</m:mi><m:mi>K</m:mi><m:mo>).</m:mo></m:mrow>
+  </m:math> Redondee cada respuesta a la décima más cercana.</para><figure id="Figure_08_01_227" class="small"><media id="fs-id1165134501236" alt="Un triángulo con vértices J, K y H. El lado J K es la base horizontal y es de 10. El lado JH es de 7. El ángulo J es de 20 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_227.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165137921487">
+  <problem id="fs-id1165137921489">
+    <para id="fs-id1165137921491">Resuelva el triángulo en la <link target-id="Figure_08_01_228"/>. (Pista: Dibuje una perpendicular desde <m:math>
+      <m:mrow>
+<m:mi>N</m:mi></m:mrow>
+    </m:math> hasta <m:math>
+      <m:mrow>
+<m:mi>L</m:mi><m:mi>M</m:mi><m:mo>).</m:mo></m:mrow>
+    </m:math> Redondee cada respuesta a la décima más cercana.</para><figure id="Figure_08_01_228" class="small"><media id="fs-id1165134331084" alt="Un triángulo con vértices M, N y L. El lado M N es la base horizontal y es de 4,6. El ángulo M es de 74 grados y el lado M L es de 5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_228.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165133359479">
+  <para id="fs-id1165133359481"> <m:math>
+    <m:mrow>
+      <m:mi>L</m:mi><m:mo>≈</m:mo><m:mn>49,7</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>N</m:mi><m:mo>≈</m:mo><m:mn>56,3</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>L</m:mi><m:mi>N</m:mi><m:mo>≈</m:mo><m:mn>5,8</m:mn></m:mrow>
+  </m:math>
+  </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137507972">
+  <problem id="fs-id1165137507974">
+    <para id="fs-id1165137507976">En la <link target-id="Figure_08_01_229"/>, <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mi>B</m:mi><m:mi>C</m:mi><m:mi>D</m:mi></m:mrow>
+    </m:math> no es un paralelogramo <m:math>
+ <m:mrow>
+  <m:mo>∠</m:mo><m:mi>m</m:mi>
+ </m:mrow>
+</m:math> es obtuso. Resuelva ambos triángulos. Redondee cada respuesta a la décima más cercana.</para><figure id="Figure_08_01_229" class="small"><media id="fs-id1165137538994" alt="Un cuadrilátero con vértices A, B, C y D. Hay una diagonal del vértice B al vértice D de longitud 45. El lado A B es x, el lado B C es y, el lado C D es de 40, y el lado D A es de 29. El ángulo A es m grados, el ángulo C es de 65 grados, el ángulo A B D es de 35 grados, el ángulo D B C es n grados, el ángulo B D C es k grados y el ángulo A D B es h grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_229.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165135390788">
+<title>Aplicaciones en el mundo real</title>
+
+
+<exercise id="fs-id1165135390794" class="material-set-2">
+  <problem id="fs-id1165135390796">
+    <para id="fs-id1165135659154">Un poste se aleja del sol en un ángulo de <m:math>
+      <m:mrow>
+<m:mn>7°</m:mn></m:mrow>
+    </m:math> a la vertical, como se muestra en la <link target-id="Figure_08_01_231"/>. Cuando la elevación del sol es <m:math>
+      <m:mrow>
+<m:mn>55°</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> el poste proyecta una sombra de 42 pies de largo en el suelo plano. ¿Qué longitud tiene el poste? Redondee la respuesta a la décima más cercana.</para><figure id="Figure_08_01_231" class="small"><media id="fs-id1165135545537" alt="Un triángulo dentro de un triángulo. El triángulo exterior está formado por los vértices A, B y S (el sol). El lado A B es la base horizontal, el suelo, y tiene 42 pies. El ángulo A es de 55 grados. El triángulo interior está formado por los vértices A, B y C. El lado B C es el poste. El vértice C está situado en el lado A S del triángulo exterior entre los vértices A y S. El ángulo C B S es de 7 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_231.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165133348802">
+  <para id="fs-id1165133348805">51,4 pies.  </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137832661" class="material-set-2">
+  <problem id="fs-id1165137832664">
+    <para id="fs-id1165134436094">Para determinar cuán lejos está un barco de la costa, dos estaciones de radar situadas a 500 pies de distancia determinan los ángulos hacia el barco, como se muestra en la <link target-id="Figure_08_01_232"/>. Determine la distancia del barco desde la estación <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> y la distancia del barco a la costa. Redondee sus respuestas al pie entero más cercano.</para><figure id="Figure_08_01_232" class="small"><media id="fs-id1165133340991" alt="Un triángulo formado por las dos estaciones de radar A y B y el barco. El lado A B es la base horizontal. El ángulo A es de 70 grados y el ángulo B es de 60 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_232.jpg"/>
+</media>
+</figure></problem></exercise>
+
+<exercise id="fs-id1165133306908" class="material-set-2">
+  <problem id="fs-id1165133306910">
+    <para id="fs-id1165133306912">La <link target-id="Figure_08_01_233"/> muestra un satélite en órbita alrededor de la Tierra. El satélite pasa directamente sobre dos estaciones rastreadoras <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> y <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> que están a 69 millas de distancia. Cuando el satélite está en un lado de las dos estaciones, los ángulos de elevación en <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> y <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> se miden en <m:math>
+      <m:mrow>
+<m:mn>83,9°</m:mn></m:mrow>
+    </m:math> y <m:math>
+      <m:mrow>
+<m:mn>86,2°</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> respectivamente. ¿A qué distancia está el satélite de la estación <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> y a qué altura está el satélite sobre el suelo? Redondee las respuestas a la milla entera más cercana.</para><figure id="Figure_08_01_233" class="small"><media id="fs-id1165135181798" alt="Un triángulo formado por dos estaciones rastreadoras en tierra A y B y el satélite. El lado A B es la base horizontal del triángulo. El ángulo A es de 83,9 grados, y el ángulo complementario al ángulo B es de 86,2 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_233.jpg"/>
+</media>
+</figure></problem>
+
+
+<solution id="fs-id1165135181808">
+  <para id="fs-id1165133236439">La distancia del satélite a la estación <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi></m:mrow>
+  </m:math> es de aproximadamente 1.716 millas. El satélite se encuentra a unas 1.706 millas del suelo. </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135453148" class="material-set-2">
+  <problem id="fs-id1165135453150">
+    <para id="fs-id1165135453153">Una torre de comunicaciones está situada en la cima de una colina empinada, como se muestra en la <link target-id="Figure_08_01_234"/>. El ángulo de inclinación de la colina es <m:math>
+      <m:mrow>
+<m:mn>67°</m:mn><m:mo/><m:mo>.</m:mo></m:mrow>
+    </m:math> Se debe fijar un cable de sujeción en la parte superior de la torre y en el suelo, 165 metros cuesta abajo desde la base de la torre. El ángulo formado por el cable de sujeción y la colina es de <m:math>
+      <m:mrow>
+<m:mn>16°.</m:mn></m:mrow>
+    </m:math> Calcule la longitud del cable necesario para el cable de sujeción con una precisión de un metro.</para><figure id="Figure_08_01_234" class="small"><media id="fs-id1165135695097" alt="Un triángulo formado por la falda de la colina, la base de la torre en la cima de la colina y el tope de la torre. El lado entre la falda de la colina y el tope de la torre es el cable. La longitud del lado entre la falda de la colina y la base de la torre es de 165 metros. El ángulo formado por el lado del cable y la falda de la colina es de 16 grados. El ángulo entre la colina y el suelo horizontal es de 67 grados. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_234.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165132957163" class="material-set-2">
+  <problem id="fs-id1165132957165">
+    <para id="fs-id1165132957167">El tejado de una casa está a un ángulo de <m:math>
+      <m:mrow>
+<m:mn>20°</m:mn></m:mrow>
+    </m:math> Se instalará un panel solar de 2,5 metros en el tejado y deberá estar en un ángulo de <m:math>
+      <m:mrow>
+<m:mn>38°</m:mn></m:mrow>
+    </m:math> respecto a la horizontal para obtener resultados óptimos. (Vea la <link target-id="Figure_08_01_235"/>). ¿Qué longitud debe tener el soporte vertical que sostiene la parte trasera del panel? Redondee a la décima más cercana.</para><figure id="Figure_08_01_235" class="small"><media id="fs-id1165134263935" alt="Un triángulo cuyos lados son el panel solar, el techo que pasa por delante del panel solar y el soporte vertical del panel. El lado del panel solar tiene 2,5 metros de largo. Hay líneas punteadas horizontales en la parte inferior del panel solar y en la parte inferior del tejado. El ángulo entre el panel solar y la horizontal es de 38 grados. El ángulo entre el tejado y la horizontal es de 20 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_235.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165134239618">
+  <para id="fs-id1165134239620">2,6 pies
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165135154317" class="material-set-2">
+  <problem id="fs-id1165135154319">
+    <para id="fs-id1165135154321">Al igual que el ángulo de elevación, el <emphasis effect="italics">ángulo de depresión</emphasis> es el ángulo agudo formado por una línea horizontal y la línea de visión de un observador hacia un objeto situado por debajo de la horizontal. Un piloto vuela sobre una carretera recta. Determine que los ángulos de depresión de dos hitos, separados por 6,6 km, sean de <m:math>
+      <m:mrow>
+<m:mn>37°</m:mn></m:mrow>
+    </m:math> y <m:math>
+      <m:mrow>
+<m:mn>44°</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> como se muestra en la <link target-id="Figure_08_01_236"/>. Calcule la distancia del avión al punto <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> a la décima de kilómetro más cercana.</para><figure id="Figure_08_01_236" class="small"><media id="fs-id1165134401633" alt="Un triángulo formado por los puntos A y B en el suelo y un avión en el aire entre ellos. El lado A B es el suelo horizontal. Hay una línea punteada horizontal paralela al suelo que atraviesa el avión. El ángulo formado por la línea punteada horizontal, el avión y el punto A es de 37 grados. El ángulo entre la línea punteada horizontal, el avión, y el punto B es de 44 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_236.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+<exercise id="fs-id1165134260436" class="material-set-2">
+  <problem id="fs-id1165134260439">
+    <para id="fs-id1165134260441">Un piloto vuela sobre una carretera recta. Determine que los ángulos de depresión de dos hitos, separados por 4,3 km, son de 32° y 56°, como se muestra en la <link target-id="Figure_08_01_237"/>. Calcule la distancia del avión al punto <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> a la décima de kilómetro más cercana.</para><figure id="Figure_08_01_237" class="small"><media id="fs-id1165135186078" alt="Triángulo formado entre el avión y dos puntos del suelo, A y B. El lado A B es la base horizontal. El avión está por encima y a la izquierda de A y B. El punto B está a la derecha del punto A. Hay una línea punteada horizontal que pasa por el avión en paralelo al suelo. El ángulo formado entre el punto B, el avión y la línea punteada horizontal es de 32 grados. El ángulo formado entre el punto A, el avión, y la línea punteada horizontal es de 56 grados. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_237.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135339575">
+  <para id="fs-id1165135339577">5,6 km
+  </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135305774" class="material-set-2">
+  <problem id="fs-id1165135305776">
+    <para id="fs-id1165135305778">Para estimar la altura de un edificio, dos estudiantes se sitúan a cierta distancia del edificio a nivel de la calle. Desde este punto, calculan que el ángulo de elevación desde la calle hasta la parte superior del edificio es de 39°. A continuación, se acercan 300 pies al edificio y descubren que el ángulo de elevación es de 50°. Suponiendo que la calle está nivelada, calcule la altura del edificio con una aproximación de un pie.</para></problem>
+</exercise>
+  <exercise id="fs-id1165135664922"><problem id="fs-id1165135664923"><para id="fs-id1165135664924">Para estimar la altura de un edificio, dos estudiantes se sitúan a cierta distancia del edificio a nivel de la calle. Desde este punto, calculan que el ángulo de elevación desde la calle hasta la parte superior del edificio es de 35°. A continuación, se acercan 250 pies al edificio y descubren que el ángulo de elevación es de 53°. Suponiendo que la calle está nivelada, calcule la altura del edificio con una aproximación de un pie.</para></problem>
+<solution id="fs-id1165135664927">
+  <para id="fs-id1165135690038">371 pies.
+  </para></solution> </exercise>
+<exercise id="fs-id1165135189790">
+  <problem id="fs-id1165135189792">
+    <para id="fs-id1165135189794">Los puntos <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> y <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> están en lados opuestos de un lago. El punto <m:math>
+      <m:mrow>
+<m:mi>C</m:mi></m:mrow>
+    </m:math> está a 97 metros de <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> La medida del ángulo <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mi>A</m:mi><m:mi>C</m:mi></m:mrow>
+    </m:math> se determina que es de 101°, mientras que la medida del ángulo <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mi>C</m:mi><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> se determina que es de 53°. ¿Cuál es la distancia desde <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> hasta <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> redondeada al metro entero más cercano?</para></problem>
+</exercise>
+<exercise id="fs-id1165135510852">
+  <problem id="fs-id1165137677990">
+    <para id="fs-id1165137677992">Un hombre y una mujer de pie <m:math>
+      <m:mrow>
+<m:mn>3</m:mn><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        </m:mrow>
+    </m:math> millas de distancia divisan un globo aerostático al mismo tiempo. Si el ángulo de elevación desde el hombre hasta el globo es de 27°, y el ángulo de elevación desde la mujer hasta el globo es de 41°, calcule la altitud del globo al pie más cercano.</para></problem>
+<solution id="fs-id1165134279662">
+  <para id="fs-id1165132945473">5.936 pies.
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165134084302">
+  <problem id="fs-id1165134084304">
+    <para id="fs-id1165134084306">Dos equipos de búsqueda localizan a un escalador varado en una montaña. El primer equipo de búsqueda está a 0,5 millas del segundo equipo de búsqueda, y ambos están a una altura de 1 milla. El ángulo de elevación desde el primer equipo de búsqueda hasta el escalador varado es de 15°. El ángulo de elevación del segundo equipo de búsqueda al escalador es de 22°. ¿Cuál es la altitud del escalador? Redondee a la décima de milla más cercana.</para></problem>
+</exercise>
+<exercise id="fs-id1165134248783">
+  <problem id="fs-id1165134248785">
+    <para id="fs-id1165134248787">Una farola está montada en un poste. Un hombre de 2 metros de altura está de pie en la calle, a poca distancia del poste, proyectando una sombra. El ángulo de elevación desde la punta de la sombra del hombre hasta la parte superior de su cabeza de 28°. Una mujer de 1,80 metros de altura se encuentra en la misma calle, en el lado opuesto del poste del hombre. El ángulo de elevación desde la punta de su sombra hasta la parte superior de su cabeza es de 28°. Si el hombre y la mujer están a 6 metros de distancia, ¿a qué distancia está la farola de la punta de la sombra de cada persona? Redondee la distancia a la décima de pie más cercana.</para></problem>
+<solution id="fs-id1165135442445">
+  <para id="fs-id1165135442447">24,1 pies.</para></solution>
+</exercise>
+<exercise id="fs-id1165135173174">
+  <problem id="fs-id1165135551786">
+    <para id="fs-id1165135551788">Tres ciudades, <m:math>
+      <m:mrow>
+<m:mi>A</m:mi><m:mo>,</m:mo><m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> y <m:math>
+      <m:mrow>
+<m:mi>C</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> están situadas de manera que la ciudad <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> está al este de la ciudad <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:math> Si la ciudad <m:math>
+      <m:mrow>
+<m:mi>C</m:mi></m:mrow>
+    </m:math> se encuentra a 35° al oeste del norte de la ciudad <m:math>
+      <m:mrow>
+<m:mi>B</m:mi></m:mrow>
+    </m:math> y está a 100 millas de la ciudad <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> y 70 millas de la ciudad <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> a qué distancia se encuentra la ciudad <m:math>
+      <m:mrow>
+<m:mi>A</m:mi></m:mrow>
+    </m:math> de la ciudad <m:math>
+      <m:mrow>
+<m:mi>B</m:mi><m:mo>?</m:mo></m:mrow>
+    </m:math> Redondee la distancia a la décima de milla más cercana.</para></problem>
+</exercise>
+<exercise id="fs-id1165137898663" class="material-set-2">
+  <problem id="fs-id1165137898665">
+    <para id="fs-id1165137898668">Dos calles se encuentran en un ángulo de 80°. En la esquina se construye un parque en forma de triángulo. Calcule el área del parque si, a lo largo de una calle, el parque mide 180 pies, y a lo largo de la otra calle, el parque mide 215 pies.</para>
+  </problem>
+<solution id="fs-id1165137898676">
+  <para id="fs-id1165137898678">19.056 pies cuadrados.</para></solution>
+</exercise>
+  <exercise id="fs-id1165135553499" class="material-set-2">
+    <problem id="fs-id1165135648721">
+      <para id="fs-id1165135648724">La casa de Brian está en una esquina. Calcule el área del patio delantero si los bordes miden 40 y 56 pies, como se muestra en la <link target-id="Figure_08_01_238"/>.</para>
+
+<figure id="Figure_08_01_238" class="small"><media id="fs-id1165137694933" alt="Un triángulo con ángulo de 135 grados. Los lados adyacentes a ese ángulo son de 56 pies y 40 pies. El otro lado es la casa, de longitud desconocida.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_238.jpg"/>
+</media>
+</figure></problem>
+  </exercise>
+
+<exercise id="fs-id1165137694945">
+  <problem id="fs-id1165137694947">
+    <para id="fs-id1165134374758">El triángulo de las Bermudas es una región del océano Atlántico que conecta las Bermudas, Florida y Puerto Rico. Calcule el área del triángulo de las Bermudas si la distancia de Florida a las Bermudas es de 1.030 millas, la distancia de Puerto Rico a las Bermudas es de 980 millas y el ángulo creado por las dos distancias es de 62°.</para></problem>
+<solution id="fs-id1165134374768">
+  <para id="fs-id1165134374770">445.624 millas cuadradas
+  </para></solution>
+</exercise>
+<exercise id="fs-id1165137782252">
+  <problem id="fs-id1165137782254">
+    <para id="fs-id1165137782256">Un cartel de ceda el paso mide 30 pulgadas en los tres lados. ¿Cuál es el área del cartel?</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1165137782262">
+  <problem id="fs-id1165137782264">
+    <para id="fs-id1165137782266">Naomi compró una mesa de comedor cuyo tablero tiene forma triangular. Calcule el área del tablero de la mesa si dos de los lados miden 4 pies y 4,5 pies, y los ángulos menores miden 32° y 42°, como se muestra en la <link target-id="Figure_08_01_239"/>.</para><figure id="Figure_08_01_239" class="small"><media id="fs-id1165135413644" alt="Un triángulo. Un ángulo es de 32 grados con el lado opuesto = 4. Otro ángulo es de 42 grados con lado opuesto = 4,5.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_01_239.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165133044322">
+  <para id="fs-id1165133044325">8,65 pies cuadrados.
+  </para></solution>
+</exercise>
+</section>
+ </section></content>
+
+  <glossary>
+    <definition id="fs-id1165135646148">
+      <term>altitud</term> <meaning id="fs-id1165135646153">línea perpendicular de un vértice de un triángulo al lado opuesto, o en el caso de un triángulo obtuso, a la línea que contiene el lado opuesto, para formar dos triángulos rectángulos</meaning>
+    </definition>
+    <definition id="fs-id1165134357482">
+      <term>caso ambiguo</term>
+      <meaning id="fs-id1165134357487">un escenario en el que más de un triángulo es una solución válida para un triángulo LLA oblicuo dado</meaning>
+    </definition>
+    <definition id="fs-id1165134357493">
+      <term>Ley de los senos</term>
+      <meaning id="fs-id1165133234509">afirma que el cociente entre la medida de un ángulo de un triángulo y la longitud de su lado opuesto es igual a los dos cocientes restantes entre la medida del ángulo y el lado opuesto; cualquier par de proporciones puede utilizarse para resolver un ángulo o un lado que falte</meaning>
+    </definition>
+    <definition id="fs-id1165133234516">
+      <term>triángulo oblicuo</term>
+      <meaning id="fs-id1165135551173">cualquier triángulo que no sea un triángulo rectángulo</meaning></definition>
+  </glossary>
+</document>

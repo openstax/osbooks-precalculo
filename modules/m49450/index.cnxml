@@ -1,0 +1,4605 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Probabilidad</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49450</md:content-id>
+  <md:title>Probabilidad</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Construir modelos de probabilidades.</item>
+<item>Calcular las probabilidades de resultados igualmente probables.</item>
+<item>Calcular las probabilidades de la unión de dos eventos.</item>
+<item>Utilizar la regla del complemento para encontrar probabilidades.</item>
+<item>Calcular la probabilidad utilizando la teoría del conteo.</item>
+</list></md:abstract>
+  <md:uuid>0dfbb287-a541-4944-8ce7-5a848962a2ca</md:uuid>
+</metadata>
+
+<content>
+<section id="eip-7" class="coreq-skills"><section id="eip-204" class="learning-objectives"><title>Objetivos de aprendizaje</title><list id="eip-122"><item>Introducción a los espacios muestrales y al cálculo de probabilidades básicas.
+</item>
+</list></section><section id="eip-784"><title>Objetivo 1: Introducción a los espacios muestrales y al cálculo de probabilidades básicas.</title><para id="eip-13">
+Muchos acontecimientos de la vida son intrínsecamente inciertos: ¿va a nevar mañana? ¿Voy a sacar una ‘A’ en este curso? Ninguna de estas preguntas puede responderse con certeza. Sin embargo, diríamos que algunas son improbables y otras más probables.
+
+</para><para id="eip-512">La <term id="term-00001">probabilidad de un evento</term> es una descripción de la probabilidad de que un evento ocurra. La probabilidad es un número entre <emphasis>0</emphasis> y <emphasis>1</emphasis> (es decir, entre el 0 % y el 100 %), donde las probabilidades más cercanas al 100 % son muy probables, y las más cercanas al 0 % son muy improbables. La probabilidad del 0 % significa que el suceso es imposible, y la probabilidad del 100 % significa que el evento ocurrirá con seguridad.
+</para><para id="eip-745">Un <term id="term-00002">modelo de probabilidades</term> es una descripción matemática de un experimento que enumera todos los resultados posibles y sus probabilidades asociadas. Se define por su espacio muestral, los sucesos dentro del espacio muestral y las probabilidades asociadas a cada evento.
+</para><para id="eip-347">El <term id="term-00003">espacio muestral S</term> de un modelo de probabilidades es el conjunto de todos los resultados posibles. Por ejemplo, el espacio muestral para lanzar un dado es el conjunto 1,2,3,4,5,6. Esta notación se denomina <term id="term-00004">notación de lista</term>.
+</para><para id="eip-966">El suceso A es un subconjunto del espacio muestral S. Por ejemplo, el suceso: "Sacar un número par", es el subconjunto 2,4,6.
+</para><para id="eip-521">Para calcular la probabilidad de un evento, dividimos el número de resultados posibles del evento entre el número de resultados posibles del espacio muestral.
+</para><equation id="eip-807" class="unnumbered"><label/> <m:math><m:mi mathvariant="normal">P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>resultado</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Número</m:mi><m:mo> </m:mo><m:mi>de</m:mi><m:mo> </m:mo><m:mi>maneras</m:mi><m:mo> </m:mo><m:mi>en que ese</m:mi><m:mo> </m:mo><m:mi>resultado</m:mi><m:mo> </m:mo><m:mi>puede</m:mi><m:mo> </m:mo><m:mi>ocurrir</m:mi></m:mrow><m:mrow><m:mi>Número</m:mi><m:mo> </m:mo><m:mi>total</m:mi><m:mo> </m:mo><m:mi>de</m:mi><m:mo> </m:mo><m:mi>resultados</m:mi></m:mrow></m:mfrac></m:math> </equation><para id="eip-783">Es importante señalar que para utilizar esta fórmula, <emphasis>todos los resultados deben tener la misma probabilidad de ocurrir</emphasis>.
+</para><para id="eip-665">Por ejemplo, la probabilidad de sacar un número par con un dado estándar es:
+</para><equation id="eip-963" class="unnumbered"><label/> <m:math><m:mi mathvariant="normal">P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>números pares</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo> </m:mo><m:mi>números</m:mi><m:mo> </m:mo><m:mi>pares</m:mi></m:mrow><m:mrow><m:mn>6</m:mn><m:mo> </m:mo><m:mi>números</m:mi><m:mo> </m:mo><m:mi>totales</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:math> </equation><example id="eip-701"><exercise id="eip-51"><problem id="eip-670"><title>Probabilidad básica (introducción simple a los espacios muestrales).</title>
+  <para id="eip-355">
+Lanzar una moneda:
+
+  </para>
+<list id="eip-idm539345184" list-type="labeled-item"><item><span class="token">Ⓐ</span> Describa en notación de conjuntos el espacio muestral de lanzar una moneda.</item>
+<item><span class="token">Ⓑ</span> Calcule la probabilidad de que “la moneda salga cara”.</item>
+</list>
+  <para id="eip-696">
+Lanzar un dado:
+
+  </para>
+<list id="eip-idm256378880" list-type="labeled-item"><item><span class="token">Ⓐ</span> Describa en notación de conjuntos el evento “lanzar un número impar”.</item>
+<item><span class="token">Ⓑ</span> Calcule la probabilidad de “lanzar un número impar”.</item>
+
+</list>
+  <para id="eip-717">
+Sacar una carta:
+  </para>
+
+<list id="eip-idm341738352" list-type="labeled-item"><item><span class="token">Ⓐ</span> Describa en notación de conjuntos el evento “sacar un as”.</item>
+<item><span class="token">Ⓑ</span> Calcule la probabilidad de “sacar un as”.</item>
+
+</list></problem>
+<solution id="eip-idm370126608"><para id="eip-idm370126480">Lanzar una moneda: <list id="eip-idm370126224" list-type="labeled-item"><item><span class="token">Ⓐ</span> Cuando se lanza una moneda, hay dos resultados. El espacio muestral es: Cara, cruz.</item>
+<item><span class="token">Ⓑ</span> Solo hay un resultado para que en la moneda salga cara, por lo que P (sale cara) = 12.</item></list></para>
+<para id="eip-idm642268320">Lanzar un dado: <list id="eip-idm642268064" list-type="labeled-item"><item><span class="token">Ⓐ</span> Cuando se lanza un dado, hay seis resultados. El evento "lanzar un número impar" tiene tres resultados. El evento en notación de conjuntos es: 1, 3, 5.</item>
+	<item><span class="token">Ⓑ</span> P (lanzar un número impar) = 36 = 12.</item></list></para>
+<para id="eip-idm352040080">Sacar una carta: <list id="eip-idm352039824" list-type="labeled-item"><item><span class="token">Ⓐ</span> Cuando saca una carta, hay 52 resultados. El evento "sacar un as" tiene cuatro resultados. El evento en notación de conjuntos es: as de corazones, as de diamantes, as de tréboles y as de picas.</item>
+<item><span class="token">Ⓑ</span> P (sacar un as) = 452 = 113.</item></list></para></solution></exercise></example><section id="fs-idm212457888" class="practice-perfect"><title>La práctica hace la perfección</title>
+<exercise id="eip-450"><problem id="eip-401">
+<para id="eip-idm388337072">Girar un dial:
+</para>
+<media id="eip-idm213642992" alt="."><image mime-type="image/jpg" src="../../media/CNX_Coreq_Figure_09_07_001.jpg"/></media>
+<list id="eip-idm414862864" list-type="labeled-item"><item><span class="token">Ⓐ</span>
+
+Describa el espacio muestral en notación de conjuntos.
+</item>
+
+<item><span class="token">Ⓑ</span>
+Calcule la probabilidad de que el “dial se detenga en una rebanada amarilla”.
+</item>
+
+<item><span class="token">Ⓒ</span>
+Calcule la probabilidad de que el "dial se detenga en una rebanada roja".
+</item>
+
+<item><span class="token">Ⓓ</span>
+Calcule la probabilidad de que el "dial se detenga en una rebanada azul".
+</item>
+
+</list></problem>
+
+</exercise><exercise id="eip-124"><problem id="eip-247">
+<list id="eip-idm412511696" list-type="labeled-item"><item>Dibuje un diagrama que muestre el espacio muestral de una baraja estándar de 52 cartas. Empiece por distinguir entre las cartas rojas y las negras y muestre el número de cada una. Luego, muestre los palos: diamantes, corazones, tréboles y picas. Debajo de esto haga una lista del número o de la cara de la carta que aparece en cada palo. Utilice su diagrama como ayuda para hallar lo siguiente.
+</item>
+<item><span class="token">Ⓐ</span>
+Describa en notación de conjuntos el evento "sacar un rey".
+</item>
+
+<item><span class="token">Ⓑ</span>
+Calcule la probabilidad de "sacar un rey".
+</item>
+
+<item><span class="token">Ⓒ</span>
+Describa en notación de conjuntos el evento "sacar un trébol".
+</item>
+
+<item><span class="token">Ⓓ</span>
+Calcule la probabilidad de "sacar un trébol".
+</item>
+
+<item><span class="token">Ⓔ</span>
+Calcule la probabilidad de "sacar un seis rojo".
+</item>
+
+<item><span class="token">Ⓕ</span>
+Calcule la probabilidad de "sacar una reina negra".
+</item>
+</list></problem>
+
+
+</exercise></section></section></section><figure id="CNX_Precalc_Figure_11_07_001"><media id="fs-id1585419" alt="Mapa de espaguetis de las posibles trayectorias de un huracán sobre el sureste de Estados Unidos">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_07_001.jpg"/>
+</media>
+
+<caption>Un ejemplo de "modelo de espagueti", el cual se puede usar para predecir las posibles trayectorias de una tormenta tropical.<footnote id="eip-id1165135209268">La figura es solo a título ilustrativo y no representa ninguna tormenta en particular.</footnote></caption></figure><para id="fs-id1648117">Los habitantes del sureste de Estados Unidos están muy familiarizados con los gráficos, conocidos como modelos de espagueti, como el que aparece en la <link target-id="CNX_Precalc_Figure_11_07_001"/>. Combinan una colección de datos meteorológicos para predecir la trayectoria más probable de un huracán. Cada línea de color representa un camino posible. El grupo de líneas onduladas puede empezar a parecerse a hebras de espaguetis, de ahí su nombre. En esta sección investigaremos sobre métodos para hacer este tipo de predicciones.</para>
+
+<section id="fs-id1629254"><title>Construir modelos de probabilidades</title><para id="fs-id1599191">Supongamos que lanzamos un cubo numérico de seis caras. Lanzar un cubo numérico es un ejemplo de un <term id="term-00005">experimento</term>, o una actividad con un resultado observable. Los números en el cubo son posibles resultados, o <term id="term-00006">resultados</term>, de este experimento. El conjunto de todos los resultados posibles de un experimento se denomina <term id="term-00007">espacio muestral</term> del experimento. El espacio muestral de este experimento es <m:math><m:mrow><m:mrow><m:mo>{</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Un <term id="term-00008">evento</term> es cualquier subconjunto de un espacio muestral.</para><para id="fs-id1587181">La posibilidad de que se produzca un suceso se conoce como <term id="term-00009">probabilidad</term>. La probabilidad de un evento <m:math>
+<m:mrow>
+<m:mi>p</m:mi>
+</m:mrow>
+</m:math> es un número que siempre satisface <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde 0 indica un suceso imposible y 1 indica un suceso seguro. Un <term id="term-00010">modelo de probabilidades</term> es una descripción matemática de un experimento que enumera todos los resultados posibles y sus probabilidades asociadas. Por ejemplo, si hay un 1 % de posibilidad de ganar una rifa y un 99 % de posibilidades de perderla, un modelo de probabilidades se parecería mucho a la <link target-id="Table_11_07_01"/>.</para><table id="Table_11_07_01" summary="..">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+
+<row>
+<entry align="center">Resultado</entry>
+<entry align="center">Probabilidad</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">Ganar la rifa</entry>
+<entry align="center">1 %</entry>
+</row>
+<row>
+<entry align="center">Perder la rifa</entry>
+<entry align="center">99 %</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1697257">La suma de las probabilidades enumeradas en un modelo de probabilidades debe ser igual a 1, es decir, al 100 %.</para>
+
+<note id="fs-id1586893" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1644742"><emphasis effect="bold">Dado un evento de probabilidad en el que cada evento es igualmente posible, construya un modelo de probabilidades.</emphasis></para>
+<list id="fs-id934544" list-type="enumerated" number-style="arabic">
+<item>Identifique cada resultado.</item>
+<item>Determine el número total de resultados posibles.</item>
+<item>Compare cada resultado con el número total de resultados posibles.</item>
+</list>
+</note>
+
+<example id="Example_11_07_01">
+<exercise id="fs-id1646993">
+<problem id="fs-id1366874">
+<title>Construir un modelo de probabilidades</title>
+<para id="fs-id1286638">Construya un modelo de probabilidades para lanzar un único dado imparcial, siendo el evento el número que aparece en el dado.</para>
+</problem>
+<solution id="fs-id1288582">
+<para id="fs-id934643">Comience haciendo una lista de todos los posibles resultados del experimento. Los posibles resultados son los números que se pueden lanzar: 1, 2, 3, 4, 5 y 6. Hay seis resultados posibles que conforman el espacio muestral.</para>
+<para id="fs-id1261808">Asigne probabilidades a cada resultado en el espacio muestral determinando una relación entre el resultado y el número de resultados posibles. Hay uno de cada uno de los seis números en el cubo, y no hay ninguna razón para pensar que una cara en particular tenga más probabilidades de aparecer que cualquier otra, por lo que la probabilidad de lanzar cualquier número es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><table id="Table_11_07_02" summary="..">
+<tgroup cols="7"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>Resultado</emphasis></entry>
+<entry align="center">Lanzamiento del 1</entry>
+<entry align="center">Lanzamiento del 2</entry>
+<entry align="center">Lanzamiento del 3</entry>
+<entry align="center">Lanzamiento del 4</entry>
+<entry align="center">Lanzamiento del 5</entry>
+<entry align="center">Lanzamiento del 6</entry>
+</row>
+
+
+<row>
+<entry align="center"><emphasis>Probabilidad</emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center">
+ <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise>
+</example>
+
+<note id="fs-id1440931" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1420644"><emphasis>¿Hay que expresar siempre las probabilidades en forma de fracciones?</emphasis></para>
+<para id="fs-id1126591"><emphasis effect="italics"/><emphasis effect="italics">No. Las probabilidades se pueden expresar como fracciones, decimales o porcentajes. La probabilidad debe ser siempre un número entre 0 y 1, incluso 0 y 1. </emphasis> </para>
+</note>
+
+<note id="fs-id1586233" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_07_01"><problem id="fs-id1301643"><para id="fs-id1107944">Construya un modelo de probabilidades para lanzar una moneda justa.</para></problem>
+<solution id="fs-id1404809">
+<table id="fs-id1268722" class="unnumbered" summary=".."><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+<entry align="center">Resultado</entry>
+<entry align="center">Probabilidad</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">Cara</entry>
+<entry align="center"> <m:math><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:math> </entry>
+</row>
+<row>
+<entry align="center">Cruz</entry>
+<entry align="center"> <m:math><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></solution>
+</exercise></note>
+</section><section id="fs-id1361118">
+<title>Calcular probabilidades de resultados igualmente probables</title>
+<para id="fs-id1300748">Supongamos que <m:math>
+<m:mrow>
+<m:mi>S</m:mi>
+</m:mrow>
+</m:math> es un espacio muestral para un experimento. Al investigar la probabilidad, un evento es cualquier subconjunto de <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Cuando los resultados de un experimento son todos igual de posibles, podemos calcular la probabilidad de un evento al dividir el número de resultados del evento entre el número total de resultados en <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Supongamos que se lanza un cubo numérico, y nos interesa calcular la probabilidad del evento "sacar un número menor que o igual a 4". Hay 4 posibles resultados en el evento y 6 posibles resultados en <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por lo que la probabilidad del evento es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+<note id="fs-id1424935">
+
+<title>Calcular la probabilidad de un evento con resultados igualmente probables</title>
+<para id="fs-id1348125">La probabilidad de un evento <m:math>
+ <m:mrow>
+  <m:mi>E</m:mi>
+ </m:mrow>
+</m:math> en un experimento con espacio muestral <m:math>
+ <m:mrow>
+  <m:mi>S</m:mi>
+ </m:mrow>
+</m:math> con resultados igualmente probables está dada por
+<equation id="Equation_11_07_01" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>E</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>número de elementos en </m:mtext><m:mi>E</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext>número de elementos en </m:mtext><m:mi>S</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>E</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>S</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> grandes. </equation></para><para id="fs-id1594823"> <m:math>
+<m:mrow>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math> es un subconjunto de <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por lo que siempre es cierto que <m:math>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≤</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para></note>
+
+<example id="Example_11_07_02">
+<exercise id="fs-id1588667"><problem id="fs-id1445522">
+<title>Calcular la probabilidad de un evento con resultados igualmente probables</title>
+<para id="fs-id1451755">Se lanza un cubo numérico de seis caras. Calcule la probabilidad de lanzar un número impar.</para></problem>
+<solution id="fs-id918553">
+<para id="fs-id1643786">El evento "lanzar un número impar" contiene tres resultados. Hay 6 resultados igualmente probables en el espacio muestral. Divida para calcular la probabilidad del evento.</para>
+<equation id="eip-id1165137794350" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </equation>
+</solution>
+</exercise></example>
+
+<note id="fs-id1694181" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_07_02">
+<problem id="fs-id1422591"><para id="fs-id899264">Se lanza un cubo numérico. Calcule la probabilidad de lanzar un número mayor que 2.</para></problem>
+<solution id="fs-id1677674"><para id="fs-id1370831"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1086429">
+<title>Calcular la probabilidad de la unión de dos eventos</title>
+<para id="fs-id1316365">A menudo nos interesa calcular la probabilidad de que ocurra uno de los múltiples eventos. Supongamos que estamos jugando un juego de cartas, y que ganaremos si la siguiente carta extraída es un corazón o un rey. Nos interesa calcular la probabilidad de que la siguiente carta sea un corazón o un rey. La <term id="term-00011">unión de dos eventos</term> <m:math>
+ <m:mrow>
+  <m:mi>E</m:mi><m:mspace width="0.5em"/><m:mtext>y </m:mtext><m:mi>F</m:mi><m:mo>,</m:mo><m:mtext>escrita como </m:mtext><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es el evento que se produce si se da uno de los dos eventos o ambos.</para><equation id="Equation_11_07_02" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∩</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation><para id="fs-id1509253">Supongamos que se hace girar la ruleta de la <link target-id="Figure_11_07_002"/>. Queremos calcular la probabilidad de girar a anaranjado o girar a <m:math>
+ <m:mrow>
+  <m:mi>b</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="Figure_11_07_002" class="small"><media id="fs-id1327158" alt="Un gráfico circular con seis piezas con dos a de color anaranjado, una b de color anaranjado y otra b de color rojo, una d de color azul y una c de color verde.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_07_002.jpg"/>
+</media>
+</figure><para id="fs-id1432292">Hay un total de 6 secciones, y 3 de ellas son de color anaranjado. Así que la probabilidad de girar a anaranjado es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Hay un total de 6 secciones, y 2 de ellas tienen una <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Así que la probabilidad de girar a <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si sumamos estas dos probabilidades, estaríamos contando el sector que es a la vez anaranjado y <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> dos veces. Para calcular la probabilidad de hacer girar a anaranjado o a <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> tenemos que restar la probabilidad de que el sector sea a la vez anaranjado y <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-558" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </equation><para id="fs-id1586194">La probabilidad de girar a anaranjado o a <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><note id="fs-id1656986">
+
+<title>Probabilidad de la unión de dos eventos</title>
+<para id="fs-id1658947">La probabilidad de la unión de dos eventos <m:math>
+<m:mrow>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mi>F</m:mi>
+</m:math> (escrita como <m:math>
+<m:mrow>
+<m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi>
+</m:mrow>
+</m:math> ) es igual a la suma de la probabilidad de <m:math>
+<m:mrow>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math> y la probabilidad de <m:math>
+<m:mrow>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math> menos la probabilidad de que <m:math>
+<m:mrow>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math> ocurran juntos <m:math><m:mtext>(</m:mtext></m:math> lo cual se llama la <term class="no-emphasis" id="term-00012">intersección</term> de <m:math>
+<m:mrow>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math> y se escribe como <m:math>
+ <m:mrow>
+  <m:mi>E</m:mi><m:mo>∩</m:mo><m:mi>F</m:mi>
+ </m:mrow>
+</m:math> ).</para><equation id="eip-579" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∩</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation></note>
+
+<example id="Example_11_07_03">
+<exercise id="fs-id1518999"><problem id="fs-id1034489">
+<title>Calcular la probabilidad de la unión de dos eventos</title>
+<para id="fs-id1356448">Se extrae una carta de una baraja estándar. Calcule la probabilidad de sacar un corazón o un 7.</para>
+</problem>
+<solution id="fs-id1530303">
+<para id="fs-id1586017">Una baraja estándar contiene el mismo número de corazones, diamantes, tréboles y picas. Así que la probabilidad de sacar un corazón es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Hay cuatro 7 en una baraja estándar, y hay un total de 52 cartas. Así que la probabilidad de sacar un 7 es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+<para id="fs-id1702376">La única carta de la baraja que es a la vez un corazón y un 7 es el 7 de corazones, por lo que la probabilidad de sacar tanto un corazón como un 7 es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>52</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Sustituya <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>H</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo> </m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo> </m:mo><m:mtext>y</m:mtext><m:mo> </m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>H</m:mi><m:mo>∩</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>52</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> en la fórmula.</para>
+<equation id="eip-id1165137834138" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:msup>
+       <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∪</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:msup>
+       <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∩</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mn>13</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mn>52</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mrow>
+        <m:mn>13</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1429192">La probabilidad de sacar un corazón o un 7 es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1638389" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_07_03">
+<problem id="fs-id1000024">
+<para id="fs-id1648053">Se extrae una carta de una baraja estándar. Calcule la probabilidad de sacar una carta roja o un as.</para></problem>
+<solution id="fs-id1583916">
+<para id="fs-id1345700"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1116713"><title>Calcular la probabilidad de eventos mutuamente excluyentes</title><para id="fs-id1585848">Supongamos que se hace girar de nuevo la ruleta de la <link target-id="Figure_11_07_002"/>, pero esta vez nos interesa la probabilidad de hacer girar a anaranjado o a <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> No hay sectores que sean a la vez de color anaranjado y que contengan una <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por lo que estos dos sucesos no tienen resultados en común. Se dice que los eventos son <term id="term-00013">mutuamente excluyentes</term> cuando no tienen resultados en común. Ya que no hay superposición, no hay nada que restar, por lo que la fórmula general es</para><equation id="eip-78" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation><para id="fs-id1615913">Observe que con eventos mutuamente excluyentes la intersección de <m:math>
+<m:mrow>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math> es el conjunto vacío. La probabilidad de hacer girar a anaranjado es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> y la probabilidad de girar a <m:math>
+<m:mrow>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math> es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Podemos calcular la probabilidad de girar a anaranjado o a <m:math>
+<m:mrow>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math> simplemente al sumar las dos probabilidades.</para><equation id="eip-339" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:msup>
+       <m:mstyle displaystyle="true" mathsize="140%"><m:mo>∪</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1526712">La probabilidad de hacer girar a anaranjado o a <m:math>
+<m:mrow>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math> es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><note id="fs-id1637610">
+
+<title>Probabilidad de la unión de eventos mutuamente excluyentes</title>
+<para id="fs-id1670450">La probabilidad de la unión de dos <emphasis effect="italics">eventos mutuamente excluyentes</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>E</m:mi><m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>F</m:mi>
+ </m:mrow>
+</m:math> viene dada por</para><equation id="Equation_11_07_03" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation></note>
+
+<note id="fs-id1638090" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1584623"><emphasis>Dado un conjunto de eventos, calcule la probabilidad de la unión de eventos mutuamente excluyentes.</emphasis></para>
+<list id="fs-id1646963" list-type="enumerated" number-style="arabic">
+<item>Determine el número total de resultados del primer evento.</item>
+<item>Calcule la probabilidad del primer evento.</item>
+<item>Determine el número total de resultados del segundo evento.</item>
+<item>Calcule la probabilidad del segundo evento.</item>
+<item>Sume las probabilidades.</item>
+</list>
+</note>
+
+<example id="Example_11_07_04">
+<exercise id="fs-id672973"><problem id="fs-id1000213">
+<title>Calcular la probabilidad de la unión de eventos mutuamente excluyentes</title>
+<para id="fs-id1537558">Se extrae una carta de una baraja estándar. Calcule la probabilidad de sacar un corazón o una pica.</para>
+</problem>
+<solution id="fs-id1358498">
+<para id="fs-id1267481">Los eventos "sacar un corazón" y "sacar una pica" son mutuamente excluyentes porque no pueden ocurrir al mismo tiempo. La probabilidad de sacar un corazón es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> y la probabilidad de sacar una pica también es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> por lo que la probabilidad de sacar un corazón o una pica es</para>
+<equation id="eip-id1165137706007" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </equation>
+</solution>
+</exercise></example>
+
+<note id="fs-id1697066" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_07_04">
+<problem id="fs-id1609205">
+<para id="fs-id1663132">Se extrae una carta de una baraja estándar. Calcule la probabilidad de sacar un as o un rey.</para>
+</problem>
+<solution id="fs-id1351045">
+<para id="fs-id1116307"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1293187">
+<title>Usar la regla del complemento para calcular probabilidades</title>
+<para id="fs-id1374658">Hemos hablado de cómo calcular la probabilidad de que se produzca un evento. A veces, nos interesa calcular la probabilidad de que un evento <emphasis effect="italics">no</emphasis> ocurra. El <emphasis>complemento de un evento</emphasis> <m:math>
+<m:mrow>
+<m:mi>E</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> denotado <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>E</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es el conjunto de resultados en el espacio muestral que no están en <m:math>
+<m:mrow>
+<m:mi>E</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Por ejemplo, supongamos que nos interesa la probabilidad de que un caballo pierda una carrera. Si el evento <m:math>
+<m:mrow>
+<m:mi>W</m:mi>
+</m:mrow>
+</m:math> es que el caballo gane la carrera, entonces el complemento del evento <m:math>
+<m:mrow>
+<m:mi>W</m:mi>
+</m:mrow>
+</m:math> es que el caballo pierda la carrera.</para><para id="fs-id1333236">Para calcular la probabilidad de que el caballo pierda la carrera, tenemos que utilizar el hecho de que la suma de todas las probabilidades en un modelo de probabilidad debe ser 1.</para>
+<equation id="eip-394" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>E</m:mi>
+<m:mo>′</m:mo>
+</m:msup>
+<m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation><para id="fs-id1421502">La probabilidad de que el caballo gane sumada a la probabilidad de que pierda debe ser igual a 1. Por lo tanto, si la probabilidad de que el caballo gane la carrera es <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> la probabilidad de que el caballo pierda la carrera es simplemente</para>
+<equation id="eip-754" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mn>1</m:mn><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>8</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </equation>
+<note id="fs-id1430243">
+
+<title>La regla del complemento</title>
+<para id="fs-id1649416">La probabilidad de que se produzca el <term id="term-00014">complemento de un evento </term> está dada por</para>
+<equation id="Equation_11_07_04" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>E</m:mi>
+<m:mo>′</m:mo>
+</m:msup>
+<m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation>
+</note>
+
+<example id="Example_11_07_05"><exercise id="fs-id1322779">
+<problem id="fs-id1637726">
+<title>Usar la regla del complemento para calcular probabilidades</title>
+<para id="fs-id1392348">Se lanzan dos cubos numéricos de seis caras.</para>
+<list id="fs-id1537969" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Calcule la probabilidad de que la suma de los números lanzados sea menor que o igual a 3.</item>
+<item><span class="token">Ⓑ</span>Calcule la probabilidad de que la suma de los números lanzados sea mayor que 3.</item>
+</list>
+</problem>
+<solution id="fs-id1615996">
+<para id="fs-id1692884">El primer paso es identificar el espacio muestral, que consiste en todos los resultados posibles. Hay dos cubos numéricos, y cada cubo numérico tiene seis resultados posibles. Utilizando el principio de multiplicación, hallamos que hay <m:math><m:mrow><m:mn>6</m:mn><m:mo>×</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow></m:math> o <m:math><m:mrow><m:mspace width="0.5em"/><m:mtext>36 </m:mtext></m:mrow></m:math> resultados posibles totales. Así, por ejemplo, el 1-1 representa un 1 sacado en cada cubo numérico. </para><table id="eip-id1165135680167" summary="..">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>1-1</m:mtext>
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>1-2</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>1-3</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>1-4</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>1-5</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>1-6</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>2-1</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>2-2</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>2-3</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext/>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mtext>2-4</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>2-5</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>2-6</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>3-1</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>3-2</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>3-3</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>3-4</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>3-5</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>3-6</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>4-1</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>4-2</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>4-3</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>4-4</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>4-5</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>4-6</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>5-1</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>5-2</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>5-3</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>5-4</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>5-5</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>5-6</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>6-1</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>6-2</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>6-3</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>6-4</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>6-5</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mtext>6-6</m:mtext>
+ </m:mrow>
+</m:math> </entry>
+</row></tbody>
+
+
+
+
+
+
+</tgroup>
+</table><list id="fs-id1702517" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Tenemos que contar el número de maneras de lanzar una suma de 3 o menos. Esto incluiría los siguientes resultados: 1-1, 1-2 y 2-1. Así que solo hay tres maneras de sacar una suma de 3 o menos. La probabilidad es<equation id="eip-id1165134074995" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>36</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </equation></item>
+
+<item><span class="token">Ⓑ</span>En vez de enumerar todas las posibilidades, podemos utilizar la regla del complemento. Como ya hemos calculado la probabilidad del complemento de este evento, podemos simplemente restar esa probabilidad de 1 para calcular la probabilidad de que la suma de los números lanzados sea mayor que 3.
+<equation id="eip-id1165137635131" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>E</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>        </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></item>
+</list></solution>
+</exercise>
+</example>
+<note id="fs-id1244626" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_07_05">
+<problem id="fs-id1380784"><para id="fs-id1380785">Se lanzan dos cubos numéricos. Utilice la regla del complemento para calcular la probabilidad de que la suma sea menor que 10.</para></problem>
+<solution id="fs-id1261250"><para id="fs-id1261251"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>5</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1637173">
+<title>Calcular la probabilidad mediante la teoría del conteo</title>
+<para id="fs-id1457106">Muchos problemas interesantes de probabilidad implican principios de conteo, permutaciones y combinaciones. En estos problemas, utilizaremos permutaciones y combinaciones para hallar el número de elementos en eventos y espacios muestrales. Estos problemas pueden ser complicados, pero pueden hacerse más fáciles si se dividen en problemas de conteo más pequeños.</para>
+<para id="fs-id1033498">Supongamos, por ejemplo, que una tienda tiene 8 teléfonos móviles y que 3 de ellos están defectuosos. Podríamos querer calcular la probabilidad de que una pareja que compra 2 teléfonos reciba 2 teléfonos que no estén defectuosos. Para resolver este problema, tenemos que calcular todas las maneras de seleccionar 2 teléfonos que no estén defectuosos, así como todas las maneras de seleccionar 2 teléfonos. Hay 5 teléfonos que no están defectuosos, por lo que hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de seleccionar 2 teléfonos que no estén defectuosos. Hay 8 teléfonos, por lo que hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de seleccionar 2 teléfonos. La probabilidad de seleccionar 2 teléfonos que no estén defectuosos es:</para>
+<equation id="eip-546" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mtext>maneras de seleccionar 2 teléfonos que no estén defectuosos</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>maneras de seleccionar 2 teléfonos</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="16.5em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>28</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="16.5em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mrow>
+        <m:mn>14</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><example id="Example_11_07_06">
+<exercise id="fs-id1425116"><problem id="fs-id1425119">
+<title>Calcular la probabilidad mediante la teoría del conteo</title>
+<para id="fs-id1583226">Un niño selecciona al azar 5 juguetes de una caja que contiene 3 conejos, 5 perros y 6 osos.</para>
+<list id="fs-id1693582" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Calcule la probabilidad de que solo se elijan osos.</item>
+<item><span class="token">Ⓑ</span>Calcule la probabilidad de que se elijan 2 osos y 3 perros.</item>
+<item><span class="token">Ⓒ</span>Calcule la probabilidad de que, al menos, se elijan 2 perros.</item>
+</list>
+</problem>
+<solution id="fs-id1428640">
+<list id="fs-id1693584" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Tenemos que contar el número de maneras de elegir solo osos y el número total de maneras posibles de seleccionar 5 juguetes. Hay 6 osos, así que hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de elegir 5 osos. Hay 14 juguetes, por lo que hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de elegir 5 juguetes cualesquiera.
+<equation id="eip-id1165135359779" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mtext>,</m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mtext>,</m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mtext>,</m:mtext><m:mn>002</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+</item>
+
+<item><span class="token">Ⓑ</span>Tenemos que contar el número de maneras de elegir 2 osos y 3 perros y el número total de maneras posibles de elegir 5 juguetes. Hay 6 osos, así que hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de elegir 2 osos. Hay 5 perros, así que hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de elegir 3 perros. Como estamos eligiendo tanto osos como perros al mismo tiempo, utilizaremos el principio de multiplicación. Hay <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> maneras de elegir 2 osos y 3 perros. Podemos utilizar este resultado para calcular la probabilidad.
+<equation id="eip-id1165135582005" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mtext>,</m:mtext><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mtext>,</m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn><m:mo>⋅</m:mo><m:mn>10</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mtext>,</m:mtext><m:mn>002</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>75</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></item>
+<item><span class="token">Ⓒ</span>A menudo es más fácil resolver los problemas de "al menos" utilizando la regla del complemento. Empezaremos por calcular la probabilidad de que se elijan menos de 2 perros. Si se eligen menos de 2 perros, entonces o bien no se puede elegir ningún perro, o bien se puede elegir 1 perro.
+
+<para id="fs-id1654573">Cuando no se eligen perros, los 5 juguetes provienen de los 9 juguetes que no son perros. Hay <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> maneras de elegir juguetes de los 9 juguetes que no son perros. Dado que hay 14 juguetes, hay <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> maneras de elegir los 5 juguetes de entre todos los juguetes.</para>
+<equation id="eip-id1165134081456" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mtext>,</m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mtext>,</m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>63</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1655062">Si se elige 1 perro, entonces 4 juguetes deben proceder de los 9 juguetes que no son perros, y 1 debe proceder de los 5 perros. Como estamos eligiendo tanto perros como otros juguetes al mismo tiempo, utilizaremos el principio de multiplicación. Hay <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> maneras de elegir 1 perro y 1 otro juguete.</para><equation id="eip-746" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mtext>,</m:mtext><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mtext>,</m:mtext><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mtext>,</m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mn>126</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mtext>,</m:mtext><m:mn>002</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>315</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1609258">Dado que estos sucesos no ocurrirían juntos y, por tanto, son mutuamente excluyentes, sumamos las probabilidades para calcular la probabilidad de que se elijan menos de 2 perros.</para>
+<equation id="eip-844" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>63</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>315</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>378</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1586387">A continuación, restamos esa probabilidad de 1 para hallar la probabilidad de que se elijan, al menos, 2 perros.</para>
+<equation id="eip-418" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>378</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>623</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>001</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></item>
+</list></solution>
+</exercise></example>
+
+<note id="fs-id1534586" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_07_06">
+<problem id="fs-id1503478"><para id="fs-id1503479">Un niño selecciona al azar 3 bolas de chicle de un recipiente que contiene 4 bolas de chicle moradas, 8 amarillas y 2 verdes.</para>
+<list id="fs-id1464583" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Calcule la probabilidad de que las 3 bolas de chicle seleccionadas sean moradas.</item>
+<item><span class="token">Ⓑ</span>Calcule la probabilidad de que no se seleccione ninguna bola de chicle amarilla.</item>
+<item><span class="token">Ⓒ</span>Calcule la probabilidad de que se seleccione, al menos, 1 bola de chicle amarilla.</item>
+</list>
+</problem>
+<solution id="fs-id1699278">
+<para id="fs-id1699280"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>a</m:mtext><m:mtext>. </m:mtext><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mn>91</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>;</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>b</m:mtext><m:mtext>. </m:mtext><m:mfrac>
+       <m:mtext>5</m:mtext>
+       <m:mrow>
+        <m:mtext>91</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>;</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>c</m:mtext><m:mtext>. </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mn>86</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>91</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1616333" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1659455">Acceda a estos recursos en línea para obtener más información y practicar con la probabilidad.</para>
+<list id="fs-id1582738" list-type="bulleted">
+<item><link url="http://openstax.org/l/introprob">Introducción a la probabilidad</link></item>
+<item><link url="http://openstax.org/l/determineprob">Determinar la probabilidad</link></item>
+
+</list>
+</note>
+</section>
+
+<section id="fs-id1164480" class="key-equations">
+<title>Ecuaciones clave</title>
+<table id="eip-id1165134166592" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">probabilidad de un suceso con resultados igualmente probables</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">probabilidad de la unión de dos eventos</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∩</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">probabilidad de la unión de eventos mutuamente excluyentes</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>∪</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">probabilidad del complemento de un evento</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo>'</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section>
+<section id="fs-id1457229" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1457233" list-type="bulleted"><item>La probabilidad es siempre un número entre 0 y 1, donde 0 significa que un evento es imposible y 1 significa que un evento es seguro.</item>
+<item>Las probabilidades de un modelo de probabilidad deben sumar 1. Vea el <link target-id="Example_11_07_01"/>.</item>
+<item>Cuando los resultados de un experimento son todos igual de probables, podemos calcular la probabilidad de un suceso al dividir el número de resultados del suceso entre el número total de resultados en el espacio muestral del experimento. Vea el <link target-id="Example_11_07_02"/>.</item>
+<item>Para calcular la probabilidad de la unión de dos eventos, sumamos las probabilidades de los dos eventos y restamos la probabilidad de que ambos ocurran simultáneamente. Vea el <link target-id="Example_11_07_03"/>.</item>
+<item>Para calcular la probabilidad de la unión de dos eventos mutuamente excluyentes, sumamos las probabilidades de cada uno de los eventos. Vea el <link target-id="Example_11_07_04"/>.</item>
+<item>La probabilidad del complemento de un evento es la diferencia entre 1 y la probabilidad de que el evento ocurra. Vea el <link target-id="Example_11_07_05"/>.</item>
+<item>En algunos problemas de probabilidad, necesitamos utilizar permutaciones y combinaciones para hallar el número de elementos en los eventos y espacios muestrales. Vea el <link target-id="Example_11_07_06"/>.</item>
+</list></section>
+<section id="fs-id1608288" class="section-exercises">
+<title>Ejercicios de la sección</title>
+<section id="fs-id1429120">
+<title>Verbales</title>
+
+<exercise id="fs-id1446155">
+<problem id="fs-id1446157"><para id="fs-id1446158">¿Qué término se utiliza para expresar la posibilidad de que se produzca un evento? ¿Hay restricciones en sus valores? Si es así, ¿cuáles son? Si no es así, explique.</para></problem>
+<solution id="fs-id1220681"><para id="fs-id1220682">probabilidad; la probabilidad de un evento se restringe a valores entre <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> incluso <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1108090">
+<problem id="fs-id1587482">
+<para id="fs-id1587484">¿Qué es un espacio muestral?</para></problem>
+</exercise>
+
+<exercise id="fs-id1662244">
+<problem id="fs-id1662246"><para id="fs-id1662247">¿Qué es un experimento?</para></problem>
+<solution id="fs-id1701014"><para id="fs-id1701015">Un experimento es una actividad con un resultado observable.</para></solution>
+</exercise>
+<exercise id="fs-id1360865">
+<problem id="fs-id1360867"><para id="fs-id1357358">¿Cuál es la diferencia entre eventos y resultados? Dé un ejemplo de ambos utilizando el espacio muestral de lanzar una moneda 50 veces.</para></problem>
+</exercise>
+
+<exercise id="fs-id1268584">
+<problem id="fs-id1268586"><para id="fs-id1268588">La <emphasis effect="italics">unión de dos conjuntos</emphasis> se define como un conjunto de elementos que están presentes en, al menos, uno de los conjuntos. ¿En qué se parece esto a la definición utilizada para la <emphasis effect="italics">unión de dos eventos</emphasis> de un modelo de probabilidades? ¿En qué se diferencia?</para></problem>
+<solution id="fs-id1696914"><para id="fs-id1696915">La probabilidad de que se produzca la <emphasis effect="italics">unión de dos eventos</emphasis> es un número que describe la posibilidad de que se produzca, al menos, uno de los eventos de un modelo de probabilidades. En una unión de conjuntos <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mspace width="0.5em"/><m:mtext/><m:mo> </m:mo><m:mtext>y </m:mtext><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> y una unión de eventos <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo> </m:mo><m:mtext>y</m:mtext><m:mo> </m:mo><m:mi>B</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la unión incluye <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo> </m:mo><m:mtext>o</m:mtext><m:mo> </m:mo><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> o ambos. La diferencia es que una unión de conjuntos da como resultado otro conjunto, mientras que la unión de eventos es una probabilidad, por lo que siempre es un valor numérico entre <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1655573"><title>Numéricos</title><para id="fs-id1210672">En los siguientes ejercicios, use la ruleta que se muestra en la <link target-id="CNX_Precalc_Figure_11_07_201"/> para calcular las probabilidades indicadas.</para>
+<figure id="CNX_Precalc_Figure_11_07_201" class="small"><media id="fs-id1460534" alt="Un gráfico circular con ocho piezas con una A de color azul, una B de color morado, una C de color anaranjado, una D de color azul, una E de color rojo, una F de color verde, una I de color verde y una O de color amarillo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_07_201n.jpg"/>
+</media>
+</figure><exercise id="fs-id1356038">
+<problem id="fs-id1530026">
+<para id="fs-id1530028">Cae en rojo</para></problem>
+</exercise>
+<exercise id="fs-id1644305">
+<problem id="fs-id1644307"><para id="fs-id1644308">Cae en una vocal</para></problem>
+<solution id="fs-id1647332"><para id="fs-id1647333"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1665488">
+<problem id="fs-id1665491"><para id="fs-id1665492">No cae en azul</para></problem>
+</exercise>
+<exercise id="fs-id1428664">
+<problem id="fs-id1428666"><para id="fs-id1428667">Cae en morado o en una vocal</para></problem>
+<solution id="fs-id1506341"><para id="fs-id1506342"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1060716">
+<problem id="fs-id1060718">
+<para id="fs-id1165135445921">Cae en azul o en una vocal</para></problem>
+</exercise>
+
+<exercise id="fs-id1689897">
+<problem id="fs-id988742"><para id="fs-id988743">Cae en verde o en azul</para></problem>
+<solution id="fs-id988746"><para id="fs-id988747"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1431222">
+<problem id="fs-id1431224"><para id="fs-id1407722">Cae en amarillo o en una consonante</para></problem>
+</exercise>
+
+<exercise id="fs-id1407726">
+<problem id="fs-id1433092"><para id="fs-id1433094">No cae en amarillo ni en una consonante</para></problem>
+<solution id="fs-id1433097"><para id="fs-id1433098"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+
+<para id="fs-id1126554">En los siguientes ejercicios, se lanzan dos monedas.</para>
+<exercise id="fs-id1394248">
+<problem id="fs-id1394250"><para id="fs-id1394252">¿Cuál es el espacio muestral?</para></problem>
+</exercise>
+
+
+<exercise id="fs-id1505434">
+<problem id="fs-id942285"><para id="fs-id942286">Calcule la probabilidad de lanzar dos caras.</para></problem>
+<solution id="fs-id942289"><para id="fs-id942290"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1456266">
+<problem id="fs-id1456268"><para id="fs-id1149119">Calcule la probabilidad de lanzar exactamente una cruz.</para></problem>
+</exercise>
+<exercise id="fs-id1149123">
+<problem id="fs-id1409445"><para id="fs-id1409446">Calcule la probabilidad de lanzar, al menos, una cruz.</para></problem>
+<solution id="fs-id1409449"><para id="fs-id1409450"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1527976">En los siguientes ejercicios, se lanzan cuatro monedas.</para>
+<exercise id="fs-id1663510">
+<problem id="fs-id1663513"><para id="fs-id1663514">¿Cuál es el espacio muestral?</para></problem>
+</exercise>
+
+<exercise id="fs-id1107735">
+<problem id="fs-id1459068"><para id="fs-id1459069">Calcule la probabilidad de lanzar exactamente dos caras.</para></problem>
+<solution id="fs-id1459072"><para id="fs-id1459073"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1417348">
+<problem id="fs-id1417350">
+<para id="fs-id1432413">Calcule la probabilidad de lanzar exactamente tres caras.</para></problem>
+</exercise>
+
+<exercise id="fs-id1435199">
+<problem id="fs-id1435201"><para id="fs-id1435202">Calcule la probabilidad de lanzar cuatro caras o cuatro cruces.</para></problem>
+<solution id="fs-id981942"><para id="fs-id981943"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id981947">
+<problem id="fs-id1609191"><para id="fs-id1609192">Calcule la probabilidad de lanzar todas cruces.</para></problem>
+</exercise>
+
+<exercise id="fs-id1102277">
+<problem id="fs-id1102279"><para id="fs-id1102280">Calcule la probabilidad de lanzar no todas cruces.</para></problem>
+<solution id="fs-id1464063"><para id="fs-id1464064"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1464068">
+<problem id="fs-id1047221"><para id="fs-id1047222">Calcule la probabilidad de lanzar exactamente dos caras o, al menos, dos cruces.</para></problem>
+</exercise>
+
+<exercise id="fs-id1407240">
+<problem id="fs-id1407242"><para id="fs-id1407244">Calcule la probabilidad de lanzar dos caras o tres caras.</para></problem>
+<solution id="fs-id1655955"><para id="fs-id1655956"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1655960">En los siguientes ejercicios, se extrae una carta de una baraja estándar de <m:math>
+ <m:mrow>
+  <m:mn>52</m:mn>
+ </m:mrow>
+</m:math> cartas. Calcule la probabilidad de sacar lo siguiente:</para>
+<exercise id="fs-id1380295">
+<problem id="fs-id1380297"><para id="fs-id1424450">Un trébol</para></problem>
+</exercise>
+<exercise id="fs-id1424455">
+<problem id="fs-id1365055"><para id="fs-id1365056">Un dos</para></problem>
+<solution id="fs-id1365060"><para id="fs-id1165137639764"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1034744">
+<problem id="fs-id1034746"><para id="fs-id1034748">Seis o siete</para></problem>
+</exercise>
+<exercise id="fs-id1158127">
+<problem id="fs-id1158129"><para id="fs-id951094">Seis rojo</para></problem>
+<solution id="fs-id951098"><para id="fs-id951099"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>26</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id917934">
+<problem id="fs-id917936"><para id="fs-id917937">Un as o un diamante</para></problem>
+</exercise>
+
+<exercise id="fs-id1435906">
+<problem id="fs-id1435908"><para id="fs-id1384812">Una carta que no sea as</para></problem>
+<solution id="fs-id1384815"><para id="fs-id1384816"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+
+<exercise id="fs-id1424594">
+<problem id="fs-id1424596">
+<para id="fs-id1464390">Un corazón o una carta que no sea jota</para></problem>
+</exercise>
+
+<para id="fs-id1464396">En los siguientes ejercicios, se lanzan dos dados y se suman los resultados.</para>
+<exercise id="fs-id1426053" class="material-set-2"><problem id="fs-id1426055"><para id="fs-id1426056">Construya una tabla que muestre el espacio muestral de los resultados y las sumas.</para></problem>
+<solution id="fs-id1458634">
+<table id="fs-id1458636" class="unnumbered" summary=".."><label/>
+<tgroup cols="7"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<tbody>
+<row>
+<entry/>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3</entry>
+<entry align="center">4</entry>
+<entry align="center">5</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center"><emphasis>1</emphasis></entry>
+<entry align="center">(1, 1)<newline count="1"/>2</entry>
+<entry align="center">(1, 2)<newline count="1"/>3</entry>
+<entry align="center">(1, 3)<newline count="1"/>4</entry>
+<entry align="center">(1, 4)<newline count="1"/>5</entry>
+<entry align="center">(1, 5)<newline count="1"/>6</entry>
+<entry align="center">(1, 6)<newline count="1"/>7</entry>
+</row>
+<row>
+<entry align="center"><emphasis>2</emphasis></entry>
+<entry align="center">(2, 1)<newline count="1"/>3</entry>
+<entry align="center">(2, 2)<newline count="1"/>4</entry>
+<entry align="center">(2, 3)<newline count="1"/>5</entry>
+<entry align="center">(2, 4)<newline count="1"/>6</entry>
+<entry align="center">(2, 5)<newline count="1"/>7</entry>
+<entry align="center">(2, 6)<newline count="1"/>8</entry>
+</row>
+<row>
+<entry align="center"><emphasis>3</emphasis></entry>
+<entry align="center">(3, 1)<newline count="1"/>4</entry>
+<entry align="center">(3, 2)<newline count="1"/>5</entry>
+<entry align="center">(3, 3)<newline count="1"/>6</entry>
+<entry align="center">(3, 4)<newline count="1"/>7</entry>
+<entry align="center">(3, 5)<newline count="1"/>8</entry>
+<entry align="center">(3, 6)<newline count="1"/>9</entry>
+</row>
+<row>
+<entry align="center"><emphasis>4</emphasis></entry>
+<entry align="center">(4, 1)<newline count="1"/>5</entry>
+<entry align="center">(4, 2)<newline count="1"/>6</entry>
+<entry align="center">(4, 3)<newline count="1"/>7</entry>
+<entry align="center">(4, 4)<newline count="1"/>8</entry>
+<entry align="center">(4, 5)<newline count="1"/>9</entry>
+<entry align="center">(4, 6)<newline count="1"/>10</entry>
+</row>
+<row>
+<entry align="center"><emphasis>5</emphasis></entry>
+<entry align="center">(5, 1)<newline count="1"/>6</entry>
+<entry align="center">(5, 2)<newline count="1"/>7</entry>
+<entry align="center">(5, 3)<newline count="1"/>8</entry>
+<entry align="center">(5, 4)<newline count="1"/>9</entry>
+<entry align="center">(5, 5)<newline count="1"/>10</entry>
+<entry align="center">(5, 6)<newline count="1"/>11</entry>
+</row>
+<row>
+<entry align="center"><emphasis>6</emphasis></entry>
+<entry align="center">(6, 1)<newline count="1"/>7</entry>
+<entry align="center">(6, 2)<newline count="1"/>8</entry>
+<entry align="center">(6, 3)<newline count="1"/>9</entry>
+<entry align="center">(6, 4)<newline count="1"/>10</entry>
+<entry align="center">(6, 5)<newline count="1"/>11</entry>
+<entry align="center">(6, 6)<newline count="1"/>12</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise><exercise id="fs-id1361265" class="material-set-2">
+<problem id="fs-id1361267"><para id="fs-id1361268">Calcule la probabilidad de sacar una suma de <m:math>
+ <m:mrow>
+  <m:mn>3.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1429776" class="material-set-2">
+<problem id="fs-id1429778"><para id="fs-id1429779">Calcule la probabilidad de sacar, al menos, un cuatro o una suma de <m:math>
+ <m:mrow>
+  <m:mn>8.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1700737"><para id="fs-id1700738"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1417274" class="material-set-2">
+<problem id="fs-id1417276"><para id="fs-id1417278">Calcule la probabilidad de sacar una suma impar menor que <m:math>
+ <m:mrow>
+  <m:mn>9.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1504285" class="material-set-2">
+<problem id="fs-id1504287"><para id="fs-id1504288">Calcule la probabilidad de sacar una suma mayor que o igual a <m:math>
+ <m:mrow>
+  <m:mn>15.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1505253"><para id="fs-id1505254"> <m:math>
+ <m:mrow>
+  <m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1651817">
+<problem id="fs-id1651819"><para id="fs-id1651820">Calcule la probabilidad de sacar una suma menor que <m:math>
+ <m:mrow>
+  <m:mn>15.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1352158">
+<problem id="fs-id1352160"><para id="fs-id1352161">Calcule la probabilidad de sacar una suma menor que <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn>
+ </m:mrow>
+</m:math> o mayor que <m:math>
+ <m:mrow>
+  <m:mn>9.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1700478"><para id="fs-id1700479"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1420867">
+<problem id="fs-id1420869"><para id="fs-id1420870">Calcule la probabilidad de sacar una suma entre <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:mtext>,</m:mtext>
+ </m:mrow>
+</m:math>, inclusive.</para></problem>
+</exercise>
+
+<exercise id="fs-id1405147">
+<problem id="fs-id1405149"><para id="fs-id1405150">Calcule la probabilidad de sacar una suma de <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn>
+ </m:mrow>
+</m:math> ni <m:math>
+ <m:mrow>
+  <m:mn>6.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1430279"><para id="fs-id1430280"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1346920">
+<problem id="fs-id1346922"><para id="fs-id1346923">Calcule la probabilidad de sacar cualquier suma que no sea <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn>
+ </m:mrow>
+</m:math> ni <m:math>
+ <m:mrow>
+  <m:mn>6.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1370163">En los siguientes ejercicios, se lanza una moneda y se saca una carta de una baraja estándar. Calcule la probabilidad de lo siguiente:</para>
+
+<exercise id="fs-id1403033">
+<problem id="fs-id1403036"><para id="fs-id1403037">Una cara en la moneda o un trébol</para></problem>
+<solution id="fs-id1431354"><para id="fs-id1431355"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1431360">
+<problem id="fs-id1375328"><para id="fs-id1375329">Una cruz en la moneda o un as rojo</para></problem>
+</exercise>
+
+<exercise id="fs-id1406358">
+<problem id="fs-id1406360"><para id="fs-id1406361">Una cara en la moneda o una carta con cara</para></problem>
+<solution id="fs-id1375125"><para id="fs-id1375126"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>8</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1375130">
+<problem id="fs-id1432523"><para id="fs-id1432524">No hay ases</para></problem>
+</exercise>
+
+<para id="fs-id962975">En los siguientes ejercicios, utilice este escenario: una bolsa de M&amp;M contiene <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn>
+ </m:mrow>
+</m:math> azules, <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn>
+ </m:mrow>
+</m:math> marrones, <m:math>
+ <m:mrow>
+  <m:mn>10</m:mn>
+ </m:mrow>
+</m:math> anaranjados, <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn>
+ </m:mrow>
+</m:math> amarillos, <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn>
+ </m:mrow>
+</m:math> rojos y <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn>
+ </m:mrow>
+</m:math> M&amp;M verdes. Una persona mete la mano en la bolsa y agarra 5 M&amp;M.</para><exercise id="fs-id1375117">
+<problem id="fs-id1375119"><para id="fs-id1375120">¿Cuál es la probabilidad de obtener todos los M&amp;M azules?</para></problem>
+<solution id="fs-id1451917"><para id="fs-id1451918"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>48</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>2.162</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1376955">
+<problem id="fs-id1376957"><para id="fs-id1376958">¿Cuál es la probabilidad de obtener <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn>
+ </m:mrow>
+</m:math> M&amp;M azules?</para></problem>
+</exercise>
+
+<exercise id="fs-id1137436">
+<problem id="fs-id1137438"><para id="fs-id1137439">¿Cuál es la probabilidad de obtener <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn>
+ </m:mrow>
+</m:math> M&amp;M azules?</para></problem>
+<solution id="fs-id1392183"><para id="fs-id1392184"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>48</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>175</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2.162</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1587202">
+<problem id="fs-id1587204"><para id="fs-id1587205">¿Cuál es la probabilidad de no obtener M&amp;M marrones?</para></problem>
+</exercise>
+
+</section><section id="fs-id691394">
+<title>Extensiones</title>
+<para id="fs-id1658091">Utilice el siguiente escenario para los próximos ejercicios: En el juego de Keno, un jugador comienza con la selección de <m:math>
+ <m:mrow>
+  <m:mn>20</m:mn>
+ </m:mrow>
+</m:math> números de los números del <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mn>80.</m:mn>
+ </m:mrow>
+</m:math> Después de que el jugador haga sus selecciones, <m:math>
+ <m:mrow>
+  <m:mn>20</m:mn>
+ </m:mrow>
+</m:math> números ganadores se seleccionan al azar entre los números del <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mn>80.</m:mn>
+ </m:mrow>
+</m:math> Hay una victoria si el jugador ha seleccionado correctamente <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn>
+ </m:mrow>
+</m:math> de los <m:math>
+ <m:mrow>
+  <m:mn>20</m:mn>
+ </m:mrow>
+</m:math> números ganadores (redondee todas las respuestas a la centésima de porcentaje más cercana).</para><exercise id="fs-id1658093">
+<problem id="fs-id1025336"><para id="fs-id1025337">¿Cuál es el porcentaje de probabilidad de que un jugador seleccione exactamente 3 números ganadores?</para></problem>
+<solution id="fs-id1025340"><para id="fs-id1025341"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>60</m:mn><m:mo>,</m:mo><m:mn>17</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>12,49</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1410296">
+<problem id="fs-id1410298"><para id="fs-id1446734">¿Cuál es el porcentaje de probabilidad de que un jugador seleccione exactamente 4 números ganadores?</para></problem>
+</exercise>
+
+<exercise id="fs-id1446738">
+<problem id="fs-id1432791"><para id="fs-id1432792">¿Cuál es el porcentaje de probabilidad de que un jugador seleccione los 5 números ganadores?</para></problem>
+<solution id="fs-id1432795"><para id="fs-id1165135310596"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>60</m:mn><m:mo>,</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>80</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>23,33</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1451866">
+<problem id="fs-id1451868"><para id="fs-id1451869">¿Cuál es el porcentaje de posibilidades de ganar?</para></problem>
+</exercise>
+
+<exercise id="fs-id953004">
+<problem id="fs-id953006">
+<para id="fs-id1661742">¿Qué tan menor es la probabilidad de que un jugador seleccione 3 números ganadores comparada a la probabilidad de que seleccione 4 o 5 números ganadores?</para></problem>
+<solution id="fs-id1165135693734"><para id="fs-id1402882"> <m:math>
+ <m:mrow>
+  <m:mn>20,50</m:mn><m:mo>+</m:mo><m:mn>23,33</m:mn><m:mo>- −</m:mo><m:mn>12,49</m:mn><m:mo>=</m:mo><m:mn>31,34</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+</section>
+<section id="fs-id1402887">
+<title>Aplicaciones en el mundo real</title>
+<para id="fs-id1434249">Utilice estos datos para los próximos ejercicios: En 2013, había unos 317 millones de ciudadanos en Estados Unidos, y unos 40 millones eran de edad avanzada (mayores de 65 años).<footnote id="fs-id1246430">Oficina del Censo de Estados Unidos. http://www.census.gov</footnote></para>
+
+<exercise id="fs-id1246434">
+<problem id="fs-id1702772"><para id="fs-id1702774">Si conoce a un ciudadano estadounidense, ¿cuál es el porcentaje de probabilidad de que esa persona sea de edad avanzada? (Redondee a la décima de porcentaje más cercana).</para></problem>
+</exercise>
+<exercise id="fs-id1563356">
+<problem id="fs-id1563358"><para id="fs-id1563359">Si conoce a cinco ciudadanos estadounidenses, ¿cuál es el porcentaje de probabilidad de que exactamente uno sea de edad avanzada? (Redondee a la décima de porcentaje más cercana).</para></problem>
+<solution id="fs-id1430532"><para id="fs-id1430533"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>40000000</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>277000000</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>317000000</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>36,78</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1409189">
+<problem id="fs-id1409191"><para id="fs-id1409192">Si conoce a cinco ciudadanos estadounidenses, ¿cuál es el porcentaje de probabilidad de que tres sean de edad avanzada? (Redondee a la décima de porcentaje más cercana).</para></problem>
+</exercise>
+
+<exercise id="fs-id968129">
+<problem id="fs-id968131"><para id="fs-id1678373">Si conoce a cinco ciudadanos estadounidenses, ¿cuál es el porcentaje de probabilidad de que cuatro sean de edad avanzada? (Redondee a la milésima de porcentaje más cercana).</para></problem>
+<solution id="fs-id1678377"><para id="fs-id1678378"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>40000000</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>277000000</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>317000000</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0,11</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1528714">
+<problem id="fs-id1528716"><para id="fs-id1526582">Se prevé que en 2030 uno de cada cinco ciudadanos estadounidenses será de edad avanzada. ¿Cuántas más posibilidades habrá de conocer a una persona de edad avanzada en ese momento? ¿Qué cambios políticos prevé si se cumplen estas estadísticas?</para></problem>
+</exercise>
+</section>
+</section>
+<section id="fs-id1446766" class="review-exercises">
+<title>Ejercicios de repaso del capítulo</title>
+<section id="fs-id1446770">
+<title><link document="m49444">Secuencias y su notación</link></title>
+<exercise id="fs-id1393290">
+<problem id="fs-id1563220">
+<para id="fs-id1563223">Escriba los cuatro primeros términos de la secuencia definida por la fórmula recursiva <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>+</m:mo><m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para></problem>
+<solution id="fs-id1638207">
+<para id="fs-id1638210"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>11</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1568943">
+<problem id="fs-id1506941">
+<para id="fs-id1506943">Evalúe <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo><m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1530332">
+<problem id="fs-id1530334">
+<para id="fs-id1530336">Escriba los cuatro primeros términos de la secuencia definida por la fórmula explícita <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1512306">
+<para id="fs-id1512308"> <m:math>
+<m:mrow>
+<m:mn>13</m:mn><m:mo>,</m:mo><m:mn>103</m:mn><m:mo>,</m:mo><m:mn>1003 </m:mn><m:mo>,</m:mo><m:mn>10003</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1569983">
+<problem id="fs-id1430054">
+<para id="fs-id1430056">Escriba los cuatro primeros términos de la secuencia definida por la fórmula explícita <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>!</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+<section id="fs-id1646949">
+<title><link document="m49445">Secuencias aritméticas</link></title>
+<exercise id="fs-id1646955">
+<problem id="fs-id1431642">
+<para id="fs-id1431644">¿Es la secuencia <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>7</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>47</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>21</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>82</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>21</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>39</m:mn>
+</m:mrow>
+<m:mn>7</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>...</m:mn>
+</m:mrow>
+</m:math> aritmética? Si es así, halle la diferencia común.</para></problem>
+<solution id="fs-id1503624">
+<para id="fs-id1503626">La secuencia es aritmética. La diferencia común es <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>5</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1587145">
+<problem id="fs-id1587147">
+<para id="fs-id1587149">¿Es la secuencia <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>...</m:mn>
+</m:mrow>
+</m:math> aritmética? Si es así, halle la diferencia común.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1422414">
+<problem id="fs-id1464371">
+<para id="fs-id1464373">Una secuencia aritmética tiene el primer término <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>18</m:mn>
+</m:mrow>
+</m:math> y la diferencia común <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>8.</m:mn>
+</m:mrow>
+</m:math> ¿Cuáles son los cinco primeros términos?</para></problem>
+<solution id="fs-id1377396">
+<para id="fs-id1377398"> <m:math>
+<m:mrow>
+<m:mn>18</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>14</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1251943">
+<problem id="fs-id1251945">
+<para id="fs-id1251947">Una secuencia aritmética tiene términos <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>11,7</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>8</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>14,6.</m:mn>
+</m:mrow>
+</m:math> ¿Cuál es el primer término?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1405185">
+<problem id="fs-id1351364">
+<para id="fs-id1351366">Escriba una fórmula recursiva para la secuencia aritmética <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>20</m:mn><m:mtext>,</m:mtext><m:mo>-</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mtext>,</m:mtext><m:mn>10</m:mn><m:mtext>,…</m:mtext>
+ </m:mrow>
+</m:math>
+
+</para></problem>
+<solution id="fs-id1081714">
+<para id="fs-id1081717"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>+</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1420789">
+<problem id="fs-id1407463">
+<para id="fs-id1407465">Escriba una fórmula recursiva para la secuencia aritmética <m:math>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo>…</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y luego calcule el 31.<sup>º</sup> término.</para></problem>
+</exercise>
+<exercise id="fs-id1521667">
+<problem id="fs-id1392092">
+<para id="fs-id1392095">Escriba una fórmula explícita para la secuencia aritmética <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>8</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mfrac>
+<m:mrow>
+<m:mn>29</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>24</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mfrac>
+<m:mrow>
+<m:mn>37</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>24</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mfrac>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo>…</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1407611">
+<para id="fs-id1034278"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>n</m:mi><m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1531680">
+<problem id="fs-id1531682">
+<para id="fs-id1671766">¿Cuántos términos hay en la secuencia aritmética finita <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>28</m:mn><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>,</m:mo><m:mn>172</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section>
+<section id="fs-id1347017">
+<title><link document="m49446">Secuencias geométricas</link></title>
+<exercise id="fs-id1639009">
+<problem id="fs-id1639011">
+<para id="fs-id1639013">Calcule la razón común de la secuencia geométrica <m:math>
+<m:mrow>
+<m:mn>2,5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>20</m:mn><m:mo>,</m:mo><m:mo>…</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1523060">
+<para id="fs-id1523062"> <m:math>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1323468">
+<problem id="fs-id1323470">
+<para id="fs-id1323472">¿La secuencia 4, 16, 28, 40 ... es geométrica? Si es así, calcule la razón común. Si no es así, explique por qué.</para></problem>
+</exercise>
+
+<exercise id="fs-id1692760">
+<problem id="fs-id1692762">
+<para id="fs-id1692764">Una secuencia geométrica tiene términos <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>16</m:mn><m:mtext>,</m:mtext><m:mn>384</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>9</m:mn>
+  </m:msub><m:mo>=</m:mo><m:mn>262</m:mn><m:mtext>,</m:mtext><m:mn>144</m:mn>
+ </m:mrow>
+</m:math>. ¿Cuáles son los cinco primeros términos?</para></problem>
+<solution id="fs-id1489943">
+<para id="fs-id1489945">4, 16, 64, 256, 1024</para></solution>
+</exercise>
+
+<exercise id="fs-id1706539">
+<problem id="fs-id1706542">
+<para id="fs-id1706544">Una secuencia geométrica tiene el primer término <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mtext>=</m:mtext><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> y razón común <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿Cuál es el 8.º<sup/> término?</para></problem>
+</exercise>
+
+<exercise id="fs-id1699888">
+<problem id="fs-id1511966">
+<para id="fs-id1511968">¿Cuáles son los cinco primeros términos de la secuencia geométrica <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:msub>
+<m:mi>a</m:mi>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>?</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1512952">
+<para id="fs-id1512954"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>12</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>48</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>192</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>768</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id952611">
+<problem id="fs-id952613">
+<para id="fs-id952615">Escriba una fórmula recursiva para la secuencia geométrica <m:math>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo>…</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1529738">
+<problem id="fs-id1529740">
+<para id="fs-id1529742">Escriba una fórmula explícita para la secuencia geométrica <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>45</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>135</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo>…</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1371386">
+<para id="fs-id1371388"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>a</m:mi>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1316326">
+<problem id="fs-id1316328">
+<para id="fs-id1316330">Cuántos términos hay en la secuencia geométrica finita <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo> </m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>…</m:mo><m:mo>,</m:mo><m:mo> </m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>59</m:mn><m:mtext>,</m:mtext><m:mn>049</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+
+</para></problem>
+</exercise>
+</section>
+<section id="fs-id1432883">
+<title><link document="m49447">Las series y su notación</link></title>
+<exercise id="fs-id1371396">
+<problem id="fs-id1371399">
+<para id="fs-id880355">Utilice la notación sumatoria para escribir la suma de términos <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>m</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math> a partir de <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>= 0,</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> con <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1294194">
+<para id="fs-id1664084"> <m:math>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:munderover>
+<m:mo>∑</m:mo>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>= 0,</m:mo><m:mn>0</m:mn>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:munderover>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>m</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1410582">
+<problem id="fs-id1232173">
+<para id="fs-id1232175">Utilice la notación de sumatoria para escribir la suma que resulta de sumar el número <m:math>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:math> veinte veces.</para></problem>
+</exercise>
+
+<exercise id="fs-id1457959">
+<problem id="fs-id1706517">
+<para id="fs-id1706519">Utilice la fórmula de la suma de los primeros <m:math>
+<m:mi>n</m:mi>
+</m:math> términos de una serie aritmética para hallar la suma de los once primeros términos de la serie aritmética 2,5, 4, 5,5, ... .</para>
+</problem>
+<solution id="fs-id1653352">
+<para id="fs-id1653354"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:mn>110</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1405007">
+<problem id="fs-id1535447">
+<para id="fs-id1535449">Una escalera tiene <m:math>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+</m:math> peldaños cónicos, cuyas longitudes aumentan por una diferencia común. El primer peldaño mide 5 pulgadas y el último 20 pulgadas de largo. ¿Cuál es la suma de las longitudes de los peldaños?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1457811">
+<problem id="fs-id1433467">
+<para id="fs-id1433469">Use la fórmula de la suma de los primeros <emphasis effect="italics">n</emphasis> términos de una serie geométrica para calcular <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>S</m:mi>
+<m:mn>9</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:math> para la serie <m:math>
+<m:mrow>
+<m:mn>12</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mo>…</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1588276">
+<para id="fs-id1588279"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>S</m:mi>
+   <m:mn>9</m:mn>
+  </m:msub>
+  <m:mo>≈</m:mo><m:mn>23,95</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1650939">
+<problem id="fs-id1650941">
+<para id="fs-id1351546">Las cuotas de los tres primeros años de afiliación a un club de caza se indican en la <link target-id="Table_11_07_05"/>. Si las cuotas siguen aumentando al mismo ritmo, ¿cuál será el costo total de los diez primeros años de afiliación?</para><table id="Table_11_07_05" summary="Gráfico del año frente a las cuotas de afiliación">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+<entry align="center">Año</entry>
+<entry align="center">Cuotas de afiliación</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1</entry>
+<entry align="center">$ 1500</entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="center">$ 1950</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="center">$ 2535</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-id1690786">
+<problem id="fs-id1690788">
+<para id="fs-id1690790">Calcule la suma de la serie geométrica infinita <m:math>
+ <m:mrow>
+  <m:munderover>
+   <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+   <m:mrow>
+    <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mi>∞</m:mi>
+  </m:munderover>
+  <m:mn>45</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>k</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para></problem>
+<solution id="fs-id1691189">
+<para id="fs-id1691191"> <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>135</m:mn>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1582894">
+<problem id="fs-id1582896">
+<para id="fs-id1395883">Una pelota tiene una razón de rebote de <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> la altura del rebote anterior. Escriba una serie que represente la distancia total recorrida por la pelota, suponiendo que se dejó caer inicialmente desde una altura de 5 pies. ¿Cuál es la distancia total? (<emphasis effect="italics">Pista</emphasis>: la distancia total que recorre la pelota en cada rebote es la suma de las alturas de la subida y la bajada).</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1517399">
+<problem id="fs-id1517401">
+<para id="fs-id1517403">Alejandro deposita 80 dólares de sus ingresos mensuales en una anualidad que gana un interés anual del 6,25 %, calculado mensualmente. ¿Cuánto dinero habrá ahorrado después de 5 años?</para>
+</problem>
+<solution id="fs-id1690332">
+<para id="fs-id1690334">5.617,61 dólares.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1676777">
+<problem id="fs-id1676779">
+<para id="fs-id1676781">Los gemelos Hoa y Binh abrieron cuentas de jubilación cuando cumplieron 21<sup/> años. Hoa deposita 4.800,00 dólares cada año, ganando un 5,5 % de interés anual, calculado mensualmente. Binh deposita 3.600,00 dólares cada año, ganando un 8,5 % de interés anual, calculado mensualmente. Qué gemelo ganará más intereses al momento en que tengan <m:math>
+<m:mrow>
+<m:mn>55</m:mn>
+</m:mrow>
+</m:math> años? ¿Cuánto más?</para></problem>
+</exercise>
+</section>
+<section id="fs-id1537227">
+<title><link document="m49448">Principios de conteo</link></title>
+<exercise id="fs-id1537232">
+<problem id="fs-id1503949">
+<para id="fs-id1503951">¿Cuántas maneras hay de elegir un número del conjunto <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mo>- −</m:mo><m:mn>10</m:mn><m:mtext>,</m:mtext><m:mo>- −</m:mo><m:mn>6</m:mn><m:mtext>, </m:mtext><m:mn>4</m:mn><m:mtext>, </m:mtext><m:mn>10</m:mn><m:mtext>, </m:mtext><m:mn>12</m:mn><m:mtext>, </m:mtext><m:mn>18</m:mn><m:mtext>, </m:mtext><m:mn>24</m:mn><m:mtext>, </m:mtext><m:mn>32</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> que es divisible entre <m:math>
+<m:mn>4</m:mn>
+</m:math> o <m:math>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>?</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1701898">
+<para id="fs-id1701900">6</para></solution>
+</exercise>
+
+<exercise id="fs-id1631879">
+<problem id="fs-id1631881">
+<para id="fs-id1520925">En un grupo de <m:math>
+<m:mrow>
+<m:mn>20</m:mn>
+</m:mrow>
+</m:math> músicos, <m:math>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+</m:math> tocan el piano, <m:math>
+<m:mn>7</m:mn>
+</m:math> tocan la trompeta y <m:math>
+<m:mn>2</m:mn>
+</m:math> tocan tanto el piano como la trompeta. ¿Cuántos músicos tocan el piano o la trompeta?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1404706"><problem id="fs-id1404708">
+<para id="fs-id1404710">¿De cuántas maneras se puede construir un código de 4 dígitos si los números se pueden repetir?</para>
+</problem>
+<solution id="fs-id1292414">
+<para id="fs-id1292416"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>10</m:mn><m:mtext>.</m:mtext><m:mn>000</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1505053">
+<problem id="fs-id1609169">
+<para id="fs-id1609171">Una paleta de pinturas de acuarela tiene 3 tonos de verde, 3 tonos de azul, 2 tonos de rojo, 2 tonos de amarillo y 1 tono de negro. ¿De cuántas maneras se puede elegir un tono de cada color?</para></problem>
+</exercise>
+
+<exercise id="fs-id1651528">
+<problem id="fs-id1651530">
+<para id="fs-id1651532">Calcule <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>18</m:mn><m:mo>,</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1408306">
+<para id="fs-id1408308"> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>18</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>73</m:mn><m:mtext>,</m:mtext><m:mn>440</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1665057">
+<problem id="fs-id1665059">
+<para id="fs-id1665061">En un grupo de <m:math>
+<m:mn>5</m:mn>
+</m:math> del primer año, <m:math>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:math> del segundo año, <m:math>
+<m:mn>3</m:mn>
+</m:math> del tercer año, y <m:math>
+<m:mn>2</m:mn>
+</m:math> estudiantes del cuarto año, ¿de cuántas maneras se puede elegir al presidente, al vicepresidente y al tesorero?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1461206">
+<problem id="fs-id1461208">
+<para id="fs-id1406026">Calcule <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>15</m:mn><m:mo>,</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1417310">
+<para id="fs-id1417313"> <m:math>
+<m:mrow>
+<m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>15</m:mn><m:mo>,</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5005 </m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1649762">
+<problem id="fs-id1649764">
+<para id="fs-id1407096">Una cafetería tiene 7 tostados guatemaltecos, 4 cubanos y 10 costarricenses. ¿De cuántas maneras puede la tienda elegir 2 tostados guatemaltecos, 2 cubanos y 3 costarricenses para una degustación de café?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1407103">
+<problem id="fs-id1690896">
+<para id="fs-id1690898">¿Cuántos subconjuntos tiene el conjunto <m:math>
+<m:mrow>
+<m:mrow><m:mo>{</m:mo> <m:mrow>
+<m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mo>…</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>99</m:mn>
+</m:mrow> <m:mo>}</m:mo></m:mrow>
+</m:mrow>
+</m:math>?</para>
+</problem>
+<solution id="fs-id1692604">
+<para id="fs-id1692606"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mn>50</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1,13</m:mn><m:mo>×</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1395997">
+<problem id="fs-id1395999">
+<para id="fs-id1424696">Un spa cobra una tarifa básica por día que incluye el uso del sauna, de la piscina y de las duchas. Por un costo suplementario, los visitantes pueden elegir entre los siguientes servicios adicionales: masaje, exfoliación corporal, manicura, pedicura, tratamiento facial y afeitado con cuchilla. ¿De cuántas maneras se puede pedir servicios adicionales en el spa?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1655409">
+<problem id="fs-id1655411">
+<para id="fs-id1655413">¿De cuántas maneras distintas se puede ordenar la palabra DEADWOOD?</para>
+</problem>
+<solution id="fs-id1663520">
+<para id="fs-id1663522"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>!</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>3360 </m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1655970">
+<problem id="fs-id1655972">
+<para id="fs-id1655974">¿Cuántas reorganizaciones distintas de las letras de la palabra DEADWOOD hay si la palabra debe comenzar y terminar con la letra D?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1521395"><title><link document="m49449">Teorema del binomio</link></title><exercise id="fs-id1458647">
+<problem id="fs-id1458649">
+<para id="fs-id1458651">Evalúe el coeficiente binomial <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:mn>23</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>8</m:mn>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+
+</para></problem>
+<solution id="fs-id1537189">
+<para id="fs-id1537191"> <m:math>
+ <m:mrow>
+  <m:mn>490</m:mn><m:mtext>,</m:mtext><m:mn>314</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1405595">
+<problem id="fs-id1529226">
+<para id="fs-id1529228">Utilice el teorema del binomio para expandir <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1425214">
+<problem id="fs-id1425216">
+<para id="fs-id1425218">Utilice el teorema del binomio para escribir los tres primeros términos de <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>17</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1431099">
+<para id="fs-id1431101"> <m:math>
+ <m:mrow>
+  <m:mn>131</m:mn><m:mtext>,</m:mtext><m:mn>072</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mtext>+</m:mtext><m:mn>1</m:mn><m:mtext>,</m:mtext><m:mn>114</m:mn><m:mtext>,</m:mtext><m:mn>112</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mi>b</m:mi><m:mtext>+</m:mtext><m:mn>4</m:mn><m:mtext>,</m:mtext><m:mn>456</m:mn><m:mtext>,</m:mtext><m:mn>448</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1435457">
+<problem id="fs-id1435460">
+<para id="fs-id1435462">Halle el cuarto término de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>2</m:mn><m:mi>b</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> sin expandir completamente el binomio.</para>
+</problem>
+</exercise>
+</section><section id="fs-id1375856"><title><link document="m49450">Probabilidad</link></title><para id="fs-id1375861">En los siguientes ejercicios, suponga que se lanzan dos dados.</para>
+
+<exercise id="fs-id1690879" class="material-set-2"><problem id="fs-id1690881">
+<para id="fs-id1690883">Construya una tabla que muestre el espacio muestral.</para>
+</problem>
+<solution id="fs-id1676886">
+<table id="eip-id1165131987051" class="unnumbered" summary="Tabla del espacio muestral"><label/>
+<tgroup cols="7"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+
+<tbody>
+<row>
+<entry align="center"> </entry>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3</entry>
+<entry align="center">4</entry>
+<entry align="center">5</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="center">1, 1</entry>
+<entry align="center">1,2</entry>
+<entry align="center">1;3</entry>
+<entry align="center">1;4</entry>
+<entry align="center">1;5</entry>
+<entry align="center">1;6</entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="center">2;1</entry>
+<entry align="center">2;2</entry>
+<entry align="center">2;3</entry>
+<entry align="center">2;4</entry>
+<entry align="center">2;5</entry>
+<entry align="center">2;6</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="center">3;1</entry>
+<entry align="center">3;2</entry>
+<entry align="center">3;3</entry>
+<entry align="center">3;4</entry>
+<entry align="center">3;5</entry>
+<entry align="center">3;6</entry>
+</row>
+<row>
+<entry align="center">4</entry>
+<entry align="center">4;1</entry>
+<entry align="center">4;2</entry>
+<entry align="center">4;3</entry>
+<entry align="center">4;4</entry>
+<entry align="center">4;5</entry>
+<entry align="center">4;6</entry>
+</row>
+<row>
+<entry align="center">5</entry>
+<entry align="center">5;1</entry>
+<entry align="center">5;2</entry>
+<entry align="center">5;3</entry>
+<entry align="center">5;4</entry>
+<entry align="center">5;5</entry>
+<entry align="center">5;6</entry>
+</row>
+<row>
+<entry align="center">6</entry>
+<entry align="center">6;1</entry>
+<entry align="center">6;2</entry>
+<entry align="center">6;3</entry>
+<entry align="center">6;4</entry>
+<entry align="center">6;5</entry>
+<entry align="center">6;6</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise><exercise id="fs-id1421167" class="material-set-2">
+<problem id="fs-id1421169">
+<para id="fs-id1421171">¿Cuál es la probabilidad de que un lanzamiento incluya un <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1436066">
+<problem id="fs-id1506812">
+<para id="fs-id1506814">¿Cuál es la probabilidad de lanzar un par?</para>
+</problem>
+<solution id="fs-id1506818">
+<para id="fs-id1365304"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1403407" class="material-set-2">
+<problem id="fs-id1403409">
+<para id="fs-id1403411">¿Cuál es la probabilidad de que un lanzamiento incluya un 2 o resulte en un par?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1461069">
+<problem id="fs-id1461071">
+<para id="fs-id1375743">¿Cuál es la probabilidad de que un lanzamiento no incluya un 2 o resulte en un par?</para>
+</problem>
+<solution id="fs-id1375749">
+<para id="fs-id1375751"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1435259" class="material-set-2">
+<problem id="fs-id1435261">
+<para id="fs-id1435263">¿Cuál es la probabilidad de lanzar un 5 o un 6?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1406892">
+<problem id="fs-id1406894">
+<para id="fs-id1406896">¿Cuál es la probabilidad de que un lanzamiento no incluya ni un 5 ni un 6?</para>
+</problem>
+<solution id="fs-id1394019">
+<para id="fs-id1394021"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1434740">En los siguientes ejercicios, utilice estos datos: Una encuesta realizada en una escuela primaria reveló que 350 de los 500 estudiantes preferían las gaseosas a la leche. Supongamos que 8 niños de la escuela asisten a una fiesta de cumpleaños (Muestre los cálculos y redondee a la décima de porcentaje más cercana).</para>
+
+<exercise id="fs-id1434745">
+<problem id="fs-id1434747">
+<para id="fs-id1440451">¿Cuál es el porcentaje de probabilidad de que todos los niños que asisten a la fiesta prefieran gaseosas?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1440457">
+<problem id="fs-id1434588">
+<para id="fs-id1434590">¿Cuál es el porcentaje de probabilidad de que, al menos, uno de los niños que asisten a la fiesta prefiera leche?</para>
+</problem>
+<solution id="fs-id1434595">
+<para id="fs-id1436282"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>-</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>350</m:mn><m:mo>,</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>500</m:mn><m:mo>,</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>94,4</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1420719">
+<problem id="fs-id1420721">
+<para id="fs-id1358454">¿Cuál es el porcentaje de probabilidad de que exactamente 3 de los niños que asisten a la fiesta prefieran gaseosas?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1358460">
+<problem id="fs-id1358462">
+<para id="fs-id1433520">¿Cuál es el porcentaje de probabilidad de que exactamente 3 de los niños que asisten a la fiesta prefieran leche?</para>
+</problem>
+<solution id="fs-id1433524">
+<para id="fs-id1433526"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>150</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>350</m:mn><m:mo>,</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>500</m:mn><m:mo>,</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>25,6</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</section></section>
+<section id="fs-id1434556" class="practice-test"><title>Prueba de práctica</title><exercise id="fs-id1434559">
+<problem id="fs-id1695339">
+<para id="fs-id1695341">Escriba los cuatro primeros términos de la secuencia definida por la fórmula recursiva <m:math>
+ <m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>+</m:mo><m:msub>
+     <m:mi>a</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msub>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1409478">
+<para id="fs-id1409480"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>14</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1615747">
+<problem id="fs-id1615749">
+<para id="fs-id1615751">Escriba los cuatro primeros términos de la secuencia definida por la fórmula explícita <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>n</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>–</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1663060">
+<problem id="fs-id1663062">
+<para id="fs-id1583863">¿Es la secuencia <m:math>
+ <m:mrow>
+  <m:mn>0,3</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>1,2</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>2,1</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>…</m:mo>
+ </m:mrow>
+</m:math> aritmética? Si es así, halle la diferencia común.</para>
+</problem>
+<solution id="fs-id1371133">
+<para id="fs-id1371135">La secuencia es aritmética. La diferencia común es <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo>=</m:mo><m:mn>0,9.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1586212">
+<problem id="fs-id1586214">
+<para id="fs-id1586216">Una secuencia aritmética tiene el primer término <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> y la diferencia común <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿Cuál es el 6.º<sup/> término?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1704961">
+<problem id="fs-id1704963">
+<para id="fs-id1704965">Escriba una fórmula recursiva para la secuencia aritmética <m:math>
+ <m:mrow>
+<m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+   <m:mn>7</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>…</m:mo>
+ </m:mrow>
+</m:math> y luego halle el 22.º<sup/> término.</para></problem>
+<solution id="fs-id1376642">
+<para id="fs-id1638252"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mspace width="0.4em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>22</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>67</m:mn>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1375970">
+<problem id="fs-id1375972">
+<para id="fs-id1423879">Escriba una fórmula explícita para la secuencia aritmética <m:math>
+ <m:mrow>
+<m:mn>15,6</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>15</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>14,4</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mn>13,8</m:mn><m:mo>,</m:mo><m:mo>…</m:mo>
+ </m:mrow>
+</m:math> y luego halle el 32.º<sup/> término.</para></problem>
+</exercise>
+
+<exercise id="fs-id1433508">
+<problem id="fs-id1433511">
+<para id="fs-id1433513">¿Es la secuencia <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mtext>,</m:mtext><m:mo>-</m:mo><m:mn>1</m:mn><m:mtext>,</m:mtext><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mtext>,</m:mtext><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mtext>,</m:mtext><m:mo>…</m:mo>
+ </m:mrow>
+</m:math> geométrica? Si es así, halle la razón común. Si no es así, explique por qué.</para></problem>
+<solution id="fs-id1569871">
+<para id="fs-id1430767">La secuencia es geométrica. La razón común es <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1417246">
+<problem id="fs-id1417248">
+<para id="fs-id1417250">¿Cuál es el 11.º<sup/> término de la secuencia geométrica <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>1,5</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1431616">
+<problem id="fs-id1431618">
+<para id="fs-id1431620">Escriba una fórmula recursiva para la secuencia geométrica <m:math>
+ <m:mrow>
+<m:mo> </m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>…</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1354576">
+<para id="fs-id1354578"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>⋅</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mrow/>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1703576">
+<problem id="fs-id1402897">
+<para id="fs-id1402899">Escriba una fórmula explícita para la secuencia geométrica <m:math>
+ <m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.4em"/><m:mtext/><m:mo>-</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mrow>
+    <m:mn>27</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>…</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1435512">
+<problem id="fs-id1435514">
+<para id="fs-id1695687">Utilice la notación sumatoria para escribir la suma de términos <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msup>
+   <m:mi>k</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math> a partir de <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>15.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1456321">
+<para id="fs-id1456323"> <m:math>
+ <m:mrow>
+  <m:mstyle displaystyle="true">
+   <m:munderover>
+    <m:mo>∑</m:mo>
+    <m:mrow>
+     <m:mi>k</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>15</m:mn>
+    </m:mrow>
+   </m:munderover>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:msup>
+       <m:mi>k</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mi>k</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mstyle>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1283524">
+<problem id="fs-id1283526">
+<para id="fs-id1283529">Un estadio de béisbol comunitario tiene 10 asientos en la primera fila, 13 en la segunda, 16 en la tercera, y así sucesivamente. Hay 56 filas en total. ¿Cuál es el aforo del estadio?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1583845">
+<problem id="fs-id1583848">
+<para id="fs-id1531010">Utilice la fórmula de la suma de los primeros <m:math>
+ <m:mi>n</m:mi>
+</m:math> términos de una serie geométrica para calcular <m:math>
+ <m:mrow>
+  <m:mstyle displaystyle="true">
+   <m:munderover>
+    <m:mo>∑</m:mo>
+    <m:mrow>
+     <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+    </m:mrow>
+    <m:mn>7</m:mn>
+   </m:munderover>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>0,2</m:mn><m:mo>⋅</m:mo><m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mo>.</m:mo>
+   </m:mrow>
+  </m:mstyle>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1406963">
+<para id="fs-id1406965"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>S</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>2.604,2</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1407262">
+<problem id="fs-id1435214">
+<para id="fs-id1435216">Calcule la suma de la serie geométrica infinita <m:math>
+ <m:mrow>
+  <m:mstyle displaystyle="true">
+   <m:munderover>
+    <m:mo>∑</m:mo>
+    <m:mrow>
+     <m:mi>k</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+    </m:mrow>
+    <m:mi>∞</m:mi>
+   </m:munderover>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mo>⋅</m:mo><m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>5</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>k</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:mstyle><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1706080">
+<problem id="fs-id1706082">
+<para id="fs-id1706085">Ramla deposita cada año 3.600 dólares en un fondo de jubilación. El fondo gana un 7,5 % de interés anual, compuesto mensualmente. Si abrió su cuenta a los 20 años, ¿cuánto tendrá a los 55? ¿Qué parte de esa cantidad era ganancia de intereses?</para>
+</problem>
+<solution id="fs-id1435629">
+<para id="fs-id1424663">Total en la cuenta: <m:math>
+ <m:mrow>
+  <m:mtext>$</m:mtext><m:mn>140</m:mn><m:mo>,</m:mo><m:mn>355,75</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> Intereses ganados: <m:math>
+ <m:mrow>
+  <m:mtext>$</m:mtext><m:mn>14</m:mn><m:mo>,</m:mo><m:mn>355,75</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1435592">
+<problem id="fs-id1435594">
+<para id="fs-id1424851">En una competencia de 50 bailarines de salón profesionales, 22 participan en la competencia de fox-trot, 18 en la de tango y 6 en ambas. ¿Cuántos bailarines participan en las competencias de fox-trot o tango?</para></problem>
+</exercise>
+
+<exercise id="fs-id1609402">
+<problem id="fs-id1609404">
+<para id="fs-id1609406">El comprador de un sedán nuevo puede encargar el auto a su gusto y tiene para elegir entre 5 colores exteriores diferentes, 3 colores interiores distintos, 2 sistemas de sonido, 3 diseños de motor y una transmisión manual o automática. ¿Cuántas opciones tiene el comprador?</para>
+</problem>
+<solution id="fs-id1422719">
+<para id="fs-id1422721"> <m:math>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>×</m:mo><m:mn>3</m:mn><m:mo>×</m:mo><m:mn>2</m:mn><m:mo>×</m:mo><m:mn>3</m:mn><m:mo>×</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>180</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1704451">
+<problem id="fs-id1704454">
+<para id="fs-id1696290">Para asignar las primas anuales, un gerente debe elegir a sus cuatro mejores empleados y clasificarlos del primero al cuarto. ¿De cuántas maneras puede crear la lista de los "cuatro mejores" entre los 32 empleados?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1425729">
+<problem id="fs-id1425731">
+<para id="fs-id1425733">Un grupo musical tiene que elegir 3 canciones para tocar en la Guerra de Bandas anual. ¿De cuántas maneras pueden elegir su set si tienen 15 canciones para escoger?</para>
+</problem>
+<solution id="fs-id1703098">
+<para id="fs-id1703100"> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>15</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>455</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1423702">
+<problem id="fs-id1423704">
+<para id="fs-id1446526">Una tienda de yogur helado de autoservicio tiene 8 ingredientes de dulces y 4 de fruta para elegir. ¿De cuántas maneras se pueden agregar ingredientes a un yogur helado?</para></problem>
+</exercise>
+
+<exercise id="fs-id1446532">
+<problem id="fs-id1654180">
+<para id="fs-id1654182">¿De cuántas formas distintas se puede ordenar la palabra EVANESCENCE si el anagrama debe terminar con la letra E?</para></problem>
+<solution id="fs-id1654187">
+<para id="fs-id1405525"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>!</m:mo><m:mn>3</m:mn><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>151</m:mn><m:mtext>,</m:mtext><m:mn>200</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1404836">
+<problem id="fs-id1432319">
+<para id="fs-id1432322">Utilice el teorema del binomio para expandir <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>–</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>y</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1407776">
+<problem id="fs-id1407779">
+<para id="fs-id1435731">Halle el séptimo término de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>–</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> sin expandir completamente el binomio.</para>
+</problem>
+<solution id="fs-id1436689">
+<para id="fs-id1436691"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>429</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mrow>
+      <m:mn>14</m:mn>
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1657722">En los siguientes ejercicios, utilice la ruleta de la <link target-id="CNX_Precalc_Figure_11_07_202"/>.</para>
+
+<figure id="CNX_Precalc_Figure_11_07_202" class="small">
+<media id="fs-id1403150" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_07_202.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1436653">
+<problem id="fs-id1436656">
+<para id="fs-id1408141">Construya un modelo de probabilidades que muestre cada resultado posible y su probabilidad asociada (Utilice la primera letra para los colores).</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1408148">
+<problem id="fs-id1354599">
+<para id="fs-id1354602">¿Cuál es la probabilidad de caer en un número impar?</para>
+</problem>
+<solution id="fs-id1354606">
+<para id="fs-id1433372"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>7</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1407410">
+<problem id="fs-id1407412">
+<para id="fs-id1435034">¿Cuál es la probabilidad de caer en el azul?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1435039">
+<problem id="fs-id1435041">
+<para id="fs-id1435953">¿Cuál es la probabilidad de caer en el azul o en un número impar?</para>
+</problem>
+<solution id="fs-id1435958">
+<para id="fs-id1435960"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>7</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1422912">
+<problem id="fs-id1422914">
+<para id="fs-id1422916">¿Cuál es la probabilidad de caer en algo que no sea el azul ni un número impar?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1430692">
+<problem id="fs-id1430694">
+<para id="fs-id1430696">Un bol de dulces contiene 16 caramelos de menta, 14 de mantequilla y 10 de fresa. Supongamos que una persona toma un puñado de 7 caramelos. ¿Cuál es el porcentaje de probabilidad de que exactamente 3 sean de mantequilla? (Muestre los cálculos y redondee a la décima de porcentaje más cercana).</para>
+</problem>
+<solution id="fs-id1408842">
+<para id="fs-id1408844"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>14</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>26</m:mn><m:mo>,</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>40</m:mn><m:mo>,</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>29,2</m:mn><m:mi>%</m:mi>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</section></content>
+<glossary>
+<definition id="fs-id1406707">
+<term>complemento de un evento</term>
+<meaning id="fs-id1535600">el conjunto de resultados en el espacio muestral que no están en el evento <m:math>
+ <m:mrow>
+  <m:mi>E</m:mi>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+
+<definition id="fs-id1535604">
+<term>evento</term>
+<meaning id="fs-id1431859">cualquier subconjunto de un espacio muestral</meaning>
+</definition>
+
+<definition id="fs-id1431863">
+<term>experimento</term>
+<meaning id="fs-id1435110">una actividad con un resultado observable</meaning>
+</definition>
+
+<definition id="fs-id1434481">
+<term>eventos mutuamente excluyentes</term>
+<meaning id="fs-id1434486">eventos que no tienen resultados en común</meaning>
+</definition>
+
+<definition id="fs-id1409838">
+<term>resultados</term>
+<meaning id="fs-id1409844">los posibles resultados de un experimento</meaning>
+</definition>
+
+<definition id="fs-id1436213">
+<term>probabilidad</term>
+<meaning id="fs-id1436218">un número del 0 al 1 que indica la posibilidad de un evento</meaning>
+</definition>
+
+<definition id="fs-id1436357">
+<term>modelo de probabilidades</term>
+<meaning id="fs-id1377429">una descripción matemática de un experimento que enumera todos los resultados posibles y sus probabilidades asociadas</meaning>
+</definition>
+
+<definition id="fs-id1377434">
+<term>espacio muestral</term>
+<meaning id="fs-id1657365">el conjunto de todos los resultados posibles de un experimento</meaning>
+</definition>
+
+<definition id="fs-id1657370">
+<term>unión de dos eventos</term>
+<meaning id="fs-id1569949">el evento que se produce si se produce uno o ambos eventos</meaning>
+</definition>
+</glossary>
+</document>

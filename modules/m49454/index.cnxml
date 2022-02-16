@@ -1,0 +1,4434 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Continuidad</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49454</md:content-id>
+  <md:title>Continuidad</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Determinar si una función es continua en un número.</item>
+<item>Determinar los números para los cuales una función es discontinua.</item>
+<item>Determinar si una función es continua.</item>
+</list></md:abstract>
+  <md:uuid>413185ae-e8d0-4ee7-9149-bbc3858d3f36</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165137730487">Arizona es conocida por su calor seco. En un día determinado, la temperatura puede subir hasta <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>118</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext>
+ </m:mrow>
+</m:math> y bajar solo rápidamente a <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>95</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> La <link target-id="CNX_Precalc_Figure_12_03_001"/> muestra la función <m:math>
+ <m:mi>T</m:mi>
+<m:mo>,</m:mo></m:math> donde la salida de <m:math>
+ <m:mrow>
+  <m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es la temperatura en grados Fahrenheit y la entrada <m:math>
+ <m:mi>x</m:mi>
+</m:math> es la hora del día, utilizando un reloj de 24 horas en un día determinado de verano.</para><figure id="CNX_Precalc_Figure_12_03_001" class="small">
+<media id="fs-id1165135415638" alt="Gráfico de la función que asigna el tiempo desde la medianoche a la temperatura. El eje x, identificado como x, representa las horas transcurridas desde la medianoche de 0 a 24. El eje y, identificado como T(x), representa la temperatura de 0 a 120. La función es continua y tiene un pico en (16, 118).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_001.jpg"/>
+</media>
+<caption>La temperatura como una función de tiempo forma una función continua.</caption>
+</figure>
+
+<para id="fs-id1165135190566">Al analizar este gráfico, observamos una característica específica. No hay interrupciones en el gráfico. Podríamos trazar el gráfico sin levantar el lápiz. Esta única observación nos dice mucho sobre la función. En esta sección investigaremos funciones con y sin interrupciones.</para>
+
+<section id="fs-id1165137640739"><title>Determinar si una función es continua en un número</title><para id="fs-id1165135333699">Consideremos un ejemplo específico de temperatura en términos de fecha y ubicación, como el 27 de junio de 2013, en Phoenix, AZ. El gráfico en la <link target-id="CNX_Precalc_Figure_12_03_001"/> indica que a las 2 <emphasis effect="smallcaps">a. m.</emphasis> la temperatura era <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>96</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext>
+ </m:mrow>
+</m:math>. A las 2 <emphasis effect="smallcaps">p. m.</emphasis>, la temperatura había subido a <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>116</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F,</m:mtext>
+ </m:mrow>
+</m:math> y para las 4 <emphasis effect="smallcaps">p. m.</emphasis> era de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>118</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> En algún momento entre las 2 <emphasis effect="smallcaps">a. m.</emphasis> y las 4 <emphasis effect="smallcaps">p. m.</emphasis>, la temperatura exterior debió ser exactamente <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>110,5</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> De hecho, cualquier temperatura entre <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>96</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>118</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext>
+ </m:mrow>
+</m:math> se produjo en algún momento de ese día. Esto significa que todos los números reales en la salida entre <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>96</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>118</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mtext>F</m:mtext>
+ </m:mrow>
+</m:math> se generan en algún momento por la función según el teorema del valor intermedio,</para>
+<para id="fs-id1165137810063">Mire de nuevo la <link target-id="CNX_Precalc_Figure_12_03_001"/>. No hay interrupciones en el gráfico de la función para este periodo de 24 horas. En ningún momento la temperatura dejó de existir, ni hubo un punto en el que la temperatura saltara instantáneamente varios grados. Una función que no tiene agujeros ni interrupciones en su gráfico se conoce como <term id="term-00001">función continua</term>. La temperatura en función del tiempo es un ejemplo de función continua.</para>
+
+<para id="fs-id1165135503769">Si la temperatura representa una función continua, ¿qué tipo de función no sería continua? Consideremos un ejemplo de dólares expresados como función de horas de estacionamiento. Vamos a crear la función <m:math>
+ <m:mi>D</m:mi>
+<m:mo>,</m:mo></m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es el resultado que representa el costo en dólares del estacionamiento por <m:math>
+ <m:mi>x</m:mi>
+</m:math> número de horas. Vea el <link target-id="CNX_Precalc_Figure_12_03_002"/>.</para><para id="fs-id1165135186562">Supongamos que un estacionamiento tiene una tarifa de 4,00 dólares por hora o fracción de hora, con una tarifa máxima de 25 dólares por día. Si se estaciona durante dos horas y cinco minutos, la tarifa es de 12 dólares. Si se aparca una hora más, la tarifa es de 16 dólares. Nunca nos pueden cobrar 13, 14 o 15 dólares. Hay números reales entre el 12 y el 16 que la función nunca produce. En este periodo de 24 horas, el gráfico de la función presenta interrupciones, puntos en los cuales el precio del estacionamiento salta instantáneamente en varios dólares.</para>
+
+<figure id="CNX_Precalc_Figure_12_03_002">
+<media id="fs-id1165137817533" alt="Gráfico de la función que asigna el tiempo desde la medianoche a la temperatura. El eje x representa las horas de estacionamiento de 0 a 24. El eje y representa los montos en dólares que van de 0 a 28. La función es una función escalonada.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_002.jpg"/>
+</media>
+<caption>Las tarifas de estacionamiento forman una función discontinua.</caption>
+</figure>
+
+<para id="fs-id1165135152179">Una función que permanece nivelada durante un intervalo y luego salta instantáneamente a un valor superior se llama <term class="no-emphasis" id="term-00002">función escalonada</term>. Esta función es un ejemplo.</para><para id="fs-id1165135450352">Una función que tiene algún agujero o interrupción en su gráfico se conoce como <term id="term-00003">función discontinua</term>. La función escalonada, como las tarifas de estacionamiento en función de las horas utilizadas, es un ejemplo de función discontinua.</para>
+
+<para id="fs-id1165135693958">Entonces, ¿cómo podemos decidir si una función es continua en un número determinado? Podemos comprobar tres condiciones diferentes. Utilicemos la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> representada en la <link target-id="CNX_Precalc_Figure_12_03_003"/> como ejemplo.</para>
+<figure id="CNX_Precalc_Figure_12_03_003" class="small">
+<media id="fs-id1165137898924" alt="Gráfico de una función creciente con discontinuidad en (a, f(a)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_003.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165135253775"><emphasis>Condición 1</emphasis> Según la condición 1, la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> definida en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> debe existir. En otras palabras, hay una coordenada <emphasis effect="italics">y</emphasis> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> como en la <link target-id="CNX_Precalc_Figure_12_03_004"/>.</para><figure id="CNX_Precalc_Figure_12_03_004" class="small">
+<media id="fs-id1165137643954" alt="Gráfico de una función creciente con discontinuidad en (a, 2). El punto (a, f(a)) está directamente debajo del agujero.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_004.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165135319513"><emphasis>Condición 2</emphasis> Según la condición 2, en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> el límite, escrito <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> debe existir. Esto significa que en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> el límite izquierdo debe ser igual al límite derecho. Observe como el gráfico de <m:math>
+ <m:mi>f</m:mi>
+</m:math> en la <link target-id="CNX_Precalc_Figure_12_03_003"/> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> desde la izquierda y la derecha, se acerca a la misma coordenada <emphasis effect="italics">y</emphasis>. Por lo tanto, se cumple la condición 2. Sin embargo, todavía podría existir un agujero en el gráfico en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>.</para><para id="fs-id1165137533186"><emphasis>Condición 3</emphasis> Según la condición 3, la coordenada <m:math>
+ <m:mi>y</m:mi>
+</m:math> coordenadas en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> rellena el agujero en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Esto se escribe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165135369469">El cumplimiento de las tres condiciones significa que la función es continua. Las tres condiciones se cumplen para la función representada en la <link target-id="CNX_Precalc_Figure_12_03_005"/>, por lo que la función es continua, ya que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<figure id="CNX_Precalc_Figure_12_03_005" class="small">
+<media id="fs-id1165137837146" alt="Gráfico de una función creciente con discontinuidad rellena en (a, f(a)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_005.jpg"/>
+</media>
+<caption>Se cumplen las tres condiciones. La función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>.</caption>
+</figure>
+
+<para id="fs-id1165135259661">De la <link target-id="CNX_Precalc_Figure_12_03_006"/> a la <link target-id="CNX_Precalc_Figure_12_03_009"/> se ofrecen varios ejemplos de gráficos de funciones que no son continuas en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y la condición o condiciones que fallan.</para>
+
+<figure id="CNX_Precalc_Figure_12_03_006" class="small">
+<media id="fs-id1165135301707" alt="Gráfico de una función creciente con discontinuidad en (a, f(a)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_006.jpg"/>
+</media>
+<caption>Se cumple la condición 2. Las condiciones 1 y 3 fallan.</caption>
+</figure>
+
+<figure id="CNX_Precalc_Figure_12_03_007" class="small">
+<media id="fs-id1165135208923" alt="Gráfico de una función creciente con discontinuidad en (a, 2). El punto (a, f(a)) está directamente debajo del agujero.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_007.jpg"/>
+</media>
+<caption>Se cumplen las condiciones 1 y 2. La condición 3 falla.</caption>
+</figure>
+
+<figure id="CNX_Precalc_Figure_12_03_008" class="small">
+<media id="fs-id1165137567043" alt="Gráfico de una función definida a trozos con un segmento creciente desde el infinito negativo hasta (a, f(a)), que es cerrado, y otro segmento creciente desde (a, f(a)-1), que es abierto, hasta el infinito positivo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_008.jpg"/>
+</media>
+<caption>Se cumple la condición 1. Las condiciones 2 y 3 fallan.</caption>
+</figure>
+
+<figure id="CNX_Precalc_Figure_12_03_009" class="small"><media id="fs-id1165137640127" alt="Gráfico de una función definida a trozos con un segmento creciente desde el infinito negativo hasta (a, f(a)) y otro segmento creciente desde (a, f(a) – 1) hasta el infinito positivo. Este gráfico no incluye el punto (a, f(a)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_009.jpg"/>
+</media>
+
+<caption>Las condiciones 1, 2 y 3 fallan.</caption></figure>
+<note id="fs-id1165135526945">
+
+<title>Definición de continuidad</title>
+<para id="fs-id1165137849547">Una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es <emphasis>continua</emphasis> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> siempre que se cumplan las tres condiciones siguientes: <list id="fs-id1165137444488" list-type="bulleted"><item>Condición 1: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</item>
+<item>Condición 2: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> existe en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>.</item>
+<item>Condición 3: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math></item>
+</list></para>
+
+<para id="fs-id1165137453972">Si una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> la función es <term id="term-00004">discontinua</term> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>.</para>
+</note>
+
+
+<section id="fs-id1165137824787">
+<title>Identificar una discontinuidad de salto</title>
+<para id="fs-id1165135255987">La discontinuidad se genera de diferentes maneras. Hemos visto en la sección anterior que una función puede tener un <term class="no-emphasis" id="term-00005">límite izquierdo</term> y un <term class="no-emphasis" id="term-00006">límite derecho</term> aunque no sean iguales. Si los límites por la izquierda y por la derecha existen pero son diferentes, el gráfico "salta" en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>. Se dice que la función tiene una discontinuidad de salto.</para>
+
+<para id="fs-id1165137596619">Como ejemplo, mire el gráfico de la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> en la <link target-id="CNX_Precalc_Figure_12_03_010"/>. Observe como <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> cómo la salida se acerca a diferentes valores desde la izquierda y desde la derecha.</para>
+
+
+<figure id="CNX_Precalc_Figure_12_03_010" class="small">
+<media id="fs-id1165137543523" alt="Gráfico de una función definida a trozos con un segmento creciente desde el infinito negativo hasta (a, f(a)), que es cerrado, y otro segmento creciente desde (a, f(a)-1), que es abierto, hasta el infinito positivo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_010.jpg"/>
+</media>
+<caption>Gráfico de una función con una discontinuidad de salto.</caption>
+</figure>
+
+<note id="fs-id1165137762071">
+
+<title>Discontinuidad de salto</title>
+<para id="fs-id1165137761762">Una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> tiene una <term id="term-00007">discontinuidad de salto</term> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> si los límites izquierdo y derecho existen pero no son iguales: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</para></note>
+</section>
+
+<section id="fs-id1165137602530"><title>Identificar discontinuidad removible</title><para id="fs-id1165137755508">Algunas funciones tienen una discontinuidad, pero es posible redefinir la función en ese punto para hacerla continua. Se dice que este tipo de función tiene una discontinuidad removible. Veamos la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> representada por el gráfico en la <link target-id="CNX_Precalc_Figure_12_03_011"/>. La función tiene un límite. Sin embargo, hay un agujero en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>. El agujero se puede rellenar si se amplía el dominio para incluir la entrada <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y se define la salida correspondiente de la función en ese valor como el límite de la función en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>.</para>
+
+<figure id="CNX_Precalc_Figure_12_03_011" class="small">
+<media id="fs-id1165135192129" alt="Gráfico de una función creciente con una discontinuidad removible en (a, f(a)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_011.jpg"/>
+</media>
+<caption>Gráfico de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> con una discontinuidad removible en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math>.</caption>
+</figure>
+
+<note id="fs-id1165137548233">
+
+<title>Discontinuidad removible</title>
+<para id="fs-id1165135306843">Una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> tiene una <term id="term-00008">discontinuidad removible</term> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> si el límite, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> existe, pero ya sea que <list id="fs-id1165137553506" list-type="enumerated" number-style="arabic"><item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe <emphasis effect="italics">o</emphasis></item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el valor de la función en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> no es igual al límite, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></para></note>
+
+<example id="Example_12_03_01">
+<exercise id="fs-id1165137469860"><problem id="fs-id1165135193455">
+<title>Identificar discontinuidades</title>
+<para id="fs-id1165137772424">Identifique todas las discontinuidades de las siguientes funciones como un salto o una discontinuidad removible.</para>
+<list id="eip-id1165135636902" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </item>
+</list></problem>
+<solution id="fs-id1165137442220">
+<list id="fs-id1165137433061" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>
+<para id="fs-id1165137939782">Observe que la función está definida en todas partes excepto en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137828436">Así, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>5</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe, la condición 2 no se cumple. Dado que se cumple la condición 1, el límite cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 5 es 8, y la condición 2 no se cumple. Esto significa que hay una discontinuidad removible en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> </para></item>
+<item><span class="token">Ⓑ</span>
+<para id="fs-id1165137414112">La condición 2 se cumple porque <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137768093">Observe que la función es una <term class="no-emphasis" id="term-00009">función definida a trozos</term>, y para cada trozo, la función está definida en todas partes de su dominio. Examinemos la condición 1 determinando los límites por la izquierda y por la derecha cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 2.</para><para id="fs-id1165137831577">Límite por la izquierda: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> El límite izquierdo existe.</para><para id="fs-id1165137430789">Límite por la derecha: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> El límite derecho existe. Pero</para>
+<equation id="fs-id1165137644770" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137428037">Así que, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe y la condición 2 falla: No hay ninguna discontinuidad removible. Sin embargo, como los límites izquierdo y derecho existen pero no son iguales, se cumplen las condiciones para una discontinuidad de salto en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para></item>
+</list>
+</solution>
+</exercise></example>
+
+<note id="ti_12_03_01" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137531206"><problem id="fs-id1165135560868"><para id="fs-id1165135560869">Identifique todas las discontinuidades de las siguientes funciones como un salto o una discontinuidad removible.</para>
+<list id="eip-id1165135673428" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msqrt>
+        <m:mi>x</m:mi>
+       </m:msqrt>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </item>
+</list></problem>
+<solution id="fs-id1165135550580">
+<list id="fs-id1165135701475" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> discontinuidad removible en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> discontinuidad de salto en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </item>
+</list>
+</solution>
+</exercise></note>
+</section></section><section id="fs-id1165137762134">
+<title>Reconocer funciones continuas y discontinuas de números reales</title>
+<para id="fs-id1165135699125">Muchas de las funciones que hemos encontrado en capítulos anteriores son continuas en todas partes. Nunca tienen un agujero y nunca saltan de un valor a otro. Para todas estas funciones, el límite de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> es el mismo que el valor de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Así que <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Hay algunas funciones que son continuas en todas partes y otras que solo son continuas donde están definidas en su dominio porque no están definidas para todos los números reales.</para>
+
+<note id="fs-id1165135694008">
+
+<title>Ejemplos de funciones continuas</title>
+
+<para id="fs-id1165137673651">Las siguientes funciones son continuas en todas partes:</para>
+
+<table id="eip-id1165135182782" summary=".."><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1" colwidth="50%" align="left"/>
+<colspec colnum="2" colname="c2" colwidth="50%" align="left"/>
+<tbody>
+<row>
+<entry align="center">Funciones polinómicas</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>9</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+
+<row>
+<entry align="center">Funciones exponenciales</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mn>4</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Funciones de seno</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Funciones de coseno</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="fs-id1165135333681">Las siguientes funciones son continuas en todos los lugares en los que están definidas en su dominio:</para><table id="eip-id1165135359811" summary="">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="25%"/>
+<colspec colnum="2" colname="c2" colwidth="75%"/>
+<tbody>
+<row>
+<entry align="center">Funciones logarítmicas</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Funciones tangentes</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mi>k</m:mi><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mi>k</m:mi>
+</m:math> es un número entero</entry>
+</row>
+<row>
+<entry align="center">Funciones racionales</entry>
+<entry align="center">Ej.: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></note><note id="fs-id1165135465298" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135543119"><emphasis>Dada una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> determine si la función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </emphasis></para><list id="fs-id1165135694331" list-type="enumerated" number-style="arabic"><item>Compruebe la condición 1: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</item>
+<item>Compruebe la condición 2: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> existe en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Compruebe la condición 3: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Si se cumplen las tres condiciones, la función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si no se cumple alguna de las condiciones, la función no es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_12_03_02">
+    <exercise id="fs-id1165135500750"><problem id="fs-id1165135500752">
+    <title>Determinar si una función definida a trozos es continua en un número dado</title>
+    <para id="fs-id1165135500761">Determine si la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>8</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> es continua en</para>
+    <list id="eip-id1165133403512" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>8</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </item>
+</list>
+</problem>
+        <solution id="fs-id1165135500954">
+        <para id="fs-id1165135500956">Para determinar si la función <m:math>
+         <m:mi>f</m:mi>
+        </m:math> es continua en <m:math>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+         </m:mrow>
+        </m:math> determinaremos si se cumplen las tres condiciones de continuidad en <m:math>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+         </m:mrow>
+        </m:math>.</para>
+            <list id="fs-id1165135694210" list-type="labeled-item" class="circled">
+            <item><span class="token">Ⓐ</span><para id="fs-id1165135694216">Condición 1: ¿Existe <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+             </m:mrow>
+            </m:math>?</para>
+<equation id="fs-id1165135694236" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 1</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+            <para id="fs-id1165135536271">Condición 2: ¿Existe el <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+             </m:mrow>
+            </m:math>?</para>
+            <para id="fs-id1165135530367">A la izquierda de <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+             </m:mrow>
+            </m:math> <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>;</m:mo>
+             </m:mrow>
+            </m:math> a la derecha de <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+             </m:mrow>
+            </m:math> <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+             </m:mrow>
+            </m:math> Tenemos que evaluar los límites por la izquierda y por la derecha cuando <m:math>
+             <m:mi>x</m:mi>
+            </m:math> se acerca a 1. <list id="fs-id1165135593361" list-type="bulleted" bullet-style="bullet">
+                    <item>Límite por la izquierda: <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mn>3</m:mn>
+                 <m:mo>- −</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mn>3</m:mn>
+                 <m:mo>-</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn>
+             </m:mrow>
+            </m:math> </item>
+            <item>Límite por la derecha: <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mn>3</m:mn>
+                 <m:mo>+</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mn>3</m:mn>
+                 <m:mo>+</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mrow><m:mo>(</m:mo>
+               <m:mrow>
+                <m:mn>8</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+               </m:mrow>
+              <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>11</m:mn>
+             </m:mrow>
+            </m:math> </item>
+                </list>
+            </para>
+            <para id="fs-id1165135440557">Dado que <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mn>3</m:mn>
+                 <m:mo>- −</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mn>3</m:mn>
+                 <m:mo>+</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+             </m:mrow>
+            </m:math> <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+             </m:mrow>
+            </m:math> no existe.</para>
+<equation id="fs-id1165134032421" class="unnumbered"><label/> <m:math>
+             <m:mrow>
+              <m:mo stretchy="false">⇒</m:mo><m:mtext> La condición 2 no se cumple</m:mtext><m:mtext>.</m:mtext>
+             </m:mrow>
+            </m:math> </equation>
+<para id="fs-id1165134032445">No es necesario seguir adelante. La condición 2 no se cumple en <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+             </m:mrow>
+            </m:math> Si alguna de las condiciones de continuidad no se cumple en <m:math>
+            <m:mrow>
+             <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+            </m:mrow>
+           </m:math> la función <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+               <m:mi>x</m:mi>
+              <m:mo>)</m:mo></m:mrow>
+             </m:mrow>
+            </m:math> no es continua en <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+             </m:mrow>
+            </m:math>
+            </para></item>
+            <item><span class="token">Ⓑ</span><para id="fs-id1165134032510"> <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+
+             </m:mrow>
+            </m:math> </para>
+            <para id="fs-id1165135517077">Condición 1: ¿Existe <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+               <m:mrow>
+                <m:mfrac>
+                 <m:mn>8</m:mn>
+                 <m:mn>3</m:mn>
+                </m:mfrac>
+
+               </m:mrow>
+              <m:mo>)</m:mo></m:mrow>
+             </m:mrow>
+            </m:math>?</para>
+<equation id="fs-id1165135517108" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>8</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>8</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>32</m:mn>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 1</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+            <para id="fs-id1165135687344">Condición 2: ¿Existe el <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+                 <m:mn>8</m:mn>
+                 <m:mn>3</m:mn>
+                </m:mfrac>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+             </m:mrow>
+            </m:math>?</para>
+
+            <para id="fs-id1165135687392">A la izquierda de <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mo>,</m:mo>
+             </m:mrow>
+            </m:math> <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>;</m:mo>
+             </m:mrow>
+            </m:math> a la derecha de <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mo>,</m:mo>
+             </m:mrow>
+            </m:math> <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+             </m:mrow>
+            </m:math> Tenemos que evaluar los límites por la izquierda y por la derecha cuando <m:math>
+             <m:mi>x</m:mi>
+            </m:math> se acerca a <m:math>
+             <m:mrow>
+              <m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+             </m:mrow>
+            </m:math> <list id="fs-id1165134032183" list-type="bulleted" bullet-style="bullet">
+            <item>Límite por la izquierda: <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mrow>
+                  <m:mfrac>
+                   <m:mn>8</m:mn>
+                   <m:mn>3</m:mn>
+                  </m:mfrac>
+
+                 </m:mrow>
+                 <m:mo>- −</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mrow>
+                  <m:mfrac>
+                   <m:mn>8</m:mn>
+                   <m:mn>3</m:mn>
+                  </m:mfrac>
+
+                 </m:mrow>
+                 <m:mo>-</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+               <m:mrow>
+                <m:mfrac>
+                 <m:mn>8</m:mn>
+                 <m:mn>3</m:mn>
+                </m:mfrac>
+
+               </m:mrow>
+              <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+               <m:mrow>
+                <m:mn>32</m:mn>
+               </m:mrow>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+
+             </m:mrow>
+            </m:math> </item>
+            <item>Límite por la derecha: <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mrow>
+                  <m:mfrac>
+                   <m:mn>8</m:mn>
+                   <m:mn>3</m:mn>
+                  </m:mfrac>
+
+                 </m:mrow>
+                 <m:mo>+</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+                 <m:mrow>
+                  <m:mfrac>
+                   <m:mn>8</m:mn>
+                   <m:mn>3</m:mn>
+                  </m:mfrac>
+
+                 </m:mrow>
+                 <m:mo>+</m:mo>
+                </m:msup>
+
+               </m:mrow>
+              </m:munder>
+              <m:mrow><m:mo>(</m:mo>
+               <m:mrow>
+                <m:mn>8</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+               </m:mrow>
+              <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mo>=</m:mo><m:mfrac>
+               <m:mrow>
+                <m:mn>32</m:mn>
+               </m:mrow>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+
+             </m:mrow>
+            </m:math> </item>
+            </list>
+            </para><para id="fs-id1165135613979">Dado que <m:math>
+             <m:mrow>
+              <m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+                 <m:mn>8</m:mn>
+                 <m:mn>3</m:mn>
+                </m:mfrac>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+             </m:mrow>
+            </m:math> existe,</para>
+<equation id="fs-id1165135614026" class="unnumbered"><label/> <m:math>
+             <m:mrow>
+              <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 2</m:mtext><m:mo>.</m:mo>
+             </m:mrow>
+            </m:math> </equation>
+            <para id="fs-id1165135614041">Condición 3: ¿Es <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+               <m:mrow>
+                <m:mfrac>
+                 <m:mn>8</m:mn>
+                 <m:mn>3</m:mn>
+                </m:mfrac>
+
+               </m:mrow>
+              <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:munder>
+               <m:mrow>
+                <m:mi>lím</m:mi>
+               </m:mrow>
+               <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+                 <m:mn>8</m:mn>
+                 <m:mn>3</m:mn>
+                </m:mfrac>
+
+               </m:mrow>
+              </m:munder>
+              <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+             </m:mrow>
+            </m:math> </para>
+<equation id="fs-id1165135614113" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>32</m:mn>
+         </m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>32</m:mn>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+         <m:mn>8</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:munder>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 3</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+            <para id="fs-id1165135639760">Dado que se cumplen las tres condiciones de continuidad en <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mo>,</m:mo>
+             </m:mrow>
+            </m:math> la función <m:math>
+             <m:mrow>
+              <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+               <m:mi>x</m:mi>
+              <m:mo>)</m:mo></m:mrow>
+             </m:mrow>
+            </m:math> es continua en <m:math>
+             <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+               <m:mn>8</m:mn>
+               <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+             </m:mrow>
+            </m:math> </para>
+            </item>
+            </list>
+        </solution>
+    </exercise></example>
+
+<note id="ti_12_03_02" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135639840">
+<problem id="fs-id1165135639843">
+<para id="fs-id1165135639845">Determine si la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>x</m:mi>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>9</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>11,5</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135639941">
+<para id="fs-id1165135639943">No. La función no es continua en <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math> porque el límite izquierdo es <m:math><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math> y el límite derecho es <m:math><m:mn>6</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math>.</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_12_03_03">
+<exercise id="fs-id1165135644891"><problem id="fs-id1165135644893">
+<title>Determinar si una función racional es continua en un número dado</title>
+<para id="fs-id1165135644902">Determine si la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135644971">
+<para id="fs-id1165135644973">Para determinar si la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> determinaremos si se cumplen las tres condiciones de continuidad en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135645011">Condición 1:</para>
+<equation id="fs-id1165135645013" class="unnumbered"><label/> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mtext> no existe</m:mtext><m:mtext>.</m:mtext>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo stretchy="false">⇒</m:mo><m:mtext>La condición 1 no se cumple</m:mtext><m:mo>.</m:mo>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation>
+
+<para id="fs-id1165135645058">No es necesario seguir adelante. La condición 2 no se cumple en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> Si alguna de las condiciones de continuidad no se cumple en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> no es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+<commentary id="fs-id1165135645112">
+<title>Análisis</title>
+<para id="fs-id1165135645117">Vea el <link target-id="CNX_Precalc_Figure_12_03_013"/>. Observe que para la condición 2 tenemos</para>
+ <equation id="fs-id1165135645122" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>-</m:mo><m:mn>25</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mfrac>
+       <m:mrow>
+        <m:menclose notation="updiagonalstrike">
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+        </m:menclose>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:menclose notation="updiagonalstrike">
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+         </m:mrow>
+        </m:menclose>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                    </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                    </m:mtext><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                    </m:mtext><m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 2</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135523202">A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> existe una discontinuidad removible. Vea el <link target-id="CNX_Precalc_Figure_12_03_013"/>.</para>
+
+<figure id="CNX_Precalc_Figure_12_03_013" class="small">
+<media id="fs-id1165135523228" alt="Gráfico de una función creciente con una discontinuidad removible en (5, 10).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_013.jpg"/>
+</media>
+</figure>
+
+</commentary>
+</exercise></example>
+
+<note id="ti_12_03_03" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135523247"><problem id="fs-id1165135523248"><para id="fs-id1165135523249">Determine si la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> En caso contrario, indique el tipo de discontinuidad.</para></problem>
+<solution id="fs-id1165135523326">
+<para id="fs-id1165135523328">No, la función no es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> Existe una discontinuidad removible en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165135523362">
+<title>Determinar los valores de entrada para los cuales una función es discontinua</title>
+<para id="fs-id1165135523367">Ahora que podemos identificar funciones continuas, discontinuidades de salto y discontinuidades removibles veremos funciones más complejas para hallar discontinuidades. Aquí analizaremos una función definida a trozos para determinar si existe algún número real en el que la función no sea continua. Una <term id="term-00010">función definida a trozos</term> puede tener discontinuidades en los puntos límite de la función, así como dentro de las funciones que la componen.</para><para id="fs-id1165135523374">Para determinar los números reales para los que una función definida a trozos compuesta por funciones polinómicas no es continua, recordemos que las propias funciones <term class="no-emphasis" id="term-00011">polinómicas</term> son continuas en el conjunto de los números reales. Cualquier discontinuidad estaría en los puntos límite. Por lo tanto, tenemos que explorar las tres condiciones de continuidad en los puntos límite de la función definida a trozos.</para>
+
+<note id="fs-id1165135523385" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135523390"><emphasis>Dada una función definida a trozos, determinar si es continua en los puntos límite.</emphasis> <list id="fs-id1165135523396" list-type="enumerated" number-style="arabic">
+<item>Para cada punto límite <m:math>
+ <m:mi>a</m:mi>
+</m:math> de la función definida a trozos, determine los límites izquierdo y derecho cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> así como el valor de la función en <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Compruebe cada condición para cada valor para determinar si se cumplen las tres condiciones.</item>
+<item>Determine si cada valor satisface la condición 1: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</item>
+<item>Determine si cada valor satisface la condición 2: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</item>
+<item>Determine si cada valor satisface la condición 3: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Si se cumplen las tres condiciones, la función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si falla alguna de las condiciones, la función no es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list>
+</para></note>
+
+<example id="Example_12_03_04">
+<exercise id="fs-id1165135513445">
+<problem id="fs-id1165135513447">
+<title>Determinar los valores de entrada para los cuales una función definida a trozos es discontinua</title>
+<para id="fs-id1165135513453">Determine si la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> es discontinua para cualquier número real.</para>
+<equation id="fs-id1165135513461" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mtext>(</m:mtext><m:mi>x</m:mi><m:mtext>)</m:mtext><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>- −</m:mo><m:mn>11</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </equation></problem>
+<solution id="fs-id1165135513575">
+<para id="fs-id1165135513577">La función definida a trozos está definida por tres funciones, todas ellas polinómicas, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> Las funciones polinómicas son continuas en todas partes. Las discontinuidades estarían en los puntos límite, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165135514407">A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> comprobemos las tres condiciones de continuidad.</para><para id="fs-id1165135514424">Condición 1:</para>
+<equation id="fs-id1165135514426" class="unnumbered"><label/> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>2 </m:mn>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 1</m:mtext><m:mo>.</m:mo>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation>
+
+<para id="fs-id1165135514472">Condición 2: Dado que una función diferente define la salida a la izquierda y a la derecha de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> <list id="fs-id1165135514577" list-type="bulleted">
+<item>Límite por la izquierda: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Límite por la derecha: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </item>
+</list>
+</para>
+<para id="fs-id1165135680777">Dado que <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para>
+<equation id="fs-id1165135680878" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 2</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135680892">Condición 3:</para>
+<equation id="fs-id1165135680895" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:munder>
+     <m:mrow>
+      <m:mi>lím</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+     </m:mrow>
+    </m:munder>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mo stretchy="false">⇒</m:mo><m:mtext>Se cumple la condición 3</m:mtext><m:mo>.</m:mo>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation>
+<para id="fs-id1165135680974">Dado que las tres condiciones se cumplen en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135681026">A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> comprobemos las tres condiciones de continuidad.</para>
+<para id="fs-id1165135681043">Condición 2: Dado que una función diferente define la salida a la izquierda y a la derecha de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> <list id="fs-id1165135681147" list-type="bulleted">
+<item>Límite por la izquierda: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Límite por la derecha: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>- −</m:mo><m:mn>11</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mn>4</m:mn>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>- −</m:mo><m:mn>11</m:mn><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </item>
+</list>
+</para>
+<para id="fs-id1165135681467">Dado que <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>≠</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> por lo que <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe.</para>
+<equation id="fs-id1165135681607" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">⇒</m:mo><m:mtext>La condición 2 no se cumple</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135681622">Dado que una de las tres condiciones no se cumple en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> es discontinuo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+<commentary id="fs-id1165135681673">
+<title>Análisis</title>
+<para id="fs-id1165135681678">Vea el <link target-id="CNX_Precalc_Figure_12_03_014"/>. A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> existe una discontinuidad de salto. Observe que la función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+
+<figure id="CNX_Precalc_Figure_12_03_014" class="small">
+<media id="fs-id1165135681717" alt="Gráfico de una función definida a trozos que tiene discontinuidad en (4, 3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_014.jpg"/>
+</media>
+<caption>El gráfico es continuo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> pero muestra una discontinuidad de salto en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> </caption>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<note id="ti_12_03_04" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135682118">
+<problem id="fs-id1165135682120">
+<para id="fs-id1165135682122">Determine dónde la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mfrac>
+      <m:mrow>
+       <m:mi>π</m:mi><m:mi>x</m:mi>
+      </m:mrow>
+      <m:mn>4</m:mn>
+     </m:mfrac>
+     <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mfrac>
+      <m:mi>π</m:mi>
+      <m:mi>x</m:mi>
+     </m:mfrac>
+     <m:mo>,</m:mo><m:mtext>    </m:mtext><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>6</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>6</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow>
+ </m:mrow>
+</m:math> es discontinua.</para>
+</problem>
+<solution id="fs-id1165135682244"><para id="fs-id1165135682246"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165135682264">
+<title>Cómo determinar si una función es continua</title>
+<para id="fs-id1165135682269">Para determinar si una <term class="no-emphasis" id="term-00012">función definida a trozos</term> es continua o discontinua, además de comprobar los puntos límite, debemos comprobar si cada una de las funciones que componen la función definida a trozos es continua.</para><note id="fs-id1165135682274" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135682280"><emphasis>Dada una función definida a trozos, determine si es continua.</emphasis></para><list id="fs-id1165135682285" list-type="enumerated" number-style="arabic">
+<item>Determine si cada función componente de la función definida a trozos es continua. Si hay discontinuidades, ¿se producen dentro del dominio donde se aplica esa función componente?</item>
+<item>Para cada punto límite <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> de la función definida a trozos, determine si se cumple cada una de las tres condiciones.</item>
+</list>
+</note>
+
+<example id="Example_12_03_05">
+<exercise id="fs-id1165135682316">
+<problem id="fs-id1165135682319">
+<title>Determinar si una función definida a trozos es continua</title>
+<para id="fs-id1165135682324">Determine si la siguiente función es continua. Si no es así, indique la ubicación y el tipo de cada discontinuidad.</para>
+<equation id="fs-id1165135682327" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135682415">
+<para id="fs-id1165135682417">Las dos funciones que componen esta función definida a trozos son <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> La función de seno y todas las funciones polinómicas son continuas en todas partes. Cualquier discontinuidad se produciría en el punto límite,  </para>
+<para id="fs-id1165135682509">A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> comprobemos las tres condiciones de continuidad.</para>
+<para id="fs-id1165135682526">Condición 1:</para>
+<equation id="fs-id1165135682528" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mtext> no existe</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">⇒</m:mo><m:mtext>La condición 1 no se cumple</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135682574">Dado que las tres condiciones no se cumplen en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> es discontinuo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+<commentary id="fs-id1165135694648">
+<title>Análisis</title>
+<para id="fs-id1165135694654">Vea el <link target-id="CNX_Precalc_Figure_12_03_015"/>. Existe una discontinuidad removible en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo tanto el límite existe y es finito, pero <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe.</para>
+
+<figure id="CNX_Precalc_Figure_12_03_015" class="small">
+<media id="fs-id1165135694743" alt="Gráfico de una función definida a trozos donde desde el infinito negativo hasta 0 f(x) = sen(x) y desde 0 hasta el infinito positivo f(x) = x^3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_015.jpg"/>
+</media>
+<caption>La función tiene una discontinuidad removible en 0.</caption>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+
+<note id="fs-id1165135694761" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165135694766">Acceda a estos recursos en línea para obtener instrucción adicional y practicar con continuidad.</para>
+<list id="url-list" display="block">
+<item><link url="http://openstax.org/l/continuitypoint">Continuidad en un punto</link></item>
+<item><link url="http://openstax.org/l/contconcept">Continuidad en un punto: Comprobación de conceptos</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165135694787" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165135694794" list-type="bulleted">
+<item>Una función continua se puede representar mediante un gráfico sin agujeros ni interrupciones.</item>
+<item>Una función cuyo gráfico tiene agujeros es una función discontinua.</item>
+<item>Una función es continua en un número determinado si se cumplen tres condiciones: <list id="fs-id1165135694805" list-type="bulleted" bullet-style="open-circle">
+<item>Condición 1: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</item>
+<item>Condición 2: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> existe en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Condición 3: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+    </list>
+</item>
+<item>Una función tiene una discontinuidad de salto si los límites izquierdo y derecho son diferentes, lo que hace que el gráfico "salte".</item>
+<item>Una función tiene una discontinuidad removible si puede ser redefinida en su punto discontinuo para hacerla continua. Vea el <link target-id="Example_12_03_01"/>.</item>
+<item>Algunas funciones, como las polinómicas, son continuas en todas partes. Otras funciones, como las logarítmicas, son continuas en su dominio. Vea el <link target-id="Example_12_03_02"/> y el <link target-id="Example_12_03_03"/>.</item>
+<item>Para que una función definida a trozos sea continua, cada trozo debe ser continuo en su parte del dominio y la función en su conjunto debe ser continua en los límites. Vea el <link target-id="Example_12_03_04"/> y el <link target-id="Example_12_03_05"/>.</item>
+</list>
+</section>
+
+<section id="fs-id1165135694982" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165135694986">
+<title>Verbales</title>
+<exercise id="fs-id1165135694991" class="material-set-2">
+<problem id="fs-id1165135694993">
+<para id="fs-id1165135694995">Indique con sus propias palabras lo que significa para una función <m:math>
+ <m:mi>f</m:mi>
+</m:math> ser continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135695021">
+<para id="fs-id1165135695023">Informalmente, si una función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> entonces no hay interrupción en el gráfico de la función en <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>c</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>c</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está definida.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135695083" class="material-set-2">
+<problem id="fs-id1165135695085">
+<para id="fs-id1165135695087">Indique con sus propias palabras lo que significa que una función sea continua en el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1165135695119">
+<title>Algebraicos</title>
+<para id="fs-id1165135695124">En los siguientes ejercicios, determine por qué la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> es discontinua en un punto determinado <m:math>
+ <m:mi>a</m:mi>
+</m:math> en el gráfico. Indique cuál condición falla.</para><exercise id="fs-id1165135695140">
+<problem id="fs-id1165135695142"><para id="fs-id1165135695143"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mspace width="0.5em"/><m:mo>|</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mo>|</m:mo><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135695188">
+<para id="fs-id1165135695190">discontinua en <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>; <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135698222">
+<problem id="fs-id1165135698224">
+<para id="fs-id1165135698226"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mspace width="0.5em"/><m:mo>|</m:mo><m:mspace width="0.5em"/><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mspace width="0.5em"/><m:mo>|</m:mo><m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135698280">
+<problem id="fs-id1165135698282">
+<para id="fs-id1165135698284"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>16</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135698349">
+<para id="fs-id1165135698351">discontinuidad removible en <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>; <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no está definida</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135698393">
+<problem id="fs-id1165135698395">
+<para id="fs-id1165135698397"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>16</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135698456">
+<problem id="fs-id1165135698458">
+<para id="fs-id1165135698460"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>3</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135698543">
+<para id="fs-id1165135698545">Discontinua en <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>; <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> pero <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> lo cual no es igual al límite.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135698630">
+<problem id="fs-id1165135698632">
+<para id="fs-id1165135698634"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135698716" class="material-set-2">
+<problem id="fs-id1165135698718">
+<para id="fs-id1165135698720"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mrow>
+         <m:mn>2 </m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135690120">
+<para id="fs-id1165135690122"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135690165" class="material-set-2">
+<problem id="fs-id1165135690167">
+<para id="fs-id1165135690169"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mrow>
+         <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≠</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135690280" class="material-set-2">
+<problem id="fs-id1165135690282">
+<para id="fs-id1165135690285"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mtext>    </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135690398">
+<para id="fs-id1165135690400"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>;</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>. Por lo tanto, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135690535" class="material-set-2">
+<problem id="fs-id1165135690537">
+<para id="fs-id1165135690540"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mtext>    </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135690656" class="material-set-2">
+<problem id="fs-id1165135690658">
+<para id="fs-id1165135690660"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mo>-</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mtext>    </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135683053">
+<para id="fs-id1165135683055"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>. Por lo tanto, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135683192" class="material-set-2">
+<problem id="fs-id1165135683194">
+<para id="fs-id1165135683197"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mtext>    </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135683329" class="material-set-2">
+<problem id="fs-id1165135683331">
+<para id="fs-id1165135683333"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2 </m:mn>
+         </m:msup>
+         <m:mo>-</m:mo><m:mn>9</m:mn>
+        </m:mrow>
+        <m:mrow>
+         <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>- −</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>x</m:mi>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mo>- −</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mtext>    </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135683485">
+<para id="fs-id1165135683487"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:msup>
+     <m:mn>3</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math>, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:msup>
+     <m:mn>3</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165135683605">Por lo tanto, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135683652" class="material-set-2">
+<problem id="fs-id1165135683654">
+<para id="fs-id1165135683657"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mrow>
+         <m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2 </m:mn>
+         </m:msup>
+         <m:mo>-</m:mo><m:mn>9</m:mn>
+        </m:mrow>
+        <m:mrow>
+         <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mo>- −</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mo>-</m:mo><m:mn>6</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mo>- −</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mtext>    </m:mtext><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135683803">
+<problem id="fs-id1165135683805">
+<para id="fs-id1165135683807"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135684403">
+<para id="fs-id1165135684405"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>2 </m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no está definido.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135684429">
+<problem id="fs-id1165135684431">
+<para id="fs-id1165135684433"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>25</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135684513">
+<problem id="fs-id1165135684515">
+<para id="fs-id1165135684517"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>9</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>24</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135684602">
+<para id="fs-id1165135684604"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no está definido.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135684633">
+<problem id="fs-id1165135684635">
+<para id="fs-id1165135684637"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>- −</m:mo><m:mn>27</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135684714">
+<problem id="fs-id1165135684717"><para id="fs-id1165135684718"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135684771">
+<para id="fs-id1165135684773"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>0</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no está definido.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135684797">
+<problem id="fs-id1165135684799">
+<para id="fs-id1165135684801"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165135684876">En los siguientes ejercicios, determine si la función dada <m:math>
+ <m:mi>f</m:mi>
+</m:math> es continua en todas partes. Si es continua en todos los lugares en los que está definida, indique para qué rango es continua. Si es discontinua, indique dónde lo es.</para><exercise id="fs-id1165135684888">
+<problem id="fs-id1165135684890">
+<para id="fs-id1165135684892"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135684936">
+<para id="fs-id1165135684938">Continua en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135684966">
+<problem id="fs-id1165135684968">
+<para id="fs-id1165135684970"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135685032">
+<problem id="fs-id1165135685034">
+<para id="fs-id1165135685037"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135685080">
+<para id="fs-id1165135685082">Continua en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135685111">
+<problem id="fs-id1165135685113">
+<para id="fs-id1165135685115"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>-sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135685159">
+<problem id="fs-id1165135685161">
+<para id="fs-id1165135685163"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135685230">
+<para id="fs-id1165135685233">Discontinua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135685265">
+<problem id="fs-id1165135685267">
+<para id="fs-id1165135685269"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135692926">
+<problem id="fs-id1165135692929">
+<para id="fs-id1165135692931"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135692969">
+<para id="fs-id1165135692971">Discontinua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135692989">
+<problem id="fs-id1165135692992">
+<para id="fs-id1165135692994"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+   <m:mrow>
+    <m:mi>log</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135693041"><problem id="fs-id1165135693043"><para id="fs-id1165135693044"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mspace width="0.5em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135693080">
+<para id="fs-id1165135693082">Continua en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para>
+</solution>
+</exercise><exercise id="fs-id1165135693110">
+<problem id="fs-id1165135693113">
+<para id="fs-id1165135693115"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135693153">
+<problem id="fs-id1165135693155">
+<para id="fs-id1165135693157"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135693190">
+<para id="fs-id1165135693192">Continua en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135693219">
+<problem id="fs-id1165135693221">
+<para id="fs-id1165135693223"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sec</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135693265">
+<problem id="fs-id1165135693267">
+<para id="fs-id1165135693269"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135693316">
+<para id="fs-id1165135693318">Continua en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135693348">
+<problem id="fs-id1165135693350">
+<para id="fs-id1165135693352">Determine los valores de <m:math>
+ <m:mi>b</m:mi>
+</m:math> y <m:math>
+ <m:mi>c</m:mi>
+</m:math> de manera tal que la siguiente función sea continua en toda la línea de los números reales.</para>
+<para id="fs-id1165135693368"> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mrow>
+   <m:mrow><m:mo>{</m:mo> <m:mrow>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi><m:mo>,</m:mo>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mrow><m:mo>|</m:mo> <m:mrow>
+         <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+        </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow> </m:mrow>
+  </m:mrow></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+</section>
+
+<section id="fs-id1165135693488"><title>Gráficos</title><para id="fs-id1165135693494">En los siguientes ejercicios, consulte la <link target-id="CNX_Precalc_Figure_12_03_201"/>. Cada cuadrado representa una unidad cuadrada. Para cada valor de <m:math>
+ <m:mi>a</m:mi>
+<m:mo>,</m:mo></m:math> determine cuáles de las tres condiciones de continuidad se cumplen en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y cuáles no.</para><figure id="CNX_Precalc_Figure_12_03_201" class="small"><media id="fs-id1165135693526" alt="Gráfico de una función definida a trozos donde en x = –3 la línea está desconectada, en x = 2 hay una discontinuidad removible y en x = 4 hay una discontinuidad removible y f(4) existe.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_201F.jpg"/>
+</media>
+</figure><exercise id="fs-id1165135693540">
+<problem id="fs-id1165135693542">
+<para id="fs-id1165135693544"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135693562">
+<para id="fs-id1165135693564">1, pero no 2 ni 3</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135693570">
+<problem id="fs-id1165135693572">
+<para id="fs-id1165135693574"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135693591">
+<problem id="fs-id1165135693593">
+<para id="fs-id1165135693596"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135693612">
+<para id="fs-id1165135693614">1 y 2, pero no 3</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135693619">En los siguientes ejercicios, utilice una herramienta gráfica para graficar la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>12</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> como en la <link target-id="CNX_Precalc_Figure_12_03_202"/>. Coloque el eje <emphasis effect="italics">x</emphasis> a una corta distancia antes y después de 0 para ilustrar el punto de discontinuidad.</para><figure id="CNX_Precalc_Figure_12_03_202" class="small"><media id="fs-id1165135693680" alt="Gráfico de la función sinusoidal con una ventana de visualización de [–10, 10] por [–1, 1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_202F.jpg"/>
+</media>
+</figure><exercise id="fs-id1165135693693">
+<problem id="fs-id1165135693695">
+<para id="fs-id1165135693697">¿Cuáles condiciones de continuidad fallan en el punto de discontinuidad?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135693702">
+<problem id="fs-id1165135693705">
+<para id="fs-id1165135693707">Evalúe <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135693732"><para id="fs-id1165135693733"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>0</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es indefinida.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135693756">
+<problem id="fs-id1165135693758">
+<para id="fs-id1165135693760">Resuelva para <m:math>
+ <m:mi>x</m:mi>
+</m:math> si <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135693795">
+<problem id="fs-id1165135693797">
+<para id="fs-id1165135693799">¿Cuál es el dominio de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135693824">
+<para id="fs-id1165135693826"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135693870">En los siguientes ejercicios, considere la función mostrada en la <link target-id="CNX_Precalc_Figure_12_03_203"/>.</para><figure id="CNX_Precalc_Figure_12_03_203" class="small">
+<media id="fs-id1165135693882" alt="Gráfico de una función definida a trozos en la que en x = –1 la línea está desconectada y en x = 1 hay una discontinuidad removible.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_203.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165135693895" class="material-set-2">
+<problem id="fs-id1165135693897">
+<para id="fs-id1165135693899">¿En qué coordenadas <emphasis effect="italics">x</emphasis> es discontinua la función?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135693911" class="material-set-2">
+<problem id="fs-id1165135693913">
+<para id="fs-id1165135693915">¿Qué condición de continuidad se viola en estos puntos?</para>
+</problem>
+<solution id="fs-id1165135693920">
+<para id="fs-id1165135693922">A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el límite no existe. A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>1</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe.</para>
+<para id="fs-id1165135699289">A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> parece ser una asíntota vertical, y el límite no existe.</para></solution>
+</exercise>
+
+
+
+<exercise id="fs-id1165135699308" class="material-set-2">
+<problem id="fs-id1165135699310">
+<para id="fs-id1165135699312">Considere la función mostrada en la <link target-id="CNX_Precalc_Figure_12_03_204"/>. ¿En qué coordenadas <emphasis effect="italics">x</emphasis> es discontinua la función? ¿Cuáles condiciones de continuidad se han violado?</para><figure id="CNX_Precalc_Figure_12_03_204" class="small">
+<media id="fs-id1165135699325" alt="Gráfico de una función definida a trozos en la que en x = –1 la línea está desconectada y en la que en x = 1 y x = 2 hay discontinuidades removibles.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_204.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135699340" class="material-set-2">
+<problem id="fs-id1165135699343">
+<para id="fs-id1165135699345">Construya una función que pase por el origen con una pendiente constante de 1, con discontinuidades removibles en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135699379">
+<para id="fs-id1165135699381"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>7</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135699462" class="material-set-2">
+<problem id="fs-id1165135699464"><para id="fs-id1165135699465">La función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> se representa gráficamente en la <link target-id="CNX_Precalc_Figure_12_03_205"/>. Parece ser continua en el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero hay un valor <emphasis effect="italics">x</emphasis> en ese intervalo en el cual la función es discontinua. Determine el valor de la <m:math>
+ <m:mi>x</m:mi>
+</m:math> en el que la función es discontinua, y explique la dificultad de utilizar la tecnología al considerar la continuidad de una función al examinar su gráfico.</para><figure id="CNX_Precalc_Figure_12_03_205" class="small"><media id="fs-id1165135699560" alt="Gráfico de la función f(x) = (x^3 – 1)/(x – 1).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_205F.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+
+<exercise id="fs-id1165135699575" class="material-set-2">
+<problem id="fs-id1165135699577">
+<para id="fs-id1165135699579">Calcule el límite <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y determine si la siguiente función es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>:</m:mo>
+ </m:mrow>
+</m:math> </para>
+<equation id="fs-id1165135699638" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>4</m:mn>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mn>2 </m:mn>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </equation></problem>
+<solution id="fs-id1165135699728">
+<para id="fs-id1165135699730">La función es discontinua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> porque el límite cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 1 es 5 y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>1</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135699778" class="material-set-2"><problem id="fs-id1165135699780">
+<para id="fs-id1165135699783">El gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> se muestra en la <link target-id="CNX_Precalc_Figure_12_03_206"/>. ¿La función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> ¿Por qué sí o por qué no?</para>
+
+<figure id="CNX_Precalc_Figure_12_03_206" class="medium">
+<media id="fs-id1165135699876" alt="Gráfico de la función f(x) = sen(2x)/x con una ventana de visualización de [–4,5, 4,5] por [–1, 2,5]">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_03_206.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise></section></section></content>
+
+<glossary>
+<definition id="fs-id1165135699897">
+<term>función continua</term>
+<meaning id="fs-id1165135699903">una función que no tiene agujeros ni interrupciones en su gráfico</meaning>
+</definition>
+
+<definition id="fs-id1165135699907">
+<term>función discontinua</term>
+<meaning id="fs-id1165135699912">una función que no es continua en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165135699930">
+<term>discontinuidad de salto</term>
+<meaning id="fs-id1165135699935">un punto de discontinuidad en una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> donde existen los límites izquierdo y derecho, pero <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165135700059">
+<term>discontinuidad removible</term>
+<meaning id="fs-id1165135700065">un punto de discontinuidad en una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> donde la función es discontinua, pero se puede redefinir para hacerla continua</meaning>
+</definition>
+</glossary>
+</document>

@@ -1,0 +1,4979 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Coordenadas polares: Gráficos</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49407</md:content-id>
+  <md:title>Coordenadas polares: Gráficos</md:title>
+  <md:abstract><para id="para-00001">En esta sección podrá:</para>
+<list id="list-00001">
+<item>Comprobar la simetría de las ecuaciones polares.</item>
+<item>Representar gráficamente ecuaciones polares mediante trazado de puntos.</item>
+</list></md:abstract>
+  <md:uuid>a63ed4d5-a31b-403b-9aaa-80329d8bcaa0</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165135432945">Los planetas se mueven por el espacio en órbitas elípticas y periódicas alrededor del sol, como se muestra en la <link target-id="Figure_08_04_001"/>. Están en constante movimiento, por lo que fijar una posición exacta de cualquier planeta solo es válido durante un momento. En otras palabras, solo podemos fijar la posición <emphasis effect="italics">instantánea </emphasis>de un planeta. Esta es una aplicación de las <term class="no-emphasis" id="term-00001">coordenadas polares</term>, representadas como <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Interpretamos <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> como la distancia al Sol y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> como el rumbo angular del planeta, o su dirección desde un punto fijo del Sol. En esta sección nos centraremos en el sistema polar y en los gráficos que se generan directamente a partir de coordenadas polares.</para>
+<figure id="Figure_08_04_001" class="medium">
+<media id="fs-id1165135245564" alt="Ilustración del sistema solar con el Sol en el centro y las órbitas de los planetas Mercurio, Venus, Tierra y Marte.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_001.jpg"/>
+    </media>
+
+  <caption>Los planetas siguen trayectorias elípticas mientras orbitan alrededor del Sol (crédito: modificación del trabajo de la NASA/Laboratorio de Propulsión a Chorro [Jet Propulsion Laboratory, JPL]-Instituto de Tecnología de California [California Institute of Technology, Caltech]).</caption></figure><section id="fs-id1165135673928">
+    <title>Probar la simetría de las ecuaciones polares</title>
+    <para id="fs-id1165135640456">Al igual que una ecuación rectangular como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> describe la relación entre <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> en una cuadrícula cartesiana, una <emphasis>ecuación polar </emphasis>describe una relación entre <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en una cuadrícula polar. Recordemos que el par de coordenadas <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> indica que nos movemos en sentido contrario a las agujas del reloj desde el eje polar (eje <emphasis effect="italics">x</emphasis> positivo) en un ángulo de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y extiende un rayo desde el polo (origen) de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> unidades en la dirección de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Todos los puntos que satisfacen la ecuación polar están en el gráfico.</para><para id="fs-id1165135403177">La simetría es una propiedad que nos ayuda a reconocer y trazar el gráfico de cualquier ecuación. Si una ecuación tiene un gráfico que es simétrico respecto a un eje, significa que si doblamos el gráfico por la mitad sobre ese eje, la parte del gráfico de un lado coincidiría con la parte del otro lado. Realizando tres pruebas, veremos cómo aplicar las propiedades de la simetría a las ecuaciones polares. Además, utilizaremos la simetría (además de trazar puntos clave, ceros y máximos de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>)</m:mo>
+ </m:mrow>
+</m:math> para determinar el gráfico de una ecuación polar.</para><para id="fs-id1165135299187">En la primera prueba, consideramos la simetría con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> (eje <emphasis effect="italics">y</emphasis>). Reemplazamos <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> para determinar si la nueva ecuación es equivalente a la ecuación original. Por ejemplo, supongamos que nos dan la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation id="fs-id1165137823215" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>- −</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya</m:mtext><m:mspace width="0.3em"/><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.3em"/><m:mtext>con </m:mtext><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>- −</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>La identidad: </m:mtext><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>-</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique ambos lados por</m:mtext><m:mn>−1.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137466513">Esta ecuación presenta simetría con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+    <para id="fs-id1165137447334">En la segunda prueba, consideramos la simetría con respecto al eje polar (<m:math> eje
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>). Reemplazamos <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>π</m:mi><m:mo>-</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para determinar la equivalencia entre la ecuación probada y la original. Por ejemplo, supongamos que nos dan la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><equation id="fs-id1165133277601" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya </m:mtext><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.3em"/><m:mtext>con</m:mtext><m:mspace width="0.3em"/><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Identidad par/impar</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135438876">El gráfico de esta ecuación presenta simetría con respecto al eje polar.</para>
+    <para id="fs-id1165135699138">En la tercera prueba, consideramos la simetría con respecto al polo (origen). Reemplazamos <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para determinar si la ecuación probada es equivalente a la ecuación original. Por ejemplo, supongamos que nos dan la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">).</m:mo>
+ </m:mrow>
+</m:math> </para><equation id="fs-id1165137530177" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137575411">La ecuación no ha superado la <term class="no-emphasis" id="term-00002">prueba de simetría</term>, pero eso no significa que no sea simétrica con respecto al polo. La superación de una o más pruebas de simetría verifica que la simetría se mostrará en un gráfico. Sin embargo, el hecho de no superar las pruebas de simetría no indica necesariamente que un gráfico no sea simétrico con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el eje polar, o el polo. En estos casos, podemos confirmar que la simetría existe trazando puntos de reflexión a través del eje de simetría aparente o del polo. La prueba de simetría es una técnica que simplifica hacer gráficos de las ecuaciones polares, pero su aplicación no es perfecta.</para>
+
+    <note id="fs-id1165137410284"><title>Pruebas de simetría</title>
+
+      <para id="fs-id1112103">Una <term id="term-00003">ecuación polar</term> describe una curva en la cuadrícula polar. El gráfico de la ecuación polar se evalúa para tres tipos de simetría, como se indica en <link target-id="Figure_08_04_002"/>.</para>
+      <figure id="Figure_08_04_002"><media id="fs-id1165137434022" alt="3 gráficos uno al lado del otro. (A) muestra un rayo que se extiende en Q 1 y su versión simétrica en Q 2. (B) muestra un rayo que se extiende en Q 1 y su versión simétrica en Q 4. (C) muestra un rayo que se extiende en Q 1 y su versión simétrica en Q 3. Para obtener más información, consulte el pie de foto.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_002new.jpg"/>
+        </media>
+
+<caption>(a) Un gráfico es simétrico respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> (eje <emphasis effect="italics">y</emphasis>) si la sustitución de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> produce una ecuación equivalente. (b) Un gráfico es simétrico con respecto al eje polar (eje <emphasis effect="italics">x</emphasis>) si la sustitución de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>-</m:mn><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>π–</m:mi><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> produce una ecuación equivalente. (c) Un gráfico es simétrico con respecto al polo (origen) si la sustitución de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>-</m:mn><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> produce una ecuación equivalente.</caption></figure></note><note id="fs-id1165137410344" class="how-to-notitle">
+      <label>Cómo</label>
+      <para id="fs-id1165137662403"><emphasis>Dada una ecuación polar, pruebe la simetría.</emphasis></para>
+      <list id="fs-id1165135471088" list-type="enumerated" number-style="arabic"><item>Sustituya la combinación adecuada de componentes para <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>:</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para la simetría <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>; <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para la simetría del eje polar y <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para la simetría con respecto al polo.</item>
+      <item>Si las ecuaciones resultantes son equivalentes en una o más de las pruebas, el gráfico produce la simetría esperada.</item>
+      </list></note>
+
+    <example id="Example_08_04_01"><exercise id="fs-id1165137544684"><problem id="fs-id1165137662657">
+          <title>Probar la simetría de una ecuación polar</title>
+          <para id="fs-id1165137405347">Pruebe la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> para la simetría.</para></problem>
+        <solution id="fs-id1165135628503">
+          <para id="fs-id1165137400012">Comprobación para cada uno de los tres tipos de simetría.</para>
+
+
+        <table id="eip-id3747579" summary="Esta tabla tiene tres filas y dos columnas. La primera columna contiene los pasos para comprobar un tipo de simetría, y la segunda columna muestra un ejemplo. La primera columna, la primera fila prueba la simetría con respecto a theta= pi/2. Prueba: Al sustituir (r, theta) por (-r, -theta) se obtiene el mismo resultado. Por consiguiente, el gráfico es simétrico respecto a la línea pi/2. El ejemplo es -r = 2seno(-theta). Por la identidad par-impar, -r = -2seno(theta). Después de multiplicar por -1, r=2seno(theta), por lo que pasa la prueba. La siguiente prueba es la simetría con respecto al eje polar. Prueba: Sustituyendo theta por -theta no se obtiene la misma ecuación. Por lo tanto, el gráfico no pasa la prueba y puede o no ser simétrico con respecto al eje polar. Ejemplo: r=2seno(-theta). Por la identidad par-impar, r=-2sin(theta). Tenemos entonces r=-2sin(theta) que no es igual a 2 sin(theta), por lo que falla. Por último, existe una simetría con respecto al polo. Prueba: Sustituir r por -r cambia la ecuación y no pasa la prueba. El gráfico puede ser o no simétrico con respecto al polo. Ejemplo: -r = 2seno(theta). r=-2seno(theta) que no es igual a 2seno(theta), por lo que falla la prueba."><tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry>1) Sustituir <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> produce el mismo resultado. Por lo tanto, el gráfico es simétrico con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>-</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>-</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Identidad par-impar</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique</m:mtext><m:mspace width="0.3em"/><m:mtext>por</m:mtext><m:mspace width="0.3em"/><m:mn>−1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aprobado</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry>2) La sustitución de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> no produce la misma ecuación. Por lo tanto, el gráfico no pasa la prueba y puede o no ser simétrico con respecto al eje polar.</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Identidad par-impar</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>≠</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Fallido</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry>3) La sustitución de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+<m:mo>–</m:mo><m:mi>r</m:mi>
+ </m:mrow>
+</m:math> cambia la ecuación y no pasa la prueba. El gráfico puede o no ser simétrico con respecto al polo.</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>-</m:mi><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>≠</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Fallido</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></solution>
+        <commentary id="fs-id1165135385041">
+          <title>Análisis </title>
+          <para id="fs-id1165137394094">Utilizando una calculadora gráfica podemos ver que la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es un círculo centrado en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con radio <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> y es efectivamente simétrica a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> También podemos ver que el gráfico no es simétrico con el eje polar ni el polo. Vea el <link target-id="Figure_08_04_003"/>.</para><figure id="Figure_08_04_003" class="small"><media id="fs-id1165137646895" alt="Gráfico del círculo dado en la cuadrícula de coordenadas polares. El centro está en (0,1), y tiene radio 1.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_003.jpg"/>
+            </media>
+          </figure></commentary>
+      </exercise></example><note id="fs-id1165137535453" class="precalculus try">
+        <label>Ejercicio</label>
+    <exercise id="fs-id1165137466492"><problem id="fs-id1165137466494"><para id="fs-id1165137805946">Pruebe la simetría de la ecuación: <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165135664060"><para id="fs-id1165135664061">La ecuación no supera la prueba de simetría con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y con respecto al polo. Pasa la prueba de simetría del eje polar.</para></solution></exercise>
+    </note>
+  </section>
+
+
+<section id="fs-id1165135353123">
+
+<title>Representar gráficamente ecuaciones polares mediante trazado de puntos</title>
+<para id="fs-id1165134164955">Para hacer un gráfico en el sistema de coordenadas rectangulares construimos una tabla de valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math>. Para hacer un gráfico en el sistema de coordenadas polares construimos una tabla de valores <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math>. Introducimos valores de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en una <term class="no-emphasis" id="term-00004">ecuación polar</term> y calculamos <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sin embargo, al usar las propiedades de simetría y calcular los valores clave de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> significa que se necesitarán menos cálculos.</para><section id="fs-id1165137503035">
+<title>Hallar ceros y máximos</title><para id="fs-id1165137684112">Para hallar los ceros de una ecuación polar, resolvemos los valores de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> que resultan en <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Recordemos que, para hallar los ceros de las funciones polinómicas, fijamos la ecuación igual a cero y luego resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Utilizamos el mismo proceso para las ecuaciones polares. Establezca <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y resolver para <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137784434">Para muchas de las formas que encontraremos, el valor máximo de una ecuación polar se calcula sustituyendo aquellos valores de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en la ecuación que da como resultado el valor máximo de las funciones trigonométricas. Considere que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> la distancia máxima entre la curva y el poste es de 5 unidades. El valor máximo de la función coseno es 1 cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que nuestra ecuación polar es <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y el valor <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> producirá el máximo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137676009">Del mismo modo, el valor máximo de la función de seno es 1 cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y si nuestra ecuación polar es <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el valor <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> producirá el máximo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Podemos hallar información adicional calculando los valores de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Estos puntos serían las intersecciones de los ejes polares, que pueden ser útiles para dibujar el gráfico e identificar la curva de una ecuación polar.</para><example id="Example_08_04_02"><exercise id="fs-id1165137589362">
+<problem id="fs-id1165137666535">
+<title>Hallar los ceros y los valores máximos de una ecuación polar</title>
+  <para id="fs-id1165135596435">Utilizando la ecuación del <link target-id="Example_08_04_01"/>, halle los ceros y el máximo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y, si es necesario, las intersecciones del eje polar de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137434964">
+<para id="fs-id1165137698012">Para hallar los ceros, establezca <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> igual a cero y resuelva para <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><equation id="fs-id1165137698262" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>donde </m:mtext><m:mi>n</m:mi><m:mtext> es un número entero</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135332805">Sustituya cualquiera de los valores <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en la ecuación. Utilizaremos <m:math>
+ <m:mrow>
+  <m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165137667088" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137871688">Los puntos <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>±</m:mo><m:mi>n</m:mi><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> son los ceros de la ecuación. Todos coinciden, por lo que solo se ve un punto en el gráfico. Este punto es también la única intersección del eje polar.</para>
+<para id="fs-id1165137601218">Para hallar el valor máximo de la ecuación, observe el valor máximo de la función trigonométrica <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que se produce cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> lo que da como resultado <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> Sustituya <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>θ.</m:mi>
+ </m:mrow>
+</m:math>
+</para><equation id="fs-id1165137927705" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165137541313">
+<title>Análisis </title>
+  <para id="fs-id1165137942483">El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> será el valor máximo del gráfico. Vamos a trazar algunos puntos más para verificar el gráfico de un círculo. Vea el <link target-id="Table_08_04_01"/> y el <link target-id="Figure_08_04_004"/>.</para>
+
+
+  <table id="Table_08_04_01" summary="La tabla tiene ocho filas y tres columnas. La primera columna se denomina theta, la segunda columna se denomina r=2seno(theta), y la tercera columna se denomina r. La tabla tiene triples ordenados de estos valores de columna: (0, r=2seno(0)=0, 0), (pi/6, r=2seno(pi/6)=1, 1), (pi/3, r=2seno(pi/3) = aproximadamente 1,73, 1,73), (pi/2, r=2seno(pi/2) = 2, 2), (2pi/3, r=2seno(2pi/3)=aproximadamente 1,73, 1,73), (5pi/6, r=2seno(5pi/6)=1, 1), y (pi, r=2seno(pi)=0).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <thead>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mi>θ</m:mi>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>r</m:mi>
+</m:math>
+</entry>
+        </row>
+</thead>
+<tbody>
+        <row>
+          <entry align="center">0</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1,73</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1,73</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1,73</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1,73</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>π</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+        </row>
+      </tbody>
+
+
+
+</tgroup>
+</table><figure id="Figure_08_04_004"><media id="fs-id1165137676064" alt="Gráfico del círculo en la cuadrícula de coordenadas polares. El centro está en (0,1), y tiene radio 1. Se marcan seis puntos a lo largo de la circunferencia: (0,0), (1, pi/6), (1,3, pi/3), (2, pi/2), (1,73, 2pi/3) y (1, 5pi/6).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_004.jpg"/>
+</media>
+</figure></commentary>
+  </exercise>
+</example><note id="fs-id1165135253121" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_04_01">
+<problem id="fs-id1165137727722"><para id="fs-id1165137727723">Sin convertir a coordenadas cartesianas, pruebe la simetría de la ecuación dada y halle los ceros y valores máximos de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>:</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135309771"><para id="fs-id1165135309772">Las pruebas revelarán la simetría alrededor del eje polar. El cero es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y el valor máximo es <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id1165137419746">
+<title>Investigar sobre círculos</title>
+<para id="fs-id1165135695159">Ahora hemos visto la ecuación de un círculo en el sistema de coordenadas polares. En los dos ejemplos anteriores se utilizó la misma ecuación para ilustrar las propiedades de la simetría y demostrar cómo hallar los ceros, los valores máximos y los puntos trazados que produjeron los gráficos. Sin embargo, el círculo es solo una de las muchas formas del conjunto de curvas polares.</para><para id="fs-id1165135250613">Existen cinco curvas polares clásicas<emphasis>: cardioides</emphasis>, <emphasis>caracoles de Pascal, lemniscatas, curvas de rosa polar (rhodonea)</emphasis> y <emphasis>espirales de Arquímedes</emphasis>. Trataremos brevemente las fórmulas polares del círculo antes de pasar a las curvas clásicas y sus variaciones.</para><note id="fs-id1165137939908">
+
+<title>Fórmulas para la ecuación de un círculo</title>
+  <para id="fs-id1165135450345">Algunas de las fórmulas que producen el gráfico de un círculo en coordenadas polares están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> es el diámetro de la circunferencia o la distancia desde el polo hasta el punto más alejado del círculo. El radio es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>a</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o la mitad del diámetro. Para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>, </m:mo>
+ </m:mrow>
+</m:math> el centro es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el centro es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>a</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>2</m:mn></m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La <link target-id="Figure_08_04_005"/> muestra los gráficos de estos cuatro círculos.</para><figure id="Figure_08_04_005"><media id="fs-id1165137473386" alt="Cuatro gráficos uno al lado del otro. Todos tienen valor absoluto de radio de a / 2. El primero es r = acos(theta), a>0. El centro está en (a/2,0). El segundo es r = acos(theta), a&lt;0. El centro está en (a/2,0). El tercero es r = asen(theta), a>0. El centro está en (a/2, pi). El cuarto es r = asen(theta), a&lt;0. El centro está en (a/2, pi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_005new.png"/>
+</media>
+</figure></note>
+
+<example id="Example_08_04_03"><exercise id="fs-id1165135342911">
+<problem id="fs-id1165137647726">
+<title>Dibujar el gráfico de una ecuación polar para un círculo</title>
+<para id="fs-id1165133260461">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137606189">
+<para id="fs-id1165137606192">En primer lugar, al comprobar la simetría de la ecuación, nos damos cuenta de que el gráfico es simétrico respecto al eje polar. Luego, hallamos los <term class="no-emphasis" id="term-00005">ceros</term> y el máximo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Primero, establezca <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y resolver para <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>. Por lo tanto, se produce un cero en <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mi>k</m:mi><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Un punto clave para trazar es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>​</m:mtext><m:mtext>​</m:mtext><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mspace width="0.3em"/><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137451253">Para hallar el valor máximo de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> observe que el valor máximo de la función coseno es 1 cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sustituya <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> en la ecuación:</para><equation id="fs-id1165133092641" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137407031">El valor máximo de la ecuación es 4. Un punto clave para trazar es <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165133362031">Dado que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es simétrica con respecto al eje polar, solo tenemos que calcular los valores <emphasis effect="italics">r</emphasis> para <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Los puntos del cuadrante superior se pueden reflejar en el cuadrante inferior. Haga una tabla de valores similar a la <link target-id="Table_08_04_02"/>. El gráfico se muestra en la <link target-id="Figure_08_04_006"/><emphasis>.</emphasis></para><table id="Table_08_04_02" summary="Esta tabla tiene dos filas y diez columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,4), (pi/6, 3,46), (pi/4, 2,83), (pi/3,2), (pi/2,0), (2pi/3,-2), (3pi/4,-2,83), (5pi/6, -3,46) y (pi,4).">
+<tgroup cols="10"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <colspec colnum="8" colname="c8"/>
+      <colspec colnum="9" colname="c9"/>
+      <colspec colnum="10" colname="c10"/>
+      <tbody>
+        <row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">0</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+        </row>
+
+        <row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">4</entry>
+          <entry align="center">3,46</entry>
+          <entry align="center">2,83</entry>
+          <entry align="center">2</entry>
+          <entry align="center">0</entry>
+          <entry align="center">−2</entry>
+          <entry align="center">-2,83</entry>
+          <entry align="center">-3,46</entry>
+          <entry align="center">-4</entry>
+        </row>
+      </tbody>
+
+
+
+
+</tgroup>
+</table><figure id="Figure_08_04_006" class="small"><media id="fs-id1165137548019" alt="Gráfico de 4 = 4cos(theta) en coordenadas polares. Los puntos (0, pi/2), (–2, 2pi/3), (4,0) y (2, pi/3) están marcados en la circunferencia.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_006.jpg"/>
+</media>
+</figure></solution>
+</exercise></example></section>
+<section id="fs-id1165137551063">
+<title>Investigar las cardioides</title>
+<para id="fs-id1165133324876">Aunque la traslación de coordenadas polares a coordenadas cartesianas puede parecer más sencilla en algunos casos, la representación gráfica de las curvas clásicas es en realidad menos complicada en el sistema polar. La siguiente curva se llama cardioide, ya que se parece a un corazón. Esta forma se incluye, a menudo, con la familia de curvas llamada caracoles de Pascal, pero aquí hablaremos de la cardioide por sí sola.</para>
+
+<note id="fs-id1165134389046">
+
+<title>Fórmulas para una cardioide</title>
+  <para id="fs-id1165134435565">Las fórmulas que producen los gráficos de una <term id="term-00006">cardioide</term> están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> El gráfico de la cardioide pasa por el polo, como podemos ver en la <link target-id="Figure_08_04_007"/>.</para><figure id="Figure_08_04_007"><media id="fs-id1165137452387" alt="Gráfico de cuatro cardioides. (A) es r = a + bcos(theta). Cardioide que se extiende hacia la derecha. (B) es r=a-bcos(theta). Cardioide que se extiende hacia la izquierda. (C) es r=a+bsen(theta). Cardioide que se extiende hacia arriba. (D) es r=a-bsen(theta). Cardioide que se extiende hacia abajo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_007new.png"/>
+</media>
+</figure></note>
+<note id="fs-id1165135259648" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135694587"><emphasis>Dada la ecuación polar de una cardioide, dibuje su gráfico.</emphasis></para>
+  <list id="fs-id1165135560637" list-type="enumerated" number-style="arabic"><item>Compruebe la ecuación de los tres tipos de simetría.</item>
+<item>Halle los ceros. Establezca <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+<item>Halle el valor máximo de la ecuación según el valor máximo de la expresión trigonométrica.</item>
+<item>Haga una tabla de valores para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Trace los puntos y dibuje el gráfico.</item>
+  </list></note>
+
+<example id="Example_08_04_04"><exercise id="fs-id1165137735668"><problem id="fs-id1165137735670">
+<title>Dibujar el gráfico de una cardioide </title>
+<para id="fs-id1165135691471">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134061986">
+<para id="fs-id1165134061988">Primero, al probar la simetría de la ecuación, hallamos que el gráfico de esta ecuación será simétrico alrededor del eje polar. Luego, hallamos los ceros y los máximos. Si establecemos que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> tenemos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El cero de la ecuación se encuentra en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El gráfico pasa por este punto.</para><para id="fs-id1165133262925">El valor máximo de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> se produce cuando <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es un máximo, lo que se da cuando <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> o cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Sustituya <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> en la ecuación y resuelva para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><equation id="fs-id1165135440214" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165132949871">El punto <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> es el valor máximo del gráfico.</para>
+  <para id="fs-id1165134272802">Comprobamos que la ecuación polar es simétrica con respecto al eje polar, pero como se extiende a los cuatro cuadrantes, necesitamos trazar los valores sobre el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La parte superior del gráfico se refleja entonces sobre el eje polar. A continuación, hacemos una tabla de valores, como en la <link target-id="Table_08_04_03"/>, y luego trazamos los puntos y dibujamos el gráfico. Vea el <link target-id="Figure_08_04_008"/>.</para><table id="Table_08_04_03" summary="Esta tabla tiene dos filas y seis columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,4), (pi/4, 3,41), (pi/2, 2), (2pi/3, 1), y (pi, 0).">
+    <title/>
+    <tgroup cols="6">
+      <colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <tbody>
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+        </row>
+
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">4</entry>
+          <entry align="center">3,41</entry>
+          <entry align="center">2</entry>
+          <entry align="center">1</entry>
+          <entry align="center">0</entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
+
+<figure id="Figure_08_04_008" class="small"><media id="fs-id1165135160116" alt="Gráfico de r = 2 + 2 cos(theta). Cardioide que se extiende hacia la derecha. Se muestran los puntos de la arista (0,pi), (4,0),(3,4, pi/4), (2,pi/2) y (1, 2pi/3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_008.jpg"/>
+</media>
+</figure></solution>
+</exercise></example></section>
+<section id="fs-id1165135403266"><title>Investigar sobre caracoles de Pascal</title><para id="fs-id1165134068904">La palabra <emphasis effect="italics">limaçon</emphasis> significa "caracol" en francés antiguo, nombre que describe la forma del gráfico. Como se ha mencionado anteriormente, el cardioide es un miembro de la familia de los caracoles de Pascal, y podemos ver las similitudes en los gráficos. Las demás imágenes de esta categoría consisten en un caracol de Pascal de un lazo y un caracol de Pascal de dos lazos (o de lazo interno). <emphasis>Los caracoles de Pascal de un lazo</emphasis>, a veces, se denominan <term id="term-00007">caracoles de Pascal con hoyuelos</term> cuando <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>&lt;</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> y <term id="term-00008">caracoles de Pascal convexos</term> cuando <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>≥</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para><note id="fs-id1165137451882">
+
+<title>Fórmulas para los caracoles de Pascal de un lazo</title>
+  <para id="fs-id1165134589440">Las fórmulas que producen el gráfico de un <term id="term-00009">caracol de Pascal de un lazo</term> con hoyuelos están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mtext>y 1&lt;</m:mtext><m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>&lt;</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> Los cuatro gráficos se muestran en la <link target-id="Figure_08_04_009"/>.</para><figure id="Figure_08_04_009"><media id="fs-id1165133299066" alt="Cuatro caracoles de Pascal con hoyuelos uno al lado del otro. (A) es r = a + bcos(theta). Extendiéndose hacia la derecha. (B) es r=a-bcos(theta). Extendiéndose hacia la izquierda. (C) es r=a+bsen(theta). Extendiéndose hacia arriba. (D) es r=a-bsen(theta). Extendiéndose hacia abajo. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_009new.png"/>
+</media>
+
+<caption>Caracoles de Pascal con hoyuelos</caption></figure></note>
+<note id="fs-id1165132935120" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165132923572"><emphasis>Dada una ecuación polar para un caracol de Pascal de un lazo, dibuje el gráfico.</emphasis></para>
+    <list id="fs-id1165134068951" list-type="enumerated" number-style="arabic"><item>Pruebe la simetría de la ecuación. Recuerde que el hecho de no superar la prueba de simetría no significa que la forma no presente simetría. A menudo, la simetría puede revelarse al trazar los puntos.</item>
+<item>Halle los ceros.</item>
+<item>Halle los valores máximos según la expresión trigonométrica.</item>
+<item>Haga una tabla.</item>
+<item>Trace los puntos y dibuje el gráfico.</item>
+    </list></note>
+
+
+<example id="Example_08_04_05"><exercise id="fs-id1165137593968"><problem id="fs-id1165137593971">
+<title>Dibujar el gráfico de un caracol de Pascal de un lazo</title>
+<para id="fs-id1165137589415">Represente gráficamente la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134532779">
+<para id="fs-id1165134532781">Primero, al probar la simetría de la ecuación, hallamos que no supera las tres pruebas de simetría, lo que significa que el gráfico puede o no presentar simetría, por lo que no podemos utilizar la simetría para ayudarnos a graficarla. Sin embargo, esta ecuación tiene un gráfico que muestra claramente la simetría con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero no supera las tres pruebas de simetría. Una calculadora gráfica ilustrará inmediatamente la cualidad de reflexión del gráfico.</para><para id="fs-id1165135188756">Luego, hallamos los ceros y el máximo, y trazamos los puntos de reflexión para verificar cualquier simetría. Si establecemos que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> da como resultado que <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es indefinido. ¿Qué significa esto? ¿Cómo podría <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> ser indefinido? El ángulo <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es indefinido para cualquier valor de <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>></m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> Por lo tanto, <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es indefinido porque no hay ningún valor de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> para los cuales <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>></m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> En consecuencia, el gráfico no pasa por el polo. Quizás el gráfico sí cruza el eje polar, pero no en el polo. Podemos investigar otras intersecciones al calcular <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para><equation id="fs-id1165135320395" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137810704">Por lo tanto, hay al menos una intersección del eje polar en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165137425196">Luego, como el valor máximo de la función seno es 1 cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> sustituiremos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> en la ecuación y resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Por lo tanto, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165135245845">Haga una tabla de las coordenadas similar a la <link target-id="Table_08_04_04"/></para>
+
+  <table id="Table_08_04_04" summary="Dos filas y catorce columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,4), (pi/6, 2,5), (pi/3, 1,4), (pi/2, 1), (2pi/3, 1,4), (5pi/6, 2,5), (pi,4), (7pi/6, 5,5), (4pi/3, 6,6), (3pi/2, 7), (5pi/3, 6,6), (11pi/6, 5,5), y (2pi, 4).">
+<tgroup cols="14"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <colspec colnum="8" colname="c8"/>
+      <colspec colnum="9" colname="c9"/>
+      <colspec colnum="10" colname="c10"/>
+      <colspec colnum="11" colname="c11"/>
+      <colspec colnum="12" colname="c12"/>
+      <colspec colnum="13" colname="c13"/>
+      <colspec colnum="14" colname="c14"/>
+      <tbody>
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">4</entry>
+          <entry align="center">2,5</entry>
+          <entry align="center">1,4</entry>
+          <entry align="center">1</entry>
+          <entry align="center">1,4</entry>
+          <entry align="center">2,5</entry>
+          <entry align="center">4</entry>
+          <entry align="center">5,5</entry>
+          <entry align="center">6,6</entry>
+          <entry align="center">7</entry>
+          <entry align="center">6,6</entry>
+          <entry align="center">5,5</entry>
+<entry align="center">4</entry>
+        </row>
+      </tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137640806">El gráfico se muestra en la <link target-id="Figure_08_04_010"/>.</para>
+
+<figure id="Figure_08_04_010" class="small"><media id="fs-id1165135695027" alt="Gráfico del caracol de Pascal r = 4 – 3 sen(theta). Extendiéndose hacia abajo. Se muestran los puntos de la arista: (1,pi/2), (4,0), (4,pi) y (7, 3pi/2). ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_010.jpg"/>
+</media>
+
+<caption>Caracol de Pascal de un lazo</caption></figure></solution>
+<commentary id="fs-id1165135179965">
+<title>Análisis </title>
+<para id="fs-id1165135658199">Este es un ejemplo de una curva para la que la elaboración de una tabla de valores es fundamental para producir un gráfico preciso. Las pruebas de simetría fallan; el cero es indefinido. Aunque puede ser evidente que una ecuación que incluya <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es probablemente simétrica con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> evaluar más puntos ayuda a verificar que el gráfico es correcto.</para></commentary>
+</exercise></example><note id="fs-id1165134081353" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_08_04_02"><problem id="fs-id1165137544431"><para id="fs-id1165137544432">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135159863"><media id="fs-id1165137736618" alt="Gráfico del caracol de Pascal r = 3 – 2 cos(theta). Extendiéndose hacia la izquierda.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_011.jpg"/>
+</media></solution>
+</exercise></note>
+<para id="fs-id1165137726507">Otro tipo de caracol, el <emphasis>caracol de Pascal de lazo interno</emphasis>, recibe su nombre por el lazo que se forma dentro de la forma general del caracol. Lo descubrió el artista alemán Albrecht <term class="no-emphasis" id="term-00010">Dürer</term>(1471 a 1528), quien reveló un método para dibujar el caracol de Pascal de lazo interno en su libro de 1525 <emphasis effect="italics">Underweysung der Messing</emphasis>. Un siglo más tarde, el padre del matemático Blaise <term class="no-emphasis" id="term-00011">Pascal</term>, Étienne Pascal (1588 a 1651), lo redescubrió.</para><note id="fs-id1165137482991"><title>Fórmulas para caracoles de Pascal de lazo interno</title>
+
+  <para id="fs-id1165134303394">Las fórmulas que generan los <term id="term-00012">caracoles de Pascal de lazo interno</term> están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El gráfico del caracol de Pascal de lazo interno pasa por el polo dos veces: una para el lazo externo y otra para el lazo interno. Vea los gráficos en la <link target-id="Figure_08_04_012"/>.</para><figure id="Figure_08_04_012"><media id="fs-id1165137637941" alt="Gráfico de cuatro caracoles de Pascal de lazo interno, uno al lado del otro. (A) es r = a + bcos(theta), a &lt; b. Se extiende hacia la derecha. (B) es a – bcos(theta), a &lt; b. Se extiende hacia la izquierda. (C) es r = a + bsen(theta), a &lt; b. Se extiende hacia arriba. (D) es r = a – bsen(theta), a &lt; b. Se extiende hacia abajo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_012new.png"/>
+</media>
+</figure></note>
+
+<example id="Example_08_04_06"><exercise id="fs-id1165132960768">
+<problem id="fs-id1165137582440">
+<title>Dibujar el gráfico de un caracol de Pascal de lazo interno</title>
+<para id="fs-id1165135179873">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mtext>cos</m:mtext><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135196653">
+<para id="fs-id1165137694172">Al probar la simetría, hallamos que el gráfico de la ecuación es simétrico alrededor del eje polar. Luego, hallar los ceros revela que cuando <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1,98.</m:mn>
+ </m:mrow>
+</m:math> El máximo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se halla cuando <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> o cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Por lo tanto, el máximo se encuentra en el punto (7, 0).
+</para><para id="fs-id1165135347244">Aunque hayamos calculado la simetría, el cero y el máximo, el trazado de más puntos ayudará a definir la forma, y entonces surgirá un patrón.</para>
+<para id="fs-id1165137583874">Vea el <link target-id="Table_08_04_05"/>.</para>
+
+  <table id="Table_08_04_05" summary="Dos filas y catorce columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,7), (pi/6, 6.3.), (pi/3,4.5), (pi/2, 2), (2pi/3, -.5), (5pi/6, -2,3), (pi,-3), (7pi/6, -2,3), (4pi/3,-0,5), (3pi/2, 2), (5pi/3, 4,5), (11pi/6, 6,3), y (2pi, 7).">
+<tgroup cols="14"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <colspec colnum="8" colname="c8"/>
+      <colspec colnum="9" colname="c9"/>
+      <colspec colnum="10" colname="c10"/>
+      <colspec colnum="11" colname="c11"/>
+      <colspec colnum="12" colname="c12"/>
+      <colspec colnum="13" colname="c13"/>
+      <colspec colnum="14" colname="c14"/>
+      <tbody>
+        <row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis></entry>
+          <entry align="center">7</entry>
+          <entry align="center">6,3</entry>
+          <entry align="center">4,5</entry>
+          <entry align="center">2</entry>
+          <entry align="center">-0,5</entry>
+          <entry align="center">−2,3</entry>
+          <entry align="center">−3</entry>
+          <entry align="center">−2,3</entry>
+          <entry align="center">-0,5</entry>
+          <entry align="center">2</entry>
+          <entry align="center">4,5</entry>
+          <entry align="center">6,3</entry>
+          <entry align="center">7</entry>
+        </row>
+      </tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137461537">Como era de esperar, los valores comienzan a repetirse después de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El gráfico se muestra en la <link target-id="Figure_08_04_013"/>.</para><figure id="Figure_08_04_013" class="small"><media id="fs-id1165135510850" alt="Gráfico del caracol de Pascal de lazo interno r = 2 + 5 cos(theta). Se extiende hacia la derecha. Los puntos de la arista trazados son (7,0), (4,5, pi/3), (2, pi/2) y (–3, pi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_013.jpg"/>
+</media>
+
+<caption>Caracol de Pascal de lazo interno</caption></figure></solution>
+</exercise></example></section><section id="fs-id1165135640493">
+<title>Investigar las lemniscatas</title>
+<para id="fs-id1165137460965">La lemniscata es una curva polar que se asemeja al símbolo del infinito <m:math>
+ <m:mrow>
+  <m:mi>∞</m:mi>
+ </m:mrow>
+</m:math> o un número 8. Centrada en el polo, una lemniscata es simétrica por definición.</para>
+<note id="fs-id1165137639236">
+
+<title>Formulas para lemniscata</title>
+<para id="fs-id1165135554319">Las fórmulas que generan el gráfico de una <term id="term-00013">lemniscata</term> están dadas por <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> La fórmula <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es simétrica con respecto al polo. La fórmula <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es simétrica con respecto al polo, la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y el eje polar. Vea los gráficos en la <link target-id="Figure_08_04_014"/>.</para><figure id="Figure_08_04_014"><media id="fs-id1165137806628" alt="Cuatro gráficos de lemniscatas uno al lado del otro. (A) es r^2 = a^2 * cos(2theta). Número ocho horizontal, en el eje x. (B) es r^2 = – a^2 * cos(2theta). Número ocho vertical, en el eje y. (C) es r^2 = a^2 * sen(2theta). Número ocho diagonal en la línea y = x. (D) es r^2 = –a^2 *sen(2theta). Número ocho diagonal en la línea y = –x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_014new.png"/>
+</media>
+</figure></note>
+<example id="Example_08_04_07"><exercise id="fs-id1165137413783"><problem id="fs-id1165134090129">
+<title>Dibujar el gráfico de una lemniscata</title>
+<para id="fs-id1165137563641">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137557899">
+<para id="fs-id1165137557901">La ecuación presenta simetría respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el eje polar y el polo.</para>
+
+<para id="fs-id1165133349297">Hallemos los ceros. Ya debería ser rutinario, pero abordaremos esta ecuación de forma un poco diferente haciendo la sustitución <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+  <equation id="fs-id1165137582168" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>u</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>u</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>u</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya </m:mtext><m:mn>2</m:mn><m:mi>θ</m:mi><m:mtext> de nuevo para </m:mtext><m:mi>u</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134077345">Por lo tanto, el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es un cero de la ecuación.</para>
+<para id="fs-id1165135678535">Ahora vamos a hallar el valor máximo. Dado que el máximo de <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el máximo de <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Por lo tanto,</para>
+  <equation id="fs-id1165133300674" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mn>4</m:mn>
+      </m:msqrt>
+      <m:mspace width="0.3em"/><m:mo>±</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137447903">Tenemos un máximo en (2, 0). Dado que este gráfico es simétrico con respecto al polo, la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y el eje polar, solo necesitamos trazar puntos en el primer cuadrante.</para><para id="fs-id1165135347413">Haga una tabla similar a la <link target-id="Table_08_04_06"/>.</para>
+
+<table id="Table_08_04_06" summary="Esta tabla tiene dos filas y seis columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,2), (pi/6, rad2), (pi/4,0), (pi/3, rad2), (pi/2,0).">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <colspec colnum="5" colname="c5"/>
+    <colspec colnum="6" colname="c6"/>
+    <tbody>
+      <row>
+        <entry align="center"><emphasis> <m:math>
+<m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">0</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+
+      <row>
+        <entry align="center"><emphasis> <m:math>
+<m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center"><m:math><m:mo>±</m:mo><m:mn>2 </m:mn></m:math></entry>
+          <entry align="center"> <m:math>
+ <m:mrow><m:mo>±</m:mo>
+  <m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+
+</m:mrow>
+</m:math>
+</entry>
+        <entry align="center">0</entry>
+      </row>
+    </tbody>
+
+</tgroup>
+</table>
+
+
+  <para id="fs-id1165137641110">Trace los puntos en el gráfico, como el que se muestra en la <link target-id="Figure_08_04_015"/>.</para>
+
+<figure id="Figure_08_04_015" class="small"><media id="fs-id1165137406811" alt="Gráfico de r^2 = 4 cos(2theta). Lemniscata horizontal, a lo largo del eje x. Los puntos de la arista trazados son (2,0), (rad2, pi/6), (rad2 7pi/6).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_015.jpg"/>
+</media>
+
+<caption>Lemniscata</caption></figure></solution>
+<commentary id="fs-id1165137457102">
+<title>Análisis</title>
+<para id="fs-id1165137664640">Al hacer una sustitución como <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es una práctica habitual en matemáticas porque puede simplificar los cálculos. Sin embargo, no debemos olvidar sustituir el término de sustitución por el término original al final y, luego, resolver la incógnita.</para><para id="fs-id1165137735218">Es posible que algunos de los puntos de este gráfico no aparezcan utilizando la función Trace de la calculadora gráfica TI-84, y que la tabla de la calculadora muestre un error para estos mismos puntos de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Esto se debe a que no hay raíces cuadradas reales para estos valores de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En otras palabras, los correspondientes valores <emphasis effect="italics">r</emphasis> de <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> son números complejos porque hay un número negativo bajo el radical.</para></commentary>
+</exercise></example></section>
+<section id="fs-id1165137473462">
+<title> Investigar sobre curvas rosa polar (rhodonea) </title>
+<para id="fs-id1165137648226">El siguiente tipo de ecuación polar produce una forma parecida a un pétalo llamada curva rosa polar. Aunque los gráficos parecen complejos, una simple ecuación polar genera el patrón.</para><note id="fs-id1165137824732"><title>Curva rosa polar</title>
+
+  <para id="fs-id1165137463177">Las fórmulas que generan el gráfico de una <term id="term-00014">curva rosa polar</term> están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es par, la curva tiene <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> pétalos. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es impar, la curva tiene <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> pétalos. Vea el <link target-id="Figure_08_04_016"/>.</para><figure id="Figure_08_04_016" class="medium"><media id="fs-id1165135319448" alt="Gráfico de dos curvas rosa polar, una al lado de la otra. (A) es r = acos(ntheta), donde n es par. Ocho pétalos que se extienden desde el origen, igualmente espaciados. (B) es r = asen(ntheta) donde n es impar. Tres pétalos que se extienden desde el origen, igualmente espaciados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_016new.png"/>
+</media>
+</figure></note><example id="Example_08_04_08"><exercise id="fs-id1165133365583"><problem id="fs-id1165137805103">
+<title>Dibujar el gráfico de una curva rosa polar (<emphasis effect="italics">n</emphasis> par)</title>
+<para id="fs-id1165135347424">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>4</m:mn><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137938700">
+<para id="fs-id1165137416574">Al comprobar la simetría, hallamos de nuevo que las pruebas de simetría no cuentan toda la historia. El gráfico no solo es simétrico con respecto al eje polar, sino también con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y al polo.</para>
+
+<para id="fs-id1165134493488">Ahora, hallaremos los ceros. Primero, haga la sustitución de <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+  <equation id="fs-id1165135193923" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>4</m:mn><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>4</m:mn><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>u</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mi>u</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>u</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135193230">El cero es <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está en la curva.</para><para id="fs-id1165135149302">Luego, hallamos el máximo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>r</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sabemos que el valor máximo de <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>u</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Por lo tanto,</para>
+  <equation id="fs-id1165134357378" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165134357381">El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está en la curva.</para>
+  <para id="fs-id1165134361371">El gráfico de la curva rosa polar tiene propiedades únicas, que se revelan en la <link target-id="Table_08_04_07"/>.</para>
+
+  <table id="Table_08_04_07" summary="Esta tabla tiene dos filas y ocho columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,2), (pi/8, 0), (pi/4, -2), (3pi/8, 0), (pi/2, 2), (5pi/8, 0), (3pi/4, -2).">
+<tgroup cols="8"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <colspec colnum="8" colname="c8"/>
+      <tbody>
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">0</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">2</entry>
+          <entry align="center">0</entry>
+          <entry align="center">−2</entry>
+          <entry align="center">0</entry>
+          <entry align="center">2</entry>
+          <entry align="center">0</entry>
+          <entry align="center">−2</entry>
+        </row>
+      </tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137663310">A medida que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> tiene sentido dividir los valores de la tabla entre <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> unidades. Surge un patrón definido. Mire el rango de valores <emphasis effect="italics">r</emphasis>: 2, 0, –2, 0, 2, 0, –2 y así sucesivamente. Esto representa el desarrollo de la curva un pétalo a la vez. A partir de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> cada pétalo se extiende una distancia de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y luego vuelve a cero <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> veces para un total de ocho pétalos. Vea el gráfico en la <link target-id="Figure_08_04_017"/>.</para><figure id="Figure_08_04_017" class="small"><media id="fs-id1165134347404" alt="Dibujo de la curva rosa polar r = 2 * cos(4 theta). Sale a la distancia de 2 por cada pétalo 2n veces (aquí 2 * 4 = 8 veces).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_017.jpg"/>
+</media>
+
+<caption>Curva rosa polar, <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> par</caption></figure></solution>
+<commentary id="fs-id1165137803486">
+<title>Análisis </title>
+  <para id="fs-id1165137473496">Cuando se dibujan estas curvas, lo mejor es trazar los puntos en orden, como en la <link target-id="Table_08_04_07"/>. Esto nos permite ver cómo el gráfico alcanza un máximo (la punta de un pétalo), hace una vuelta cruzando el polo, alcanza el máximo opuesto y vuelve a hacer una vuelta hacia el polo. La acción es continua hasta que se dibujan todos los pétalos. </para>
+</commentary>
+</exercise>
+</example><note id="fs-id1165137731924" class="precalculus try">
+<label>Ejercicio</label>
+    <exercise id="fs-id1165135160518">
+      <problem id="fs-id1165135160520"><para id="fs-id1165135187862">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137638079"><para id="fs-id1165137638080">El gráfico es una curva rosa polar, <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> par <newline/><media id="fs-id1165134243136" alt="Gráfico de curva rosa polar r = 4 sen(2 theta). Par – cuatro pétalos igualmente espaciados, cada uno de ellos de longitud 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_025.jpg"/>
+</media></para></solution>
+</exercise>
+</note>
+<example id="Example_08_04_09"><exercise id="fs-id1165134081145"><problem id="fs-id1165134081148">
+<title>Dibujar el gráfico de una curva rosa polar (<emphasis effect="italics">n</emphasis> impar)</title>
+<para id="fs-id1165135161484">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165131894550">
+<para id="fs-id1165131894552">El gráfico de la ecuación muestra simetría con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> A continuación, halle los ceros y el máximo. Queremos hacer la sustitución de <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+  <equation id="fs-id1165137531554" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>u</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>u</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137422287">El valor máximo se calcula en el ángulo donde <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es un máximo. Por lo tanto,</para><equation id="fs-id1165135389800" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>5</m:mn><m:mo>⋅</m:mo><m:mfrac>
+           <m:mi>π</m:mi>
+           <m:mn>2</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134093881">Por lo tanto, el valor máximo de la ecuación polar es 2. Esta es la longitud de cada pétalo. Como la curva de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> impar produce el mismo número de pétalos que <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> habrá cinco pétalos en el gráfico. Vea el <link target-id="Figure_08_04_019"/>.</para>
+<figure id="Figure_08_04_019" class="small"><media id="fs-id1165137758612" alt="Gráfico de la curva rosa polar r = 2 sen(5 theta). Cinco pétalos igualmente espaciados alrededor del origen. Se marca el punto (2, pi/2) de la arista.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_019.jpg"/>
+</media>
+
+<caption>Curva rosa polar, <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> impar</caption></figure>
+<para id="fs-id1165137715422">Cree una tabla de valores similar a la <link target-id="Table_08_04_08"/>.</para>
+
+  <table id="Table_08_04_08" summary="La tabla tiene dos filas y siete columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (0,0), (pi/6, 1), (pi/3, -1,73), (pi/2, 2), (2pi/3, -1,73), (5pi/6, 1), (pi, 0).">
+<tgroup cols="8"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <colspec colnum="8" colname="c8"/>
+
+      <tbody>
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">0</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+        </row>
+
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">0</entry>
+          <entry align="center">1</entry>
+          <entry align="center">-1,73</entry>
+          <entry align="center">2</entry>
+          <entry align="center">-1,73</entry>
+          <entry align="center">1</entry>
+          <entry align="center">0</entry>
+        </row>
+      </tbody>
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="fs-id1165135331737" class="precalculus try"><label>Ejercicio</label>
+<exercise id="fs-id1165135699105"><problem id="fs-id1165133144117"><para id="fs-id1165133144118">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">).</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135245746"><media id="fs-id1165137589073" alt="Gráfico de la curva rosa polar r = 3 cos(3 theta). Tres pétalos igualmente espaciados desde el origen. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_018.jpg"/>
+</media>
+
+<para id="eip-id1166350057194">Curva rosa polar, <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> impar</para></solution></exercise></note></section>
+<section id="fs-id1165135432637">
+<title>Investigar sobre la espiral de Arquímedes</title>
+<para id="fs-id1165135699069">La última ecuación polar que analizaremos es la espiral de Arquímedes, llamada así por su descubridor, el matemático griego Arquímedes (c. 287 a.C. a c. 212 a.C.), a quien se le atribuyen numerosos descubrimientos en los campos de la geometría y la mecánica.</para><note id="fs-id1165133097210"><title>Espiral de Arquímedes</title>
+
+  <para id="fs-id1165137843964">La fórmula que genera el gráfico de la <term id="term-00015">espiral de Arquímedes</term> está dada por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>≥</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> A medida que <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> aumenta, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> aumenta a una tasa constante en una trayectoria en espiral cada vez más amplia e interminable. Vea el <link target-id="Figure_08_04_020"/>.</para>
+
+<figure id="Figure_08_04_020" class="medium"><media id="fs-id1165137940602" alt="Dos gráficos de la espiral de Arquímedes, uno al lado del otro. (A) es r = theta, [0, 2pi]. (B) es r = theta, [0, 4pi]. Ambos comienzan en el origen y salen en espiral en sentido contrario a agujas del reloj. El segundo tiene dos espirales hacia fuera mientras que el primero tiene una.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_020new.png"/>
+</media>
+</figure></note><note id="fs-id1165137582354" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135377101"><emphasis>Dada una espiral de Arquímedes sobre <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> dibuje el gráfico.</emphasis></para><list id="fs-id1165137529762" list-type="enumerated" number-style="arabic"><item>Haga una tabla de valores para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> sobre el dominio dado.</item>
+<item>Trace los puntos y dibuje el gráfico.</item>
+</list></note>
+
+<example id="Example_08_04_10"><exercise id="fs-id1165137832483"><problem id="fs-id1165135250648">
+<title>Dibujar el gráfico de una espiral de Arquímedes</title>
+<para id="fs-id1165137685392">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137755308">
+<para id="fs-id1165133311070">Dado que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> es igual a <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el gráfico de la espiral de Arquímedes comienza en el polo en el punto (0, 0). Aunque el gráfico insinúa una simetría, no existe una simetría formal con respecto a la superación de las pruebas de simetría. Además, no hay un valor máximo, a menos que el dominio esté restringido. </para><para id="fs-id1165135530440">Cree una tabla como la <link target-id="Table_08_04_09"/>.</para>
+
+  <table id="Table_08_04_09" summary="La tabla tiene dos filas y siete columnas. La primera fila está marcada como theta y la segunda como r. La tabla tiene pares ordenados en cada uno de estos valores de columna: (pi/4, 0,785), (pi/2, 1,57), (pi, 3,14), (3pi/2, 4,71), (7pi/4, 5,5), (2pi, 6,28).">
+<tgroup cols="7"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <colspec colnum="4" colname="c4"/>
+      <colspec colnum="5" colname="c5"/>
+      <colspec colnum="6" colname="c6"/>
+      <colspec colnum="7" colname="c7"/>
+      <tbody>
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>θ</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+          <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</entry>
+        </row>
+
+        <row>
+          <entry align="center"><emphasis> <m:math>
+ <m:mi>r</m:mi>
+</m:math> </emphasis>
+</entry>
+          <entry align="center">0,785</entry>
+          <entry align="center">1,57</entry>
+          <entry align="center">3,14</entry>
+          <entry align="center">4,71</entry>
+          <entry align="center">5,50</entry>
+          <entry align="center">6,28</entry>
+        </row>
+      </tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165135437738">Observe que los valores <emphasis effect="italics">r</emphasis> son solo la forma decimal del ángulo medido en radianes. Podemos verlos en un gráfico en la <link target-id="Figure_08_04_021"/>.</para><figure id="Figure_08_04_021" class="small"><media id="fs-id1165135329752" alt="Gráfico de la espiral de Arquímedes r = theta sobre [0,2pi]. Comienza en el origen y hace una espiral en sentido contrario a las agujas del reloj. Se marcan los puntos (pi/4, pi/4), (pi/2,pi/2), (pi,pi), (5pi/4, 5pi/4), (7pi/4, pi/4) y (2pi, 2pi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_021F.jpg"/>
+</media>
+
+<caption>espiral de Arquímedes</caption></figure></solution>
+<commentary id="fs-id1165134187240">
+<title>Análisis </title>
+<para id="fs-id1165133321932">El dominio de esta curva polar es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sin embargo, en general, el dominio de esta función es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Graficar la ecuación de la espiral de Arquímedes es bastante sencillo, aunque la imagen hace pensar que sería complejo.</para>
+</commentary>
+</exercise>
+</example><note id="fs-id1165135432988" class="precalculus try"><label>Ejercicio</label>
+<exercise id="fs-id1165134148491"><problem id="fs-id1165134148492"><para id="fs-id1165134148493">Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> en el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134338802">
+<media id="fs-id1165137827921" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_022.jpg"/>
+</media></solution></exercise></note></section>
+</section>
+  <section id="fs-id1165134301472">
+    <title>Resumen de curvas</title>
+    <para id="fs-id1165133192927">En esta sección hemos explorado una serie de curvas polares aparentemente complejas. La <link target-id="Figure_08_04_023"/> y la <link target-id="Figure_08_04_024"/> resumen los gráficos y ecuaciones de cada una de estas curvas.</para><figure id="Figure_08_04_023"><media id="fs-id1165135641462" alt="Cuatro gráficos uno al lado del otro: un resumen. (A) es un círculo: r = asen(theta) o r = acos(theta). (B) es una cardioide: r = a + o – bcos(theta), o r = a + o – b sen(theta). a > 0, b > 0, a/b = 1. (C) es un caracol de Pascal de un lazo. r = a + o – bcos(theta), o r = a + o – bsen(theta). a > 0, b > 0, 1 &lt; a/b &lt; 2. (D) es un caracol de Pascal de lazo interno. R = a + o – bcos(theta), o r = a + o – bsen(theta). A > 0, b > 0, a &lt; b.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_023n.jpg"/>
+      </media>
+    </figure><figure id="Figure_08_04_024"><media id="fs-id1165137419023" alt="Cuatro gráficos uno al lado del otro: un resumen. (A) es una lemniscata. R^2 = a^2 cos(2theta), o r^2 = a^2 sen(2theta). a no es igual a 0. (B) es una curva rosa polar (n par). R = acos(ntheta), o r = asen(ntheta). N es par, y tiene 2n pétalos. (C) es una curva rosa polar (n impar). R = acos(ntheta), o r = asen(theta). N es impar y tiene n pétalos. (D) es una espiral de Arquímedes. R = theta y theta > = 0.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_024n.jpg"/>
+      </media>
+    </figure><note id="fs-id1165135193264" class="precalculus media media-notitle">
+      <label>Media</label>
+      <para id="fs-id1165137666250">Acceda a estos recursos en línea para obtener más información y practicar con los gráficos de coordenadas polares.</para>
+<list id="fs-id1165137666254" list-type="bulleted"><item><link url="http://openstax.org/l/polargraph1">Graficar ecuaciones polares parte 1</link></item>
+      <item><link url="http://openstax.org/l/polargraph2">Graficar ecuaciones polares parte 2</link></item>
+      <item><link url="http://openstax.org/l/polaranim">Animación: Los gráficos de las ecuaciones polares</link></item>
+      <item><link url="http://openstax.org/l/polarTI84">Graficar ecuaciones polares en la TI-84</link></item>
+</list></note>
+    </section>
+    <section id="fs-id1165137544011" class="key-concepts">
+      <title>Conceptos clave</title>
+     <list id="fs-id1165137698304" list-type="bulleted"><item>Es más fácil graficar las ecuaciones polares si podemos comprobar la simetría de las ecuaciones con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el eje polar, o el polo.</item>
+       <item>Hay tres pruebas de simetría que indican si el gráfico de una ecuación polar presentará simetría. Si una ecuación no supera la prueba de simetría, el gráfico puede o no presentar simetría. Vea el <link target-id="Example_08_04_01"/>.</item>
+      <item>Las ecuaciones polares se pueden graficar haciendo una tabla de valores para <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+      <item>El valor máximo de una ecuación polar se calcula sustituyendo el valor <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> que lleva al valor máximo de la expresión trigonométrica.</item>
+       <item>Los ceros de una ecuación polar se encuentran al establecer <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y resolver <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+Vea el <link target-id="Example_08_04_02"/>.
+       <item>Algunas fórmulas que producen el gráfico de un círculo en coordenadas polares están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+Vea el <link target-id="Example_08_04_03"/>.
+       <item>Las fórmulas que producen los gráficos de una cardioide están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+Vea el <link target-id="Example_08_04_04"/>.
+       <item>Las fórmulas que producen los gráficos de un caracol de Pascal de un lazo están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>&lt;</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+Vea el <link target-id="Example_08_04_05"/>.
+       <item>Las fórmulas que producen los gráficos de un caracol de Pascal de lazo interno están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+Vea el <link target-id="Example_08_04_06"/>.
+       <item>Las fórmulas que producen los gráficos de una lemniscata están dadas por <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+Vea el <link target-id="Example_08_04_07"/>.
+       <item>Las fórmulas que producen los gráficos de las curvas rosa polar están dadas por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> si <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es par, hay <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> pétalos, y si <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es impar, hay <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> pétalos. Vea el <link target-id="Example_08_04_08"/> y el <link target-id="Example_08_04_09"/>.</item>
+       <item>La fórmula que produce el gráfico de una espiral de Arquímedes está dada por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>θ</m:mi><m:mo>≥</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Vea el <link target-id="Example_08_04_10"/>.</item>
+
+  <section id="fs-id1165137533434" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165137533437">
+      <title>Verbales</title>
+      <exercise id="fs-id1165134084339"><problem id="fs-id1165134084340"><para id="fs-id1165137806284">Describa los tres tipos de simetría en los gráficos polares y compárelos con la simetría del plano cartesiano.</para></problem>
+      <solution id="fs-id1165137806288"><para id="fs-id1165137806289">La simetría respecto al eje polar es similar a la simetría alrededor del eje <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>, la simetría con respecto al polo es similar a la simetría con respecto al origen y la simetría con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> es similar a la simetría alrededor del eje <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math>.</para></solution></exercise>
+      <exercise id="fs-id1165135169244"><problem id="fs-id1165137901244"><para id="fs-id1165137901245">¿Cuál de los tres tipos de simetrías de los gráficos polares corresponde a las simetrías con respecto al eje <emphasis effect="italics">x</emphasis>, al eje <emphasis effect="italics">y</emphasis> y al origen?</para></problem></exercise>
+      <exercise id="fs-id1165135195808"><problem id="fs-id1165135195809"><para id="fs-id1165134069335">¿Cuáles son los pasos que se deben seguir para hacer gráficos de ecuaciones polares?</para></problem>
+      <solution id="fs-id1165135195812"><para id="fs-id1165137473739">Comprobar la simetría, hallar ceros, intersecciones y máximos, hacer una tabla de valores. Decidir el tipo general de gráfico, cardioide, caracol de Pascal, lemniscata, etc., y luego trazar los puntos en <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>π</m:mi></m:mrow></m:math> y <m:math><m:mrow><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y dibujar el gráfico.</para></solution></exercise>
+      <exercise id="fs-id1165137938554"><problem id="fs-id1165137938556"><para id="fs-id1165137938557">Describa las formas de los gráficos de cardioides, caracol de Pascal y lemniscatas.</para></problem></exercise>
+      <exercise id="fs-id1165135194906"><problem id="fs-id1165135194907"><para id="fs-id1165135194908">¿Qué parte de la ecuación determina la forma del gráfico de una ecuación polar?</para></problem>
+      <solution id="fs-id1165137565862"><para id="fs-id1165137565864">La forma del gráfico polar está determinada por la inclusión o no de un seno, un coseno y unas constantes en la ecuación.</para></solution></exercise>
+
+    </section>
+   <section id="fs-id1165134043905">
+      <title>Gráficos</title>
+      <para id="fs-id1165134043910">En los siguientes ejercicios, compruebe la simetría de la ecuación.</para>
+      <exercise id="fs-id1165132912718"><problem id="fs-id1165132912719"><para id="fs-id1165132912720"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>3</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165132914233"><problem id="fs-id1165132914234"><para id="fs-id1165132914235"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165132957162"><para id="fs-id1165132957163">simétrica con respecto al eje polar</para></solution></exercise>
+      <exercise id="fs-id1165132957166"><problem id="fs-id1165132957167"><para id="fs-id1165132957168"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137766721"><problem id="fs-id1165137766722"><para id="fs-id1165137766723"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165131863074"><para id="fs-id1165131863075">simétrica con respecto al eje polar, simétrica con respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> simétrica con respecto al polo</para></solution></exercise>
+      <exercise id="fs-id1165135696990"><problem id="fs-id1165135696991"><para id="fs-id1165135696992"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165131974698"><problem id="fs-id1165131974699"><para id="fs-id1165131974700"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165135185163"><para id="fs-id1165135185164">sin simetría</para></solution></exercise>
+      <exercise id="fs-id1165135185167"><problem id="fs-id1165135664848"><para id="fs-id1165135664849"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137838844"><problem id="fs-id1165137838845"><para id="fs-id1165135169260"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mi>θ</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165135531630"><para id="fs-id1165135531631">sin simetría</para></solution></exercise>
+      <exercise id="fs-id1165135531634"><problem id="fs-id1165135531635"><para id="fs-id1165135531636"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msqrt>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>θ</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165135569809"><problem id="fs-id1165135569810"><para id="fs-id1165135569811"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165135370170"><para id="fs-id1165135370172">simétrica con respecto al polo</para></solution></exercise>
+
+      <para id="fs-id1165134534212">En los siguientes ejercicios, grafique la ecuación polar. Identifique el nombre de la forma.</para>
+      <exercise id="fs-id1165134534215"><problem id="fs-id1165134534216"><para id="fs-id1165134534217"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165131892640"><problem id="fs-id1165131892641"><para id="fs-id1165131892642"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165137921554"><para id="fs-id1165137921555">círculo <newline/>
+    <media id="fs-id1165133064407" alt="Gráfico del círculo dado.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_202.jpg"/>
+        </media></para></solution></exercise><exercise id="fs-id1165137427204"><problem id="fs-id1165137427205"><para id="fs-id1165137427206"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137742395"><problem id="fs-id1165137742396"><para id="fs-id1165137742397"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165131797286"><para id="fs-id1165131797287">cardioide <newline/><media id="fs-id1165135702623" alt="Gráfico de un cardioide dado.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_204.jpg"/>
+        </media></para></solution></exercise>
+      <exercise id="fs-id1165135553508"><problem id="fs-id1165135553509"><para id="fs-id1165135553510"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165134257452"><problem id="fs-id1165134330341"><para id="fs-id1165134330342"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165135697823"><para id="fs-id1165135697824">cardioide <newline/>
+        <media id="fs-id1165135416517" alt="Gráfico de un cardioide dado.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_206.jpg"/>
+        </media></para></solution></exercise><exercise id="fs-id1165135421533"><problem id="fs-id1165135421534"><para id="fs-id1165135421535"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165134575414"><problem id="fs-id1165134575415"><para id="fs-id1165134575416"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165137644805"><para id="fs-id1165137644806">caracol de Pascal de un lazo/con hoyuelos</para>
+     <media id="fs-id1165132935064" alt="Gráfico de caracol de Pascal de un lazo/con hoyuelos dado ">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_208.jpg"/>
+        </media></solution></exercise><exercise id="fs-id1165135698489"><problem id="fs-id1165135698490"><para id="fs-id1165135698491"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137938373"><problem id="fs-id1165137938374"><para id="fs-id1165132961380"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165134272124"><para id="fs-id1165135581136">caracol de Pascal de un lazo/con hoyuelos <newline/><media id="fs-id1165135581142" alt="Gráfico de caracol de Pascal de un lazo/con hoyuelos dado ">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_210.jpg"/>
+        </media></para></solution></exercise>
+      <exercise id="fs-id1165135686595"><problem id="fs-id1165135365828"><para id="fs-id1165135365829"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137431655"><problem id="fs-id1165137431656"><para id="fs-id1165137431658"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+
+      <solution id="fs-id1165134196056"><para id="fs-id1165134196057">caracol de Pascal de lazo interno/dos lazos</para>
+<media id="fs-id1165134196063" alt="Gráfico de caracol de Pascal de lazo interno/dos lazos dado ">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_212.jpg"/>
+        </media></solution>
+      </exercise><exercise id="fs-id1165135662512"><problem id="fs-id1165135662513"><para id="fs-id1165135662514"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165133030831"><problem id="fs-id1165133030832"><para id="fs-id1165133030833"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165137663724"><para id="fs-id1165137663725">caracol de Pascal de lazo interno/dos lazos</para>
+<media id="fs-id1165135440314" alt="Gráfico de caracol de Pascal de lazo interno/dos lazos dado ">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_214.jpg"/>
+        </media></solution></exercise><exercise id="fs-id1165137823082"><problem id="fs-id1165137823083"><para id="fs-id1165137823084"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137874858"><problem id="fs-id1165137874859"><para id="fs-id1165137874860"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165137855231"><para id="fs-id1165137855232">caracol de Pascal de lazo interno/dos lazos <newline/><media id="fs-id1165137911685" alt="Gráfico de caracol de Pascal de lazo interno/dos lazos dado ">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_216.jpg"/>
+        </media></para></solution></exercise>
+
+ <exercise id="fs-id1165135160274"><problem id="fs-id1165135160275"><para id="fs-id1165135160276"> <m:math>
+      <m:mrow>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo><m:mn>36</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2</m:mn><m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+      </m:mrow>
+    </m:math> grandes.
+    </para></problem></exercise>
+
+<exercise id="fs-id1165137407530"><problem id="fs-id1165137407532"><para id="fs-id1165137407533"> <m:math>
+      <m:mrow>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo><m:mn>10</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2</m:mn><m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165134279859"><para id="fs-id1165134279860">lemniscata</para><media id="fs-id1165137767568" alt="Gráfico de lemniscata dada (a lo largo del eje horizontal)">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_218.jpg"/>
+      </media></solution></exercise><exercise id="fs-id1165135175180"><problem id="fs-id1165135175181"><para id="fs-id1165135175182"> <m:math>
+      <m:mrow>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2</m:mn><m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+      </m:mrow>
+    </m:math> grandes.
+    </para></problem></exercise>
+    <exercise id="fs-id1165133350300"><problem id="fs-id1165135695068"><para id="fs-id1165135695070"> <m:math>
+      <m:mrow>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo><m:mn>10</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2</m:mn><m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165137514792"><para id="fs-id1165135436583">lemniscata</para> <media id="fs-id1165135436590" alt="Gráfico de lemniscata dada (a lo largo de y = x)">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_220.jpg"/>
+  </media></solution></exercise><exercise id="fs-id1165137724753"><problem id="fs-id1165137724754"><para id="fs-id1165137724755"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mtext>sen</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+    <exercise id="fs-id1165134081738"><problem id="fs-id1165134081739"><para id="fs-id1165134081740"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135628620"><para id="fs-id1165135628621">curva rosa polar</para>
+ <media id="CNX_Precalc_Figure_08_04_222.jpg" alt="Gráfico de curva rosa polar dada, cuatro pétalos.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_222.jpg"/>
+  </media></solution>
+</exercise><exercise id="fs-id1165137854736"><problem id="fs-id1165137854738"><para id="fs-id1165137854739"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mtext>sen</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+    <exercise id="fs-id1165134113862"><problem id="fs-id1165137696984"><para id="fs-id1165137696985"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>sen</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135639747"><para id="fs-id1165135639748">curva rosa polar</para>
+<media id="fs-id1165135437722" alt="Gráfico de curva rosa polar dada, ocho pétalos.">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_224.jpg"/>
+  </media></solution></exercise><exercise id="fs-id1165137788987"><problem id="fs-id1165137788988"><para id="fs-id1165137788989"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>sen</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+    <exercise id="fs-id1165134381410"><problem id="fs-id1165134381411"><para id="fs-id1165134381412"> <m:math>
+      <m:mrow>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>- −</m:mi><m:mi>θ</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135436311"><para id="fs-id1165135436312">espiral de Arquímedes</para>
+<media id="fs-id1165134113726" alt="Gráfico de la espiral de Arquímedes dada">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_226.jpg"/>
+  </media></solution></exercise><exercise id="fs-id1165135499361"><problem id="fs-id1165135499362"><para id="fs-id1165135499364"> <m:math>
+      <m:mrow>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem></exercise>
+    <exercise id="fs-id1165135538870"><problem id="fs-id1165135538871"><para id="fs-id1165135538872"> <m:math>
+      <m:mrow>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi>
+      </m:mrow>
+    </m:math>
+    </para></problem>
+<solution id="fs-id1165135664929"><para id="fs-id1165135664930">espiral de Arquímedes</para>
+<media id="fs-id1165137874855" alt="Gráfico de la espiral de Arquímedes dada">
+  <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_228.jpg"/>
+  </media></solution></exercise></section>
+    <section id="fs-id1165137437103">
+      <title>En tecnología</title>
+      <para id="fs-id1165137435104">En los siguientes ejercicios, utilice una calculadora gráfica para dibujar el gráfico de la ecuación polar.</para>
+      <exercise id="fs-id1165137454892"><problem id="fs-id1165137454893"><para id="fs-id1165137454894"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>θ</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165135208604"><problem id="fs-id1165134283615"><para id="fs-id1165134283616"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msqrt>
+     <m:mi>θ</m:mi>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+            <solution id="fs-id1165137434346"><media id="fs-id1165137767506" alt="Gráfico de la ecuación dada.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_231.jpg"/>
+        </media></solution></exercise><exercise id="fs-id1165137652746"><problem id="fs-id1165137652747"><para id="fs-id1165137678589"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> una cisoide</para></problem></exercise>
+      <exercise id="fs-id1165137660777"><problem id="fs-id1165137660778"><para id="fs-id1165137660779"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msqrt>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>θ</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>, una hipopoda</para></problem>
+            <solution id="fs-id1165137600616"><media id="fs-id1165137469547" alt="Gráfico de una hipopoda dada (dos círculos centrados en el eje x y que se encuentran en el origen)">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_233.jpg"/>
+        </media></solution></exercise><exercise id="fs-id1165137641550"><problem id="fs-id1165137597150"><para id="fs-id1165137597151"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+      <exercise id="fs-id1165135524762"><problem id="fs-id1165135524764"><para id="fs-id1165137453617"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+            <solution id="fs-id1165137888097"><media id="fs-id1165134211332" alt="Gráfico de la ecuación dada.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_235.jpg"/>
+        </media></solution></exercise><exercise id="fs-id1165133103922"><problem id="fs-id1165133103924"><para id="fs-id1165133103925"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>θ</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137534456"><problem id="fs-id1165137534457"><para id="fs-id1165137534458"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+            <solution id="fs-id1165137584082"><media id="fs-id1165134108637" alt="Gráfico de la ecuación dada. Similar a la espiral de Arquímedes original.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_237.jpg"/>
+        </media></solution></exercise><exercise id="fs-id1165135188802"><problem id="fs-id1165135188803"><para id="fs-id1165135188804"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+      <exercise id="fs-id1165137684732"><problem id="fs-id1165137684733"><para id="fs-id1165137684734"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+            <solution id="fs-id1165137583981"><media id="fs-id1165135417818" alt="Gráfico de la ecuación dada.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_04_239.jpg"/>
+        </media></solution></exercise><para id="fs-id1165137652872">En los siguientes ejercicios, utilice una herramienta gráfica para graficar cada par de ecuaciones polares sobre un dominio de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y, luego, explique las diferencias que aparecen en los gráficos.</para>
+      <exercise id="fs-id1165137823784"><problem id="fs-id1165137823785"><para id="fs-id1165137823786"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165134492356"><problem id="fs-id1165134492357"><para id="fs-id1165134492358"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165137547601"><para id="fs-id1165137547602">Ambos son espirales, pero no iguales.</para></solution></exercise>
+      <exercise id="fs-id1165137547605"><problem id="fs-id1165135210013"><para id="fs-id1165135210014"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165137911464"><problem id="fs-id1165137911465"><para id="fs-id1165137911466"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>θ</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>θ</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+      <solution id="fs-id1165137476109"><para id="fs-id1165137425079">Ambos gráficos son curvas con 2 lazos. La ecuación con un coeficiente de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> tiene dos lazos a la izquierda, la ecuación con un coeficiente de 2 tiene dos lazos al lado. Grafíquelos de 0 a <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> para obtener una mejor imagen.</para></solution></exercise>
+      <exercise id="fs-id1165134169412"><problem id="fs-id1165134169413"><para id="fs-id1165134169414"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mspace width="0.3em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165135640960"><problem id="fs-id1165135640961"><para id="fs-id1165137475308">En una herramienta gráfica, grafique <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>16</m:mn>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow><m:mo>[</m:mo>
+   <m:mn>0</m:mn></m:mrow></m:math>, <m:math><m:mn>4</m:mn><m:mi>π</m:mi>
+  <m:mo>]</m:mo></m:math>, <m:math><m:mo>[</m:mo>
+   <m:mn>0</m:mn></m:math>, <m:math><m:mn>8</m:mn><m:mi>π</m:mi>
+   <m:mo>]</m:mo></m:math>, <m:math><m:mo>[</m:mo>
+   <m:mn>0</m:mn></m:math>, <m:math><m:mn>12</m:mn><m:mi>π</m:mi>
+  <m:mo>]</m:mo>
+</m:math> y <m:math>
+ <m:mo>[</m:mo>
+   <m:mn>0</m:mn></m:math>, <m:math><m:mn>16</m:mn><m:mi>π</m:mi>
+<m:mo>]</m:mo><m:mo>.</m:mo>
+</m:math> Describa el efecto de aumentar la anchura del dominio.</para></problem>
+      <solution id="fs-id1165137662107"><para id="fs-id1165137662108">Cuando se aumenta la anchura del dominio, se ven más pétalos de la flor.</para></solution></exercise>
+      <exercise id="fs-id1165133050464"><problem id="fs-id1165133050465"><para id="fs-id1165133050466">En una herramienta gráfica, grafique y dibuje <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>5</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>θ</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> sobre <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+      <exercise id="fs-id1165134081077"><problem id="fs-id1165134081078"><para id="fs-id1165134081079">En una herramienta gráfica, grafique cada ecuación polar. Explique las similitudes y diferencias que observa en los gráficos.</para>
+      <equation id="fs-id1165135638575" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:msub>
+         <m:mi>r</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mtd>
+      </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+      <solution id="fs-id1165133004400"><para id="fs-id1165133004401">Los gráficos son curvas rosa polar de tres pétalos. Cuanto mayor sea el coeficiente, mayor será la distancia de la curva al polo.</para></solution></exercise>
+      <exercise id="fs-id1165134149930"><problem id="fs-id1165134149931"><para id="fs-id1165134149932">En una herramienta gráfica, grafique cada ecuación polar. Explique las similitudes y diferencias que observa en los gráficos.</para>
+        <equation id="fs-id1165137471873" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:msub>
+         <m:mi>r</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mtd>
+      </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem></exercise>
+      <exercise id="fs-id1165137583972"><problem id="fs-id1165137583974"><para id="fs-id1165137441983">En una herramienta gráfica, grafique cada ecuación polar. Explique las similitudes y diferencias que observa en los gráficos.</para>
+      <equation id="fs-id1165137441988" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:msub>
+         <m:mi>r</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>θ</m:mi>
+       </m:mtd>
+      </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></problem>
+      <solution id="fs-id1165134339992"><para id="fs-id1165134339993">Los gráficos son espirales. Cuanto más pequeño sea el coeficiente, más estrecha será la espiral.</para></solution></exercise>
+    </section>
+    <section id="fs-id1165137407208">
+      <title>Extensiones</title>
+    <para id="fs-id1165135176180">En los siguientes ejercicios, dibuje cada ecuación polar sobre el mismo conjunto de ejes polares y halle los puntos de intersección.</para>
+    <exercise id="fs-id1165135176184"><problem id="fs-id1165135176185"><para id="fs-id1165137939838"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mspace width="0.3em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165135453307"><problem id="fs-id1165134108499"><para id="fs-id1165134108500"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mspace width="0.3em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165133277564"><para id="fs-id1165133277565"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+    <exercise id="fs-id1165135452292"><problem id="fs-id1165135452293"><para id="fs-id1165135452294"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mspace width="0.3em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+    <exercise id="fs-id1165137435792"><problem id="fs-id1165137435793"><para id="fs-id1165135193958"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:mspace width="0.3em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137766884"><para id="fs-id1165137766885"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+    <exercise id="fs-id1165137832005"><problem id="fs-id1165137832006"><para id="fs-id1165137445323"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.3em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+    <exercise id="fs-id1165135456717"><problem id="fs-id1165135456718"><para id="fs-id1165135456719"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow></m:math>, <m:math><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+</m:math> grandes.
+</para></problem>
+    <solution id="fs-id1165137619920"><para id="fs-id1165137619922"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+    <exercise id="fs-id1165135209283"><problem id="fs-id1165135209284"><para id="fs-id1165135209285"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>,</m:mo><m:mspace width="0.3em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>θ</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+    <exercise id="fs-id1165137455061"><problem id="fs-id1165135186823"><para id="fs-id1165135186824"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mrow/>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mrow/>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+    <solution id="fs-id1165137725132"><para id="fs-id1165137725133"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mroot>
+       <m:mn>8</m:mn>
+       <m:mn>4</m:mn>
+      </m:mroot>
+
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mroot>
+       <m:mn>8</m:mn>
+       <m:mn>4</m:mn>
+      </m:mroot>
+
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y en <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math> dado que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> está elevada al cuadrado</para></solution></exercise>
+    <exercise id="fs-id1165137833999"><problem id="fs-id1165131958303"><para id="fs-id1165131958304"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow></m:math>, <m:math><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+</m:math>
+</para></problem></exercise>
+  </section>
+</section>
+  <glossary>
+  <definition id="fs-id1165137410447"><term>espiral de Arquímedes</term> <meaning id="fs-id1165137749714">una curva polar dada por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Cuando se multiplica por una constante, la ecuación aparece como <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Dado que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la curva continúa ampliándose en una trayectoria en espiral sobre el dominio.</meaning></definition>
+  <definition id="fs-id1165135378768"><term>cardioide</term><meaning id="fs-id1165135378771">miembro de la familia de las curvas de caracoles de Pascal, llamada así por su parecido con un corazón; su ecuación está dada por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+  <definition id="fs-id1165135344897"><term>caracol de Pascal convexo </term><meaning id="fs-id1165135344900">un tipo de caracol de Pascal de un lazo representado por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> de manera que <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>≥</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+  <definition id="fs-id1165135680172"><term>caracol de Pascal con hoyuelos </term><meaning id="fs-id1165135680175">un tipo de caracol de Pascal de un lazo representado por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> de manera que <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>&lt;</m:mo><m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>&lt;</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+  <definition id="fs-id1165134042074"><term>caracol de Pascal de lazo interno </term><meaning id="fs-id1165135191979">una curva polar similar a la cardioide, pero con un lazo interno; pasa dos veces por el polo; representada por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi>
+ </m:mrow>
+</m:math> </meaning></definition>
+  <definition id="fs-id1165137547628"><term>lemniscata </term><meaning id="fs-id1165137547632">una curva polar parecida al número 8 y dada por la ecuación <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</meaning></definition>
+  <definition id="fs-id1165137911243"><term>caracol de Pascal de un lazo </term><meaning id="fs-id1165137911246">una curva polar representada por <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>±</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> de manera que <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>a</m:mi>
+   <m:mi>b</m:mi>
+  </m:mfrac>
+  <m:mo>></m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> puede tener hoyuelos o ser convexa; no pasa por el polo</meaning></definition>
+  <definition id="fs-id1165135564114"><term>ecuación polar </term><meaning id="fs-id1165134331101">una ecuación que describe una curva en la cuadrícula polar.
+</meaning></definition>
+  <definition id="fs-id1165137626838"><term>curva rosa polar</term><meaning id="fs-id1165135306471">una ecuación polar parecida a una flor, dada por las ecuaciones <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>n</m:mi><m:mi>θ</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es par tiene <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> pétalos, y la curva es muy simétrica; cuando <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es impar tiene <m:math>
+ <m:mrow>
+<m:mi>n</m:mi>
+ </m:mrow>
+</m:math> pétalos. </meaning></definition>
+</glossary>
+</m:math></item></m:math></item></m:math></item></m:math></item></m:math></item></m:math></item></list></section></content></document>

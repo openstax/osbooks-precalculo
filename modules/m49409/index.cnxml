@@ -1,0 +1,4640 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Ecuaciones paramétricas</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49409</md:content-id>
+  <md:title>Ecuaciones paramétricas</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Parametrizar una curva.</item>
+<item>Eliminar el parámetro.</item>
+<item>Hallar una ecuación rectangular para una curva definida paramétricamente.</item>
+<item>Hallar ecuaciones paramétricas para curvas definidas por ecuaciones rectangulares.</item>
+</list></md:abstract>
+  <md:uuid>908896ca-db26-40f9-99de-79070485b4e7</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165137407242">Considere la trayectoria que sigue una luna al orbitar un planeta, que gira simultáneamente alrededor del sol, como se ve en la <link target-id="Figure_08_06_001"/>. En todo momento, la luna se encuentra en un punto determinado con respecto al planeta. Pero, ¿cómo escribimos y resolvemos la ecuación para la posición de la luna cuando la distancia del planeta, la velocidad de la órbita de la luna alrededor del planeta y la velocidad de rotación alrededor del Sol son todas incógnitas? Solo podemos resolver una variable a la vez.</para><figure id="Figure_08_06_001" class="small"><media id="fs-id1165137895251" alt="Ilustración de la órbita circular de un planeta alrededor del Sol.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_001.jpg"/>
+</media>
+</figure><para id="fs-id1165134167450">En esta sección consideraremos conjuntos de ecuaciones dadas por <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+ <m:mi>t</m:mi></m:mrow>
+</m:math> es la variable independiente del tiempo. Podemos utilizar estas ecuaciones paramétricas en un número de aplicaciones cuando buscamos no solo una posición concreta, sino también la dirección del movimiento. Al trazar los valores sucesivos de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> la orientación de la curva se hace evidente. Esta es una de las principales ventajas de utilizar <term class="no-emphasis" id="term-00001">ecuaciones paramétricas</term>: podemos trazar el movimiento de un objeto a lo largo de una trayectoria en función del tiempo. Comenzamos esta sección con una mirada a los componentes básicos de las ecuaciones paramétricas y lo que significa parametrizar una curva. Luego, aprenderemos a eliminar el parámetro, a trasladar las ecuaciones de una curva definida paramétricamente en ecuaciones rectangulares y a hallar las ecuaciones paramétricas de las curvas definidas por ecuaciones rectangulares.</para><section id="fs-id1165135367548">
+<title>Parametrizar una curva</title>
+<para id="fs-id1165137660656">Cuando un objeto se desplaza a lo largo de una curva —o <term class="no-emphasis" id="term-00002">trayectoria curvilínea</term>— en una dirección y un tiempo determinados, la posición del objeto en el plano viene dada por la coordenada <emphasis effect="italics">x</emphasis> y la coordenada <emphasis effect="italics">y</emphasis>. Sin embargo, ambos <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> varían con el tiempo y, por tanto, son funciones del tiempo. Por este motivo, añadimos otra variable, el <term id="term-00003">parámetro</term>, del que tanto <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> son funciones dependientes. En el ejemplo de principio de la sección, el parámetro es tiempo, <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> La intersección en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> posición de la luna en el tiempo, <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> se representa como la función <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> y la intersección <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> posición de la luna en el tiempo, <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> se representa como la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Juntos, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> se llaman ecuaciones paramétricas y generan un par ordenado <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Las ecuaciones paramétricas describen principalmente el movimiento y la dirección.</para><para id="fs-id1165135299186">Cuando parametrizamos una curva, estamos trasladando una única ecuación en dos variables, como por ejemplo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo> ,</m:mo></m:mrow>
+</m:math> en un par de ecuaciones equivalentes en tres variables, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Una de las razones por las que parametrizamos una curva es porque las ecuaciones paramétricas proporcionan más información: concretamente, la dirección del movimiento del objeto en el tiempo.</para><para id="fs-id1165137481161">Cuando graficamos ecuaciones paramétricas, podemos observar los comportamientos individuales de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Hay formas que no se pueden representar en la forma <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> lo que significa que no son funciones. Por ejemplo, consideremos el gráfico de un círculo, dado como <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Al resolver <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> da como resultado <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> o dos ecuaciones: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>y</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Si graficamos <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>y</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  </m:mrow>
+</m:math> juntos, el gráfico no pasará la prueba de la línea vertical, como se muestra en la <link target-id="Figure_08_06_002"/>. Por lo tanto, la ecuación del gráfico de un círculo no es una función.</para>
+
+<figure id="Figure_08_06_002" class="small"><media id="fs-id1165135385049" alt="Gráfico de un círculo en el sistema de coordenadas rectangulares: la prueba de la línea vertical muestra que el círculo r^2 = x^2 + y^2 no es una función. La línea vertical roja punteada interseca la función en dos lugares; solo debería intersecar en un lugar para ser una función.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_002.jpg"/>
+</media>
+</figure><para id="fs-id1165137675600">Sin embargo, si graficáramos cada ecuación por separado, cada una pasaría la prueba de la línea vertical y, por lo tanto, representaría una función. En algunos casos, el concepto de descomponer la ecuación de un círculo en dos funciones es similar al concepto de crear ecuaciones paramétricas, ya que utilizamos dos funciones para producir una no-función. Esto se aclarará a medida que avancemos.</para><note id="fs-id1165131990671"><title>Ecuaciones paramétricas </title>
+
+<para id="fs-id1165137473349">Supongamos que <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> es un número en un intervalo, <m:math>
+ <m:mrow>
+  <m:mi>I</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> El conjunto de pares ordenados, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> forma una curva plana basada en el parámetro <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Las ecuaciones <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> son las ecuaciones paramétricas.</para></note><example id="Example_08_06_01"><exercise id="fs-id1165137784440"><problem id="fs-id1165137640139">
+<title>Parametrizar una curva</title>
+<para id="fs-id1165137422846">Parametrizar la curva <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> supongamos que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Grafique ambas ecuaciones.</para>
+</problem>
+<solution id="fs-id1165137460496">
+<para id="fs-id1165135344083">Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> entonces para hallar <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> sustituimos la variable <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> con la expresión dada en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> En otras palabras, <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>- −</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> Haga una tabla de valores similar a la <link target-id="Table_08_06_001"/>, y trace el gráfico.</para><table id="Table_08_06_001" summary="La tabla tiene diez filas y tres columnas. La primera columna se denomina t, la segunda columna se denomina x(t), la tercera columna se denomina y(t). La tabla tiene triples ordenados de cada uno de estos valores de fila: (-4,-4, y(-4)=(-4)^2 - 1 = 15), (-3,-3, y(-3)=(-3)^2 -1 = 8), (-2,-2, y(-2) = (-2)^2 -1 = 3), (-1,-1, y(-1)=(-1)^2 -1 = 0), (0,0, y(0) = (0)^2 -1 = -1), (1,1, y(1) = (1)^2 -1 = 0), (2,2, y(2) = (2)^2 -1 = 3), (3,3, y(3) = (3)^2 - 1 = 8), (4,4, y(4) = (4)^2 - 1 = 15).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>15</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>0</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mn>0</m:mn>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>1</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mn>1</m:mn>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>2 </m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mn>2 </m:mn>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>3</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>3</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>3</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mn>3</m:mn>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>4</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>4</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>4</m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mn>4</m:mn>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>15</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165135315529">Observe los gráficos en la <link target-id="Figure_08_06_015"/>. Puede ser útil utilizar la función <emphasis>TRACE</emphasis> de una calculadora gráfica para ver cómo se generan los puntos cuando <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> aumenta.</para><figure id="Figure_08_06_015" class="medium"><media id="fs-id1165137585230" alt="Gráfico de una parábola en dos formas: una ecuación paramétrica y coordenadas rectangulares. Es la misma función, solo que con diferentes formas de escribirla.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_015.jpg"/>
+</media>
+
+<caption>(a) Paramétrica <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> (b) Rectangular <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</caption></figure></solution>
+<commentary id="fs-id1165134380377">
+<title>Análisis </title>
+<para id="fs-id1165137539827">Las flechas indican la dirección en la que se genera la curva. Observe que la curva es idéntica a la curva de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>- −</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para>
+</commentary>
+</exercise></example><note id="fs-id1165137404794" class="precalculus try"><label>Ejercicio</label>
+<exercise id="fs-id1165137668350"><problem id="fs-id1165137611328"><para id="fs-id1165135504960">Construya una tabla de valores y trace las ecuaciones paramétricas: <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>;</m:mo><m:mspace width="1em"/><m:mo>- −</m:mo><m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135485790">
+  <table id="fs-id1165137810323" class="unnumbered" summary="La tabla tiene cinco filas y tres columnas. La primera columna se denomina t, la segunda columna se denomina x(t), la tercera columna se denomina y(t). La tabla tiene triples ordenados de cada uno de estos valores de fila: (-1, -4, 2), (0,-3,4), (1,-2,6), (2,-1,8).">
+<label/><title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</entry>
+</row>
+
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>4</m:mn>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>6</m:mn>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>8</m:mn>
+</m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<media id="fs-id1165135632065" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_006.jpg"/>
+</media>
+
+</solution>
+</exercise></note><example id="Example_08_06_02"><exercise id="fs-id1165135528574">
+<problem id="fs-id1165137755555">
+<title>Hallar un par de ecuaciones paramétricas</title>
+<para id="fs-id1165137757860">Halle un par de ecuaciones paramétricas que modelen el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> utilizando el parámetro <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Trace algunos puntos y dibuje el gráfico.</para></problem>
+<solution id="fs-id1165137665205">
+<para id="fs-id1165137445624">Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> y sustituimos <m:math>
+ <m:mrow>
+
+   <m:mi>t</m:mi>
+  </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> en la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math>, entonces <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Nuestro par de ecuaciones paramétricas es </para><equation id="fs-id1165137416849" class="unnumbered"><label/> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>t</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+
+<para id="fs-id1165137735863">Para graficar las ecuaciones, primero construimos una tabla de valores como la que aparece en la <link target-id="Table_08_06_02"/>. Podemos elegir valores de aproximadamente <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> a partir de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math> Los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> serán los mismos que los de la columna <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> porque <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Calcule los valores de la columna <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+  <table id="Table_08_06_02" summary="La tabla tiene ocho filas y tres columnas. La primera columna se llama t, la segunda columna se llama x(t)=t, la tercera columna se llama y(t)=1-t^2. La tabla tiene triples ordenados de cada uno de estos valores de fila: (-3,-3, y(-3) = 1 - (-3)^2 = -8 ), (-2,-2, y(-2) = 1 - (-2)^2 = -3), (-1, -1, y(-1) = 1 - (-1)^2 = 0), (0,0, y(0) = 1 - 0 = 1), (1,1, y(1) = 1 - (1)^2 = 0), (2,2, y(2) = 1 - (2)^2 = -3), (3,3, y(3) = 1 - (3)^2 = -8).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>3</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mn>3</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137542145">El gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> es una parábola orientada hacia abajo, como se muestra en la <link target-id="Figure_08_06_007"/>. Hemos trazado la curva sobre el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>3</m:mn><m:mo stretchy="false">]</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> que se muestra como una línea sólida con flechas que indican la orientación de la curva según <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> La orientación se refiere a la trayectoria trazada a lo largo de la curva en términos de valores crecientes de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Como esta parábola es simétrica respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> se reflejan a través del eje <emphasis effect="italics">y</emphasis>.</para><figure id="Figure_08_06_007" class="small"><media id="fs-id1165135187072" alt="Gráfico de una parábola dada orientada hacia abajo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_007.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example><note id="fs-id1165135421668" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_06_01">
+<problem id="fs-id1165134237134"><para id="fs-id1165134237135">Parametrizar la curva dada por <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137843239"><para id="fs-id1165137843240"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+     <m:mi>t</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_08_06_03"><exercise id="fs-id1165135502946">
+<problem id="fs-id1165137473933">
+<title>Hallar ecuaciones paramétricas que modelen criterios dados</title>
+<para id="fs-id1165135560806">Un objeto se desplaza a una velocidad constante a lo largo de una trayectoria recta <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>–1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en el mismo plano en cuatro segundos. Las coordenadas están medidas en metros. Halle ecuaciones paramétricas para la posición del objeto.</para></problem>
+<solution id="fs-id1165137563061">
+<para id="fs-id1165137693678">Las ecuaciones paramétricas son expresiones lineales sencillas, pero tenemos que ver este problema paso a paso. El valor <emphasis effect="italics">x</emphasis> del objeto comienza en <m:math>
+ <m:mrow>
+  <m:mn>−5</m:mn></m:mrow>
+</m:math> metros y va hasta 3 metros. Esto significa que la distancia <emphasis effect="italics">x</emphasis> cambió 8 metros en 4 segundos, lo que supone una proporción de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>8 m</m:mtext></m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mtext> s</m:mtext></m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.3em"/><m:mtext>m</m:mtext><m:mo>/</m:mo><m:mtext>s</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Podemos escribir la coordenada <emphasis effect="italics">x</emphasis> como una función lineal con respecto al tiempo como <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>- −</m:mo><m:mn>5.</m:mn></m:mrow>
+</m:math> En la plantilla de función lineal <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>t</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><para id="fs-id1165135389890">Del mismo modo, el valor <emphasis effect="italics">y</emphasis> del objeto comienza en 3 y va hasta <m:math>
+ <m:mrow>
+  <m:mn>−1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> lo que supone un cambio en la distancia <emphasis effect="italics">y</emphasis> de –4 metros en 4 segundos, lo que supone una proporción de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>4</m:mn><m:mtext> m</m:mtext></m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mtext> s</m:mtext></m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>1</m:mn><m:mtext>m</m:mtext><m:mo>/</m:mo><m:mtext>s</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> También podemos escribir la coordenada <emphasis effect="italics">y</emphasis> como la función lineal <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math> En conjunto, estas son las ecuaciones paramétricas para la posición del objeto, donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> se expresan en metros y <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> representa el tiempo:</para><equation id="fs-id1165135251333" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>- −</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135209011">Si utilizamos estas ecuaciones, podemos construir una tabla de valores para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> (vea la <link target-id="Table_08_06_03"/>). En este ejemplo, limitamos los valores de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> a números no negativos. En general, cualquier valor de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> se puede utilizar.</para><table id="Table_08_06_03" summary="La tabla tiene seis filas y tres columnas. La primera columna se denomina t, la segunda columna se denomina x(t)=2t-5, la tercera columna se denomina y(t)=-t+3. La tabla tiene triples ordenados de cada uno de estos valores de fila: (0, x=2(0)-5 = -5, y=-(0) +3 = 3), (1, x=2(1)-5 = -3, y=-(1) + 3 = 2), (2, x=2(2) - 5 = -1, y=-(2) + 3 = 1), (3, x=2(3) - 5 = 1, y = -(3) + 3 =0), (4, x=2(4) -5 = 3, y=-(4) + 3 = -1).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>- −</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>2 </m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>3</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mn>4</m:mn>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137422635">A partir de esta tabla, podemos crear tres gráficos, como se muestra en la <link target-id="Figure_08_06_003"/>.</para>
+
+<figure id="Figure_08_06_003"><media id="fs-id1165137793974" alt="Tres gráficos uno al lado del otro. (A) tiene la posición horizontal en el tiempo; (B) tiene la posición vertical en el tiempo; y (C) tiene la posición del objeto en el plano en el tiempo t. Para obtener más información, consulte el pie de foto.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_003.jpg"/>
+</media>
+
+<caption>(a) Un gráfico de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> versus <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> que representa la posición horizontal en el tiempo. (b) Un gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> versus <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> que representa la posición vertical en el tiempo. (c) Un gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> versus <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> que representa la posición del objeto en el plano en el tiempo <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</caption></figure></solution>
+<commentary id="fs-id1165137834887">
+<title>Análisis </title>
+<para id="fs-id1165137446680">De nuevo, vemos que, en la <link target-id="Figure_08_06_003"/>(c), cuando el parámetro representa el tiempo, podemos indicar el movimiento del objeto a lo largo de la trayectoria con flechas.</para>
+</commentary>
+</exercise>
+</example></section>
+
+<section id="fs-id1165137812303">
+<title>Eliminar el parámetro</title>
+<para id="fs-id1165137404720">En muchos casos, podemos tener un par de ecuaciones paramétricas, pero vemos que es más sencillo dibujar una curva si la ecuación involucra solo dos variables, como por ejemplo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La eliminación del parámetro es un método que puede hacer más fácil hacer el gráfico de algunas curvas. Sin embargo, si se trata de la cartografía de la ecuación en función del tiempo, será necesario indicar también la orientación de la curva. Existen varios métodos para eliminar el parámetro <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> a partir de un conjunto de ecuaciones paramétricas; no todos los métodos funcionan para cada tipo de ecuación. Aquí revisaremos los métodos para los tipos de ecuaciones más comunes.</para><section id="fs-id1165137634344">
+<title>Eliminación del parámetro de ecuaciones polinómicas, exponenciales y logarítmicas</title><para id="fs-id1165137598578">Para ecuaciones polinómicas, exponenciales o logarítmicas expresadas como dos ecuaciones paramétricas, elegimos la ecuación que sea más fácil de manipular y resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Sustituimos la expresión resultante por <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> en la segunda ecuación. Esto da una ecuación en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><example id="Example_08_06_04"><exercise id="fs-id1165135188471">
+<problem id="fs-id1165131892611">
+<title>Eliminación del parámetro en polinomios</title>
+<para id="fs-id1165134171257">Dados <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> elimine el parámetro y escriba las ecuaciones paramétricas como una ecuación cartesiana.</para>
+
+</problem>
+<solution id="fs-id1165135250612">
+<para id="fs-id1165135250614">Comenzaremos con la ecuación para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> porque la ecuación lineal es más fácil de resolver para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165137659863" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137400857">A continuación, sustituya <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> </para><equation id="fs-id1165134177104" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>t</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya la expresión de </m:mtext><m:mi>t</m:mi><m:mtext> en </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165134384572">La forma cartesiana es <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5.</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+<commentary id="fs-id1165137863319">
+<title>Análisis </title>
+<para id="fs-id1165137846373">Esta es una ecuación para una parábola en la que, en términos rectangulares, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> depende de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Desde el vértice de la curva en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> el gráfico se desplaza hacia la derecha. Vea el <link target-id="Figure_08_06_008"/>. En esta sección consideramos conjuntos de ecuaciones dadas por las funciones <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> es la variable independiente del tiempo. Observe que tanto <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> son funciones del tiempo; así que, en general, <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> no es una función de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+
+
+<figure id="Figure_08_06_008"><media id="fs-id1165137410820" alt="Gráfico de una parábola dada de lado (que se extiende hacia la derecha).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_008.jpg"/>
+</media>
+</figure></commentary>
+</exercise>
+</example><note id="fs-id1165137573569" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_06_02">
+<problem id="fs-id1165134069178"><para id="fs-id1165134069179">Dadas las ecuaciones siguientes, elimine el parámetro y escriba como ecuación rectangular para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> en función de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165135661408" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:mn>6</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>- −</m:mo><m:mi>t</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165133001900"><para id="fs-id1165135260755"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mstyle scriptlevel="+1">
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2 </m:mn>
+     </m:mfrac>
+    </m:mstyle>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_08_06_05"><exercise id="fs-id1165135553475">
+<problem id="fs-id1165135553477">
+<title>Eliminar el parámetro en ecuaciones exponenciales</title>
+<para id="fs-id1165137742672">Elimine el parámetro y escriba como una ecuación cartesiana <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>t</m:mi></m:mrow>
+  </m:msup>
+  </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>e</m:mi>
+   <m:mi>t</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>t</m:mi><m:mo>></m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137419904">
+<para id="fs-id1165134401529">Aísle <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mi>t</m:mi>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+  <equation id="fs-id1165137445892" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>t</m:mi>
+      </m:msup>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135499458">Sustituya la expresión en <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+<equation id="fs-id1165135176328" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>t</m:mi>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mi>x</m:mi>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135240893">La forma cartesiana es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+</solution>
+<commentary id="fs-id1165137408682">
+<title>Análisis </title>
+<para id="fs-id1165137892461">El gráfico de la ecuación paramétrica se muestra en la <link target-id="Figure_08_06_009"/><emphasis>(a)</emphasis>. El dominio está restringido a <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>></m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math> La ecuación cartesiana, <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  </m:mrow>
+</m:math> se muestra en la <link target-id="Figure_08_06_009"/><emphasis>(b)</emphasis> y solo tiene una restricción en el dominio, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math>
+</para><figure id="Figure_08_06_009"><media id="fs-id1165134328939" alt="Gráfico de la ecuación paramétrica con dominio restringido a t>0 y un gráfico de esa ecuación paramétrica en coordenadas polares con dominio solo restringido a x no igual a 0. La versión en coordenadas cartesianas tiene una reflexión adicional de la función a través del origen en Q 3 (el original estaba solo en Q 1). ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_009_new.jpg"/>
+</media>
+</figure></commentary>
+</exercise>
+</example><example id="Example_08_06_06">
+<exercise id="fs-id1165135330577"><problem id="fs-id1165135347350">
+<title>Eliminar el parámetro en ecuaciones logarítmicas</title>
+<para id="fs-id1165135408279">Elimine el parámetro y escriba como una ecuación cartesiana <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mi>t</m:mi>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137482606">
+<para id="fs-id1165137693741">Resuelva la primera ecuación para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165132949297" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mi>t</m:mi>
+      </m:msqrt>
+      <m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:msqrt>
+       <m:mi>t</m:mi>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Eleve ambos lados al cuadrado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135400273">A continuación, sustituya la expresión por <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> en la ecuación <m:math>
+ <m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math>.</para><equation id="fs-id1165137629216" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:msup>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+     <m:mo>)</m:mo></m:mrow>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137930332">La forma cartesiana es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+<commentary id="fs-id1165135541906">
+<title>Análisis </title>
+<para id="fs-id1165134486691">Para estar seguro de que las ecuaciones paramétricas son equivalentes a la ecuación cartesiana, compruebe los dominios. Las ecuaciones paramétricas limitan el dominio en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mi>t</m:mi>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> restringimos el dominio en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> El dominio para la ecuación paramétrica <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> se restringe a <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> limitamos el dominio en <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> hasta <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para></commentary>
+</exercise></example>
+
+<note id="fs-id1165137407279" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_06_03"><problem id="fs-id1165137424937"><para id="fs-id1165137424938">Elimine el parámetro y escriba como una <term class="no-emphasis" id="term-00004">ecuación rectangular</term>.</para>
+<equation id="fs-id1165137535506" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mspace width="1em"/><m:mi>t</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137408218"><para id="fs-id1165137749294"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para></solution>
+</exercise></note>
+
+</section>
+<section id="fs-id1165135530475">
+<title>Eliminar el parámetro de ecuaciones trigonométricas</title>
+<para id="fs-id1165135347435">Eliminar el parámetro de ecuaciones trigonométricas es una sustitución sencilla. Podemos utilizar algunas de las identidades trigonométricas conocidas y el teorema de Pitágoras.</para>
+
+
+
+<para id="fs-id1165137849553">Primero, usamos las identidades:</para><equation id="fs-id1165135407250" class="unnumbered"><label/> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation><para id="fs-id1165135523374">Resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> tenemos</para><equation id="fs-id1165135194180" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mi>a</m:mi>
+    </m:mfrac>
+    <m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mfrac>
+     <m:mi>y</m:mi>
+     <m:mi>b</m:mi>
+    </m:mfrac>
+    <m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation><para id="fs-id1165135593591">Entonces, usamos el teorema de Pitágoras:</para>
+<equation id="fs-id1165133347599" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137501242">La sustitución da como resultado</para>
+<equation id="fs-id1165137749996" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi></m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mi>a</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</equation>
+
+
+<example id="Example_08_06_07"><exercise id="fs-id1165137736705">
+<problem id="fs-id1165137736707">
+<title>Eliminación del parámetro de un par de ecuaciones paramétricas trigonométricas</title>
+<para id="fs-id1165135694398">Elimine el parámetro del par de <term class="no-emphasis" id="term-00005">ecuaciones trigonométricas</term> dadas donde <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+</m:math> y dibujar el gráfico.</para><equation id="fs-id1165132923572" class="unnumbered"><label/> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165135198525">
+<para id="fs-id1165135198527">Resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> tenemos</para><equation id="fs-id1165137573279" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135176411">A continuación, utilice la identidad pitagórica y haga las sustituciones.</para>
+  <equation id="fs-id1165135708088" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mi>x</m:mi>
+           <m:mn>4</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mi>y</m:mi>
+           <m:mn>3</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134267966">El gráfico de la ecuación se muestra en la <link target-id="Figure_08_06_011"/>.</para>
+<figure id="Figure_08_06_011" class="small"><media id="fs-id1165137728240" alt="Gráfico de una elipse dada centrada en (0,0).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_011.jpg"/>
+</media>
+</figure></solution>
+   <commentary id="fs-id1165137425336">
+   <title>Análisis </title>
+   <para id="fs-id1165137668705">Al aplicar las ecuaciones generales de las <term class="no-emphasis" id="term-00006">secciones cónicas</term> (introducidas en la sección <link document="m49437">Geometría analítica)</link>, podemos identificar <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> como una elipse centrada en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Observe que cuando <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> las coordenadas son <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> y cuando <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> las coordenadas son <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Esto muestra la orientación de la curva con valores crecientes de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para></commentary>
+</exercise>
+</example><note id="fs-id1165135307870" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_06_04">
+<problem id="fs-id1165133088121"><para id="fs-id1165133088122">Elimine el parámetro del par de ecuaciones paramétricas dadas y escríbalo como una ecuación cartesiana: <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137456226"><para id="fs-id1165137456227"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+</section>
+
+<section id="fs-id1165137761679">
+<title>Hallar ecuaciones cartesianas de curvas definidas paramétricamente</title>
+<para id="fs-id1165137444428">Cuando nos dan un conjunto de ecuaciones paramétricas y necesitamos hallar una ecuación cartesiana equivalente, estamos esencialmente “eliminando el parámetro”. Sin embargo, hay varios métodos que podemos utilizar para reescribir un conjunto de ecuaciones paramétricas como una ecuación cartesiana. El método más sencillo es establecer una ecuación igual al parámetro, como por ejemplo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> En este caso, <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> puede ser cualquier expresión. Por ejemplo, considere el siguiente par de ecuaciones.</para><equation id="fs-id1165135407372" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>t</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+     <m:mi>t</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137570641">Reescribir este conjunto de ecuaciones paramétricas es cuestión de sustituir <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Así, la ecuación cartesiana es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>3,</m:mn>
+ </m:mrow>
+</m:math>
+</para><example id="Example_08_06_08">
+<exercise id="fs-id1165134077347">
+<problem id="fs-id1165137675888">
+<title>Hallar una ecuación cartesiana utilizando métodos alternativos</title>
+<para id="fs-id1165137445188">Utilice dos métodos diferentes para hallar la ecuación cartesiana equivalente al conjunto de ecuaciones paramétricas dadas.</para>
+  <equation id="fs-id1165135575262" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>2</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135390989">
+
+
+<para id="fs-id1165137871635"><emphasis effect="italics">Método 1</emphasis>. Primero, vamos a resolver la ecuación <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Entonces podemos sustituir el resultado en la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math>.</para><equation id="fs-id1165137732869" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137558751">Ahora, sustituya la expresión para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> en la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math>.</para><equation id="fs-id1165135207505" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137434265"><emphasis effect="italics">Método 2</emphasis>. Resolver la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> y sustituir esta expresión en la ecuación <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math>.</para><equation id="fs-id1165135404813" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137461585">Haga la sustitución y luego resuelva para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+  <equation id="fs-id1165137655884" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137566016" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_06_05">
+<problem id="fs-id1165134239722"><para id="fs-id1165134239724">Escriba las ecuaciones paramétricas dadas como una ecuación cartesiana: <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>6</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137437197"><para id="fs-id1165137437198"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137771822">
+<title>Hallar ecuaciones paramétricas para curvas definidas por ecuaciones rectangulares</title>
+<para id="fs-id1165137660044">Aunque acabamos de demostrar que solo hay una forma de interpretar un conjunto de ecuaciones paramétricas como una ecuación rectangular, hay varias formas de interpretar una ecuación rectangular como un conjunto de ecuaciones paramétricas. Cualquier estrategia que utilicemos para hallar las ecuaciones paramétricas es válida si produce una equivalencia. En otras palabras, si elegimos una expresión para representar <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y luego sustituirlo en la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math>, y produce el mismo gráfico sobre el mismo dominio que la ecuación rectangular, entonces el conjunto de ecuaciones paramétricas es válido. Si el dominio se limita en el conjunto de ecuaciones paramétricas y la función no permite los mismos valores para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como el dominio de la ecuación rectangular, entonces los gráficos serán diferentes.</para>
+
+<example id="Example_08_06_09">
+<exercise id="fs-id1165135424595">
+<problem id="fs-id1165135424597">
+<title>Hallar un conjunto de ecuaciones paramétricas para curvas definidas por ecuaciones rectangulares</title>
+<para id="fs-id1165134086132">Halle un conjunto de ecuaciones paramétricas equivalentes para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135671968">
+<para id="fs-id1165135671970">Una opción obvia sería dejar que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Entonces <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> Pero intentemos algo más interesante. ¿Y si dejamos que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>?</m:mo></m:mrow>
+</m:math> Entonces tenemos </para><equation id="fs-id1165137827180" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137871010">El conjunto de ecuaciones paramétricas es</para>
+<equation id="fs-id1165137443605" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134401525">Vea el <link target-id="Figure_08_06_012"/>.</para>
+
+<figure id="Figure_08_06_012" class="medium"><media id="fs-id1165135155412" alt="Gráfico de las versiones en coordenadas paramétricas y rectangulares de la misma parábola: ¡son iguales!">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_06_012.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137930360" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165137740782">Acceda a estos recursos en línea para obtener más información y practicar las ecuaciones paramétricas.</para>
+  <list id="fs-id1165137841610">
+<item><link url="http://openstax.org/l/introparametric">Introducción a las ecuaciones paramétricas</link></item>
+ <item><link url="http://openstax.org/l/convertpara">Convertir ecuaciones paramétricas a la forma rectangular</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165134548875" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137472078"><item>Parametrizar una curva implica trasladar una ecuación rectangular en dos variables, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> en dos ecuaciones en tres variables, <emphasis effect="italics">x</emphasis>, <emphasis effect="italics">y</emphasis> y <emphasis effect="italics">t</emphasis>. A menudo, se obtiene más información de un conjunto de ecuaciones paramétricas. Vea el <link target-id="Example_08_06_01"/>, el <link target-id="Example_08_06_02"/> y el <link target-id="Example_08_06_03"/>.</item>
+<item>A veces las ecuaciones son más sencillas de graficar cuando se escriben en forma rectangular. Al eliminar <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> el resultado es una ecuación en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math>.</item>
+<item>Para eliminar <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> se resuelve una de las ecuaciones para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y se sustituye la expresión en la segunda ecuación. Vea el <link target-id="Example_08_06_04"/>, el <link target-id="Example_08_06_05"/>, el <link target-id="Example_08_06_06"/> y el <link target-id="Example_08_06_07"/>.</item>
+<item>Hallar la ecuación rectangular de una curva definida paramétricamente es básicamente lo mismo que eliminar el parámetro. Resuelva para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> en una de las ecuaciones, y sustituya la expresión en la segunda ecuación. Vea el <link target-id="Example_08_06_08"/>.</item>
+<item>Hay un número infinito de maneras de elegir un conjunto de ecuaciones paramétricas para una curva definida como una ecuación rectangular.</item>
+<item>Halle una expresión para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> de manera que el dominio del conjunto de ecuaciones paramétricas siga siendo el mismo que la ecuación rectangular original. Vea el <link target-id="Example_08_06_09"/>.</item>
+</list></section>
+
+  <section id="fs-id1165134068973" class="section-exercises">
+<title>Ejercicios de la sección</title>
+  <section id="fs-id1165137726497">
+  <title>Verbales</title>
+
+<exercise id="fs-id1165137452582">
+<problem id="fs-id1165137452584">
+<para id="fs-id1165137430646">¿Qué es un sistema de ecuaciones paramétricas?</para>
+</problem>
+<solution id="fs-id1165135457745">
+<para id="fs-id1165135457747">Un par de funciones que depende de un factor externo. Las dos funciones están escritas en términos del mismo parámetro. Por ejemplo, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135515786">
+<problem id="fs-id1165135149809">
+<para id="fs-id1165135149811">Algunos ejemplos de un tercer parámetro son el tiempo, la longitud, la velocidad y la escala. Explique cuándo se utiliza el tiempo como parámetro.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137723142">
+<problem id="fs-id1165137723144">
+<para id="fs-id1165137526957">Explique cómo eliminar un parámetro dado un conjunto de ecuaciones paramétricas.</para>
+</problem>
+<solution id="fs-id1165137768026">
+<para id="fs-id1165137768028">Elija una ecuación para resolver <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> sustituya en la otra ecuación y simplifique. </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137596332">
+<problem id="fs-id1165137596334">
+<para id="fs-id1165133434649">¿Cuál es la ventaja de escribir un sistema de ecuaciones paramétricas como una ecuación cartesiana?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137655519">
+<problem id="fs-id1165137426830">
+<para id="fs-id1165137426832">¿Cuál es la ventaja de utilizar ecuaciones paramétricas?</para>
+</problem>
+<solution id="fs-id1165135250841">
+<para id="fs-id1165137461006">Algunas ecuaciones no se pueden escribir como funciones, como un círculo. Sin embargo, cuando se escriben como dos ecuaciones paramétricas, por separado, las ecuaciones son funciones. </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137482276">
+<problem id="fs-id1165137465476">
+<para id="fs-id1165137465478">¿Por qué hay muchos conjuntos de ecuaciones paramétricas para representar una función cartesiana?</para>
+</problem>
+</exercise>
+
+  </section>
+  <section id="fs-id1165137451350">
+  <title>Algebraicos</title>
+  <para id="fs-id1165137453740">En los siguientes ejercicios, elimine el parámetro <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi></m:mrow>
+</m:math> para reescribir la ecuación paramétrica como una ecuación cartesiana.</para>
+<exercise id="fs-id1165137585396">
+<problem id="fs-id1165137585398">
+<para id="fs-id1165137453513"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>- −</m:mo><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135389966">
+<para id="fs-id1165137706604"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134036798">
+<problem id="fs-id1165134036800">
+<para id="fs-id1165134041404"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>- −</m:mo><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137475359">
+<problem id="fs-id1165137639024">
+<para id="fs-id1165137639026"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msqrt>
+        <m:mi>t</m:mi>
+       </m:msqrt>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137463947">
+<para id="fs-id1165137463950"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137401054">
+<problem id="fs-id1165137401056">
+<para id="fs-id1165134050546"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135581966">
+<problem id="fs-id1165137401665">
+<para id="fs-id1165137401667"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+        <m:mi>e</m:mi>
+        <m:mi>t</m:mi>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135496291">
+<para id="fs-id1165135496294"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>-</m:mo><m:mi>y</m:mi></m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:msup>
+  </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>l</m:mi><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134090129">
+<problem id="fs-id1165134090131">
+<para id="fs-id1165137659602"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+         <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi></m:mrow>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+         <m:mo>-</m:mo><m:mi>t</m:mi></m:mrow>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135571890">
+<problem id="fs-id1165135571892">
+<para id="fs-id1165135541958"> <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135353727">
+<para id="fs-id1165135353729"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135185154">
+<problem id="fs-id1165135185157">
+<para id="fs-id1165137465246"> <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137767323">
+<problem id="fs-id1165137841698">
+<para id="fs-id1165137841700"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137803762">
+<para id="fs-id1165137803764"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137693705">
+<problem id="fs-id1165135543530">
+<para id="fs-id1165135543532"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137827977">
+<problem id="fs-id1165132944934">
+<para id="fs-id1165132944936"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+         <m:mn>2</m:mn><m:mi>t</m:mi></m:mrow>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>e</m:mi>
+        <m:mrow>
+         <m:mn>6</m:mn><m:mi>t</m:mi></m:mrow>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135414214">
+<para id="fs-id1165135414216"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137410877">
+<problem id="fs-id1165137410879">
+<para id="fs-id1165135543509"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>5</m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mrow>
+         <m:mn>10</m:mn></m:mrow>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137668139">
+<problem id="fs-id1165135667825">
+<para id="fs-id1165135667827"> <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>cos</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137762341">
+<para id="fs-id1165137762343"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137585726">
+<problem id="fs-id1165137585728">
+<para id="fs-id1165131895934"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135384981">
+<problem id="fs-id1165135384983">
+<para id="fs-id1165133210007"> <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+       <m:mrow>
+        <m:mtext>cos</m:mtext>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137602808">
+<para id="fs-id1165137602810"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135189886">
+<problem id="fs-id1165135189889">
+<para id="fs-id1165135189891"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:msup>
+      <m:mi>sen</m:mi>
+      <m:mn>2</m:mn>
+     </m:msup>
+     <m:mi>t</m:mi>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135193646">
+<problem id="fs-id1165135193648">
+<para id="fs-id1165135316171"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133213863">
+<para id="fs-id1165133454382"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137411313">
+<problem id="fs-id1165134037467">
+<para id="fs-id1165134037469"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134319713">
+<problem id="fs-id1165134319715">
+<para id="fs-id1165135341173"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>2 </m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137704906">
+<para id="fs-id1165137704908"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      </m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137548472">En los siguientes ejercicios, reescriba la ecuación paramétrica como una ecuación cartesiana y construya una tabla de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext> </m:mtext><m:mi>y</m:mi>
+ </m:mrow>
+</m:math>.</para><exercise id="fs-id1165137582353">
+<problem id="fs-id1165137582355">
+<para id="fs-id1165137582357"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134239737">
+<problem id="fs-id1165137735773">
+<para id="fs-id1165137735775"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mi>t</m:mi>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134495094">
+<para id="fs-id1165134495096"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>14</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165132947372">
+<problem id="fs-id1165132947374">
+<para id="fs-id1165134109660"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>t</m:mi>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134116716">
+<problem id="fs-id1165134116719">
+<para id="fs-id1165135173427"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+   <m:mtr>
+    <m:mtd>
+     <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+   </m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134187207">
+<para id="fs-id1165135528264"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135456667">En los siguientes ejercicios, parametrice (escriba ecuaciones paramétricas) para cada ecuación cartesiana y establezca <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi></m:mrow>
+</m:math> o establezca <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><exercise id="fs-id1165137595902">
+<problem id="fs-id1165135329750">
+<para id="fs-id1165135329752"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134148489">
+<problem id="fs-id1165134148491">
+<para id="fs-id1165134148493"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137925225">
+<para id="fs-id1165137925228"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165134373445">
+<problem id="fs-id1165134373447">
+<para id="fs-id1165135641460"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>y</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>y</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>y</m:mi></m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165135582390">
+<problem id="fs-id1165135582392">
+<para id="fs-id1165135582394"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>y</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mi>y</m:mi>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>y</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137575928">
+<para id="fs-id1165137575930"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+        <m:mi>t</m:mi>
+       </m:msqrt>
+       <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<para id="fs-id1165135188802">En los siguientes ejercicios, parametrice (escriba ecuaciones paramétricas) para cada ecuación cartesiana utilizando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>b</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Identifique la curva.</para><exercise id="fs-id1165137548806">
+<problem id="fs-id1165137548808">
+<para id="fs-id1165137548810"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134149924">
+<problem id="fs-id1165134149926">
+<para id="fs-id1165137854890"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mrow>
+    <m:mn>36</m:mn></m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137849389">
+<para id="fs-id1165137849392"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow><m:mo>;</m:mo></m:mrow>
+</m:math> Elipse </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135575985">
+<problem id="fs-id1165135575987">
+<para id="fs-id1165137833111"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>16</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135160120">
+<problem id="fs-id1165137444304">
+<para id="fs-id1165137444306"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137559264">
+<para id="fs-id1165137559266"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+        <m:mrow>
+         <m:mn>10</m:mn></m:mrow>
+       </m:msqrt>
+       <m:mi>cos</m:mi><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+        <m:mrow>
+         <m:mn>10</m:mn></m:mrow>
+       </m:msqrt>
+       <m:mi>sen</m:mi><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow><m:mo>;</m:mo></m:mrow>
+</m:math> Círculo </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137893366">
+<problem id="fs-id1165137893368">
+<para id="fs-id1165137893478">Parametrice la línea de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–2</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> para que la línea esté en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–2</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137651086">
+<problem id="fs-id1165137651088">
+<para id="fs-id1165137651090">Parametrice la línea de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>–2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> para que la línea esté en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>–2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137400302">
+<para id="fs-id1165137705382"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137547147"><problem id="fs-id1165137547149">
+<para id="fs-id1165137547151">Parametrice la línea de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> para que la línea esté en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise><exercise id="fs-id1165135452295">
+<problem id="fs-id1165137663434">
+<para id="fs-id1165137663436">Parametrice la línea de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> al <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>–2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> para que la línea esté en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>–2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134164960">
+<para id="fs-id1165134164962"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+  </section>
+  <section id="fs-id1165134211398">
+  <title>En tecnología</title>
+<para id="fs-id1165137408704">En los siguientes ejercicios, utilice la función de tabla de la calculadora gráfica para determinar si los gráficos se intersecan.</para>
+<exercise id="fs-id1165131937984">
+<problem id="fs-id1165131937986">
+<para id="fs-id1165131937988"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtext> y </m:mtext><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137470483">
+<problem id="fs-id1165137939491">
+<para id="fs-id1165137939493"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtext> y </m:mtext><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+       </m:msub>
+       <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137453625">
+<para id="fs-id1165137453627">sí, en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<para id="fs-id1165137400113">En los siguientes ejercicios, utilice una calculadora gráfica para completar la tabla de valores de cada conjunto de ecuaciones paramétricas.</para>
+<exercise id="fs-id1165137730286"><problem id="fs-id1165137730288">
+<para id="fs-id1165135181639"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+  <table id="fs-id1165137565962" summary="La tabla tiene cuatro filas y tres columnas. La primera columna está marcada como t, la segunda como x y la tercera como y. La primera columna contiene -1, 0, 1. El resto de los valores de las columnas x e y están en blanco." class="unnumbered"><label/>
+<title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>x</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>y</m:mi>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">-1</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">0</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise><exercise id="fs-id1165137667655"><problem id="fs-id1165137647616">
+<para id="fs-id1165137647618"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para>
+<table id="fs-id1165135407032" summary="La tabla tiene cuatro filas y tres columnas. La primera columna está marcada como t, la segunda como x y la tercera como y. La primera columna contiene 1, 2, 3. El resto de los valores de las columnas x e y están en blanco." class="unnumbered"><label/>
+<title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>x</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>y</m:mi>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">2 </entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-id1165137737862">
+<table id="fs-id1165137737864" summary=".." class="unnumbered"><label/>
+<title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>x</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>y</m:mi>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1</entry>
+<entry align="center">-3</entry>
+<entry align="center">1</entry>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="center">0</entry>
+<entry align="center">7</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="center">5</entry>
+<entry align="center">17</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise><exercise id="fs-id1165135640921"><problem id="fs-id1165135640922"><para id="fs-id1165135640923"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+       </m:msub>
+       <m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math>
+</para><table id="fs-id1165137921660" summary="La tabla tiene cinco filas y tres columnas. La primera columna está marcada como t, la segunda como x y la tercera como y. La primera columna contiene -1, 0, 1, 2. El resto de los valores de las columnas x e y están en blanco." class="unnumbered"><label/>
+<title/>
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="3" colname="c4"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>x</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mi>y</m:mi>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">-1</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">0</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+<row>
+<entry align="center">2</entry>
+<entry align="center"/>
+<entry align="center"/>
+</row>
+</tbody>
+</tgroup>
+</table></problem></exercise></section>
+  <section id="fs-id1165135193961">
+  <title>Extensiones</title>
+
+
+<exercise id="fs-id1165137588584">
+<problem id="fs-id1165137588586">
+<para id="fs-id1165134389802">Halle dos conjuntos diferentes de ecuaciones paramétricas para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137437388">
+<para id="fs-id1165137437390">las respuestas pueden variar <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow><m:mtext> y </m:mtext><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mrow>
+         <m:mrow><m:mo>(</m:mo>
+          <m:mrow>
+           <m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135189893">
+<problem id="fs-id1165135189896">
+<para id="fs-id1165135189898"> Halle dos conjuntos diferentes de ecuaciones paramétricas para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134042368">
+<problem id="fs-id1165137471410">
+<para id="fs-id1165137471412">Halle dos conjuntos diferentes de ecuaciones paramétricas para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137834340">
+<para id="fs-id1165137834342">las respuestas pueden variar: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow><m:mtext> y </m:mtext><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable></m:mrow> </m:mrow></m:mrow>
+</m:math> </para></solution>
+</exercise>
+</section>
+</section>
+
+</content>
+<glossary>
+<definition id="fs-id1165135186874">
+<term>parámetro</term>
+<meaning id="fs-id1165134357588">una variable, que suele representar el tiempo, sobre la que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> son dependientes</meaning>
+</definition>
+</glossary>
+</document>

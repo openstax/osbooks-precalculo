@@ -1,0 +1,4355 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Ceros de funciones polinómicas</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49349</md:content-id>
+  <md:title>Ceros de funciones polinómicas</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Evaluar un polinomio con el teorema del resto.</item>
+<item>Utilizar el teorema del factor para resolver una ecuación polinómica.</item>
+<item>Utilizar el teorema del cero racional para hallar los ceros racionales.</item>
+<item>Hallar los ceros de una función polinómica.</item>
+<item>Utilizar el teorema de la factorización lineal para hallar polinomios con ceros dados.</item>
+<item>Utilizar la regla de los signos de Descartes.</item>
+<item>Resolver aplicaciones del mundo real de las ecuaciones polinómicas.</item>
+</list></md:abstract>
+  <md:uuid>0491a281-4562-40ba-be36-309ed9bf554a</md:uuid>
+</metadata>
+
+<content>
+ <para id="fs-id1165137758829">Una nueva panadería ofrece pasteles decorados de varios pisos para exponerlos y cortarlos en celebraciones de quinceañeras y bodas, así como pasteles en bandeja para servir a la mayoría de los invitados. La panadería quiere que el volumen de un pastel pequeño de bandeja sea de 351 pulgadas cúbicas. El pastel tiene forma de sólido rectangular. Quieren que la longitud del pastel sea diez centímetros más larga que la anchura y que la altura del pastel sea un tercio de la anchura. ¿Cuáles deben ser las dimensiones del molde?</para><para id="eip-151">Este problema se resuelve al escribir una función cúbica y resolver una ecuación cúbica para el volumen del pastel. En esta sección, abordaremos una variedad de herramientas para escribir funciones polinómicas y resolver ecuaciones polinómicas.</para><section id="fs-id1165135533136">
+  <title>Evaluar un polinomio con el teorema del resto</title>
+  <para id="fs-id1165135471230">En la última sección, aprendimos a dividir polinomios. Ahora podemos utilizar la división de polinomios para evaluarlos con el <term id="term-00001">teorema del resto</term>. Si el polinomio se divide entre <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>–</m:mo><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow>
+  </m:math> el resto se puede hallar rápidamente si evaluamos la función polinómica en <m:math>
+    <m:mrow>
+     <m:mi>k</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> es decir, <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+      <m:mi>k</m:mi>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> Repasemos la demostración del teorema.</para><para id="fs-id1165134085965">Recordemos que el <term class="no-emphasis" id="term-00002">algoritmo de la división</term> establece que, dado un dividendo polinómico <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> y un divisor polinómico distinto de cero <m:math>
+    <m:mrow>
+     <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> donde el grado de <m:math>
+ <m:mrow>
+  <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> es menor o igual que el grado de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> existen polinomios únicos <m:math>
+    <m:mrow>
+     <m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> y <m:math>
+    <m:mrow>
+     <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> tal que</para><equation id="eip-753" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math>
+  </equation><para id="fs-id1165134094600">Si el divisor, <m:math>
+   <m:mrow>
+    <m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+  </m:math> ¿es x <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> esto asume la forma</para><equation id="eip-567" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi></m:mrow>
+  </m:math>
+  </equation><para id="fs-id1165137447771">Dado que el divisor <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi></m:mrow>
+  </m:math> es lineal, el resto será una constante, <m:math>
+    <m:mrow>
+     <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math> Si evaluamos esto para <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> tenemos</para><equation id="eip-791" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>⋅</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>=</m:mo><m:mi>r</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135572088">En otras palabras, <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> es el resto que se obtiene al dividir <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> entre <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math>
+  </para><note id="fs-id1165134042705">
+
+   <title>El teorema del resto</title>
+   <para id="fs-id1165137725230">Si un polinomio <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> se divide entre <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> entonces el restante es el valor <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math>
+   </para></note>
+
+  <note id="fs-id1165137823272" class="how-to-notitle">
+   <label>Cómo</label>
+   <para id="fs-id1165134130150"><emphasis>Dada una función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> evaluar <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>x</m:mi>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math> en <m:math>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>k</m:mi></m:mrow>
+    </m:math> con el teorema del resto.</emphasis></para><list id="fs-id1165137870981" list-type="enumerated" number-style="arabic">
+   <item>Utilice la división sintética para dividir el polinomio entre <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </item>
+   <item>El restante es el valor <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </item>
+  </list>
+  </note>
+
+  <example id="Example_03_06_01">
+   <exercise id="fs-id1165135199549"><problem id="fs-id1165137727226">
+     <title>Usar el teorema del resto para evaluar un polinomio</title>
+     <para id="fs-id1165137855032">Utilice el teorema del resto para evaluar <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>- −</m:mo><m:mn>15</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn></m:mrow>
+     </m:math> a las <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+      </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137786490">
+     <para id="fs-id1165137771250">Para hallar el restante con el teorema del resto, emplee la división sintética para dividir el polinomio entre <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>2.</m:mn></m:mrow>
+     </m:math>
+     </para>
+<equation id="eip-id1165137627127" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mrow/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mn>2 </m:mn><m:menclose notation="bottom left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mn>6</m:mn>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mo>- −</m:mo><m:mn>15</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mn>2 </m:mn>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>7</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>12</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>  </m:mtext><m:mn>22</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>14</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>32</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:menclose>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext>   </m:mtext><m:mn>6</m:mn>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>11</m:mn>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext>    </m:mtext><m:mn>7</m:mn>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext>16</m:mtext>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mn>25</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137932598">El restante es 25. Por lo tanto, <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>25.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </solution>
+    <commentary id="fs-id1165137627424">
+     <title>Análisis </title>
+     <para id="fs-id1165135397290">Podemos comprobar nuestra respuesta al evaluar <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+     </m:math>
+     </para>
+<equation id="eip-id1165133308313" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>4</m:mn>
+          </m:msup>
+          <m:mo>-</m:mo><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>3</m:mn>
+          </m:msup>
+          <m:mo>- −</m:mo><m:mn>15</m:mn><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>15</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mo>=</m:mo><m:mn>25</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></commentary>
+   </exercise></example>
+
+  <note id="fs-id1165137580304" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_01">
+    <problem id="fs-id1165137566913"><para id="fs-id1165137892503">Utilice el teorema del resto para evaluar <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>9</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+    </m:math> en <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>3,</m:mn></m:mrow>
+     </m:math>
+    </para></problem>
+    <solution id="fs-id1165137806629"><para id="fs-id1165135531579"> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>412</m:mn></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+ </section>
+ <section id="fs-id1165137894544">
+  <title>Usar el teorema del factor para resolver una ecuación polinómica</title>
+  <para id="fs-id1165137459796">El <emphasis>teorema del factor </emphasis>es otro teorema que nos permite analizar las ecuaciones polinómicas. Nos indica cómo se relacionan los ceros de un polinomio con los factores. Recordemos que el algoritmo de la división nos señala que</para>
+  <equation id="eip-10" class="unnumbered"><label/> <m:math display="block">
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+  </m:math>
+  </equation><para id="fs-id1165137463592">Si los valores de <m:math>
+   <m:mrow>
+    <m:mi>k</m:mi></m:mrow>
+  </m:math> es un cero, entonces el restante <m:math>
+    <m:mrow>
+     <m:mi>r</m:mi></m:mrow>
+   </m:math> ¿es <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math> y <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math> o <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math>
+  </para>
+  <para id="fs-id1165135176357">Observe que, escrito en esta forma, <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi></m:mrow>
+  </m:math> es un factor de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math> Podemos concluir que, si <m:math>
+    <m:mrow>
+     <m:mi>k</m:mi></m:mrow>
+   </m:math> es un cero de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> entonces <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi></m:mrow>
+   </m:math> es un factor de <m:math>
+    <m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math>
+  </para><para id="fs-id1165135684373">Del mismo modo, si <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi></m:mrow>
+  </m:math> es un factor de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> entonces el restante del algoritmo de la división <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>r</m:mi></m:mrow>
+   </m:math> es 0. Esto nos dice que <m:math>
+    <m:mrow>
+     <m:mi>k</m:mi></m:mrow>
+   </m:math> es un cero.</para>
+  <para id="fs-id1165132943504">Este par de implicaciones constituye el teorema del factor. Como veremos más adelante, un polinomio de grado <m:math>
+   <m:mrow>
+    <m:mi>n</m:mi></m:mrow>
+  </m:math> en el sistema de números complejos tendrá <m:math>
+    <m:mrow>
+     <m:mi>n</m:mi></m:mrow>
+   </m:math> ceros. Podemos utilizar el teorema del factor para factorizar completamente un polinomio en el producto de <m:math>
+    <m:mrow>
+     <m:mi>n</m:mi></m:mrow>
+   </m:math> factores. Una vez que el polinomio se ha factorizado por completo, podemos determinar fácilmente los ceros.</para>
+
+  <note id="fs-id1165135173601">
+
+   <title>El teorema del factor</title>
+   <para id="fs-id1165135575975">Según el <term id="term-00003">teorema del factor</term>, <m:math>
+    <m:mrow>
+     <m:mi>k</m:mi></m:mrow>
+   </m:math> es un cero de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> si y solo si <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> es un factor de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math>
+   </para>
+  </note>
+
+  <note id="fs-id1165137809910" class="how-to-notitle">
+   <label>Cómo</label>
+   <para id="fs-id1165133356017"><emphasis>Dado un factor y un polinomio de tercer grado, utilizar el teorema del factor para factorizar el polinomio </emphasis>
+   </para>
+  <list id="fs-id1165135383467" list-type="enumerated" number-style="arabic"><item>Utilice la división sintética para dividir el polinomio entre <m:math>
+    <m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math>
+   </item>
+   <item>Confirme que el restante sea 0.</item>
+   <item>Escriba el polinomio como el producto de <m:math>
+    <m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> y el cociente cuadrático.</item>
+   <item>Si es posible, factorice el cuadrático.</item>
+   <item>Escriba el polinomio como producto de factores.</item>
+  </list></note>
+  <example id="Example_03_06_02">
+   <exercise id="fs-id1165134273636"><problem id="fs-id1165134273638">
+     <title>Usar el teorema del factor para resolver una ecuación polinómica</title>
+     <para id="fs-id1165134198723">Demuestre que <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> es un factor de <m:math>
+       <m:mrow>
+       <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+        <m:mo>-</m:mo><m:mn>6</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30.</m:mn></m:mrow>
+      </m:math> Halle los factores restantes. Utilice los factores para determinar los ceros del <term class="no-emphasis" id="term-00004">polinomio</term>.</para></problem>
+    <solution id="fs-id1165133356013">
+     <para id="fs-id1165134109661">Podemos utilizar la división sintética para demostrar que <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> es un factor del polinomio.<newline count="1"/></para><equation id="eip-id1165134503086" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mo>- −</m:mo><m:mn>2 </m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable><m:menclose notation="bottom left">
+       <m:mrow>
+        <m:mtable columnalign="right">
+         <m:mtr columnalign="right">
+          <m:mtd columnalign="right">
+           <m:mn>1</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>- −</m:mo><m:mn>6</m:mn>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>1</m:mn>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mn>30</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="right">
+          <m:mtd columnalign="right">
+           <m:mrow/>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>2 </m:mn>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mn>16</m:mn>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>- −</m:mo><m:mn>30</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      </m:menclose>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="right">
+       <m:mtr columnalign="right">
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mtext>      1</m:mtext>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>8</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mn>15</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mtext>    </m:mtext><m:mn>0</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134261634">El restante es cero, por lo que <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> es un factor del polinomio. Podemos utilizar el algoritmo de la división para escribir el polinomio como el producto del divisor y el cociente:</para>
+<equation id="eip-id1165137848793" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math>
+</equation>
+    <para id="fs-id1165135440193">Podemos factorizar el factor cuadrático para escribir el polinomio como</para>
+<equation id="eip-id1165134554306" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math>
+</equation>
+     <para id="fs-id1165137605065">Por el teorema del factor, los ceros de <m:math>
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>6</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30</m:mn></m:mrow>
+     </m:math> son –2, 3 y 5.</para></solution>
+   </exercise></example>
+
+  <note id="fs-id1165137538735" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_02">
+    <problem id="fs-id1165137476731"><para id="fs-id1165134569514">Utilice el teorema del factor para hallar los ceros de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>16</m:mn></m:mrow>
+    </m:math> dado que <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> es un factor del polinomio.</para></problem>
+    <solution id="fs-id1165137470624"><para id="fs-id1165137470625">Los ceros son 2, –2 y –4.</para></solution>
+   </exercise>
+  </note>
+ </section>
+
+ <section id="fs-id1165134152972"><title>Usar el teorema del cero racional para hallar los ceros racionales</title><para id="fs-id1165137660817">Otro uso del teorema del resto es probar si un número racional es un cero para un polinomio dado. No obstante, primero necesitamos un conjunto de números racionales para probar. El <term id="term-00005">teorema del cero racional</term> nos permite reducir el número de posibles ceros racionales mediante la relación de los factores del término constante y los factores del coeficiente <term class="no-emphasis" id="term-00006">principal</term> del polinomio.</para>
+  <para id="fs-id1165135508309">Consideremos una función cuadrática con dos ceros, <m:math>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+     <m:mn>2 </m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+      <m:mn>3</m:mn>
+      <m:mn>4</m:mn>
+     </m:mfrac><m:mo>.</m:mo></m:mrow>
+   </m:math> Según el teorema del factor, estos ceros tienen factores asociados. Supongamos que cada factor es igual a 0, y luego construyamos la función cuadrática original sin su factor de estiramiento.</para>
+
+  <para id="eip-300"><media id="eip-id1165135315549" alt="Esta imagen muestra que x menos dos quintos es igual a 0 o que x menos tres cuartos es igual a 0. Al lado de esta matemática está la frase: &quot;Poner cada factor igual a 0&quot;. A continuación muestra que cinco x menos 2 es igual a 0 o 4 x menos 3 es igual a 0. Al lado de esta matemática se encuentra la frase &quot;Multiplicar ambos lados de la ecuación para eliminar las fracciones&quot;. A continuación demuestra que f de x es igual a (5 x menos 2) por (4 x menos 3). Al lado de esta matemática está la frase: &quot;Crear la función cuadrática al multiplicar los factores&quot;. A continuación muestra que f de x es igual a 20 x al cuadrado menos 23 x más 6. Al lado de esta matemática está la frase &quot;Expandir el polinomio&quot;. La última ecuación muestra que f de x es igual a (5 por 4) por x al cuadrado menos 23 x más (2 por 3)." display="block">
+<image mime-type="image/png" src="../../media/CNX_Precalc_Figure_03_03_022-8ddb.jpg"/>
+</media></para><para id="fs-id1165135485170">Observe que dos de los factores del término constante, 6, son los dos numeradores de las raíces racionales originales: 2 y 3. Del mismo modo, dos de los factores del coeficiente principal, 20, son los dos denominadores de las raíces racionales originales: 5 y 4.</para>
+  <para id="fs-id1165137761317">Podemos deducir que los numeradores de las raíces racionales serán siempre factores del término constante y los denominadores serán factores del coeficiente principal. Esta es la esencia del teorema del cero racional; es un medio para darnos un conjunto de posibles ceros racionales.</para>
+  <note id="fs-id1165137737069">
+
+   <title>El teorema del cero racional</title>
+   <para id="fs-id1165135530393">El <term id="term-00007">teorema del cero racional</term> afirma que, si el polinomio <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>n</m:mi>
+     </m:msub>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mi>n</m:mi>
+     </m:msup>
+     <m:mo>+</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:msub>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>...</m:mn><m:mo>+</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mn>1</m:mn>
+     </m:msub>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mn>0</m:mn>
+     </m:msub>
+     </m:mrow>
+   </m:math> tiene coeficientes enteros, entonces cada cero racional de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> tiene la forma <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:math> donde <m:math>
+     <m:mrow>
+      <m:mi>p</m:mi></m:mrow>
+    </m:math> es un factor del término constante <m:math>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>0</m:mn>
+      </m:msub>
+      </m:mrow>
+    </m:math> y <m:math>
+     <m:mrow>
+      <m:mi>q</m:mi></m:mrow>
+    </m:math> es un factor del coeficiente principal <m:math>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>.</m:mo></m:mrow>
+    </m:math>
+   </para><para id="fs-id1165137736282">Cuando el coeficiente principal es 1, los posibles ceros racionales son los factores del término constante.</para>
+  </note>
+
+  <note id="fs-id1165137736287" class="how-to-notitle"><label>Cómo</label>
+   <para id="fs-id1165137446561"><emphasis>Dada una función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> utilizar el teorema del cero racional para hallar los ceros racionales.</emphasis></para><list id="fs-id1165137662157" list-type="enumerated" number-style="arabic"><item>Determine todos los factores del término constante y del coeficiente principal.</item>
+    <item>Determine todos los valores posibles de <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>,</m:mo></m:mrow>
+    </m:math> donde <m:math>
+      <m:mrow>
+       <m:mi>p</m:mi></m:mrow>
+     </m:math> es un factor del término constante y <m:math>
+      <m:mrow>
+       <m:mi>q</m:mi></m:mrow>
+     </m:math> es un factor del coeficiente principal. Incluya los candidatos tanto positivos como los negativos.</item>
+    <item>Determine qué posibles ceros en realidad lo son al evaluar cada caso de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mstyle scriptlevel="+1">
+       <m:mfrac>
+        <m:mi>p</m:mi>
+        <m:mi>q</m:mi>
+       </m:mfrac>
+      </m:mstyle>
+      <m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+    </m:math>
+    </item></list>
+  </note><example id="Example_03_06_03">
+   <exercise id="fs-id1165135319520"><problem id="fs-id1165135319523">
+     <title>Enumerar todos los posibles ceros racionales</title>
+     <para id="fs-id1165135640968">Enumere todos los posibles ceros racionales de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>- −</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>- −</m:mo><m:mn>4.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137771360">
+     <para id="fs-id1165134179675">Los únicos ceros racionales posibles de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> son los cocientes de los factores del último término, –4, y los factores del coeficiente principal, 2. </para>
+
+     <para id="fs-id1165132972963">El término constante es –4; los factores de –4 son <m:math>
+      <m:mrow>
+       <m:mi>p</m:mi><m:mo>=</m:mo><m:mn>±1</m:mn><m:mo>,</m:mo><m:mn>±2</m:mn><m:mo>,</m:mo><m:mn>±4.</m:mn></m:mrow>
+     </m:math>
+     </para>
+     <para id="fs-id1165137571546">El coeficiente principal es 2; los factores de 2 son <m:math>
+      <m:mrow>
+       <m:mi>q</m:mi><m:mo>=</m:mo><m:mn>±1</m:mn><m:mo>,</m:mo><m:mn>±2.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    <para id="fs-id1165135557830">Si alguno de los cuatro ceros reales son ceros racionales, entonces serán de uno de los siguientes factores de –4 dividido entre uno de los factores de 2.</para>
+<equation id="eip-id1165134284372" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±1,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mtext>    </m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mo>±2,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mtext>    </m:mtext></m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mo>±</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135351678">Observe que <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>2</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> y <m:math>
+       <m:mrow>
+       <m:mfrac>
+         <m:mn>4</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+        <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> que ya se han enumerado. Así que podemos acortar nuestra lista.</para>
+<equation id="eip-id1165134284366" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mfrac>
+        <m:mi>p</m:mi>
+        <m:mi>q</m:mi>
+       </m:mfrac>
+       <m:mo>=</m:mo><m:mfrac>
+        <m:mrow>
+         <m:mtext>Factores de la última</m:mtext></m:mrow>
+        <m:mrow>
+         <m:mtext>Factores de la primera</m:mtext></m:mrow>
+       </m:mfrac>
+       <m:mo>=</m:mo><m:mn>±1</m:mn><m:mo>,</m:mo><m:mn>±2</m:mn><m:mo>,</m:mo><m:mn>±4</m:mn><m:mo>,</m:mo><m:mo>±1,</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2 </m:mn>
+       </m:mfrac>
+      </m:mrow>
+     </m:math> </equation></solution>
+   </exercise></example>
+  <example id="Example_03_06_04">
+   <exercise id="fs-id1165137611543"><problem id="fs-id1165137611546">
+     <title>Usar el teorema del cero racional para hallar los ceros racionales</title>
+     <para id="fs-id1165137459844">Utilice el teorema del cero racional para hallar los ceros racionales de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165135154379">
+     <para id="fs-id1165135154382">El teorema del cero racional nos dice que si <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mi>p</m:mi>
+        <m:mi>q</m:mi>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> es un cero de <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+      </m:math> entonces <m:math>
+       <m:mrow>
+       <m:mi>p</m:mi></m:mrow>
+      </m:math> es un factor de 1 y <m:math>
+       <m:mrow>
+       <m:mi>q</m:mi></m:mrow>
+      </m:math> es un factor de 2. </para>
+<equation id="eip-id1165132032466" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>factor de término constante</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>factor de coeficiente principal</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>factor de 1</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>factor de 2</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135209688">Los factores de 1 son <m:math>
+      <m:mrow>
+<m:mn>±1</m:mn></m:mrow>
+     </m:math> y los factores de 2 son <m:math>
+       <m:mrow>
+<m:mn>±1</m:mn></m:mrow>
+      </m:math> y <m:math>
+       <m:mrow>
+<m:mn>±2.</m:mn></m:mrow>
+      </m:math> Los posibles valores de <m:math>
+       <m:mrow>
+       <m:mfrac>
+         <m:mi>p</m:mi>
+         <m:mi>q</m:mi>
+        </m:mfrac>
+        </m:mrow>
+      </m:math> son <m:math>
+       <m:mrow>
+<m:mn>±1</m:mn></m:mrow>
+      </m:math> y <m:math>
+       <m:mrow>
+       <m:mo>±</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+        <m:mo>.</m:mo></m:mrow>
+      </m:math> Estos son los posibles ceros racionales de la función. Podemos determinar cuáles de los posibles ceros son realmente ceros al sustituir estos valores por <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi></m:mrow>
+      </m:math> en <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+      </m:math>
+     </para>
+<equation id="eip-id1165137901111" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mn>2 </m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mn>2 </m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mn>2 </m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mn>2 </m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2 </m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137731309">De esos, <m:math>
+      <m:mrow>
+<m:mn>−1,</m:mn><m:mo>- −</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2 </m:mn>
+       </m:mfrac>
+       <m:mo>,</m:mo><m:mtext> y </m:mtext><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> no son ceros de <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+      </m:math> 1 es el único cero racional de <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+      </m:math>
+     </para></solution>
+   </exercise></example>
+
+  <note id="fs-id1165137862894" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_03">
+    <problem id="fs-id1165134198688"><para id="fs-id1165134198689">Utilice el teorema del cero racional para hallar los ceros racionales de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id1165137724982"><para id="fs-id1165137724983">No hay ceros racionales.</para></solution>
+   </exercise>
+  </note>
+ </section><section id="fs-id1165137724990">
+  <title>Hallar los ceros de las funciones polinómicas</title>
+  <para id="fs-id1165135530405">El teorema del cero racional nos permite reducir la lista de posibles ceros racionales de una función polinómica. Una vez hecho esto, podemos utilizar la <term class="no-emphasis" id="term-00008">división sintética</term> repetidamente para determinar todos los <term id="term-00009">ceros</term> de una función polinómica.</para><note id="fs-id1165134155131" class="how-to-notitle">
+   <label>Cómo</label>
+   <para id="fs-id1165133364811"><emphasis>Dada una función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> utilizar la división sintética para hallar sus ceros.</emphasis></para><list id="fs-id1165135400178" list-type="enumerated" number-style="arabic">
+    <item>Utilice el teorema del cero racional para enumerar todos los posibles ceros racionales de la función.</item>
+   <item>Utilice la división sintética para evaluar un posible cero dado al dividir sintéticamente el candidato en el polinomio. Si el restante es 0, el candidato es un cero. Si el restante no es cero, descarte el candidato.</item>
+   <item>Repita el segundo paso con el cociente hallado con la división sintética. Si es posible, continúe hasta que el cociente sea un cuadrático.</item>
+   <item>Halle los ceros de la función cuadrática. Dos métodos posibles para resolver cuadráticas son la factorización y el uso de la fórmula cuadrática.</item>
+   </list>
+  </note>
+
+  <example id="Example_03_06_05">
+   <exercise id="fs-id1165137761977"><problem id="fs-id1165134198663">
+     <title>Hallar los ceros de una función polinómica con ceros reales repetidos</title>
+     <para id="fs-id1165134198668">Halle los ceros de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1.</m:mn></m:mrow>
+     </m:math> </para>
+
+    </problem>
+    <solution id="fs-id1165135547441">
+     <para id="fs-id1165135393366">El teorema del cero racional nos dice que si <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mi>p</m:mi>
+        <m:mi>q</m:mi>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> es un cero de <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+      </m:math> entonces <m:math>
+       <m:mrow>
+       <m:mi>p</m:mi></m:mrow>
+      </m:math> es un factor de –1 y <m:math>
+       <m:mrow>
+       <m:mi>q</m:mi></m:mrow>
+      </m:math> es un factor de 4. </para>
+
+<equation id="eip-id1165132148416" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>factor de término constante</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>factor de coeficiente principal</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>factor de –1</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>factor de 4</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+     <para id="fs-id1165135501059">Los factores de <m:math>
+      <m:mrow>
+       <m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:math> son <m:math>
+       <m:mrow>
+<m:mn>±1</m:mn></m:mrow>
+      </m:math> y los factores de <m:math>
+       <m:mrow>
+       <m:mn>4</m:mn></m:mrow>
+      </m:math> son <m:math>
+ <m:mrow>
+<m:mn>±1</m:mn><m:mo>,</m:mo><m:mn>±2</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+       <m:mrow>
+       <m:mn>±4.</m:mn></m:mrow>
+      </m:math> Los posibles valores de <m:math>
+       <m:mrow>
+       <m:mfrac>
+         <m:mi>p</m:mi>
+         <m:mi>q</m:mi>
+        </m:mfrac>
+        </m:mrow>
+      </m:math> son <m:math>
+ <m:mrow>
+<m:mn>±1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±1,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+       <m:mrow>
+       <m:mo>±</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        <m:mo>.</m:mo></m:mrow>
+      </m:math> Estos son los posibles ceros racionales de la función. Utilizaremos la división sintética para evaluar cada uno de los posibles ceros hasta encontrar uno que dé un resto de 0. Empecemos con 1.</para>
+<equation id="eip-id1165137397701" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mrow/>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mn>1</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow/>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable><m:menclose notation="bottom left">
+     <m:mrow>
+      <m:mtable columnalign="right">
+       <m:mtr columnalign="right">
+        <m:mtd columnalign="right">
+         <m:mn>4</m:mn>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mn>0</m:mn>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="right">
+        <m:mtd columnalign="right">
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mn>4</m:mn>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mn>4</m:mn>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mn>1</m:mn>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:menclose>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext>   4</m:mtext>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext> 4</m:mtext>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext>  1</m:mtext>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mtext>   </m:mtext><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137934395">Dividiendo entre <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> da un restante de 0, por lo que 1 es un cero de la función. El polinomio puede escribirse como</para>
+<equation id="eip-id1165135183905" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+     </m:math>
+</equation>
+     <para id="fs-id1165137605971">La cuadrática es un cuadrado perfecto. <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> puede escribirse como</para>
+<equation id="eip-id1165137397708" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup>
+        <m:mrow>
+         <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>.</m:mo></m:mrow>
+     </m:math>
+</equation>
+    <para id="fs-id1165135564194">Ya sabemos que el 1 es un cero. El otro cero tendrá una multiplicidad de 2 porque el factor es cuadrado. Para hallar el otro cero, podemos llevar el factor igual a 0.</para>
+<equation id="eip-id1165135329712" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135651485">Los ceros de la función son 1 y <m:math>
+      <m:mrow>
+       <m:mo>- −</m:mo><m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> con multiplicidad 2.</para></solution>
+    <commentary id="fs-id1165135519273">
+     <title>Análisis </title>
+     <para id="fs-id1165135519278">Mire el gráfico de la función <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> en la <link target-id="Figure_03_06_001"/>. Observe que, en <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,5</m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> el gráfico rebota en el eje <emphasis effect="italics">x</emphasis>, lo cual indica la multiplicidad par (2,4,6...) para el cero <m:math>
+       <m:mrow>
+       <m:mo>- −</m:mo><m:mn>0,5.</m:mn></m:mrow>
+      </m:math> En <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+      </m:math> el gráfico cruza el eje <emphasis effect="italics">x</emphasis>, lo cual indica la multiplicidad impar (1, 3, 5...) para el cero <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+      </m:math>
+     </para><figure id="Figure_03_06_001" class="small">
+      <media id="fs-id1165137932462" alt="Gráfico de un polinomio con su máximo local en (-0,5, 0) marcado como &quot;Rebote&quot; y su intersección x en (1, 0) marcada, &quot;Cruz&quot;.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_001.jpg"/>
+      </media>
+     </figure>
+    </commentary>
+   </exercise></example>
+ </section>
+
+ <section id="fs-id1165137461780">
+  <title>Usar el teorema fundamental del álgebra</title>
+  <para id="fs-id1165135547255">Ahora que podemos hallar los ceros racionales de una función polinómica, veremos un teorema que aborda el número de ceros complejos de una función polinómica. El <emphasis>teorema fundamental del álgebra </emphasis>nos instruye que toda función polinómica tiene al menos un cero complejo. Este teorema constituye la base para la resolución de ecuaciones polinómicas.</para>
+  <para id="fs-id1165137771429">Supongamos que <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi></m:mrow>
+  </m:math> es una función polinómica de grado cuatro, y <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,</m:mn></m:mrow>
+   </m:math> El teorema fundamental del álgebra establece que existe al menos una solución compleja, llámese <m:math>
+    <m:mrow>
+     <m:msub>
+      <m:mi>c</m:mi>
+      <m:mn>1</m:mn>
+     </m:msub>
+     <m:mo>.</m:mo></m:mrow>
+   </m:math> Por el teorema del factor, podemos escribir <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> como producto de <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mtext>1</m:mtext>
+     </m:msub>
+     </m:mrow>
+   </m:math> y un cociente polinómico. Dado que <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mtext>1</m:mtext>
+     </m:msub>
+     </m:mrow>
+   </m:math> es lineal, el cociente polinómico será de grado tres. Ahora aplicamos el teorema fundamental del álgebra al cociente del polinomio de tercer grado. Tendrá al menos un cero complejo, llámese <m:math>
+    <m:mrow>
+     <m:msub>
+      <m:mi>c</m:mi>
+      <m:mtext>2</m:mtext>
+     </m:msub>
+     <m:mo>.</m:mo></m:mrow>
+   </m:math> Así que podemos escribir el cociente de polinomios como un producto de <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mtext>2</m:mtext>
+     </m:msub>
+     </m:mrow>
+   </m:math> y un nuevo cociente polinómico de grado dos. Continúe aplicando el teorema fundamental del álgebra hasta hallar todos los ceros. Serán cuatro y cada uno de ellos arrojará un factor de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math>
+  </para><note id="fs-id1165135693782"><title>El <term id="term-00010">teorema fundamental del álgebra</term> establece que, si <emphasis effect="italics">f(x)</emphasis> es un polinomio de grado <emphasis effect="italics">n > 0</emphasis>, entonces <emphasis effect="italics">f(x)</emphasis> tendrá al menos un cero complejo.</title>
+
+   <para id="fs-id1165135409342">Podemos utilizar este teorema para argumentar que, si <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> es un polinomio de grado <m:math>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+    </m:math> y <m:math>
+     <m:mrow>
+      <m:mi>a</m:mi></m:mrow>
+    </m:math> es un número real distinto de cero, entonces <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> tiene exactamente <m:math>
+     <m:mrow>
+      <m:mi>n</m:mi></m:mrow>
+    </m:math> factores lineales</para><equation id="eip-750" class="unnumbered"><label/> <m:math display="block">
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mn>1</m:mn>
+     </m:msub>
+     <m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mn>2</m:mn>
+     </m:msub>
+     <m:mo stretchy="false">)</m:mo><m:mn>...</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mi>n</m:mi>
+     </m:msub>
+     <m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math>
+   </equation><para id="fs-id1165137889849">donde <m:math>
+    <m:mrow>
+     <m:msub>
+      <m:mi>c</m:mi>
+      <m:mn>1</m:mn>
+     </m:msub>
+     <m:mo>,</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mn>2</m:mn>
+     </m:msub>
+     <m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:msub>
+      <m:mi>c</m:mi>
+      <m:mi>n</m:mi>
+     </m:msub>
+     </m:mrow>
+   </m:math> son números complejos. Por lo tanto, <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> tiene <m:math>
+     <m:mrow>
+      <m:mi>n</m:mi></m:mrow>
+    </m:math> raíces si permitimos las multiplicidades.</para></note><note id="fs-id1165135481201" class="precalculus qa">
+   <label>PREGUNTAS Y RESPUESTAS</label>
+   <para id="fs-id1165135481208"><emphasis effect="bold">¿Todo polinomio tiene al menos un cero imaginario?</emphasis></para><para id="fs-id1165137883746"><emphasis effect="italics">No. Un número complejo no es necesariamente imaginario. Los números reales también son números complejos.</emphasis></para>
+  </note>
+
+  <example id="Example_03_06_06">
+   <exercise id="fs-id1165135658206"><problem id="fs-id1165135658208">
+     <title>Hallar los ceros de una función polinómica con ceros complejos</title>
+     <para id="fs-id1165135658213">Halle los ceros de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>9</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137430510">
+     <para id="fs-id1165137430512">El teorema del cero racional nos dice que si <m:math>
+      <m:mrow>
+       <m:mfrac>
+        <m:mi>p</m:mi>
+        <m:mi>q</m:mi>
+       </m:mfrac>
+       </m:mrow>
+     </m:math> es un cero de <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+      </m:math> entonces <m:math>
+       <m:mrow>
+       <m:mi>p</m:mi></m:mrow>
+      </m:math> es un factor de 3 y <m:math>
+       <m:mrow>
+       <m:mi>q</m:mi></m:mrow>
+      </m:math> es un factor de 3. </para>
+<equation id="eip-id1165135258116" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>p</m:mi>
+       <m:mi>q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>factor de término constante</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>factor de coeficiente principal</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mtext>factor de 3</m:mtext>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>factor de 3</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165134212112">Los factores de 3 son <m:math>
+      <m:mrow>
+<m:mn>±1</m:mn></m:mrow>
+     </m:math> y <m:math>
+       <m:mrow>
+<m:mn>±3.</m:mn></m:mrow>
+      </m:math> Los posibles valores de <m:math>
+       <m:mrow>
+       <m:mfrac>
+         <m:mi>p</m:mi>
+         <m:mi>q</m:mi>
+        </m:mfrac>
+        <m:mo>,</m:mo></m:mrow>
+      </m:math> y, por ende, los posibles ceros racionales de la función son <m:math>
+       <m:mrow>
+<m:mn>±3</m:mn><m:mo>,</m:mo><m:mtext>±1 y </m:mtext><m:mo>±</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mo>.</m:mo></m:mrow>
+      </m:math> Utilizaremos la división sintética para evaluar cada uno de los posibles ceros hasta encontrar uno que dé un restante de 0. Empecemos con –3.</para>
+<equation id="eip-id1165134337867" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow>
+          <m:mo>- −</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable><m:menclose notation="bottom left">
+       <m:mrow>
+        <m:mtable columnalign="right">
+         <m:mtr columnalign="right">
+          <m:mtd columnalign="right">
+           <m:mn>3</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>9</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>1</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>3</m:mn>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="right">
+          <m:mtd columnalign="right">
+           <m:mrow/>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>9</m:mn>
+           </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>0</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>-</m:mo><m:mn>3</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      </m:menclose>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="right">
+       <m:mtr columnalign="right">
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mtext>     3</m:mtext>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mtext>   </m:mtext><m:mn>0</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mspace width="0.5em"/><m:mn>1</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mtext>  </m:mtext><m:mn>0</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135675242">Dividiendo entre <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> da un restante de 0, por lo que –3 es un cero de la función. El polinomio puede escribirse como</para><equation id="eip-id1165134240862" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math>
+</equation><para id="fs-id1165134224528">Podemos entonces fijar la cuadrática igual a 0 y resolver para hallar los demás ceros de la función.</para>
+<equation id="eip-id1165134250674" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>i</m:mi><m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137756902">Los ceros de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> son –3 y <m:math>
+       <m:mrow>
+       <m:mo>±</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mi>i</m:mi><m:msqrt>
+           <m:mn>3</m:mn>
+          </m:msqrt>
+         </m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mo>.</m:mo></m:mrow>
+      </m:math>
+     </para>
+    </solution>
+    <commentary id="fs-id1165135640992">
+     <title>Análisis </title>
+     <para id="fs-id1165135640998">Mire el gráfico de la función <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi></m:mrow>
+     </m:math> en la <link target-id="Figure_03_06_002"/>. Observe que, en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el gráfico cruza el eje <emphasis effect="italics">x</emphasis>, lo cual indica una multiplicidad impar (1) para el cero. <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>3.</m:mn></m:mrow>
+      </m:math> Observe también la presencia de los dos puntos de inflexión. Esto significa que, al existir un polinomio de 3.<sup>er</sup> grado, estamos ante el máximo número de puntos de inflexión. Así, el comportamiento final de aumento sin límite hacia la derecha y disminución sin límite hacia la izquierda continuará. Por lo tanto, se muestran todas las intersecciones en <emphasis effect="italics">x</emphasis> para la función. Así que, o bien la multiplicidad de <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+      </m:math> es 1 y hay dos soluciones complejas, que es lo que encontramos, o la multiplicidad en <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+      </m:math> es tres. En cualquier caso, nuestro resultado es correcto. </para>
+<figure id="Figure_03_06_002" class="small">
+     <media id="fs-id1165135372087" alt="Gráfico de un polinomio con su intersección en x en (-3, 0), marcada como &quot;Cruz&quot;.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_002.jpg"/>
+      </media>
+    </figure>
+    </commentary>
+   </exercise></example>
+
+  <note id="fs-id1165133065163" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_04">
+    <problem id="fs-id1165135538761"><para id="fs-id1165135538762">Halle los ceros de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4.</m:mn></m:mrow>
+    </m:math>
+    </para></problem>
+    <solution id="fs-id1165137771382"><para id="fs-id1165137771383">Los ceros son <m:math>
+     <m:mrow>
+      <m:mtext>–4, </m:mtext><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mtext> y 1</m:mtext><m:mtext>.</m:mtext></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+ </section>
+
+ <section id="fs-id1165135501998">
+  <title>Usar el teorema de la factorización lineal para hallar polinomios con ceros dados</title>
+  <para id="fs-id1165135502003">Una implicación vital del <term class="no-emphasis" id="term-00011">teorema fundamental del álgebra</term>, como mencionamos anteriormente, es que una función polinómica de grado <m:math>
+   <m:mrow>
+    <m:mi>n</m:mi></m:mrow>
+  </m:math> tendrá <m:math>
+    <m:mrow>
+     <m:mi>n</m:mi></m:mrow>
+   </m:math> ceros en el conjunto de los números complejos, si permitimos las multiplicidades. Esto significa que podemos factorizar la función polinómica en <m:math>
+    <m:mrow>
+     <m:mi>n</m:mi></m:mrow>
+   </m:math> factores. El <term id="term-00012">teorema de la factorización lineal</term> nos señala que una función polinómica tendrá el mismo número de factores que su grado, y que cada factor estará en la forma <m:math>
+    <m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> donde <m:math>
+    <m:mrow>
+     <m:mi>c</m:mi></m:mrow>
+   </m:math> es un número complejo.</para><para id="eip-651">Supongamos que <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi></m:mrow>
+  </m:math> es una función polinómica con coeficientes reales, y supongamos que <m:math>
+    <m:mrow>
+     <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mtext>, </m:mtext><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+   </m:math> es un cero de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math> Entonces, según el teorema del factor, <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> es un factor de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math> Para que <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi></m:mrow>
+   </m:math> tenga coeficientes reales, <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> también deberá ser un factor de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math> Esto es así porque cualquier factor que no sea <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> cuando se multiplica por <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> dejará componentes imaginarios en el producto. Solo la multiplicación con pares conjugados eliminará las partes imaginarias y dará lugar a coeficientes reales. En otras palabras, si una función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi></m:mrow>
+   </m:math> con coeficientes reales tiene un cero complejo <m:math>
+    <m:mrow>
+     <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> entonces el conjugado complejo <m:math>
+    <m:mrow>
+     <m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mi>i</m:mi></m:mrow>
+   </m:math> también será un cero de <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+   </m:math> Esto se denomina el <term class="no-emphasis" id="term-00013">teorema del conjugado complejo</term>.</para><note id="fs-id1165137933095">
+   <label>Nota genérica</label>
+   <title>Teorema del conjugado complejo</title>
+   <para id="fs-id1165135436621">Según el <term id="term-00014">teorema de la factorización lineal</term><emphasis>,</emphasis> una función polinómica tendrá el mismo número de factores que su grado, y cada factor estará en la forma <m:math>
+    <m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+   </m:math> donde <m:math>
+     <m:mrow>
+      <m:mi>c</m:mi></m:mrow>
+    </m:math> es un número complejo.</para>
+   <para id="fs-id1165135443970">Si la función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi></m:mrow>
+   </m:math> tiene coeficientes reales y un cero complejo en la forma <m:math>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> entonces el conjugado complejo del cero, <m:math>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> también es un cero.</para>
+  </note>
+
+  <note id="fs-id1165137832786" class="how-to-notitle">
+   <label>Cómo</label>
+   <para id="fs-id1165137832792"><emphasis>Dados los ceros de una función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi></m:mrow>
+   </m:math> y un punto <emphasis effect="italics">(c, f(c))</emphasis> en el gráfico de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+    </m:math> utilizar el teorema de la factorización lineal para hallar la función polinómica.</emphasis></para><list id="fs-id1165135534938" list-type="enumerated" number-style="arabic"><item>Utilice los ceros para construir los factores lineales del polinomio.</item>
+   <item>Multiplique los factores lineales para expandir el polinomio.</item>
+    <item>Sustituya <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>c</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mi>c</m:mi>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math> en la función para determinar el coeficiente principal.</item>
+   <item>Simplifique.</item>
+   </list></note>
+
+  <example id="Example_03_06_07">
+   <exercise id="fs-id1165137737023"><problem id="fs-id1165137737025">
+     <title>Usar el teorema de la factorización lineal para hallar un polinomio con ceros dados</title>
+     <para id="fs-id1165134151154">Halle un polinomio de cuarto grado con coeficientes reales que tenga ceros de –3, 2, <m:math>
+      <m:mrow>
+       <m:mi>i</m:mi><m:mo>,</m:mo></m:mrow>
+     </m:math> de manera que <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100.</m:mn></m:mrow>
+      </m:math>
+     </para></problem>
+    <solution id="fs-id1165132964595">
+     <para id="fs-id1165132964597">Dado que <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>i</m:mi></m:mrow>
+     </m:math> es un cero, según el teorema del conjugado complejo <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mi>i</m:mi></m:mrow>
+      </m:math> también es un cero. El polinomio tendrá factores de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+       <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+      </m:math> Ya que estamos buscando un polinomio de grado 4, y ahora tenemos cuatro ceros, tenemos los cuatro factores. Empecemos por multiplicar estos factores.</para>
+<equation id="eip-id1165134240855" class="unnumbered"><label/> <m:math display="block">
+      <m:mtable columnalign="left">
+       <m:mtr>
+        <m:mtd>
+         <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>i</m:mi><m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2 </m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2 </m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>4</m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>3</m:mn>
+         </m:msup>
+         <m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2 </m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+       </m:mtr>
+      </m:mtable>
+
+     </m:math>
+</equation>
+     <para id="fs-id1165134065076">Tenemos que hallar <emphasis effect="italics">a</emphasis> para asegurar que <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100.</m:mn></m:mrow>
+     </m:math> Sustituya <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>2</m:mn></m:mrow>
+      </m:math> y <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn></m:mrow>
+      </m:math> en <m:math>
+       <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+      </m:math>
+     </para>
+<equation id="eip-id1165133211946" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>100</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>100</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mi>a</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137407591">Así que la función polinómica es</para>
+<equation id="eip-id1165134393731" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math>
+</equation>
+    <para id="fs-id1165135406977">o</para>
+<equation id="eip-id1165134366626" class="unnumbered"><label/> <m:math display="block">
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>- −</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>25</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>30</m:mn></m:mrow>
+     </m:math>
+</equation></solution>
+    <commentary id="fs-id1165135154283">
+     <title>Análisis </title>
+     <para id="fs-id1165135154288">Hemos comprobado que tanto <m:math>
+      <m:mrow>
+       <m:mi>i</m:mi></m:mrow>
+     </m:math> como <m:math>
+       <m:mrow>
+       <m:mo>- −</m:mo><m:mi>i</m:mi></m:mrow>
+      </m:math> eran ceros, pero solo había que dar uno de estos ceros. Si los valores de <m:math>
+       <m:mrow>
+       <m:mi>i</m:mi></m:mrow>
+      </m:math> es un cero de un polinomio con coeficientes reales, entonces <m:math>
+       <m:mrow>
+       <m:mo>- −</m:mo><m:mi>i</m:mi></m:mrow>
+      </m:math> también será un cero del polinomio porque <m:math>
+       <m:mrow>
+       <m:mo>- −</m:mo><m:mi>i</m:mi></m:mrow>
+      </m:math> es el conjugado complejo de <m:math>
+       <m:mrow>
+       <m:mi>i</m:mi><m:mo>.</m:mo></m:mrow>
+      </m:math>
+     </para></commentary>
+   </exercise></example>
+
+  <note id="fs-id1165135340588" class="precalculus qa">
+   <label>PREGUNTAS Y RESPUESTAS</label>
+   <para id="fs-id1165135340596"><emphasis effect="bold">Si <m:math>
+    <m:mrow>
+     <m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+   </m:math> se diera como un cero de un polinomio con coeficientes reales, sería <m:math>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow>
+    </m:math> ¿también tiene que ser un cero?</emphasis></para><para id="fs-id1165134170187"><emphasis effect="italics">Sí. Cuando cualquier número complejo con un componente imaginario se da como un cero de un polinomio con coeficientes reales, el conjugado también será un cero del polinomio.</emphasis></para>
+  </note>
+
+  <note id="fs-id1165134170196" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_05">
+    <problem id="fs-id1165134130176"><para id="fs-id1165134130177">Halle un polinomio de tercer grado con coeficientes reales que tenga ceros de 5 y <m:math>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+    </m:math> de manera que <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10.</m:mn></m:mrow>
+     </m:math>
+    </para></problem>
+    <solution id="fs-id1165135186391"><para id="fs-id1165135186392"> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:mrow>
+    </m:math>
+    </para></solution>
+   </exercise>
+  </note>
+ </section>
+ <section id="fs-id1165135177650"><title>Usar la regla de los signos de Descartes</title><para id="fs-id1165135177655">Existe una forma directa de determinar el número posible de ceros reales positivos y negativos de cualquier función polinómica. Si el polinomio se escribe en orden descendente,<emphasis> la regla de los signos de Descartes</emphasis> nos habla de una relación entre el número de cambios de signo en <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> y el número de ceros reales positivos. Por ejemplo, la función polinómica siguiente tiene un cambio de signo.</para>
+   <media id="fs-id1165134378690" alt="La función, f(x)=x^4+x^3+x^2+x-1, tiene un cambio de signo entre x y -1.`" display="block">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_003.jpg"/>
+   </media>
+
+  <para id="fs-id1165135206081">Esto nos indica que la función tendrá 1 cero real positivo.</para>
+  <para id="fs-id1165135206084">Existe una relación similar entre el número de cambios de signo en <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> y el número de ceros reales negativos.</para>
+
+   <media id="fs-id1165135152070" alt="La función, f(-x)=(-x)^4+(-x)^3+(-x)^2+(-x)-1=+ x^4-x^3+x^2-x-1, tiene tres cambios de signo entre x^4 y x^3, x^3 y x^2, y x^2 y x.`" display="block">
+    <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_004.jpg"/>
+   </media>
+
+
+  <para id="fs-id1165135152083">En este caso, <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>−x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> tiene 3 cambios de signo. Esto nos dice que <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> puede tener 3 o 1 ceros reales negativos.</para><note id="fs-id1165137844271">
+
+   <title>La regla de los signos de Descartes</title>
+   <para id="fs-id1165137844280">Según la <term id="term-00015">regla de los signos de Descartes</term>, supongamos que <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>n</m:mi>
+     </m:msub>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mi>n</m:mi>
+     </m:msup>
+     <m:mo>+</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:msub>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mrow>
+       <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>...</m:mn><m:mo>+</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mn>1</m:mn>
+     </m:msub>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:msub>
+      <m:mi>a</m:mi>
+      <m:mn>0</m:mn>
+     </m:msub>
+     </m:mrow>
+   </m:math> es una función polinómica con coeficientes reales:</para>
+   <list id="fs-id1165134351104" list-type="bulleted"><item>El número de ceros reales positivos es igual al número de cambios de signo de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> o es menor que el número de cambios de signo en un número entero par.</item>
+    <item>El número de ceros reales negativos es igual al número de cambios de signo de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> o es menor que el número de cambios de signo en un número entero par.</item>
+   </list></note>
+
+  <example id="Example_03_06_08">
+   <exercise id="fs-id1165134149118"><problem id="fs-id1165134149120">
+     <title>Usar la regla de los signos de Descartes</title>
+     <para id="fs-id1165134149125">Utilice la regla de los signos de Descartes para determinar el número posible de ceros reales positivos y negativos para <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>12.</m:mn></m:mrow>
+     </m:math>
+     </para>
+    </problem>
+    <solution id="fs-id1165137932378">
+     <para id="fs-id1165137932381">Comience por determinar el número de cambios de signo.</para>
+
+    <figure id="Figure_03_06_005" class="small">
+     <media id="fs-id1165135547276" alt="La función, f(x)=-x^4-3x^3+6x^2-4x-12, tiene dos cambios de signo entre -3x^3 y 6x^2, y 6x^2 y -4x.`">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_005.jpg"/>
+     </media>
+    </figure>
+
+    <para id="fs-id1165135547290">Hay dos cambios de signo, por lo que hay 2 o 0 raíces reales positivas. A continuación, examinamos <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> para determinar el número de raíces reales negativas.</para><para id="fs-id1165137696389"> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>- −</m:mo><m:mn>12</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>12</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</para><figure id="Figure_03_06_006" class="small">
+     <media id="fs-id1165134234614" alt="La función, f(-x)=-x^4+3x^3+6x^2+4x-12, tiene dos cambios de signo entre -x^4 y 3x^3, y 4x y -12.`">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_006.jpg"/>
+     </media>
+    </figure>
+
+    <para id="fs-id1165135383099">De nuevo, hay dos cambios de signo, por lo que hay 2 o 0 raíces reales negativas.</para>
+    <para id="fs-id1165135383102">Hay cuatro posibilidades, como podemos ver en la <link target-id="Table_03_06_01"/>.</para><table id="Table_03_06_01" summary="..">
+     <title/>
+     <tgroup cols="4">
+      <colspec colnum="1" colname="c1" align="center"/>
+      <colspec colnum="2" colname="c2" align="center"/>
+      <colspec colnum="3" colname="c3" align="center"/>
+      <colspec colnum="4" colname="c4" align="center"/>
+      <thead>
+       <row>
+        <entry align="center">Ceros reales positivos</entry>
+        <entry align="center">Ceros reales negativos</entry>
+        <entry align="center">Ceros complejos</entry>
+        <entry align="center">Total de ceros</entry>
+       </row>
+      </thead>
+      <tbody>
+       <row>
+        <entry align="center">2</entry>
+        <entry align="center">2</entry>
+        <entry align="center">0</entry>
+        <entry align="center">4</entry>
+       </row>
+       <row>
+        <entry align="center">2</entry>
+        <entry align="center">0</entry>
+        <entry align="center">2 </entry>
+        <entry align="center">4</entry>
+       </row>
+       <row>
+        <entry align="center">0</entry>
+        <entry align="center">2</entry>
+        <entry align="center">2</entry>
+        <entry align="center">4</entry>
+       </row>
+       <row>
+        <entry align="center">0</entry>
+        <entry align="center">0</entry>
+        <entry align="center">4</entry>
+        <entry align="center">4</entry>
+       </row>
+      </tbody>
+     </tgroup>
+    </table>
+
+    </solution>
+    <commentary id="fs-id1165135628637">
+     <title>Análisis </title>
+     <para id="fs-id1165135628642">Podemos confirmar el número de raíces reales positivas y negativas al examinar un gráfico de la función. Vea el <link target-id="Figure_03_06_007"/>. Observamos en el gráfico que la función tiene 0 raíces reales positivas y 2 raíces reales negativas.</para><figure id="Figure_03_06_007" class="small">
+      <media id="fs-id1165135628652" alt="Gráfico de f(x)=-x^4-3x^3+6x^2-4x-12 con intersecciones x en -4,42 y -1.">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_06_007.jpg"/>
+      </media>
+     </figure>
+    </commentary>
+   </exercise></example>
+
+  <note id="fs-id1165135177609" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_06">
+    <problem id="fs-id1165135177621"><para id="fs-id1165135177622">Utilice la regla de los signos de Descartes para determinar el número máximo posible de ceros reales positivos y negativos para <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>10</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>11</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12.</m:mn></m:mrow>
+    </m:math> Utilice un gráfico para verificar el número de ceros reales positivos y negativos de la función.</para></problem>
+    <solution id="fs-id1165135440205"><para id="fs-id1165135440206">Deberá haber 4, 2 o 0 raíces reales positivas y 0 raíces reales negativas. El gráfico muestra que hay 2 ceros reales positivos y 0 ceros reales negativos.</para></solution>
+   </exercise>
+  </note>
+ </section><section id="fs-id1165135440213">
+  <title>Resolver aplicaciones del mundo real </title>
+  <para id="fs-id1165135440219">Ahora hemos introducido una variedad de herramientas para resolver ecuaciones polinómicas. Utilicemos estas herramientas para resolver el problema de la panadería al principio de la sección.</para>
+
+  <example id="Example_03_06_09">
+   <exercise id="fs-id1165135440229"><problem id="fs-id1165135440231">
+     <title>Resolver ecuaciones polinómicas</title>
+     <para id="fs-id1165135440236">Una nueva panadería ofrece pasteles decorados de varios pisos para exponerlos y cortarlos en celebraciones de quinceañeras y bodas, así como pasteles en bandeja para servir a la mayoría de los invitados. La panadería quiere que el volumen de un pastel pequeño de bandeja sea de 351 pulgadas cúbicas. El pastel tiene forma de sólido rectangular. Quieren que la longitud del pastel sea diez centímetros más larga que la anchura y que la altura del pastel sea un tercio de la anchura. ¿Cuáles deben ser las dimensiones del molde?</para>
+
+    </problem>
+    <solution id="fs-id1165135549012">
+     <para id="fs-id1165135549014">Empiece por escribir una ecuación para el volumen del pastel. El volumen de un sólido rectangular viene dado por <m:math>
+      <m:mrow>
+       <m:mi>V</m:mi><m:mo>=</m:mo><m:mi>l</m:mi><m:mi>w</m:mi><m:mi>h</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math> Nos dieron que la longitud debe ser cuatro pulgadas más larga que la anchura, por lo que podemos expresar la longitud del pastel como <m:math>
+       <m:mrow>
+       <m:mi>l</m:mi><m:mo>=</m:mo><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>4.</m:mn></m:mrow>
+      </m:math> Nos han dado que la altura del pastel es un tercio de la anchura, por lo que podemos expresar la altura como <m:math>
+       <m:mrow>
+       <m:mi>h</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mi>w</m:mi><m:mo>.</m:mo></m:mrow>
+      </m:math> Escribamos el volumen del pastel en términos de su anchura.</para>
+<equation id="eip-id1165131890583" class="unnumbered"><label/> <m:math display="block">
+      <m:mtable columnalign="left">
+       <m:mtr>
+        <m:mtd>
+         <m:mi>V</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:mi>w</m:mi><m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:msup>
+          <m:mi>w</m:mi>
+          <m:mn>3</m:mn>
+         </m:msup>
+         <m:mo>+</m:mo><m:mfrac>
+          <m:mn>4</m:mn>
+          <m:mn>3</m:mn>
+         </m:mfrac>
+         <m:msup>
+          <m:mi>w</m:mi>
+          <m:mn>2 </m:mn>
+         </m:msup>
+
+        </m:mtd>
+       </m:mtr>
+      </m:mtable>
+
+     </m:math>
+</equation>
+    <para id="fs-id1165135173357">Sustituya el volumen dado en esta ecuación.</para>
+<equation id="eip-id1165135479015" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mn>351</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:msup>
+       <m:mi>w</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:msup>
+       <m:mi>w</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya 351 por </m:mtext><m:mi>V</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1053</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mi>w</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+       <m:mi>w</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique ambos lados por 3</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mn>0</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mi>w</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+       <m:mi>w</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>1053</m:mn><m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Reste 1053 de ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134070008">La regla de los signos de Descartes nos indica que hay una solución positiva. El teorema del cero racional nos indica que los posibles ceros racionales son <m:math>
+      <m:mrow>
+       <m:mo>±</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±3,...</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>27</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>39</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>81</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>117</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mn>351</m:mn><m:mo>,</m:mo></m:mrow>
+     </m:math> y <m:math>
+       <m:mrow>
+       <m:mo>±</m:mo><m:mn>1053.</m:mn></m:mrow>
+      </m:math> Podemos utilizar la división sintética para comprobar estos posibles ceros. Solo los números positivos tienen sentido como dimensiones para un pastel, así que no necesitamos probar ningún valor negativo. Empecemos por probar los valores que tienen más sentido como dimensiones para un pastel de molde pequeño. Utilice la división sintética para comprobar <m:math>
+       <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+      </m:math> </para><equation id="eip-id1165133027598" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mn>1</m:mn>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable><m:menclose notation="bottom left">
+       <m:mrow>
+        <m:mtable columnalign="right">
+         <m:mtr columnalign="right">
+          <m:mtd columnalign="right">
+           <m:mn>1</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>4</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>0</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mrow>
+            <m:mo>- −</m:mo><m:mn>1053</m:mn>
+           </m:mrow>
+          </m:mtd>
+         </m:mtr>
+         <m:mtr columnalign="right">
+          <m:mtd columnalign="right">
+           <m:mrow/>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>1</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>5</m:mn>
+          </m:mtd>
+          <m:mtd columnalign="right">
+           <m:mn>5</m:mn>
+          </m:mtd>
+         </m:mtr>
+
+        </m:mtable>
+       </m:mrow>
+      </m:menclose>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="right">
+       <m:mtr columnalign="right">
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mtext>  1</m:mtext>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mspace width="0.5em"/><m:mn>5</m:mn>
+         </m:mrow>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mn>5</m:mn>
+        </m:mtd>
+        <m:mtd columnalign="right">
+         <m:mrow>
+          <m:mo>- −</m:mo><m:mn>1048 </m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135693719">Ya que 1 no es una solución, comprobaremos <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+     </m:math>
+     </para>
+<para id="eip-id7072398"><media id="eip-id1169268826692" alt=".">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_revised_eq1.png" width="100"/>
+      </media></para><para id="fs-id1165134037580">Ya que 3 tampoco es una solución, probaremos <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+     </m:math>
+     </para>
+<para id="eip-id1168304942510"><media id="eip-id1165198399599" alt=".">
+       <image mime-type="image/jpg" src="../../media/CNX_Precalc_revised_eq2.png" width="120"/>
+      </media></para><para id="fs-id1165135238389">La división sintética da un restante de 0, por lo que 9 es una solución de la ecuación. Podemos utilizar las relaciones entre la anchura y las demás dimensiones para determinar la longitud y la altura del molde del pastel.</para>
+<equation id="eip-id1165134173736" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>l</m:mi><m:mo>=</m:mo><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>13</m:mn><m:mtext> y </m:mtext><m:mi>h</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>w</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137843234">El molde debería tener unas dimensiones de 13 pulgadas por 9 pulgadas por 3 pulgadas.</para>
+    </solution>
+   </exercise></example>
+
+  <note id="fs-id1165137843240" class="precalculus try">
+   <label>Ejercicio</label>
+   <exercise id="ti_03_06_07">
+    <problem id="fs-id1165137843250"><para id="fs-id1165137843251">Un contenedor de transporte con forma de sólido rectangular deberá tener un volumen de 84 metros cúbicos. El cliente indica al fabricante que, debido al contenido, la longitud del contenedor deberá ser un metro mayor que la anchura, y la altura deberá ser un metro mayor que el doble de la anchura. ¿Cuáles deberán ser las dimensiones del contenedor?</para></problem>
+
+    <solution id="fs-id1165137817617"><para id="fs-id1165137817618">3 por 4 por 7 metros</para></solution>
+   </exercise>
+  </note>
+
+  <note id="fs-id1165137817623" class="precalculus media media-notitle">
+   <label>Media</label>
+   <para id="fs-id1165137817630">Acceda a estos recursos en línea para obtener instrucciones adicionales y practicar con los ceros de las funciones polinómicas.</para>
+   <list id="fs-id1165137817634" list-type="bulleted">
+    <item><link url="http://openstax.org/l/realzeros">Ceros reales, factores y gráficos de funciones polinómicas</link></item>
+   <item><link url="http://openstax.org/l/factortheorem">Teorema de la factorización compleja</link></item>
+   <item><link url="http://openstax.org/l/findthezeros">Hallar los ceros de una función polinómica</link></item>
+   <item><link url="http://openstax.org/l/findthezeros2">Hallar los ceros de una función polinómica 2</link></item>
+   <item><link url="http://openstax.org/l/findthezeros3">Hallar los ceros de una función polinómica 3</link></item>
+   </list>
+  </note>
+
+  </section>
+ <section id="fs-id1165135380118" class="key-concepts"><title>Conceptos clave</title><list id="fs-id1165135380122" list-type="bulleted"><item>Para hallar <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> determine el restante del polinomio <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> cuando se divide entre <m:math>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow>
+     </m:math> Vea el <link target-id="Example_03_06_01"/>.</item>
+    <item> <m:math>
+     <m:mrow>
+      <m:mi>k</m:mi></m:mrow>
+    </m:math> es un cero de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> si y solo si <m:math>
+      <m:mrow>
+       <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+     </m:math> es un factor de <m:math>
+      <m:mrow>
+       <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+     </m:math> Vea el <link target-id="Example_03_06_02"/>.</item>
+    <item>Cada cero racional de una función polinómica con coeficientes enteros será igual a un factor del término constante dividido entre un factor del coeficiente principal. Vea el <link target-id="Example_03_06_03"/> y el <link target-id="Example_03_06_04"/>.</item>
+   <item>Cuando el coeficiente principal es 1, los posibles ceros racionales son los factores del término constante.</item>
+    <item>La división sintética puede utilizarse para hallar los ceros de una función polinómica. Vea el <link target-id="Example_03_06_05"/>.</item>
+    <item>Según el teorema fundamental, toda función polinómica tiene al menos un cero complejo. Vea el <link target-id="Example_03_06_06"/>.</item>
+   <item>Toda función polinómica de grado superior a 0 tiene al menos un cero complejo.</item>
+    <item>Teniendo en cuenta las multiplicidades, una función polinómica tendrá el mismo número de factores que su grado. Cada factor tendrá la forma <m:math>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+    </m:math> donde <m:math>
+      <m:mrow>
+       <m:mi>c</m:mi></m:mrow>
+     </m:math> es un número complejo. Vea el <link target-id="Example_03_06_07"/>.</item>
+   <item>El número de ceros reales positivos de una función polinómica es o bien el número de cambios de signo de la función o bien menor que el número de cambios de signo en un número entero par.</item>
+    <item>El número de ceros reales negativos de una función polinómica es el número de cambios de signo de <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+    </m:math> o menos que el número de cambios de signo por un número entero par. Vea el <link target-id="Example_03_06_08"/>.</item>
+    <item>Las ecuaciones polinómicas modelan muchas situaciones en el mundo real. La resolución de las ecuaciones es más fácil de realizar mediante la división sintética. Vea el <link target-id="Example_03_06_09"/>.</item>
+   </list></section>
+
+ <section id="fs-id1165135149755" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165135149759">
+   <title>Verbales</title>
+   <exercise id="fs-id1165135149765"><problem id="fs-id1165135149766"><para id="fs-id1165135149767">Describa un uso del teorema del resto.</para></problem>
+   <solution id="fs-id1165135149770"><para id="fs-id1165135149771">El teorema se puede utilizar para evaluar un polinomio.</para></solution></exercise>
+   <exercise id="fs-id1165135149774"><problem id="fs-id1165137898784"><para id="fs-id1165137898785">Explique por qué el teorema del cero racional no garantiza que se hallen los ceros de una función polinómica.</para></problem></exercise>
+  <exercise id="fs-id1165137898789"><problem id="fs-id1165137898790"><para id="fs-id1165137898791">¿Cuál es la diferencia entre los ceros racionales y los reales?</para></problem>
+   <solution id="fs-id1165137898794"><para id="fs-id1165137898795">Los ceros racionales pueden expresarse como fracciones, mientras que los ceros reales incluyen números irracionales.</para></solution></exercise>
+  <exercise id="fs-id1165137898800"><problem id="fs-id1165137898801"><para id="fs-id1165137898802">Si la regla de los signos de Descartes revela un no cambio de signos o un signo de cambios, ¿qué conclusión concreta se puede extraer?</para></problem></exercise>
+   <exercise id="fs-id1165137898807"><problem id="fs-id1165137898808"><para id="fs-id1165137898809">Si la división sintética revela un cero, ¿por qué deberíamos probar de nuevo ese valor como posible solución?</para></problem>
+   <solution id="fs-id1165137898813"><para id="fs-id1165137898814">Las funciones polinómicas pueden tener ceros repetidos, por lo que el hecho de que un número sea un cero no excluye que vuelva a serlo.</para></solution></exercise>
+    </section>
+  <section id="fs-id1165135531376">
+   <title>Algebraicos</title>
+   <para id="fs-id1165135531382">En los siguientes ejercicios, utilice el teorema del resto para hallar el restante.</para>
+
+   <exercise id="fs-id1165135531385"><problem id="fs-id1165135531386"><para id="fs-id1165135531387"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>9</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>14</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem></exercise>
+   <exercise id="fs-id1165134152708"><problem id="fs-id1165134152709"><para id="fs-id1165134152710"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem>
+    <solution id="fs-id1165135532309"><para id="fs-id1165135532310"> <m:math>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>106</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135532325"><problem id="fs-id1165135532326"><para id="fs-id1165135532327"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>17</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem></exercise>
+   <exercise id="fs-id1165135571875" class="material-set-2"><problem id="fs-id1165135571876"><para id="fs-id1165135571877"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>24</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem>
+    <solution id="fs-id1165134106006"><para id="fs-id1165134106007"> <m:math>
+     <m:mrow>
+      <m:mn>0</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165134106023" class="material-set-2"><problem id="fs-id1165137675202"><para id="fs-id1165137675203"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>5</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>4</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem></exercise>
+   <exercise id="fs-id1165135487281"><problem id="fs-id1165135487282"><para id="fs-id1165135487283"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>4</m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem>
+    <solution id="fs-id1165137933118"><para id="fs-id1165137933119"> <m:math>
+     <m:mrow>
+      <m:mn>255</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165137933131"><problem id="fs-id1165137933132"><para id="fs-id1165137933133"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mn>3</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem></exercise>
+   <exercise id="fs-id1165134430485"><problem id="fs-id1165134430486"><para id="fs-id1165134430487"> <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mn>4</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>÷</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem>
+    <solution id="fs-id1165135255122"><para id="fs-id1165135255123"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+
+   <para id="fs-id1165135403423">En los siguientes ejercicios, utilice el teorema del factor para hallar todos los ceros reales de la función polinómica dada y un factor.</para>
+
+   <exercise id="fs-id1165135403427" class="material-set-2"><problem id="fs-id1165135403428"><para id="fs-id1165135403429"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>9</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>13</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math> </para></problem></exercise>
+   <exercise id="fs-id1165135349107" class="material-set-2"><problem id="fs-id1165135349108"><para id="fs-id1165135349109"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+   </m:math> </para></problem>
+    <solution id="fs-id1165137663787"><para id="fs-id1165137663788"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135198461" class="material-set-2"><problem id="fs-id1165135198462"><para id="fs-id1165135198463"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+   </m:math> </para></problem></exercise>
+   <exercise id="fs-id1165137646943" class="material-set-2"><problem id="fs-id1165137646944"><para id="fs-id1165137646945"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135363949"><para id="fs-id1165135363950"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135363964" class="material-set-2"><problem id="fs-id1165135363965"><para id="fs-id1165135363966"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>16</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>9</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165137833870" class="material-set-2"><problem id="fs-id1165137833871"><para id="fs-id1165137833872"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165134039289"><para id="fs-id1165134039290"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165134039305" class="material-set-2"><problem id="fs-id1165134039306"><para id="fs-id1165134039307"> <m:math>
+    <m:mrow>
+     <m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135453082" class="material-set-2"><problem id="fs-id1165135453083"><para id="fs-id1165135453084"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>30</m:mn><m:mo>,</m:mo><m:mtext>​</m:mtext><m:mspace width="0.5em"/><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165134234213"><para id="fs-id1165134234214"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:msqrt>
+       <m:mn>6</m:mn>
+      </m:msqrt>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>- −</m:mo><m:msqrt>
+       <m:mn>6</m:mn>
+      </m:msqrt>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+
+
+   <para id="fs-id1165134472281">En los siguientes ejercicios, utilice el teorema del cero racional para hallar todos los ceros reales.</para>
+
+   <exercise id="fs-id1165134472284"><problem id="fs-id1165134472285"><para id="fs-id1165134472286"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>24</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165134212161"><problem id="fs-id1165134212162"><para id="fs-id1165135353725"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>7</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>24</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135694462"><para id="fs-id1165135694463"> <m:math>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135678616"><problem id="fs-id1165135678617"><para id="fs-id1165135678618"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135554358"><problem id="fs-id1165135554359"><para id="fs-id1165135554360"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>16</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>80</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135388367"><para id="fs-id1165135388368"> <m:math>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135154364"><problem id="fs-id1165135154365"><para id="fs-id1165135154366"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>25</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>75</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135389007"><problem id="fs-id1165133093326"><para id="fs-id1165133093327"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>32</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>15</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165132962063"><para id="fs-id1165132962064"> <m:math>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165137676884"><problem id="fs-id1165137676885"><para id="fs-id1165137676886"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135393418"><problem id="fs-id1165135393419"><para id="fs-id1165135393420"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135675219"><para id="fs-id1165135675220"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>+</m:mo><m:msqrt>
+         <m:mn>5</m:mn>
+        </m:msqrt>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>-</m:mo><m:msqrt>
+         <m:mn>5</m:mn>
+        </m:msqrt>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165137766744"><problem id="fs-id1165137766746"><para id="fs-id1165137766747"> <m:math>
+    <m:mrow>
+     <m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135356524"><problem id="fs-id1165135632075"><para id="fs-id1165135632076"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135695166"><para id="fs-id1165135695167"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135695187"><problem id="fs-id1165135695188"><para id="fs-id1165135695189"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135692865"><problem id="fs-id1165135692866"><para id="fs-id1165135692867"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>–</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>7</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165133358774"><para id="fs-id1165133358776"> <m:math>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165134474183" class="material-set-2"><problem id="fs-id1165134474184"><para id="fs-id1165134474185"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>9</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise><exercise id="fs-id1165135443739" class="material-set-2"><problem id="fs-id1165135443740"><para id="fs-id1165135443741"> <m:math>
+    <m:mrow>
+     <m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>25</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135298432"><para id="fs-id1165135298433"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165137680607" class="material-set-2"><problem id="fs-id1165137680608"><para id="fs-id1165137680609"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>15</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>32</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>12</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135353111" class="material-set-2"><problem id="fs-id1165135353112"><para id="fs-id1165134259210"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165133233047"><para id="fs-id1165133233048"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:msqrt>
+       <m:mn>5</m:mn>
+      </m:msqrt>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:msqrt>
+       <m:mn>5</m:mn>
+      </m:msqrt>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165133311066"><problem id="fs-id1165133311068"><para id="fs-id1165133311069"> <m:math>
+    <m:mrow>
+     <m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165133214917"><problem id="fs-id1165133214918"><para id="fs-id1165133214920"> <m:math>
+    <m:mrow>
+     <m:mn>8</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mrow>
+       <m:msup>
+        <m:mrow/>
+        <m:mn>4</m:mn>
+       </m:msup>
+      </m:mrow>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>26</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>39</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>26</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135181360"><para id="fs-id1165135181361"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+
+
+   <para id="fs-id1165135517156">En los siguientes ejercicios, halle todas las soluciones complejas (reales y no reales).</para>
+
+   <exercise id="fs-id1165135517160"><problem id="fs-id1165135517161"><para id="fs-id1165135517162"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165132940010"><problem id="fs-id1165132940011"><para id="fs-id1165132940012"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>8</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>25</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>26</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165137642786"><para id="fs-id1165137642787"> <m:math>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135199514"><problem id="fs-id1165135199515"><para id="fs-id1165135199516"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>13</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>57</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>85</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165134380350" class="material-set-2"><problem id="fs-id1165134380351"><para id="fs-id1165134380352"> <m:math>
+    <m:mrow>
+     <m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165134339895"><para id="fs-id1165134339896"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>i</m:mi></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135416512" class="material-set-2"><problem id="fs-id1165135416513"><para id="fs-id1165135416514"> <m:math>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>22</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>50</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>75</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise><exercise id="fs-id1165137851467"><problem id="fs-id1165137851468"><para id="fs-id1165137851469"> <m:math>
+    <m:mrow>
+     <m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>32</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>17</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165133121493"><para id="fs-id1165133121494"> <m:math>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>i</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+
+  </section>
+  <section id="fs-id1165135403510">
+   <title>Gráficos</title>
+   <para id="fs-id1165135403515">En los siguientes ejercicios, utilice la regla de Descartes para determinar el número posible de soluciones positivas y negativas. A continuación, trace un gráfico para confirmar cuál de esas posibilidades es la combinación real.</para><exercise id="fs-id1165135403521"><problem id="fs-id1165135403522"><para id="fs-id1165135403523"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165134061970"><problem id="fs-id1165134061972"><para id="fs-id1165134061973"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+   <solution id="fs-id1165135333191"><para id="fs-id1165135333192">1 positivo, 1 negativo</para>
+  <media id="fs-id1165135333198" alt="Gráfico de f(x)=x^4-x^2-1.">
+     <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_06_202.jpg"/>
+    </media>
+</solution></exercise><exercise id="fs-id1165135333211"><problem id="fs-id1165135333212"><para id="fs-id1165135333213"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135485740" class="material-set-2"><problem id="fs-id1165135485741"><para id="fs-id1165135485742"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+  <solution id="fs-id1165134261851"><para id="fs-id1165134261852">3 o 1 positivo, 0 negativo</para>
+   <media id="fs-id1165134261859" alt="Gráfico de f(x)=x^3-2x^2+x-1.">
+     <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_06_204.jpg"/>
+    </media>
+ </solution></exercise><exercise id="fs-id1165134261871" class="material-set-2"><problem id="fs-id1165134261872"><para id="fs-id1165134261873"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>12</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>14</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165134149873" class="material-set-2"><problem id="fs-id1165134149874"><para id="fs-id1165134149875"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>37</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>200</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>300</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+   <solution id="fs-id1165134570689"><para id="fs-id1165134570690">0 positivo, 3 o 1 negativo</para>
+   <media id="fs-id1165134389888" alt="Gráfico de f(x)=2x^3+37x^2+200x+300.">
+     <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_06_206.jpg"/>
+    </media>
+</solution></exercise><exercise id="fs-id1165134389900" class="material-set-2"><problem id="fs-id1165134389901"><para id="fs-id1165134389902"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>16</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>32</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165134231463" class="material-set-2"><problem id="fs-id1165134231464"><para id="fs-id1165134231465"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+  <solution id="fs-id1165134148447"><para id="fs-id1165134148448"> 2 o 0 positivo, 2 o 0 negativo</para>
+  <media id="fs-id1165134148455" alt="Gráfico de f(x)=2x^4-5x^3-5x^2+5x+3.">
+     <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_06_208-d68b.jpg"/>
+    </media>
+</solution></exercise><exercise id="fs-id1165134148467" class="material-set-2"><problem id="fs-id1165134148468"><para id="fs-id1165134148469"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>14</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>20</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135640945"><problem id="fs-id1165135640946"><para id="fs-id1165135640947"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>21</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>11</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+  <solution id="fs-id1165134243154"><para id="fs-id1165134243155"> 2 o 0 positivo, 2 o 0 negativo</para>
+  <media id="fs-id1165134058369" alt="Gráfico de f(x)=10x^4-21x^2+11.">
+     <image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_03_06_210-6736.jpg"/>
+    </media>
+</solution></exercise></section>
+  <section id="fs-id1165134058383">
+   <title>Numéricos</title>
+   <para id="fs-id1165134058388">En los siguientes ejercicios, enumere todos los posibles ceros racionales de las funciones.</para>
+
+   <exercise id="fs-id1165134058391"><problem id="fs-id1165134058392"><para id="fs-id1165134058393"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135486016"><problem id="fs-id1165135486017"><para id="fs-id1165135486018"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mrow>
+       <m:msup>
+        <m:mrow/>
+        <m:mn>3</m:mn>
+       </m:msup>
+      </m:mrow>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135560645"><para id="fs-id1165135560646"> <m:math>
+     <m:mrow>
+      <m:mo>±</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±1,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±</m:mo><m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165134204451"><problem id="fs-id1165134204452"><para id="fs-id1165134204453"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mrow>
+       <m:msup>
+        <m:mrow/>
+        <m:mn>3</m:mn>
+       </m:msup>
+      </m:mrow>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165132920307"><problem id="fs-id1165135179860"><para id="fs-id1165135179861"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>10</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>13</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135575251"><para id="fs-id1165135575252"> <m:math>
+     <m:mrow>
+      <m:mo>±</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±1,</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±1,</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>±1,</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135698642"><problem id="fs-id1165135698643"><para id="fs-id1165135698644"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>5</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>10</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>8</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+
+  </section>
+  <section id="fs-id1165135353045">
+   <title>En tecnología</title>
+   <para id="fs-id1165135353050">En los siguientes ejercicios, utilice la calculadora para graficar la función polinómica. A partir del gráfico, halle los ceros racionales. Todas las soluciones reales son racionales.</para>
+
+   <exercise id="fs-id1165135353055"><problem id="fs-id1165135353056"><para id="fs-id1165135353057"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>7</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165135240972"><para id="fs-id1165135240974"> <m:math>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165134431750"><problem id="fs-id1165134431751"><para id="fs-id1165134431752"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>4</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>13</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135394055"><problem id="fs-id1165135394056"><para id="fs-id1165135394057"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>-</m:mo><m:mn>6</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>23</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165134104990"><para id="fs-id1165134104991"> <m:math>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165135414275" class="material-set-2"><problem id="fs-id1165135414276"><para id="fs-id1165135414277"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>55</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>12</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>117</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>54</m:mn></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165134469920" class="material-set-2"><problem id="fs-id1165134469921"><para id="fs-id1165134469922"> <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>16</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>4</m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>24</m:mn><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>3</m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>- −</m:mo><m:mn>15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>25</m:mn></m:mrow>
+   </m:math>
+   </para></problem>
+    <solution id="fs-id1165137851213"><para id="fs-id1165137851214"> <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+     </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+
+
+  </section>
+  <section id="fs-id1165134155157">
+   <title>Extensiones</title>
+   <para id="fs-id1165134155162">En los siguientes ejercicios, construya una función polinómica del menor grado posible con la información dada.</para>
+
+   <exercise id="fs-id1165134155167"><problem id="fs-id1165134155168"><para id="fs-id1165134155169">Raíces reales: –1, 1, 3 y <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mn>2 </m:mn>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135538724"><problem id="fs-id1165135538725"><para id="fs-id1165135538726">Raíces reales: –1, 1 (con multiplicidad 2 y 1) y <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mn>2 </m:mn>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math> grandes.
+   </para></problem>
+    <solution id="fs-id1165134057513"><para id="fs-id1165134057514"> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165133213938"><problem id="fs-id1165133213939"><para id="fs-id1165133213940">Raíces reales: –2, <m:math>
+    <m:mrow>
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     </m:mrow>
+   </m:math> (con multiplicidad 2) y <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+   </para></problem></exercise>
+   <exercise id="fs-id1165135205845"><problem id="fs-id1165135205846"><para id="fs-id1165135205847">Raíces reales: <m:math>
+    <m:mrow>
+     <m:mo>- −</m:mo><m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     </m:mrow>
+   </m:math>, 0, <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      </m:mrow>
+    </m:math> y <m:math>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+         <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math> grandes.
+   </para></problem>
+    <solution id="fs-id1165137883778"><para id="fs-id1165137883779"> <m:math>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>4</m:mn><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>3</m:mn>
+        </m:msup>
+        <m:mo>-</m:mo><m:mi>x</m:mi></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+    </m:math>
+    </para></solution></exercise>
+   <exercise id="fs-id1165134047574"><problem id="fs-id1165134047575"><para id="fs-id1165134047576">Raíces reales: –4, –1, 1, 4 y <m:math>
+    <m:mrow>
+     <m:mrow><m:mo>(</m:mo>
+      <m:mrow>
+       <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+         <m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>10</m:mn></m:mrow>
+       <m:mo>)</m:mo></m:mrow></m:mrow>
+   </m:math>
+   </para></problem></exercise>
+    </section>
+  <section id="fs-id1165134109613">
+   <title>Aplicaciones en el mundo real</title>
+  <para id="fs-id1165134109618">En los siguientes ejercicios, halle las dimensiones de la caja descrita.</para>
+<exercise id="fs-id1165134043608"><problem id="fs-id1165134043610"><para id="fs-id1165134043611">La longitud es el doble de la anchura. La altura es 2 pulgadas mayor que la anchura. El volumen es de 192 pulgadas cúbicas.</para></problem>
+ <solution id="fs-id1165134043615"><para id="fs-id1165134043616">8 por 4 por 6 pulgadas</para></solution></exercise>
+ <exercise id="fs-id1165134043619"><problem id="fs-id1165134043620"><para id="fs-id1165134043621">La longitud, la anchura y la altura son números enteros consecutivos. El volumen es de 120 pulgadas cúbicas.</para></problem></exercise>
+ <exercise id="fs-id1165134043625"><problem id="fs-id1165134043626"><para id="fs-id1165134043627">La longitud es una pulgada más que la anchura, que es una pulgada más que la altura. El volumen es de 86,625 pulgadas cúbicas.</para></problem>
+ <solution id="fs-id1165134043631"><para id="fs-id1165134043632">5,5 por 4,5 por 3,5 pulgadas</para></solution></exercise>
+ <exercise id="fs-id1165134043635"><problem id="fs-id1165134043636"><para id="fs-id1165134043637">La longitud es tres veces la altura y la altura es una pulgada menos que la anchura. El volumen es de 108 pulgadas cúbicas.</para></problem></exercise>
+<exercise id="fs-id1165134043642"><problem id="fs-id1165134043643"><para id="fs-id1165134043644">La longitud es 3 pulgadas más que la anchura. La anchura es 2 pulgadas más que la altura. El volumen es de 120 pulgadas cúbicas.</para></problem>
+<solution id="fs-id1165134043648"><para id="fs-id1165134043649">8 por 5 por 3 pulgadas</para></solution>
+</exercise>
+ <para id="fs-id1165134043653">En los siguientes ejercicios, halle las dimensiones del cilindro circular descrito.</para>
+
+   <exercise id="fs-id1165134043657"><problem id="fs-id1165134043658"><para id="fs-id1165134043659">El radio es 3 pulgadas más que la altura. El volumen es <m:math>
+    <m:mrow>
+     <m:mn>16</m:mn><m:mi>π</m:mi></m:mrow>
+   </m:math> pulgadas cúbicas.</para></problem></exercise>
+   <exercise id="fs-id1165135315485"><problem id="fs-id1165135315486"><para id="fs-id1165135315487">La altura es uno menos que la mitad del radio. El volumen es <m:math>
+    <m:mrow>
+     <m:mn>72</m:mn><m:mi>π</m:mi></m:mrow>
+   </m:math> metros cúbicos.</para></problem>
+ <solution id="fs-id1165135315505"><para id="fs-id1165135315506">Radio = 6 metros, altura = 2 metros</para></solution></exercise>
+   <exercise id="fs-id1165135315510"><problem id="fs-id1165135315511"><para id="fs-id1165135315512">El radio y la altura difieren en un metro. El radio es mayor y el volumen es <m:math>
+    <m:mrow>
+     <m:mn>48</m:mn><m:mi>π</m:mi></m:mrow>
+   </m:math> metros cúbicos.</para></problem></exercise>
+   <exercise id="fs-id1165135453003"><problem id="fs-id1165135453004"><para id="fs-id1165135453005">El radio y la altura difieren en dos metros. La altura es mayor y el volumen es <m:math>
+    <m:mrow>
+     <m:mn>28,125</m:mn><m:mi>π</m:mi></m:mrow>
+   </m:math> metros cúbicos.</para></problem>
+ <solution id="fs-id1165135453023"><para id="fs-id1165135453024">Radio = 2,5 metros, altura = 4,5 metros </para></solution></exercise>
+   <exercise id="fs-id1165135453028"><problem id="fs-id1165135453029"><para id="fs-id1165135453030">80. El radio es <m:math>
+    <m:mrow>
+     <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>3</m:mn>
+     </m:mfrac>
+     </m:mrow>
+   </m:math> metro mayor que la altura. El volumen es <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>98</m:mn></m:mrow>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+      <m:mi>π</m:mi></m:mrow>
+    </m:math> metros cúbicos.</para></problem></exercise>
+ </section>
+ </section></content>
+
+<glossary>
+<definition id="fs-id1165133281424">
+ <term>La regla de los signos de Descartes</term>
+ <meaning id="fs-id1165133281430">una regla que determina el número máximo posible de ceros reales positivos y negativos en función del número de cambios de signo de <m:math>
+  <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+ </m:math> y <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math>
+ </meaning>
+</definition>
+ <definition id="fs-id1165135459801">
+  <term>Teorema del factor</term>
+  <meaning id="fs-id1165135459806"> <m:math>
+   <m:mrow>
+    <m:mi>k</m:mi></m:mrow>
+  </m:math> es un cero de la función polinómica <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> si y solo si <m:math>
+    <m:mrow>
+     <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math> es un factor de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </meaning>
+ </definition>
+ <definition id="fs-id1165133045332">
+  <term>Teorema fundamental del álgebra</term>
+  <meaning id="fs-id1165133045337">una función polinómica de grado superior a 0 tiene al menos un cero complejo</meaning>
+ </definition>
+ <definition id="fs-id1165133045341">
+  <term>Teorema de la factorización lineal</term>
+  <meaning id="fs-id1165133045347">permitiendo las multiplicidades, una función polinómica tendrá el mismo número de factores que su grado, y cada factor estará en la forma <m:math>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+  </m:math> donde <m:math>
+    <m:mrow>
+     <m:mi>c</m:mi></m:mrow>
+   </m:math> es un número complejo</meaning>
+ </definition>
+ <definition id="fs-id1165135456904">
+  <term>Teorema del cero racional</term>
+  <meaning id="fs-id1165135456910">los posibles ceros racionales de una función polinómica tienen la forma <m:math>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>p</m:mi>
+     <m:mi>q</m:mi>
+    </m:mfrac>
+    </m:mrow>
+  </m:math> donde <m:math>
+    <m:mrow>
+     <m:mi>p</m:mi></m:mrow>
+   </m:math> es un factor del término constante y <m:math>
+    <m:mrow>
+     <m:mi>q</m:mi></m:mrow>
+   </m:math> es un factor del coeficiente principal.</meaning></definition>
+ <definition id="fs-id1165137938597">
+  <term>Teorema del resto</term>
+  <meaning id="fs-id1165137938602">si un polinomio <m:math>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+  </m:math> se divide entre <m:math>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow>
+   </m:math> entonces el restante será igual al valor <m:math>
+    <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+   </m:math>
+  </meaning>
+ </definition>
+</glossary>
+</document>

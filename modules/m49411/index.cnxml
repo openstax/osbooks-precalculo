@@ -1,0 +1,3951 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Ecuaciones paramétricas: Gráficos</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49411</md:content-id>
+  <md:title>Ecuaciones paramétricas: Gráficos</md:title>
+  <md:abstract><para id="para-00001">En esta sección podrá:</para>
+<list id="list-00001">
+<item>Representar gráficamente curvas planas descritas por ecuaciones paramétricas mediante el trazado de puntos.</item>
+<item>Graficar ecuaciones paramétricas.</item>
+</list></md:abstract>
+  <md:uuid>38d919ed-1bee-4ae6-aed0-48285d870dab</md:uuid>
+</metadata>
+
+<content>
+    <para id="fs-id1165137758339">Aunque no todos los aficionados (o directores de equipo) lo aprecian, el béisbol y muchos otros deportes se han vuelto dependientes de la analítica, que implica un complejo registro de datos y una evaluación cuantitativa utilizados para comprender y predecir el comportamiento. La primera influencia de la analítica fue sobre todo estadística; más recientemente, han entrado en juego la física y otras ciencias. El más importante es el enfoque en el ángulo de lanzamiento y la velocidad de salida, que cuando están en ciertos valores pueden casi garantizar un jonrón. Por otro lado, el énfasis en el ángulo de lanzamiento y la concentración en los jonrones en lugar de en el bateo en general da como resultado muchos más outs. Considere la siguiente situación: es la parte baja de la novena entrada, con dos outs y dos jugadores en base. El equipo local pierde por dos carreras. El bateador abanica y golpea la bola de béisbol a 140 pies por segundo y con un ángulo de aproximadamente <m:math>
+ <m:mrow>
+  <m:mn>45°</m:mn>
+ </m:mrow>
+</m:math> de la horizontal. ¿Qué distancia recorrerá la pelota? ¿Superará la cerca para conseguir un jonrón ganador del partido? El resultado puede depender en parte de otros factores (por ejemplo, el viento), pero los matemáticos pueden modelar la trayectoria de un proyectil y predecir aproximadamente la distancia que recorrerá mediante <term class="no-emphasis" id="term-00001">ecuaciones paramétricas</term>. En esta sección, discutiremos las ecuaciones paramétricas y algunas aplicaciones comunes, como los problemas de movimiento de proyectiles.</para>
+<figure id="Figure_08_07_001" class="small">
+<media id="fs-id1165137598637" alt="Foto de un bateador de béisbol haciendo un swing.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_001.jpg"/>
+      </media>
+
+    <caption>Las ecuaciones paramétricas pueden modelar la trayectoria de un proyectil (crédito: Paul Kreher, Flickr).</caption></figure><section id="fs-id1165137566996">
+      <title>Graficar ecuaciones paramétricas mediante el trazado de puntos</title><para id="fs-id1165137470035">En vez de una calculadora gráfica o un programa de gráficos de computadora, el método estándar es trazar puntos para representar el gráfico de una ecuación. Siempre que seamos cuidadosos al calcular los valores, el trazado de puntos es muy fiable.</para><note id="fs-id1165135361790" class="how-to-notitle"><label>Cómo</label>
+        <para id="fs-id1165132005266"><emphasis>Dado un par de ecuaciones paramétricas, dibuje un gráfico mediante el trazado de puntos.</emphasis></para><list id="fs-id1165137428125" list-type="enumerated" number-style="arabic"><item>Construya una tabla con tres columnas <m:math>
+            <m:mrow>
+              <m:mi>t</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+          </item>
+          <item>Evalúe <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:math> como <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:math> para los valores de <m:math>
+            <m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:math> sobre el intervalo para el que se definen las funciones.</item>
+          <item>Trace los pares resultantes <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+          </item></list></note><example id="Example_08_07_01"><exercise id="fs-id1165134532923"><problem id="fs-id1165137854808">
+            <title>Elaboración del gráfico de un par de ecuaciones paramétricas mediante el trazado de puntos</title>
+            <para id="fs-id1165137769779">Dibuje el gráfico de las <term class="no-emphasis" id="term-00002">ecuaciones paramétricas</term> <m:math>
+              <m:mrow>
+                <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2 </m:mn>
+                </m:msup>
+                <m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+            </para></problem>
+          <solution id="fs-id1165137938383">
+            <para id="fs-id1165135181426">Construya una tabla de valores para <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+              </m:mrow>
+            </m:math> y <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+              </m:mrow>
+            </m:math> como en la <link target-id="Table_08_07_01"/>, y trace los puntos en un plano.</para>
+
+
+          <table id="Table_08_07_01" summary="La tabla tiene doce filas y tres columnas. La primera columna está marcada como t, la segunda columna está marcada como x(t)=t^2 + 1, y la tercera columna como y(t) = 2 + t. La tabla tiene triples ordenados de cada uno de estos valores de fila: (-5, 26, -3), (-4, 17, -2), (-3, 10, -1), (-2, 5, 0), (-1, 2, 1), (0, 1, 2), (1, 2, 3), (2, 5, 4), (3, 10, 5), (4, 17, 6), (5, 26, 7).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mi>t</m:mi>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2 </m:mn>
+                    </m:msup>
+                <m:mo>+</m:mo><m:mn>1</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mi>t</m:mi>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+</thead>
+<tbody>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>5</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>26</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>3</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>4</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>17</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>2 </m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>3</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>10</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>1</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>2 </m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mn>5</m:mn>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mn>0</m:mn>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mo>-</m:mo><m:mn>1</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mn>2 </m:mn>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mn>1</m:mn>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mn>0</m:mn>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mn>1</m:mn>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mn>2 </m:mn>
+        </m:math> </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mn>1</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>2 </m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>3</m:mn>
+        </m:math> </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mn>2 </m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>5</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>4</m:mn>
+        </m:math> </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mn>3</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>10</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>5</m:mn>
+        </m:math> </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mn>4</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>17</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>6</m:mn>
+        </m:math> </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mn>5</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>26</m:mn>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mn>7</m:mn>
+        </m:math> </entry>
+    </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137628360">El gráfico es una <term class="no-emphasis" id="term-00003">parábola</term> con vértice en el punto <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn>
+                </m:mrow>
+                <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+            </m:mrow>
+          </m:math> que abre hacia la derecha. Vea el <link target-id="Figure_08_07_002"/>.</para>
+<figure id="Figure_08_07_002" class="small">
+<media id="fs-id1165137930319" alt="Grafique la parábola dada que se abre hacia la derecha.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_002.jpg"/>
+            </media>
+          </figure></solution>
+            <commentary id="fs-id1165135515789">
+            <title>Análisis </title>
+            <para id="fs-id1165137758642">Como los valores del avance de <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:math> en sentido positivo de 0 a 5, los puntos trazados trazan la mitad superior de la parábola. Como los valores de <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:math> se vuelven negativos, trazan la mitad inferior de la parábola. No hay restricciones en el dominio. Las flechas indican la dirección según los valores crecientes de <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> El gráfico no representa una función, ya que no pasará la prueba de la línea vertical. El gráfico se dibuja en dos partes: los valores positivos de <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>,</m:mo>
+              </m:mrow>
+            </m:math> y los valores negativos de <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+            </para></commentary>
+
+        </exercise></example><note id="fs-id1165134485685" class="precalculus try"><label>Ejercicio</label>
+        <exercise id="fs-id1165135152070"><problem id="fs-id1165133210758"><para id="fs-id1165135505463">Dibuje el gráfico de las ecuaciones paramétricas <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt>
+              <m:mi>t</m:mi>
+            </m:msqrt>
+            <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>3.</m:mn>
+          </m:mrow>
+        </m:math>
+        </para></problem>
+      <solution id="fs-id1165137849525"><media id="fs-id1165135347757" alt="Gráfico de las ecuaciones paramétricas dadas con el dominio restringido: parece la mitad derecha de una parábola que se abre hacia arriba.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_003.jpg"/>
+        </media></solution></exercise></note><example id="Example_08_07_02"><exercise id="fs-id1165131892642"><problem id="fs-id1165135305906">
+            <title>Trazar el gráfico de ecuaciones paramétricas trigonométricas</title>
+            <para id="fs-id1165137942382">Construya una tabla de valores para las ecuaciones paramétricas dadas y dibuje el gráfico:</para>
+            <equation id="eip-id2721082" class="unnumbered"><label/> <m:math>
+    <m:mtable columnalign="left">
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr columnalign="left">
+      <m:mtd columnalign="left">
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+</m:math>
+</equation></problem>
+          <solution id="fs-id1165137932663">
+            <para id="fs-id1165137665416">Construya una tabla como la de la <link target-id="Table_08_07_02"/> utilizando la medida del ángulo en radianes como entradas para <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>,</m:mo>
+              </m:mrow>
+            </m:math> adecuados, y evaluando <m:math>
+              <m:mrow>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:math> como <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> Utilizar ángulos con valores conocidos de seno y coseno para <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:math> facilita los cálculos.</para>
+
+
+          <table id="Table_08_07_02" summary="La tabla tiene catorce filas y tres columnas. La primera columna está marcada como t, la segunda columna está marcada como x(t)=2cos(1) y la tercera columna como y(t)=4sin(1). La tabla tiene triples ordenados de cada uno de estos valores de fila: (0, x=2cos(0)=2, y=4sin(0)=0), (pi/6, x=2cos(pi/6)=rad3, y=4sin(pi/6)=2), (pi/3, x=2cos(pi/3)=1, y=4sin(pi/3)=2rad3), (pi/2, x=2cos(pi/2)=0, y=4sin(pi/2)=4), (2pi/3, x=2cos(2pi/3)=-1, y=4sin(2pi/3)=2rad3), (5pi/6, x=2cos(5pi/6)=-rad3, y=4sin(5pi/6)=2), (pi, x=2cos(pi)=-2, y=4sin(pi)=0), (7pi/6, x=2cos(7pi/6) = -rad3, y=4sin(7pi/6)=-2), (4pi/3, x=2cos(4pi/3)=-1, y=4sin(4pi/3)=-2rad3), (3pi/2, x=2cos(3pi/2)=0, y=4sin(3pi/2)=-4), (5pi/3, x=2cos(5pi/3)=1, y=4sin(5pi/3)=-2rad3), (11pi/6, x=2cos(11pi/6)=rad3, y=4sin(11pi/6)=-2), (2pi, x=2cos(2pi)=2, y=4sin(2pi)=0).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+              <colspec colnum="2" colname="c2"/>
+              <colspec colnum="3" colname="c3"/>
+              <thead>
+                <row>
+                  <entry align="center"> <m:math>
+ <m:mi>t</m:mi>
+</m:math>
+</entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+</thead>
+<tbody>
+                <row>
+                  <entry align="center">0</entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+                 </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>6</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>2</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>2</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>5</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>6</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>5</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>5</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mi>π</m:mi>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>7</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>6</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>7</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>7</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>4</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>4</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>4</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>3</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>3</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>3</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>5</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>5</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>5</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>11</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mn>6</m:mn>
+                      </m:mfrac>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>11</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+                          <m:mn>3</m:mn>
+                        </m:msqrt>
+
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>11</m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mn>6</m:mn>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mn>2</m:mn><m:mi>π</m:mi>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                  <entry align="center"> <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>2</m:mn><m:mi>π</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>
+                  </entry>
+                </row>
+              </tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137581718">En la <link target-id="Figure_08_07_004"/> se muestra el gráfico.</para>
+<figure id="Figure_08_07_004" class="small">
+<media id="fs-id1165137644320" alt="Gráfico de las ecuaciones dadas: una elipse vertical.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_004.jpg"/>
+            </media>
+          </figure><para id="fs-id1165135569879">Por la simetría mostrada en los valores de <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:math> como <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi><m:mo>,</m:mo>            </m:mrow>
+          </m:math> vemos que las ecuaciones paramétricas representan una <term class="no-emphasis" id="term-00004">elipse</term>. El <term class="no-emphasis" id="term-00005">elipse</term> se mapea en sentido contrario a las agujas del reloj, como muestran las flechas que indican el aumento de <m:math>
+            <m:mrow>
+              <m:mi>t</m:mi>            </m:mrow>
+          </m:math>.</para></solution>
+<commentary id="eip-id1551946">
+<title>Análisis</title>
+
+<para id="fs-id1165137811673">Hemos visto que las ecuaciones paramétricas se pueden representar gráficamente mediante trazado de puntos. Sin embargo, una calculadora gráfica ahorrará tiempo y revelará matices en un gráfico que pueden ser demasiado tediosos de descubrir utilizando solo cálculos manuales.</para>
+<para id="eip-157">Asegúrese de cambiar el modo de la calculadora a paramétrico (PAR). Para confirmar, la ventana <m:math>
+    <m:mrow>
+       <m:mi>Y</m:mi><m:mo>=</m:mo>
+    </m:mrow>
+</m:math> debería aparecer</para>
+<equation id="fs-id1165137824587" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable>
+        <m:mtr>
+            <m:mtd>
+                <m:msub>
+                    <m:mi>X</m:mi>
+                    <m:mrow>
+                        <m:mn>1</m:mn><m:mi>T</m:mi>
+                    </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+            </m:mtd>
+        </m:mtr>
+        <m:mtr>
+            <m:mtd>
+                <m:msub>
+                    <m:mi>Y</m:mi>
+                    <m:mrow>
+                        <m:mn>1</m:mn><m:mi>T</m:mi>
+                    </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+            </m:mtd>
+        </m:mtr>
+    </m:mtable>
+
+</m:math>
+</equation>
+
+<para id="fs-id1165135168174">en vez de <m:math>
+    <m:mrow>
+       <m:msub>
+            <m:mi>Y</m:mi>
+            <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo><m:mo>.</m:mo>
+    </m:mrow>
+</m:math>
+</para>
+</commentary>
+        </exercise></example><note id="fs-id1165137934405" class="precalculus try">
+        <label>Ejercicio</label>
+        <exercise id="fs-id1165137714934"><problem id="fs-id1165137935182"><para id="fs-id1165137935183">Grafique las ecuaciones paramétricas: <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>         </para></problem>
+      <solution id="fs-id1165137408223"><media id="fs-id1165137464397" alt="Gráfico de las ecuaciones dadas: una elipse horizontal.">
+          <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_005.jpg"/>
+        </media></solution></exercise></note>
+    </section>
+
+
+    <section id="fs-id1165137610977"><example id="Example_08_07_03"><exercise id="fs-id1165135192637"><problem id="fs-id1165135181483">
+            <title>Graficar ecuaciones paramétricas y forma rectangular juntas</title>
+            <para id="fs-id1165137466433">Represente gráficamente las ecuaciones paramétricas <m:math>
+              <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+              </m:mrow>
+            </m:math> y <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> En primer lugar, elabore el gráfico utilizando los puntos de datos generados a partir de la <term class="no-emphasis" id="term-00006">forma paramétrica</term>. Luego grafique la <term class="no-emphasis" id="term-00007">forma rectangular</term> de la ecuación. Compare los dos gráficos.</para></problem>
+          <solution id="fs-id1165137387636">
+            <para id="fs-id1165137807398">Elabore una tabla de valores como la de la <link target-id="Table_08_07_03"/>.</para>
+
+
+          <table id="Table_08_07_03" summary="La tabla tiene doce filas y tres columnas. La primera columna está marcada como t, la segunda columna está marcada como x(t)=5cos(t) y la tercera columna como y(t) = 2sin(t). La tabla tiene triples ordenados de cada uno de estos valores de fila: (0, x=5cos(0)=5, y=2sin(0)=0), (1, x=5cos(1) =aprox 2,7, y=2sin(1) =aprox 1,7), (2, x=5cos(2) =aprox -2,1, y=2sin(2) =aprox 1,8), (3, x=5cos(3) =aprox -4,95, y=2sin(3) =aprox 0,28), (4, x=5cos(4) =aprox -3,3, y=2sin(4) =aprox -1,5), (5, x=5cos(5) =aprox 1,4, y=2sin(5) =aprox -1,9), (-1, x=5cos(-1) =aprox 2,7, y=2sin(-1) =aprox -1,7), (-2, x=5cos(-2) =aprox -2,1, y=2sin(-2) =aprox -1,8), (-3, x=5cos(-3) =aprox -4,95, y=2sin(-3) =aprox -0,28), (-4, x=5cos(-4) =aprox -3,3, y=2sin(-4) =aprox 1,5), (-5, x=5cos(-5) =aprox 1,4, y=2sin(-5) =aprox 1,9).">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mi>t</m:mi>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+</thead>
+<tbody>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mtext>0</m:mtext>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mtext>1</m:mtext>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>2,7</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>1,7</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mtext>2 </m:mtext>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>−2,1</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>1,8</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mtext>3</m:mtext>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-4,95</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>0,28</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mtext>4</m:mtext>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-3,3</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-1,5</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mtext>5</m:mtext>
+        </m:math> </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>1,4</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-1,9</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>−1</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>2,7</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-1,7</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>−2</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>−2,1</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-1,8</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>−3</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-4,95</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-0,28</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>-4</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>-3,3</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>1,5</m:mn>
+            </m:mrow>
+        </m:math>
+
+        </entry>
+    </row>
+    <row>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mn>−5</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>1,4</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+        <entry align="center"> <m:math>
+            <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>1,9</m:mn>
+            </m:mrow>
+        </m:math>
+        </entry>
+    </row>
+
+
+
+
+
+</tbody>
+
+
+
+
+
+
+
+
+</tgroup>
+</table><para id="fs-id1165137910988">Trace los valores <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo></m:mrow>            </m:mrow>
+          </m:math> de la tabla. Vea el <link target-id="Figure_08_07_006"/>.</para>
+
+          <figure id="Figure_08_07_006"><media id="fs-id1165137474600" alt="Gráfico de la elipse dada en coordenadas paramétricas y rectangulares. Es lo mismo en ambas imágenes.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_006.jpg"/>
+            </media>
+          </figure><para id="fs-id1165135245777">A continuación, traslade las ecuaciones paramétricas a la forma rectangular. Para ello, resolvemos <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:math> en <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo></m:mrow>
+          </m:mrow>
+        </m:math> o <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+          </m:mrow>
+        </m:math> y luego sustituimos la expresión por <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:math> en la otra ecuación. El resultado será una función <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo></m:mrow>
+          </m:mrow>
+        </m:math> si se resuelve para <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:math> en función de <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi><m:mo>,</m:mo>
+          </m:mrow>
+        </m:math> o <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo>
+          </m:mrow>
+        </m:math> si se resuelve para <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:math> en función de <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi><m:mo>.</m:mo>
+          </m:mrow>
+        </m:math> </para><equation id="fs-id1165137565254" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable><m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135193998">Entonces, utilice el <term class="no-emphasis" id="term-00008">teorema de Pitágoras</term>.</para><equation id="fs-id1165137653844" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>t</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mi>x</m:mi>
+           <m:mn>5</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mn>25</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+            <commentary id="fs-id1165137470251">
+            <title>Análisis</title>
+            <para id="fs-id1165137424263">En la <link target-id="Figure_08_07_007"/>, los datos de las ecuaciones paramétricas y de la ecuación rectangular se trazan juntos. Las ecuaciones paramétricas se trazan en azul; el gráfico de la ecuación rectangular se dibuja encima de la paramétrica en un estilo discontinuo coloreado en rojo. Evidentemente, ambas formas producen el mismo gráfico.</para>
+<figure id="Figure_08_07_007" class="small"><media id="fs-id1165134032313" alt="Gráfico superpuesto de las dos versiones de la elipse, que muestra que son iguales tanto si se dan en coordenadas paramétricas como rectangulares.">
+        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_007.jpg"/>
+      </media>
+       </figure></commentary>
+
+
+        </exercise></example><example id="Example_08_07_04">
+        <exercise id="fs-id1165134152557"><problem id="fs-id1165135208839">
+            <title>Graficar ecuaciones paramétricas y ecuaciones rectangulares en el sistema de coordenadas</title>
+            <para id="fs-id1165137898083">Represente gráficamente las ecuaciones paramétricas <m:math>
+              <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+              </m:mrow>
+            </m:math> y <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt>
+                  <m:mi>t</m:mi>
+                </m:msqrt>
+                <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>t</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+              </m:mrow>
+            </m:math> y el equivalente rectangular <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt>
+                  <m:mrow>
+                    <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msqrt>
+
+              </m:mrow>
+            </m:math> en el mismo sistema de coordenadas.</para></problem>
+          <solution id="fs-id1165134248714">
+            <para id="fs-id1165135195874">Construya una tabla de valores para las ecuaciones paramétricas, como hicimos en el ejemplo anterior, y grafique <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt>
+                  <m:mi>t</m:mi>
+                </m:msqrt>
+                <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>t</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+              </m:mrow>
+            </m:math> en la misma cuadrícula, como en la <link target-id="Figure_08_07_008"/>.</para>
+
+
+          <figure id="Figure_08_07_008" class="small"><media id="fs-id1165134284394" alt="Gráfico superpuesto de las dos versiones de la función dada que muestra que son iguales tanto si están dadas en coordenadas paramétricas como rectangulares.">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_008.jpg"/>
+            </media>
+          </figure></solution>
+            <commentary id="fs-id1165135347348">
+            <title>Análisis </title>
+            <para id="fs-id1165134254196">Con el dominio en <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:math> restringido, solo trazamos valores positivos de <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> Los datos paramétricos se grafican en azul y el gráfico de la ecuación rectangular está punteado en rojo. Una vez más, vemos que las dos formas se superponen.</para>
+            </commentary>
+            </exercise></example>
+
+      <note id="fs-id1165137823949" class="precalculus try">
+        <label>Ejercicio</label>
+        <exercise id="ti_08_07_03"><problem id="fs-id1165137551494"><para id="fs-id1165134347381">Dibuje el gráfico de las ecuaciones paramétricas <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>            </m:mrow>
+          </m:math> junto con la ecuación rectangular en la misma cuadrícula.</para></problem>
+          <solution id="fs-id1165137807092"><para id="fs-id1165137807093">El gráfico de las ecuaciones paramétricas está en rojo y el gráfico de la ecuación rectangular está dibujado en puntos azules sobre las ecuaciones paramétricas.</para>
+        <media id="fs-id1165135541737" alt="Gráfico superpuesto de las dos versiones de la elipse, que muestra que son iguales tanto si se dan en coordenadas paramétricas como rectangulares.">
+            <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_009.jpg"/>
+          </media></solution></exercise></note>
+
+    </section><section id="fs-id1165134181759"><title>Aplicaciones de las ecuaciones paramétricas</title><para id="fs-id1165135393365">Muchas de las ventajas de las ecuaciones paramétricas se hacen evidentes cuando se aplican a resolver problemas del mundo real. Aunque las ecuaciones rectangulares en <emphasis effect="italics">x</emphasis> y <emphasis effect="italics">y</emphasis> ofrecen una imagen global de la trayectoria de un objeto, no revelan la posición de un objeto en un momento determinado. Las ecuaciones paramétricas, sin embargo, ilustran cómo los valores de <emphasis effect="italics">x</emphasis> y <emphasis effect="italics">y</emphasis> cambian en función de <emphasis effect="italics">t</emphasis>, como la ubicación de un objeto en movimiento en un momento determinado.</para>
+
+<para id="fs-id1165137927248">Una aplicación común de las ecuaciones paramétricas es resolver problemas relacionados con el movimiento de proyectil. En este tipo de movimiento, un objeto se impulsa hacia delante en dirección hacia arriba formando un ángulo de <m:math>
+          <m:mrow>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+        </m:math> a la horizontal, con una velocidad inicial de <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>,</m:mo>
+          </m:mrow>
+        </m:math> y a una altura <m:math>
+          <m:mrow>
+            <m:mi>h</m:mi>
+          </m:mrow>
+        </m:math> sobre la horizontal.</para><para id="fs-id1165137898784">La trayectoria de un objeto impulsado con una inclinación de <m:math>
+            <m:mrow>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+          </m:math> a la horizontal, con rapidez inicial <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>v</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y a una altura <m:math>
+            <m:mrow>
+              <m:mi>h</m:mi>
+            </m:mrow>
+          </m:math> sobre la horizontal, viene dada por</para><equation id="fs-id1165137758645" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
+       <m:mi>v</m:mi>
+       <m:mn>0</m:mn>
+      </m:msub>
+      <m:mi>cos</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mtext>  </m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>g</m:mi><m:msup>
+       <m:mi>t</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
+       <m:mi>v</m:mi>
+       <m:mn>0</m:mn>
+      </m:msub>
+      <m:mi>sen</m:mi><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>h</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137723578">donde <m:math>
+            <m:mrow>
+              <m:mi>g</m:mi>            </m:mrow>
+          </m:math> tiene en cuenta los efectos de la <term class="no-emphasis" id="term-00009">gravedad</term> y <m:math>
+            <m:mrow>
+              <m:mi>h</m:mi>
+            </m:mrow>
+          </m:math> es la altura inicial del objeto. De acuerdo con las unidades implicadas en el problema, utilice <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mspace width="0.3em"/><m:mtext>pies</m:mtext><m:mtext>/</m:mtext><m:msup>
+   <m:mtext>s</m:mtext>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>=</m:mo><m:mn>9,8</m:mn><m:mspace width="0.3em"/><m:mtext>m</m:mtext><m:mtext>/</m:mtext><m:msup>
+   <m:mtext>s</m:mtext>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La ecuación para <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi>            </m:mrow>
+          </m:math> da la distancia horizontal, y la ecuación para <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi>            </m:mrow>
+          </m:math> da la distancia vertical.</para><note id="fs-id1165135469031" class="how-to-notitle">
+          <label>Cómo</label>
+          <para id="fs-id1165137761099"><emphasis>Dado un problema de movimiento de proyectil, utilice ecuaciones paramétricas para resolverlo.</emphasis></para>
+          <list id="fs-id1165134193492" list-type="enumerated" number-style="arabic"><item>La distancia horizontal viene dada por <m:math>
+              <m:mrow>
+                <m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> Sustituir la velocidad inicial del objeto por <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+            </item>
+            <item>La expresión <m:math>
+              <m:mrow>
+                <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+              </m:mrow>
+            </m:math> indica el ángulo con el que se impulsa el objeto. Sustituya ese ángulo en grados por <m:math>
+              <m:mrow>
+                <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+            </item>
+            <item>La distancia vertical viene dada por la fórmula <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>g</m:mi><m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2 </m:mn>
+                </m:msup>
+                <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> El término <m:math>
+              <m:mrow>
+                <m:mo>- −</m:mo><m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>g</m:mi><m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+
+              </m:mrow>
+            </m:math> representa el efecto de la gravedad. De acuerdo con las unidades involucradas, utilice <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>=</m:mo><m:mn>32</m:mn><m:mspace width="0.3em"/><m:msup>
+   <m:mrow>
+    <m:mtext>pies/s</m:mtext>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>=</m:mo><m:mn>9,8</m:mn><m:mspace width="0.3em"/><m:msup>
+   <m:mrow>
+    <m:mtext>m/s</m:mtext>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> De nuevo, sustituya la velocidad inicial por <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>,</m:mo>
+              </m:mrow>
+            </m:math> y la altura a la que se impulsó el objeto para <m:math>
+              <m:mrow>
+                <m:mi>h</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+            </item>
+            <item>Proceda con el cálculo de cada término para resolver <m:math>
+              <m:mrow>
+                <m:mi>t</m:mi><m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+            </item>
+          </list></note>
+
+        <example id="Example_08_07_05">
+          <exercise id="fs-id1165137836910">
+            <problem id="fs-id1165137501592">
+              <title>Hallar las ecuaciones paramétricas para describir el movimiento de una pelota de béisbol</title>
+              <para id="fs-id1165135570049">Resuelva el problema presentado al principio de esta sección. ¿El bateador batea el jonrón ganador del partido? Supongamos que la pelota se golpea con una velocidad inicial de 140 pies por segundo en un ángulo de <m:math>
+ <m:mrow>
+  <m:mn>45°</m:mn>
+ </m:mrow>
+</m:math> a la horizontal, y hace contacto a 3 pies del suelo.</para><list id="fs-id1165131894550" list-type="enumerated" number-style="arabic" class="circled">
+               <item><span class="token">Ⓐ</span> Halle las ecuaciones paramétricas para modelar la trayectoria de la pelota de béisbol.</item>
+              <item><span class="token">Ⓑ</span> ¿Dónde está la pelota después de 2 segundos?</item>
+              <item><span class="token">Ⓒ</span> ¿Cuánto tiempo está la pelota en el aire?</item>
+              <item><span class="token">Ⓓ</span> ¿Es un jonrón?</item>
+              </list>
+
+            </problem>
+            <solution id="fs-id1165137453386">
+
+              <list id="fs-id1165135445817" list-type="enumerated" number-style="arabic" class="circled">
+                <item><span class="token">Ⓐ</span><para id="fs-id1165133299084">Utilice las fórmulas para establecer las ecuaciones. La posición horizontal se halla utilizando la ecuación paramétrica para <m:math>
+                  <m:mrow>
+                    <m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+                </m:math> Así,</para>
+                  <equation id="fs-id1165137643355" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
+       <m:mi>v</m:mi>
+       <m:mn>0</m:mn>
+      </m:msub>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>140</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135192687">La posición vertical se halla utilizando la ecuación paramétrica para <m:math>
+                    <m:mrow>
+                      <m:mi>y</m:mi><m:mo>.</m:mo>
+                    </m:mrow>
+                  </m:math> Así,</para>
+                  <equation id="fs-id1165137662399" class="unnumbered"><label/> <m:math display="block">
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+           <m:mi>t</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>v</m:mi>
+           <m:mn>0</m:mn>
+          </m:msub>
+          <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>h</m:mi>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+           <m:mi>t</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>140</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+</m:math>
+</equation></item>
+           <item><span class="token">Ⓑ</span> <para id="fs-id1165137643152">Sustituya el 2 en las ecuaciones para hallar las posiciones horizontal y vertical de la pelota.</para><equation id="fs-id1165133052900" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>140</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>198</m:mn><m:mtext> pies</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>140</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>137</m:mn><m:mtext> pies</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134063228">Después de 2 segundos, la pelota está a 198 pies de la caja de bateo y a 137 pies del suelo.</para></item>
+                <item><span class="token">Ⓒ</span><para id="fs-id1165134347441">Para calcular cuánto tiempo está la pelota en el aire, tenemos que averiguar cuándo va a tocar el suelo, o cuándo <m:math>
+                  <m:mrow>
+                    <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn></m:mrow>
+                </m:math> Por lo tanto,</para>
+                  <equation id="fs-id1165137667988" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+       <m:mi>t</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>140</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+         <m:mrow>
+          <m:mn>45</m:mn>
+         </m:mrow>
+         <m:mo>∘</m:mo>
+        </m:msup>
+        <m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Establezca </m:mtext><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext> y resuelva la cuadrática</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>6,2173</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137666794">Cuando <m:math>
+                    <m:mrow>
+                      <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>6,2173</m:mn>
+                    </m:mrow>
+                  </m:math> segundos, la pelota ha tocado el suelo (la ecuación cuadrática se puede resolver de varias maneras, pero este problema se resolvió utilizando un programa matemático de computadora).</para></item>
+                <item><span class="token">Ⓓ</span><para id="fs-id1165137462832">No podemos confirmar que el golpe fue un jonrón sin tener en cuenta el tamaño del campo exterior, que varía de un campo a otro. Sin embargo, para simplificar, vamos a suponer que el muro del campo está a 400 pies de la base del bateador en la parte más profunda del parque. Supongamos también que el muro tiene 10 pies de altura. Para determinar si la pelota pasa por encima de la pared, tenemos que calcular a qué altura está la pelota cuando <emphasis effect="italics">x</emphasis> = 400 pies. Así que fijaremos <emphasis effect="italics">x</emphasis> = 400 pies, resolvemos para <m:math>
+                  <m:mrow>
+                    <m:mi>t</m:mi><m:mo>,</m:mo>                  </m:mrow>
+                </m:math> e introducimos <m:math>
+                  <m:mrow>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math> en <m:math>
+                  <m:mrow>
+                    <m:mi>y</m:mi><m:mo>.</m:mo>                  </m:mrow>
+                </m:math> </para><equation id="fs-id1165137921676" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mn>140</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mi>t</m:mi>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mn>400</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mn>140</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mi>t</m:mi>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>4,04</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mn>4,04</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mn>140</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>45°</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4,04</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>141,8</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+</m:math>
+</equation><para id="fs-id1165134148366">La pelota está a 141,8 pies en el aire cuando sale disparada del estadio. Fue, efectivamente, un jonrón. Vea el <link target-id="Figure_08_07_010"/>.</para></item>
+              </list>
+
+            <figure id="Figure_08_07_010"><media id="fs-id1165135448259" alt="Trazado de la trayectoria de una pelota bateada que muestra la posición del bateador en el origen, la trayectoria de la pelota en forma de una amplia parábola orientada hacia abajo y el muro del campo como un segmento de línea vertical que se eleva a 10 ft por debajo de la trayectoria de la pelota.">
+                <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_010n.jpg"/>
+              </media>
+            </figure></solution>
+          </exercise>
+        </example>
+
+        <note id="fs-id1165137842378" class="precalculus media media-notitle">
+          <label>Media</label>
+          <para id="fs-id1165134323598">Acceda al siguiente recurso en línea para obtener instrucciones adicionales y practicar con gráficos de ecuaciones paramétricas.</para>
+
+          <list id="fs-id1165134323602" list-type="bulleted">
+            <item><link url="http://openstax.org/l/graphpara84">Graficar ecuaciones paramétricas en la TI-84</link></item></list>
+        </note>
+
+</section><section id="fs-id1165137470285" class="key-concepts">
+      <title>Conceptos clave</title>
+      <list id="fs-id1165135209598" list-type="bulleted"><item>Se pueden utilizar ecuaciones paramétricas cuando hay una tercera variable, un tercer parámetro sobre el que <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:math> como <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:math> dependen.</item>
+        <item>Para graficar ecuaciones paramétricas mediante el trazado de puntos, haga una tabla con tres columnas marcadas <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi><m:mo>,</m:mo><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+          </m:mrow>
+        </m:math> y <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+          </m:mrow>
+        </m:math> Elija los valores para <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:math> en orden creciente. Trace las dos últimas columnas para <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:math> como <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi><m:mo>.</m:mo>
+          </m:mrow>
+        </m:math> Vea el <link target-id="Example_08_07_01"/> y el <link target-id="Example_08_07_02"/>.</item>
+        <item>Al graficar una curva paramétrica mediante el trazado de puntos, anote los <emphasis effect="italics">valores t</emphasis> asociados y muestre flechas en el gráfico que indiquen la orientación de la curva. Vea el <link target-id="Example_08_07_03"/> y el <link target-id="Example_08_07_04"/>.</item>
+        <item>Las ecuaciones paramétricas permiten mostrar la dirección o la orientación de la curva en el gráfico. Las ecuaciones que no son funciones se pueden graficar y usar en muchas aplicaciones que implican movimiento. Vea el <link target-id="Example_08_07_05"/>.</item>
+
+        <item>El movimiento de proyectil depende de dos ecuaciones paramétricas <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
+   <m:mi>v</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
+   <m:mi>v</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La velocidad inicial se simboliza como <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>v</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> representa el ángulo inicial del objeto al ser lanzado, y <m:math>
+          <m:mrow>
+            <m:mi>h</m:mi>
+          </m:mrow>
+        </m:math> representa la altura a la que se impulsa el objeto.</item>
+    </list></section>
+
+      <section id="fs-id1165134283619" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165137851723">
+          <title>Verbales</title><exercise id="fs-id1165137851729"><problem id="fs-id1165135194722"><para id="fs-id1165135194723">¿Cuáles son los dos métodos utilizados para representar gráficamente ecuaciones paramétricas?</para></problem>
+            <solution id="fs-id1165135194726"><para id="fs-id1165135194727">trazar puntos con la flecha de orientación y una calculadora gráfica</para></solution></exercise>
+            <exercise id="fs-id1165135347318"><problem id="fs-id1165135347320"><para id="fs-id1165135347321">¿Cuál es una diferencia en el trazado de ecuaciones paramétricas en comparación con las ecuaciones cartesianas?</para></problem></exercise>
+            <exercise id="fs-id1165134113856"><problem id="fs-id1165134113857"><para id="fs-id1165134113858">¿Por qué algunos gráficos se dibujan con flechas?</para></problem>
+              <solution id="fs-id1165137758269"><para id="fs-id1165137758270">Las flechas muestran la orientación, la dirección del movimiento según los valores crecientes de <m:math>
+                <m:mrow><m:mi>t</m:mi><m:mo>.</m:mo>
+                </m:mrow>
+              </m:math>
+              </para></solution></exercise>
+            <exercise id="fs-id1165137641293"><problem id="fs-id1165134205947"><para id="fs-id1165134205948">Nombre algunos tipos comunes de gráficos de ecuaciones paramétricas.</para></problem></exercise>
+            <exercise id="fs-id1165134205952"><problem id="fs-id1165134205953"><para id="fs-id1165137715144">¿Por qué son importantes los gráficos paramétricos para entender el movimiento de proyectil?</para></problem>
+            <solution id="fs-id1165137715148"><para id="fs-id1165137715149">Las ecuaciones paramétricas muestran los diferentes movimientos verticales y horizontales en el tiempo.</para></solution></exercise>
+
+
+        </section>
+
+
+
+
+
+
+<section id="fs-id1165137788989">
+<title>Gráficos</title>
+<para id="fs-id1165135511376">En los siguientes ejercicios, grafique cada conjunto de ecuaciones paramétricas y haga una tabla de valores. Incluya la orientación en el gráfico.</para><exercise id="fs-id1165135581156" class="material-set-2"><problem id="fs-id1165135581157"><para id="fs-id1165135581158"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2 </m:mn>
+                  </m:msup>
+                <m:mo>–</m:mo><m:mn>1</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para>
+  <table id="eip-id3065206" summary="Esta tabla tiene tres filas y ocho columnas. La primera fila está marcada como t, la segunda como x y la tercera como y. La primera columna contiene los números -3, -2, -1, 0, 1, 2, 3. Las otras dos columnas se dejan en blanco para completarlas." class="unnumbered"><label/>
+<title/>
+<tgroup cols="7">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>t</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem></exercise><exercise id="fs-id1165134139687" class="material-set-2"><problem id="fs-id1165133361432"><para id="fs-id1165133361433"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2 </m:mn>
+                  </m:msup>
+
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para><table id="eip-id2869464" summary="Esta tabla tiene tres filas y ocho columnas. La primera fila está marcada como t, la segunda como x y la tercera como y. La primera fila contiene los números -3, -2, -1, 0, 1, 2. Las otras dos columnas se dejan en blanco para completarlas." class="unnumbered"><label/>
+<title/>
+<tgroup cols="7">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>t</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+
+</row>
+
+
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+
+
+</problem>
+<solution id="fs-id1165135188326"><media id="fs-id1165135190482" alt="Gráfico de las ecuaciones dadas: parece una parábola que se abre hacia arriba.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_202.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165135172250"><problem id="fs-id1165135172252"><para id="fs-id1165135172253"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:mi>t</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math> </para>
+
+  <table id="eip-id2018706" summary="Esta tabla tiene tres filas y ocho columnas. La primera fila está marcada como t, la segunda como x y la tercera como y. La primera fila contiene los números -2, -1, 0, 1, 2, 3. Las otras dos columnas se dejan en blanco para completarlas." class="unnumbered"><label/>
+<title/>
+<tgroup cols="7">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>t</m:mi>
+</m:math> </emphasis></entry>
+
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+</table></problem></exercise><exercise id="fs-id1165137457020"><problem id="fs-id1165137457021"><para id="fs-id1165137457022"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mi>t</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para><table id="eip-id2478452" summary="Esta tabla tiene tres filas y ocho columnas. La primera fila está marcada como t, la segunda como x y la tercera como y. La primera fila contiene los números -3, -2, -1, 0, 1. Las otras dos columnas se dejan en blanco para completarlas." class="unnumbered"><label/>
+<title/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>t</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+
+</row>
+
+
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165134583390"><media id="fs-id1165134572578" alt="Gráfico de las ecuaciones dadas: una línea, pendiente negativa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_204.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137643624"><problem id="fs-id1165137643625"><para id="fs-id1165137643626"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para><table id="eip-id1838664" summary="Esta tabla tiene tres filas y ocho columnas. La primera fila está marcada como t, la segunda como x y la tercera como y. La primera fila contiene los números - -2, -1, 0, 1, 2. Las otras dos columnas se dejan en blanco para completarlas." class="unnumbered"><label/>
+<title/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>t</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+</tbody>
+</tgroup>
+</table></problem></exercise><exercise id="fs-id1165137465652"><problem id="fs-id1165137465653"><para id="fs-id1165137465654"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para><table id="eip-id2086049" summary="Esta tabla tiene tres filas y ocho columnas. La primera fila está marcada como t, la segunda como x y la tercera como y. La primera fila contiene los números - -2, -1, 0, 1, 2. Las otras dos columnas se dejan en blanco para completarlas." class="unnumbered"><label/>
+<title/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>t</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165135237047"><media id="fs-id1165137834145" alt="Gráfico de las ecuaciones dadas: parece una parábola lateral, que se abre hacia la derecha.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_206.jpg"/>
+</media></solution></exercise><para id="fs-id1165137698486">En los siguientes ejercicios, dibuje la curva e incluya la orientación.</para><exercise id="fs-id1165135155255"><problem id="fs-id1165135155256"><para id="fs-id1165135155257"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+              <m:mi>t</m:mi>
+            </m:msqrt>
+
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165137427635"><problem id="fs-id1165137427636"><para id="fs-id1165135181824"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mspace width="0.3em"/><m:msqrt>
+              <m:mi>t</m:mi>
+            </m:msqrt>
+
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165134069188"><media id="fs-id1165134092005" alt="Gráfico de las ecuaciones dadas: parece la mitad izquierda de una parábola que se abre hacia arriba.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_208.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165135404698"><problem id="fs-id1165135404699"><para id="fs-id1165137811212"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>- −</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>t</m:mi> <m:mo>|</m:mo></m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165137771695"><problem id="fs-id1165137771696"><para id="fs-id1165137771697"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>- −</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>t</m:mi> <m:mo>|</m:mo></m:mrow>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165137417002"><media id="fs-id1165137407880" alt="Gráfico de las ecuaciones dadas: parece una función de valor absoluto que se abre hacia abajo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_210.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137737228"><problem id="fs-id1165137737229"><para id="fs-id1165137737230"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>sen</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem></exercise><exercise id="fs-id1165135168304"><problem id="fs-id1165135237110"><para id="fs-id1165135237111"> <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mtext>sen</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mtext>cos</m:mtext><m:mspace width="0.3em"/><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137936702"><media id="fs-id1165133067122" alt="Gráfico de las ecuaciones dadas: una elipse vertical.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_212.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137589849"><problem id="fs-id1165137589850"><para id="fs-id1165137589851"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+              <m:mi>cos</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165137410365"><problem id="fs-id1165137410366"><para id="fs-id1165137410367"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+              <m:mi>cos</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−3</m:mn><m:msup>
+              <m:mi>sen</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165134081386">
+<media id="fs-id1165135151320" alt="Gráfico de las ecuaciones dadas: línea de (0, –3) a (3,0). Se recorre en ambos sentidos, pendiente positiva y negativa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_214.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137601187"><problem id="fs-id1165137601188"><para id="fs-id1165137601189"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+
+
+
+
+  </para></problem>
+</exercise>
+
+
+  <exercise id="fs-id1165135209757"><problem id="fs-id1165137431122"><para id="fs-id1165137431123"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+              <m:mi>tan</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165137805783"><media id="fs-id1165137937556" alt="Gráfico de las ecuaciones dadas: parece una parábola que se abre hacia arriba.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_216.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137896941"><problem id="fs-id1165137896942"><para id="fs-id1165137698304"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>e</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn><m:mi>t</m:mi>
+                  </m:mrow>
+                </m:msup>
+
+              </m:mrow>
+            </m:mfrac>
+
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>-</m:mo><m:mspace width="0.3em"/><m:mi>t</m:mi>
+              </m:mrow>
+            </m:msup>
+
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+
+<para id="fs-id1165137925361">En los siguientes ejercicios, grafique la ecuación e incluya la orientación. Luego, escriba la ecuación cartesiana.</para><exercise id="fs-id1165137925365"><problem id="fs-id1165134149986"><para id="fs-id1165134149987"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2 </m:mn>
+                  </m:msup>
+
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165135149887"><media id="fs-id1165137453246" alt="Gráfico de las ecuaciones dadas: parece una parábola que se abre hacia abajo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_218.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165135190005"><problem id="fs-id1165135190006"><para id="fs-id1165135190007"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mrow>
+        <m:mtable columnalign="left">
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+
+        </m:mtable>
+      </m:mrow> </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165135597699"><problem id="fs-id1165135597700"><para id="fs-id1165135597701"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165135512730"><para id="fs-id1165135512731"><media id="fs-id1165137769966" alt="Gráfico de las ecuaciones dadas: elipse horizontal.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_220.jpg"/>
+</media></para></solution></exercise><exercise id="fs-id1165132945460"><problem id="fs-id1165135209077"><para id="fs-id1165135209078"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165135192319"><problem id="fs-id1165135192320"><para id="fs-id1165135192322"> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn><m:mi>t</m:mi>
+              </m:mrow>
+            </m:msup>
+
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mspace width="0.3em"/><m:mi>t</m:mi>
+              </m:mrow>
+            </m:msup>
+
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165132912723"><media id="fs-id1165134316930" alt="Gráfico de las ecuaciones dadas: parece la mitad inferior de una parábola lateral que se abre hacia la derecha.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_222.jpg"/>
+</media></solution></exercise><para id="fs-id1165135185162">En los siguientes ejercicios, grafique la ecuación e incluya la orientación.</para><exercise id="fs-id1165135185165"><problem id="fs-id1165135185166"><para id="fs-id1165135185167"> <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>y</m:mi><m:mspace width="0.3em"/><m:mo>=</m:mo><m:mspace width="0.3em"/><m:mn>3</m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>5</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165135186344"><problem id="fs-id1165135186345"><para id="fs-id1165135186346"> <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>,</m:mo><m:mspace width="0.3em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mspace width="0.5em"/><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>,</m:mo><m:mspace width="0.3em"/><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>5</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+  <solution id="fs-id1165133064407"><media id="fs-id1165133306861" alt="Gráfico de las ecuaciones dadas: parece una parábola que se abre hacia arriba.">
+      <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_224.jpg"/>
+    </media></solution></exercise><exercise id="fs-id1165133065688"><problem id="fs-id1165133065689"><para id="fs-id1165135553506"> <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msqrt>
+        <m:mrow>
+          <m:mn>25</m:mn><m:mo>- −</m:mo><m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2 </m:mn>
+          </m:msup>
+
+        </m:mrow>
+      </m:msqrt>
+      <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>5</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165137742391"><problem id="fs-id1165137742392"><para id="fs-id1165137742393"> <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>t</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+        <m:mi>t</m:mi>
+      </m:msqrt>
+      <m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>t</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165135252162"><media id="fs-id1165135487324" alt="Gráfico de las ecuaciones dadas: parece la mitad superior de una parábola lateral que se abre hacia la izquierda.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_226.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165134575412"><problem id="fs-id1165134575413"><para id="fs-id1165134575414"> <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mi>π</m:mi>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165134272124"><problem id="fs-id1165137897084"><para id="fs-id1165137897085"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137680409"><media id="fs-id1165137680414" alt="Gráfico de las ecuaciones dadas: la mitad izquierda de una hipérbola con asíntotas diagonales.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_228.jpg"/>
+</media></solution></exercise><para id="fs-id1165134032307">En los siguientes ejercicios, utilice las ecuaciones paramétricas para los enteros <emphasis effect="italics">a</emphasis> y <emphasis effect="italics">b</emphasis>:</para>
+  <equation id="eip-155" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable columnalign="left">
+      <m:mtr>
+        <m:mtd>
+          <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+
+  </m:math> </equation><exercise id="fs-id1165135160276"><problem id="fs-id1165135160277"><para id="fs-id1165135160278">Grafique en el dominio <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>-</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>0</m:mn>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+    </m:mrow>
+  </m:math> donde <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+    </m:mrow>
+  </m:math> e incluya la orientación.</para></problem></exercise>
+  <exercise id="fs-id1165137844152"><problem id="fs-id1165137844153"><para id="fs-id1165137844154">Grafique en el dominio <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>-</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>0</m:mn>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+    </m:mrow>
+  </m:math> donde <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+    </m:mrow>
+  </m:math> e incluya la orientación.</para></problem>
+<solution id="fs-id1165137409296"><media id="fs-id1165135181123" alt="Gráfico de las ecuaciones dadas: trayectoria periódica vertical">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_230.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137619318"><problem id="fs-id1165137619319"><para id="fs-id1165137619320">Grafique en el dominio <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>-</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>0</m:mn>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+    </m:mrow>
+  </m:math> donde <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+    </m:mrow>
+  </m:math> e incluya la orientación.</para></problem></exercise>
+  <exercise id="fs-id1165137404658"><problem id="fs-id1165137404659"><para id="fs-id1165137404660">Grafique en el dominio <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>-</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>0</m:mn>
+      </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+    </m:mrow>
+  </m:math> donde <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+    </m:mrow>
+  </m:math> e incluya la orientación.</para></problem>
+<solution id="fs-id1165137551247"><media id="fs-id1165137551252" alt="Gráfica de las ecuaciones dadas: trayectoria periódica vertical">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_232.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165133233024"><problem id="fs-id1165133233025"><para id="fs-id1165133233026">Si los valores de <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi>    </m:mrow>
+  </m:math> es 1 más que <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow>
+    </m:mrow>
+  </m:math> describa el efecto que los valores de <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi>    </m:mrow>
+  </m:math> tienen en el gráfico de las ecuaciones paramétricas.</para></problem></exercise>
+  <exercise id="fs-id1165135638542"><problem id="fs-id1165135638543"><para id="fs-id1165137767042">Describa el gráfico si <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>100</m:mn>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi><m:mo>=</m:mo><m:mn>99.</m:mn>
+    </m:mrow>
+  </m:math> </para></problem>
+<solution id="fs-id1165135189746"><para id="fs-id1165135189747">Habrá 100 movimientos de ida y vuelta.</para></solution></exercise>
+  <exercise id="fs-id1165135189750"><problem id="fs-id1165135189751"><para id="fs-id1165135530296">¿Qué pasa si <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi>    </m:mrow>
+  </m:math> es 1 más que <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>?</m:mo>    </m:mrow>
+  </m:math> Describa el gráfico.</para></problem></exercise>
+  <exercise id="fs-id1165134122767"><problem id="fs-id1165137823080"><para id="fs-id1165137823081">Si las ecuaciones paramétricas <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+          </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>t</m:mi>    </m:mrow>
+  </m:math> tenemos el gráfico de una parábola horizontal que se abre hacia la derecha, ¿qué cambiaría la dirección de la curva?</para></problem>
+    <solution id="fs-id1165135499919"><para id="fs-id1165134272702">Tome lo contrario de la ecuación <m:math>
+      <m:mrow><m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo></m:mrow>
+      </m:mrow>
+    </m:math>.</para></solution></exercise>
+
+<para id="fs-id1165137911683">En los siguientes ejercicios, describa el gráfico del conjunto de ecuaciones paramétricas.</para>
+  <exercise id="fs-id1165137911686"><problem id="fs-id1165137911687"><para id="fs-id1165137911688"> <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+          </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow>    </m:mrow>
+  </m:math> es lineal</para></problem></exercise>
+  <exercise id="fs-id1165135251241"><problem id="fs-id1165135251242"><para id="fs-id1165135251243"> <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+          </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow>    </m:mrow>
+  </m:math> es lineal</para></problem>
+<solution id="fs-id1165135609231"><para id="fs-id1165135609232">La parábola se abre.</para></solution></exercise>
+  <exercise id="fs-id1165135609236"><problem id="fs-id1165135609237"><para id="fs-id1165133365504"> <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+          </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo></m:mrow>    </m:mrow>
+  </m:math> es lineal</para></problem></exercise>
+  <exercise id="fs-id1165135453880"><problem id="fs-id1165135453881"><para id="fs-id1165135453882">Escriba las ecuaciones paramétricas de un círculo con centro <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> radio 5 y una orientación en sentido contrario a las agujas del reloj.</para></problem>
+    <solution id="fs-id1165135352460"><para id="fs-id1165135352461"> <m:math>
+      <m:mrow>
+        <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+          <m:mtr>
+            <m:mtd>
+              <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mi>t</m:mi>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mi>t</m:mi>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+    </para></solution></exercise>
+  <exercise id="fs-id1165133141349"><problem id="fs-id1165133141350"><para id="fs-id1165133141351">Escriba las ecuaciones paramétricas de una elipse con centro <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+        </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+    </m:mrow>
+  </m:math> eje mayor de longitud 10, eje menor de longitud 6 y una orientación en sentido contrario a las agujas del reloj.</para></problem></exercise>
+
+  <para id="fs-id1165137838292">En los siguientes ejercicios, utilice una herramienta gráfica para graficar en la ventana <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>- −</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>    </m:mrow>
+  </m:math> entre <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>[</m:mo> <m:mrow>
+        <m:mo>- −</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+      </m:mrow> <m:mo>]</m:mo></m:mrow>    </m:mrow>
+  </m:math> en el dominio <m:math>
+    <m:mrow>
+      <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo>    </m:mrow>
+  </m:math> para los siguientes valores de <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi>    </m:mrow>
+  </m:math> y <m:math>
+    <m:mrow>
+      <m:mi>b</m:mi>
+    </m:mrow>
+  </m:math> e incluya la orientación.
+  <equation id="eip-169" class="unnumbered"><label/> <m:math>
+    <m:mrow>
+      <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:mrow>
+    </m:mrow>
+  </m:math> grandes.
+  </equation>
+</para>
+<exercise id="fs-id1165137761928"><problem id="fs-id1165134053964"><para id="fs-id1165134053965"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165132960728"><media id="fs-id1165134050588" alt="Gráfico de las ecuaciones dadas ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_233.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165133276223"><problem id="fs-id1165133276224"><para id="fs-id1165133276225"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165135415664"><problem id="fs-id1165135415665"><para id="fs-id1165135415666"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+
+<solution id="fs-id1165134386554"><media id="fs-id1165134386560" alt="Gráfico de las ecuaciones dadas: líneas que se extienden en Q1 y Q3 (en ambas direcciones) desde el origen hasta 1 unidad.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_235.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165135572012"><problem id="fs-id1165135572013"><para id="fs-id1165135572014"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+  <exercise id="fs-id1165137832502"><problem id="fs-id1165134118436"><para id="fs-id1165134118437"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem>
+<solution id="fs-id1165133349420"><media id="fs-id1165135426370" alt="Gráfico de las ecuaciones dadas: líneas que se extienden en Q1 y Q3 (en ambas direcciones) desde el origen hasta 3 unidades.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_237.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165134357489"><problem id="fs-id1165134357490"><para id="fs-id1165134357491"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+    </m:mrow>
+  </m:math>
+  </para></problem></exercise>
+
+</section>
+
+        <section id="fs-id1165133315097">
+          <title>En tecnología</title>
+          <para id="fs-id1165134589497">En los siguientes ejercicios, observe los gráficos creados por ecuaciones paramétricas de la forma <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mtext>sen</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Utilice el modo paramétrico de la calculadora gráfica para hallar los valores de <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>,</m:mo>
+            </m:mrow>
+          </m:math> y <m:math>
+            <m:mrow>
+              <m:mi>d</m:mi>
+            </m:mrow>
+          </m:math> para lograr cada gráfico.</para><exercise id="fs-id1165137701974" class="material-set-2"><problem id="fs-id1165137701975">
+            <media id="fs-id1165137701981" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_239.jpg"/>
+            </media>
+          </problem>
+  <solution id="fs-id1165137651752"><para id="fs-id1165137651754"> <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+    </m:mrow>
+  </m:math>
+  </para></solution></exercise><exercise id="fs-id1165132032531" class="material-set-2"><problem id="fs-id1165132032532">
+            <media id="fs-id1165137827744" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_240.jpg"/>
+            </media>
+         </problem></exercise><exercise id="fs-id1165134237259" class="material-set-2"><problem id="fs-id1165134237260">
+            <media id="fs-id1165134237266" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_241.jpg"/>
+            </media>
+     </problem>
+            <solution id="fs-id1165137693606"><para id="fs-id1165137693607"> <m:math>
+              <m:mrow>
+                <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>c</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+              </m:mrow>
+            </m:math>
+            </para></solution></exercise><exercise id="fs-id1165133393487" class="material-set-2"><problem id="fs-id1165133393488"><media id="fs-id1165137734462" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_242.jpg"/>
+            </media>
+        </problem></exercise><para id="fs-id1165134211299">En los siguientes ejercicios, utilice una herramienta gráfica para graficar las ecuaciones paramétricas dadas. <list id="fs-id1165134211302" list-type="enumerated" number-style="lower-alpha">
+          <item> <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>t</m:mi>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+          </item>
+          <item> <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>t</m:mi>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+          </item>
+          <item> <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>t</m:mi><m:mo>-</m:mo><m:mi>sen</m:mi><m:mi>t</m:mi>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>1</m:mn>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+          </item>
+        </list></para>
+          <exercise id="fs-id1165137729163"><problem id="fs-id1165135453820"><para id="fs-id1165135453821">Grafique los tres conjuntos de ecuaciones paramétricas en el dominio <m:math>
+            <m:mrow>
+              <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+          </para></problem>
+
+          <solution id="fs-id1165137419669"><para id="eip-id1168252917601"><media id="fs-id1165137419674" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_243.jpg"/>
+            </media></para>
+         <para id="eip-id4974410"><media id="fs-id1165131990655" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_244.jpg"/>
+            </media></para>
+          <para id="eip-id1168245590312"><media id="fs-id1165134080848" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_245.jpg"/>
+            </media></para></solution></exercise><exercise id="fs-id1165134422229"><problem id="fs-id1165135253195"><para id="fs-id1165135253196">Grafique los tres conjuntos de ecuaciones paramétricas en el dominio <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>[</m:mo> <m:mrow>
+                <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>π</m:mi>
+              </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+          </para></problem></exercise>
+          <exercise id="fs-id1165134546248"><problem id="fs-id1165134546249"><para id="fs-id1165134546250">Grafique los tres conjuntos de ecuaciones paramétricas en el dominio <m:math>
+            <m:mrow>
+              <m:mrow><m:mo>[</m:mo> <m:mrow>
+                <m:mo>- −</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>6</m:mn><m:mi>π</m:mi>
+              </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+          </para></problem>
+          <solution id="fs-id1165131962224"><para id="eip-id1167711689609"><media id="fs-id1165131962228" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_249.jpg"/>
+            </media>
+          </para><para id="eip-id6707660"><media id="fs-id1165137737032" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_250.jpg"/>
+            </media>
+          </para><para id="eip-id1167707952320"><media id="fs-id1165135448160" alt="Gráfico de las ecuaciones dadas ">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_251.jpg"/>
+            </media>
+          </para></solution></exercise><exercise id="fs-id1165135515798"><problem id="fs-id1165135515799"><para id="fs-id1165135515800">El gráfico de cada conjunto de ecuaciones paramétricas parece “desplazarse" por uno de los ejes. ¿Qué controla el eje por el que se desplaza el gráfico?</para></problem></exercise>
+          <exercise id="fs-id1165135662544"><problem id="fs-id1165135662545"><para id="fs-id1165135662546">Explique el efecto en el gráfico de la ecuación paramétrica cuando cambiamos <m:math>
+            <m:mrow>
+              <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>            </m:mrow>
+          </m:math> y <m:math>
+            <m:mrow>
+              <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+            </m:mrow>
+          </m:math>.</para></problem>
+          <solution id="fs-id1165135252078"><para id="fs-id1165135252079">La intersección en <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math>cambia.</para></solution></exercise>
+          <exercise id="fs-id1165135606062"><problem id="fs-id1165135606063"><para id="fs-id1165135606064">Explique el efecto de la ecuación paramétrica en el gráfico cuando cambiamos el dominio.</para></problem></exercise>
+
+        </section>
+
+        <section id="fs-id1165135606068">
+          <title>Extensiones</title>
+          <exercise id="fs-id1165134040395" class="material-set-2"><problem id="fs-id1165134040396"><para id="fs-id1165134040397">Un objeto se lanza al aire con una velocidad vertical de 20 ft/s y una velocidad horizontal de 15 ft/s. Se puede describir la altura del objeto mediante la ecuación <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2 </m:mn>
+                </m:msup>
+              <m:mo>+</m:mo><m:mn>20</m:mn><m:mi>t</m:mi>
+            </m:mrow>
+          </m:math>, mientras el objeto se mueve horizontalmente con una velocidad constante de 15 ft/s. Escriba ecuaciones paramétricas para la posición del objeto y luego elimine el tiempo para que escriba la altura en función de la posición horizontal.</para></problem>
+            <solution id="fs-id1165132079269"><para id="fs-id1165132079270"> <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+                    <m:mrow>
+                      <m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mi>x</m:mi>
+                            <m:mrow>
+                              <m:mn>15</m:mn>
+                            </m:mrow>
+                          </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow>
+                    </m:mrow>
+                    <m:mn>2 </m:mn>
+                  </m:msup>
+                <m:mo>+</m:mo><m:mn>20</m:mn><m:mrow><m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>x</m:mi>
+                      <m:mrow>
+                        <m:mn>15</m:mn>
+                      </m:mrow>
+                    </m:mfrac>
+
+                  </m:mrow>
+                  <m:mo>)</m:mo></m:mrow>
+              </m:mrow>
+            </m:math>
+            </para></solution></exercise>
+          <exercise id="fs-id1165137642896" class="material-set-2"><problem id="fs-id1165137642897"><para id="fs-id1165137642898">Un patinador que circula en patineta por una superficie plana a una velocidad constante de 9 ft/s lanza una pelota al aire, cuya altura se puede describir mediante la ecuación <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi><m:mrow><m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2 </m:mn>
+                </m:msup>
+              <m:mo>+</m:mo><m:mn>10</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>.</m:mo>
+            </m:mrow>
+          </m:math> Escriba ecuaciones paramétricas para la posición de la pelota y luego elimine el tiempo para escribir la altura en función de la posición horizontal.</para></problem></exercise>
+
+          <para id="fs-id1165132035992">En los siguientes ejercicios, utilice este escenario: Se lanza un dardo hacia arriba con una velocidad inicial de 65 ft/s a un ángulo de elevación de 52°. Considere la posición del dardo en cualquier momento <m:math>
+            <m:mrow>
+              <m:mi>t</m:mi><m:mo>.</m:mo>            </m:mrow>
+          </m:math> Ignore la resistencia del aire.</para><exercise id="fs-id1165131938001"><problem id="fs-id1165131938002"><para id="fs-id1165134371096">Halle ecuaciones paramétricas que modelen la situación del problema.</para></problem>
+            <solution id="fs-id1165134371099"><para id="fs-id1165134371100"> <m:math>
+              <m:mrow>
+                <m:mrow><m:mo>{</m:mo> <m:mtable columnalign="left">
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>64</m:mn><m:mi>t</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>52</m:mn><m:mo>°</m:mo>
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2 </m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo><m:mn>64</m:mn><m:mi>t</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>52</m:mn><m:mo>°</m:mo>
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+            </para></solution></exercise>
+          <exercise id="fs-id1165137401314"><problem id="fs-id1165137401315"><para id="fs-id1165133087397">Halle todos los valores posibles de <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi>            </m:mrow>
+          </m:math> que representan la situación.</para></problem></exercise>
+          <exercise id="fs-id1165135445716"><problem id="fs-id1165135445718"><para id="fs-id1165135445719">¿Cuándo llegará el dardo al suelo?</para></problem>
+          <solution id="fs-id1165135445722"><para id="fs-id1165133311063">aproximadamente en 3,2 segundos</para></solution></exercise>
+          <exercise id="fs-id1165133311066"><problem id="fs-id1165133311067"><para id="fs-id1165133311068">Halle la altura máxima del dardo.</para></problem></exercise>
+          <exercise id="fs-id1165133311071"><problem id="fs-id1165133311072"><para id="fs-id1165133311073">¿A qué hora alcanzará el dardo su máxima altura?</para></problem>
+          <solution id="fs-id1165135444043"><para id="fs-id1165135444044">1,6 segundos</para></solution></exercise>
+
+          <para id="fs-id1165135444047">En los siguientes ejercicios, observe los gráficos de cada una de las cuatro ecuaciones paramétricas. Aunque tienen un aspecto inusual y hermoso, son tan comunes que tienen nombres, como se indica en cada ejercicio. Utilice una herramienta gráfica para graficar cada una de ellas en el dominio indicado.</para>
+          <exercise id="fs-id1165137723597" class="material-set-2"><problem id="fs-id1165137723598"><para id="fs-id1165137723599">Una epicicloide: <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>14</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>- −</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>14</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> en el dominio <m:math>
+            <m:mrow>
+              <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo>
+            </m:mrow>
+          </m:math>.</para></problem></exercise>
+          <exercise id="fs-id1165135596508" class="material-set-2"><problem id="fs-id1165135596509"><para id="fs-id1165135596510">Una hipocicloide: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> en el dominio <m:math>
+            <m:mrow>
+              <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo>
+            </m:mrow>
+          </m:math>.</para></problem>
+
+          <solution id="fs-id1165134569130"><media id="fs-id1165134569135" alt="Gráfico de las ecuaciones dadas: una hipocicloide">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_253.jpg"/>
+            </media></solution></exercise><exercise id="fs-id1165131958330" class="material-set-2"><problem id="fs-id1165131958331"><para id="fs-id1165131958332">Una hipotrocoide: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> en el dominio <m:math>
+            <m:mrow>
+              <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo>
+            </m:mrow>
+          </m:math>.</para></problem></exercise>
+          <exercise id="fs-id1165137854188" class="material-set-2"><problem id="fs-id1165137854189"><para id="fs-id1165137854190">Una rosa: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>sen</m:mi><m:mi>t</m:mi>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mi>t</m:mi>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> en el dominio <m:math>
+            <m:mrow>
+              <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">]</m:mo>
+            </m:mrow>
+          </m:math>.</para></problem>
+          <solution id="fs-id1165134134026"><media id="fs-id1165135412041" alt="Gráfico de las ecuaciones dadas: una rosa de cuatro pétalos">
+              <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_07_255.jpg"/>
+            </media></solution></exercise></section>
+      </section></content>
+</document>

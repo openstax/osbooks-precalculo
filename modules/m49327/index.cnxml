@@ -1,0 +1,2454 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Ajuste de modelos lineales a los datos</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49327</md:content-id>
+  <md:title>Ajuste de modelos lineales a los datos</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Dibujar e interpretar gráficos de dispersión.</item>
+<item>Hallar la línea de mejor ajuste.</item>
+<item>Distinguir entre relaciones lineales y no lineales.</item>
+<item>Utilizar un modelo lineal para hacer predicciones.</item>
+</list></md:abstract>
+  <md:uuid>5586f247-fbe5-44bb-b053-a432eb193aca</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165137641419">Un profesor intenta identificar las tendencias entre las puntuaciones de los exámenes finales. En su clase hay una mezcla de alumnos, por lo que se pregunta si hay alguna relación entre la edad y las notas de los exámenes finales. Una forma de analizar las puntuaciones es crear un diagrama que relacione la edad de cada alumno con la puntuación recibida en el examen. En esta sección, examinaremos uno de estos diagramas, el cual se conoce como diagrama de dispersión.</para>
+
+<section id="fs-id1165137557592"><title>Dibujar e interpretar gráficos de dispersión</title><para id="fs-id1165135262700">El <term class="no-emphasis" id="term-00001">diagrama de dispersión</term> es un gráfico de puntos trazados capaz de mostrar una relación entre dos conjuntos de datos. Si la relación procede de un <term class="no-emphasis" id="term-00002">modelo lineal</term>, o de un modelo casi lineal, el profesor puede sacar conclusiones por medio de su conocimiento acerca de funciones lineales. La <link target-id="CNX_Precalc_Figure_02_04_001"/> muestra un ejemplo de gráfico de dispersión.</para>
+
+<figure id="CNX_Precalc_Figure_02_04_001" class="medium"><media id="fs-id1165137660654" alt="Gráfico de dispersión, titulado &quot;Puntuación del examen final frente a la edad&quot;. El eje x es la edad y el eje y es la nota del examen final. El rango de edades está entre los 20 y los 50 años, y el rango de puntuación va de 55 a 90 y tantos.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_001-c854.jpg"/>
+</media>
+
+<caption>Gráfico de dispersión de las variables de edad y puntuación del examen final</caption></figure><para id="fs-id1165137658014">Observe que este gráfico de dispersión <emphasis effect="italics">no</emphasis> indica ninguna <term class="no-emphasis" id="term-00003">relación lineal</term>. Los puntos no parecen seguir ninguna tendencia. En otras palabras, no parece haber ninguna relación entre la edad del estudiante y la puntuación en el examen final.</para>
+
+<example id="Example_02_04_01"><exercise id="fs-id1165137393214">
+<problem id="fs-id1165137735052">
+<title>Usar un diagrama de dispersión para investigar los chirridos de los grillos</title>
+<para id="fs-id1165137874471">La tabla siguiente muestra el número de chirridos de grillos en 15 segundos, para varias temperaturas de aire diferentes, en grados Fahrenheit.<footnote id="fs-id1165137782397">Datos seleccionados de http://classic.globe.gov/fsl/scientistsblog/2007/10/. Recuperado el 3 de agosto de 2010</footnote>. Trace estos datos y determine si los datos parecen estar relacionados linealmente.</para>
+
+  <table id="Table_02_04_01" summary="Esta tabla tiene dos filas y diez columnas. La primera fila está marcada como &quot;chirridos&quot;. La segunda fila está marcada como &quot;temperatura&quot;. Al leer las filas restantes como pares ordenados (es decir, (chirridos, temperatura), tenemos los siguientes valores: (44, 80,5), (35, 70,5), (20,4, 57), (33, 66), (31, 68), (35, 72), (18,5, 52), (37, 73,5) y (26, 53).">
+<tgroup cols="10"><colspec colnum="1" colname="c1" colwidth="10%"/>
+<colspec colnum="2" colname="c2" colwidth="10%"/>
+<colspec colnum="3" colname="c3" colwidth="10%"/>
+<colspec colnum="4" colname="c4" colwidth="10%"/>
+<colspec colnum="5" colname="c5" colwidth="10%"/>
+<colspec colnum="6" colname="c6" colwidth="10%"/>
+<colspec colnum="7" colname="c7" colwidth="10%"/>
+<colspec colnum="8" colname="c8" colwidth="10%"/>
+<colspec colnum="9" colname="c9" colwidth="10%"/>
+<colspec colnum="10" colname="c10" colwidth="10%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>Chirridos</emphasis></entry>
+<entry align="center">44</entry>
+<entry align="center">35</entry>
+<entry align="center">20,4</entry>
+<entry align="center">33</entry>
+<entry align="center">31</entry>
+<entry align="center">35</entry>
+<entry align="center">18,5</entry>
+<entry align="center">37</entry>
+<entry align="center">26</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Temperatura</emphasis></entry>
+<entry align="center">80,5</entry>
+<entry align="center">70,5</entry>
+<entry align="center">57</entry>
+<entry align="center">66</entry>
+<entry align="center">68</entry>
+<entry align="center">72</entry>
+<entry align="center">52</entry>
+<entry align="center">73,5</entry>
+<entry align="center">53</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137734520">
+<para id="fs-id1165137430969">El trazado de estos datos, tal y como se representa en la <link target-id="CNX_Precalc_Figure_02_04_002"/>, sugiere que puede haber una tendencia. Podemos ver en la tendencia de los datos que el número de chirridos aumenta a medida que aumenta la temperatura. La tendencia parece ser más o menos lineal, aunque ciertamente no es perfecta.</para>
+<figure id="CNX_Precalc_Figure_02_04_002">
+<media id="fs-id1165137550269" alt="Gráfico de dispersión, titulado &quot;Chirridos de grillos frente a temperatura del aire&quot;. El eje x es el número de chirridos de grillos en 15 segundos y el eje y es la temperatura (F). La línea de regresión es generalmente positiva.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_002-1ba2.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise>
+</example></section><section id="fs-id1165135623674"><title>Hallar la línea de mejor ajuste</title><para id="fs-id1165135443922">Una vez que reconocemos la necesidad de una función lineal para modelar esos datos, la pregunta obvia que sigue es "¿cuál es esa función lineal?”. Una forma de aproximar nuestra función lineal es trazar la línea que parezca ajustarse mejor a los datos. Entonces podemos extender la línea hasta que podamos verificar la intersección en <emphasis effect="italics">y</emphasis>. Podemos calcular la pendiente de la línea al extenderla hasta que podamos estimar la <m:math><m:mrow><m:mfrac><m:mrow><m:mtext>subida</m:mtext></m:mrow><m:mrow><m:mtext>recorrido</m:mtext></m:mrow></m:mfrac><m:mo>.</m:mo></m:mrow></m:math> </para>
+
+<example id="Example_02_04_02">
+<exercise id="fs-id1165135441718">
+<problem id="fs-id1165137416925">
+<title>Hallar la línea de mejor ajuste</title>
+<para id="fs-id1165137460357">Halle una función lineal que se ajuste a los datos en la <link target-id="Table_02_04_01"/> al “ojear" una línea que parezca ajustarse.</para>
+</problem>
+<solution id="fs-id1165134104062">
+<para id="fs-id1165137507732">En un gráfico, podríamos intentar trazar una línea. </para>
+<para id="fs-id1165137581362">Utilizando los puntos inicial y final de nuestra línea dibujada a mano, los puntos (0, 30) y (50, 90), este gráfico tiene una pendiente de</para>
+
+<equation id="fs-id1165137736934" class="unnumbered"><label/> <m:math display="block"><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>60</m:mn></m:mrow><m:mrow><m:mn>50</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1,2</m:mn></m:mrow></m:math> </equation>
+
+<para id="fs-id1165135536506">y una intersección en <emphasis effect="italics">y</emphasis> en 30. Esto da una ecuación de</para>
+
+<equation id="fs-id1165137803698" class="unnumbered"><label/> <m:math display="block"><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1,2</m:mn><m:mi>c</m:mi><m:mo>+</m:mo><m:mn>30</m:mn></m:mrow></m:math> </equation>
+
+<para id="fs-id1165137573540">donde <m:math><m:mi>c</m:mi></m:math> es el número de chirridos en 15 segundos, y <m:math><m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> es la temperatura en grados Fahrenheit. La ecuación resultante se representa en la <link target-id="CNX_Precalc_Figure_02_04_003"/>.</para><figure id="CNX_Precalc_Figure_02_04_003">
+<media id="fs-id1165137530089" alt="Diagrama de dispersión, que muestra la línea de mejor ajuste. Se titula &quot;Chirridos de grillos frente a la temperatura del aire&quot;. El eje x es 'c, Número de chirridos' y el eje y es 'T(c), Temperatura (F)'.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_003-9b3c.jpg"/>
+</media>
+</figure>
+</solution>
+<commentary id="fs-id1165137606193">
+<title>Análisis</title>
+<para id="fs-id1165137745268">Esta ecuación lineal se puede utilizar para inferir las respuestas a varias preguntas que podríamos hacer sobre la tendencia.</para>
+</commentary>
+</exercise>
+</example>
+
+<section id="fs-id1165137456060"><title>Reconocer la interpolación o la extrapolación</title><para id="fs-id1165135255246">Aunque los datos de la mayoría de los ejemplos no caen perfectamente sobre la línea, la ecuación es nuestra mejor conjetura sobre cómo se comportará la relación fuera de los valores para los que tenemos datos. Utilizamos un proceso conocido como <emphasis>interpolación</emphasis> cuando predecimos un valor dentro del dominio y el rango de los datos. La <emphasis>extrapolación</emphasis> se utiliza cuando predecimos un valor fuera del dominio y del rango de los datos.</para>
+<para id="fs-id1165137911398">La <link target-id="CNX_Precalc_Figure_02_04_004"/> compara los dos procesos para los datos del chirrido de los grillos que se abordan en el <link target-id="Example_02_04_02"/>. Podemos ver que la interpolación se produciría si utilizamos nuestro modelo para predecir la temperatura cuando los valores de los chirridos están entre 18,5 y 44. La extrapolación se produciría si utilizáramos nuestro modelo para predecir la temperatura cuando los valores de los chirridos fueran inferiores a 18,5 o superiores a 44.</para>
+
+<figure id="CNX_Precalc_Figure_02_04_004" class="small">
+<media id="fs-id1165137438581" alt="Diagrama de dispersión, que muestra la línea de mejor ajuste y dónde se produce la interpolación y la extrapolación. Se titula &quot;Chirridos de grillos frente a la temperatura del aire&quot;. El eje x es 'c, Número de chirridos' y el eje y es 'T(c), Temperatura (F)'.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_004-e962.jpg"/>
+</media>
+<caption>La interpolación se produce dentro del dominio y del rango de los datos proporcionados, mientras que la extrapolación se produce fuera.</caption>
+</figure>
+
+<para id="fs-id1165137399663">Hay una diferencia entre hacer predicciones dentro del dominio y del rango de valores para los que tenemos datos y fuera de ese dominio y rango. Predecir un valor fuera del dominio y del rango tiene sus limitaciones. Cuando nuestro modelo deja de ser válido a partir de cierto momento, a veces se denomina <term id="term-00004">ruptura del modelo</term>. Por ejemplo, la predicción de una función de costes para un periodo de dos años implicaría el examen de los datos en los que la entrada es el tiempo en años y la salida es el costo. Sin embargo, si intentamos extrapolar un costo cuando <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>50,</m:mn></m:mrow></m:math> que es dentro de 50 años, el modelo no se aplicaría porque no podríamos contabilizar factores a la vuelta de cincuenta años.</para>
+
+
+
+<note id="fs-id1165137447983">
+
+<title>Interpolación y extrapolación</title>
+<para id="fs-id1165135646198">En el análisis de los datos se utilizan diferentes métodos para hacer predicciones.</para>
+ <list id="fs-id1165137666284" list-type="bulleted" bullet-style="none"><item>El método de <term id="term-00005">interpolación</term> consiste en predecir un valor dentro del dominio o rango de los datos.</item>
+<item>El método de <term id="term-00006">extrapolación</term> consiste en predecir un valor fuera del dominio o rango de los datos.</item>
+<item>La <emphasis>ruptura del modelo</emphasis> se produce en el momento en que este deja de ser aplicable.</item>
+</list></note>
+
+<example id="Example_02_04_03">
+<exercise id="fs-id1165137584562">
+<problem id="fs-id1165137734950">
+<title>Entender la interpolación y la extrapolación</title>
+<para id="fs-id1165137668321">Utilice los datos relativos a los grillos en la <link target-id="Table_02_04_01"/> para responder las siguientes preguntas:</para>
+<list id="fs-id1165137843776" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> ¿Predecir la temperatura cuando los grillos hacen 30 chirridos en 15 segundos sería interpolación o extrapolación? Haga la predicción y discuta si es razonable.</item>
+<item><span class="token">Ⓑ</span> ¿Predecir el número de chirridos que harán los grillos a 40 grados sería interpolación o extrapolación? Haga la predicción y discuta si es razonable.</item>
+</list>
+</problem>
+<solution id="fs-id1165137843814">
+<list id="fs-id1165137779181" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">Ⓐ</span> El número de chirridos en los datos proporcionados varía de 18,5 a 44. La predicción a 30 chirridos por 15 segundos está dentro del dominio de nuestros datos, por lo que sería una interpolación. Usando nuestro modelo:
+<equation id="eip-id1165131886691" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>+</m:mo><m:mn>1,2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mo>=</m:mo><m:mn>66</m:mn><m:mspace width="0.5em"/><m:mtext>grados</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><newline/>Con base en los datos que tenemos, este valor parece razonable.</item>
+<item><span class="token">Ⓑ</span> Los valores de temperatura variaron de 52 a 80,5. Predecir el número de chirridos a 40 grados es una extrapolación porque 40 está fuera del rango de nuestros datos. Usando nuestro modelo:
+<equation id="eip-id1165135551132" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>40</m:mn><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>+</m:mo><m:mn>1,2</m:mn><m:mi>c</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>10</m:mn><m:mo>=</m:mo><m:mn>1,2</m:mn><m:mi>c</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>c</m:mi><m:mo>≈</m:mo><m:mn>8,33</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></item>
+</list><para id="fs-id1165137434356">Podemos comparar las regiones de interpolación y extrapolación mediante la <link target-id="CNX_Precalc_Figure_02_04_005"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_04_005">
+<media id="fs-id1165135253858" alt="Diagrama de dispersión, que muestra la línea de mejor ajuste y dónde se produce la interpolación y la extrapolación. Se titula &quot;Chirridos de grillos frente a la temperatura del aire&quot;. El eje x es 'c, Número de chirridos' y el eje y es 'T(c), Temperatura (F)'.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_005-e10d.jpg"/>
+</media>
+</figure>
+</solution>
+<commentary id="fs-id1165137637804">
+<title>Análisis</title>
+<para id="fs-id1165137580571">Nuestro modelo predice que los grillos chirrían 8,33 veces en 15 segundos. Aunque esto sería posible, no tenemos ninguna razón para creer que nuestro modelo sea válido fuera del dominio y del rango. De hecho, generalmente los grillos dejan de chirriar por debajo de los 50 grados.</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135172171" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_04_01">
+<problem id="fs-id1165137824749">
+<para id="fs-id1165135695208">Según los datos a partir de la <link target-id="Table_02_04_01"/>, ¿qué temperatura podemos predecir si contamos 20 chirridos en 15 segundos?</para>
+</problem>
+<solution id="fs-id1165137597143">
+<para id="fs-id1165137659192"> <m:math><m:mrow><m:mn>54</m:mn><m:mo>°</m:mo><m:mtext>F</m:mtext></m:mrow></m:math> </para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137414565">
+<title>Hallar la línea de mejor ajuste con una herramienta gráfica </title>
+<para id="fs-id1165137598255">Si bien es cierto que la observación de una línea funciona razonablemente bien, existen técnicas estadísticas para ajustar una línea a los datos que minimizan las diferencias entre la línea y los valores de los datos.<footnote id="fs-id1165135195121">Técnicamente, el método minimiza la suma de las diferencias al cuadrado en la dirección vertical entre la línea y los valores de los datos.</footnote>. Una de estas técnicas se denomina <term id="term-00007">regresión de mínimos cuadrados</term> y puede estimarse con muchas calculadoras gráficas, programas de hojas de cálculo, programas estadísticos y muchas calculadoras en línea.<footnote id="fs-id1165137560714">Por ejemplo, http://www.shodor.org/unchem/math/lls/leastsq.html</footnote>. La regresión de mínimos cuadrados es un medio para determinar la línea que mejor se ajusta a los datos, y aquí nos referiremos a este método como regresión lineal.</para>
+
+<note id="fs-id1165137534286" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137472097"><emphasis>Dados los datos de entrada y las correspondientes salidas de una función lineal, calcular la línea de mejor ajuste con la regresión lineal.</emphasis></para>
+<list id="fs-id1165135192714" list-type="enumerated" number-style="arabic"><item>Introduzca la entrada en la Lista 1<emphasis>(L1</emphasis>).</item>
+<item>Introduzca la salida en la Lista 2<emphasis>(L2</emphasis>).</item>
+<item>En una herramienta gráfica, seleccione Regresión lineal<emphasis>(LinReg</emphasis>).</item>
+</list></note>
+
+<example id="Example_02_04_04">
+<exercise id="fs-id1165137557131"><problem id="fs-id1165137862815">
+<title>Hallar la línea de regresión de mínimos cuadrados</title>
+<para id="fs-id1165137550471">Halle la línea de regresión de mínimos cuadrados con los datos de los grillos en la <link target-id="Table_02_04_01"/>.</para>
+</problem>
+
+<solution id="fs-id1165137593741">
+<list id="fs-id1165137415920" list-type="enumerated" number-style="arabic"><item>Introduzca la entrada (chirridos) en la Lista 1 (L1).</item>
+<item>Introduzca la salida (temperatura) en la Lista 2 (L2). Vea el <link target-id="Table_02_04_02"/>.
+<table id="Table_02_04_02" summary="Esta tabla tiene dos filas y diez columnas. La primera fila está marcada como &quot;L1&quot;. La segunda fila está marcada como &quot;L2&quot;. Al leer las filas restantes como pares ordenados (es decir, (L2, L2), tenemos los siguientes valores: (44, 80,5), (35, 70,5), (20,4, 57), (33, 66), (31, 68), (35, 72), (18,5, 52), (37, 73,5) y (26, 53).">
+<tgroup cols="10"><colspec colname="c1" colnum="1" colwidth="10%"/>
+<colspec colname="c2" colnum="2" colwidth="10%"/>
+<colspec colname="c3" colnum="3" colwidth="10%"/>
+<colspec colname="c4" colnum="4" colwidth="10%"/>
+<colspec colname="c5" colnum="5" colwidth="10%"/>
+<colspec colname="c6" colnum="6" colwidth="10%"/>
+<colspec colname="c7" colnum="7" colwidth="10%"/>
+<colspec colname="c8" colnum="8" colwidth="10%"/>
+<colspec colname="c9" colnum="9" colwidth="10%"/>
+<colspec colname="c10" colnum="10" colwidth="10%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>L1</emphasis></entry>
+<entry align="center">44</entry>
+<entry align="center">35</entry>
+<entry align="center">20,4</entry>
+<entry align="center">33</entry>
+<entry align="center">31</entry>
+<entry align="center">35</entry>
+<entry align="center">18,5</entry>
+<entry align="center">37</entry>
+<entry align="center">26</entry>
+</row>
+<row>
+<entry align="center"><emphasis>L2</emphasis></entry>
+<entry align="center">80,5</entry>
+<entry align="center">70,5</entry>
+<entry align="center">57</entry>
+<entry align="center">66</entry>
+<entry align="center">68</entry>
+<entry align="center">72</entry>
+<entry align="center">52</entry>
+<entry align="center">73,5</entry>
+<entry align="center">53</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></item>
+<item>En una herramienta gráfica, seleccione Regresión lineal(LinReg). Utilizando los datos anteriores acerca de los chirridos de grillos, con la tecnología obtenemos la ecuación
+<equation id="fs-id1140825" class="unnumbered"><label/> <m:math display="block"><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>c</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30,281</m:mn><m:mo>+</m:mo><m:mn>1,143</m:mn><m:mi>c</m:mi></m:mrow></m:math> </equation>
+</item>
+</list></solution>
+<commentary id="fs-id1165137637983">
+<title>Análisis</title>
+<para id="fs-id1165137627652">Observe que esta línea es bastante similar a la ecuación que hemos "ojeado", pero debería ajustarse mejor a los datos. Observe también que el uso de esta ecuación cambiaría nuestra predicción para la temperatura al escuchar 30 chirridos en 15 segundos de 66 grados a:</para>
+<equation id="fs-id1165135194537" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>30,281</m:mn><m:mo>+</m:mo><m:mn>1,143</m:mn><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mo>=</m:mo><m:mn>64,571</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mo>≈</m:mo><m:mn>64,6</m:mn><m:mtext> grados</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137901348">El gráfico del gráfico de dispersión con la línea de regresión de mínimos cuadrados se muestra en la <link target-id="CNX_Precalc_Figure_02_04_006"/>.</para>
+<figure id="CNX_Precalc_Figure_02_04_006">
+<media id="fs-id1165137692164" alt="Diagrama de dispersión, que muestra la línea de mejor ajuste. Se titula &quot;Chirridos de grillos frente a la temperatura del aire&quot;. El eje x es 'c, Número de chirridos' y el eje y es 'T(c), Temperatura (F)'.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_006-dfce.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165135260732" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137611629"><emphasis>¿Habrá alguna vez un caso en el que dos líneas diferentes sirvan como el mejor ajuste para los datos? </emphasis></para>
+<para id="fs-id1165137507058"><emphasis effect="italics">No. Únicamente hay una línea de mejor ajuste.</emphasis></para>
+</note>
+</section>
+</section><section id="fs-id1165137594434"><title>Distinguir entre modelos lineales y no lineales</title><para id="fs-id1165135160844">Como hemos visto anteriormente con el modelo de grillo-chirrido, algunos datos muestran fuertes tendencias lineales. Sin embargo, otros datos, como las puntuaciones de los exámenes finales representadas por la edad, son claramente no lineales. La mayoría de las calculadoras y los programas informáticos también pueden proporcionarnos el <emphasis>coeficiente de correlación</emphasis>, que es una medida del grado de ajuste de la línea a los datos. Muchas calculadoras gráficas requieren que el usuario active una selección de "diagnóstico" para determinar el coeficiente de correlación, que los matemáticos denominan <m:math><m:mrow><m:mi>r</m:mi><m:mo>.</m:mo></m:mrow></m:math> El coeficiente de correlación es una forma sencilla de hacerse una idea de lo cerca que están los datos de una línea.</para>
+<para id="fs-id1165134164016">Deberíamos calcular el coeficiente de correlación únicamente para los datos que siguen un patrón lineal o para determinar el grado en que un conjunto de datos es lineal. Si los datos presentan un patrón no lineal, el coeficiente de correlación de una regresión lineal no tiene sentido. Para tener una idea de la relación entre el valor de <m:math><m:mi>r</m:mi></m:math> y el gráfico de los datos, la <link target-id="CNX_Precalc_Figure_02_04_007"/> muestra algunos grandes conjuntos de datos con sus coeficientes de correlación. Recuerde que, en todos los gráficos, el eje horizontal muestra la entrada y el eje vertical la salida.</para>
+
+<figure id="CNX_Precalc_Figure_02_04_007">
+<media id="fs-id1165137731415" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_007.jpg"/>
+</media>
+<caption>Datos graficados y coeficientes de correlación relacionados. (créditos: "DenisBoigelot", Wikimedia Commons)</caption>
+</figure>
+
+<note id="fs-id1165137443573"><title>Coeficiente de correlación</title>
+
+<para id="fs-id1165137416387">El <term id="term-00008">coeficiente de correlación</term> es un valor, <m:math><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> entre -1 y 1.</para>
+<list id="eip-id1165133093343" list-type="bulleted">
+<item><emphasis effect="italics">r</emphasis> > 0 sugiere una relación positiva (creciente)</item>
+<item><emphasis effect="italics">r</emphasis> &lt; 0 sugiere una relación negativa (decreciente)</item>
+<item>Cuanto más cerca esté el valor de 0, más dispersos estarán los datos.</item>
+<item>Cuanto más cerca esté el valor de 1 o –1, menos dispersos estarán los datos.</item>
+</list></note><example id="Example_02_04_05">
+<exercise id="fs-id1165137387185">
+<problem id="fs-id1165137680583">
+<title>Hallar el coeficiente de correlación </title>
+<para id="fs-id1165137734908">Calcule el coeficiente de correlación para los datos de grillo-chirrido en la <link target-id="Table_02_04_01"/>.</para>
+</problem>
+<solution id="fs-id1165137639432">
+<para id="fs-id1165137471985">Debido a que los datos parecen seguir un patrón lineal, podemos utilizar la tecnología para calcular <m:math><m:mrow><m:mi>r</m:mi><m:mo>.</m:mo></m:mrow></m:math> Introduzca las entradas y salidas correspondientes y seleccione la regresión lineal. La calculadora también le proporcionará el coeficiente de correlación, <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,9509.</m:mn></m:mrow></m:math> Este valor es muy cercano a 1, lo que sugiere una fuerte relación lineal creciente.</para>
+<para id="fs-id1165137473276">Nota: En algunas calculadoras, el diagnóstico deberá estar "activado" para obtener el coeficiente de correlación cuando se realiza una regresión lineal: [2nd]>[0]>[alpha][ <m:math><m:mi>x</m:mi></m:math> -1], y luego desplácese hasta <emphasis>DIAGNOSTICSON</emphasis>.</para></solution>
+</exercise>
+</example>
+</section><section id="fs-id1165137731906">
+<title>Predecir con la línea de regresión </title>
+<para id="fs-id1165137436049">Una vez que determinamos que un conjunto de datos es lineal utilizando el coeficiente de correlación, podemos utilizar la línea de regresión para hacer predicciones. Como hemos aprendido anteriormente, la línea de regresión es la que más se acerca a los datos en el gráfico de dispersión, lo que significa que solo una de esas líneas es la que mejor se ajusta a los datos.</para>
+
+<example id="Example_02_04_06">
+<exercise id="fs-id1165137571292"><problem id="fs-id1165135546014">
+<title>Usar la línea de regresión para hacer predicciones </title>
+  <para id="fs-id1165135191292">El consumo de gasolina en Estados Unidos no ha dejado de aumentar. Los datos de consumo de 1994 a 2004 se revelan en la <link target-id="Table_02_04_03"/><footnote id="ch02mod04_fn1">http://www.bts.gov/publications/national_transportation_statistics/2005/html/table_04_10.html</footnote>. Determine si la tendencia es lineal y, de ser así, halle un modelo para los datos. Utilice el modelo para predecir el consumo en 2008.</para>
+
+<table id="Table_02_04_03" summary="La tabla tiene dos filas y doce columnas. La primera fila está marcada como &quot;Año&quot;. La segunda fila está marcada como &quot;Consumo (miles de millones de galones)&quot;. Al leer las filas restantes como pares ordenados (es decir, (Año, Consumo), tenemos los siguientes valores ('94, 113), ('95, 116), ('96, 118), ('97, 119), ('98, 123), ('99, 125), ('00, 126), ('01, 128), ('02, 131), ('03, 133) y ('04, 136).">
+<tgroup cols="12"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+<colspec colnum="10" colname="c10"/>
+<colspec colnum="11" colname="c11"/>
+<colspec colnum="12" colname="c12"/>
+<tbody>
+<row>
+<entry align="center"><emphasis>Año</emphasis></entry>
+<entry align="center">94</entry>
+<entry align="center">95</entry>
+<entry align="center">96</entry>
+<entry align="center">97</entry>
+<entry align="center">98</entry>
+<entry align="center">99</entry>
+<entry align="center">00</entry>
+<entry align="center">01</entry>
+<entry align="center">02</entry>
+<entry align="center">03</entry>
+<entry align="center">04</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Consumo (miles de millones de galones)</emphasis></entry>
+<entry align="center">113</entry>
+<entry align="center">116</entry>
+<entry align="center">118</entry>
+<entry align="center">119</entry>
+<entry align="center">123</entry>
+<entry align="center">125</entry>
+<entry align="center">126</entry>
+<entry align="center">128</entry>
+<entry align="center">131</entry>
+<entry align="center">133</entry>
+<entry align="center">136</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-id1165135560788">El gráfico de dispersión de los datos, incluida la línea de regresión de mínimos cuadrados, se muestra en la <link target-id="CNX_Precalc_Figure_02_04_008"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_04_008" class="small">
+<media id="fs-id1165137437764" alt="Diagrama de dispersión, que muestra la línea de mejor ajuste. Se titula &quot;Consumo de gasolina en función del año&quot;. El eje x es &quot;Año posterior a 1994&quot; y el eje y es &quot;Consumo de gas (miles de millones de galones)&quot;.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_008.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165137605608">
+<para id="fs-id1165137767360">Podemos introducir una nueva variable de entrada, <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> que representa los años desde 1994.</para>
+<para id="fs-id1165137552875">La ecuación de regresión de mínimos cuadrados es:</para>
+<equation id="fs-id1165137694214" class="unnumbered"><label/> <m:math display="block"><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>113,318</m:mn><m:mo>+</m:mo><m:mn>2,209</m:mn><m:mi>t</m:mi></m:mrow></m:math> </equation>
+<para id="fs-id1165137767812">Utilizando la tecnología, el coeficiente de correlación se calculó en 0,9965, lo que sugiere una tendencia lineal creciente muy fuerte.</para>
+<para id="fs-id1165137444077">Utilizando esto para predecir el consumo en 2008 <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> </para>
+<equation id="fs-id1165135435699" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>113,318</m:mn><m:mo>+</m:mo><m:mn>2,209</m:mn><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mo>=</m:mo><m:mn>144,244</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135207471">El modelo prevé un consumo de gasolina de 144,244 millones de galones en 2008.</para></solution>
+</exercise></example>
+
+<note id="fs-id1165137724542" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_04_02">
+<problem id="fs-id1165135194124">
+<para id="fs-id1165137600643">Utilice el modelo que hemos creado con la tecnología en el <link target-id="Example_02_04_06"/> para predecir el consumo de gasolina en 2011. ¿Es interpolación o extrapolación?</para>
+</problem>
+<solution id="fs-id1165137423033">
+<para id="fs-id1165137540355">150,871 mil millones de galones; extrapolación</para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137570322" class="precalculus media media-notitile">
+<label>Media</label>
+<para id="fs-id1165137724994">Acceda a estos recursos en línea para obtener instrucciones adicionales y practicar el ajuste de modelos lineales a los datos.</para>
+<list id="fs-id1165135159935" list-type="bulleted">
+<item><link url="http://openstax.org/l/introregress">Introducción al análisis de regresión</link></item>
+<item><link url="http://openstax.org/l/linearregress">Regresión lineal</link></item>
+</list>
+</note></section>
+
+<section id="fs-id1165137619593" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137785014" list-type="bulleted">
+<item>Los gráficos de dispersión muestran la relación entre dos conjuntos de datos. Vea el <link target-id="Example_02_04_01"/>.</item>
+<item>Los gráficos de dispersión representan modelos lineales o no lineales.</item>
+<item>La línea de mejor ajuste puede estimarse o calcularse con una calculadora o un software estadístico. Vea el <link target-id="Example_02_04_02"/>.</item>
+<item>La interpolación sirve para predecir valores dentro del dominio y del rango de los datos, mientras que la extrapolación sirve para predecir valores fuera del dominio y del rango de los datos. Vea el <link target-id="Example_02_04_03"/>.</item>
+<item>El coeficiente de correlación, <m:math><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> indica el grado de relación lineal entre los datos. Vea el <link target-id="Example_02_04_05"/>.</item>
+<item>La línea de regresión es la que mejor se ajusta a los datos. Vea el <link target-id="Example_02_04_06"/>.</item>
+<item>La línea de regresión de mínimos cuadrados se halla al minimizar los cuadrados de las distancias de los puntos a una línea que pasa por los datos y puede utilizarse para hacer predicciones sobre cualquiera de las variables. Vea el <link target-id="Example_02_04_04"/>.</item>
+</list>
+</section>
+
+<section id="fs-id1165137652511" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165137591632">
+<title>Verbales</title>
+<exercise id="fs-id1165137446369">
+<problem id="fs-id1165137591304">
+<para id="fs-id1165137611355">Describa lo que significa que haya ruptura del modelo cuando se utiliza un modelo lineal.</para>
+</problem>
+<solution id="fs-id1165135209794">
+<para id="fs-id1165137473252">Cuando nuestro modelo ya no se aplica, después de algún valor en el dominio, el modelo en sí no se sostiene.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137844032">
+<problem id="fs-id1165137411243">
+<para id="fs-id1165137706941">¿Qué es la interpolación cuando se utiliza un modelo lineal?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137561929">
+<problem id="fs-id1165137745278">
+<para id="fs-id1165137733870">¿Qué es la extrapolación cuando se utiliza un modelo lineal?</para>
+</problem>
+<solution id="fs-id1165137804426">
+<para id="fs-id1165137409685">Predecimos un valor fuera del dominio y del rango de los datos.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135582265">
+<problem id="fs-id1165137675429">
+<para id="fs-id1165137645710">Explique la diferencia entre un coeficiente de correlación positivo y uno negativo. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137474817">
+<problem id="fs-id1165137663874">
+<para id="fs-id1165137558152">Explique cómo interpretar el valor absoluto de un coeficiente de correlación.</para>
+</problem>
+<solution id="fs-id1165137453094">
+<para id="fs-id1165137661479">Cuanto más se acerque el número a 1, menos dispersos estarán los datos; cuanto más se acerque el número a 0, más dispersos estarán los datos.</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137694081">
+<title>Algebraicos</title>
+
+<exercise id="fs-id1165137431563" class="material-set-2">
+<problem id="fs-id1165137533823">
+<para id="fs-id1165137901263">Se realizó una regresión para determinar si existe alguna relación entre las horas que se pasan mirando televisión cada día <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y el número de abdominales que puede hacer una persona <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> Los resultados de la regresión se presentan a continuación. Utilice esto para predecir el número de abdominales que puede hacer una persona que mira la televisión durante 11 horas.</para>
+<equation id="fs-id1165137603757" class="unnumbered"><label/> <m:math display="block">
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>-1,341</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mn>32,234</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>r</m:mi><m:mo>=</m:mo><m:mn>-0,896</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation></problem>
+</exercise>
+
+<exercise id="fs-id1165137439156" class="material-set-2">
+<problem id="fs-id1165137598528">
+<para id="fs-id1165137436473">Se realizó una regresión para determinar si existe una relación entre el diámetro de un árbol ( <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> en pulgadas) y la edad del árbol ( <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> en años). Los resultados de la regresión se presentan a continuación. Utilice esto para predecir la edad de un árbol con un diámetro de 10 pulgadas.</para><equation id="fs-id1165135502962" class="unnumbered"><label/> <m:math display="block">
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>6,301</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mn>-1,044</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>r</m:mi><m:mo>=</m:mo><m:mn>-0,970</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137666821">
+<para id="fs-id1165137415609">61,966 años</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137817724">En los siguientes ejercicios, dibuje un gráfico de dispersión para los datos proporcionados. ¿Parece que los datos están relacionados linealmente?</para>
+
+<exercise id="fs-id1165137660601" class="material-set-2">
+<problem id="fs-id1165135500037">
+ <table id="Table_02_04_04" summary="Esta tabla tiene dos filas y seis columnas. Al leer la columna y la fila como pares ordenados, tenemos (0, -22), (2, -19), (4, -15), (6, -11), (8, -6) y (10, -2)." class="unnumbered"><label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+<entry align="center">10</entry>
+</row>
+<row>
+<entry align="center">–22</entry>
+<entry align="center">-19</entry>
+<entry align="center">-15</entry>
+<entry align="center">–11</entry>
+<entry align="center">-6</entry>
+<entry align="center">-2</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137862108" class="material-set-2">
+<problem id="fs-id1165137553857">
+  <table id="Table_02_04_35" summary="Esta tabla tiene dos filas y seis columnas. Al leer la columna y la fila como pares ordenados, tenemos (1, 46), (2, 50), (3, 59), (4, 75), (5, 100), and (6, 136)." class="unnumbered"><label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center">1</entry>
+<entry align="center">2 </entry>
+<entry align="center">3</entry>
+<entry align="center">4</entry>
+<entry align="center">5</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center">46</entry>
+<entry align="center">50</entry>
+<entry align="center">59</entry>
+<entry align="center">75</entry>
+<entry align="center">100</entry>
+<entry align="center">136</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-id1165137456686">
+<para id="fs-id1165137627612">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137413972" class="material-set-2">
+<problem id="fs-id1165137417028">
+  <table id="Table_02_04_05" summary="Esta tabla tiene dos filas y seis columnas. Al leer la columna y la fila como pares ordenados, tenemos (100, 12), (250, 12,6), (300, 13,1), (450, 14), (600, 14,5), and (750, 15,2)." class="unnumbered"><label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center">100</entry>
+<entry align="center">250</entry>
+<entry align="center">300</entry>
+<entry align="center">450</entry>
+<entry align="center">600</entry>
+<entry align="center">750</entry>
+</row>
+<row>
+<entry align="center">12</entry>
+<entry align="center">12,6</entry>
+<entry align="center">13,1</entry>
+<entry align="center">14</entry>
+<entry align="center">14,5</entry>
+<entry align="center">15,2</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135485237" class="material-set-2">
+<problem id="fs-id1165137442603">
+  <table id="Table_02_04_06" summary="Esta tabla tiene dos filas y seis columnas. Al leer la columna y la fila como pares ordenados, tenemos (1, 1), (3, 9), (5, 28), (7, 65), (9, 125), y (11, 216)." class="unnumbered"><label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center">1</entry>
+<entry align="center">3</entry>
+<entry align="center">5</entry>
+<entry align="center">7</entry>
+<entry align="center">9</entry>
+<entry align="center">11</entry>
+</row>
+<row>
+<entry align="center">1</entry>
+<entry align="center">9</entry>
+<entry align="center">28</entry>
+<entry align="center">65</entry>
+<entry align="center">125</entry>
+<entry align="center">216</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-id1165137855133">
+<para id="fs-id1165137451408">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135613286" class="material-set-2"><problem id="fs-id1165137594948">
+<para id="fs-id1165137668424">Para los siguientes datos, dibuje un gráfico de dispersión. Si quisiéramos saber cuándo llegará la población a los 15000 habitantes, ¿la respuesta implicaría una interpolación o una extrapolación? Observe la línea e infiera la respuesta.</para>
+
+  <table id="Table_02_04_07" summary="La tabla tiene dos columnas y seis filas. La primera columna está marcada como &quot;Año&quot;. La segunda columna está marcada como &quot;Población&quot;. Al leer el resto de columnas como pares ordenados (es decir, (Año, Población), tenemos los siguientes valores: (1990, 11500), (1995, 12100), (2000, 12700), (2005, 13000), y (2010, 13750)." class="unnumbered"><label/>
+<tgroup cols="2"><thead><row>
+<entry align="center">Año</entry><entry align="center">Población</entry>
+</row></thead><tbody>
+<row>
+<entry align="center">1990</entry><entry align="center">11,500</entry></row>
+<row>
+<entry align="center">1995</entry><entry align="center">12,100</entry></row>
+<row>
+<entry align="center">2000</entry><entry align="center">12,700</entry></row>
+<row>
+<entry align="center">2005</entry><entry align="center">13.000</entry></row>
+<row>
+<entry align="center">2010</entry><entry align="center">13,750</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137416412" class="material-set-2"><problem id="fs-id1165135191532">
+<para id="fs-id1165137544609">Para los siguientes datos, dibuje un gráfico de dispersión. Si quisiéramos saber cuándo la temperatura alcanzará los 28 °F, ¿la respuesta implicaría una interpolación o una extrapolación? Observe la línea e infiera la respuesta.</para>
+<table id="Table_02_04_08" summary="Esta tabla tiene dos filas y seis columnas. La primera fila está marcada como &quot;Temperatura, grados F&quot;. La segunda fila está marcada como &quot;Tiempo, segundos&quot;. Al leer las filas restantes como pares ordenados (es decir, (Año, Población), tenemos los siguientes valores: (16, 46), (18, 50), (20, 54), (25, 55), y (30, 62)." class="unnumbered"><label/>
+<tgroup cols="6"><tbody>
+<row>
+<entry align="center"><emphasis>Temperatura, °F</emphasis></entry>
+<entry align="center">16</entry>
+<entry align="center">18</entry>
+<entry align="center">20</entry>
+<entry align="center">25</entry>
+<entry align="center">30</entry>
+</row>
+<row>
+<entry align="center"><emphasis>Tiempo, segundos</emphasis></entry>
+<entry align="center">46</entry>
+<entry align="center">50</entry>
+<entry align="center">54</entry>
+<entry align="center">55</entry>
+<entry align="center">62</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137647747">
+<para id="fs-id1165137559278">Interpolación. Alrededor de <m:math><m:mrow>
+<m:mn>60</m:mn><m:mo>°</m:mo><m:mtext> F</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise></section>
+
+<section id="fs-id1165137419296"><title>Gráficos</title><para id="fs-id1165137470446">En los siguientes ejercicios, haga coincidir cada gráfico de dispersión con una de las cuatro correlaciones especificadas en <link target-id="CNX_Precalc_Figure_02_04_204ab"/> y <link target-id="CNX_Precalc_Figure_02_04_204cd"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_04_204ab">
+<media id="eip-id1165135428485" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204ab-0b6b.jpg"/>
+</media>
+</figure>
+
+<figure id="CNX_Precalc_Figure_02_04_204cd">
+<media id="eip-id1165135428502" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204cd-5d6f.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165137831258">
+<problem id="fs-id1165134374040">
+<para id="fs-id1165137661154"> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn><m:mtext>95</m:mtext></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137436478">
+<problem id="fs-id1165137473998">
+<para id="fs-id1165137782415"> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,</m:mn><m:mtext>89</m:mtext></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137438567">
+<para id="fs-id1165137528075">C</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137661755">
+<problem id="fs-id1165137784944">
+<para id="fs-id1165137572595"> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,26</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137805103">
+<problem id="fs-id1165135593341">
+<para id="fs-id1165137824592"> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,39</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137433351">
+<para id="fs-id1165137456124">B</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137863522">En los siguientes ejercicios, dibuje una línea de mejor ajuste para los datos trazados.</para>
+
+<exercise id="fs-id1165137503083" class="material-set-2"><problem id="fs-id1165137715092">
+
+<media id="fs-id1165134094675" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_02_04_02.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137533645" class="material-set-2"><problem id="fs-id1165137551923">
+
+<media id="fs-id1165137628394" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_204-e172.jpg"/>
+</media>
+
+</problem>
+<solution id="eip-idm1072235056">
+<media id="fs-id1165137725739" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_205.jpg"/>
+</media>
+</solution>
+
+</exercise><exercise id="fs-id1165137442776" class="material-set-2"><problem id="fs-id1165135175053">
+
+<media id="fs-id1165137728228" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_206-f806.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165135400210" class="material-set-2"><problem id="fs-id1165135441702">
+
+<media id="fs-id1165137407697" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_208-4fe2.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137755479">
+
+<media id="fs-id1165137935568" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_209.jpg"/>
+</media>
+
+</solution>
+</exercise></section><section id="fs-id1165137455499">
+<title>Numéricos</title>
+<exercise id="fs-id1165137732073"><problem id="fs-id1165137453653">
+<para id="fs-id1165137626816">El censo de Estados Unidos registra el porcentaje de personas de 25 años o más que tienen un título universitario. Estos datos de varios años se recogen en la <link target-id="Table_02_04_11"/><footnote id="eip-id1165133035884">http://www.census.gov/hhes/socdemo/education/data/cps/historical/index.html. Consultado el 1 de mayo de 2014.</footnote>. Determine si la tendencia parece lineal. Si es así, y suponiendo que la tendencia se mantenga, ¿en qué año el porcentaje superará el 35 %?</para><table id="Table_02_04_11" summary="La tabla tiene dos columnas y once filas. La primera columna está marcada como &quot;Año&quot;. La segunda columna está marcada como &quot;Porcentaje de graduados&quot;. Al leer las restantes columnas como pares ordenados (es decir, (Año, Porcentaje de Graduados), tenemos los siguientes valores: (1990, 21,3), (1992, 21,4), (1994, 22,2), (1996, 23,6), (1998, 24,4), (2000, 25,6), (2002, 26,7), (2004, 27,7), (2006, 28), and (2008, 29,4).">
+<tgroup cols="2"><thead><row>
+<entry align="center">Año</entry><entry align="center">Porcentaje de graduados</entry></row></thead><tbody>
+<row>
+<entry align="center">1990</entry><entry align="center">21,3</entry></row>
+<row>
+<entry align="center">1992</entry><entry align="center">21,4</entry></row>
+<row>
+<entry align="center">1994</entry><entry align="center">22,2</entry></row>
+<row>
+<entry align="center">1996</entry><entry align="center"> 23,6</entry></row>
+<row>
+<entry align="center">1998</entry><entry align="center">24,4</entry></row>
+<row>
+<entry align="center">2000</entry><entry align="center">25,6</entry></row>
+<row>
+<entry align="center">2002</entry><entry align="center">26,7</entry></row>
+<row>
+<entry align="center">2004</entry><entry align="center">27,7</entry></row>
+<row>
+<entry align="center">2006</entry><entry align="center">28</entry></row>
+<row>
+<entry align="center">2008</entry><entry align="center">29,4</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137590278"><problem id="fs-id1165137629286">
+<para id="fs-id1165137547851">La importación estadounidense de vino (en hectolitros) durante varios años se indica en la <link target-id="Table_02_04_12"/>. Determine si la tendencia parece lineal. Si es así, y suponiendo que la tendencia se mantenga, ¿en qué año las importaciones superarán los 12.000 hectolitros?</para>
+  <table id="Table_02_04_12" summary="La tabla tiene dos columnas y once filas. La primera columna está marcada como &quot;Año&quot;. La segunda columna está marcada como &quot;Importaciones&quot;. Al leer las filas restantes como pares ordenados (es decir, (Año, Importaciones), tenemos los siguientes valores: (1992, 2665), (1994, 2688), (1996, 3565), (1998, 4129), (2000, 4584), (2002, 5655), (2004, 6549), (2006, 7950), (2008, 8487), y (2009, 9462).">
+<tgroup cols="2"><thead><row>
+<entry align="center">Año</entry><entry align="center">Importaciones</entry></row></thead><tbody>
+<row>
+<entry align="center">1992</entry><entry align="center">2665</entry></row>
+<row>
+<entry align="center">1994</entry><entry align="center">2688</entry></row>
+<row>
+<entry align="center">1996</entry><entry align="center">3565</entry></row>
+<row>
+<entry align="center">1998</entry><entry align="center">4129</entry></row>
+<row>
+<entry align="center">2000</entry><entry align="center">4584</entry></row>
+<row>
+<entry align="center">2002</entry><entry align="center">5655</entry></row>
+<row>
+<entry align="center">2004</entry><entry align="center">6549</entry></row>
+<row>
+<entry align="center">2006</entry><entry align="center">7950</entry></row>
+<row>
+<entry align="center">2008</entry><entry align="center">8487</entry></row>
+<row>
+<entry align="center">2009</entry><entry align="center">9462</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137763027">
+<para id="fs-id1165137772411">Sí, la tendencia parece lineal porque <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn><m:mtext>985</m:mtext></m:mrow></m:math> y superará los 12.000 hacia mediados de 2016, 24,6 años desde 1992.</para>
+</solution>
+</exercise><exercise id="fs-id1165137595578"><problem id="fs-id1165135186707">
+<para id="fs-id1165137646887">La <link target-id="Table_02_04_13"/> muestra el año y el número de desempleados en una determinada ciudad durante varios años. Determine si la tendencia parece lineal. Si es así, y suponiendo que la tendencia se mantenga, ¿en qué año el número de desempleados llegará a 5?</para>
+  <table id="Table_02_04_13" summary="La tabla tiene dos columnas y once filas. La primera columna está marcada como &quot;Año&quot;. La segunda columna está marcada como &quot;Desempleo&quot;. Al leer las filas restantes como pares ordenados (es decir, (Año, Desempleo), tenemos los siguientes valores: (1990, 750), (1992, 670), (1994, 650), (1996, 605), (1998, 550), (2000, 510), (2002, 460), (2004, 420), (2006, 380), y (2008, 320).">
+<tgroup cols="2"><thead><row>
+<entry align="center">Año</entry><entry align="center">Número de desempleados</entry></row></thead><tbody>
+<row>
+<entry align="center">1990</entry><entry align="center">750</entry></row>
+<row>
+<entry align="center">1992</entry><entry align="center">670</entry></row>
+<row>
+<entry align="center">1994</entry><entry align="center">650</entry></row>
+<row>
+<entry align="center">1996</entry><entry align="center">605</entry></row>
+<row>
+<entry align="center">1998</entry><entry align="center">550</entry></row>
+<row>
+<entry align="center">2000</entry><entry align="center">510</entry></row>
+<row>
+<entry align="center">2002</entry><entry align="center">460</entry></row>
+<row>
+<entry align="center">2004</entry><entry align="center">420</entry></row>
+<row>
+<entry align="center">2006</entry><entry align="center">380</entry></row>
+<row>
+<entry align="center">2008</entry><entry align="center">320</entry></row></tbody>
+
+
+</tgroup>
+</table></problem>
+</exercise></section>
+
+<section id="fs-id1165134301662">
+<title>En tecnología</title>
+<para id="fs-id1165135194598">En los siguientes ejercicios, utilice cada conjunto de datos para determinar la línea de regresión con una calculadora u otra herramienta tecnológica, y determine el coeficiente de correlación con una precisión de 3 decimales.</para>
+
+<exercise id="fs-id1165137605724" class="material-set-2"><problem id="fs-id1165137507279">
+  <table id="Table_02_04_14" summary="Esta tabla tiene seis filas y dos columnas. La primera columna de la primera fila está marcada como x, y la segunda columna de la primera fila como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (8, 23), (15, 41), (26, 53), (31, 72), y (56, 103)." class="unnumbered"><label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">8</entry>
+<entry align="center">15</entry>
+<entry align="center">26</entry>
+<entry align="center">31</entry>
+<entry align="center">56</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+<entry align="center">23</entry>
+<entry align="center">41</entry>
+<entry align="center">53</entry>
+<entry align="center">72</entry>
+<entry align="center">103</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-id1165137459923">
+<para id="fs-id1165137664397"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>1</m:mtext><m:mo>.</m:mo><m:mtext>64</m:mtext><m:mn>0</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>13</m:mtext><m:mo>.</m:mo><m:mtext>8</m:mtext><m:mn>00</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn><m:mtext>987</m:mtext></m:mrow></m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165137874895" class="material-set-2"><problem id="fs-id1165137726821">
+  <table id="Table_02_04_15" summary="Esta tabla tiene seis filas y dos columnas. La primera columna de la primera fila está marcada como x, y la segunda columna de la primera fila como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (5, 4), (7, 12), (10, 17), (12, 22), y (15, 24)." class="unnumbered"><label/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">7</entry>
+<entry align="center">10</entry>
+<entry align="center">12</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+<entry align="center">4</entry>
+<entry align="center">12</entry>
+<entry align="center">17</entry>
+<entry align="center">22</entry>
+<entry align="center">24</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise><exercise id="fs-id1165137452085" class="material-set-2"><problem id="fs-id1165135173825">
+  <table id="Table_02_04_16" summary="La tabla tiene diecisiete filas y dos columnas. La primera columna de la primera fila está marcada como x, y la segunda columna de la primera fila como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (3, 21,9), (4, 22,22), (5, 22,74), (6, 22,26), (7, 20,78), (8, 17,6), (9, 16,52), (10, 18,54), (11, 15,76), (12, 22), (13, 14,1), (14, 14,02), (15, 11,94), (16, 12,76), (17, 11,28) y (18, 9,1)." class="unnumbered"><label/>
+<tgroup cols="9"><tbody>
+<row>
+<entry align="center"><emphasis> <m:math> <m:mi>x</m:mi></m:math> </emphasis></entry><entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry><entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry><entry align="center"><emphasis> <m:math><m:mi>y</m:mi>
+</m:math> </emphasis></entry></row>
+<row>
+<entry align="center">3</entry><entry align="center">21,9</entry><entry align="center">11</entry><entry align="center">15,76</entry></row>
+<row>
+<entry align="center">4</entry><entry align="center">22,22</entry><entry align="center">12</entry><entry align="center">13,68</entry></row>
+<row>
+<entry align="center">5</entry><entry align="center">22,74</entry><entry align="center">13</entry><entry align="center">14,1</entry></row>
+<row>
+<entry align="center">6</entry><entry align="center">22,26</entry><entry align="center">14</entry><entry align="center">14,02</entry></row>
+<row>
+<entry align="center">7</entry><entry align="center">20,78</entry><entry align="center">15</entry><entry align="center">11,94</entry></row>
+<row>
+<entry align="center">8</entry><entry align="center">17,6</entry><entry align="center">16</entry><entry align="center">12,76</entry></row>
+<row>
+<entry align="center">9</entry><entry align="center">16,52</entry><entry align="center">17</entry><entry align="center">11,28</entry></row>
+<row>
+<entry align="center">10</entry><entry align="center">18,54</entry><entry align="center">18</entry><entry align="center">9,1</entry></row>
+</tbody>
+
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137637776">
+<para id="fs-id1165137559354"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,962</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>26,86</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,965</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165135186455" class="material-set-2"><problem id="fs-id1165137406797">
+  <table id="Table_02_04_17" summary="Once filas y dos columnas. La primera columna de la primera fila está marcada como x, y la segunda columna de la primera fila como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (4, 44,8), (5, 43,1), (6, 38,8), (7, 39), (8, 38), (9, 32,7), (10, 30,1), (11, 29,3), (12, 27), y (13, 25,8)." class="unnumbered"><label/>
+<tgroup cols="11"><tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry><entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry></row>
+<row>
+<entry align="center">4</entry><entry align="center">44,8</entry></row>
+<row>
+<entry align="center">5</entry><entry align="center">43,1</entry></row>
+<row>
+<entry align="center">6</entry><entry align="center">38,8</entry></row>
+<row>
+<entry align="center">7</entry><entry align="center">39</entry></row>
+<row>
+<entry align="center">8</entry><entry align="center">38</entry></row>
+<row>
+<entry align="center">9</entry><entry align="center">32,7</entry></row>
+<row>
+<entry align="center">10</entry><entry align="center">30,1</entry></row>
+<row>
+<entry align="center">11</entry><entry align="center">29,3</entry></row>
+<row>
+<entry align="center">12</entry><entry align="center">27</entry></row>
+<row>
+<entry align="center">13</entry><entry align="center">25,8</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137641718" class="material-set-2"><problem id="fs-id1165137724474">
+  <table id="Table_02_04_18" summary="la tabla tiene dos filas y siete columnas. La primera fila de la primera columna está marcada como x, y la primera fila de la segunda columna como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (21, 17), (25, 11), (30, 2), (31, -1), (40, -18), y (50, -40)." class="unnumbered"><label/>
+<tgroup cols="7"><tbody>
+  <row>
+    <entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+    <entry>21</entry>
+    <entry>25</entry>
+    <entry>30</entry>
+    <entry>31</entry>
+    <entry>40</entry>
+    <entry>50</entry>
+  </row>
+  <row>
+    <entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+    <entry>17</entry>
+    <entry>11</entry>
+    <entry>2 </entry>
+    <entry>-1</entry>
+    <entry>-18</entry>
+    <entry>-40</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137784854">
+<para id="fs-id1165137854799"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mtext>1</m:mtext><m:mo>.</m:mo><m:mtext>981</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>6</m:mtext><m:mn>0,</m:mn><m:mtext>197</m:mtext></m:mrow></m:math>; <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,</m:mn><m:mtext>998</m:mtext></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137723431" class="material-set-2"><problem id="fs-id1165137679652">
+  <table id="Table_02_04_19" summary="La tabla tiene dos filas y siete columnas. La primera fila de la primera columna está marcada como x, y la segunda columna de la primera fila está marcada como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (100, 2000), (80, 1798), (60, 1589), (55, 1589), (40, 1390), and (20, 1202)." class="unnumbered"><label/>
+<tgroup cols="7"><tbody>
+  <row>
+    <entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+    <entry>100</entry>
+    <entry>80</entry>
+    <entry>60</entry>
+    <entry>55</entry>
+    <entry>40</entry>
+    <entry>20</entry>
+  </row>
+  <row>
+    <entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+    <entry>2000</entry>
+    <entry>1798</entry>
+    <entry>1589</entry>
+    <entry>1580</entry>
+    <entry>1390</entry>
+    <entry>1202</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165135593250" class="material-set-2"><problem id="fs-id1165137386648">
+  <table id="Table_02_04_20" summary="La tabla tiene dos columnas y siete filas. La primera fila de la primera columna está marcada como x, y la segunda fila de la primera columna está marcada como y. Al leer las filas restantes como pares ordenados (es decir, (x , y)), tenemos: (900, 70), (988, 80), (1000, 82), (1010, 84), (1200, 105), y (1205, 108)." class="unnumbered"><label/>
+<tgroup cols="7"><tbody>
+  <row>
+    <entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+    <entry>900</entry>
+    <entry>988</entry>
+    <entry>1.000</entry>
+    <entry>1010</entry>
+    <entry>1200</entry>
+    <entry>1205</entry>
+  </row>
+  <row>
+    <entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+    <entry>70</entry>
+    <entry>80</entry>
+    <entry>82</entry>
+    <entry>84</entry>
+    <entry>105</entry>
+    <entry>108</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137573234">
+<para id="fs-id1165137573236"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn><m:mtext>121</m:mtext><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>38,841</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,998</m:mn></m:mrow></m:math> </para></solution>
+</exercise></section>
+
+<section id="fs-id1165137698519">
+<title>Extensiones</title>
+
+<exercise id="fs-id1165137922647" class="material-set-2">
+<problem id="fs-id1165137922649">
+<para id="fs-id1165137828175">Grafique <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn></m:mrow></m:math>. Elija un conjunto de 5 pares ordenados utilizando entradas <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>–2</m:mtext><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext> 5</m:mtext><m:mo>,</m:mo><m:mtext> 6</m:mtext><m:mo>,</m:mo><m:mtext> 9</m:mtext></m:mrow></m:math> y emplee la regresión lineal para verificar que la función se ajuste bien a los datos.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137874656" class="material-set-2">
+<problem id="fs-id1165137780760">
+<para id="fs-id1165137780762">Grafique <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn></m:mrow></m:math>. Elija un conjunto de 5 pares ordenados utilizando entradas <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>–2</m:mtext><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext> 5</m:mtext><m:mo>,</m:mo><m:mtext> 6</m:mtext><m:mo>,</m:mo><m:mtext> 9</m:mtext></m:mrow></m:math> y emplee la regresión lineal para verificar la función.</para></problem>
+<solution id="fs-id1165135499977">
+<para id="fs-id1165135184242"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>–2</m:mtext><m:mo>,</m:mo><m:mn>–6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>1</m:mtext><m:mo>,</m:mo><m:mtext>−12</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>5</m:mtext><m:mo>,</m:mo><m:mtext>−2</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>6</m:mtext><m:mo>,</m:mo><m:mtext>−22</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>9</m:mtext><m:mo>,</m:mo><m:mtext>−28</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>; <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>x</m:mi><m:mn>−10</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165135178388">En los siguientes ejercicios, considere este escenario: El beneficio de una empresa disminuyó de forma constante durante un periodo de diez años. Los siguientes pares ordenados muestran los dólares y el número de unidades vendidas en centenas, así como el beneficio en miles durante el período de diez años, (número de unidades vendidas, beneficio) para determinados años registrados:</para>
+<para id="fs-id1165135178390"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>46</m:mtext><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext>6</m:mtext><m:mn>00</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>48</m:mtext><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext>55</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>5</m:mtext><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext><m:mn>0</m:mn><m:mtext>5</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>52</m:mtext><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext>54</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>54</m:mtext><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mo>,</m:mo><m:mtext>495</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para><exercise id="fs-id1165137823674">
+<problem id="fs-id1165137823676">
+<para id="fs-id1165137572566">Utilice la regresión lineal para determinar una función <m:math><m:mi>P</m:mi></m:math> donde el beneficio en miles de dólares depende del número de unidades vendidas en cientos.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137454667">
+<problem id="fs-id1165137464421">
+<para id="fs-id1165137464423">Halle hasta la décima más cercana e interprete la intersección en <emphasis effect="italics">x</emphasis>.</para>
+</problem>
+<solution id="fs-id1165137804023">
+<para id="fs-id1165137804025"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>189</m:mtext><m:mo>.</m:mo><m:mtext>8</m:mtext><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.5em"/></m:mrow></m:math> Si se venden 18.980 unidades, la empresa tendrá un beneficio de cero dólares.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137605274">
+<problem id="fs-id1165137456004">
+<para id="fs-id1165137456006">Halle hasta la décima más cercana e interprete la intersección en <emphasis effect="italics">y</emphasis>.</para>
+</problem>
+</exercise>
+
+</section>
+<section id="fs-id1165137558753"><title>Aplicaciones en el mundo real</title><para id="fs-id1165134069180">En los siguientes ejercicios, considere este escenario: La población de una ciudad aumentó de forma constante durante un periodo de diez años. Los siguientes pares ordenados muestran la población y el año a lo largo de los diez años, (población, año) para determinados años registrados:</para>
+
+<para id="eip-id1165134130918"> <m:math>
+ <m:mrow>
+  <m:mtext>(2500, 2000), (2650, 2001), (3000, 2003), (3500, 2006), (4200, 2010)</m:mtext>
+ </m:mrow>
+</m:math> </para><exercise id="fs-id1165137806407">
+<problem id="fs-id1165137806409">
+<para id="fs-id1165137874658">Utilice la regresión lineal para determinar una función <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> donde el año depende de la población. Redondee a tres decimales de exactitud.</para></problem>
+<solution id="fs-id1165137694072">
+<para id="fs-id1165137694074"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0,00587</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>1985</m:mtext><m:mn>0,4</m:mn><m:mtext>1</m:mtext></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137934461">
+<problem id="fs-id1165137400465">
+<para id="fs-id1165137400467">Predecir cuándo la población llegará a los 8.000 habitantes.</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137413735">En los siguientes ejercicios, considere este escenario: El beneficio de una empresa aumentó de forma constante durante un período de diez años. Los siguientes pares ordenados muestran el número de unidades vendidas en centenas y el beneficio en miles durante el período de diez años, (número de unidades vendidas, beneficio) para determinados años registrados:</para>
+<para id="fs-id1165137662475"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>46</m:mtext><m:mo>,</m:mo><m:mtext> 25</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>48</m:mtext><m:mo>,</m:mo><m:mtext> 3</m:mtext><m:mn>0</m:mn><m:mtext>5</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>5</m:mtext><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 35</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>52</m:mtext><m:mo>,</m:mo><m:mtext> 39</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>54</m:mtext><m:mo>,</m:mo><m:mtext> 41</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</para>
+
+<exercise id="fs-id1165137793664" class="material-set-2">
+    <problem id="fs-id1165137581860">
+<para id="fs-id1165137581862">Utilice la regresión lineal para determinar una función <emphasis effect="italics">y</emphasis>, donde el beneficio en miles de dólares depende del número de cientos de unidades vendidas.</para>
+</problem>
+<solution id="fs-id1165137645638">
+<para id="fs-id1165137645640"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>2 </m:mtext><m:mn>0,</m:mn><m:mtext>25</m:mtext><m:mi>x</m:mi><m:mo>- −</m:mo><m:mtext>671</m:mtext><m:mo>.</m:mo><m:mtext>5</m:mtext></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137600690" class="material-set-2">
+<problem id="fs-id1165137401347">
+<para id="fs-id1165137401349">Predecir cuándo el beneficio superará el millón de dólares.</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165135531502">En los siguientes ejercicios, considere este escenario: El beneficio de una empresa disminuyó de forma constante durante un periodo de diez años. Los siguientes pares ordenados muestran los dólares y el número de unidades vendidas en centenas y el beneficio en miles de durante el período de diez años (número de unidades vendidas, beneficio) para determinados años registrados:</para>
+<para id="fs-id1165135381351"> <m:math>
+ <m:mrow>
+  <m:mtext>(46, 250), (48, 225), (50, 205), (52, 180), (54, 165)</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math>
+</para><exercise id="fs-id1165137736120" class="material-set-2">
+<problem id="fs-id1165137736122">
+<para id="fs-id1165137749028">Utilice la regresión lineal para determinar una función <emphasis effect="italics">y</emphasis>, donde el beneficio en miles de dólares depende del número de cientos de unidades vendidas.</para>
+</problem>
+<solution id="fs-id1165137696333">
+<para id="fs-id1165137662244"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mtext>1</m:mtext><m:mn>0,</m:mn><m:mtext>75</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>742</m:mtext><m:mo>.</m:mo><m:mtext>5</m:mtext><m:mn>0</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137422772" class="material-set-2">
+<problem id="fs-id1165137422775">
+<para id="fs-id1165135543083">Predecir cuándo el beneficio caerá por debajo del umbral de 25.000 dólares.</para>
+</problem>
+</exercise>
+</section>
+</section>
+<section id="fs-id1165137443890" class="review-exercises">
+<title>Ejercicios de repaso del capítulo</title>
+<section id="fs-id1165135543320"><title><link document="m49324">Funciones lineales</link></title><exercise id="fs-id1165135161473">
+<problem id="fs-id1165137465483">
+<para id="fs-id1165137465485">Determine si la ecuación algebraica es lineal <m:math><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137436100">
+<para id="fs-id1165137439114">Sí</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137434604">
+<problem id="fs-id1165137434606">
+<para id="fs-id1165137696602">Determine si la ecuación algebraica es lineal <m:math><m:mrow><m:mn>6</m:mn><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137806610">
+<problem id="fs-id1165137561503">
+<para id="fs-id1165137561505">Determine si la función es creciente o decreciente.</para>
+<para id="fs-id1165137855198"> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137543324">
+<para id="fs-id1165137543326">Creciente.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137923490">
+<problem id="fs-id1165137761220">
+<para id="fs-id1165137761222">Determine si la función es creciente o decreciente.</para>
+<para id="fs-id1165135192736"> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137736066">
+<problem id="fs-id1165137736068">
+<para id="fs-id1165135627880">Dado cada conjunto de información, halle una ecuación lineal que satisfaga las condiciones dadas si es posible.</para>
+<para id="fs-id1165135545838">Pasa por <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>7</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>3</m:mtext><m:mo>,</m:mo><m:mtext>17</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137416886">
+<para id="fs-id1165137619858"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mtext>3</m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>26</m:mtext></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137454901">
+<problem id="fs-id1165137405662">
+<para id="fs-id1165137405664">Dado cada conjunto de información, halle una ecuación lineal que satisfaga las condiciones dadas si es posible.</para>
+<para id="fs-id1165137553144">intersección en <emphasis effect="italics">x</emphasis> en <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>6</m:mtext><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> e intersección en <emphasis effect="italics">y</emphasis> en <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>1</m:mtext><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137410042" class="material-set-2"><problem id="fs-id1165137911669">
+<para id="fs-id1165137911671">Halle la pendiente de la línea que se muestra en el gráfico lineal. <newline/>
+<media id="fs-id1165135208964" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_211-710d.jpg"/>
+</media>
+</para></problem>
+<solution id="fs-id1165137596971">
+<para id="fs-id1165137502126">3</para>
+</solution>
+</exercise><exercise id="fs-id1165135159871" class="material-set-2"><problem id="fs-id1165137416652">
+<para id="fs-id1165137416654">Halle la pendiente de la recta graficada. <newline/>
+<media id="fs-id1165137767083" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_212-2da7.jpg"/>
+</media>
+</para>
+</problem>
+</exercise><exercise id="fs-id1165137638409" class="material-set-2"><problem id="fs-id1165135187602">
+<para id="fs-id1165135187604">Escriba una ecuación en forma de pendiente-intersección para la línea mostrada. <newline/>
+<media id="fs-id1165135457783" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_213-d4cf.jpg"/>
+</media>
+</para>
+</problem>
+<solution id="fs-id1165137447514">
+<para id="fs-id1165135434868"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>2 </m:mtext><m:mi>x</m:mi><m:mo>-</m:mo><m:mtext>2 </m:mtext></m:mrow></m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165137749276" class="material-set-2">
+<problem id="fs-id1165137749279">
+<para id="fs-id1165135190138">¿La siguiente tabla representa una función lineal? Si es así, halle la ecuación lineal que modela los datos.</para>
+  <table id="Table_02_04_21" summary="La tabla tiene dos filas y cinco columnas. La primera columna de la primera fila está marcada como x, y la primera columna de la segunda fila como y. Al leer las filas restantes como pares ordenados (es decir, (x, y)), tenemos: (-4, 18), (0, -2), (2, -12), y (10, -52)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">-4</entry>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">10</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">18</entry>
+<entry align="center">-2</entry>
+<entry align="center">–12</entry>
+<entry align="center">–52</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137418680" class="material-set-2"><problem id="fs-id1165137418682">
+<para id="fs-id1165137410608">¿La siguiente tabla representa una función lineal? Si es así, halle la ecuación lineal que modela los datos.</para>
+  <table id="Table_02_04_22" summary="La tabla tiene dos filas y cinco columnas. La primera columna de la primera fila está marcada como x, y la primera columna de la segunda fila está marcada como g(x). Al leer las filas restantes como pares ordenados (es decir, (x , g(x))), tenemos: (6, -8), (8, -12), (12, -18), y (26, -46)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+<entry align="center">12</entry>
+<entry align="center">26</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">–8</entry>
+<entry align="center">–12</entry>
+<entry align="center">–18</entry>
+<entry align="center">–46</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table>
+</problem>
+<solution id="fs-id1165137411070">
+<para id="fs-id1165137472500">No es lineal.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137452039" class="material-set-2">
+<problem id="fs-id1165137452041">
+<para id="fs-id1165135640460">El 1.<sup>o</sup> de junio, una empresa tiene 4.000.000 de dólares en beneficio. Si a partir de entonces la empresa pierde 150.000 dólares al día durante el mes de junio, ¿cuál es el beneficio de la empresa al <emphasis effect="italics">enésimo día</emphasis> después del 1.<sup>o</sup> de junio?</para>
+</problem>
+</exercise>
+</section><section id="fs-id1165135532356"><title><link document="m50389">Gráficos de funciones lineales</link></title><para id="fs-id1165135192057">En los siguientes ejercicios, determine si las líneas dadas por las ecuaciones de abajo son paralelas, perpendiculares o no son ni paralelas ni perpendiculares:</para>
+
+<exercise id="fs-id1165137571890">
+<problem id="fs-id1165137595618">
+<para id="fs-id1165137595620"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137823959">
+<para id="fs-id1165137823961">paralelas</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137831516">
+<problem id="fs-id1165137433951">
+<para id="fs-id1165137433953"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137445558">En los siguientes ejercicios, halle las intersecciones en <emphasis effect="italics">x</emphasis> y en <emphasis effect="italics">y</emphasis> de la ecuación dada</para>
+
+<exercise id="fs-id1165135526131">
+<problem id="fs-id1165135526133">
+<para id="fs-id1165135411399"> <m:math><m:mrow><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>-63</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137827731">
+<para id="fs-id1165137827733"> <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>-9</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>–7</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> grandes. </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137725355">
+<problem id="fs-id1165137725358">
+<para id="fs-id1165137634290"> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137441845">En los siguientes ejercicios, utilice las descripciones de los pares de líneas para hallar las pendientes de la Línea 1 y la Línea 2. ¿Cada par de líneas es paralelo, perpendicular o ninguno de los dos?</para>
+
+<exercise id="fs-id1165137767991"><problem id="fs-id1165137659690">
+<list id="eip-id1165131891712" list-type="labeled-item"><item>Línea 1: Pasa por <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> </item>
+<item>Línea 2: Pasa por <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>−5</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> </item>
+</list></problem>
+<solution id="fs-id1165137862949">
+<para id="fs-id1165137862952">Línea 1: <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo></m:mrow></m:math> Línea 2: <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo></m:mrow></m:math> Paralela</para>
+</solution>
+</exercise><exercise id="fs-id1165137871435"><problem id="fs-id1165135417849">
+<list id="eip-id1165135452232" list-type="labeled-item"><item>Línea 1: Pasa por <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>–10</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>-26</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> </item>
+<item>Línea 2: Pasa por <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> </item>
+</list></problem>
+</exercise><exercise id="fs-id1165137714762">
+<problem id="fs-id1165137714765">
+<para id="fs-id1165137673671">Escriba la ecuación de una línea perpendicular a <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow></m:math> y que pasa por el punto (5, 20).</para></problem>
+<solution id="fs-id1165137462451"><para id="fs-id1165137406537"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>21</m:mn></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135190770">
+<problem id="fs-id1165135190772">
+<para id="fs-id1165135209470">Halle la ecuación de una línea con intersección en <emphasis effect="italics">y</emphasis> de <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y pendiente <m:math><m:mrow><m:mo>- −</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow></m:math>.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135205940"><problem id="fs-id1165137704748">
+<para id="fs-id1165137704750">Dibuje un gráfico de la función lineal <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>- −</m:mo><m:mn>5</m:mn></m:mrow></m:math>.</para>
+</problem>
+<solution id="fs-id1165137920728">
+<media id="fs-id1165137811894" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_214.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165137863268">
+<problem id="fs-id1165137863270">
+<para id="fs-id1165137654992">Halle el punto de intersección de las 2 funciones lineales: <m:math><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13</m:mn></m:mtd></m:mtr></m:mtable></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137565763"><problem id="fs-id1165135526090">
+<para id="fs-id1165135526092">Una empresa de alquiler de vehículos ofrece dos planes. <list id="eip-id1165137900099" list-type="labeled-item">
+<item>Plan A: 25 dólares por día y 10 céntimos por kilómetro.</item>
+<item>Plan B: 50 dólares por día con kilometraje ilimitado gratuito.</item>
+</list>
+</para>
+<para id="eip-id1165137900110">¿Cuántos kilómetros tendría que recorrer para que el plan B le permitiera ahorrar dinero?</para>
+</problem>
+<solution id="fs-id1165137938792">
+<para id="fs-id1165137938794">250.</para>
+</solution>
+</exercise></section><section id="fs-id1165137401852"><title><link document="m49326">Modelado con funciones lineales</link></title><exercise id="fs-id1165135541997">
+<problem id="fs-id1165137748989">
+<para id="fs-id1165137748991">Calcule el área de un triángulo delimitado por el eje <emphasis effect="italics">y</emphasis>, la línea <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow></m:math> y la línea perpendicular a <m:math><m:mi>f</m:mi></m:math> que pasa por el origen.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137589239">
+<problem id="fs-id1165137589241">
+<para id="fs-id1165137434437">La población de una ciudad aumenta a un ritmo constante. En 2010 la población era de 55.000 habitantes. En 2012 la población había aumentado a 76.000 habitantes. Si esta tendencia se mantiene, haga un pronóstico de la población en 2016.</para>
+</problem>
+<solution id="fs-id1165137434440">
+<para id="fs-id1165137641763">118.000.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135175094"><problem id="fs-id1165135175096">
+<para id="fs-id1165135175098">El número de personas afectadas por el resfriado común en los meses de invierno se redujo en 50 cada año desde 2004 hasta 2010. En 2004, 875 personas fueron afectadas.</para>
+<para id="eip-id1165134484877">Halle la función lineal que modela el número de personas afectadas por el resfriado común <emphasis effect="italics">C</emphasis> en función del año, <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> ¿Cuándo no se contagiará nadie?</para>
+</problem>
+</exercise><para id="eip-64">En los siguientes ejercicios, utilice el gráfico de la <link target-id="CNX_Precalc_02_04_215"/> que muestra el beneficio, <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> en miles de dólares, de una empresa en un año determinado, <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> donde <m:math><m:mi>x</m:mi></m:math> representa los años desde 1980.
+<figure id="CNX_Precalc_02_04_215" class="small">
+<media id="fs-id1165137470564" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_215.jpg"/>
+</media>
+</figure></para><exercise id="fs-id1165137727147" class="material-set-2">
+<problem id="fs-id1165137727149">
+<para id="fs-id1165137771807">Halle la función lineal <emphasis effect="italics">y</emphasis>, donde <emphasis effect="italics">y</emphasis> depende de <m:math><m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow></m:math> el número de años desde 1980.</para>
+</problem>
+<solution id="fs-id1165135209192">
+<para id="fs-id1165137783948"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mtext>3</m:mtext><m:mn>00</m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mtext>11</m:mtext><m:mo>,</m:mo><m:mtext>5</m:mtext><m:mn>00</m:mn></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137644153" class="material-set-2">
+<problem id="fs-id1165135368447">
+<para id="fs-id1165135368449">Halle e interprete la intersección en <emphasis effect="italics">y</emphasis>.</para>
+</problem>
+</exercise>
+
+<para id="eip-402">En el siguiente ejercicio, considere esta situación: En 2004, la población escolar era de 1.700 personas. En 2012 la población había crecido hasta los 2.500 personas.</para><exercise id="fs-id1165135160759">
+<problem id="fs-id1165135160761">
+<para id="fs-id1165134231512">Supongamos que la población cambia linealmente.</para><list id="fs-id1165134231516" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> ¿Cuánto creció la población entre el año 2004 y 2012?</item>
+<item><span class="token">Ⓑ</span> ¿Cuál es el crecimiento promedio de la población por año?</item>
+<item><span class="token">Ⓒ</span> Halle una ecuación para la población, <emphasis effect="italics">P</emphasis>, de la escuela <emphasis effect="italics">t</emphasis> años después de 2004.</item>
+</list>
+</problem>
+<solution id="fs-id1165135188347">
+<para id="fs-id1165137661912">
+<list list-type="labeled-item" display="inline" id="list-00002">
+<item>a) 800</item>
+<item>b) 100 estudiantes por año</item> <item>c) <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn><m:mi>t</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>1700</m:mn></m:mrow></m:math> </item>
+</list></para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137656930">En los siguientes ejercicios, considere este escenario: En el año 2000, la población de alces en el parque se midió en 6.500 ejemplares. En 2010, la población se contabilizó en 12.500 ejemplares. Supongamos que la población sigue cambiando linealmente.</para>
+
+<exercise id="fs-id1165137435423">
+<problem id="fs-id1165135435521">
+<para id="fs-id1165135435523">Halle una fórmula para la población de alces, <m:math><m:mrow><m:mi>P</m:mi><m:mo>.</m:mo></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137406167">
+<problem id="fs-id1165134191557">
+<para id="fs-id1165134191559">¿Cuál es la población de alces que su modelo predice para 2020?</para>
+</problem>
+<solution id="fs-id1165134398701">
+<para id="fs-id1165134398703">18,500</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137433483">En los siguientes ejercicios, considere este escenario: La mediana de los valores de las viviendas en las subdivisiones Pima Central y East Valley (ajustados a la inflación) se muestra en la <link target-id="Table_02_04_23"/>. Supongamos que el valor de la vivienda cambia linealmente.</para>
+
+  <table id="Table_02_04_23" summary="La tabla tiene tres filas y tres columnas. En la primera columna están los años 1970 y 2010. En las segundas columnas están los valores de las viviendas de Pima Central, que son 32.000 para 1970 y 85.000 para 2010. En las terceras columnas están los valores de las casas de East Valley, que son 120.250 para 1970 y 150.000 para 2010.">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center">Año</entry>
+<entry align="center">Pima Central</entry>
+<entry align="center">East Valley</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1970</entry>
+<entry align="center">32,000</entry>
+<entry align="center">120,250</entry>
+</row>
+<row>
+<entry align="center">2010</entry>
+<entry align="center">85,000</entry>
+<entry align="center">150,000</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<exercise id="fs-id1165137874886">
+<problem id="fs-id1165137874888">
+<para id="fs-id1165137433652">¿En qué subdivisión ha aumentado más el valor de la vivienda?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137635264">
+<problem id="fs-id1165137635266">
+<para id="fs-id1165137561058">Si estas tendencias se mantienen, ¿cuál sería la mediana del valor de la vivienda en Pima Central en 2015?</para>
+</problem>
+<solution id="fs-id1165135613302">
+<para id="fs-id1165135613304">$91.625</para>
+</solution>
+</exercise>
+</section><section id="fs-id1165137541379"><title><link document="m49327">Ajuste de modelos lineales a los datos</link></title><exercise id="fs-id1165135500024" class="material-set-2">
+<problem id="fs-id1165137580614">
+<para id="fs-id1165137580616">Dibuje un gráfico de dispersión para los datos en la <link target-id="Table_02_04_24"/>. A continuación, determine si los datos parecen estar relacionados linealmente.</para>
+  <table id="Table_02_04_24" summary="Esta tabla tiene dos filas y seis columnas. Al leer las columnas y filas como pares ordenados, tenemos: (0, -105), (2, -50), (4, 1), (6, 55), (8, 105), y (10, 160).">
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+<entry align="center">10</entry>
+</row>
+<row>
+<entry align="center">–105</entry>
+<entry align="center">–50</entry>
+<entry align="center">1</entry>
+<entry align="center">55</entry>
+<entry align="center">105</entry>
+<entry align="center">160</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137728293" class="material-set-2"><problem id="fs-id1165137728295">
+<para id="fs-id1165135400216">Dibuje un gráfico de dispersión para los datos en la <link target-id="Table_02_04_25"/>. Si quisiéramos saber cuándo llegará la población a los 15000 habitantes, ¿la respuesta implicaría una interpolación o una extrapolación?</para>
+  <table id="Table_02_04_25" summary="La tabla tiene dos columnas y seis filas. La primera columna de la primera fila está marcada como &quot;Año&quot;, y la segunda columna de la primera fila está marcada como &quot;Población&quot;. Al leer las filas restantes como pares ordenados (es decir, (Año, Población), tenemos los siguientes valores: (1990, 5600), (1995, 5950), (2000, 6300), (2005, 6600), y (2010, 6900).">
+<tgroup cols="2"><tbody>
+<row>
+<entry align="center"><emphasis>Año</emphasis></entry><entry align="center"><emphasis>Población</emphasis></entry></row>
+<row>
+<entry align="center">1990</entry><entry align="center">5,600</entry></row>
+<row>
+<entry align="center">1995</entry><entry align="center">5,950</entry></row>
+<row>
+<entry align="center">2000</entry><entry align="center">6,300</entry></row>
+<row>
+<entry align="center">2005</entry><entry align="center">6,600</entry></row>
+<row>
+<entry align="center">2010</entry><entry align="center">6,900</entry>
+</row></tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137823644">
+<para id="fs-id1165137823647">Extrapolación.</para>
+
+<media id="fs-id1165137424006" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_226.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165137433674" class="material-set-2">
+<problem id="fs-id1165137433676">
+<para id="fs-id1165137422269">Se pidió a ocho estudiantes que estimaran su puntuación en un examen de 10 puntos. Sus puntuaciones estimadas y reales figuran en la <link target-id="Table_02_04_26"/>. Trace los puntos y luego dibuje una línea que se ajuste a los datos.</para>
+  <table id="Table_02_04_26" summary="La tabla tiene dos columnas y nueve filas. La primera columna de la primera fila se denomina &quot;Predicción&quot; y la segunda columna de la primera fila se denomina &quot;Realidad&quot;. Al leer las filas restantes como pares ordenados (es decir, (Pronóstico, Real)), tenemos: (6, 6), (7, 7), (7, 8), (8, 8), (9, 10), (10, 10), y (10, 9).">
+<tgroup cols="2"><tbody>
+<row>
+<entry align="center"><emphasis>Predicción</emphasis></entry><entry align="center"><emphasis>Real</emphasis></entry></row>
+<row>
+<entry align="center">6</entry><entry align="center">6</entry></row>
+<row>
+<entry align="center">7</entry><entry align="center">7</entry></row>
+<row>
+<entry align="center">7</entry><entry align="center">8</entry></row>
+<row>
+<entry align="center">8</entry><entry align="center">8</entry></row>
+<row>
+<entry align="center">7</entry><entry align="center">9</entry></row>
+<row>
+<entry align="center">9</entry><entry align="center">10</entry></row>
+<row>
+<entry align="center">10</entry><entry align="center">10</entry></row>
+<row>
+<entry align="center">10</entry><entry align="center">9</entry></row></tbody>
+
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-id1165135258923" class="material-set-2"><problem id="fs-id1165135407196">
+<para id="fs-id1165135407198">Dibuje una línea de mejor ajuste para los datos trazados <newline/>
+<media id="fs-id1165137611952" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_216.jpg"/>
+</media>
+</para>
+</problem>
+<solution id="fs-id1165135261494">
+<para id="eip-id2060469"><media id="fs-id1165137833024" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_217.jpg"/>
+</media>
+</para>
+</solution>
+</exercise><para id="fs-id1165137838824">En los siguientes ejercicios, considere los datos en la <link target-id="Table_02_04_27"/>, donde se muestra el porcentaje de desempleados en una ciudad de residentes mayores de 25 años de edad que son graduados universitarios, y que se ofrece a continuación, por año.</para>
+
+  <table id="Table_02_04_27" summary="La tabla tiene dos columnas y seis filas. La primera columna de la primera fila está marcada como &quot;Año&quot;, y la segunda columna de la primera fila está marcada como &quot;Porcentaje de graduados&quot;. Al leer filas restantes como pares ordenados (es decir, (Año, Porcentaje de graduados), tenemos: (2000, 6,5), (2002, 7,0), (2005, 7,4), (2007, 8,2), y (2010, 9,0).">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry align="center"><emphasis>Año</emphasis></entry>
+    <entry align="center">2000</entry>
+   <entry align="center">2002</entry>
+  <entry align="center">2005</entry>
+  <entry align="center">2007</entry>
+    <entry align="center">2010</entry>
+  </row>
+  <row>
+    <entry align="center"><emphasis>Porcentaje de graduados</emphasis></entry>
+    <entry align="center">6,5</entry>
+   <entry align="center">7,0</entry>
+   <entry align="center">7,4</entry>
+  <entry align="center">8,2</entry>
+   <entry align="center">9,0</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table><exercise id="fs-id1165135375279">
+<problem id="fs-id1165135375281">
+<para id="fs-id1165135375283">Determine si la tendencia parece ser lineal. Si es así, y suponiendo que la tendencia continúa, halle un modelo de regresión lineal para predecir el porcentaje de desempleados en un año determinado, a tres decimales.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137575252">
+<problem id="fs-id1165137443910">
+<para id="fs-id1165137443913">¿En qué año el porcentaje superará el 12 %?</para>
+</problem>
+<solution id="fs-id1165135543447">
+<para id="fs-id1165135543449">A mediados de 2024.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137600324"><problem id="fs-id1165137600326">
+<para id="fs-id1165137832272">Sobre la base del conjunto de datos que figuran en la <link target-id="Table_02_04_28"/>, determine la línea de regresión con una calculadora u otra herramienta tecnológica, y determine el coeficiente de correlación a tres decimales.</para>
+  <table id="Table_02_04_28" summary="Esta tabla tiene dos filas y seis columnas. La primera columna de la primera fila está marcada como 'x', y la segunda columna de la primera fila como 'y'. Al leer las filas restantes como pares ordenados (es decir, (x, y)), tenemos: (17, 15), (20, 25), (23, 31), (26, 37), y (29, 40).">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">17</entry>
+<entry align="center">20</entry>
+<entry align="center">23</entry>
+<entry align="center">26</entry>
+<entry align="center">29</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+<entry align="center">15</entry>
+<entry align="center">25</entry>
+<entry align="center">31</entry>
+<entry align="center">37</entry>
+<entry align="center">40</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table>
+</problem>
+</exercise><exercise id="fs-id1165137911421"><problem id="fs-id1165137911423">
+<para id="fs-id1165137460563">Sobre la base del conjunto de datos que figuran en la <link target-id="Table_02_04_29"/>, determine la línea de regresión con una calculadora u otra herramienta tecnológica, y determine el coeficiente de correlación a tres decimales.</para>
+  <table id="Table_02_04_29" summary="Esta tabla tiene dos filas y seis columnas. La primera columna de la primera fila está marcada como 'x', y la segunda columna de la primera fila como 'y'. Al leer las filas restantes como pares ordenados (es decir, (x, y)), tenemos: (10, 36), (12, 34), (15, 30), (18, 28), y (20, 22).">
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">10</entry>
+<entry align="center">12</entry>
+<entry align="center">15</entry>
+<entry align="center">18</entry>
+<entry align="center">20</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>y</m:mi></m:math> </emphasis></entry>
+<entry align="center">36</entry>
+<entry align="center">34</entry>
+<entry align="center">30</entry>
+<entry align="center">28</entry>
+<entry align="center">22</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-id1165135194010"><para id="fs-id1165134042685"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>1,294</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>49,412</m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,974</m:mn></m:mrow></m:math> </para></solution>
+</exercise><para id="fs-id1165137662405">En los siguientes ejercicios, considere este escenario: La población de una ciudad aumentó de forma constante durante un periodo de diez años. Los siguientes pares ordenados muestran la población y el año en un período de diez años (población, año) para determinados años registrados:</para>
+
+<para id="eip-22"> <m:math>
+ <m:mrow>
+  <m:mtext>(3,600, 2000); (4,000, 2001); (4,700, 2003); (6,000, 2006)</m:mtext>
+ </m:mrow>
+</m:math>
+</para><exercise id="fs-id1165137637919">
+<problem id="fs-id1165137637921">
+<para id="fs-id1165137637923">Utilice la regresión lineal para determinar una función <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> donde el año depende de la población, a tres decimales de exactitud.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165132958400">
+<problem id="fs-id1165132958402">
+<para id="fs-id1165137534060">Pronostique cuándo la población alcanzará los 12.000 habitantes.</para>
+</problem>
+<solution id="fs-id1165137534064">
+<para id="fs-id1165137651772">A principios de 2022</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137528823">
+<problem id="fs-id1165137528825">
+<para id="fs-id1165137528828">¿Cuál es el coeficiente de correlación de este modelo a tres decimales de exactitud?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137531235">
+<problem id="fs-id1165137531237">
+<para id="fs-id1165137810892">Según el modelo, ¿cuál es la población en 2014?</para>
+</problem>
+<solution id="fs-id1165137810896">
+<para id="fs-id1165137805041">7,660</para>
+</solution>
+</exercise>
+</section></section>
+
+<section id="fs-id1165137665838" class="practice-test"><title>Prueba de práctica</title><exercise id="fs-id1165137933219">
+<problem id="fs-id1165137933221">
+<para id="fs-id1165135356531">Determine si la siguiente ecuación algebraica puede escribirse como una función lineal. <m:math><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137768581">
+<para id="fs-id1165137768583">Sí.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137542287">
+<problem id="fs-id1165137542289">
+<para id="fs-id1165137408366">Determine si la siguiente función es creciente o decreciente <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>5</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137592955">
+<problem id="fs-id1165137592957">
+<para id="fs-id1165137592959">Determine si la siguiente función es creciente o decreciente <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>9</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137655290">
+<para id="fs-id1165137655292">Creciente</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165132963123">
+<problem id="fs-id1165132963125">
+<para id="fs-id1165137827528">Dada la siguiente información, halle una ecuación lineal que satisfaga las condiciones, si es posible.</para>
+<para id="fs-id1165137827532">Pasa por (5, 1) y (3, –9)</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137732413">
+<problem id="fs-id1165137529760">
+<para id="fs-id1165137529762">Dada la siguiente información, halle una ecuación lineal que satisfaga las condiciones, si es posible.</para>
+<para id="fs-id1165137506949">intersección en <emphasis effect="italics">x</emphasis> en (-4, 0) e intersección en <emphasis effect="italics">y</emphasis> en (0, -6)</para>
+</problem>
+<solution id="fs-id1165137602512">
+<para id="fs-id1165137602514"> <m:math><m:mrow><m:mi>y</m:mi><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mn>-1,5</m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135369274"><problem id="fs-id1165135369276">
+<para id="fs-id1165137602700">Halle la pendiente de la línea en la <link target-id="CNX_Precalc_Figure_02_04_218"/>.</para>
+<figure id="CNX_Precalc_Figure_02_04_218" class="small">
+<media id="fs-id1165137566147" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_218-fc27.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise><exercise id="fs-id1165135362497"><problem id="fs-id1165137662602">
+<para id="fs-id1165137662605">Escriba una ecuación para la línea en <link target-id="CNX_Precalc_Figure_02_04_219"/>.</para>
+<figure id="CNX_Precalc_Figure_02_04_219" class="small">
+<media id="fs-id1165137823688" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_219-d968.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135192728">
+<para id="fs-id1165137663902"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>–</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137430915">
+<problem id="fs-id1165137430917">
+<para id="fs-id1165137642838">¿La <link target-id="Table_02_04_30"/> representa una función lineal? Si es así, halle una ecuación lineal que modele los datos.</para>
+  <table id="Table_02_04_30" summary="La tabla tiene dos filas y cinco columnas. La primera columna de la primera fila está marcada como x, y la primera columna de la segunda fila está marcada como g(x). Al leer las filas restantes como pares ordenados (es decir, (x, g(x))), tenemos: (-6, 12), (0, 32), (2, 38), y (4, 44).">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">-6</entry>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">14</entry>
+<entry align="center">32</entry>
+<entry align="center">38</entry>
+<entry align="center">44</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-id1165137406283">
+<problem id="fs-id1165137659075">
+<para id="fs-id1165137659077">¿La <link target-id="Table_02_04_31"/> representa una función lineal? Si es así, halle una ecuación lineal que modele los datos.</para>
+  <table id="Table_02_04_31" summary="La tabla tiene dos filas y cinco columnas. La primera columna de la primera fila está marcada como x, y la primera columna de la segunda fila está marcada como g(x). Al leer las filas restantes como pares ordenados (es decir, (x , g(x))), tenemos: (1, 4), (3, 9), (7, 19), y (11, 12).">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">1</entry>
+<entry align="center">3</entry>
+<entry align="center">7</entry>
+<entry align="center">11</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">4</entry>
+<entry align="center">9</entry>
+<entry align="center">19</entry>
+<entry align="center">12</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165135152236">
+<para id="fs-id1165135152238">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137732121">
+<problem id="fs-id1165137732123">
+<para id="fs-id1165137911153">A las 6 de la mañana, una empresa online ha vendido 120 artículos ese día. Si la empresa vende un promedio de 30 artículos por hora durante el resto del día, escriba una expresión que represente el número de artículos vendidos <m:math><m:mi>n</m:mi></m:math> después de las 6 de la mañana.</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137755685">En los siguientes ejercicios, determine si las líneas dadas por las ecuaciones de abajo son paralelas, perpendiculares o no son ni paralelas ni perpendiculares:</para>
+
+<exercise id="fs-id1165137533555">
+<problem id="fs-id1165137677458">
+<para id="fs-id1165137677460"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mn>3</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137863007">
+<para id="fs-id1165137863009">Perpendiculares</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135194768">
+<problem id="fs-id1165135194770">
+<para id="fs-id1165137629529"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135341408">
+<problem id="fs-id1165135341410">
+<para id="fs-id1165137559870">Halle las intersecciones en <emphasis effect="italics">x</emphasis> y en <emphasis effect="italics">y</emphasis> de la ecuación <m:math><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>7</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>14.</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137413859">
+<para id="fs-id1165137413861"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>- −</m:mo><m:mtext>7</m:mtext><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>; <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mtext>2 </m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134372219">
+<problem id="fs-id1165137427014">
+<para id="fs-id1165137427016">A continuación se describen dos líneas. Halle las pendientes de la Línea 1 y de la Línea 2. ¿El par de líneas es paralelo, perpendicular o ninguno de los dos?</para><para id="fs-id1165137605691">Línea 1: Pasa por <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>–2</m:mn><m:mo>,</m:mo><m:mn>–6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> </para><para id="fs-id1165137400663">Línea 2: Pasa por <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137749591">
+<problem id="fs-id1165137749593">
+<para id="fs-id1165137749595">Escriba la ecuación de una línea perpendicular a <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> y que pasa por el punto <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>10</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137836547">
+<para id="fs-id1165137836549"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,25</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137598920">
+<problem id="fs-id1165137598922">
+<para id="fs-id1165137844125">Dibuje una línea con una intersección en <emphasis effect="italics">y</emphasis>de <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>5</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y pendiente <m:math><m:mrow><m:mo>- −</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow></m:math>.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137848951"><problem id="fs-id1165137848953">
+<para id="fs-id1165137848955">Gráfico de la función lineal <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>−x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math>.</para></problem>
+<solution id="fs-id1165137461920">
+
+<media id="fs-id1165137651762" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_221-966b.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165137433424">
+<problem id="fs-id1165137387389">
+<para id="fs-id1165137387391">En las dos funciones lineales, halle el punto de intersección: <m:math><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>–1</m:mn></m:mtd></m:mtr></m:mtable></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137426161"><problem id="fs-id1165137426163">
+<para id="fs-id1165137426166">Una empresa de alquiler de vehículos ofrece dos planes. <list id="eip-id1244969" list-type="labeled-item">
+<item>Plan A: 25 dólares por día y 0,10 dólares por kilómetro.</item>
+<item>Plan B: 40 dólares al día con kilometraje ilimitado gratuito.</item>
+</list>
+</para>
+<para id="eip-id1406006">¿Cuántos kilómetros tendría que recorrer para que el plan B le permitiera ahorrar dinero?</para>
+</problem>
+<solution id="fs-id1165137645579">
+<para id="fs-id1165137645581">150</para>
+</solution>
+</exercise><exercise id="fs-id1165137474386">
+<problem id="fs-id1165137474389">
+<para id="fs-id1165137538839">Calcule el área de un triángulo delimitado por el eje <emphasis effect="italics">y</emphasis>, la línea <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow></m:math> y la línea perpendicular a <m:math><m:mi>f</m:mi></m:math> que pasa por el origen.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135508298">
+<problem id="fs-id1165135508300">
+<para id="fs-id1165135508303">La población de una ciudad aumenta a un ritmo constante. En 2010 la población era de 65.000 habitantes. En 2012 la población había aumentado a 90.000 habitantes. Suponiendo que esta tendencia continúe, prediga la población en 2018.</para>
+</problem>
+<solution id="fs-id1165137657890">
+<para id="fs-id1165137657892">165,000</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137734954">
+<problem id="fs-id1165137754886">
+<para id="fs-id1165137734956">El número de personas afectadas por el resfriado común en los meses de invierno se redujo constantemente en 25 cada año desde 2002 hasta 2012. En 2002, 8.040 personas fueron afectadas. Halle la función lineal que modela el número de personas afectadas por el resfriado común <m:math><m:mi>C</m:mi></m:math> en función del año, <m:math><m:mrow><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> ¿Cuándo se contagiarán menos de 6.000 personas?</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137936703">En los siguientes ejercicios, utilice el gráfico de la <link target-id="CNX_Precalc_Figure_02_04_222"/>, que muestra el beneficio, <m:math><m:mi>y</m:mi></m:math>, en miles de dólares, de una empresa en un año determinado, <m:math><m:mi>x</m:mi></m:math>, donde <m:math><m:mi>x</m:mi></m:math> representa los años desde 1980. </para><figure id="CNX_Precalc_Figure_02_04_222" class="small">
+<media id="fs-id1165135237128" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_222.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165135253154">
+<problem id="fs-id1165135253156">
+<para id="fs-id1165135253158">Calcule la función lineal <m:math><m:mi>y</m:mi></m:math>, donde <m:math><m:mi>y</m:mi></m:math> depende de <m:math><m:mi>x</m:mi></m:math>, el número de años desde 1980.</para>
+</problem>
+<solution id="fs-id1165137715076">
+<para id="fs-id1165137715078"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>875</m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>675</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137761157">
+<problem id="fs-id1165137761159">
+<para id="fs-id1165137736437">Halle e interprete la intersección en <emphasis effect="italics">y</emphasis>.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137686742">
+<problem id="fs-id1165137737442">
+<para id="fs-id1165137737444">En 2004, la población escolar era de 1.250 estudiantes. En 2012 la población había descendido a 875 estudiantes. Supongamos que la población cambia linealmente.</para>
+<list id="fs-id1165135386484" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> ¿Cuánto descendió la población escolar entre el año 2004 y 2012?</item>
+<item><span class="token">Ⓑ</span> ¿Cuál es el descenso promedio de la población escolar por año?</item>
+<item><span class="token">Ⓒ</span> Halle una ecuación para la población, <emphasis effect="italics">P</emphasis>, de la escuela <emphasis effect="italics">t</emphasis> años después de 2004.</item>
+</list>
+</problem>
+<solution id="fs-id1165137551198">
+<para id="fs-id1165137786222">
+<list list-type="labeled-item" display="inline" id="list-00003">
+<item>a) 375</item>
+<item>b) ha bajado un promedio de 46.875 estudiantes, es decir, unos 47 estudiantes al año</item>
+<item>c) <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>46,875</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1.250</m:mn></m:mrow></m:math> </item>
+</list>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137838831" class="material-set-2">
+<problem id="fs-id1165137838834">
+<para id="fs-id1165137838836">Dibuje un gráfico de dispersión para los datos que se suministran en la <link target-id="Table_02_04_32"/>. A continuación, determine si los datos parecen estar relacionados linealmente.</para>
+
+<table id="Table_02_04_32" summary="Esta tabla tiene dos filas y seis columnas. Al leer las columnas y filas como pares ordenados, tenemos: (0, -450), (2, -200), (4, 10), (6, 265), (8, 500), y (10, 755).">
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+<entry align="center">10</entry>
+</row>
+<row>
+<entry align="center">–450</entry>
+<entry align="center">–200</entry>
+<entry align="center">10</entry>
+<entry align="center">265</entry>
+<entry align="center">500</entry>
+<entry align="center">755</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137409092" class="material-set-2"><problem id="fs-id1165137409094">
+<para id="fs-id1165135415852">Dibuje una línea de mejor ajuste para los datos trazados <newline/>
+<media id="fs-id1165137725170" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_223.jpg"/>
+</media>
+</para>
+</problem>
+<solution id="fs-id1165135193550">
+<para id="eip-id1532144">
+<media id="fs-id1165137437869" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_04_224.jpg"/>
+</media>
+</para>
+</solution>
+</exercise><para id="fs-id1165135362514">En los siguientes ejercicios, utilice la <link target-id="Table_02_04_33"/>, que muestra el porcentaje de desempleados mayores de 25 años que son graduados universitarios en una ciudad en particular, por año.</para>
+
+<table id="Table_02_04_33" summary="La tabla tiene dos columnas y seis filas. La primera columna de la primera fila está marcada como &quot;Año&quot;, y la segunda columna de la primera fila está marcada como &quot;Porcentaje de graduados&quot;. Al leer filas restantes como pares ordenados (es decir, (Año, Porcentaje de graduados), tenemos: (2000, 8,5), (2002, 8,0), (2005, 7,2), (2007, 6,7), y (2010, 6,4).">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry align="center"><emphasis>Año</emphasis></entry>
+    <entry align="center">2000</entry>
+   <entry align="center">2002</entry>
+  <entry align="center">2005</entry>
+  <entry align="center">2007</entry>
+    <entry align="center">2010</entry>
+  </row>
+  <row>
+    <entry align="center"><emphasis>Porcentaje de graduados</emphasis></entry>
+    <entry align="center">8,5</entry>
+   <entry align="center">8,0</entry>
+   <entry align="center">7,2</entry>
+  <entry align="center">6,7</entry>
+   <entry align="center">6,4</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><exercise id="fs-id1165135168436">
+<problem id="fs-id1165135168438">
+<para id="fs-id1165137582380">Determine si la tendencia parece lineal. Si es así, y suponiendo que la tendencia continúa, halle un modelo de regresión lineal para predecir el porcentaje de desempleados en un año determinado, a tres decimales.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137705071">
+<problem id="fs-id1165137705073">
+<para id="fs-id1165137597352">¿En qué año caerá el porcentaje por debajo del 4 %?</para>
+</problem>
+<solution id="fs-id1165137597356">
+<para id="fs-id1165137462035">A principios de 2018</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137462041">
+<problem id="fs-id1165137675576">
+<para id="fs-id1165137430821">Sobre la base del conjunto de datos que figuran en la <link target-id="Table_02_04_34"/>, determine la línea de regresión con una calculadora u otra herramienta tecnológica, y determine el coeficiente de correlación. Redondee a tres decimales de exactitud.</para>
+<table id="Table_02_04_34" summary="Esta tabla tiene dos filas y seis columnas. La primera columna de la primera fila está marcada como x, y la primera columna de la segunda fila como y. Al leer las filas restantes como pares ordenados (es decir, (x, y)), tenemos: (16, 106), (18, 110), (20, 115), (24, 120), y (26, 125).">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">16</entry>
+<entry align="center">18</entry>
+<entry align="center">20</entry>
+<entry align="center">24</entry>
+<entry align="center">26</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>y</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">106</entry>
+<entry align="center">110</entry>
+<entry align="center">115</entry>
+<entry align="center">120</entry>
+<entry align="center">125</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<para id="fs-id1165137448319">En los siguientes ejercicios, considere este escenario: La población de una ciudad aumentó de forma constante durante un periodo de diez años. Los siguientes pares ordenados muestran la población (en centenas) y el año en el lapso de diez años, (población, año) para determinados años registrados:</para>
+
+<para id="eip-477"> <m:math>
+ <m:mrow>
+  <m:mtext>(4,500, 2000); (4,700, 2001); (5,200, 2003); (5,800, 2006)</m:mtext>
+ </m:mrow>
+</m:math> </para><exercise id="fs-id1165135512502">
+<problem id="fs-id1165137448321">
+<para id="fs-id1165137408459">Utilice la regresión lineal para determinar una función <emphasis effect="italics">y</emphasis>, donde el año depende de la población. Redondee a tres decimales de exactitud.</para></problem>
+<solution id="fs-id1165137500939">
+<para id="fs-id1165137715418"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0,00455</m:mn><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mo>+</m:mo><m:mspace width="0.5em"/><m:mn>1979,5</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137426571">
+<problem id="fs-id1165137426573">
+<para id="fs-id1165137426575">Prediga cuándo llegará la población a los 20.000 habitantes.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137749587">
+<problem id="fs-id1165137749589">
+<para id="fs-id1165135421660">¿Cuál es el coeficiente de correlación de este modelo?</para>
+</problem>
+<solution id="fs-id1165135421665">
+<para id="fs-id1165137469272"> <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,999</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+</section></content>
+
+<glossary>
+
+<definition id="fs-id1165137705061">
+<term>coeficiente de correlación</term>
+<meaning id="fs-id1165135250649">un valor, <m:math><m:mrow><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow></m:math> entre -1 y 1 que indica el grado de correlación lineal de las variables, o lo mucho que se ajusta una línea de regresión a un conjunto de datos.</meaning>
+</definition>
+
+<definition id="fs-id1165137549428">
+<term>extrapolación</term>
+<meaning id="fs-id1165135485274">predecir un valor fuera del dominio y del rango de los datos</meaning>
+</definition>
+
+<definition id="fs-id1165135485278">
+<term>interpolación</term>
+<meaning id="fs-id1165135184191">predecir un valor dentro del dominio y el rango de los datos</meaning>
+</definition>
+
+<definition id="fs-id1165137761665">
+<term>regresión de mínimos cuadrados</term>
+<meaning id="fs-id1165135192379">técnica estadística para ajustar una línea a los datos de manera que se minimicen las diferencias entre la línea y los valores de los datos</meaning>
+</definition>
+
+<definition id="fs-id1165137446440">
+<term>ruptura del modelo</term>
+<meaning id="fs-id1165137446445">cuando un modelo deja de aplicarse a partir de cierto momento</meaning>
+</definition>
+</glossary>
+</document>

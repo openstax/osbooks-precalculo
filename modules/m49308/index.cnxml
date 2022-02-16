@@ -1,0 +1,4790 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Composición de las funciones</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49308</md:content-id>
+  <md:title>Composición de las funciones</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Combinar funciones utilizando operaciones algebraicas.</item>
+<item>Crear una nueva función por composición de las funciones.</item>
+<item>Evaluar funciones compuestas.</item>
+<item>Hallar el dominio de una función compuesta.</item>
+<item>Descomponer una función compuesta en sus funciones componentes.</item>
+</list></md:abstract>
+  <md:uuid>362b389e-fb41-48ce-a7c3-12a91b163022</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165134094620">Supongamos que queremos calcular cuánto cuesta calentar una casa en un día particular del año. El costo de calentar una casa dependerá de la temperatura promedio diaria y, a su vez, la temperatura promedio diaria depende del día particular del año. Observe que acabamos de definir dos relaciones: el costo depende de la temperatura, y la temperatura depende del día.</para>
+<para id="fs-id1165134038788">Utilizando variables descriptivas, podemos anotar estas dos funciones. La función <m:math>
+<m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>T</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> da el costo <m:math>
+<m:mrow><m:mi>C</m:mi></m:mrow>
+</m:math> de calentar una casa para una determinada temperatura promedio diaria en <m:math>
+<m:mrow><m:mi>T</m:mi></m:mrow>
+</m:math> grados Celsius. La función <m:math>
+<m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>d</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> da la temperatura promedio diaria en el día <m:math>
+<m:mrow><m:mi>d</m:mi></m:mrow>
+</m:math> del año. Para un día cualquiera, <m:math>
+<m:mrow><m:mtext>Costo</m:mtext><m:mo>=</m:mo><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>d</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> significa que el costo depende de la temperatura, que a su vez depende del día del año. Así, podemos evaluar la función de costos a la temperatura <m:math>
+<m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>d</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Por ejemplo, podríamos evaluar <m:math>
+<m:mrow><m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> para determinar la temperatura media diaria del 5.º día del año. Entonces, podríamos evaluar la <term class="no-emphasis" id="term-00001">función de costos</term> a esa temperatura. Escribiríamos <m:math>
+<m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165137424478" alt="Explicación de C(T(5)), que es el costo de la temperatura y T(5) es la temperatura del día 5." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_006.jpg"/>
+</media>
+
+
+<para id="fs-id1165137460512">Al combinar estas dos relaciones en una sola función, hemos realizado la composición de las funciones, que es el objetivo de esta sección.</para>
+
+<section id="fs-id1165135176393">
+<title>Combinar funciones mediante operaciones algebraicas</title>
+<para id="fs-id1165137446477">La composición de las funciones es solo una forma de combinar funciones existentes. Otra forma es realizar las operaciones algebraicas habituales sobre las funciones, como la suma, la resta, la multiplicación y la división. Para ello, realizamos las operaciones con las salidas de las funciones, definiendo el resultado como la salida de nuestra nueva función.</para>
+<para id="fs-id1165135533159">Supongamos que tenemos que sumar dos columnas de números que representan los ingresos anuales por separado de una pareja durante un periodo de años, y el resultado es el total de los ingresos de la familia. Queremos hacer esto para cada año, añadiendo solo los ingresos de ese año y recogiendo luego todos los datos en una nueva columna. Si los valores de <m:math>
+<m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> es el ingreso de la esposa y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> es el ingreso del esposo en el año <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y queremos que <m:math>
+<m:mrow><m:mi>T</m:mi></m:mrow>
+</m:math> represente los ingresos totales, entonces podemos definir una nueva función.</para>
+<equation id="fs-id1165137641862" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>T</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>w</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135347766">Si esto es cierto para todos los años, entonces podemos centrarnos en la relación entre las funciones sin referencia a un año y escribir</para>
+<equation id="fs-id1165137665765" class="unnumbered"><label/>
+ <m:math display="block">
+<m:mrow>
+<m:mi>T</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mo>+</m:mo><m:mi>w</m:mi></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165132957142">Al igual que para esta suma de dos funciones, podemos definir funciones de diferencia, producto y cociente para cualquier par de funciones que tengan el mismo tipo de entradas (no necesariamente números) y también el mismo tipo de salidas (que sí tienen que ser números para que se les puedan aplicar las operaciones habituales del álgebra, y que además deben tener las mismas unidades o ninguna cuando sumamos y restamos). De este modo, podemos pensar en funciones de suma, resta, multiplicación y división.</para>
+<para id="fs-id1165137424116">Para dos funciones <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> con salidas de números reales, definimos nuevas funciones <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mi>g</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mfrac>
+<m:mi>f</m:mi>
+<m:mi>g</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math> por las relaciones</para>
+<equation id="fs-id1165137543139" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>f</m:mi>
+         <m:mi>g</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><example id="Example_01_04_01">
+<exercise id="fs-id1165137585443">
+<problem id="fs-id1165137573272">
+<title>Realizar operaciones algebraicas con funciones</title>
+<para id="fs-id1165135304963">Halle y simplifique las funciones <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>- −</m:mo><m:mi>f</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>g</m:mi>
+<m:mi>f</m:mi>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> dado <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> ¿Son estas la misma función?</para>
+</problem>
+<solution id="fs-id1165137823858">
+<para id="fs-id1165137466263">Comience escribiendo la forma general y luego sustituya las funciones dadas.</para>
+
+ <equation id="fs-id1165135701567" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>- −</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>- −</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>–</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>- −</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+<m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>- −</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"/>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo> </m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>g</m:mi>
+         <m:mi>f</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+    <m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>g</m:mi>
+         <m:mi>f</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+   <m:mtr rowalign="center">
+<m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo> </m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>g</m:mi>
+         <m:mi>f</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>    <m:mtd rowalign="center">
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mtext>donde </m:mtext><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr rowalign="center">
+<m:mtd columnalign="right" rowalign="center">
+     <m:mrow>
+      <m:mo> </m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>g</m:mi>
+         <m:mi>f</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>    <m:mtd>
+     <m:mo>=</m:mo>
+    </m:mtd>
+    <m:mtd columnalign="left" rowalign="center">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd rowalign="center"/>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+
+</equation><para id="fs-id1165137553743">No, las funciones no son las mismas.</para>
+<para id="fs-id1165135351612">Nota: Para <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>g</m:mi>
+<m:mi>f</m:mi>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> la condición <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> es necesaria porque cuando <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> el denominador es igual a 0, lo que hace que la función sea indefinida.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137564163" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_09">
+<problem id="fs-id1165137851458"><para id="fs-id1165135333576">Halle y simplifique las funciones <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165137434994" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mtext>    y    </m:mtext><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137434911">¿Son estas la misma función?</para>
+</problem>
+<solution id="fs-id1165137619426">
+<para id="fs-id1165135511603"> <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</para>
+<para id="fs-id1165137424052">No, las funciones no son las mismas.</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165135690697"><title>Crear una función por composición de las funciones</title><para id="fs-id1165137451258">Realizar operaciones algebraicas sobre las funciones las combina en una nueva función, pero también podemos crear funciones componiéndolas. Cuando queremos calcular el costo de la calefacción a partir de un día del año, creamos una nueva función que toma un día como entrada y da un costo como salida. El proceso de la <term class="no-emphasis" id="term-00002">combinación de funciones</term> para que la salida de una función se convierta en la entrada de otra se conoce como <term class="no-emphasis" id="term-00003">composición de las funciones</term><emphasis>.</emphasis> El resultado se conoce como <emphasis>función compuesta</emphasis>. Representamos esta combinación mediante la siguiente notación:</para>
+<equation id="fs-id1165137605973" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation><para id="fs-id1165137466004">Leemos el lado izquierdo como <m:math>
+ <m:mrow>
+  <m:mo>“</m:mo><m:mi>f</m:mi>
+ </m:mrow>
+</m:math> compuesto con <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> a las <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,”</m:mo>
+ </m:mrow>
+</m:math> y el lado derecho como <m:math>
+ <m:mrow>
+  <m:mo>“</m:mo><m:mi>f</m:mi>
+ </m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo><m:mo>”</m:mo>
+ </m:mrow>
+</m:math> Los dos lados de la ecuación tienen el mismo significado matemático y son iguales. El símbolo del círculo abierto <m:math>
+<m:mrow><m:mo>∘</m:mo></m:mrow>
+</m:math> se denomina operador de composición. Utilizamos este operador principalmente cuando queremos destacar la relación entre las propias funciones sin referirnos a ningún valor de entrada en particular. La composición es una operación binaria que toma dos funciones y forma una nueva función, al igual que la suma o la multiplicación toma dos números y da un nuevo número. Sin embargo, es importante no confundir la composición de las funciones con la multiplicación porque, como hemos aprendido anteriormente, en la mayoría de los casos <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165135161270">También es importante entender el orden de las operaciones al evaluar una función compuesta. Seguimos la convención habitual con los paréntesis, comenzando por los más internos y luego trabajando hacia el exterior. En la ecuación anterior, la función <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> toma la entrada <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> primero y da una salida <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Entonces la función <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> toma <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> como entrada y produce una salida <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+
+<media id="fs-id1165135310687" alt="Explicación de la función compuesta." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_001.jpg"/>
+</media>
+
+
+<para id="fs-id1165137851405">En general, <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi></m:mrow>
+</m:math> son funciones diferentes. En otras palabras, en muchos casos <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>≠</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> para todo <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> También veremos que a veces dos funciones solo pueden componerse en un orden concreto.</para>
+<para id="fs-id1165135189964">Por ejemplo, si <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> entonces</para>
+<equation id="fs-id1165134047682" class="unnumbered"><label/>
+ <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137595004">pero</para>
+<equation id="fs-id1165137461653" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137430833">Estas expresiones no son iguales para todos los valores de <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> por lo que las dos funciones no son iguales. Es irrelevante que las expresiones sean iguales para el único valor de entrada <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165137531472">Observe que el rango de la función interior (la primera función a evaluar) tiene que estar dentro del dominio de la función exterior. De manera menos formal, la composición tiene que tener sentido en términos de entradas y salidas.</para>
+
+<note id="fs-id1165134190746">
+
+<title>Composición de las funciones</title>
+<para id="fs-id1165137783932">Cuando la salida de una función se utiliza como entrada de otra, llamamos a la operación completa composición de las funciones. Para cualquier entrada <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> y funciones <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> esta acción define una <term id="term-00004">función compuesta</term>, que escribimos como <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> tal que</para>
+<equation id="fs-id1165137836657" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135503928">El dominio de la función compuesta <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> es toda <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> tal que <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> está en el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> está en el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165135408440">Es importante observar que el producto de las funciones <m:math>
+<m:mrow><m:mi>f</m:mi><m:mi>g</m:mi></m:mrow>
+</m:math> no es lo mismo que la composición de la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> porque, en general, <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>≠</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</note>
+
+<example id="Example_01_04_02">
+<exercise id="fs-id1165137544021">
+<problem id="fs-id1165137482990">
+<title>Determinar si la composición de las funciones es conmutativa</title>
+<para id="fs-id1165137600071">Utilizando las funciones proporcionadas, halle <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Determine si la composición de las funciones es <term class="no-emphasis" id="term-00005">conmutativa</term>.</para>
+<equation id="fs-id1165135530570" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135195227">
+<para id="fs-id1165137603003">Empecemos por sustituir <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165135499437" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137786392">Ahora podemos sustituir <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165135440456" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165135160089">Tenemos que <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que la operación de composición de las funciones no es conmutativa.</para></solution>
+</exercise>
+</example>
+
+<example id="Example_01_04_03">
+<exercise id="fs-id1165137603612">
+<problem id="fs-id1165137761836">
+<title>Interpretar las funciones compuestas</title>
+<para id="fs-id1165137695118">La función <m:math>
+<m:mrow><m:mi>c</m:mi><m:mo stretchy="false">(</m:mo><m:mi>s</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> da el número de calorías quemadas completando <m:math>
+<m:mrow><m:mi>s</m:mi></m:mrow>
+</m:math> abdominales, y <m:math>
+<m:mrow><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> da el número de abdominales que una persona puede completar en <m:math>
+<m:mrow><m:mi>t</m:mi></m:mrow>
+</m:math> minutos. Interprete <m:math>
+<m:mrow><m:mi>c</m:mi><m:mo stretchy="false">(</m:mo><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+</problem>
+<solution id="fs-id1165134170107">
+<para id="fs-id1165137659141">La expresión interior de la composición es <m:math>
+<m:mrow><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Ya que la entrada de la función <emphasis effect="italics">s</emphasis> es el tiempo, <m:math>
+<m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> representa 3 minutos, y <m:math>
+<m:mrow><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> es el número de sentadillas completadas en 3 minutos. </para><para id="fs-id1165137844294">Utilizando <m:math>
+<m:mrow><m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> como entrada a la función <m:math>
+<m:mrow><m:mi>c</m:mi><m:mo stretchy="false">(</m:mo><m:mi>s</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> nos da el número de calorías quemadas durante el número de sentadillas que se pueden completar en 3 minutos, o simplemente el número de calorías quemadas en 3 minutos (haciendo sentadillas).</para>
+</solution>
+</exercise>
+</example>
+
+<example id="Example_01_04_04">
+<exercise id="fs-id1165137551439">
+<problem id="fs-id1165135512587">
+<title>Investigar el orden de composición de las funciones</title>
+<para id="fs-id1165137643603">Supongamos que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> da las millas que se pueden conducir en <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> horas y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> da los galones de gasolina utilizados al conducir <m:math>
+<m:mrow><m:mi>y</m:mi></m:mrow>
+</m:math> millas. ¿Cuál de estas expresiones tiene sentido <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> o <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>?</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137451433">
+<para id="fs-id1165135545914">La función <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> es una función cuya salida es el número de millas recorridas correspondientes al número de horas recorridas. </para>
+<equation id="fs-id1165137648357" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtext>número de millas </m:mtext><m:mo>=</m:mo><m:mi>f</m:mi><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mtext>número de horas</m:mtext><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137749316">La función <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> es una función cuya salida es el número de galones utilizados correspondientes al número de millas recorridas. Esto significa:</para>
+<equation id="fs-id1165137531080" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtext>número de galones </m:mtext><m:mo>=</m:mo><m:mi>g</m:mi><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mtext>número de millas</m:mtext><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165135190218">La expresión <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> toma las millas como entrada y un número de galones como salida. La función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> requiere un número de horas como entrada. Intentar introducir un número de galones no tiene sentido. La expresión <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> no tiene sentido.</para>
+<para id="fs-id1165137863600">La expresión <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> toma las horas como entrada y un número de kilómetros recorridos como salida. La función <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> requiere un número de millas como entrada. Utilizando <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> (millas recorridas) como valor de entrada para <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> en el que los galones de gasolina dependen de las millas recorridas, sí tiene sentido. La expresión <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> tiene sentido, y dará el número de galones de gasolina utilizados, <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> al conducir un determinado número de millas, <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> en <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> horas.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137768571" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1163337768571">¿Existen situaciones en las que <m:math>  <m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow> </m:math> y <m:math>  <m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow> </m:math> serían ambas expresiones significativas o útiles?</para>
+
+<para id="fs-id1165137682006"><emphasis effect="italics">Sí. Para muchas funciones matemáticas puras, ambas composiciones tienen sentido, aunque suelen producir nuevas funciones diferentes. En los problemas del mundo real, las funciones cuyas entradas y salidas tienen las mismas unidades también pueden dar composiciones que tienen sentido en cualquier orden.</emphasis></para>
+</note>
+<note id="fs-id1165134558042" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_01">
+<problem id="fs-id1165135560725"><para id="fs-id1165135560726">La fuerza gravitacional sobre un planeta a una distancia <emphasis effect="italics">r</emphasis> del sol viene dada por la función <m:math>
+<m:mrow>
+<m:mi>G</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> La aceleración de un planeta sometido a una fuerza cualquiera <m:math>
+<m:mrow>
+<m:mi>F</m:mi></m:mrow>
+</m:math> viene dada por la función <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Forme una composición significativa de estas dos funciones y explique su significado.</para></problem>
+<solution id="fs-id1165137417357"><para id="fs-id1165137417358">Una fuerza gravitacional sigue siendo una fuerza, así que <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>G</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> tiene sentido como la aceleración de un planeta a una distancia <emphasis effect="italics">r</emphasis> del Sol (debido a la gravedad), pero <m:math>
+<m:mrow>
+<m:mi>G</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mi>F</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> no tiene sentido.</para></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165137560475">
+<title>Evaluar funciones compuestas</title>
+<para id="fs-id1165135168147">Una vez que componemos una nueva función a partir de dos funciones existentes, tenemos que ser capaces de evaluarla para cualquier entrada en su dominio. Lo haremos con entradas numéricas específicas para funciones expresadas como tablas, gráficas y fórmulas, y con variables como entradas de funciones expresadas como fórmulas. En cada caso, evaluamos la función interna utilizando la entrada inicial y luego utilizamos la salida de la función interna como entrada para la función externa.</para>
+
+<section id="fs-id1165137760886">
+<title>Evaluar funciones compuestas mediante tablas</title>
+<para id="fs-id1165137725253">Cuando se trabaja con funciones dadas como tablas, se leen los valores de entrada y salida de las entradas de la tabla y se trabaja siempre de adentro hacia fuera. Primero evaluamos la función interior y luego utilizamos la salida de la función interior como entrada de la función exterior.</para>
+
+<example id="Example_01_04_05">
+<exercise id="fs-id1165137416770">
+<problem id="fs-id1165137465672">
+<title>Usar una tabla para evaluar una función compuesta</title>
+<para id="fs-id1165135177664">Usando la <link target-id="Table_01_04_01"/>, evalúe <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><table id="Table_01_04_01" summary="La tabla tiene cinco filas y tres columnas. La primera columna está marcada como &quot;x&quot;, la segunda columna como &quot;f(x)&quot; y la tercera columna como &quot;g(x)&quot;. Tenemos los siguientes valores para f(x): f(1)=6, f(2)=8, f(3)=3 y f(4)=1. Finalmente, para g(1)=3, g(2)=5, g(3)=2 y g(4)=7.">
+<tgroup cols="3"><colspec colnum="1" colname="c1" align="center" colwidth="55"/>
+<colspec colnum="2" colname="c2" align="center" colwidth="55"/>
+<colspec colnum="3" colname="c3" align="center" colwidth="55"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1</entry>
+<entry align="center">6</entry>
+<entry align="center">3</entry>
+</row>
+<row>
+<entry align="center">2 </entry>
+<entry align="center">8</entry>
+<entry align="center">5</entry>
+</row>
+<row>
+<entry align="center">3</entry>
+<entry align="center">3</entry>
+<entry align="center">2 </entry>
+</row>
+<row>
+<entry align="center">4</entry>
+<entry align="center">1</entry>
+<entry align="center">7</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165135582219">
+<para id="fs-id1165135582221">Para evaluar <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">),</m:mo></m:mrow>
+</m:math> comenzamos desde el interior con el valor de entrada 3. A continuación, evaluamos la expresión interior <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> utilizando la tabla que define la función <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>:</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> Podemos entonces utilizar ese resultado como entrada a la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> por lo que <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> se sustituye por 2 y obtenemos <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Entonces, utilizando la tabla que define la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> tenemos que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8.</m:mn></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165137415997" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165134259282">Para evaluar <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">),</m:mo></m:mrow>
+</m:math> primero evaluamos la expresión interior <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> utilizando la primera tabla: <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math> Entonces, utilizando la tabla para <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mtext>, </m:mtext>
+ </m:mrow>
+</m:math> podemos evaluar</para>
+
+<equation id="fs-id1165137841687" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165134231482">La <link target-id="Table_01_04_02"/> muestra las funciones compuestas <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi></m:mrow>
+</m:math> como tablas.</para>
+
+<table id="Table_01_04_02" summary="La tabla tiene dos filas y cinco columnas. Cuando x=3, g(3)=2, f(g(3))=8, f(3)=3, y g(f(3))=2.">
+<tgroup cols="5"><colspec colnum="1" colname="c1" align="center" colwidth="60"/>
+<colspec colnum="2" colname="c2" align="center" colwidth="60"/>
+<colspec colnum="3" colname="c3" align="center" colwidth="60"/>
+<colspec colnum="4" colname="c4" align="center" colwidth="60"/>
+<colspec colnum="5" colname="c5" align="center" colwidth="60"/>
+<tbody>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math>
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</entry>
+</row>
+
+<row>
+<entry align="center">3</entry>
+<entry align="center">2 </entry>
+<entry align="center">8</entry>
+<entry align="center">3</entry>
+<entry align="center">2 </entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137724943" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_02">
+<problem id="fs-id1165134297600">
+<para id="fs-id1165134297603">Si utilizamos <link target-id="Table_01_04_01"/>, evalúe <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134258662">
+<para id="fs-id1165137836967"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165137756068">
+<title>Evaluar funciones compuestas mediante gráficas</title>
+<para id="fs-id1165137428192">Cuando se nos dan funciones individuales como gráficas, el procedimiento para evaluar las funciones compuestas es similar al proceso que utilizamos para evaluar las tablas. Leemos los valores de entrada y salida, pero esta vez, desde los ejes <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> y en <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> de las gráficas.</para>
+<note id="fs-id1165137634364" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137660530"><emphasis>Dada una función compuesta y las gráficas de sus funciones individuales, evalúela utilizando la información proporcionada por las gráficas </emphasis></para>
+<list id="fs-id1165133248553" list-type="enumerated" number-style="arabic"><item>Localice la entrada dada a la función interna en el eje <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> eje de su gráfica.</item>
+<item>Lea la salida de la función interna del eje <m:math>
+<m:mrow><m:mi>y</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> de su gráfico.</item>
+<item>Ubique la salida de la función interna en el eje <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> de la gráfica de la función exterior.</item>
+<item>Lea la salida de la función externa del eje <m:math>
+<m:mrow><m:mi>y</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> eje de su gráfico. Esta es la salida de la función compuesta.</item>
+</list></note>
+
+<example id="Example_01_04_06"><exercise id="fs-id1165137758193"><problem id="fs-id1165137758196">
+<title>Usar una gráfica para evaluar una función compuesta</title>
+<para id="fs-id1165134226787">Usando la <link target-id="Figure_01_04_002"/>, evalúe <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><figure id="Figure_01_04_002">
+<media id="fs-id1165134060392" alt="Explicación de la función compuesta.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_002ab.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135545946">
+<para id="fs-id1165135545948">Para evaluar <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> comenzamos con la evaluación interna. Vea el <link target-id="Figure_01_04_004"/>.</para><figure id="Figure_01_04_004">
+<media id="fs-id1165137644158" alt="Dos gráficas de una parábola positiva (g(x)) y una parábola negativa (f(x)). Los siguientes puntos se representan: g(1)=3 y f(3)=6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_004-1a4f.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137566106">Evaluamos <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> utilizando la gráfica de <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> hallando la entrada de 1 en el eje <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext></m:mrow>
+</m:math> y hallando el valor de salida de la gráfica en esa entrada. Aquí, <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math> Utilizamos este valor como entrada a la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165135432881" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137831420">Podemos entonces evaluar la función compuesta mirando la gráfica de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> hallando la entrada de 3 en el eje <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext> </m:mtext>
+ </m:mrow>
+</m:math> y leyendo el valor de salida de la gráfica en esta entrada. Aquí, <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> por lo que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6.</m:mn></m:mrow>
+</m:math>
+</para></solution>
+<commentary id="fs-id1165135646128">
+<title>Análisis </title>
+<para id="fs-id1165137602379">La <link target-id="Figure_01_04_005"/> muestra cómo podemos marcar las gráficas con flechas para trazar el camino desde el valor de entrada hasta el de salida.</para><figure id="Figure_01_04_005">
+<media id="fs-id1165135500730" alt="Dos gráficas de una parábola positiva y otra negativa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_005-1e36.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example><note id="fs-id1165137723402" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_03">
+<problem id="fs-id1165137588093"><para id="fs-id1165137423742">Si utilizamos la <link target-id="Figure_01_04_002"/>, evalúe <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137843133"><para id="fs-id1165137502186"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id1165137452389">
+<title>Evaluar funciones compuestas mediante fórmulas</title>
+<para id="fs-id1165137432176">Cuando se evalúa una función compuesta en la que hemos creado o nos han dado fórmulas, la regla de trabajar de adentro hacia afuera sigue siendo la misma. El valor de entrada a la función externa será la salida de la función interna, que puede ser un valor numérico, un nombre de variable o una expresión más complicada.</para>
+<para id="fs-id1165137567159">Aunque podemos componer las funciones para cada valor de entrada individual, a veces es útil encontrar una única fórmula que calcule el resultado de una composición <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Para ello, ampliaremos nuestra idea de evaluación de funciones. Recordemos que, cuando evaluamos una función como <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>t</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> sustituimos el valor dentro de los paréntesis en la fórmula siempre que veamos la variable de entrada.</para>
+
+<note id="fs-id1165137584280" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137676972"><emphasis>Dada la fórmula de una función compuesta, evalúe la función </emphasis></para>
+<list id="fs-id1165137564125" list-type="enumerated" number-style="arabic">
+<item>Evalúe la función interior utilizando el valor de entrada o la variable proporcionada.</item>
+<item>Utilice la salida resultante como entrada a la función exterior.</item>
+</list>
+</note>
+
+<example id="Example_01_04_07">
+<exercise id="fs-id1165134070851">
+<problem id="fs-id1165134070853">
+<title>Evaluar una composición de las funciones expresadas como fórmulas con una entrada numérica</title>
+<para id="fs-id1165137447886">Dado que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>t</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> evaluar <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135543322">
+<para id="fs-id1165135528526">Como la expresión interior es <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> comenzamos evaluando <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en 1.</para>
+<equation id="fs-id1165137443116" class="unnumbered"><label/> <m:math display="block">
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137445352">Entonces <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> por lo que evaluamos <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> a una entrada de 5.</para>
+
+<equation id="fs-id1165137706989" class="unnumbered"><label/> <m:math display="block">
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mn>5</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</equation>
+</solution>
+<commentary id="fs-id1165137530479">
+<title>Análisis </title>
+<para id="fs-id1165137714335">No importa cuáles sean las variables de entrada, se llama a <m:math>
+<m:mrow><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> en este problema porque evaluamos para valores numéricos específicos.</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137570158" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_04">
+<problem id="fs-id1165134544989"><para id="fs-id1165134544990">Dados <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>t</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mi>t</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> evalúe </para>
+<list id="fs-id1165137758652" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+</list></problem>
+<solution id="fs-id1165137434572"><list id="fs-id1165134261859" list-type="enumerated" number-style="arabic" class="circled">
+     <item><span class="token">Ⓐ</span> 8</item> <item><span class="token">Ⓑ</span> 20</item></list></solution>
+</exercise>
+</note>
+</section>
+</section>
+
+<section id="fs-id1165135567444">
+<title>Halle el dominio de una función compuesta</title>
+<para id="fs-id1165135519324">Como hemos comentado anteriormente, el <term class="no-emphasis" id="term-00006">dominio de una función compuesta</term> como <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> depende del dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> y el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Es importante saber cuándo podemos aplicar una función compuesta y cuándo no; es decir, conocer el dominio de una función como <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Supongamos que conocemos los dominios de las funciones <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> por separado. Si escribimos la función compuesta para una entrada <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> cuando <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> podemos ver de inmediato que <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> debe ser miembro del dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> para que la expresión tenga sentido, porque de lo contrario no podemos completar la evaluación de la función interna. Sin embargo, también vemos que <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> debe ser miembro del dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> de lo contrario la segunda evaluación de la función en <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> no se puede completar, y la expresión sigue siendo indefinida. Así, el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> se compone únicamente de las entradas en el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> que producen resultados de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> pertenecientes al dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Observe que el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> compuesto con <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> es el conjunto de todas las <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> tal que <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> está en el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> está en el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<note id="fs-id1165135547254">
+
+<title>Dominio de una función compuesta</title>
+<para id="fs-id1165135426375">El dominio de una función compuesta <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> es el conjunto de esas entradas <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> en el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> para la cual <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> está en el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</note>
+
+<note id="fs-id1165137663970" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135203267"><emphasis>Dada una composición de funciones <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> determine su dominio.</emphasis></para><list id="fs-id1165137714200" list-type="enumerated" number-style="arabic"><item>Halle el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Halle el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item>Halle esas entradas <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> en el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> para la cual <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> está en el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Es decir, excluya aquellas entradas <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> del dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> para la cual <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> no es del dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> El conjunto resultante es el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+</list></note>
+
+<example id="Example_01_04_08">
+<exercise id="fs-id1165137646695">
+<problem id="fs-id1165137646697">
+<title>Hallar el dominio de una función compuesta</title>
+<para id="fs-id1165135640630">Halle el dominio de</para>
+<equation id="fs-id1165135349196" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>    donde</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mfrac>
+<m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137627920">
+<para id="fs-id1165137627922">El dominio de <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> consiste en todos los números reales excepto <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> ya que ese valor de entrada nos haría dividir entre 0. Asimismo, el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> consiste en todos los números reales excepto el 1. Así que tenemos que excluir del dominio de <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> ese valor de <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> para los cuales <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para>
+
+<equation id="fs-id1165137455472" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137891240">Así que el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> es el conjunto de todos los números reales excepto <m:math>
+<m:mrow><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mn>2.</m:mn></m:mrow>
+</m:math> Esto significa que</para>
+
+<equation id="fs-id1165131959460" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≠</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac><m:mspace width="0.5em"/><m:mtext>o</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</equation><para id="fs-id1165135152098">Podemos escribirlo en notación de intervalo como</para>
+<equation id="fs-id1165137638095" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mn>2 </m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<example id="Example_01_04_09">
+<exercise id="fs-id1165135353057">
+<problem id="fs-id1165137444218">
+<title>Hallar el dominio de una función compuesta con radicales</title>
+<para id="fs-id1165135547426">Halle el dominio de</para>
+<equation id="fs-id1165137806037" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>  donde</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+<m:mtext> y</m:mtext><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow>
+</m:msqrt></m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137812351">
+<para id="fs-id1165137812353">Como no podemos sacar la raíz cuadrada de un número negativo, el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo> <m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Ahora comprobamos el dominio de la función compuesta</para>
+
+<equation id="fs-id1165137874760" class="unnumbered"><label/> <m:math display="block">
+<m:mrow><m:mo>(</m:mo>
+
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi>
+<m:mo>)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>=</m:mo>
+
+<m:msqrt><m:msqrt>
+
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:msqrt><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:msqrt>
+
+</m:math>
+</equation><para id="fs-id1165137871761">Para <m:math>
+<m:mrow><m:mo>(</m:mo>
+
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi>
+<m:mo>)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>=</m:mo>
+
+<m:msqrt><m:msqrt>
+
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:msqrt><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:msqrt><m:mo>,</m:mo>
+
+<m:msqrt><m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:msqrt><m:mo>+</m:mo><m:mn>2 </m:mn>
+<m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+
+</m:math> ya que el radicando de una raíz cuadrada debe ser positivo. Como las raíces cuadradas son positivas, <m:math><m:mtext/>
+<m:mrow>
+<m:msqrt>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:msqrt>
+<m:mo>≥</m:mo><m:mn>0</m:mn>
+<m:mo>,</m:mo>
+</m:mrow><m:mtext/>
+</m:math> o, <m:math>
+
+<m:mrow><m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+<m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow><m:mtext/>
+
+</m:math> lo que da un dominio de <m:math>
+<m:mrow><m:mo>(</m:mo><m:mo>-∞</m:mo><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>]</m:mo>
+</m:mrow></m:math>.</para></solution>
+<commentary id="fs-id1165137637475">
+<title>Análisis </title>
+<para id="fs-id1165135241313">Este ejemplo muestra que el conocimiento del rango de las funciones (específicamente la función interna) también puede ser útil para encontrar el dominio de una función compuesta. También muestra que el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+</m:math> puede contener valores que no están en el dominio de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> aunque deben estar en el dominio de <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135435597" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_07">
+
+<problem id="fs-id1165137937116"><para id="fs-id1165137937117">Halle el dominio de</para>
+<equation id="fs-id1165135194427" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>  donde</m:mtext><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mfrac>
+<m:mtext>  y</m:mtext><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:msqrt></m:mrow>
+</m:math> </equation></problem>
+<solution id="fs-id1165137469124">
+<para id="fs-id1165137827717"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>∪</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137425738">
+<title>Descomponer una función compuesta en sus funciones componentes</title><para id="fs-id1165135185936">En algunos casos, es necesario descomponer una función complicada. En otras palabras, la escribimos como una composición de dos funciones más simples. Puede haber más de una forma de <term class="no-emphasis" id="term-00007">descomponer una función compuesta</term>, por lo que podemos elegir la descomposición que nos parezca más conveniente.</para>
+
+<example id="Example_01_04_10">
+<exercise id="fs-id1165134319721">
+<problem id="fs-id1165134319723">
+<title>Descomposición de una función</title>
+<para id="fs-id1165137771903">Escriba <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math> como la composición de dos funciones.</para>
+</problem>
+<solution id="fs-id1165135194520">
+<para id="fs-id1165135194522">Buscamos dos funciones, <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> por lo que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Para ello, buscamos una función dentro de otra en la fórmula de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Como una posibilidad, podemos notar que la expresión <m:math>
+<m:mrow><m:mn>5</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math> es el interior de la raíz cuadrada. Podríamos entonces descomponer la función como</para>
+
+<equation id="fs-id1165137413960" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mtext> y </m:mtext><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165135250635">Podemos comprobar nuestra respuesta recomponiendo las funciones.</para>
+<equation id="fs-id1165137730234" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</equation>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165131878633" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_01_04_08">
+<problem id="fs-id1165137501975"><para id="fs-id1165137501976">Escriba <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> como la composición de dos funciones.</para>
+</problem>
+<solution id="fs-id1165137411051">
+<para id="fs-id1165137411053">Posible respuesta<newline/></para><para id="fs-id1165135333608"> <m:math>
+
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:msqrt></m:math> <newline/> <m:math>
+<m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow>
+</m:mfrac></m:math> <newline/> <m:math>
+<m:mi>f</m:mi><m:mo>=</m:mo><m:mi>h</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi>
+
+
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165135699157" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165137600228">Acceda a estos recursos en línea para obtener más información y practicar con las funciones compuestas.</para>
+<list id="fs-id1165137600231" list-type="bulleted">
+<item><link url="http://openstax.org/l/compfunction">Funciones compuestas</link></item>
+<item><link url="http://openstax.org/l/compfuncnot">Aplicación de la notación de funciones compuestas</link></item>
+<item><link url="http://openstax.org/l/compfuncgraph">Funciones compuestas mediante gráficas</link></item>
+<item><link url="http://openstax.org/l/decompfunction">Descomposición de funciones</link></item>
+<item><link url="http://openstax.org/l/compfuncvalue">Valores de la función compuesta</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165135388428" class="key-equations">
+<title>Ecuación clave</title>
+<table id="eip-id1165134118229" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" align="center" colname="c1"/>
+<colspec colnum="2" align="center" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Función compuesta</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table>
+</section>
+<section id="fs-id1165137768015" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137754842"><item>Podemos realizar operaciones algebraicas con funciones. Vea el <link target-id="Example_01_04_01"/>.</item>
+<item>Cuando las funciones se combinan, la salida de la primera función (interna) se convierte en la entrada de la segunda función (externa).</item>
+<item>La función producida al combinar dos funciones es una función compuesta. Vea el <link target-id="Example_01_04_02"/> y el <link target-id="Example_01_04_03"/>.</item>
+<item>Al interpretar el significado de las funciones compuestas hay que tener en cuenta el orden de composición de las mismas. Vea el <link target-id="Example_01_04_04"/>.</item>
+<item>Se puede evaluar una función compuesta evaluando la función interna utilizando el valor de entrada dado y luego evaluando la función externa tomando como entrada la salida de la función interna.</item>
+<item>Se puede evaluar una función compuesta a partir de una tabla. Vea el <link target-id="Example_01_04_05"/>.</item>
+<item>Se puede evaluar una función compuesta a partir de una gráfica. Vea el <link target-id="Example_01_04_06"/>.</item>
+<item>Se puede evaluar una función compuesta a partir de una fórmula. Vea el <link target-id="Example_01_04_07"/>.</item>
+<item>El dominio de una función compuesta consiste en aquellas entradas en el dominio de la función interna que corresponden a salidas de la función interna que están en el dominio de la función externa. Vea el <link target-id="Example_01_04_08"/> y el <link target-id="Example_01_04_09"/>.</item>
+<item>Al igual que las funciones pueden combinarse para formar una función compuesta, las funciones compuestas pueden descomponerse en funciones más simples.</item>
+<item>A menudo, las funciones pueden descomponerse de más de una manera. Vea el <link target-id="Example_01_04_10"/>.</item>
+</list></section>
+
+<section id="fs-id1165137611819" class="section-exercises">
+<title>Ejercicios de la sección</title>
+<section id="fs-id1165135322014">
+<title>Verbales</title>
+<exercise id="fs-id1165137928667">
+<problem id="fs-id1165137928669">
+<para id="fs-id1165137928672">¿Cómo se encuentra el dominio del cociente de dos funciones, <m:math>
+<m:mrow><m:mfrac>
+<m:mi>f</m:mi>
+<m:mi>g</m:mi>
+</m:mfrac>
+<m:mo>?</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137836425">
+<para id="fs-id1165137772064">Halle los números que hacen la función en el denominador <m:math>
+<m:mrow><m:mi>g</m:mi></m:mrow>
+</m:math> igual a cero, y compruebe cualquier otra restricción de dominio en <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> como una raíz par o ceros en el denominador.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137922665">
+<problem id="fs-id1165137686730">
+<para id="fs-id1165137686732">¿Cuál es la composición de dos funciones, <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo>?</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137451354">
+<problem id="fs-id1165137772429">
+<para id="fs-id1165137772431">Si se invierte el orden al componer dos funciones, ¿el resultado puede ser siempre el mismo que la respuesta en el orden original de la composición? En caso afirmativo, dé un ejemplo. Si no, explique por qué no.</para>
+</problem>
+<solution id="fs-id1165135511306">
+<para id="fs-id1165137582558">Sí. Ejemplo de respuesta: Supongamos que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mtext> y </m:mtext><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math> Entonces <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Así que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo>=</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165133005511">
+<problem id="fs-id1165133005513">
+<para id="fs-id1165133005515">¿Cómo se encuentra el dominio para la composición de dos funciones, <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo>?</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1165137407457">
+<title>Algebraicos</title>
+<exercise id="fs-id1165137695103">
+<problem id="fs-id1165137695105">
+<para id="fs-id1165135457075">Dados <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> calcule <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mi>g</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow><m:mfrac>
+   <m:mi>f</m:mi>
+   <m:mi>g</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine el dominio de cada función en notación intervalo.</para></problem>
+<solution id="fs-id1165137645597">
+<para id="fs-id1165135662450"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes. </para>
+
+<para id="fs-id1165137738159"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165135502060"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+<m:mo>–</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>6</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165137425123"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>f</m:mi>
+<m:mi>g</m:mi>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>- −</m:mo><m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+<m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+<m:mo>,</m:mo><m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+<m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+<m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137583918">
+<problem id="fs-id1165135154356">
+<para id="fs-id1165135154358">Dado que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> calcule <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mi>g</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow><m:mfrac>
+   <m:mi>f</m:mi>
+   <m:mi>g</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine el dominio de cada función en notación de intervalo.</para></problem>
+</exercise>
+<exercise id="fs-id1165137435038">
+<problem id="fs-id1165137435040">
+<para id="fs-id1165135174958">Dados <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> calcule <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mi>g</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>f</m:mi>
+   <m:mi>g</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine el dominio de cada función en notación intervalo.</para></problem>
+<solution id="fs-id1165137533872">
+<para id="fs-id1165134231518"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes. </para>
+<para id="fs-id1165137770336"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165137782390"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165137551645"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>f</m:mi>
+<m:mi>g</m:mi>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>8</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134371184">
+<problem id="fs-id1165134371186">
+<para id="fs-id1165131797286">Dado que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> calcule <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mi>g</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>f</m:mi>
+   <m:mi>g</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine el dominio de cada función en notación de intervalo.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137810120">
+<problem id="fs-id1165137810123">
+<para id="fs-id1165137810125">Dados <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo></m:mrow>
+</m:math> calcule <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mi>g</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>f</m:mi>
+   <m:mi>g</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine el dominio de cada función en notación intervalo.</para></problem>
+<solution id="fs-id1165137696948">
+<para id="fs-id1165137696950"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">[</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165137628257"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>- −</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">[</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165135383671"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">[</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+<para id="fs-id1165137755347"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>f</m:mi>
+<m:mi>g</m:mi>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> dominio: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134050649">
+<problem id="fs-id1165134050651">
+<para id="fs-id1165134050653">Dado que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>|</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> calcule <m:math>
+<m:mrow><m:mfrac>
+<m:mi>g</m:mi>
+<m:mi>f</m:mi>
+</m:mfrac>
+<m:mo>.</m:mo></m:mrow>
+</m:math> Determine el dominio de la función en notación intervalo.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135160341">
+<problem id="fs-id1165135160343">
+<para id="fs-id1165135160346">Dados <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> calcule lo siguiente:</para>
+<list id="fs-id1165137447421" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓓ</span> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓔ</span> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</item>
+</list>
+</problem>
+<solution id="fs-id1165137526473">
+<list id="fs-id1165137526475" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> 3</item><item>
+          <span class="token">Ⓑ</span> <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math></item> <item><span class="token">Ⓒ</span> <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>)</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> </item><item><span class="token">Ⓓ</span> <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>20</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math></item><item><span class="token">Ⓔ</span> <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>163</m:mn></m:mrow>
+</m:math></item>
+</list>
+</solution>
+</exercise>
+
+<para id="fs-id1165135435742">En los siguientes ejercicios, utilice cada par de funciones para calcular <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Simplifique sus respuestas.</para>
+
+<exercise id="fs-id1165137600771">
+<problem id="fs-id1165137600773">
+<para id="fs-id1165137600775"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137647331">
+<problem id="fs-id1165137693582">
+<para id="fs-id1165137693585"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137407208">
+<para id="fs-id1165137407210"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+<m:mo>+</m:mo><m:mn>7</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137762249">
+<problem id="fs-id1165137762251">
+<para id="fs-id1165137833130"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137532660">
+<problem id="fs-id1165137827092">
+<para id="fs-id1165137827094"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137648072">
+<para id="fs-id1165137762439"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mroot>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134377955">
+<problem id="fs-id1165134377957">
+<para id="fs-id1165134377960"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>7</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133101746">
+<problem id="fs-id1165133101748">
+<para id="fs-id1165137654761"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137638769">
+<para id="fs-id1165137638771"> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mfrac>
+<m:mn>2 </m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>+</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135369375">En los siguientes ejercicios, utilice cada conjunto de funciones para hallar <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Simplifique sus respuestas.</para>
+<exercise id="fs-id1165137454072">
+<problem id="fs-id1165137585299">
+<para id="fs-id1165137585302"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135347410">
+<problem id="fs-id1165137463055">
+<para id="fs-id1165137463058"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137644526">
+<para id="fs-id1165137644528"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135511323">
+<problem id="fs-id1165135511325">
+<para id="fs-id1165135511327">Dado que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> calcule lo siguiente:</para>
+<list id="fs-id1165134388214" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> el dominio de <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en notación intervalo</item>
+<item><span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓓ</span> el dominio de <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓔ</span> <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>f</m:mi>
+<m:mi>g</m:mi>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math>
+</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1165137647361">
+<problem id="fs-id1165137647363">
+<para id="fs-id1165137647366">Dados <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> calcule lo siguiente:</para>
+<list id="fs-id1165137838306" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> el dominio de <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en notación de intervalo</item>
+</list></problem>
+<solution id="fs-id1165137722654">
+<list id="fs-id1165137722656"><item>
+          <span class="token">Ⓐ</span> Texto <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+<m:mo>;</m:mo></m:mrow>
+</m:math></item><item>
+          <span class="token">Ⓑ</span><m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math></item>
+</list>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135160138">
+<problem id="fs-id1165135160140">
+<para id="fs-id1165135160142">Dadas las funciones <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo></m:mrow>
+</m:math> calcule lo siguiente:</para>
+<list id="fs-id1165134261642" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>2 </m:mtext><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+</list></problem>
+</exercise>
+
+<exercise id="fs-id1165137809991">
+<problem id="fs-id1165137809993">
+<para id="fs-id1165135193361">Dadas las funciones <m:math>
+<m:mrow><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> indique el dominio de cada una de las siguientes funciones utilizando la notación intervalo:</para>
+<list id="fs-id1165137863568" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mrow>
+<m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</item>
+</list></problem>
+<solution id="fs-id1165137387082">
+<list id="fs-id1165137387084" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo></m:mrow>
+</m:math></item><item>
+          <span class="token">Ⓑ</span> <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo></m:mrow>
+</m:math> c. <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math></item>
+</list>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137471624">
+<problem id="fs-id1165137439247">
+<para id="fs-id1165137439249">Funciones dadas <m:math>
+<m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>9</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> indique el dominio de cada una de las siguientes funciones utilizando la notación intervalo.</para><list id="fs-id1165137599657" list-type="enumerated" number-style="arabic" class="circled"><item> <span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:mi>q</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</item>
+</list></problem>
+</exercise>
+
+<exercise id="fs-id1165137405140">
+<problem id="fs-id1165137605178">
+<para id="fs-id1165137605180">Para <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo></m:mrow>
+</m:math> escriba el dominio de <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> en notación de intervalo.</para>
+</problem>
+<solution id="fs-id1165137889762">
+<para id="fs-id1165137644220"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<para id="fs-id1165137407235">En los siguientes ejercicios, halle las funciones <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> para que la función dada pueda expresarse como <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id1165135344867">
+<problem id="fs-id1165135672036">
+<para id="fs-id1165135672039"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137768741">
+<problem id="fs-id1165137768743">
+<para id="fs-id1165137768745"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137432927">
+<para id="fs-id1165137432929">muestra: <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137936652">
+<problem id="fs-id1165137936654">
+<para id="fs-id1165137641867"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135440593">
+<problem id="fs-id1165135440595">
+<para id="fs-id1165137570789"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137598944">
+<para id="fs-id1165137598946">muestra: <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165134239749">
+<problem id="fs-id1165134239751">
+<para id="fs-id1165137755895"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137404539">
+<problem id="fs-id1165137404541">
+<para id="fs-id1165135436525"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135699087">
+<para id="fs-id1165135699089">muestra: <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134108512">
+<problem id="fs-id1165137809811">
+<para id="fs-id1165137809814"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137602768">
+<problem id="fs-id1165133052329">
+<para id="fs-id1165133052331"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137731127">
+<para id="fs-id1165137725917">muestra: <m:math>
+<m:mtable columnalign="left">
+<m:mtr>
+<m:mtd>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>4</m:mn>
+</m:mroot>
+
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+</m:mfrac>
+
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165133307053">
+<problem id="fs-id1165133307055">
+<para id="fs-id1165133307057"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>4</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137433677">
+<problem id="fs-id1165137823665">
+<para id="fs-id1165137823667"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135439855">
+<para id="fs-id1165135439858">muestra: <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt></m:math> <newline/> <m:math><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137723997">
+<problem id="fs-id1165137723999">
+<para id="fs-id1165137408459"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137767806">
+<problem id="fs-id1165137767808">
+<para id="fs-id1165137767811"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137806156">
+<para id="fs-id1165137806158">muestra: <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:mroot></m:math> <newline/> <m:math>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:math> grandes.
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137596258">
+<problem id="fs-id1165137596260">
+<para id="fs-id1165137596262"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>7</m:mn></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137442981">
+<problem id="fs-id1165137442984">
+<para id="fs-id1165137419598"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135708080">
+<para id="fs-id1165135708082">muestra: <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup></m:math> <newline/> <m:math><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mfrac>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137657472">
+<problem id="fs-id1165137657474">
+<para id="fs-id1165137657476"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137748688">
+<problem id="fs-id1165137748690">
+<para id="fs-id1165137558402"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137596478">
+<para id="fs-id1165137596480">muestra: <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mi>x</m:mi>
+</m:msqrt>
+</m:math> <newline/> <m:math><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mfrac>
+</m:math>
+</para></solution>
+</exercise>
+</section>
+<section id="fs-id1165134250814">
+<title>Gráficos</title>
+<para id="fs-id1165135377148">En los siguientes ejercicios, utilice las gráficas de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> que se muestra en la <link target-id="Figure_01_04_201"/>, y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> que se muestra en la <link target-id="Figure_01_04_202"/>, para evaluar las expresiones.</para>
+<figure id="Figure_01_04_201" class="small">
+<media id="fs-id1165134263075" alt="Gráfica de una función.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_201.jpg"/>
+</media>
+</figure>
+
+<figure id="Figure_01_04_202" class="small">
+<media id="fs-id1165135496557" alt="Gráfico de una función.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_202.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165137534543">
+<problem id="fs-id1165137534545">
+<para id="fs-id1165137534547"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137529964">
+<problem id="fs-id1165137529966">
+<para id="fs-id1165137529968"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135650744">
+<para id="fs-id1165135650746">2 </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137470055">
+<problem id="fs-id1165137470057">
+<para id="fs-id1165137644984"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134336712">
+<problem id="fs-id1165134336714">
+<para id="fs-id1165137741078"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137759779">
+<para id="fs-id1165137759781">5</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137842430">
+<problem id="fs-id1165135420951">
+<para id="fs-id1165135420953"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137434226">
+<problem id="fs-id1165135696670">
+<para id="fs-id1165135696673"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134394616">
+<para id="fs-id1165137812773">4</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137874891">
+<problem id="fs-id1165137874893">
+<para id="fs-id1165137874895"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135503742">
+<problem id="fs-id1165135503744">
+<para id="fs-id1165135503746"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165131969120">
+<para id="fs-id1165131969123">0</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165132944970">En los siguientes ejercicios, utilice las gráficas de <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> que se muestra en la <link target-id="Figure_01_04_203"/>, <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> que se muestra en la <link target-id="Figure_01_04_204"/>, y <m:math>
+<m:mrow><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> que se muestra en la <link target-id="Figure_01_04_205"/>, para evaluar las expresiones.</para>
+<figure id="Figure_01_04_203" class="small">
+<media id="fs-id1165137894613" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_203.jpg"/>
+</media>
+</figure>
+<figure id="Figure_01_04_204" class="small">
+<media id="fs-id1165134558626" alt="Gráfica de una parábola.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_204.jpg"/>
+</media>
+</figure>
+<figure id="Figure_01_04_205" class="small">
+<media id="fs-id1165135349122" alt="Gráfica de una función de raíz cuadrada.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_01_04_205.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165135703261">
+<problem id="fs-id1165137932616">
+<para id="fs-id1165137932618"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137401837">
+<problem id="fs-id1165135148970">
+<para id="fs-id1165135148972"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135641698"><para id="fs-id1165134169487">2 </para></solution>
+</exercise>
+
+<exercise id="fs-id1165134057546">
+<problem id="fs-id1165134057548">
+<para id="fs-id1165135195008"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>4</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135541712">
+<problem id="fs-id1165135541714">
+<para id="fs-id1165135543250"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137694045"><para id="fs-id1165137803148">1</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137694050">
+<problem id="fs-id1165137579588">
+<para id="fs-id1165137579590"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137438320">
+<problem id="fs-id1165134031228">
+<para id="fs-id1165134031230"> <m:math>
+<m:mrow>
+<m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137666936"><para id="fs-id1165137408697">4</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135632100">
+<problem id="fs-id1165135632102">
+<para id="fs-id1165135593377"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>4</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134238765">
+<problem id="fs-id1165134238767">
+<para id="fs-id1165134238769"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137501367"><para id="fs-id1165137405933">4</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137413913">
+<title>Numéricos</title>
+<para id="fs-id1165135587789">En los siguientes ejercicios, utilice los valores de la función para <m:math>
+<m:mrow><m:mi>f</m:mi><m:mtext> y </m:mtext><m:mi>g</m:mi></m:mrow>
+</m:math> que se muestra la <link target-id="Table_01_04_03"/> para evaluar cada expresión.</para>
+
+<table id="Table_01_04_03" summary="Esta tabla tiene once columnas y tres filas. La primera fila está marcada como &quot;x&quot;, la segunda fila como &quot;f(x)&quot; y la columna de la fila como &quot;g(x)&quot;. Tenemos los siguientes valores para f(x): f(0)=7, f(1)=6, f(2)=5, f(3)=8, f(4)=4, f(5)=0, f(6)=2, f(7)=1, f(8)=9, and f(9)=3. Finalmente, para g(0)=9, g(1)=5, g(2)=6, g(3)=2, g(4)=1, g(5)=8, g(6)=7, g(7)=3, g(8)=4, and g(9)=0.">
+<tgroup cols="11"><tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis>
+</entry><entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis>
+</entry><entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis></entry>
+</row>
+<row>
+<entry align="center">0</entry><entry align="center">7</entry><entry align="center">9</entry></row>
+<row>
+<entry align="center">1</entry><entry align="center">6</entry><entry align="center">5</entry></row>
+<row>
+<entry align="center">2 </entry><entry align="center">5</entry><entry align="center">6</entry></row>
+<row>
+<entry align="center">3</entry><entry align="center">8</entry><entry align="center">2 </entry></row>
+<row>
+<entry align="center">4</entry><entry align="center">4</entry><entry align="center">1</entry></row>
+<row>
+<entry align="center">5</entry><entry align="center">0</entry><entry align="center">8</entry></row>
+<row>
+<entry align="center">6</entry><entry align="center">2 </entry><entry align="center">7</entry></row>
+<row>
+<entry align="center">7</entry><entry align="center">1</entry><entry align="center">3</entry></row>
+<row>
+<entry align="center">8</entry><entry align="center">9</entry><entry align="center">4</entry></row>
+<row>
+<entry align="center">9</entry><entry align="center">3</entry><entry align="center">0</entry></row>
+</tbody>
+</tgroup>
+</table><exercise id="fs-id1165134226798">
+<problem id="fs-id1165134226800">
+<para id="fs-id1165134226802"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>8</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135298467">
+<problem id="fs-id1165135538768">
+<para id="fs-id1165135538770"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134061990">
+<para id="fs-id1165134495228">9</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134495234">
+<problem id="fs-id1165134290265">
+<para id="fs-id1165134290267"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137761923">
+<problem id="fs-id1165137761925">
+<para id="fs-id1165137761927"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133023676">
+<para id="fs-id1165133023678">4</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137443134">
+<problem id="fs-id1165137443136">
+<para id="fs-id1165137443138"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>4</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134262482">
+<problem id="fs-id1165134262484">
+<para id="fs-id1165134262486"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135417784">
+<para id="fs-id1165135417786">2 </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137831184">
+<problem id="fs-id1165137831186">
+<para id="fs-id1165137831188"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134199326">
+<problem id="fs-id1165134199328">
+<para id="fs-id1165134199330"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>6</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135457908">
+<para id="fs-id1165135457910">3</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165134190700">Para los siguientes ejercicios, utilice los valores de la función para <m:math>
+<m:mrow><m:mi>f</m:mi><m:mtext> y </m:mtext><m:mi>g</m:mi></m:mrow>
+</m:math> que se muestra en la <link target-id="Table_01_04_04"/> para evaluar las expresiones.</para>
+
+<table id="Table_01_04_04" summary="La tabla tiene ocho filas y tres columnas. La primera columna está marcada como &quot;x&quot;, la segunda columna como &quot;f(x)&quot; y la tercera columna como &quot;g(x)&quot;. Tenemos los siguientes valores para f(x): f(-3)=11, f(-2)=9, f(-1)=7, f(0)=5, f(1)=3, f(2)=1, y f(3)=-1. Y para g(-3)=-8, g(-2)=-3, g(-1)=0, g(0)=1, g(1)=0, g(2)=-3 y g(3)=-8.">
+<tgroup cols="8"><tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis>
+</entry><entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> </emphasis>
+</entry>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> </emphasis>
+</entry>
+</row>
+<row>
+<entry align="center">-3</entry><entry align="center">11</entry><entry align="center">-8</entry></row>
+<row>
+<entry align="center">-2</entry><entry align="center">9</entry><entry align="center">-3</entry></row>
+<row>
+<entry align="center">-1</entry><entry align="center">7</entry><entry align="center">0</entry></row>
+<row>
+<entry align="center">0</entry><entry align="center">5</entry><entry align="center">1</entry></row>
+<row>
+<entry align="center">1</entry><entry align="center">3</entry><entry align="center">0</entry></row>
+<row>
+<entry align="center">2 </entry><entry align="center">1</entry><entry align="center">-3</entry></row>
+<row>
+<entry align="center">3</entry><entry align="center">-1</entry><entry align="center">-8</entry></row>
+</tbody>
+</tgroup>
+</table><exercise id="fs-id1165135192528">
+<problem id="fs-id1165135188435">
+<para id="fs-id1165135188438"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135593131">
+<problem id="fs-id1165135593133">
+<para id="fs-id1165133334338"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133047570">
+<para id="fs-id1165133047572">11</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135514720">
+<problem id="fs-id1165135514722">
+<para id="fs-id1165135514725"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135369160">
+<problem id="fs-id1165137441811">
+<para id="fs-id1165137441814"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137427576">
+<para id="fs-id1165137427578">0</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137849146">
+<problem id="fs-id1165137849148">
+<para id="fs-id1165137849150"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137400455">
+<problem id="fs-id1165137400457">
+<para id="fs-id1165137400459"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137626894">
+<para id="fs-id1165137939470">7</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137939476">Para los siguientes ejercicios, utilice cada par de funciones para calcular <m:math>
+<m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>0</m:mn>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+
+<exercise id="fs-id1165135191363">
+<problem id="fs-id1165135191365">
+<para id="fs-id1165135191367"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>-</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135149221">
+<problem id="fs-id1165135149223">
+<para id="fs-id1165134199478"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>–</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135657107">
+<para id="fs-id1165135657110"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>94</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135185305">
+<problem id="fs-id1165137463806">
+<para id="fs-id1165137463808"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>- −</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137405114">
+<problem id="fs-id1165135187526">
+<para id="fs-id1165135187529"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137767238">
+<para id="fs-id1165137767241"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137422427">En los siguientes ejercicios, utilice las funciones <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+</m:math> para evaluar o encontrar la función compuesta como se indica.</para>
+
+<exercise id="fs-id1165137464556">
+<problem id="fs-id1165134558023">
+<para id="fs-id1165134558025"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135309916">
+<problem id="fs-id1165135309918">
+<para id="fs-id1165135169383"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165137480928">
+<para id="fs-id1165137480930"> <m:math>
+<m:mrow>
+<m:mn>18</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>51</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137701746">
+<problem id="fs-id1165137701749">
+<para id="fs-id1165137701751"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137761622">
+<problem id="fs-id1165137761624">
+<para id="fs-id1165137761626"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165137758394">
+<para id="fs-id1165137758396"> <m:math>
+<m:mrow>
+<m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165137812338">
+<title>Extensiones</title>
+<para id="fs-id1165137554206">En los siguientes ejercicios, utilice <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+<m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id1165135253759">
+<problem id="fs-id1165135253761">
+<para id="fs-id1165135253763">Halle <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> Compara las dos respuestas.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137456144">
+<problem id="fs-id1165137647741">
+<para id="fs-id1165137647743">Calcule <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135198523">
+<para id="fs-id1165135198525">2 </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135169398">
+<problem id="fs-id1165135169400">
+<para id="fs-id1165135169402">¿Cuál es el dominio de <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165131891789">
+<problem id="fs-id1165131891791">
+<para id="fs-id1165137414486">¿Cuál es el dominio de <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133190973">
+<para id="fs-id1165137939800"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135657099">
+<problem id="fs-id1165135657101">
+<para id="fs-id1165135657104">Supongamos que <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>x</m:mi>
+</m:mfrac>
+<m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<list id="fs-id1165137835644" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> Halle <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> ¿Es <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> para cualquier función <m:math>
+<m:mrow><m:mi>f</m:mi></m:mrow>
+</m:math> el mismo resultado que la respuesta a la parte (a) para cualquier función? Explíque.</item>
+</list></problem>
+</exercise>
+
+<para id="fs-id1165137432638">En los siguientes ejercicios, supongamos que <m:math>
+<m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>5</m:mn>
+</m:msup>
+<m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>5</m:mn>
+</m:msup>
+<m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.</m:mn></m:mrow>
+</m:math>
+</para>
+
+<exercise id="fs-id1165133280659">
+<problem id="fs-id1165135194278">
+<para id="fs-id1165135194281">Verdadero o falso: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137837867">
+<para id="fs-id1165137837869">Falso</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165133394717">
+<problem id="fs-id1165133394720">
+<para id="fs-id1165133394722">Verdadero o falso: <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165135261458">En los siguientes ejercicios, halle la composición cuando <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math> para todas las <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+<m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id1165134557320">
+<problem id="fs-id1165134481985">
+<para id="fs-id1165134481987"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165137939500">
+<para id="fs-id1165137939502"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math>; <m:math>
+<m:mrow><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137528307">
+<problem id="fs-id1165134323668">
+<para id="fs-id1165134323670"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137887392">
+<problem id="fs-id1165137887394">
+<para id="fs-id1165137887396"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165137823068">
+<para id="fs-id1165137823070"> <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo>∘</m:mo><m:mi>g</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11</m:mn><m:mspace width="0.5em"/><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>g</m:mi><m:mo>∘</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id1165135341286">
+<title>Aplicaciones en el mundo real</title>
+<exercise id="fs-id1165135314808">
+<problem id="fs-id1165135314810">
+<para id="fs-id1165135314812">La función <m:math>
+<m:mrow><m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> da el número de artículos que se demandarán cuando el precio sea <m:math>
+<m:mrow><m:mi>p</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> El costo de producción <m:math>
+<m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> es el costo de producción de <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> artículos. Para determinar el costo de producción cuando el precio es de 6 dólares, ¿cuál de las siguientes acciones realizaría?</para><list id="fs-id1165137936908" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Evaluar <m:math>
+<m:mrow><m:mi>D</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> Evalúe <m:math>
+<m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓒ</span> Resolver <m:math>
+<m:mrow><m:mi>D</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6.</m:mn></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓓ</span> Resuelva <m:math>
+<m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6.</m:mn></m:mrow>
+</m:math>
+</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1165137563586">
+<problem id="fs-id1165137563588"><para id="fs-id1165133249135">La función <m:math>
+<m:mrow><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> da el nivel de dolor en una escala de 0 a 10 experimentado por un paciente con <m:math>
+<m:mrow><m:mi>d</m:mi></m:mrow>
+</m:math> miligramos de un analgésico en su organismo. Los miligramos del medicamento en el sistema del paciente después de <m:math>
+<m:mrow><m:mi>t</m:mi></m:mrow>
+</m:math> minutos está modelado por <m:math>
+<m:mrow><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math> ¿Cuál de las siguientes acciones realizaría para determinar cuándo el paciente estará en un nivel 4 de dolor?</para><list id="fs-id1165131896029" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Evalúe <m:math>
+<m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> Evalúe <m:math>
+<m:mrow><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓒ</span> Resuelva <m:math>
+<m:mrow><m:mi>A</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓓ</span> Resuelva <m:math>
+<m:mrow><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn></m:mrow>
+</m:math>
+</item>
+</list>
+</problem>
+<solution id="fs-id1165137419674"><para id="fs-id1165137419676">c</para></solution>
+</exercise>
+
+<exercise id="fs-id1165134036818">
+<problem id="fs-id1165134036820">
+<para id="fs-id1165134036822">Una tienda ofrece a los clientes un descuento del 30 % sobre el precio de <m:math>
+<m:mrow><m:mi>x</m:mi></m:mrow>
+</m:math> artículos seleccionados. Luego, la tienda descuenta un 15 % adicional en la caja registradora. Escriba una función de precio <m:math>
+<m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> que calcula el precio final del artículo en función del precio original <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> (Pista: Utilice la composición de funciones para encontrar la respuesta).</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134492355">
+<problem id="fs-id1165134492358">
+<para id="fs-id1165134492360">Una gota de lluvia que golpea un lago produce una onda circular. Si el radio, en pulgadas, crece en función del tiempo en minutos según <m:math>
+<m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>25</m:mn><m:msqrt>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+<m:mo>,</m:mo></m:mrow>
+</m:math> halle el área de la onda en función del tiempo. Halle el área de la onda en <m:math>
+<m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135530544">
+<para id="fs-id1165135530546"> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>25</m:mn><m:msqrt>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>25</m:mn><m:msqrt>
+<m:mn>4</m:mn>
+</m:msqrt>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>2500</m:mn><m:mi>π</m:mi></m:mrow>
+</m:math> pulgadas cuadradas</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135347432">
+<problem id="fs-id1165135347434">
+<para id="fs-id1165135347436">Un incendio forestal deja a su paso una zona de hierba quemada en un patrón circular en expansión. Si el radio del círculo de hierba ardiente aumenta con el tiempo según la fórmula <m:math>
+<m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> exprese la superficie quemada en función del tiempo, <m:math>
+<m:mrow><m:mi>t</m:mi></m:mrow>
+</m:math> (minutos).</para></problem>
+</exercise>
+<exercise id="fs-id1165135431042">
+<problem id="fs-id1165135431044">
+<para id="fs-id1165134031324">Utilice la función que encontró en el ejercicio anterior para encontrar el área total quemada después de 5 minutos.</para></problem>
+<solution id="fs-id1165134031328">
+<para id="fs-id1165134031330"> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>121</m:mn><m:mi>π</m:mi></m:mrow>
+</m:math> unidades cuadradas</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134480894">
+<problem id="fs-id1165134480896">
+<para id="fs-id1165134480898">El radio <m:math>
+<m:mrow><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> en pulgadas, de un globo esférico está relacionado con el volumen, <m:math>
+<m:mrow><m:mi>V</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> entre <m:math>
+<m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>V</m:mi></m:mrow>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>π</m:mi></m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mroot>
+<m:mo>.</m:mo></m:mrow>
+</m:math> Se bombea aire en el globo, por lo que el volumen después de <m:math>
+<m:mrow><m:mi>t</m:mi></m:mrow>
+</m:math> segundos viene dada por <m:math>
+<m:mrow><m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>+</m:mo><m:mn>20</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para>
+<list id="fs-id1165135668594" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Halle la función compuesta <m:math>
+<m:mrow><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> Halle el momento <emphasis effect="italics">exacto</emphasis> en que el radio alcanza las 10 pulgadas.</item></list>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165133362937">
+<problem id="fs-id1165133362939">
+<para id="fs-id1165133362941">El número de bacterias en un producto alimenticio refrigerado viene dado por <m:math>
+<m:mrow>
+<m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>T</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>23</m:mn><m:msup>
+<m:mi>T</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>56</m:mn><m:mi>T</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>&lt;</m:mo><m:mi>T</m:mi><m:mo>&lt;</m:mo><m:mn>33</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> donde <m:math>
+<m:mrow><m:mi>T</m:mi></m:mrow>
+</m:math> es la temperatura del alimento. Cuando este se saca del refrigerador, la temperatura viene dada por <m:math>
+<m:mrow>
+<m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1,5</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>t</m:mi></m:mrow>
+</m:math> es el tiempo en horas.</para><list id="fs-id1165135560617" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> Halle la función compuesta <m:math>
+<m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> Halle el momento (redondee a dos decimales) en que el recuento de bacterias llega a 6752.</item>
+</list></problem>
+<solution id="fs-id1165134107339"><list id="fs-id1165134263977"><item><span class="token">Ⓐ</span> <m:math>
+<m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>23</m:mn><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1,5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>56</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>1,5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math></item>
+<item><span class="token">Ⓑ</span> 3,38 horas</item></list></solution></exercise>
+</section>
+
+</section>
+</content>
+
+<glossary>
+
+<definition id="fs-id1165137832421">
+<term>función compuesta</term>
+<meaning id="fs-id1165137832426">la nueva función formada por la composición de las funciones, cuando la salida de una función se utiliza como entrada de otra</meaning>
+</definition>
+</glossary>
+</document>

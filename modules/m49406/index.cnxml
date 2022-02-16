@@ -1,0 +1,3920 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Coordenadas polares</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49406</md:content-id>
+  <md:title>Coordenadas polares</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Trazar puntos con las coordenadas polares.</item>
+<item>Convertir de coordenadas polares a coordenadas rectangulares.</item>
+<item>Convertir de coordenadas rectangulares a coordenadas polares.</item>
+<item>Transformar ecuaciones entre formas polares y rectangulares.</item>
+<item>Identificar y graficar ecuaciones polares al convertirlas en ecuaciones rectangulares.</item>
+</list></md:abstract>
+  <md:uuid>c1e7a952-2a95-4202-b38b-126d1ea832fb</md:uuid>
+</metadata>
+
+<content>
+
+<para id="fs-id1165137411387">A más de 12 kilómetros del puerto, un velero se topa con mal tiempo y lo desvía de su rumbo un viento de 16 nudos (vea la <link target-id="Figure_08_03_001"/>). ¿Cómo puede el marinero indicar su ubicación a los guardacostas? En esta sección, investigaremos un método de representación de la ubicación, que es diferente de la típica cuadrícula de coordenadas.</para>
+
+<figure id="Figure_08_03_001" class="small"><media id="fs-id1165135458608" alt="Ilustración de un barco en la cuadrícula polar.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_001.jpg"/>
+</media>
+</figure><section id="fs-id1165135551681">
+<title>Trazar puntos mediante coordenadas polares</title>
+<para id="fs-id1165135666727">Cuando pensamos en trazar puntos en el plano, pensamos en <term class="no-emphasis" id="term-00001">coordenadas rectangulares</term> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en el plano de coordenadas cartesianas. Sin embargo, hay otras formas de escribir un par de coordenadas y otros tipos de sistemas de cuadrícula. En esta sección, introducimos a las <term id="term-00002">coordenadas polares</term>, que son puntos marcados <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y trazados en una cuadrícula polar. La cuadrícula polar se representa como una serie de círculos concéntricos que irradian desde el <term id="term-00003">polo</term> o el origen del plano de coordenadas.</para><para id="fs-id1165134166599">La <term class="no-emphasis" id="term-00004">cuadrícula polar</term> se presenta a escala como el círculo unitario con el eje <emphasis effect="italics">x</emphasis> positivo visto ahora como el <term id="term-00005">eje polar</term> y el origen como el polo. La primera coordenada <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> es el radio o la longitud del segmento rectilíneo dirigido desde el polo. El ángulo <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> medido en radianes, indica la dirección de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Nos movemos en sentido contrario al de las agujas del reloj desde el eje polar en un ángulo de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y medimos un segmento rectilíneo dirigido de longitud <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> en dirección a <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Aunque midamos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> primero y luego <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> el punto polar se escribe primero con la coordenada <emphasis effect="italics">r</emphasis>. Por ejemplo, para trazar el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> nos trasladaríamos <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> unidades en el sentido contrario a las agujas del reloj y luego en una longitud de 2 desde el polo. Este punto se representa en la cuadrícula en la <link target-id="Figure_08_03_002"/>.</para><figure id="Figure_08_03_002" class="small"><media id="fs-id1165135409801" alt="Cuadrícula polar con el punto (2, pi/4) trazado.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_002.jpg"/>
+</media>
+</figure><example id="Example_08_03_01">
+<exercise id="fs-id1165137735842">
+<problem id="fs-id1165133141305">
+<title>Trazar un punto en la cuadrícula polar</title>
+<para id="fs-id1165135169219">Trace el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en la cuadrícula de coordenadas polares.</para>
+</problem>
+<solution id="fs-id1165137929939">
+<para id="fs-id1165137655995">El ángulo <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> se encuentra al hacer un barrido en sentido contrario a las agujas del reloj a 90° del eje polar. El punto se sitúa a una longitud de 3 unidades del polo en la dirección <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>, como se muestra en la <link target-id="Figure_08_03_003"/>.</para>
+
+
+<figure id="Figure_08_03_003" class="small"><media id="fs-id1165137502856" alt="Cuadrícula polar con el punto (3, pi/2) trazado.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_003.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137704675" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_03_01">
+<problem id="fs-id1165134225866"><para id="fs-id1165137508064">Trace el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en la <term class="no-emphasis" id="term-00006">cuadrícula polar</term>.</para></problem>
+<solution id="fs-id1165134076025"><para id="fs-id1165133111603"><media id="fs-id1165134036712" alt="Cuadrícula polar con el punto (2, pi/3) trazado.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_004.jpg"/>
+</media></para></solution>
+</exercise>
+</note>
+
+<example id="Example_08_03_02"><exercise id="fs-id1165137812135"><problem id="fs-id1165137571611">
+<title>Trazar un punto en el sistema de coordenadas polares con componente negativa</title>
+<para id="fs-id1165135663316">Trace el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en la cuadrícula de coordenadas polares.</para>
+</problem>
+<solution id="fs-id1165137634114">
+<para id="fs-id1165135386384">Sabemos que <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> se localiza en el primer cuadrante. Sin embargo, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>-2.</m:mn></m:mrow>
+</m:math> Podemos acercarnos a trazar un punto con coordenada <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> negativa de dos maneras:</para>
+<list id="eip-id3158355" list-type="enumerated" number-style="arabic"><item>Trace el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> al mover <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> en el sentido contrario a las agujas del reloj y al extender un segmento rectilíneo dirigido 2 unidades en el primer cuadrante. A continuación, vuelva a trazar el segmento rectilíneo dirigido a través del polo, y continúe 2 unidades en el tercer cuadrante.</item>
+<item>Desplace <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> en el sentido contrario a las agujas del reloj, y dibuje el segmento rectilíneo dirigido desde el polo 2 unidades en la dirección negativa, en el tercer cuadrante.</item>
+</list><para id="eip-id3772311">Vea la <link target-id="Figure_08_03_005"/>(a). Compare esto con el gráfico de la coordenada polar <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> que se muestra en la <link target-id="Figure_08_03_005"/>(b).</para>
+
+<figure id="Figure_08_03_005" class="medium"><media id="fs-id1165135699115" alt="Dos cuadrículas polares. Se representan los puntos (2, pi/6) y (-2, pi/6). Son reflexiones a través del origen en Q1 y Q3. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_005.jpg"/>
+</media>
+</figure></solution>
+</exercise></example><note id="fs-id1165137723371" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_03_02"><problem id="fs-id1165137544173"><para id="fs-id1165137544174">Trace los puntos <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>9</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en la misma cuadrícula polar.</para></problem>
+<solution id="fs-id1165137444539"><media id="fs-id1165135296271" alt="Los puntos (2, 9pi/4) y (3, -pi/6) se representan en la cuadrícula polar.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_006.jpg"/>
+</media></solution>
+</exercise></note>
+</section>
+
+<section id="fs-id1165134149808">
+<title>Convertir coordenadas polares a coordenadas rectangulares</title>
+<para id="fs-id1165135313604">Cuando se da un conjunto de <term class="no-emphasis" id="term-00007">coordenadas polares</term>, quizá tengamos que convertirlas en <term class="no-emphasis" id="term-00008">coordenadas rectangulares</term>. Para ello, podemos recordar las relaciones que existen entre las variables <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para><equation id="fs-id1165135315618" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mi>x</m:mi>
+         <m:mi>r</m:mi>
+        </m:mfrac>
+        <m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137410071">La perpendicular que cae desde el punto del plano hasta el eje <emphasis effect="italics">x</emphasis> forma un triángulo rectángulo, como se ilustra en la <link target-id="Figure_08_03_007"/>. Una forma fácil de recordar las ecuaciones anteriores es pensar en <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> como el lado adyacente sobre la hipotenusa y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> como el lado opuesto sobre la hipotenusa.</para><figure id="Figure_08_03_007" class="small"><media id="fs-id1165137696986" alt="Comparación entre coordenadas polares y coordenadas rectangulares. Hay un triángulo rectángulo trazado en el eje x,y. Los lados son una línea horizontal en el eje x de longitud x, una línea vertical que se extiende desde el eje x hasta algún punto del cuadrante 1, y una hipotenusa r que se extiende desde el origen hasta ese mismo punto en el cuadrante 1. Los vértices están en el origen (0,0), algún punto del eje x en (x,0), y ese punto en el cuadrante 1. Este último punto es (x,y) o (r, theta), dependiendo del sistema de coordenadas que se utilice.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_007.jpg"/>
+</media>
+</figure><note id="fs-id1165134105991"><title>Convertir coordenadas polares a coordenadas rectangulares</title>
+
+<para id="fs-id1165134230340">Para convertir las coordenadas polares <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> a coordenadas rectangulares <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> supongamos que</para><equation id="fs-id1165135696992" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  <m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</equation><equation id="fs-id1165137461742" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  <m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</equation></note><note id="fs-id1165131880216" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165133371754"><emphasis>Dadas las coordenadas polares, convertir a coordenadas rectangulares. </emphasis></para>
+<list id="fs-id1165133184235" list-type="enumerated" number-style="arabic"><item>Dada la coordenada polar <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> escriba <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Evalúe <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item>Multiplique <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> entre <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> para hallar la coordenada de la <emphasis effect="italics">x</emphasis> de la forma rectangular.</item>
+<item>Multiplique <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> entre <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> para hallar la coordenada de l a <emphasis effect="italics">y</emphasis> de la forma rectangular.</item>
+</list></note>
+
+<example id="Example_08_03_03"><exercise id="fs-id1165137585396">
+<problem id="fs-id1165137585398">
+<title>Escribir coordenadas polares como coordenadas rectangulares</title>
+<para id="fs-id1165135546106">Escriba las coordenadas polares <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> como coordenadas rectangulares.</para>
+</problem>
+<solution id="fs-id1165134393743">
+<para id="fs-id1165137386819">Utilice las relaciones equivalentes.</para>
+
+<equation id="fs-id1165137894480" class="unnumbered"><label/> <m:math display="block">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mtd>
+      </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+</m:math>
+</equation><para id="fs-id1165132921461">Las coordenadas rectangulares son <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Vea la <link target-id="Figure_08_03_008"/>.</para>
+
+<figure id="Figure_08_03_008"><media id="fs-id1165135536558" alt="Ilustración de (3, pi/2) en coordenadas polares y (0,3) en coordenadas rectangular es: ¡son el mismo punto!">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_008.jpg"/>
+</media>
+</figure></solution>
+</exercise>
+</example><example id="Example_08_03_04"><exercise id="fs-id1165135536607"><problem id="fs-id1165135536609">
+<title>Escribir coordenadas polares como coordenadas rectangulares</title>
+<para id="fs-id1165137832785">Escriba las coordenadas polares <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> como coordenadas rectangulares.</para>
+</problem>
+<solution id="fs-id1165137599665">
+<para id="fs-id1165137460411">Vea el <link target-id="Figure_08_03_009"/>. Al escribir las coordenadas polares como rectangulares, tenemos</para>
+<equation id="fs-id1165135151267" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mn>0</m:mn>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>–2</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mn>0</m:mn>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165134279361">Las coordenadas rectangulares también son <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<figure id="Figure_08_03_009" class="medium"><media id="fs-id1165135541564" alt="Ilustración de (-2, 0) en coordenadas polares y (-2,0) en coordenadas rectangulares: ¡son el mismo punto!">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_009.jpg"/>
+</media>
+</figure></solution>
+</exercise></example><note id="fs-id1165134489724" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_03_03">
+<problem id="fs-id1165135648760"><para id="fs-id1165135648761">Escriba las coordenadas polares <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> como coordenadas rectangulares.</para></problem>
+<solution id="fs-id1165135470020"><para id="fs-id1165135470021"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165134319712">
+<title>Convertir coordenadas rectangulares a coordenadas polares</title>
+<para id="fs-id1165133359265">Para convertir las <term class="no-emphasis" id="term-00009">coordenadas rectangulares</term> en <term class="no-emphasis" id="term-00010">coordenadas polares</term>, utilizaremos otras dos relaciones conocidas. Con esta conversión, sin embargo, tenemos que ser conscientes de que un conjunto de coordenadas rectangulares dará lugar a más de un punto polar.</para>
+
+<note id="fs-id1165135551669"><title>Convertir coordenadas rectangulares a coordenadas polares</title>
+
+<para id="fs-id1165135259493">La conversión de coordenadas rectangulares a coordenadas polares requiere el uso de una o más de las relaciones ilustradas en la <link target-id="Figure_08_03_010"/>.</para>
+<equation id="fs-id1165134230382" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mspace width="0.5em"/><m:mtext> o</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><figure id="Figure_08_03_010" class="small"><media id="fs-id1165137850200" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_010new.png"/>
+</media>
+</figure></note><example id="Example_08_03_05">
+<exercise id="fs-id1165134303364">
+<problem id="fs-id1165137589072">
+<title>Escribir coordenadas rectangulares como coordenadas polares</title>
+<para id="fs-id1165135634043">Convierta las coordenadas rectangulares <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> a coordenadas polares.</para>
+</problem>
+<solution id="fs-id1165137733557">
+<para id="fs-id1165137733559">Vemos que el punto original <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> está en el primer cuadrante. Para hallar <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> utilice la fórmula <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Esto da</para>
+<equation id="fs-id1165137460645" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+<m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo>
+<m:msup>
+       <m:mrow>
+        <m:mi>tan</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>–1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137639677">Para hallar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> sustituimos los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> en la fórmula <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Sabemos que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> debe ser positivo, ya que <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> está en el primer cuadrante. Así,</para>
+<equation id="fs-id1165135689471" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mn>3</m:mn>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:msup>
+           <m:mn>3</m:mn>
+           <m:mn>2</m:mn>
+          </m:msup>
+
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mtd>
+      </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mo>+</m:mo><m:mn>9</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>18</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mn>3</m:mn><m:msqrt>
+       <m:mn>2 </m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135332735">Así que, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mspace width="0.3em"/></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mtext>=</m:mtext><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> lo que nos da el punto polar <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Vea la <link target-id="Figure_08_03_011"/>.</para>
+<figure id="Figure_08_03_011"><media id="fs-id1165134357405" alt="Ilustración de (3rad2, pi/4) en coordenadas polares y (3,3) en coordenadas rectangulares: ¡son el mismo punto!">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_011.jpg"/>
+</media>
+</figure></solution>
+<commentary id="fs-id1165133078085">
+<title>Análisis </title>
+<para id="fs-id1165137574155">Hay otros conjuntos de coordenadas polares que serán iguales a nuestra primera solución. Por ejemplo, los puntos <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> coincidirán con la solución original de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> indica un movimiento en sentido contrario a las agujas del reloj por <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> que está justo enfrente de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> El radio se expresa como <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>3</m:mn><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Sin embargo, el ángulo <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> se sitúa en el tercer cuadrante y, dado que <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> es negativo, extendemos el segmento rectilíneo dirigido en la dirección opuesta, en el primer cuadrante. Este es el mismo punto que <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> es un movimiento más en el sentido de las agujas del reloj por <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> a partir de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> El radio, <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> es el mismo.</para></commentary>
+</exercise>
+</example>
+</section>
+
+<section id="fs-id1165132957131">
+<title>Transformar ecuaciones entre formas polares y rectangulares</title>
+<para id="fs-id1165137726540">Ahora podemos convertir las coordenadas entre la forma polar y la rectangular. La conversión de ecuaciones puede ser más difícil, pero valdría la pena convertir entre las dos formas. Debido a que hay una serie de ecuaciones polares que no pueden expresarse claramente en forma cartesiana, y viceversa, podemos utilizar los mismos procedimientos que utilizamos para convertir puntos entre los sistemas de coordenadas. A continuación, podemos utilizar una calculadora gráfica para representar la forma rectangular o la forma polar de la ecuación.</para>
+
+<note id="fs-id1165133356035" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165134422164"><emphasis>Dada una ecuación en forma polar, grafíquela con una calculadora gráfica </emphasis></para>
+<list id="fs-id1165137810313" list-type="enumerated" number-style="arabic">
+<item>Cambie el <emphasis>MODO</emphasis> a <emphasis>POL</emphasis>, que representa la forma polar.</item>
+<item>Pulse el botón <emphasis>Y= </emphasis>para que aparezca una pantalla que permite introducir seis ecuaciones <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msub>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>.</m:mo><m:mspace width="0.5em"/><m:mo>.</m:mo><m:mspace width="0.5em"/><m:mo>.</m:mo><m:mspace width="0.5em"/><m:mo>,</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>6</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+<item>Introduzca la ecuación polar, ajustada a <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </item>
+<item>Pulse <emphasis>GRAPH</emphasis>.</item>
+</list>
+</note>
+
+<example id="Example_08_03_06"><exercise id="fs-id1165135485797"><problem id="fs-id1165135503665">
+<title>Escribir una ecuación cartesiana en forma polar</title>
+<para id="fs-id1165135503671">Escriba la ecuación cartesiana <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn></m:mrow>
+</m:math> en forma polar.</para>
+</problem>
+<solution id="fs-id1165134418996">
+<para id="fs-id1165134418998">El objetivo es eliminar la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> de la ecuación e introducir <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Lo ideal sería escribir la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> en función de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Para obtener la forma polar, utilizaremos las relaciones entre <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Dado que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> podemos sustituir y resolver <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> </para><equation id="fs-id1165134193511" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mtext>Sustituya a cos</m:mtext>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                 </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mn>3</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la propiedad de la raíz cuadrada</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137757670">Así, <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> debería generar el mismo gráfico. Vea el <link target-id="Figure_08_03_016"/>.</para>
+
+<figure id="Figure_08_03_016" class="medium"><media id="fs-id1165137812757" alt="Trazado de un círculo de radio 3 con centro en el origen en coordenadas polares y rectangulares. Es lo mismo en ambos sistemas.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_016.jpg"/>
+</media>
+
+<caption>(a) Forma cartesiana <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn></m:mrow>
+</m:math> (b) Forma polar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</caption></figure><para id="fs-id1165133192137">Para graficar un círculo en forma rectangular, primero debemos resolver <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165137835799" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>=</m:mo><m:mn>9</m:mn>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135620839">Observe que se trata de dos funciones distintas, ya que un círculo no supera la prueba de la línea vertical. Por lo tanto, tenemos que introducir en la calculadora las raíces cuadradas positivas y negativas por separado, como dos ecuaciones de la forma <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>Y</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>Y</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Pulse <emphasis>GRAPH.</emphasis>
+</para>
+</solution>
+</exercise></example><example id="Example_08_03_07">
+<exercise id="fs-id1165137473589"><problem id="fs-id1165137473591">
+<title>Reescribir una ecuación cartesiana como ecuación polar</title>
+<para id="fs-id1165137928681">Reescribir la <term class="no-emphasis" id="term-00011">ecuación cartesiana</term> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math> como una ecuación polar.</para>
+</problem>
+<solution id="fs-id1165135547690">
+<para id="fs-id1165135547693">Esta ecuación es similar a la del ejemplo anterior, pero requiere diferentes pasos para convertir la ecuación.</para>
+
+<para id="fs-id1165137698161">Podemos seguir los mismos procedimientos que ya hemos aprendido y hacer las siguientes sustituciones:</para>
+<equation id="fs-id1165134168283" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Uso </m:mtext><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya</m:mtext><m:mspace width="0.3em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+    <m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Iguale a 0</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo>- −</m:mo><m:mn>6</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factorice y resuelva</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Rechazamos </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>ya que solo representa un punto, </m:mtext><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135360250">Por lo tanto, las ecuaciones <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> debería darnos el mismo gráfico. Vea el <link target-id="Figure_08_03_012"/>.</para><figure id="Figure_08_03_012"><media id="fs-id1165135580385" alt="Gráficos de las ecuaciones indicadas anteriormente, los gráficos son los mismos en coordenadas rectangulares y polares. Son círculos.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_012.jpg"/>
+</media>
+
+<caption>(a) Forma cartesiana <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math> (b) forma polar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</caption></figure><para id="fs-id1165135702699">La ecuación cartesiana o <term class="no-emphasis" id="term-00012">rectangular</term> se traza en la cuadrícula rectangular, y la <term class="no-emphasis" id="term-00013">ecuación polar</term> se traza en la cuadrícula polar. Claramente, los gráficos son idénticos.</para>
+</solution>
+</exercise></example>
+
+<example id="Example_08_03_08">
+<exercise id="fs-id1165135330933">
+<problem id="fs-id1165135330936">
+<title>Reescribir una ecuación cartesiana en forma polar</title>
+<para id="fs-id1165135547678">Reescribir la ecuación cartesiana <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> como una ecuación polar.</para>
+</problem>
+<solution id="fs-id1165135201018">
+<para id="fs-id1165135394016">Utilizaremos las relaciones <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165135514618" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                        </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aísle </m:mtext><m:mi>r</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>r</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165134496398" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_08_03_04">
+<problem id="fs-id1165135413673"><para id="fs-id1165135413674">Reescribir la ecuación cartesiana <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math> en forma polar.</para></problem>
+<solution id="fs-id1165135564036"><para id="fs-id1165135564037"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137422423">
+<title> Identificar y graficar ecuaciones polares al convertirlas en ecuaciones rectangulares</title>
+<para id="fs-id1165137735564">Hemos aprendido a convertir coordenadas rectangulares en coordenadas polares, y hemos visto que los puntos son efectivamente los mismos. También hemos transformado ecuaciones polares en ecuaciones rectangulares y viceversa. Ahora demostraremos que sus gráficos, aunque dibujados en cuadrículas diferentes, son idénticos.</para><example id="Example_08_03_09"><exercise id="fs-id1165134433326"><problem id="fs-id1165135512717">
+<title>Graficar una ecuación polar al convertirla en una ecuación rectangular</title>
+<para id="fs-id1165135512722">Convierta la ecuación polar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>s</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> en una ecuación rectangular, y dibuje su correspondiente gráfico.</para></problem>
+<solution id="fs-id1165135580397">
+<para id="fs-id1165135580399">La conversión es</para>
+
+<equation id="fs-id1165137697050" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable><m:mtr><m:mtd><m:mi>r</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>2</m:mn><m:mi>s</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>r</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mn>2</m:mn><m:mrow><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>2 </m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>2 </m:mn></m:mtd></m:mtr></m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137423948">Observe que la ecuación <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>s</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> dibujada en la cuadrícula polar es claramente la misma que la línea vertical <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow>
+</m:math> dibujada en la cuadrícula rectangular (vea la <link target-id="Figure_08_03_013"/>). Así como <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow>
+</m:math> es la forma estándar para una línea vertical en forma rectangular, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> es la forma estándar para una línea vertical en forma polar.</para>
+
+<figure id="Figure_08_03_013" class="medium"><media id="fs-id1165135194873" alt="Gráficos de las ecuaciones indicadas anteriormente, los gráficos son los mismos en coordenadas rectangulares y polares. Son líneas.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_013.jpg"/>
+</media>
+
+<caption>(a) Cuadrícula polar (b) Sistema de coordenadas rectangulares</caption></figure><para id="fs-id1165135689446">Una explicación similar demostraría que el gráfico de la función <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> será la línea horizontal <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:mrow>
+</m:math> De hecho, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> es la forma estándar de una línea horizontal en forma polar, correspondiente a la forma rectangular <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para></solution>
+</exercise></example><example id="Example_08_03_10">
+<exercise id="fs-id1165137532816"><problem id="fs-id1165137442988">
+<title>Reescribir una ecuación polar en forma cartesiana</title>
+<para id="fs-id1165137442993">Reescriba la ecuación polar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> como una ecuación cartesiana.</para>
+</problem>
+<solution id="fs-id1165137435019">
+<para id="fs-id1165137435021">El objetivo es eliminar la <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> e introducir la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Despejamos la fracción y luego utilizamos la sustitución. Para sustituir <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> debemos utilizar la expresión <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math>
+</para><equation id="fs-id1165132946700" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable><m:mtr><m:mtd><m:mi>r</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>1</m:mn><m:mo> </m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow></m:mfrac></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:mi>r</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo> </m:mo><m:mn>2</m:mn><m:mo>(</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>r</m:mi></m:mfrac><m:mo>)</m:mo><m:mo>)</m:mo></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:mi>r</m:mi><m:mo> </m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd><m:mtext>Uso</m:mtext><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>r</m:mi></m:mfrac><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mi>i</m:mi><m:mspace width="0.3em"/><m:mtext>elimine</m:mtext><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>r</m:mi><m:mo> </m:mo><m:mn>2</m:mn><m:mi>x</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:mi>r</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mtd><m:mtd><m:mtext>Aísle</m:mtext><m:mspace width="0.3em"/><m:mi>r</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mtd><m:mtd><m:mtext>Lleve al cuadrado</m:mtext><m:mspace width="0.3em"/><m:mtext>ambos</m:mtext><m:mspace width="0.3em"/><m:mtext>lados</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mtd><m:mtd><m:mtext>Uso</m:mtext><m:mspace width="0.3em"/><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup><m:mo>=</m:mo><m:msup><m:mi>r</m:mi><m:mn>2 </m:mn></m:msup></m:mtd></m:mtr></m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165134368154">La ecuación cartesiana es <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>.</m:mo></m:mrow>
+</m:math> Sin embargo, para graficarlo, especialmente con una calculadora gráfica o un programa computarizado, queremos aislar <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165134101989" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow>
+          <m:mo>)</m:mo></m:mrow></m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>-</m:mo><m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        </m:mrow>
+      </m:msqrt>
+      </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable></m:mrow>
+</m:math>
+</equation><para id="fs-id1165134107035">Cuando toda nuestra ecuación se haya cambiado de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> a la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> podemos parar, a no ser que se nos pida que resolvamos <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi></m:mrow>
+</m:math> o simplificar. Vea el <link target-id="Figure_08_03_015"/>.</para><figure id="Figure_08_03_015"><media id="fs-id1165135359846" alt="Gráficos de las ecuaciones indicadas anteriormente, los gráficos son los mismos en coordenadas rectangulares y polares. Son hipérbolas.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_015.jpg"/>
+</media>
+</figure><para id="fs-id1165135355014">La forma de "reloj de arena" en el gráfico se denomina <emphasis effect="italics">hipérbola</emphasis>. Las hipérbolas tienen muchas características y aplicaciones geométricas interesantes, que investigaremos más a fondo en <link document="m49437">Geometría Analítica</link>.</para></solution>
+<commentary id="fs-id1165134116776">
+<title>Análisis </title>
+<para id="fs-id1165134116781">En este ejemplo, el lado derecho de la ecuación puede expandirse y la ecuación simplificarse aún más, como se indica arriba. Sin embargo, la ecuación no puede escribirse como una sola función en forma cartesiana. Podemos escribir la ecuación rectangular en la forma estándar de la hipérbola. Para ello, podemos empezar con la ecuación inicial.</para><equation id="fs-id1165135453309" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+<m:mtable><m:mtr><m:mtd><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo> </m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo> </m:mo><m:mo>(</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>)</m:mo></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo> </m:mo><m:mn>9</m:mn><m:mo> </m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>4</m:mn><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:mo> </m:mo><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo> </m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>9</m:mn></m:mtd><m:mtd><m:mtext>Multiplique</m:mtext><m:mspace width="0.3em"/><m:mtext>esto</m:mtext><m:mspace width="0.3em"/><m:mtext>por</m:mtext><m:mspace width="0.3em"/><m:mo> </m:mo><m:mn>1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:mn>12</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mo> </m:mo><m:mn>9</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mo>)</m:mo><m:mo> </m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mo> </m:mo><m:mn>9</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:mo>(</m:mo><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:msup><m:mi>y</m:mi><m:mn>2 </m:mn></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mo> </m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>12</m:mn></m:mtd><m:mtd><m:mi>O</m:mi><m:mi>r</m:mi><m:mi>g</m:mi><m:mi>a</m:mi><m:mi>n</m:mi><m:mi>i</m:mi><m:mi>c</m:mi><m:mi>e</m:mi><m:mspace width="0.3em"/><m:mtext>los términos</m:mtext><m:mspace width="0.3em"/><m:mtext>para</m:mtext><m:mspace width="0.3em"/><m:mtext>completar</m:mtext><m:mspace width="0.3em"/><m:mtext>el</m:mtext><m:mspace width="0.3em"/><m:mtext>unidades</m:mtext><m:mspace width="0.3em"/><m:mtext>para</m:mtext><m:mspace width="0.3em"/><m:mi>x</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo> </m:mo><m:msup><m:mi>y</m:mi><m:mrow><m:mn>2 </m:mn></m:mrow></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>3</m:mn></m:mtd><m:mtd/></m:mtr><m:mtr><m:mtd><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo> </m:mo><m:mfrac><m:mrow><m:mi>y</m:mi><m:msup><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>3</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>1</m:mn></m:mtd><m:mtd/></m:mtr></m:mtable>
+ </m:mrow>
+</m:math>
+</equation></commentary>
+</exercise></example>
+
+<note id="fs-id1165133074971" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_08_03_05">
+<problem id="fs-id1165134495101"><para id="fs-id1165134495102">Reescriba la ecuación polar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> en forma cartesiana.</para></problem>
+<solution id="fs-id1165135378641"><para id="fs-id1165135378642"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>y</m:mi></m:mrow>
+</m:math> o, en la forma estándar para un círculo, <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> <emphasis/>
+ </para>
+</solution>
+</exercise>
+</note><example id="Example_08_03_11">
+<exercise id="fs-id1165135456744">
+<problem id="fs-id1165135456746">
+<title>Reescribir una ecuación polar en forma cartesiana</title>
+<para id="fs-id1165135456752">Reescriba la ecuación polar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en forma cartesiana.</para>
+</problem>
+<solution id="fs-id1165134437217">
+
+<equation id="fs-id1165134437221" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la identidad de ángulo doble para el seno</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Uso </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mtext> y </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>x</m:mi>
+         <m:mi>r</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>y</m:mi>
+         <m:mi>r</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplifique</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>x</m:mi><m:mi>y</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:msup>
+         <m:mi>r</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext> Multiplique ambos lados por </m:mtext><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msqrt>
+           <m:mrow>
+            <m:msup>
+             <m:mi>x</m:mi>
+             <m:mn>2 </m:mn>
+            </m:msup>
+            <m:mo>+</m:mo><m:msup>
+             <m:mi>y</m:mi>
+             <m:mn>2 </m:mn>
+            </m:msup>
+
+           </m:mrow>
+          </m:msqrt>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Dado que</m:mtext><m:mspace width="0.3em"/><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>,</m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mi>y</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137697887">Esta ecuación también se escribe como</para>
+<equation id="fs-id1165137697890" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mspace width="0.3em"/><m:mtext>o</m:mtext><m:mspace width="0.3em"/><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi><m:mi>y</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>2 </m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135664937" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165133361920">Acceda a estos recursos en línea para obtener más información y practicar con las coordenadas polares.</para>
+<list id="fs-id1165133361923" list-type="bulleted">
+<item><link url="http://openstax.org/l/intropolar">Introducción a las coordenadas polares</link></item>
+<item><link url="http://openstax.org/l/polarrect">Comparación de coordenadas polares y rectangulares</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165135407353" class="key-equations"><title>Ecuaciones clave</title><table id="eip-id3984733" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Fórmulas de conversión</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>x</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mrow><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow></m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>y</m:mi>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165137707236" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137707243"><item>La cuadrícula polar se representa como una serie de círculos concéntricos que irradian desde el polo u origen.</item>
+<item>Para trazar un punto en la forma <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow>
+</m:math> se mueven en dirección contraria al eje polar en un ángulo de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> y luego se extiende un segmento rectilíneo dirigido desde el polo de la longitud de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> en dirección a <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> es negativo, muévalo en el sentido de las agujas del reloj y extienda un segmento rectilíneo dirigido de la longitud de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> en dirección a <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+Vea el <link target-id="Example_08_03_01"/>.
+
+<item>Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> es negativo, extienda el segmento rectilíneo dirigido en la dirección opuesta a <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+Vea el <link target-id="Example_08_03_02"/>.
+<item>Para convertir de coordenadas polares a coordenadas rectangulares, utilice las fórmulas <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Vea el <link target-id="Example_08_03_03"/> y el <link target-id="Example_08_03_04"/>.</item>
+<item>Para convertir de coordenadas rectangulares a coordenadas polares, utilice una o varias de las fórmulas <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>r</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>y</m:mi>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo></m:mrow>
+Vea el <link target-id="Example_08_03_05"/>.
+<item>La transformación de las ecuaciones entre las formas polares y rectangulares implica la realización de las sustituciones adecuadas a partir de las fórmulas disponibles, junto con manipulaciones algebraicas. Vea el <link target-id="Example_08_03_06"/>, el <link target-id="Example_08_03_07"/> y el <link target-id="Example_08_03_08"/>.</item>
+<item>El uso de las sustituciones adecuadas permite reescribir una ecuación polar como una ecuación rectangular y luego graficarla en el plano rectangular. Vea el <link target-id="Example_08_03_09"/>, el <link target-id="Example_08_03_10"/> y el <link target-id="Example_08_03_11"/>.</item>
+
+
+<section id="fs-id1165134113788" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165134113791">
+<title>Verbales</title>
+<exercise id="fs-id1165134113796">
+<problem id="fs-id1165135481176">
+<para id="fs-id1165135481179">¿En qué se diferencian las coordenadas polares de las rectangulares?</para>
+</problem>
+<solution id="fs-id1165135481183">
+<para id="fs-id1165135481185">En las coordenadas polares, el punto en el plano depende del ángulo respecto al eje positivo <emphasis effect="italics">x</emphasis> y de la distancia desde el origen, mientras que en las coordenadas cartesianas, el punto representa las distancias horizontal y vertical desde el origen. Por cada punto en el plano de las coordenadas hay una representación, pero por cada punto en el plano polar hay infinitas representaciones.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137634226">
+<problem id="fs-id1165137634229">
+<para id="fs-id1165137634231">¿En qué se diferencian los ejes polares de los ejes de <emphasis effect="italics">x</emphasis> y de <emphasis effect="italics">y</emphasis> en el plano cartesiano?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133075606">
+<problem id="fs-id1165133075608">
+<para id="fs-id1165134193488">Explique cómo se grafican las coordenadas polares.</para>
+</problem>
+<solution id="fs-id1165134193492">
+<para id="fs-id1165134193494">Determine <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> para el punto y luego mueva <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> unidades del polo para trazar el punto. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> es negativo, mueva <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> unidades desde el polo en la dirección opuesta, pero a lo largo del mismo ángulo. El punto es una distancia de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> desde el origen en un ángulo de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> desde el eje polar.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135316122">
+<problem id="fs-id1165135316124">
+<para id="fs-id1165135316126">¿Cómo son los puntos <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>?</para></problem>
+</exercise>
+<exercise id="fs-id1165135403191">
+<problem id="fs-id1165135403193">
+<para id="fs-id1165135403195">Explique por qué los puntos <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> son los mismos.</para>
+</problem>
+<solution id="fs-id1165135319445">
+<para id="fs-id1165135319448">El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> tiene un ángulo positivo, pero un radio negativo, y se traza al desplazarse a un ángulo de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> y luego se mueve 3 unidades en la dirección negativa. Esto coloca el punto 3 unidades por debajo del eje negativo de <emphasis effect="italics">y</emphasis>. El punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> tiene un ángulo negativo y un radio positivo y se traza al moverlo primero a un ángulo de <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math> y luego al moverlo 3 unidades hacia abajo, que es la dirección positiva para un ángulo negativo. El punto también está a 3 unidades del eje negativo <emphasis effect="italics">y</emphasis>.</para></solution>
+</exercise>
+
+</section>
+<section id="fs-id1165135329737">
+<title>Algebraicos</title>
+<para id="fs-id1165133143104">En los siguientes ejercicios, convierta las coordenadas polares dadas en coordenadas cartesianas. Recuerde el cuadrante donde se encuentra el punto dado cuando determine <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> para el punto.</para>
+<exercise id="fs-id1165131986178">
+<problem id="fs-id1165131986180">
+<para id="fs-id1165131986182"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134312184">
+<problem id="fs-id1165134312186">
+<para id="fs-id1165134312188"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mi>π</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165135616318">
+<para id="fs-id1165135616321"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134384438">
+<problem id="fs-id1165134384440">
+<para id="fs-id1165134384443"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134196148">
+<problem id="fs-id1165134196150">
+<para id="fs-id1165134196152"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165134383794">
+<para id="fs-id1165134383796"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+      </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134177068">
+<problem id="fs-id1165134177070">
+<para id="fs-id1165134177072"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165131961716">En los siguientes ejercicios, convierta las coordenadas cartesianas dadas en coordenadas polares con <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Recuerde considerar el cuadrante en el que se localiza el punto dado.</para>
+
+<exercise id="fs-id1165134312061">
+<problem id="fs-id1165134312063">
+<para id="fs-id1165134312065"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165134279740">
+<para id="fs-id1165134279743"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msqrt>
+     <m:mn>5</m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0,464</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137696692">
+<problem id="fs-id1165137696694">
+<para id="fs-id1165137696696"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134113855">
+<problem id="fs-id1165134113857">
+<para id="fs-id1165134113859"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>−5</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135407446">
+<para id="fs-id1165135407448"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mn>34</m:mn></m:mrow>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mn>5,253</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135434706">
+<problem id="fs-id1165135434708">
+<para id="fs-id1165134380127"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>–10</m:mn><m:mo>,</m:mo><m:mn>-13</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135390847">
+<problem id="fs-id1165135390849">
+<para id="fs-id1165135254614"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165137890658">
+<para id="fs-id1165137890660"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>8</m:mn><m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+    <m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+
+<para id="fs-id1165134153314">En los siguientes ejercicios, convierta la ecuación cartesiana dada en una ecuación polar.</para>
+
+<exercise id="fs-id1165135390660">
+<problem id="fs-id1165135390663">
+<para id="fs-id1165135390665"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134237043">
+<problem id="fs-id1165134237046">
+<para id="fs-id1165134237048"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134174890">
+<para id="fs-id1165134174892"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>csc</m:mi><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165137896831">
+<problem id="fs-id1165137896834">
+<para id="fs-id1165133277552"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135339520">
+<problem id="fs-id1165135339523">
+<para id="fs-id1165135339525"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135404270">
+<para id="fs-id1165135698548"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>s</m:mi><m:mi>i</m:mi><m:mi>n</m:mi><m:mi>θ</m:mi></m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>c</m:mi><m:mi>o</m:mi><m:msup>
+       <m:mi>s</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi></m:mrow>
+    </m:mfrac>
+    </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135538875">
+<problem id="fs-id1165135538877">
+<para id="fs-id1165135538879"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137694965">
+<problem id="fs-id1165134129902">
+<para id="fs-id1165134129904"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165132912574">
+<para id="fs-id1165132912576"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134279393">
+<problem id="fs-id1165134279395">
+<para id="fs-id1165134279397"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135531341">
+<problem id="fs-id1165134047499">
+<para id="fs-id1165134047501"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135512559">
+<para id="fs-id1165135512561"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>sen</m:mi><m:mi>θ</m:mi></m:mrow>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>θ</m:mi></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math> grandes.
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135397902">
+<problem id="fs-id1165135397905">
+<para id="fs-id1165135674058"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135680173">
+<problem id="fs-id1165135680176">
+<para id="fs-id1165135680178"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134325175">
+<para id="fs-id1165134325177"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mi>sen</m:mi><m:mi>θ</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>cos</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>θ</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165135570196">
+<problem id="fs-id1165135570198">
+<para id="fs-id1165135570200"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>9</m:mn><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134039275">
+<problem id="fs-id1165134039278">
+<para id="fs-id1165131895989"> <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134116891">
+<para id="fs-id1165134116893"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mrow>
+      <m:mn>9</m:mn><m:mi>cos</m:mi><m:mi>θ</m:mi><m:mi>sen</m:mi><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<para id="fs-id1165137619903">En los siguientes ejercicios, convierta la ecuación polar dada en una ecuación cartesiana. Escriba en la forma estándar de una cónica, si es posible, e identifique la sección cónica representada.</para><exercise id="fs-id1165135639210">
+<problem id="fs-id1165135639212">
+<para id="fs-id1165135639214"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137590001">
+<problem id="fs-id1165137590003">
+<para id="fs-id1165137590005"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137810361">
+<para id="fs-id1165137810363"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi></m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow>
+      <m:mo>)</m:mo></m:mrow></m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>y</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> círculo</para></solution>
+</exercise>
+<exercise id="fs-id1165134237178">
+<problem id="fs-id1165134237180">
+<para id="fs-id1165134081878"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165131893786">
+<problem id="fs-id1165131893788">
+<para id="fs-id1165131893790"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134393823">
+<para id="fs-id1165134393825"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mi>y</m:mi><m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> línea</para></solution>
+</exercise>
+<exercise id="fs-id1165135351455">
+<problem id="fs-id1165135351457">
+<para id="fs-id1165137731259"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>s</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165133035956">
+<problem id="fs-id1165133035958">
+<para id="fs-id1165133035961"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137628655">
+<para id="fs-id1165137628658"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> línea</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165135665421">
+<problem id="fs-id1165135665423">
+<para id="fs-id1165135665425"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165134418774">
+<problem id="fs-id1165134418776">
+<para id="fs-id1165134418778"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mspace width="0.3em"/><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135555427">
+<para id="fs-id1165137642992"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> hipérbola</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165134356832">
+<problem id="fs-id1165135546060">
+<para id="fs-id1165135546063"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134358530">
+<problem id="fs-id1165134358532">
+<para id="fs-id1165134358534"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135702647">
+<para id="fs-id1165135702649"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> círculo</para></solution>
+</exercise>
+<exercise id="fs-id1165137838193">
+<problem id="fs-id1165137838195">
+<para id="fs-id1165137838198"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135381198">
+<problem id="fs-id1165135381200">
+<para id="fs-id1165135381203"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>- −</m:mo><m:mn>5</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165133318753">
+<para id="fs-id1165133318755"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo></m:mrow>
+</m:math> línea</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id1165135202388">
+
+<title>Gráficos</title>
+<para id="fs-id1165135202394">En los siguientes ejercicios, halle las coordenadas polares del punto.</para>
+<exercise id="fs-id1165135202397"><problem id="fs-id1165135202399">
+
+<media id="fs-id1165133267806" alt="Sistema de coordenadas polares con un punto situado en el tercer círculo concéntrico y pi/2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_201n.jpg"/>
+</media>
+</problem></exercise><exercise id="fs-id1165134108566"><problem id="fs-id1165134108568">
+
+<media id="fs-id1165134108574" alt="Sistema de coordenadas polares con un punto situado en el tercer círculo concéntrico y a medio camino entre pi/2 y pi en el segundo cuadrante. ">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_202n.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165135203456">
+<para id="fs-id1165135203458"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137900018"><problem id="fs-id1165137900019">
+
+<media id="fs-id1165135445695" alt="Sistema de coordenadas polares con un punto situado a medio camino entre el primer y el segundo círculo concéntrico y a un tercio del camino entre pi y 3pi/2 (más cerca de pi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_203n.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165135397089"><problem id="fs-id1165135397091">
+
+<media id="fs-id1165135397098" alt="Sistema de coordenadas polares con un punto situado en el quinto círculo concéntrico y pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_204n.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165137445164">
+<para id="fs-id1165137445166"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mi>π</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137652655"><problem id="fs-id1165135468162">
+
+<media id="fs-id1165135468169" alt="Sistema de coordenadas polares con un punto situado en el cuarto círculo concéntrico y a un tercio del camino entre 3pi/2 y 2pi (más cerca de 3pi/2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_205n.jpg"/>
+</media>
+</problem></exercise><para id="fs-id1165137554410">En los siguientes ejercicios, trace los puntos.</para>
+<exercise id="fs-id1165137554413"><problem id="fs-id1165137554415">
+<para id="fs-id1165137554418"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137653604">
+
+
+<media id="fs-id1165133318711" alt="Sistema de coordenadas polares con un punto situado en el segundo círculo concéntrico y a dos tercios del camino entre pi y 3pi/2 (más cerca de 3pi/2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_206.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165135494473">
+<problem id="fs-id1165135494475">
+<para id="fs-id1165135494477"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133178305"><problem id="fs-id1165133178307">
+<para id="fs-id1165133178309"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3,5</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137812544">
+
+
+<media id="fs-id1165135528493" alt="Sistema de coordenadas polares con un punto situado a medio camino entre el tercer y el cuarto círculo concéntrico y a medio camino entre 3pi/2 y 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_208.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165137398634">
+<problem id="fs-id1165137398637">
+<para id="fs-id1165137398639"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137862022"><problem id="fs-id1165137862024">
+<para id="fs-id1165137862026"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134081844">
+
+
+<media id="fs-id1165134081850" alt="Sistema de coordenadas polares con un punto situado en el quinto círculo concéntrico y pi/2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_210.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165134167348">
+<problem id="fs-id1165134167350">
+<para id="fs-id1165134167352"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134394439"><problem id="fs-id1165135648722">
+<para id="fs-id1165135430921"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137897886">
+
+
+<media id="fs-id1165137897892" alt="Sistema de coordenadas polares con un punto situado en el tercer círculo concéntrico y a 2/3 del camino entre pi/2 y pi (más cerca de pi).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_212.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165137911002">
+<problem id="fs-id1165137911004">
+<para id="fs-id1165137911006"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1,5</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133104562"><problem id="fs-id1165133104564">
+<para id="fs-id1165133104566"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135414186">
+
+
+<media id="fs-id1165135414193" alt="Sistema de coordenadas polares con un punto situado en el segundo círculo concéntrico y a medio camino entre pi y 3pi/2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_214.jpg"/>
+</media>
+
+
+</solution></exercise><exercise id="fs-id1165134033194">
+<problem id="fs-id1165134033196">
+<para id="fs-id1165134033198"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165134081104">En los siguientes ejercicios, convierta la ecuación de forma rectangular a polar y grafique en el eje polar.</para>
+<exercise id="fs-id1165137619094"><problem id="fs-id1165137619096">
+<para id="fs-id1165137619098"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133306819">
+<para id="fs-id1165133306821"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>cos</m:mi><m:mi>θ</m:mi><m:mo>-</m:mo><m:mi>sen</m:mi><m:mi>θ</m:mi></m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+<media id="fs-id1165134070906" alt="Trazado de una línea dada en la cuadrícula de coordenadas polares">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_222.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165135559505">
+<problem id="fs-id1165135559507">
+<para id="fs-id1165135559509"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135532508"><problem id="fs-id1165135349442">
+<para id="fs-id1165135349444"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137771343">
+<para id="fs-id1165137771345"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135407253" alt="Gráfico del círculo dado en la cuadrícula de coordenadas polares">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_224.jpg"/>
+</media>
+
+</solution></exercise><exercise id="fs-id1165134068940">
+<problem id="fs-id1165134068943">
+<para id="fs-id1165134068945"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>13</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135299829"><problem id="fs-id1165135299831">
+<para id="fs-id1165135694348"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134279766">
+<para id="fs-id1165134279768"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mi>θ</m:mi></m:mrow>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165131991391" alt="Gráfico del círculo dado en la cuadrícula de coordenadas polares">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_226.jpg"/>
+</media>
+
+</solution></exercise><exercise id="fs-id1165133077985">
+<problem id="fs-id1165133077987">
+<para id="fs-id1165134224066"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>5</m:mn><m:mi>y</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165133388197"><problem id="fs-id1165133388199">
+<para id="fs-id1165133388201"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134185761">
+<para id="fs-id1165134185763"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137844424" alt="Trazado del círculo dado en la cuadrícula de coordenadas polares.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_228.jpg"/>
+</media>
+
+</solution></exercise><para id="fs-id1165135547602">En los siguientes ejercicios, convierta la ecuación de forma polar a rectangular y grafique en el plano rectangular.</para>
+<exercise id="fs-id1165135547607">
+<problem id="fs-id1165135547609">
+<para id="fs-id1165135547611"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135634353"><problem id="fs-id1165135634355">
+<para id="fs-id1165135634357"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134389858">
+<para id="fs-id1165134212018"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>y</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>16</m:mn></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137888093" alt="Trazado del círculo de radio 4 centrado en el origen en la cuadrícula de coordenadas rectangulares.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_230.jpg"/>
+</media>
+
+</solution></exercise><exercise id="fs-id1165137888104">
+<problem id="fs-id1165137894577">
+<para id="fs-id1165137894579"> <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135518106"><problem id="fs-id1165135518108">
+<para id="fs-id1165135518110"> <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133092668">
+<para id="fs-id1165133092670"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165134037559" alt="Trazado de la línea y=x en la cuadrícula de coordenadas rectangulares.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_232.jpg"/>
+</media>
+
+</solution></exercise><exercise id="fs-id1165134037569">
+<problem id="fs-id1165135519143">
+<para id="fs-id1165135519145"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134192812"><problem id="fs-id1165134192815">
+<para id="fs-id1165134192817"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−10</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134383713">
+<para id="fs-id1165134383715"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow>
+    <m:mo>)</m:mo></m:mrow></m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>25</m:mn></m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135255439" alt="Trazado del círculo de radio 5 centrado en (0,-5).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_234.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165135452296">
+<problem id="fs-id1165135452299">
+<para id="fs-id1165135452301"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+</section>
+<section id="fs-id1165134032288">
+<title>En tecnología</title>
+<exercise id="fs-id1165134032293">
+<problem id="fs-id1165134032295">
+<para id="fs-id1165134122740">Utilice una calculadora gráfica para calcular las coordenadas rectangulares de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Redondee a la milésima más cercana.</para>
+</problem>
+<solution id="fs-id1165135597693">
+<para id="fs-id1165135597695"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1,618</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>1,176</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution></exercise>
+<exercise id="fs-id1165135192524">
+<problem id="fs-id1165135192526">
+<para id="fs-id1165135192528">Utilice una calculadora gráfica para calcular las coordenadas rectangulares de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>π</m:mi></m:mrow>
+     <m:mn>7</m:mn>
+    </m:mfrac>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Redondee a la milésima más cercana.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165135354958">
+<problem id="fs-id1165135354960">
+<para id="fs-id1165135354962">Utilice una calculadora gráfica para calcular las coordenadas polares de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>8</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en grados. Redondee a la milésima más cercana.</para>
+</problem>
+<solution id="fs-id1165135538845">
+<para id="fs-id1165135538847"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>10,630</m:mn><m:mo>,</m:mo><m:mn>131,186°</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134391107">
+<problem id="fs-id1165137938461">
+<para id="fs-id1165137938463">Utilice una calculadora gráfica para calcular las coordenadas polares de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>4</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en grados. Redondee a la centésima más cercana.</para></problem></exercise>
+<exercise id="fs-id1165132973458">
+<problem id="fs-id1165132973460">
+<para id="fs-id1165132973463">Utilice una calculadora gráfica para calcular las coordenadas polares de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> en radianes. Redondee a la centésima más cercana.</para>
+</problem>
+<solution id="fs-id1165133389118">
+<para id="fs-id1165133389121"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3,14</m:mn></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>i</m:mi><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>π</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165135424580">
+<title>Extensiones</title>
+<exercise id="fs-id1165135424585">
+<problem id="fs-id1165135424587">
+<para id="fs-id1165135424589">Describa el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>;</m:mo><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135622466">
+<problem id="fs-id1165135622468">
+<para id="fs-id1165135622470">Describa el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>;</m:mo><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165132912586">
+<para id="fs-id1165132912588">Línea vertical con <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi></m:mrow>
+</m:math> unidades a la izquierda del eje <emphasis effect="italics">y</emphasis>. </para>
+</solution></exercise>
+<exercise id="fs-id1165135618284">
+<problem id="fs-id1165135618286">
+<para id="fs-id1165131968582">Describa el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>;</m:mo><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+
+<exercise id="fs-id1165135538984">
+<problem id="fs-id1165135538986">
+<para id="fs-id1165135538988">Describa el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>;</m:mo><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn></m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165132011254">
+<para id="fs-id1165132011256">Línea horizontal con <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi></m:mrow>
+</m:math> unidades por debajo del eje <emphasis effect="italics">x</emphasis>. </para>
+</solution></exercise>
+<exercise id="fs-id1165135208493">
+<problem id="fs-id1165135208495">
+<para id="fs-id1165131963828">¿Qué ecuaciones polares darán una línea oblicua?</para></problem></exercise>
+
+<para id="fs-id1165135208500">En el siguiente ejercicio, grafique la inecuación polar.</para><exercise id="fs-id1165135208504"><problem id="fs-id1165135186214">
+<para id="fs-id1165135186216"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165134177579"><media id="fs-id1165134177587" alt="Gráfico del círculo sombreado de radio 4, sin incluir el borde (línea punteada), cuadrícula de coordenadas polares.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_216.jpg"/>
+</media></solution>
+</exercise><exercise id="fs-id1165137734330">
+<problem id="fs-id1165137734332">
+<para id="fs-id1165133310440"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165134086016"><problem id="fs-id1165134086018">
+<para id="fs-id1165134086020"> <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mo>≥</m:mo><m:mspace width="0.3em"/><m:mn>2 </m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135154583"><media id="fs-id1165135154592" alt="Gráfico de raya que comienza en (2, pi/4) y se extiende en dirección positiva a lo largo de pi/4, cuadrícula de coordenadas polares.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_218.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165134378618">
+<problem id="fs-id1165134378620">
+<para id="fs-id1165134378622"> <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mo>≥</m:mo><m:mn>−3</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165131880477"><problem id="fs-id1165131880479">
+<para id="fs-id1165131880481"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mo>&lt;</m:mo><m:mspace width="0.3em"/><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165133199370"><media id="fs-id1165135641642" alt="Gráfico de la región sombreada 0 a pi/3 de r=0 a 2 sin incluir el borde (línea punteada), cuadrícula de coordenadas polares">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_08_03_220.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165137643355">
+<problem id="fs-id1165137643357">
+<para id="fs-id1165137643360"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mi>π</m:mi></m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>&lt;</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>&lt;</m:mo><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mo>&lt;</m:mo><m:mspace width="0.3em"/><m:mn>2</m:mn></m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+</section>
+</section>
+<glossary>
+<definition id="fs-id1165135439812">
+<term>eje polar</term> <meaning id="fs-id1165134391590">en la cuadrícula polar, el equivalente al eje positivo <emphasis effect="italics">x</emphasis> en la cuadrícula rectangular</meaning>
+</definition>
+
+<definition id="fs-id1165134391599">
+<term>coordenadas polares</term>
+<meaning id="fs-id1165134041274">en la cuadrícula polar, las coordenadas de un punto marcado como <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math> indica el ángulo de rotación con respecto al eje polar y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi></m:mrow>
+</m:math> representa el radio o la distancia del punto desde el polo en la dirección de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi></m:mrow>
+</m:math>
+</meaning></definition>
+<definition id="fs-id1165134149787">
+<term>polo</term>
+<meaning id="fs-id1165133307606">el origen de la cuadrícula polar</meaning>
+</definition>
+
+</glossary>
+</m:math></item></m:math></item></m:math></item></list></section></content></document>

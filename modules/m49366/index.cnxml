@@ -1,0 +1,5964 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Ecuaciones exponenciales y logarítmicas</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49366</md:content-id>
+  <md:title>Ecuaciones exponenciales y logarítmicas</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Utilizar bases semejantes para resolver ecuaciones exponenciales.</item>
+<item>Utilizar logaritmos para resolver ecuaciones exponenciales.</item>
+<item>Utilizar la definición de logaritmo para resolver ecuaciones logarítmicas.</item>
+<item>Utilizar la propiedad biunívoca de los logaritmos para resolver ecuaciones logarítmicas.</item>
+<item>Resolver problemas aplicados que impliquen ecuaciones exponenciales y logarítmicas.</item>
+</list></md:abstract>
+  <md:uuid>c1f8641f-2121-4457-adc2-ef58f23500ce</md:uuid>
+</metadata>
+
+<content>
+<section id="eip-797" class="coreq-skills"><section id="eip-128" class="learning-objectives"><title>Objetivos de aprendizaje</title><list id="eip-963" list-type="enumerated" number-style="arabic"><item>Resolver ecuaciones exponenciales. (IA 10.2.2)</item>
+<item>Resolver ecuaciones logarítmicas. (IA 10.3.4)</item></list></section><section id="eip-770"><title>Objetivo 1: Resolver ecuaciones exponenciales. (IA 10.2.2)</title><para id="eip-945">
+Las ecuaciones que incluyen una expresión exponencial <m:math><m:msup><m:mi>a</m:mi><m:mi>x</m:mi></m:msup></m:math> se denominan <term id="term-00001">ecuaciones exponenciales</term>. Hay dos tipos de ecuaciones exponenciales: las que tienen la base común en cada lado y las que no tienen base común.
+</para><para id="eip-184"><emphasis effect="bold">Tipo 1</emphasis>: Posible base común en cada lado: Utilice las propiedades de los exponentes para reescribir cada lado con una base común. Utilice la propiedad base-exponente para igualar los exponentes y resolver para x.</para><note id="eip-423"><title>Propiedad del exponente base</title>Para cualquier <m:math><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn></m:math>, si <m:math><m:msup><m:mi>a</m:mi><m:mi>x</m:mi></m:msup><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>y</m:mi></m:msup></m:math> entonces <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi></m:math> </note><para id="eip-697"><emphasis effect="bold">Tipo 2</emphasis>: No hay base común posible: Utilice las propiedades de los exponentes para reescribir cada lado en términos de una expresión exponencial. Tome el logaritmo o ln de cada lado y utilice la regla de la potencia para bajar la potencia. Resuelva la ecuación restante para x.
+</para><note id="eip-237"><title>Propiedad de la igualdad logarítmica:</title>Para cualquier <m:math><m:mi>M</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>N</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>a</m:mi><m:mi>n</m:mi><m:mi>d</m:mi><m:mo> </m:mo><m:mi>a</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn></m:math> <newline/> Si <m:math><m:msub><m:mi>log</m:mi><m:mi>a</m:mi></m:msub><m:mi>M</m:mi><m:mo>=</m:mo><m:msub><m:mi>log</m:mi><m:mi>b</m:mi></m:msub><m:mi>N</m:mi><m:mo> </m:mo><m:mtext>entonces</m:mtext><m:mo> </m:mo><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>N</m:mi><m:mo>.</m:mo></m:math> </note><example id="eip-488"><exercise id="fs-id1167836585300"><problem id="fs-id1167829694534"><title>Resolver ecuaciones exponenciales.</title>
+<para id="fs-id1167836320996">Resuelva: <m:math><m:mrow><m:msup><m:mn>3</m:mn><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>.</m:mo></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1167836543340">
+<table id="fs-id1167835367206" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">¿Hay aquí una base común?</entry>
+<entry valign="middle" align="left">Sí, tanto 3 como 27 pueden reescribirse como potencias de 3.</entry>
+</row>
+<row>
+<entry valign="middle" align="left">Escriba ambos lados de la ecuación con la misma base.</entry>
+    <entry> <m:math><m:msup><m:mn>3</m:mn><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:msup><m:mn>3</m:mn><m:mn>3</m:mn></m:msup></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Ya que las bases son iguales, los exponentes deberán ser iguales.
+</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry align="left">Escriba una nueva ecuación al igualar los exponentes.</entry>
+    <entry> <m:math><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Resuelva la ecuación.</entry>
+    <entry> <m:math><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry/>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Compruebe la solución al sustituir x=4 en la ecuación original.</entry>
+    <entry> <m:math><m:msup><m:mn>3</m:mn><m:mrow><m:mn>2 </m:mn><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mn>5</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>27</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry/>
+    <entry> <m:math><m:mn>27</m:mn><m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo></m:math> Verdadero</entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><example id="eip-532"><exercise id="eip-139"><problem id="eip-231">
+  <para id="eip-806">
+Resuelva <m:math><m:mn>3</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>24</m:mn></m:math>. Halle la respuesta exacta y luego aproxímela con tres decimales.
+  </para>
+</problem>
+
+<solution id="eip-660">
+<table id="fs-id1167834367206" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">No es posible reescribir con una base común.</entry>
+<entry valign="middle" align="left"/>
+</row>
+<row>
+<entry valign="middle" align="left">Aísle la exponencial al dividir ambos lados entre 3.</entry>
+    <entry> <m:math><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>8</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>Tome el logaritmo natural de ambos lados.
+</entry>
+    <entry> <m:math><m:mi>ln</m:mi><m:mo> </m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo> </m:mo><m:mn>8</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>Utilice la propiedad de la potencia para obtener la x como factor, no como exponente.</entry>
+    <entry> <m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>)</m:mo><m:mi>ln</m:mi><m:mo> </m:mo><m:mi>e</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo> </m:mo><m:mn>8</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>Utilice la propiedad <m:math><m:mi>ln</m:mi><m:mi>e</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math> para simplificar.</entry>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mi>ln</m:mi><m:mn>8</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>Resuelva la ecuación. Halle la respuesta exacta.</entry>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mn>8</m:mn><m:mn>-2</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry>Dé la respuesta aproximada.</entry>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,079</m:mn></m:math> </entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></solution>
+</exercise></example><note id="eip-607" class="precalculus try">Utilice los siguientes pasos para resolver la ecuación de abajo. ¿Hay una base común? Aísle primero el término variable para determinarlo.
+<exercise id="ti_04_03_01"><problem id="fs-id1165334274544">
+<para id="fs-id1165133645484">Resuelva <m:math><m:mn>2</m:mn><m:mo>(</m:mo><m:msup><m:mn>5</m:mn><m:mi>x</m:mi></m:msup><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn></m:math>. <newline/>Aísle el término exponencial en un lado. <newline/>Tome ln o log de cada lado. <newline/>Utilice la propiedad de la potencia para obtener la x como factor, no como exponente. <newline/>Resuelva para x. Dé una respuesta exacta y otra aproximada. Compruebe.
+</para>
+</problem>
+</exercise>
+</note><note id="eip-271" class="precalculus try">Utilice los siguientes pasos para resolver la ecuación de abajo.
+<exercise id="ti_04_03_02"><problem id="fs-id1165334274524">
+<para id="fs-id1165133645284">Resuelva <m:math><m:mo> </m:mo><m:mo> </m:mo><m:msup><m:mn>2</m:mn><m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:msup><m:mn>8</m:mn><m:mrow><m:mo> </m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:math>. <newline/>¿Hay aquí una base común? Sí, tanto 2 como 8 pueden reescribirse como potencias de 2. <newline/>Reescriba cada lado con base 2 utilizando las propiedades de los exponentes. <newline/>Iguale los exponentes, ya que las bases son iguales. <newline/>Resuelva para x. Dé una respuesta exacta y otra aproximada. Compruebe.
+</para></problem>
+</exercise>
+</note><section id="eip-639" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-841">Resuelva. Halle la respuesta exacta y luego aproxímela con tres decimales.</para><exercise id="eip-609"><problem id="eip-416">
+  <para id="eip-690">
+ <m:math><m:msup><m:mn>4</m:mn><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>16</m:mn></m:mfrac></m:math> </para>
+</problem>
+</exercise><exercise id="eip-512"><problem id="eip-252">
+  <para id="eip-599">
+ <m:math><m:mn>5</m:mn><m:mo>(</m:mo><m:msup><m:mn>3</m:mn><m:mi>x</m:mi></m:msup><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn></m:math> </para>
+</problem>
+</exercise></section></section><section id="eip-604"><title>Objetivo 2: Resolver ecuaciones logarítmicas. (IA 10.3.4)</title><para id="eip-575">
+Hay dos tipos de ecuaciones logarítmicas: las que tienen términos logarítmicos en un solo lado de la ecuación o las que tienen términos logarítmicos en cada lado de la ecuación. Ya que el dominio de las funciones logarítmicas consiste únicamente en números positivos, compruebe bien las soluciones.</para><para id="eip-725"><emphasis effect="bold">Tipo 1</emphasis>: Términos logarítmicos en un lado de la ecuación: Utilice las propiedades de los logaritmos para reescribir un lado con un solo término logarítmico. Convierta a notación exponencial y resuelva para x.</para><para id="eip-440">Si los valores de <m:math><m:msub><m:mi>log</m:mi><m:mi>a</m:mi></m:msub><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi></m:math> entonces <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>y</m:mi></m:msup></m:math>.</para><para id="eip-172"><emphasis effect="bold">Tipo 2</emphasis>: Términos logarítmicos en ambos lados de la ecuación: En primer lugar, utilice las propiedades del logaritmo para reescribir cada lado en términos de una única expresión logarítmica, si es necesario. Utilice la propiedad biunívoca de la igualdad logarítmica para que los argumentos sean iguales entre sí. Resuelva la ecuación resultante para x.</para><note id="eip-628"><title>Propiedad biunívoca de las ecuaciones logarítmicas</title><para id="fs-id1167836353231">Para cualquier <m:math><m:mrow><m:mi>M</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>N</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>a</m:mtext><m:mtext>></m:mtext><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mtext>a</m:mtext><m:mo>≠</m:mo><m:mn>1</m:mn></m:mrow></m:math> es un número real cualquiera:</para>
+<equation id="fs-id1167836481074" class="unnumbered"><label/> <m:math><m:mrow><m:mtext>Si</m:mtext><m:mspace width="0.2em"/><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mi>a</m:mi></m:msub><m:mi>M</m:mi><m:mo>=</m:mo><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mi>a</m:mi></m:msub><m:mi>N</m:mi><m:mo>,</m:mo><m:mspace width="0.2em"/><m:mtext>entonces</m:mtext><m:mspace width="0.2em"/><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>N</m:mi><m:mo>.</m:mo></m:mrow></m:math> </equation></note><example id="eip-736"><exercise id="eip-479"><problem id="eip-326"><title>
+Resolver ecuaciones logarítmicas.</title>
+  <para id="eip-196">
+    Resuelva: <m:math><m:msub><m:mi>log</m:mi><m:mn>2</m:mn></m:msub><m:mo>(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo> </m:mo></m:math>
+  </para>
+</problem>
+
+<solution id="eip-262">
+<table id="fs-id1167834367202" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry align="left">Reescriba en forma exponencial.</entry>
+<entry> <m:math><m:msup><m:mn>2</m:mn><m:mn>4</m:mn></m:msup><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>5</m:mn></m:math> </entry>
+</row>
+  <row>
+    <entry align="left">Simplifique.</entry>
+    <entry> <m:math><m:mn>16</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Resuelva para x.</entry>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Compruebe.</entry>
+    <entry> <m:math><m:msub><m:mi>log</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo> </m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry/>
+    <entry> <m:math><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>4</m:mn></m:math>, verdadero</entry>
+  </row>
+</tbody>
+</tgroup>
+</table></solution>
+</exercise></example><example id="eip-373"><exercise id="eip-946"><problem id="eip-37">
+  <para id="eip-591">Resuelva <m:math><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:mo>(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:mi>x</m:mi></m:math> </para></problem>
+
+<solution id="eip-705">
+  <para id="eip-868"><table id="fs-id1137834367202" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<tbody>
+<row>
+<entry align="left">Utilice la propiedad de cociente en el lado izquierdo y la propiedad de potencia en el derecho.</entry>
+<entry> <m:math><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:mo> </m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:msup><m:mi>x</m:mi><m:mrow><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> </entry>
+</row>
+  <row>
+    <entry align="left">Reescriba <m:math><m:msup><m:mi>x</m:mi><m:mn>-1</m:mn></m:msup></m:math> cuando <m:math><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:math>.</entry>
+    <entry> <m:math><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:mo> </m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:msub><m:mi>log</m:mi><m:mn>4</m:mn></m:msub><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Utilice la propiedad biunívoca.</entry>
+    <entry> <m:math><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Resuelva la ecuación racional.</entry>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Distribuya y escriba en forma estándar.</entry>
+    <entry> <m:math><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo> </m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Factorice y resuelva para x.</entry>
+    <entry> <m:math><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math>, <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>-5</m:mn></m:math>, <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math> </entry>
+  </row>
+  <row>
+    <entry align="left">Compruebe:</entry>
+    <entry>x=-5 es una solución extraña porque <m:math><m:mn>2</m:mn><m:mo>(</m:mo><m:mn>-5</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math> por lo que x=1 es la única solución.</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></para></solution>
+</exercise></example><note id="eip-275" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_03_01_01"><problem id="fs-id1335124274544">
+<para id="eip-idm254090016">Utilice los siguientes pasos para resolver la ecuación de abajo.
+</para>
+<para id="fs-id1165137345484">Resuelva <m:math><m:mi>log</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mi>log</m:mi><m:mo> </m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:math> </para>
+<para id="eip-idm341494848">Utilice las propiedades de los logaritmos para reescribir el lado izquierdo como un único término logarítmico.</para>
+<para id="eip-idm367516656">Convierta en forma exponencial.
+</para>
+<para id="eip-idm367516272">Resuelva para x. Compruebe.
+</para>
+</problem>
+</exercise></note><note id="eip-836" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_03_04_41"><problem id="fs-id1335124274844">
+<para id="eip-idm254090816">Utilice los siguientes pasos para resolver la ecuación de abajo.</para>
+<para id="fs-id1145134345484">Resuelva <m:math><m:mi>log</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>log</m:mi><m:mo> </m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mn>2 </m:mn></m:math> </para>
+<para id="eip-idm342494848">Utilice las propiedades de los logaritmos para reescribir el lado izquierdo como un único término logarítmico.
+</para>
+<para id="eip-idm367512256">Utilice la propiedad biunívoca.
+</para>
+<para id="eip-idm364514272">Resuelva la ecuación cuadrática.
+</para>
+<para id="eip-idm226015712">Compruebe.
+</para>
+</problem>
+</exercise></note><section id="eip-177" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-931">
+No olvide comprobar sus soluciones.
+</para><exercise id="eip-119"><problem id="eip-992">
+  <para id="eip-72">
+ <m:math><m:msub><m:mi>log</m:mi><m:mn>3</m:mn></m:msub><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math> </para>
+</problem>
+</exercise><exercise id="eip-399"><problem id="eip-186">
+  <para id="eip-820">
+ <m:math><m:msub><m:mi>log</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub><m:mi>log</m:mi><m:mn>2</m:mn></m:msub><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn></m:math>
+  </para>
+</problem>
+</exercise><exercise id="eip-24"><problem id="eip-136">
+  <para id="eip-756">
+ <m:math><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo> </m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mfrac><m:mn>1</m:mn><m:mi>x</m:mi></m:mfrac></m:math> </para>
+</problem>
+</exercise></section></section></section><figure id="CNX_Precalc_Figure_04_06_001" class="small"><media id="fs-id1165137417393" alt="Siete conejos frente a un edificio de ladrillos.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_06_001.jpg"/>
+</media>
+<caption>Conejos silvestres en Australia. La población de conejos creció tan rápidamente en Australia que el hecho se conoció como la "plaga de conejos" (créditos: Richard Taylor, Flickr)</caption></figure><para id="fs-id1165137871518">En 1859, un terrateniente australiano llamado Thomas Austin liberó 24 conejos en la naturaleza para su caza. Debido a que Australia tenía pocos depredadores y abundante comida, la población de conejos se disparó. En menos de diez años, la población de conejos se contaba por millones.</para>
+
+<para id="fs-id1165135695212">El crecimiento demográfico descontrolado, como en el caso de los conejos silvestres de Australia, puede modelarse con funciones exponenciales. Las ecuaciones resultantes de esas funciones exponenciales pueden resolverse para analizar y hacer predicciones sobre el crecimiento exponencial. En esta sección, aprenderemos técnicas para resolver funciones exponenciales.</para>
+
+<section id="fs-id1165137748966">
+<title>Usar bases semejantes para resolver ecuaciones exponenciales</title>
+
+<para id="fs-id1165134354674">La primera técnica implica dos funciones con bases similares. Recordemos que la propiedad biunívoca de las funciones exponenciales nos señala que, para cualesquiera números reales <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>T</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>S</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>T</m:mi>
+</m:msup>
+</m:mrow>
+</m:math> si y solo si <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><para id="fs-id1165137551370">En otras palabras, cuando una <term class="no-emphasis" id="term-00002">ecuación exponencial</term> tiene la misma base en cada lado, los exponentes deberán ser iguales. Esto también se aplica cuando los exponentes son expresiones algebraicas. Por lo tanto, podemos resolver muchas ecuaciones exponenciales con las reglas de los exponentes para reescribir cada lado como una potencia con la misma base. A continuación, utilizamos el hecho de que las funciones exponenciales son biunívocas para igualar los exponentes y resolver la incógnita.</para><para id="fs-id1165135192889">Por ejemplo, considere la ecuación <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo></m:mrow>
+</m:math> Para resolver <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> utilizamos la propiedad de división de los exponentes con el objeto de reescribir el lado derecho, de manera que ambos lados tengan la base común, <m:math>
+<m:mrow>
+<m:mn>3.</m:mn></m:mrow>
+</m:math> A continuación, aplicamos la propiedad biunívoca de los exponentes al igualarlos y resolver para <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>:</para><equation id="eip-435" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mn>1</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mtext>Reescribir 3 como 3</m:mtext>
+</m:mrow>
+<m:mn>1</m:mn>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Utilice la propiedad de división de los exponentes</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext/>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Aplique la propiedad biunívoca de los exponentes</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Reste 2</m:mtext><m:mi>x</m:mi><m:mspace width="0.4em"/><m:mtext>y sume 7 a ambos lados</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Divida entre 3</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math> </equation><note id="fs-id1165137634286">
+
+<title>Usar la propiedad biunívoca de las funciones exponenciales para resolver ecuaciones exponenciales</title>
+<para id="fs-id1165135188636">Para cualquier expresión algebraica <m:math>
+ <m:mrow>
+  <m:mi>S</m:mi><m:mtext>y </m:mtext><m:mi>T</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y cualquier número real positivo <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para><equation id="fs-id1165137702126" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>S</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>T</m:mi>
+</m:msup>
+<m:mspace width="0.4em"/><m:mtext>si y solo si</m:mtext><m:mspace width="0.4em"/><m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi>
+</m:mrow>
+</m:math> </equation></note>
+
+<note id="fs-id1165137540162" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137426079"><emphasis>Dada una ecuación exponencial con la forma <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>S</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>T</m:mi>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>S</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>T</m:mi></m:mrow>
+</m:math> son expresiones algebraicas con una incógnita, resolver la incógnita.</emphasis></para><list id="fs-id1165137749890" list-type="enumerated" number-style="arabic"><item>Utilice las reglas de los exponentes para simplificar, si es necesario, de manera que la ecuación resultante tenga la forma <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>S</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>T</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Aplique la propiedad biunívoca para igualar los exponentes.</item>
+<item>Resuelva la ecuación resultante, <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> para la incógnita.</item>
+</list></note>
+
+<example id="Example_04_06_01"><exercise id="fs-id1165137561722">
+<problem id="fs-id1165135502074">
+<title>Resolver una ecuación exponencial con base común</title>
+<para id="fs-id1165137696680">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137655365">
+<equation id="eip-id1165133011431" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo> </m:mo><m:msup>
+       <m:mn>2 </m:mn>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>2 </m:mn>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>La base común es </m:mtext><m:mn>2.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Por la propiedad biunívoca los exponentes deberán ser iguales</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+<note id="fs-id1165137748360" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_01">
+<problem id="fs-id1165137408224">
+<para id="fs-id1165137533181">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137730366">
+<para id="fs-id1165137725560"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<section id="fs-id1165137667260">
+<title>Reescribir las ecuaciones para que todas las potencias tengan la misma base</title>
+
+<para id="fs-id1165137725147">A veces la <term class="no-emphasis" id="term-00003">base común</term> de una ecuación exponencial no es explícita. En estos casos, simplemente reescribimos los términos de la ecuación como potencias con base común y resolvemos con la propiedad biunívoca.</para><para id="fs-id1165137784867">Por ejemplo, considere la ecuación <m:math>
+<m:mrow>
+<m:mn>256</m:mn><m:mo>=</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo></m:mrow>
+</m:math> Podemos reescribir ambos lados de esta ecuación como potencia de <m:math>
+<m:mrow>
+<m:mn>2.</m:mn></m:mrow>
+</m:math> Entonces aplicamos las reglas de los exponentes, junto con la propiedad biunívoca, para resolver <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-687" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>256</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mn>4</m:mn>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>8</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msup>
+           <m:mn>2</m:mn>
+           <m:mn>2</m:mn>
+          </m:msup>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Reescriba cada lado como potencia con base 2</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>8</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>2 </m:mn>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la propiedad biunívoca de los exponentes</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aplique la propiedad biunívoca de los exponentes</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 10 a ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre 2</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><note id="fs-id1165135321969" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135414434"><emphasis effect="bold">Dada una ecuación exponencial con bases distintas, utilizar la propiedad biunívoca para resolverla.</emphasis></para>
+<list id="fs-id1165137663646" list-type="enumerated" number-style="arabic"><item>Reescriba cada lado de la ecuación como potencia con base común.</item>
+<item>Utilice las reglas de los exponentes para simplificar, si es necesario, de manera que la ecuación resultante tenga la forma <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>S</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>T</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Aplique la propiedad biunívoca para igualar los exponentes.</item>
+<item>Resuelva la ecuación resultante, <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> para la incógnita.</item>
+</list></note>
+
+<example id="Example_04_06_02">
+<exercise id="fs-id1165137897195"><problem id="fs-id1165137527926">
+<title>Resolver ecuaciones al reescribirlas para que tengan una base común</title>
+<para id="fs-id1165137454536">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>8</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>16</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137552155">
+<equation id="eip-id1165135671497" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mn>8</m:mn>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msup>
+           <m:mn>2 </m:mn>
+           <m:mn>3</m:mn>
+          </m:msup>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msup>
+           <m:mn>2</m:mn>
+           <m:mn>4</m:mn>
+          </m:msup>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Escriba</m:mtext><m:mspace width="0.5em"/><m:mn>8</m:mn><m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mn>16</m:mn><m:mspace width="0.5em"/><m:mtext>como potencias de</m:mtext><m:mspace width="0.5em"/><m:mn>2.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mn>2</m:mn>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>2</m:mn>
+       <m:mrow>
+        <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Para tomar la potencia de una potencia, multiplique los exponentes</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la propiedad biunívoca para igualar los exponentes</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165135557891" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_02">
+<problem id="fs-id1165137573218">
+<para id="fs-id1165137423021">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137810723">
+<para id="fs-id1165137589221"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_04_06_03"><exercise id="fs-id1165137585250">
+<problem id="fs-id1165137809774">
+<title>Resolver ecuaciones al reescribir raíces con exponentes fraccionarios para que tengan una base común</title>
+<para id="fs-id1165137637470">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msqrt>
+<m:mn>2</m:mn>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137722496">
+<equation id="eip-id1165137827357" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Escriba la raíz cuadrada de 2 como potencia de</m:mtext><m:mspace width="0.5em"/><m:mn>2.</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Utilice la propiedad biunívoca</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Resuelva para</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+<note id="fs-id1165137423838" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_03">
+<problem id="fs-id1165137430649">
+<para id="fs-id1165137834466">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msqrt>
+<m:mn>5</m:mn>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137678183">
+<para id="fs-id1165137596667"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165135369638" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137547216"><emphasis>¿Todas las ecuaciones exponenciales tienen solución? Si no es así, ¿cómo podemos saber si hay una solución durante la resolución de problemas?</emphasis></para>
+<para id="fs-id1165137435646"><emphasis effect="italics">No. Recordemos que el rango de una función exponencial es siempre positivo. Al resolver la ecuación, podemos obtener una expresión indefinida.</emphasis></para>
+</note>
+
+<example id="Example_04_06_04">
+<exercise id="fs-id1165137405247"><problem id="fs-id1165137635295">
+<title>Resolver una ecuación con potencias positivas y negativas</title>
+<para id="fs-id1165137805073">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>–2.</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137723720">
+<para id="fs-id1165137874850">Esta ecuación no tiene solución. No hay ningún valor real de <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> que haga que la ecuación sea un enunciado verdadero porque cualquier potencia de un número positivo es positiva.</para>
+</solution>
+<commentary id="fs-id1165137849213">
+<title>Análisis </title>
+<para id="fs-id1165137578263">La <link target-id="CNX_Precalc_Figure_04_06_002"/> muestra que los dos gráficos no se cruzan, por lo que el lado izquierdo nunca es igual al lado derecho. Por lo tanto, la ecuación no tiene solución.</para>
+<figure id="CNX_Precalc_Figure_04_06_002" class="small">
+<media id="fs-id1165137767780" alt="Gráfico de 3^(x+1)=-2 y de y=-2. El gráfico señala que no se cruzan.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_06_002.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137920668" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_04">
+<problem id="fs-id1165137761184">
+<para id="fs-id1165137847264">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>−100.</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137844325">
+<para id="fs-id1165135208714">La ecuación no tiene solución.</para>
+</solution>
+</exercise>
+</note>
+
+</section>
+</section>
+<section id="fs-id1165137641700">
+<title>Resolver ecuaciones exponenciales mediante logaritmos</title>
+
+<para id="fs-id1165137939689">A veces los términos de una ecuación exponencial no pueden reescribirse con una base común. En estos casos, resolvemos al tomar el logaritmo de cada lado. Recordemos que, dado que <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>a</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>b</m:mi>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> podemos aplicar logaritmos con la misma base en ambos lados de la ecuación exponencial.</para><note id="fs-id1165137939925" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137673524"><emphasis>Dada una ecuación exponencial en la que no se halla ninguna base común, resolver la incógnita.</emphasis></para>
+<list id="fs-id1165137784632" list-type="enumerated" number-style="arabic"><item>Aplique el logaritmo de ambos lados de la ecuación. <list id="fs-id1165137824134" list-type="enumerated" number-style="lower-alpha"><item>Si uno de los términos de la ecuación tiene base 10, utilice el logaritmo común.</item>
+<item>Si ninguno de los términos de la ecuación tiene base 10, utilice el logaritmo natural.</item>
+</list></item>
+<item>Utilice las reglas de los logaritmos para resolver la incógnita.</item>
+</list></note>
+
+<example id="Example_04_06_05"><exercise id="fs-id1165137653913">
+<problem id="fs-id1165137715230">
+<title>Resolver una ecuación que contiene potencias de diferentes bases</title>
+<para id="fs-id1165137549801">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135194651">
+<equation id="eip-id1165137673370" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mn>5</m:mn>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>4</m:mn>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>No hay una manera fácil de hacer que las potencias tengan la misma base</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>ln</m:mi><m:msup>
+       <m:mn>5</m:mn>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mi>ln</m:mi><m:msup>
+       <m:mn>4</m:mn>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tome el ln de ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mi>ln</m:mi><m:mn>5</m:mn><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>ln</m:mi><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice las leyes de los logaritmos</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mi>ln</m:mi><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>ln</m:mi><m:mn>5</m:mn><m:mo>=</m:mo><m:mi>x</m:mi><m:mi>ln</m:mi><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la ley distributiva</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mi>ln</m:mi><m:mn>5</m:mn><m:mo>-</m:mo><m:mi>x</m:mi><m:mi>ln</m:mi><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>ln</m:mi><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Obtenga términos que contengan</m:mtext><m:mspace width="0.4em"/><m:mi>x</m:mi><m:mspace width="0.4em"/><m:mtext>por un lado y términos sin</m:mtext><m:mspace width="0.4em"/><m:mi>x</m:mi><m:mspace width="0.4em"/><m:mtext>por el otro lado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>ln</m:mi><m:mn>5</m:mn><m:mo>- −</m:mo><m:mi>ln</m:mi><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>ln</m:mi><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>En el lado izquierdo, saque un factor común </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>5</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mn>25</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice las leyes de los logaritmos.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mrow>
+            <m:mn>25</m:mn>
+           </m:mrow>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mn>5</m:mn>
+           <m:mn>4</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre el coeficiente de</m:mtext><m:mspace width="0.4em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+<note id="fs-id1165137473583" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_05">
+<problem id="fs-id1165137402173">
+<para id="fs-id1165137402175">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137605315">
+<para id="fs-id1165137849353"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mstyle scriptlevel="+1">
+<m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mn>3</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac bevelled="true">
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137470141" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="eip-id1165137693320"><emphasis>¿Hay alguna manera de resolver <m:math>  <m:mrow><m:msup>    <m:mn>2</m:mn>    <m:mi>x</m:mi>   </m:msup>   <m:mo>=</m:mo><m:msup>    <m:mn>3</m:mn>    <m:mi>x</m:mi>   </m:msup>   <m:mo>?</m:mo>  </m:mrow> </m:math> </emphasis></para>
+<para id="fs-id1165135696730"><emphasis effect="italics">Sí. La solución es <m:math>
+<m:mrow>
+<m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </emphasis></para></note>
+<section id="fs-id1165137469838">
+<title>Ecuaciones que contienen <emphasis effect="italics">e</emphasis></title>
+<para id="fs-id1165137606150">Un tipo común de ecuaciones exponenciales son las de base <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Esta constante se repite una y otra vez en la naturaleza, en las matemáticas, en la ciencia, en la ingeniería y en las finanzas. Cuando tenemos una ecuación con una base <m:math>
+<m:mrow>
+<m:mi>e</m:mi></m:mrow>
+</m:math> en cualquier lado, podemos utilizar el <term class="no-emphasis" id="term-00004">logaritmo natural</term> para resolverla.</para>
+<note id="fs-id1165137727175" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137656412"><emphasis>Dada una ecuación de la forma <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>k</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mtext>,</m:mtext>
+</m:mrow>
+</m:math> resolver para <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </emphasis></para><list id="fs-id1165135189859" list-type="enumerated" number-style="arabic"><item>Divida ambos lados de la ecuación entre <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Aplique el logaritmo natural de ambos lados de la ecuación.</item>
+<item>Divida ambos lados de la ecuación entre <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note><example id="Example_04_06_06">
+<exercise id="fs-id1165137846466"><problem id="fs-id1165137846468">
+<title>Resolver una ecuación de la forma <emphasis effect="italics">y</emphasis> = <emphasis effect="italics">Ae</emphasis><sup><emphasis effect="italics">kt</emphasis></sup></title>
+<para id="fs-id1165137581969">Resuelva <m:math>
+<m:mrow>
+<m:mn>100</m:mn><m:mo>=</m:mo><m:mn>20</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135435831">
+<equation id="eip-id1165134548897" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>20</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mn>5</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Divida entre el coeficiente de la potencia.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>ln</m:mi><m:mn>5</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Tome el ln de ambos lados</m:mtext><m:mtext>. Utilice el hecho de que </m:mtext><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.4em"/><m:mtext>y </m:mtext><m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mspace width="0.5em"/><m:mtext>son funciones inversas</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>t</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mn>5</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Divida entre el coeficiente de </m:mtext><m:mi>t</m:mi><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math> </equation></solution>
+<commentary id="fs-id1165137705083">
+<title>Análisis </title>
+<para id="fs-id1165137666936">Con las leyes de los logaritmos también podemos escribir esta respuesta en la forma <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:msqrt>
+<m:mn>5</m:mn>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Si queremos una aproximación decimal de la respuesta, utilizamos una calculadora.</para>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165135186732" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_06">
+<problem id="fs-id1165137737732">
+<para id="fs-id1165137431561">Resuelva <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>0,5</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>11.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137726884">
+<para id="fs-id1165137698501"> <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137532335" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="eip-id1165135593037"><emphasis>¿Cualquier ecuación de la forma</emphasis> <m:math>  <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:msup>    <m:mi>e</m:mi>    <m:mrow>     <m:mi>k</m:mi><m:mi>t</m:mi>    </m:mrow>   </m:msup>   <m:mspace width="0.5em"/>  </m:mrow> </m:math> <emphasis>tiene una solución?</emphasis></para><para id="fs-id1165137423829"><emphasis effect="italics">No. Hay solución cuando <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y cuando <m:math>
+<m:mrow>
+<m:mi>y</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>A</m:mi></m:mrow>
+</m:math> son ambos 0 o ninguno, y tienen el mismo signo. Un ejemplo de ecuación con esta forma que no tiene solución es <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>=</m:mo><m:mn>−3</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </emphasis></para></note><example id="Example_04_06_07"><exercise id="fs-id1165137828228"><problem id="fs-id1165137704438">
+<title>Resolver una ecuación que puede simplificarse a la forma <emphasis effect="italics">y</emphasis> = <emphasis effect="italics">Ae</emphasis><sup><emphasis effect="italics">kt</emphasis></sup></title>
+<para id="fs-id1165134223341">Resuelva <m:math>
+<m:mrow>
+<m:mn>4</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>12.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137675352">
+<equation id="eip-id2121454" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>4</m:mn><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Combine términos similares</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>7</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre el coeficiente de la potencia</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>7</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tome el ln de ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>7</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+<note id="fs-id1165137827163" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_07">
+<problem id="fs-id1165137936638">
+<para id="fs-id1165137936640">Resuelva <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>7</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137819982">
+<para id="fs-id1165137819984"> <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msqrt>
+<m:mn>2 </m:mn>
+</m:msqrt>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+</section><section id="fs-id1165137665482">
+<title>Soluciones extrañas</title>
+
+<para id="fs-id1165137742403">A veces, los métodos utilizados para resolver una ecuación introducen una <term id="term-00005">solución extraña</term>, que es una solución correcta desde el punto de vista algebraico pero que no satisface las condiciones de la ecuación original. Una de estas situaciones surge al resolver cuando se toma el logaritmo en ambos lados de la ecuación. En estos casos, recuerde que el argumento del logaritmo deberá ser positivo. Si el número que evaluamos en una función de logaritmo es negativo, no hay salida.</para>
+
+<example id="Example_04_06_08">
+<exercise id="fs-id1165137828517"><problem id="fs-id1165137828519">
+<title>Resolver funciones exponenciales en forma cuadrática</title>
+<para id="fs-id1165137443096">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>-</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>56.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135245555">
+<equation id="eip-id1165133221795" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msup>
+      <m:mo>-</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>56</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msup>
+      <m:mo>-</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>56</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Iguale a cero un lado de la ecuación</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factorice por el método FOIL</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.4em"/><m:mtext>o </m:mtext><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Si el producto es cero, entonces el factor uno deberá ser cero</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>7</m:mn><m:msup>
+       <m:mrow>
+        <m:mspace width="0.4em"/><m:mtext>o e</m:mtext>
+       </m:mrow>
+       <m:mi>x</m:mi>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aísle los exponenciales</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>x</m:mi>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Rechace la ecuación en la que la potencia equivalga a un número negativo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mi>ln</m:mi><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva la ecuación en la que la potencia equivalga a un número positivo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165137806430">
+<title>Análisis </title>
+<para id="fs-id1165137806436">Cuando planeamos utilizar la factorización para resolver un problema, siempre llevamos a cero un lado de la ecuación, porque el cero tiene la propiedad única de que, cuando un producto es cero, uno o ambos factores deberán ser cero. Rechazamos la ecuación <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>−7</m:mn></m:mrow>
+</m:math> porque un número positivo nunca equivale a un número negativo. La solución <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−7</m:mn><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> no es un número real y, en el sistema de números reales, esto se rechaza por ser una solución extraña.</para></commentary>
+</exercise></example>
+
+<note id="fs-id1165135560773" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_08">
+<problem id="fs-id1165134378706">
+<para id="fs-id1165134378708">Resuelva <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135638513">
+<para id="fs-id1165135638516"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mn>2</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137470353" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="eip-id1165135393411"><emphasis>¿Todas las ecuaciones logarítmicas tienen solución?</emphasis></para>
+<para id="fs-id1165137922606"><emphasis effect="italics">No. Tenga presente que solo podemos aplicar el logaritmo a un número positivo. Compruebe siempre si hay soluciones extrañas.</emphasis></para>
+</note></section>
+</section>
+
+<section id="fs-id1165137862548">
+<title>Usar la definición de un logaritmo para resolver ecuaciones logarítmicas</title>
+<para id="fs-id1165137862553">Ya hemos visto que toda <term class="no-emphasis" id="term-00006">ecuación logarítmica</term> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi></m:mrow>
+</m:math> es equivalente a la ecuación exponencial <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Podemos utilizar este hecho, junto con las reglas de los logaritmos, para resolver ecuaciones logarítmicas donde el argumento sea una expresión algebraica.</para>
+
+<para id="fs-id1165134148350">Por ejemplo, considere la ecuación <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> Para resolver esta ecuación, podemos utilizar las reglas de los logaritmos con el objeto de reescribir el lado izquierdo en forma compacta y luego aplicar la definición de logaritmos para resolver <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-id2205910" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mrow>
+        <m:mi>log</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msub>
+       <m:mrow>
+        <m:mi>log</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msub>
+       <m:mrow>
+        <m:mi>log</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aplique la regla del producto para los logaritmos.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msub>
+       <m:mrow>
+        <m:mi>log</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribuya</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aplique la definición de logaritmo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Calcule </m:mtext><m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>18</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 10 a ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre 6</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math></equation><note id="fs-id1165135516879">
+
+<title>Usar la definición de un logaritmo para resolver ecuaciones logarítmicas</title>
+<para id="fs-id1165137824007">Para cualquier expresión algebraica <m:math>
+<m:mrow>
+<m:mi>S</m:mi></m:mrow>
+</m:math> y los números reales <m:math>
+<m:mrow>
+<m:mi>b</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>c</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para><equation id="fs-id1165137732219" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext>si y solo si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:msup>
+<m:mi>b</m:mi>
+<m:mi>c</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>S</m:mi>
+</m:mrow>
+</m:math> </equation>
+</note>
+
+<example id="Example_04_06_09"><exercise id="fs-id1165137841585">
+<problem id="fs-id1165137725474">
+<title>Usar el álgebra para resolver una ecuación logarítmica</title>
+<para id="fs-id1165135152135">Resuelva <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>7.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137653326">
+<equation id="eip-id1165135466384" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>2</m:mn><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Reste 3</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre 2</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Reescriba en forma exponencial</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+<note id="fs-id1165137571063" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_09">
+<problem id="fs-id1165137437378">
+<para id="fs-id1165137437380">Resuelva <m:math>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>+</m:mo><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135209084">
+<para id="fs-id1165137673564"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_04_06_10">
+<exercise id="fs-id1165137482839"><problem id="fs-id1165137557104">
+<title>Usar el álgebra antes y después de emplear la definición del logaritmo natural</title>
+<para id="fs-id1165137557109">Resuelva <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137501502">
+<equation id="eip-id1165135388424" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mn>2</m:mn><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Divida entre 2</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Utilice la definición de </m:mtext><m:mi>ln</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Divida entre 6</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137441761" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_10">
+<problem id="fs-id1165137862628">
+<para id="fs-id1165137862630">Resuelva <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137530181">
+<para id="fs-id1165137530183"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mn>5</m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_04_06_11">
+<exercise id="fs-id1165137531831"><problem id="fs-id1165137805003">
+<title>Usar un gráfico para entender la solución a una ecuación logarítmica</title>
+<para id="fs-id1165137805008">Resuelva <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137619580">
+<equation id="eip-id1165134154900" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Utilice la definición del logaritmo natural</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137443165">La <link target-id="CNX_Precalc_Figure_04_06_003"/> representa el gráfico de la ecuación. En el gráfico, la coordenada de la <emphasis effect="italics">x</emphasis> del punto de intersección de los dos gráficos es cercana a 20. En otras palabras <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>≈</m:mo><m:mn>20.</m:mn></m:mrow>
+</m:math> La calculadora da una mejor aproximación: <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>≈</m:mo><m:mn>20,0855.</m:mn>
+</m:mrow>
+</m:math> </para>
+<figure id="CNX_Precalc_Figure_04_06_003" class="small">
+<media id="fs-id1165137460711" alt="Gráfico de dos preguntas, y=3 e y=ln(x), que se cruzan en el punto (e^3, 3), que es aproximadamente (20,0855, 3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_06_003.jpg"/>
+</media>
+
+<caption>Los gráficos de <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mi>x</m:mi></m:mrow>
+</m:math> como <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow>
+</m:math> se cruzan en el punto <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mtext>(e</m:mtext>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> que es aproximadamente (20,0855, 3).</caption></figure></solution>
+</exercise></example>
+
+<note id="fs-id1165137401539" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_11">
+<problem id="fs-id1165134375704">
+<para id="fs-id1165134375706">Utilice una calculadora gráfica para estimar la solución aproximada de la ecuación logarítmica <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1.000</m:mn></m:mrow>
+</m:math> a 2 decimales.</para>
+</problem>
+<solution id="fs-id1165137633980">
+<para id="fs-id1165137633982"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≈</m:mo><m:mn>9,97</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+</section><section id="fs-id1165137755280">
+<title>Usar la propiedad biunívoca de los logaritmos para resolver ecuaciones logarítmicas</title>
+
+<para id="fs-id1165135237092">Al igual que con las ecuaciones exponenciales, podemos utilizar la propiedad biunívoca para resolver ecuaciones logarítmicas. La propiedad biunívoca de las funciones logarítmicas nos señala que, para cualquier número real <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:mi>T</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:mrow>
+</m:math> y cualquier número real positivo <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para><equation id="eip-674" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>T</m:mi><m:mspace width="0.5em"/><m:mtext>si y solo si </m:mtext><m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</equation><para id="eip-625">Por ejemplo,</para><equation id="eip-453" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mtext>Si  </m:mtext><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mtext>entonces </m:mtext><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8.</m:mn>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137874962">Por lo tanto, si <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> entonces podemos resolver para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y obtenemos <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn></m:mrow>
+</m:math> Para comprobarlo, podemos sustituir <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow>
+</m:math> en la ecuación original: <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>9</m:mn><m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>8</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow>
+</m:math> En otras palabras, cuando una ecuación logarítmica tiene la misma base en cada lado, los argumentos deberán ser iguales. Esto también se aplica cuando los argumentos son expresiones algebraicas. Por lo tanto, cuando se da una ecuación con logaritmos de la misma base en cada lado, podemos utilizar las reglas de los logaritmos para reescribir cada lado como un único logaritmo. A continuación, utilizamos el hecho de que las funciones logarítmicas son biunívocas para igualar los argumentos y resolver la incógnita.</para>
+
+<para id="fs-id1165135161040">Por ejemplo, considere la ecuación <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow>
+</m:math> Para resolver esta ecuación, podemos utilizar las reglas de los logaritmos con el objeto de reescribir el lado izquierdo como un solo logaritmo, y luego aplicar la propiedad biunívoca para resolver <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="eip-227" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aplique la regla del cociente de logaritmos</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Aplique la propiedad biunívoca de un logaritmo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique ambos lados de la ecuación por </m:mtext><m:mn>2.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Reste 2</m:mtext><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>y sume 2</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135172191">Para comprobar el resultado, sustituya <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+</m:math> en <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>2 </m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="eip-316" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>28</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>28</m:mn>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>La solución comprueba</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><note id="fs-id1165137538838">
+
+<title>Usar la propiedad biunívoca de los logaritmos para resolver ecuaciones logarítmicas</title>
+
+<para id="fs-id1165137538845">Para cualquier expresión algebraica <m:math>
+<m:mrow>
+<m:mi>S</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>T</m:mi></m:mrow>
+</m:math> y cualquier número real positivo <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para><equation id="fs-id1165135154034" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>T</m:mi><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mtext>si y solo si</m:mtext><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137592108">Al momento de resolver una ecuación que implique logaritmos, compruebe siempre si la respuesta es correcta o si se trata de una solución extraña.</para>
+</note>
+
+<note id="fs-id1165137592114" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137726533"><emphasis effect="bold">Dada una ecuación que contiene logaritmos, resolverla con la propiedad biunívoca. </emphasis></para>
+<list id="fs-id1165137698132" list-type="enumerated" number-style="arabic"><item>Utilice las reglas de los logaritmos para combinar los términos semejantes, si es necesario, de modo que la ecuación resultante tenga la forma <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>T</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Utilice la propiedad biunívoca para igualar los argumentos.</item>
+<item>Resuelva la ecuación resultante, <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> para la incógnita.</item>
+</list></note>
+
+<example id="Example_04_06_12"><exercise id="fs-id1165137451547">
+<problem id="fs-id1165137451549">
+<title>Resolver una ecuación con la propiedad biunívoca de los logaritmos</title>
+<para id="fs-id1165137849361">Resuelva <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135209322">
+<equation id="eip-id1165135526839" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la propiedad biunívoca del logaritmo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Lleve un lado a cero antes de la factorización</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factorice por medio de FOIL</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.5em"/><m:mtext>o </m:mtext><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Si un producto es cero, uno de los factores deberá ser cero</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.4em"/><m:mtext>o</m:mtext><m:mspace width="0.4em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165134505606">
+<title>Análisis </title>
+<para id="fs-id1165134505611">Hay dos soluciones: <m:math>
+<m:mrow>
+<m:mn>3</m:mn></m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mn>−1.</m:mn></m:mrow>
+</m:math> La solución <m:math>
+<m:mrow>
+<m:mn>−1</m:mn></m:mrow>
+</m:math> es negativa, aunque se comprueba cuando se sustituye en la ecuación original porque el argumento de las funciones logarítmicas sigue siendo positivo.</para></commentary>
+</exercise>
+</example>
+<note id="fs-id1165135189970" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_12">
+<problem id="fs-id1165135189979">
+<para id="fs-id1165137650837">Resuelva <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137724842">
+<para id="fs-id1165137724844"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+</m:math> o <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id1165137828382">
+<title>Resolver problemas aplicados mediante ecuaciones exponenciales y logarítmicas</title>
+<para id="fs-id1165137828387">En las secciones anteriores, hemos aprendido las propiedades y las reglas de las funciones exponenciales y logarítmicas. Hemos visto que cualquier función exponencial puede escribirse como una función logarítmica y viceversa. Hemos utilizado los exponentes para resolver ecuaciones logarítmicas y los logaritmos para resolver ecuaciones exponenciales. Ahora estamos preparados para combinar nuestras habilidades para resolver ecuaciones que modelen situaciones del mundo real, tanto si la incógnita está en un exponente como en el argumento de un logaritmo.</para>
+
+<para id="fs-id1165134192326">Una de estas aplicaciones se encuentra en la ciencia, al calcular el tiempo que tarda en decaer la mitad del material inestable de la muestra de una sustancia radiactiva, lo que se denomina su <term class="no-emphasis" id="term-00007">semivida</term>. La <link target-id="Table_04_06_001"/> enumera la semivida de varias de las sustancias radiactivas más comunes.</para><table id="Table_04_06_001" summary="La tabla tiene siete filas y tres columnas. La primera columna se denomina &quot;sustancia&quot;, la segunda columna se denomina &quot;uso&quot; y la tercera columna se denomina &quot;semivida&quot;. El galio-67 se utiliza en medicina nuclear y tiene una semivida de 80 horas. El cobalto 60 se utiliza para la fabricación y tiene una semivida de 5,3 años. El tecnecio-99m se utiliza en medicina nuclear y tiene una semivida de 6 horas. El americio-241 se utiliza para la construcción y tiene una semivida de 432 años. El carbono 14 se utiliza para la datación arqueológica y tiene una semivida de 5.715 años. El uranio 235 se utiliza para la energía atómica y tiene una semivida de 703.800.000 años.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center">Sustancia</entry>
+<entry align="center">Uso</entry>
+<entry align="center">Semivida</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">galio 67</entry>
+<entry align="center">medicina nuclear</entry>
+<entry align="center">80 horas</entry>
+</row>
+<row>
+<entry align="center">cobalto 60</entry>
+<entry align="center">fabricación</entry>
+<entry align="center">5,3 años</entry>
+</row>
+<row>
+<entry align="center">tecnecio 99m</entry>
+<entry align="center">medicina nuclear</entry>
+<entry align="center">6 horas</entry>
+</row>
+<row>
+<entry align="center">americio 241</entry>
+<entry align="center">construcción</entry>
+<entry align="center">432 años</entry>
+</row>
+<row>
+<entry align="center">carbono 14</entry>
+<entry align="center">datación arqueológica</entry>
+<entry align="center">5.715 años</entry>
+</row>
+<row>
+<entry align="center">uranio 235</entry>
+<entry align="center">energía atómica</entry>
+<entry align="center">703.800.000 años</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165135209669">Podemos ver lo mucho que varían las semividas de estas sustancias. Conocer la vida media de una sustancia nos permite calcular la cantidad que queda después de un tiempo determinado. Podemos emplear la fórmula para el decaimiento radiactivo:</para>
+
+<equation id="eip-247" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+<m:mi>A</m:mi>
+<m:mrow>
+<m:mn>0</m:mn>
+</m:mrow>
+</m:msub>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mi>T</m:mi>
+</m:mfrac>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+<m:mi>A</m:mi>
+<m:mrow>
+<m:mn>0</m:mn>
+</m:mrow>
+</m:msub>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo><m:mfrac>
+<m:mi>t</m:mi>
+<m:mi>T</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+<m:mi>A</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:msup>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mi>t</m:mi>
+<m:mi>T</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+<m:mi>A</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mi>t</m:mi>
+<m:mi>T</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137408740">donde</para>
+
+<list id="fs-id1165137408743" list-type="bulleted">
+<item> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>A</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> es la cantidad inicial presente</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>T</m:mi></m:mrow>
+</m:math> es la semivida de la sustancia</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>t</m:mi></m:mrow>
+</m:math> es el tiempo en el que se estudia la sustancia</item>
+<item> <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow>
+</m:math> es la cantidad de la sustancia presente después del tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> </item>
+</list>
+
+<example id="Example_04_06_13"><exercise id="fs-id1165137628651">
+<problem id="fs-id1165137628653">
+<title>Usar la fórmula del decaimiento radiactivo para hallar la cantidad de una sustancia</title>
+<para id="fs-id1165137628659">¿Cuánto tiempo tarda en decaer el diez por ciento de una muestra de 1000 gramos de uranio 235?</para>
+</problem>
+<solution id="fs-id1165137628663">
+<equation id="eip-id1165135705897" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>1.000</m:mtext><m:mi>e</m:mi><m:mfrac>
+       <m:mrow>
+        <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>703800000</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+      <m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>900</m:mn><m:mo>=</m:mo><m:mn>1.000</m:mn><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:mtext>703800000</m:mtext>
+         </m:mrow>
+        </m:mfrac>
+        <m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Después de un 10 % de decaimiento, quedan 900 gramos</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mn>0,9</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:mtext>703800000</m:mtext>
+         </m:mrow>
+        </m:mfrac>
+        <m:mi>t</m:mi>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida entre 1000</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:msup>
+         <m:mi>e</m:mi>
+         <m:mrow>
+          <m:mfrac>
+           <m:mrow>
+            <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mrow>
+            <m:mtext>703800000</m:mtext>
+           </m:mrow>
+          </m:mfrac>
+          <m:mi>t</m:mi>
+         </m:mrow>
+        </m:msup>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tome el ln de ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>703800000</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+      <m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>e</m:mi>
+       <m:mi>M</m:mi>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>M</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mtext>703800000</m:mtext><m:mo>×</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,9</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mtext>años</m:mtext><m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para</m:mtext><m:mspace width="0.4em"/><m:mi>t</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mi>t</m:mi><m:mo>≈</m:mo><m:mtext>106.979.777 años</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165137453455">
+<title>Análisis </title>
+<para id="fs-id1165137453460">El diez por ciento de 1000 gramos son 100 gramos. Si 100 gramos decaen, la cantidad de uranio-235 que queda es de 900 gramos.</para>
+</commentary>
+</exercise>
+</example>
+<note id="fs-id1165135250678" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_06_13"><problem id="fs-id1165137426963">
+<para id="fs-id1165137426966">¿Cuánto tiempo pasará antes de que el veinte por ciento de nuestra muestra de 1000 gramos de uranio-235 decaiga?</para>
+</problem>
+<solution id="fs-id1165137426971">
+<para id="fs-id1165137426973"> <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>703</m:mn><m:mo>,</m:mo><m:mn>800</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>×</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,8</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mfrac>
+<m:mspace width="0.5em"/><m:mtext>años </m:mtext><m:mo>≈</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>226</m:mn><m:mo>,</m:mo><m:mn>572</m:mn><m:mo>,</m:mo><m:mn>993</m:mn><m:mspace width="0.5em"/><m:mtext>años</m:mtext><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137410373" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165137722668">Acceda a estos recursos en línea para obtener instrucciones adicionales y practicar con ecuaciones exponenciales y logarítmicas.</para>
+<list id="fs-id1165137722673" list-type="bulleted">
+<item><link url="http://openstax.org/l/solvelogeq">Resolver ecuaciones logarítmicas</link></item>
+<item><link url="http://openstax.org/l/solveexplog">Resolver ecuaciones exponenciales con logaritmos</link></item>
+</list>
+</note>
+</section>
+<section id="fs-id1165135255941" class="key-equations"><title>Ecuaciones clave</title><table id="fs-id2868258" summary="..." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Propiedad biunívoca de las funciones exponenciales</entry>
+<entry align="center">Para cualquier expresión algebraica <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>S</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>T</m:mi>
+ </m:mrow>
+</m:math> y cualquier número real positivo <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>b</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde<newline/> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>S</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>T</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> si y solo si <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+
+<row>
+<entry align="center">Definición de logaritmo</entry>
+<entry align="center">Para cualquier expresión algebraica <emphasis effect="italics">S</emphasis> y números reales positivos <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>b</m:mi><m:mo> </m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <newline/> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mrow>
+    <m:mi>log</m:mi>
+   </m:mrow>
+   <m:mi>b</m:mi>
+  </m:msub>
+  <m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> si y solo si <m:math>
+ <m:mrow>
+  <m:mtext/><m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>c</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>S</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Propiedad biunívoca de las funciones logarítmicas</entry>
+<entry align="center">Para cualquier expresión algebraica <emphasis effect="italics">S</emphasis> y <emphasis effect="italics">T</emphasis> y cualquier número real positivo <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>b</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <newline/> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mrow>
+    <m:mi>log</m:mi>
+   </m:mrow>
+   <m:mi>b</m:mi>
+  </m:msub>
+  <m:mi>S</m:mi><m:mo>=</m:mo><m:msub>
+   <m:mrow>
+    <m:mi>log</m:mi>
+   </m:mrow>
+   <m:mi>b</m:mi>
+  </m:msub>
+  <m:mi>T</m:mi>
+ </m:mrow>
+</m:math> si y solo si <m:math>
+ <m:mrow>
+  <m:mtext/><m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165137431646" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137450888" list-type="bulleted"><item>Podemos resolver muchas ecuaciones exponenciales con las reglas de los exponentes para reescribir cada lado como una potencia con la misma base. A continuación, utilizamos el hecho de que las funciones exponenciales son biunívocas para igualar los exponentes y resolver la incógnita.</item>
+<item>Cuando se nos da una ecuación exponencial en la que las bases se muestran explícitamente iguales, igualamos los exponentes y resolvemos la incógnita. Vea el <link target-id="Example_04_06_01"/>.</item>
+<item>Cuando se nos da una ecuación exponencial en la que las bases <emphasis effect="italics">no</emphasis> se muestran explícitamente iguales, reescribimos cada lado de la ecuación como potencias de la misma base, luego igualamos los exponentes y resolvemos la incógnita. Vea el <link target-id="Example_04_06_02"/>, el <link target-id="Example_04_06_03"/> y el <link target-id="Example_04_06_04"/>.</item>
+<item>Cuando una ecuación exponencial no pueda reescribirse con una base común, resuélvela al tomar el logaritmo de cada lado. Vea el <link target-id="Example_04_06_05"/>.</item>
+<item>Podemos resolver ecuaciones exponenciales con base <m:math>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> al aplicar el logaritmo natural de ambos lados porque las funciones exponenciales y logarítmicas son inversas entre sí. Vea el <link target-id="Example_04_06_06"/> y el <link target-id="Example_04_06_07"/>.</item>
+<item>Después de resolver una ecuación exponencial, compruebe cada solución en la ecuación original para detectar y eliminar cualquier solución extraña. Vea el <link target-id="Example_04_06_08"/>.</item>
+<item>Cuando se da una ecuación de la forma <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>S</m:mi>
+</m:mrow>
+</m:math> es una expresión algebraica, podemos utilizar la definición de logaritmo para reescribir la ecuación como la ecuación exponencial equivalente <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>c</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>S</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y resolver la incógnita. Vea el <link target-id="Example_04_06_09"/> y el <link target-id="Example_04_06_10"/>.</item>
+<item>También podemos utilizar la representación gráfica para resolver ecuaciones con la forma <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow>
+</m:math> Graficamos ambas ecuaciones <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>S</m:mi><m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math> y de <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:mrow>
+</m:math> en el mismo plano de coordenadas e identificamos la solución como el valor de <emphasis effect="italics">x</emphasis> del punto de intersección. Vea el <link target-id="Example_04_06_11"/>.</item>
+<item>Cuando se da una ecuación de la forma <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>T</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>S</m:mi></m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>T</m:mi></m:mrow>
+</m:math> son expresiones algebraicas, podemos utilizar la propiedad biunívoca de los logaritmos para resolver la ecuación <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo>=</m:mo><m:mi>T</m:mi></m:mrow>
+</m:math> para la incógnita. Vea el <link target-id="Example_04_06_12"/>.</item>
+<item>Al combinar las habilidades aprendidas en esta sección y en las anteriores, podemos resolver ecuaciones que modelen situaciones del mundo real, tanto si la incógnita está en un exponente como en el argumento de un logaritmo. Vea el <link target-id="Example_04_06_13"/>.</item>
+</list></section>
+
+<section id="fs-id1165135415727" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165135415731">
+<title>Verbales</title>
+<exercise id="fs-id1165135415736">
+<problem id="fs-id1165135415738">
+<para id="fs-id1165137643492">¿Cómo se resuelve una ecuación exponencial?</para>
+</problem>
+<solution id="fs-id1165137643496">
+<para id="fs-id1165137643498">Determine primero si la ecuación puede reescribirse de forma que cada lado utilice la misma base. Si es así, los exponentes pueden igualarse. Si la ecuación no puede reescribirse de manera que cada lado utilice la misma base, entonces aplique el logaritmo a cada lado y utilice las propiedades de los logaritmos para resolver.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135532191">
+<problem id="fs-id1165135532194">
+<para id="fs-id1165135532196">¿Cuándo se produce una solución extraña? ¿Cómo se reconoce una solución extraña?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135532201">
+<problem id="fs-id1165135532203">
+<para id="fs-id1165135203841">¿Cuándo se puede utilizar la propiedad biunívoca de los logaritmos para resolver una ecuación? ¿Cuándo no se puede utilizar?</para>
+</problem>
+<solution id="fs-id1165135203846">
+<para id="fs-id1165135203849">La propiedad biunívoca se utiliza si ambos lados de la ecuación pueden reescribirse como un único logaritmo con la misma base. Si es así, los argumentos se pueden igualar y la ecuación resultante se puede resolver algebraicamente. La propiedad biunívoca no puede utilizarse cuando cada lado de la ecuación no puede reescribirse como un único logaritmo con la misma base.</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135160485">
+<title>Algebraicos</title>
+
+<para id="fs-id1165135160490">En los siguientes ejercicios, utilice bases semejantes para resolver la ecuación exponencial.</para>
+
+<exercise id="fs-id1165135160493">
+<problem id="fs-id1165134433402">
+<para id="fs-id1165134433404"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn><m:mi>v</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mo>- −</m:mo><m:mi>v</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137874876">
+<problem id="fs-id1165137874878">
+<para id="fs-id1165135386500"> <m:math>
+<m:mrow>
+<m:mn>64</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>16</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137409289">
+<para id="fs-id1165137409291"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137742516">
+<problem id="fs-id1165137742518">
+<para id="fs-id1165137742520"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>⋅</m:mo><m:msup>
+<m:mn>3</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>243</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137922504">
+<problem id="fs-id1165137922506">
+<para id="fs-id1165137922508"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn><m:mi>n</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>⋅</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mn>2</m:mn>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135187451">
+<para id="fs-id1165135187453"> <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137762344">
+<problem id="fs-id1165137762346">
+<para id="fs-id1165137762348"> <m:math>
+<m:mrow>
+<m:mn>625</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>125</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137724024">
+<problem id="fs-id1165137724026">
+<para id="fs-id1165137724028"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>36</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>b</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>36</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>b</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>216</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>-</m:mo><m:mi>b</m:mi>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137418206">
+<para id="fs-id1165137418208"> <m:math>
+<m:mrow>
+<m:mi>b</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>6</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135406934">
+<problem id="fs-id1165135406936">
+<para id="fs-id1165135406938"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>64</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>n</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>⋅</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mn>6</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137455314">En los siguientes ejercicios, utilice logaritmos para resolver.</para>
+
+<exercise id="fs-id1165137455317">
+<problem id="fs-id1165137455320">
+<para id="fs-id1165137455322"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>9</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137425852">
+<para id="fs-id1165137425854"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137413902">
+<problem id="fs-id1165137424157">
+<para id="fs-id1165137424159"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>6</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>13</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137507974">
+<problem id="fs-id1165137507976">
+<para id="fs-id1165137507979"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>r</m:mi><m:mo>+</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>–</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mn>-42</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135173523">
+<para id="fs-id1165135173525">No hay solución</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135173530">
+<problem id="fs-id1165135173532">
+<para id="fs-id1165135173534"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>9</m:mn><m:mi>a</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>29</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137788907">
+<problem id="fs-id1165137788909">
+<para id="fs-id1165137788911"> <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mi>p</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>−24</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135188812">
+<para id="fs-id1165137770132"> <m:math>
+<m:mrow>
+<m:mi>p</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>17</m:mn>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137456026">
+<problem id="fs-id1165137647703">
+<para id="fs-id1165137647705"> <m:math>
+<m:mrow>
+<m:mn>7</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>-89</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137832283">
+<problem id="fs-id1165137832285">
+<para id="fs-id1165137832287"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn><m:mi>k</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>44</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137667780">
+<para id="fs-id1165137667782"> <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>38</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135377089">
+<problem id="fs-id1165135377091">
+<para id="fs-id1165135377093"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>5</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>9</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>–62</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137543110">
+<problem id="fs-id1165135411381">
+<para id="fs-id1165135411384"> <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>6</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>9</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>-74</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135253221">
+<para id="fs-id1165135253223"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>38</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>8</m:mn>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137463008">
+<problem id="fs-id1165137757674">
+<para id="fs-id1165137757676"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137433688">
+<problem id="fs-id1165137433690">
+<para id="fs-id1165137433692"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>-</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>132</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137658150">
+<para id="fs-id1165137658152"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mn>12</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137871195">
+<problem id="fs-id1165137871197">
+<para id="fs-id1165137871200"> <m:math>
+<m:mrow>
+<m:mn>7</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>–95</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137693437">
+<problem id="fs-id1165137693439">
+<para id="fs-id1165137692359"> <m:math>
+<m:mrow>
+<m:mn>10</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135475913">
+<para id="fs-id1165135475915"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135185931">
+<problem id="fs-id1165135185933">
+<para id="fs-id1165135185935"> <m:math>
+<m:mrow>
+<m:mn>4</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>-</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>53</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137874824">
+<problem id="fs-id1165137874826">
+<para id="fs-id1165137874828"> <m:math>
+<m:mrow>
+<m:mn>8</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>−90</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137836687">
+<para id="fs-id1165137836689">no hay solución</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137836694">
+<problem id="fs-id1165135457899">
+<para id="fs-id1165135457901"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mn>7</m:mn>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137736408">
+<problem id="fs-id1165137736410">
+<para id="fs-id1165137736412"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>-</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>-</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135195715">
+<para id="fs-id1165135195717"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137762056">
+<problem id="fs-id1165137762058">
+<para id="fs-id1165137762060"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>−31</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137828037">En los siguientes ejercicios, utilice la definición de logaritmo para reescribir la ecuación como exponencial.</para>
+
+<exercise id="fs-id1165137828042">
+<problem id="fs-id1165137828044">
+<para id="fs-id1165137828046"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>–2</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135487112">
+<para id="fs-id1165135487114"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135511385">
+<problem id="fs-id1165137854981">
+<para id="fs-id1165137854983"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>324</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<para id="fs-id1165132919576">En los siguientes ejercicios, utilice la definición de logaritmo para resolver la ecuación.</para>
+
+<exercise id="fs-id1165132919579">
+<problem id="fs-id1165132919581">
+<para id="fs-id1165132919583"> <m:math>
+<m:mrow>
+<m:mn>5</m:mn><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>7</m:mn>
+</m:msub>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137652929">
+<para id="fs-id1165137652931"> <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>49</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137665136">
+<problem id="fs-id1165137611816">
+<para id="fs-id1165137611818"> <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>8</m:mn><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>16</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134040568">
+<problem id="fs-id1165134040570">
+<para id="fs-id1165134040572"> <m:math>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>+</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>9</m:mn><m:mi>k</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135570427">
+<para id="fs-id1165135570429"> <m:math>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>36</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135650631">
+<problem id="fs-id1165135650633">
+<para id="fs-id1165135253753"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>8</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135545587">
+<problem id="fs-id1165135545589">
+<para id="fs-id1165135545591"> <m:math>
+<m:mrow>
+<m:mn>10</m:mn><m:mo>–</m:mo><m:mn>4</m:mn><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>9</m:mn><m:mo>- −</m:mo><m:mn>8</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134232199">
+<para id="fs-id1165134232201"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>9</m:mn><m:mo>- −</m:mo><m:mi>e</m:mi>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135191194">En los siguientes ejercicios, utilice la propiedad biunívoca de los logaritmos para resolver.</para>
+
+<exercise id="fs-id1165135191197">
+<problem id="fs-id1165135191199">
+<para id="fs-id1165135191201"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>10</m:mn><m:mo>–</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135188052">
+<problem id="fs-id1165135188054">
+<para id="fs-id1165137657398"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>- −</m:mo><m:mn>5</m:mn><m:mi>n</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137424487">
+<para id="fs-id1165137424489"> <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137414501">
+<problem id="fs-id1165134042724">
+<para id="fs-id1165134042726"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>74</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137812427">
+<problem id="fs-id1165137812429">
+<para id="fs-id1165137793454"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137436082">
+<para id="fs-id1165137436084">No hay solución</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137436090">
+<problem id="fs-id1165137666444">
+<para id="fs-id1165137666446"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>- −</m:mo><m:mi>m</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mn>3</m:mn><m:mi>m</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135536521">
+<problem id="fs-id1165135536523">
+<para id="fs-id1165135536525"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>54</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135511361">
+<para id="fs-id1165135511363">No hay solución</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135511368" class="material-set-2">
+<problem id="fs-id1165137922550">
+<para id="fs-id1165137922553"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:msup>
+<m:mi>n</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>- −</m:mo><m:mn>14</m:mn><m:mi>n</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>45</m:mn><m:mo>+</m:mo><m:msup>
+<m:mi>n</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137726290" class="material-set-2">
+<problem id="fs-id1165137726292">
+<para id="fs-id1165137726295"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>9</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165134388214">
+<para id="fs-id1165134388216"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137809918">En los siguientes ejercicios, resuelva cada ecuación para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<exercise id="fs-id1165135572085">
+<problem id="fs-id1165135572087">
+<para id="fs-id1165134286312"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137423307">
+<problem id="fs-id1165137423309">
+<para id="fs-id1165137423311"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135182927">
+<para id="fs-id1165135182929"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137593590">
+<problem id="fs-id1165137593592">
+<para id="fs-id1165137593594"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135210159">
+<problem id="fs-id1165135210161">
+<para id="fs-id1165134192973"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>7</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>14</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137811250">
+<para id="fs-id1165137811252"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135661453">
+<problem id="fs-id1165135661455">
+<para id="fs-id1165135661457"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>58</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135503824">
+<problem id="fs-id1165135503826">
+<para id="fs-id1165135503828"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>4</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137793981">
+<para id="fs-id1165135545988"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137558471">
+<problem id="fs-id1165137558473">
+<para id="fs-id1165137558476"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>6</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>77</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+</section>
+
+<section id="fs-id1165135186512">
+<title>Gráficos </title>
+
+<para id="fs-id1165135186518">En los siguientes ejercicios, resuelva la ecuación para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> si hay una solución<emphasis effect="italics">.</emphasis> A continuación, grafique ambos lados de la ecuación y preste atención al punto de intersección (si existe) para verificar la solución.</para>
+
+<exercise id="fs-id1165137653248"><problem id="fs-id1165137653250">
+<para id="fs-id1165137855227"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>–4</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135209554">
+<para id="fs-id1165135209556"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+</m:mrow>
+</m:math> </para><media id="fs-id1165135192951" alt="Gráfico de log_9(x)-5=y, y de  y=-4.">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_201.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165135192962">
+<problem id="fs-id1165137832106">
+<para id="fs-id1165137832108"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137804488"><problem id="fs-id1165137804490">
+<para id="fs-id1165137804492"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137400042">
+<para id="fs-id1165137400044"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>≈</m:mo><m:mn>2,5</m:mn>
+</m:mrow>
+</m:math> </para><media id="fs-id1165135504940" alt="Gráfico de ln(3x)=y, y de y=2.">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_203.jpg"/>
+</media></solution>
+</exercise><exercise id="fs-id1165135524527">
+<problem id="fs-id1165135524529">
+<para id="fs-id1165135524531"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137433112"><problem id="fs-id1165137433114">
+<para id="fs-id1165137433116"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>4</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135173426">
+<para id="fs-id1165135173428"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math> </para><media id="fs-id1165132922035" alt="Gráfico de log(4)+log(-5x)=y, y de y=2.">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_205.jpg"/>
+</media></solution></exercise><exercise id="fs-id1165135485178">
+<problem id="fs-id1165135485180">
+<para id="fs-id1165135485183"> <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−6</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135600945"><problem id="fs-id1165135600947">
+<para id="fs-id1165135600950"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137862576">
+<para id="fs-id1165137862578"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>e</m:mi><m:mo>+</m:mo><m:mn>10</m:mn>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>≈</m:mo><m:mn>3,2</m:mn>
+</m:mrow>
+</m:math> </para>
+<media id="fs-id1165137806947" alt="Gráfico de ln(4x-10)-6=y, y de y=-5.">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_207.jpg"/>
+</media></solution>
+</exercise><exercise id="fs-id1165137679189">
+<problem id="fs-id1165137679191">
+<para id="fs-id1165137679193"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>–</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135515894"><problem id="fs-id1165135515896">
+<para id="fs-id1165135515898"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>7</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137834542">
+<para id="fs-id1165137834544">No hay solución</para>
+<media id="fs-id1165137838262" alt="Gráfico de log_11(-2x^2-7x)=y, y de y=log_11(x-2).">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_209.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165137838274">
+<problem id="fs-id1165137838276">
+<para id="fs-id1165137838278"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135150649"><problem id="fs-id1165135150651">
+<para id="fs-id1165135150654"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>8</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165135350621">
+<para id="fs-id1165135350623"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>≈</m:mo><m:mn>2,2</m:mn>
+</m:mrow>
+</m:math> </para>
+<media id="fs-id1165137749149" alt="Gráfico de log_9(3-x)=y, y de y=log_9(4x-8).">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_211.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165137749164">
+<problem id="fs-id1165137749166">
+<para id="fs-id1165137722219"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>13</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137416094"><problem id="fs-id1165137416096">
+<para id="fs-id1165137416098"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>-</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>44</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137526306">
+<para id="fs-id1165137526308"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>101</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>≈</m:mo><m:mn>9,2</m:mn>
+</m:mrow>
+</m:math> </para>
+<media id="fs-id1165135471123" alt="Gráfico de 3/log_2(10)-log(x-9)=y, y de y=log(44).">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_213.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165135471137">
+<problem id="fs-id1165135471139">
+<para id="fs-id1165135471142"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>6</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+
+<para id="fs-id1165137640948">En los siguientes ejercicios, resuelva el valor indicado y grafique la situación mostrando el punto de solución.</para>
+
+<exercise id="fs-id1165137640952"><problem id="fs-id1165137640954">
+<para id="fs-id1165135587819">Una cuenta con un depósito inicial de <m:math>
+<m:mrow>
+<m:mtext>$6.500</m:mtext></m:mrow>
+</m:math> gana <m:math>
+<m:mrow>
+<m:mn>7,25</m:mn><m:mi>%</m:mi>
+</m:mrow>
+</m:math> de interés anual, compuesto continuamente. ¿Cuánto valdrá la cuenta después de 20 años?</para></problem>
+<solution id="fs-id1165137428225">
+<para id="fs-id1165137852031">aproximadamente <m:math>
+<m:mrow> <m:mi>$</m:mi><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>710,24</m:mn>
+</m:mrow>
+</m:math> </para>
+<media id="fs-id1165134176025" alt="Gráfico de f(x)=6500e^(0,0725x) con el punto marcado en (20, 27710,24).">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_215.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165134176039">
+<problem id="fs-id1165134176042">
+<para id="fs-id1165134069298">La fórmula para medir la intensidad del sonido en decibelios <m:math>
+<m:mrow>
+<m:mi>D</m:mi></m:mrow>
+</m:math> se define por la ecuación <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>I</m:mi>
+<m:mrow>
+<m:msub>
+<m:mi>I</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>I</m:mi></m:mrow>
+</m:math> es la intensidad del sonido en vatios por metro cuadrado y <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>I</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>12</m:mn>
+</m:mrow>
+</m:msup>
+</m:mrow>
+</m:math> es el nivel de sonido más bajo que puede oír una persona normal. ¿Cuántos decibelios emite un avión a reacción con una intensidad sonora de <m:math>
+<m:mrow>
+<m:mn>8,3</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:math> vatios por metro cuadrado?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135422920"><problem id="fs-id1165135422922">
+<para id="fs-id1165135422924">La población de una pequeña ciudad se modela mediante la ecuación <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>=</m:mo><m:mn>1650 </m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>0,5</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow><m:mi>t</m:mi>
+</m:mrow>
+</m:math> se mide en años. ¿En cuántos años aproximadamente la población de la ciudad alcanzará <m:math>
+<m:mrow>
+<m:mtext>los 20.000 habitantes?</m:mtext>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137737687">
+<para id="fs-id1165135342973">unos 5 años</para>
+<media id="fs-id1165135342980" alt="Gráfico de P(t)=1650e^(0,5x) con el punto marcado en (5, 20000).">
+<image mime-type="image/jpg" src="../../media/CNX_PreCalc_Figure_04_06_217.jpg"/>
+</media>
+</solution>
+</exercise></section>
+<section id="fs-id1165137405607"><title>En tecnología </title><para id="fs-id1165137405612">En los siguientes ejercicios, resuelva cada ecuación al reescribir la expresión exponencial con el logaritmo indicado. A continuación, utilice la calculadora para estimar la variable a 3 decimales.</para><exercise id="fs-id1165135194277">
+<problem id="fs-id1165135194279">
+<para id="fs-id1165135194281"> <m:math>
+<m:mrow>
+<m:mn>1.000</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,03</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>5.000</m:mn></m:mrow>
+</m:math> utilizando el logaritmo común.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135188499">
+<problem id="fs-id1165135188502">
+<para id="fs-id1165135188504"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>5</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>17</m:mn></m:mrow>
+</m:math> utilizando el logaritmo natural</para>
+</problem>
+<solution id="fs-id1165135185904">
+<para id="fs-id1165135185906"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>17</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>≈</m:mo><m:mn>0,567</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135341353">
+<problem id="fs-id1165135341355">
+<para id="fs-id1165135341357"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,04</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8</m:mn></m:mrow>
+</m:math> utilizando el logaritmo común</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134261256">
+<problem id="fs-id1165135524502">
+<para id="fs-id1165135524504"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>38</m:mn></m:mrow>
+</m:math> utilizando el logaritmo común</para>
+</problem>
+<solution id="fs-id1165134267805">
+<para id="fs-id1165134267807"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>38</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>3</m:mn>
+    <m:mo>)</m:mo></m:mrow><m:mspace width="0.5em"/><m:mtext>  </m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>3</m:mn>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>2,078</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137737012">
+<problem id="fs-id1165137737014">
+<para id="fs-id1165137737016"> <m:math>
+<m:mrow>
+<m:mn>50</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>0,12</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>10</m:mn></m:mrow>
+</m:math> utilizando el logaritmo natural</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165135310626">En los siguientes ejercicios, utilice una calculadora para resolver la ecuación. A menos que se indique lo contrario, redondee todas las respuestas a la diezmilésima más cercana.</para>
+
+<exercise id="fs-id1165135310631">
+<problem id="fs-id1165135310633">
+<para id="fs-id1165135310635"> <m:math>
+<m:mrow>
+<m:mn>7</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>7,9</m:mn><m:mo>=</m:mo><m:mn>47</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137653974">
+<para id="fs-id1165137653976"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≈</m:mo><m:mn>2,2401</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135547245">
+<problem id="fs-id1165135547247">
+<para id="fs-id1165135547250"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>3</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4,4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6,8</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135205735">
+<problem id="fs-id1165135205737">
+<para id="fs-id1165135205739"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>0,7</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>5</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165134319718">
+<para id="fs-id1165134319720"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>≈</m:mo><m:mo>- −</m:mo><m:mtext>44655</m:mtext><m:mo>.</m:mo><m:mtext>7143 </m:mtext>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135445916" class="material-set-2">
+<problem id="fs-id1165135445918">
+<para id="fs-id1165135445921">La presión atmosférica <m:math>
+<m:mrow>
+<m:mi>P</m:mi></m:mrow>
+</m:math> en libras por pulgada cuadrada se representa con la fórmula <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>=</m:mo><m:mn>14,7</m:mn><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>0,21</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> es el número de millas sobre el nivel del mar. Al pie más cercano, ¿qué altura tiene el pico de una montaña con una presión atmosférica de <m:math>
+<m:mrow>
+<m:mn>8,369</m:mn></m:mrow>
+</m:math> libras por pulgada cuadrada? <emphasis effect="italics">(Pista</emphasis>: una milla equivale a 5.280 pies).</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135208774" class="material-set-2">
+<problem id="fs-id1165135208776">
+<para id="fs-id1165135208778">La magnitud <emphasis effect="italics">M </emphasis>de un terremoto se representa mediante la ecuación <m:math>
+<m:mrow>
+<m:mi>M</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>E</m:mi>
+<m:mrow>
+<m:msub>
+<m:mi>E</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow></m:mrow>
+</m:math> donde <m:math>
+<m:mrow>
+<m:mi>E</m:mi></m:mrow>
+</m:math> es la cantidad de energía liberada por el terremoto en julios y <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>E</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>4,4</m:mn>
+</m:mrow>
+</m:msup>
+</m:mrow>
+</m:math> es la medida mínima asignada liberada por un terremoto. A la centésima más cercana, ¿cuál sería la magnitud de un terremoto que libera <m:math>
+<m:mrow>
+<m:mn>1,4</m:mn><m:mo>⋅</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:msup>
+</m:mrow>
+</m:math> julios de energía?</para>
+</problem>
+<solution id="fs-id1165135153103">
+<para id="fs-id1165135153105">aproximadamente <m:math>
+<m:mrow>
+<m:mn>5,83</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+</section><section id="fs-id1165134575932"><title>Extensiones </title><exercise id="fs-id1165134575938">
+<problem id="fs-id1165134575940">
+<para id="fs-id1165135536290">Utilice la definición de logaritmo junto con la propiedad biunívoca de los logaritmos para demostrar que <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165134353151">
+<problem id="fs-id1165134353153">
+<para id="fs-id1165134353155">Recordemos la fórmula del interés continuamente compuesto, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>k</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo></m:mrow>
+</m:math> Utilice la definición de logaritmo junto con las propiedades de los logaritmos para resolver la fórmula del tiempo <m:math>
+<m:mrow><m:mi>t</m:mi>
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow><m:mi>t</m:mi>
+</m:mrow>
+</m:math> es igual a un solo logaritmo.</para></problem>
+<solution id="fs-id1165135191295">
+<para id="fs-id1165135191297"> <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mi>y</m:mi>
+<m:mi>A</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>k</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135550487">
+<problem id="fs-id1165135550489">
+<para id="fs-id1165137771735">Recordemos la fórmula del interés compuesto <m:math>
+<m:mrow>
+<m:mi>A</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>+</m:mo><m:mfrac>
+<m:mi>r</m:mi>
+<m:mi>k</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>k</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo></m:mrow>
+</m:math> Utilice la definición de logaritmo junto con las propiedades de los logaritmos para resolver la fórmula del tiempo <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137734984" class="material-set-2">
+<problem id="fs-id1165137734986">
+<para id="fs-id1165137734988">La ley de enfriamiento de Newton establece que la temperatura <m:math>
+<m:mrow><m:mi>T</m:mi></m:mrow>
+</m:math> de un objeto en cualquier momento <emphasis effect="italics">t</emphasis> puede describirse mediante la ecuación <m:math>
+<m:mrow>
+<m:mi>T</m:mi><m:mo>=</m:mo><m:msub>
+<m:mi>T</m:mi>
+<m:mi>s</m:mi>
+</m:msub>
+<m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msub>
+<m:mi>T</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:mo>- −</m:mo><m:msub>
+<m:mi>T</m:mi>
+<m:mi>s</m:mi>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>-</m:mo><m:mi>k</m:mi><m:mi>t</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow><m:msub>
+<m:mi>T</m:mi>
+<m:mi>s</m:mi>
+</m:msub>
+</m:mrow>
+</m:math> es la temperatura del entorno, <m:math>
+<m:mrow><m:msub>
+<m:mi>T</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> es la temperatura inicial del objeto, y <m:math>
+<m:mrow><m:mi>k</m:mi>
+</m:mrow>
+</m:math> es la velocidad de enfriamiento. Utilice la definición de logaritmo junto con las propiedades de los logaritmos para resolver la fórmula del tiempo <m:math>
+<m:mrow><m:mi>t</m:mi>
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow><m:mi>t</m:mi>
+</m:mrow>
+</m:math> es igual a un solo logaritmo.</para></problem>
+<solution id="fs-id1165137426905">
+<para id="fs-id1165137426907"> <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>T</m:mi><m:mo>-</m:mo><m:msub>
+<m:mi>T</m:mi>
+<m:mi>s</m:mi>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>T</m:mi>
+<m:mn>0</m:mn>
+</m:msub>
+<m:mo>- −</m:mo><m:msub>
+<m:mi>T</m:mi>
+<m:mi>s</m:mi>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo><m:mspace width="0.4em"/><m:mfrac>
+<m:mn>1</m:mn>
+<m:mi>k</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</section></section>
+</content>
+<glossary>
+<definition id="fs-id1165135149311">
+<term>solución extraña</term>
+<meaning id="fs-id1165134059776">solución que se introduce al resolver una ecuación y que no satisface las condiciones de la ecuación original</meaning>
+</definition>
+</glossary>
+</document>

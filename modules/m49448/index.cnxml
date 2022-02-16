@@ -1,0 +1,2077 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Principios de conteo</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49448</md:content-id>
+  <md:title>Principios de conteo</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>    Resolver problemas de recuento mediante el principio de adición.</item>
+<item>    Resolver problemas de conteo mediante el principio de multiplicación.</item>
+<item>    Resolver problemas de conteo mediante permutaciones con n objetos distintos.</item>
+<item>    Resolver problemas de conteo mediante combinaciones.</item>
+<item>    Calcular el número de subconjuntos de un conjunto dado.</item>
+<item>    Resolver problemas de conteo mediante permutaciones que incluyan n objetos no distintos.</item></list></md:abstract>
+  <md:uuid>3183f5f9-230d-4777-b547-67eda9631a22</md:uuid>
+</metadata>
+
+<content>
+<section id="eip-215" class="coreq-skills"><section id="eip-603" class="learning-objectives"><title>Objetivos de aprendizaje</title><list id="eip-idm383560624">
+<item>Resolver problemas de conteo utilizando el principio de adición.</item>
+<item>Resolver problemas de conteo utilizando el principio de multiplicación.</item>
+</list>
+</section><section id="eip-823"><title>Objetivo 1: Resolver problemas de conteo utilizando el principio de adición.</title><para id="eip-idm392533680">En la teoría de la probabilidad, el <term id="term-00001">resultado</term> es un posible resultado de un experimento o prueba.
+</para><para id="eip-480">En la teoría de la probabilidad, un <term id="term-00002">evento</term> es un conjunto de resultados de un experimento.
+</para><para id="eip-724">Los <term id="term-00003">eventos inconexos</term> no pueden ocurrir al mismo tiempo. En otras palabras, son <term id="term-00004">mutuamente excluyentes</term>.
+</para><note id="eip-44"><title>El principio de adición</title>El <term id="term-00005">principio de adición </term>establece que si un evento puede ocurrir de A maneras (A resultados) y un segundo evento puede ocurrir de B maneras (B resultados) y ambos eventos no pueden ocurrir al mismo tiempo (A y B inconexos), entonces hay A + B maneras (A + B resultados) para que ocurra el primer evento o el segundo.</note><para id="eip-931">El <emphasis>principio de adición</emphasis> se aplica cuando hacemos <emphasis>una sola selección</emphasis>.
+</para><example id="eip-640"><exercise id="eip-572"><problem id="eip-217"><title>Resolver problemas de conteo utilizando el principio de adición.</title>
+  <para id="eip-890"><span class="token">Ⓐ</span>
+Se colocan siete canicas rojas y cinco verdes en una bolsa. ¿Cuántas canicas hay para elegir?
+  </para>
+
+  <para id="eip-895"> <span class="token">Ⓑ</span>
+Supongamos que el conjunto A = {-5,-3,-1,2,3,4,5,6}. ¿De cuántas maneras se puede elegir un número negativo o par de A?
+  </para>
+  <para id="eip-115"><span class="token">Ⓒ</span>
+Un estudiante está comprando una computadora nueva. Está decidiendo entre 2 computadoras de escritorio y 3 portátiles. ¿Cuál es el número total de opciones de computadora?
+  </para>
+</problem>
+
+
+<solution id="eip-idm207361968"><para id="eip-idm207361840"><span class="token">Ⓐ</span>
+Hay 7 formas de escoger una canica roja y 5 formas de escoger una canica verde, y no podemos escoger una roja y una verde al mismo tiempo. Por lo tanto, hay 7 + 5 = 12 maneras de escoger una canica.</para>
+<para id="eip-idm505408400"><span class="token">Ⓑ</span>
+Hay 3 números negativos en A y 3 números pares en A y los números pares no son negativos. Por lo tanto, hay 3 + 3 = 6 maneras de elegir un número negativo o un número par de A.
+</para>
+<para id="eip-idm400395536"><span class="token">Ⓒ</span>
+Hay 2 opciones para una computadora de escritorio y 3 para un portátil, y el estudiante busca comprar una computadora. Por lo tanto, no puede elegir ambas. Teniendo en cuenta lo anterior, hay 2 + 3 = 5 opciones totales de computadora.
+</para>
+</solution></exercise></example><section id="eip-946" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-880">
+Resolver problemas de conteo utilizando el principio de adición.
+
+</para><exercise id="eip-195"><problem id="eip-183">
+  <para id="eip-142">
+Se colocan diez canicas rojas y seis verdes en una bolsa. ¿Cuántas canicas hay para elegir?
+
+  </para>
+</problem>
+</exercise><exercise id="eip-191"><problem id="eip-896">
+  <para id="eip-645">Supongamos que el conjunto A = {-5,-3,-1,2,3,4,5,6}. ¿Cuántas maneras hay de elegir un número positivo o impar de A?
+
+  </para></problem>
+
+</exercise><exercise id="eip-67"><problem id="eip-617">
+  <para id="eip-967">
+Un niño está decidiendo la merienda para la tarde. Está decidiendo entre 5 papas fritas diferentes, 3 frutas diferentes y 2 vegetales diferentes. ¿Cuál es el número total de opciones de merienda?
+
+  </para>
+</problem>
+
+</exercise></section></section><section id="eip-969"><title>Objetivo 2: Resolver problemas de conteo utilizando el principio de multiplicación.</title><note id="eip-406"><title>El principio de multiplicación</title>El <term id="term-00006">principio de multiplicación</term> establece que si un evento puede ocurrir de A maneras (A resultados) y un segundo evento puede ocurrir de B maneras (B resultados) después de que el primer evento haya ocurrido, entonces los dos eventos pueden ocurrir en <m:math><m:mrow><m:mtext>A</m:mtext><m:mo>⋅</m:mo><m:mtext>B</m:mtext></m:mrow></m:math> maneras. Esto también se conoce como el principio fundamental de conteo.
+
+</note><para id="eip-5">El <emphasis>principio de multiplicación</emphasis> se aplica cuando hacemos <emphasis>más de una selección</emphasis>.
+</para><example id="eip-789"><exercise id="eip-998"><problem id="eip-453">
+<para id="eip-456">Resolver problemas de conteo utilizando el principio de multiplicación.
+
+
+</para><list id="eip-496" list-type="labeled-item"><item><span class="token">Ⓐ</span> Diane empacó 2 faldas, 3 blusas y 2 suéteres para su viaje de negocios. Tendrá que elegir una falda y una blusa para cada conjunto y decidir si se pone el suéter. Utilice el principio de multiplicación para hallar el número total de conjuntos posibles.
+</item>
+<item><span class="token">Ⓑ</span> Un restaurante ofrece un especial de almuerzo que incluye una entrada, un plato principal y una bebida. Hay 3 tipos de entradas, 4 opciones de platos principales y 5 opciones de bebidas. Halle el número total de especiales para el almuerzo posibles.
+</item>
+<item><span class="token">Ⓒ</span> El próximo semestre usted va a tomar una clase de Ciencias, una de Matemáticas, una de Historia y una de Inglés. Según el horario tiene 4 clases diferentes de ciencias, 3 clases diferentes de matemáticas, 2 clases diferentes de historia y 3 clases diferentes de inglés para elegir. Suponiendo que no haya conflictos de horario, ¿cuántas selecciones diferentes de cuatro cursos puede hacer?
+</item>
+<item><span class="token">Ⓓ</span> ¿Cuántas placas formadas por 2 letras seguidas de 4 dígitos son posibles?
+</item></list></problem>
+
+<solution id="eip-445">
+<list id="eip-idm385275312" list-type="labeled-item"><item><span class="token">Ⓐ</span> Hay 2 resultados para las faldas, 3 resultados para las blusas y 2 resultados para los suéteres. Entonces, el número total de conjuntos posibles es:<newline/> <m:math><m:mtable><m:mtr><m:mtd><m:munder><m:mn>2</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>3</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>2</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>=</m:mo><m:mn>12</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>Faldas</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Blusas</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Suéteres</m:mi></m:mtd><m:mtd/></m:mtr></m:mtable></m:math>
+</item>
+<item><span class="token">Ⓑ</span> Hay 3 resultados para las entradas, 4 resultados para el plato principal y 5 resultados para las bebidas. El número total de especiales para el almuerzo es:<newline/> <m:math><m:mtable><m:mtr><m:mtd><m:munder><m:mn>3</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>4</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>5</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>=</m:mo><m:mn>60</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>Entradas</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Plato principal</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Bebidas</m:mi></m:mtd><m:mtd/></m:mtr></m:mtable></m:math>
+</item>
+<item><span class="token">Ⓒ</span> Hay 4 resultados para la clase de Ciencias, 3 resultados para la clase de Matemáticas, 2 resultados para la clase de Historia y 3 resultados para la clase de Inglés. El número total de selecciones de las 4 asignaturas es:<newline/> <m:math><m:mtable><m:mtr><m:mtd><m:munder><m:mn>4</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>3</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>2</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>3</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>=</m:mo><m:mn>72</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>Ciencias</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Matemáticas</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Inglés</m:mi></m:mtd><m:mtd/><m:mtd><m:mi>Historia</m:mi></m:mtd><m:mtd/></m:mtr></m:mtable></m:math>
+</item>
+<item><span class="token">Ⓓ</span> Hay 26 resultados para la 1.ª letra, 26 resultados para la segunda letra, 10 resultados para el primer dígito, 10 resultados para el segundo dígito, 10 resultados para el tercer dígito y 10 resultados para el 4.º dígito. El número de placas es:<newline/> <m:math><m:mtable><m:mtr><m:mtd><m:munder><m:mn>26</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>26</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>10</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>10</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>10</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>·</m:mo></m:mtd><m:mtd><m:munder><m:mn>10</m:mn><m:mo>⏟</m:mo></m:munder></m:mtd><m:mtd><m:mo>=</m:mo><m:mo> </m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>760</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>1</m:mn><m:mi>.ª letra</m:mi></m:mtd><m:mtd/><m:mtd><m:mn>2</m:mn><m:mi>.ª letra</m:mi></m:mtd><m:mtd/><m:mtd><m:mn>1</m:mn><m:mi>er dígito</m:mi></m:mtd><m:mtd/><m:mtd><m:mn>2</m:mn><m:mi>.º dígito</m:mi></m:mtd><m:mtd/><m:mtd><m:mn>3</m:mn><m:mi>er dígito</m:mi></m:mtd><m:mtd/><m:mtd><m:mn>4</m:mn><m:mi>.º dígito</m:mi></m:mtd><m:mtd/></m:mtr></m:mtable></m:math>
+</item>
+</list></solution>
+</exercise>
+</example><section id="eip-729" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-791">
+Resolver problemas de conteo utilizando el principio de multiplicación.
+
+</para><exercise id="eip-99"><problem id="eip-707">
+  <para id="eip-199">¿Cuántas cadenas de dos letras, la primera letra del conjunto A y la segunda del conjunto B, se pueden formar a partir de los conjuntos A = {b, c, d} y B = {a, e, i, o, u}? 
+
+  </para></problem>
+
+</exercise><exercise id="eip-657"><problem id="eip-911">
+  <para id="eip-843">
+Si tiene tres tipos de carne para hacer un sándwich (pavo, rosbif y jamón) y dos tipos de pan (de trigo y de centeno), ¿cuántos sándwiches diferentes con un solo tipo de carne se pueden hacer?
+
+  </para>
+</problem>
+
+</exercise><exercise id="eip-926"><problem id="eip-683">
+  <para id="eip-49">
+El próximo semestre usted va a tomar una clase de Ciencias, una de Matemáticas, una de Historia y una de Inglés. Según el horario tiene 4 clases diferentes de ciencias, 3 clases diferentes de matemáticas, 2 clases diferentes de historia y 3 clases diferentes de inglés para elegir. Suponiendo que no haya conflictos de horario, ¿cuántas selecciones diferentes de cuatro cursos puede hacer?
+
+  </para>
+</problem>
+
+</exercise><exercise id="eip-775"><problem id="eip-448">
+  <para id="eip-132">
+En Missouri, las placas tienen 3 letras y 3 números. ¿Cuántas placas formadas por 3 letras seguidas de 3 dígitos son posibles?
+
+  </para>
+</problem>
+
+</exercise></section></section></section><para id="fs-id1165137432308">Una nueva compañía vende fundas personalizables para tabletas y teléfonos inteligentes. Cada funda está disponible en varios colores y se puede personalizar por un precio adicional con imágenes o un monograma. El cliente puede elegir no personalizar o puede elegir una, dos o tres imágenes o un monograma. El cliente puede elegir el orden de las imágenes y las letras del monograma. La compañía está trabajando con una agencia para desarrollar una campaña de marketing centrada en el gran número de opciones que ofrecen. ¡Contar las posibilidades es un reto!</para>
+
+<para id="fs-id1165135313702">Todos los días nos encontramos con una gran variedad de problemas de conteo. Existe una rama de las matemáticas dedicada al estudio de problemas de conteo como este. Otras aplicaciones del conteo son las contraseñas seguras, los resultados de las carreras de caballos y la elección de los horarios de las universidades. En esta sección examinaremos este tipo de matemáticas.</para>
+
+<section id="fs-id1165137463810">
+<title>Utilizar el principio de adición</title>
+<para id="fs-id1165137832066">La compañía que vende fundas personalizables ofrece fundas para tabletas y teléfonos inteligentes. Hay 3 modelos de tabletas y 5 de teléfonos inteligentes compatibles. El <emphasis>principio de adición</emphasis> nos dice que podemos sumar el número de opciones de la tableta al número de opciones del teléfono inteligente para hallar el número total de opciones. Por el principio de adición, hay 8 opciones en total, como podemos ver en la <link target-id="CNX_Precalc_Figure_11_05_001"/>.</para>
+
+<figure id="CNX_Precalc_Figure_11_05_001"><media id="fs-id1165137447202" alt="La adición de 3 iPods y 4 iPhones.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_001n.jpg"/>
+</media>
+</figure>
+<note id="fs-id1165135186420">
+
+<title>El principio de adición</title>
+<para id="fs-id1165135351541">Según el <term id="term-00007">principio de adición</term>, si un evento puede ocurrir de <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras y un segundo evento sin resultados comunes puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras, entonces el primer <emphasis effect="italics">o</emphasis> el segundo evento puede ocurrir de <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras.</para></note>
+
+<example id="Example_11_05_01">
+<exercise id="fs-id1165137536266"><problem id="fs-id1165137552601">
+<title>Utilizar el principio de adición</title>
+<para id="fs-id1165135206132">En el menú de la cena hay 2 opciones de plato principal vegetariano y 5 de carne. ¿Cuál es el número total de opciones de plato principal?</para>
+</problem>
+<solution id="fs-id1165137410849">
+<para id="fs-id1165137399341">Podemos sumar el número de opciones vegetarianas al número de opciones de carne para hallar el número total de opciones de platos principales.</para>
+
+<media id="fs-id1165135237185" alt="La suma del tipo de opciones para una entrada.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_002.jpg"/>
+</media>
+<para id="fs-id1165137786497">Hay 7 opciones en total.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137843834" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_01">
+<problem id="fs-id1165137455516"><para id="fs-id1165137529243">Un estudiante está comprando una computadora nueva. Está decidiendo entre 3 computadoras de escritorio y 4 portátiles. ¿Cuál es el número total de opciones de computadora?</para>
+</problem>
+<solution id="fs-id1165137723942">
+<para id="fs-id1165137732616">7</para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137645260">
+<title>Utilización del principio de multiplicación</title>
+<para id="fs-id1165137767730">El <emphasis>principio de multiplicación</emphasis> se aplica cuando hacemos más de una selección. Supongamos que elegimos una entrada, un plato principal y un postre. Si hay 2 opciones de entradas, 3 opciones de plato principal y 2 opciones de postre en un menú de cena de precio fijo, hay un total de 12 opciones posibles de cada una, como se muestra en el diagrama de árbol en la <link target-id="CNX_Precalculus_Figure_11_05_003"/>.</para>
+<figure id="CNX_Precalculus_Figure_11_05_003"><media id="fs-id1165135160562" alt="Un diagrama de árbol de las diferentes combinaciones de menús.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_003.jpg"/>
+</media>
+</figure><para id="eip-646">Las opciones posibles son:</para><list id="fs-id1165137641640" list-type="enumerated" number-style="arabic"><item>sopa, pollo, pastel</item>
+<item>sopa, pollo, pudín</item>
+<item>sopa, pescado, pastel</item>
+<item>sopa, pescado, pudín</item>
+<item>sopa, filete, pastel</item>
+<item>sopa, filete, pudín</item>
+<item>ensalada, pollo, pastel</item>
+<item>ensalada, pollo, pudín</item>
+<item>ensalada, pescado, pastel</item>
+<item>ensalada, pescado, pudín</item>
+<item>ensalada, filete, pastel</item>
+<item>ensalada, filete, pudín</item>
+</list><para id="eip-234">También podemos hallar el número total de cenas posibles mediante la multiplicación.</para><para id="eip-933">También podríamos llegar a la conclusión de que hay 12 posibles opciones de cena simplemente aplicando el principio de multiplicación.</para><equation id="eip-828" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>N.º de</m:mo><m:mspace width="0.5em"/><m:mtext>de opciones de entradas </m:mtext><m:mo>×</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>N.º de</m:mo><m:mspace width="0.5em"/><m:mtext>de opciones de platos principales </m:mtext><m:mo>×</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>N.º de</m:mo><m:mspace width="0.5em"/><m:mtext>de opciones de postres</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mtext>                  </m:mtext><m:mo>×</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>             </m:mtext><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mo>×</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>              </m:mtext><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<note id="fs-id1165137560649">
+
+<title>El principio de multiplicación</title>
+<para id="fs-id1165137706934">Según el <term id="term-00008">principio de multiplicación</term>, si un evento puede ocurrir de <m:math>
+ <m:mi>m</m:mi>
+</m:math> maneras y un segundo evento puede ocurrir en <m:math>
+ <m:mi>n</m:mi>
+</m:math> maneras después de que el primer evento haya ocurrido, entonces los dos eventos pueden ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>×</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras. Esto también se conoce como el <term id="term-00009">principio fundamental de conteo</term>.</para></note>
+
+<example id="Example_11_05_02">
+<exercise id="fs-id1165137771642"><problem id="fs-id1165134047731">
+<title>Utilización del principio de multiplicación</title>
+<para id="fs-id1165137590306">Diane empacó 2 faldas, 4 blusas y un suéter para su viaje de negocios. Tendrá que elegir una falda y una blusa para cada conjunto y decidir si se pone el suéter. Utilice el principio de multiplicación para hallar el número total de conjuntos posibles.</para></problem>
+<solution id="fs-id1165137580422">
+<para id="fs-id1165137771530">Para hallar el número total de conjuntos, calcule el producto del número de opciones de falda, el número de opciones de blusa y el número de opciones de suéter.</para>
+<media id="fs-id1165137733725" alt="La multiplicación del número de opciones de falda (2) por el número de opciones de blusa (4) por el número de opciones de suéter (2) es igual a 16.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_004.jpg"/>
+</media>
+<para id="fs-id1165137755612">Hay 16 conjuntos posibles.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137398102" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_02">
+<problem id="fs-id1165137571190"><para id="fs-id1165137423732">Un restaurante ofrece un desayuno especial que incluye un sándwich de desayuno, una guarnición y una bebida. Hay 3 tipos de sándwiches de desayuno, 4 opciones de guarniciones y 5 opciones de bebidas. Calcule el número total de desayunos especiales posibles.</para></problem>
+<solution id="fs-id1165137473501"><para id="fs-id1165135255245">Hay 60 desayunos especiales posibles.</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137553058">
+<title>Calcular el número de permutaciones de <emphasis effect="italics">n</emphasis> objetos distintos</title>
+<para id="fs-id1165137461547">El principio de multiplicación se puede usar para resolver diversos tipos de problemas. Un tipo de problema consiste en colocar objetos en orden. Ordenamos las letras en palabras y los dígitos en números, nos alineamos para las fotografías, decoramos las habitaciones y mucho más. Ordenar los objetos se llama una <term id="term-00010">permutación</term>.</para>
+
+<section id="fs-id1165137678383"><title>Hallar el número de permutaciones de <emphasis effect="italics">n</emphasis> objetos distintos mediante el principio de multiplicación</title><para id="fs-id1165137725216">Para resolver problemas de permutación, suele ser útil dibujar segmentos de línea para cada opción. Eso nos permite determinar el número de cada opción para poder multiplicar. Por ejemplo, supongamos que tenemos cuatro cuadros y queremos hallar el número de maneras en que podemos colgar tres de los cuadros en orden en la pared. Podemos dibujar tres líneas para representar los tres lugares de la pared.</para>
+<para id="eip-id1853594">
+<media id="fs-id1165137804112" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_005.jpg"/>
+</media></para>
+
+<para id="fs-id1165137732561">Hay cuatro opciones para el primer lugar, así que escribimos un 4 en la primera línea.</para>
+
+<para id="eip-id2757476">
+<media id="fs-id1165137854788" alt="Cuatro por dos espacios en blanco." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_006.jpg"/>
+</media></para>
+<para id="fs-id1165137597142">Una vez ocupado el primer lugar, hay tres opciones para el segundo lugar, así que escribimos un 3 en la segunda línea.</para>
+
+<para id="eip-id1618202">
+<media id="fs-id1165137570729" alt="Cuatro por tres por un espacio en blanco." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_007.jpg"/>
+</media></para>
+
+<para id="fs-id1165137529516">Una vez ocupado el segundo lugar, hay dos opciones para el tercer lugar, así que escribimos un 2 en la tercera línea. Por último, calculamos el producto.</para>
+
+<para id="eip-id1514587">
+<media id="eip-id1165137874239" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_008.jpg"/>
+</media></para>
+
+<para id="fs-id1165135208984">Hay 24 permutaciones posibles de los cuadros.</para>
+
+<note id="fs-id1165137731358" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137436230"><emphasis>Dadas</emphasis> <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> <emphasis>opciones distintas, determine cuántas permutaciones hay.</emphasis></para>
+<list id="fs-id1165137552251" list-type="enumerated" number-style="arabic"><item>Determine cuántas opciones hay para la primera situación.</item>
+<item>Determine cuántas opciones quedan para la segunda situación.</item>
+<item>Continúe hasta que todos los espacios estén llenos.</item>
+<item>Multiplique los números juntos.</item>
+</list></note><example id="Example_11_05_03">
+<exercise id="fs-id1165137724829">
+<problem id="fs-id1165137551779">
+<title>Hallar el número de permutaciones mediante el principio de multiplicación</title>
+<para id="fs-id1165135259631">En una competencia de natación, nueve nadadores participan en una carrera.</para>
+<list id="fs-id1165137803400" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>¿De cuántas maneras se pueden ubicar de primero, segundo y tercero?</item>
+<item><span class="token">Ⓑ</span>¿De cuántas maneras se pueden ubicar de primero, segundo y tercero si un nadador llamado Ariel gana el primer puesto? (Supongamos que solo hay un participante llamado Ariel).</item>
+<item><span class="token">Ⓒ</span>¿De cuántas maneras se pueden alinear los nueve nadadores para una foto?</item>
+</list>
+</problem>
+<solution id="fs-id1165137533114">
+<list id="fs-id1165135177686" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Dibuje líneas para cada lugar.
+<para id="eip-id2041615">
+<media id="eip-id1165133349418" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_009.jpg"/>
+</media></para>
+<para id="fs-id1165137827584">Hay 9 opciones para el primer lugar. Una vez que alguien ha ganado el primer lugar, hay 8 opciones restantes para el segundo lugar. Una vez ganados el primer y el segundo puesto, quedan 7 opciones para el tercer lugar.</para>
+<para id="eip-id1850657">
+<media id="eip-id1165135317102" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_010.jpg"/>
+</media></para>
+<para id="fs-id1165137533708">Multiplique para hallar que hay 504 maneras en que los nadadores se pueden ubicar.</para>
+</item>
+<item><span class="token">Ⓑ</span>Dibuje líneas para describir cada lugar.
+<para id="eip-id1847492">
+<media id="eip-id1165133101712" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_011.jpg"/>
+</media></para>
+<para id="fs-id1165137527991">Sabemos que Ariel debe ganar el primer lugar, así que solo hay 1 opción para el primer lugar. Quedan 8 opciones para el segundo puesto y 7 para el tercero.</para>
+<para id="eip-id2267727">
+<media id="eip-id1165137580736" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_012.jpg"/>
+</media></para>
+<para id="fs-id1165137464178">Multiplique para hallar que hay 56 maneras en que los nadadores se pueden ubicar si Ariel gana el primer lugar.</para>
+</item>
+<item><span class="token">Ⓒ</span>
+<para id="fs-id1165137531490">Dibuje líneas para describir cada lugar de la foto.</para>
+<para id="eip-id1876249">
+<media id="eip-id1165135192171" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_013.jpg"/>
+</media></para>
+<para id="fs-id1165137779101">Hay 9 opciones para el primer lugar, luego 8 para el segundo, 7 para el tercero, 6 para el cuarto, y así sucesivamente hasta que solo quede 1 persona para el último puesto.</para>
+<para id="eip-id2190261">
+<media id="eip-id1165137551358" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_05_014.jpg"/>
+</media></para>
+<para id="fs-id1165137446031">Hay 362.880 permutaciones posibles para que los nadadores se alineen.</para>
+</item>
+</list></solution>
+<commentary id="fs-id1165137896132">
+<title>Análisis </title>
+<para id="fs-id1165135638483">Observe que en la parte c, hallaremos que hay 9! maneras de que 9 personas se alineen. El número de permutaciones de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos siempre puede ser calculado por <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi><m:mo>!</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></commentary>
+</exercise>
+</example>
+
+<para id="eip-327">Una familia de cinco personas se está retratando. Utilice el principio de multiplicación para hallar lo siguiente.</para><note id="eip-id2465210" class="precalculus try">
+<label>Ejercicio</label>
+
+<exercise id="ti_11_05_03">
+<problem id="fs-id1165137817722"><para id="fs-id1165137817723">¿De cuántas maneras puede alinearse la familia para el retrato?</para></problem>
+<solution id="fs-id1165137407672"><para id="fs-id1165137407673">120</para></solution>
+</exercise>
+</note>
+<note id="eip-id2465241" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_04">
+<problem id="fs-id1165135193101"><para id="fs-id1165135193102">¿De cuántas maneras el fotógrafo puede alinear a 3 miembros de la familia?</para></problem>
+<solution id="fs-id1165137665821"><para id="fs-id1165137665822">60</para></solution>
+</exercise>
+</note>
+<note id="eip-id2465272" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_05">
+<problem id="fs-id1165137810891"><para id="fs-id1165137810892">¿De cuántas maneras se puede alinear la familia para el retrato si los padres deben situarse en cada extremo?</para></problem>
+<solution id="fs-id1165137424182"><para id="fs-id1165137424183">12</para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137698292"><title>Hallar el número de permutaciones de <emphasis effect="italics">n</emphasis> objetos distintos mediante una fórmula</title><para id="fs-id1165137862888">Para algunos problemas de permutación es inconveniente utilizar el principio de multiplicación porque hay muchos números que multiplicar. Afortunadamente, podemos resolver estos problemas mediante una fórmula. Antes de aprender la fórmula, veamos dos notaciones comunes para las permutaciones. Si tenemos un conjunto de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos y queremos elegir <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos del conjunto en orden, escribimos <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Otra forma de escribir esto es <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>P</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> una notación comúnmente vista en computadoras y calculadoras. Para calcular <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> comenzamos por hallar <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi><m:mo>!</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el número de maneras de alinear todos los <m:math>
+ <m:mrow>
+<m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos. A continuación, dividimos entre <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+ </m:mrow>
+</m:math> para anular los elementos <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> que no deseamos alinear.</para><para id="fs-id1165137530985">Veamos cómo funciona con un ejemplo sencillo. Imagine un club de seis personas. Tienen que elegir un presidente, un vicepresidente y un tesorero. Seis personas pueden ser elegidas presidente, cualquiera de las cinco restantes puede ser elegida vicepresidente y cualquiera de las cuatro restantes podría ser elegida tesorero. El número de maneras en que esto se puede hacer es <m:math>
+ <m:mrow>
+<m:mn>6</m:mn><m:mo>×</m:mo><m:mn>5</m:mn><m:mo>×</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>120.</m:mn>
+ </m:mrow>
+</m:math> Utilizando los factoriales, obtenemos el mismo resultado.</para><equation id="eip-959" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow><m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mo>·</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>120</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137406160">Hay 120 maneras de seleccionar 3 ejecutivos en orden de un club con 6 miembros. Nos referimos a esto como una permutación de 6 tomada de 3 en 3. La fórmula general es la siguiente.</para>
+<equation id="eip-469" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137443996">Observe que la fórmula sigue funcionando si elegimos <emphasis effect="underline">todos</emphasis> los <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos y los colocamos en orden. En ese caso estaríamos dividiendo entre <m:math>
+ <m:mrow>
+ <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>-</m:mo><m:mi>n</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>!</m:mo>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+ <m:mn>0</m:mn><m:mo>!</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que dijimos antes es igual a 1. Por lo tanto, el número de permutaciones de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos tomados <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> a la vez es <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mn>1</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> o simplemente <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi><m:mo>!</m:mo><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> </para>
+<note id="fs-id1165137657370">
+
+<title>Fórmula para permutaciones de <emphasis effect="italics">n</emphasis> objetos distintos</title>
+
+<para id="fs-id1165135503766">Dados <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos, el número de maneras de seleccionar <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos del conjunto en orden es</para>
+<equation id="fs-id1165137679369" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+</note>
+<note id="fs-id1165137644544" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137531306"><emphasis>Dado un problema de palabras, evalúe las posibles permutaciones.</emphasis></para>
+<list id="fs-id1165137461265" list-type="enumerated" number-style="arabic">
+<item>Identifique <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> a partir de la información dada.</item>
+<item>Identifique <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> a partir de la información dada.</item>
+<item>Sustituya <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> en la fórmula con los valores dados.</item>
+<item>Evalúe.</item>
+</list>
+</note>
+
+<example id="Example_11_05_04">
+<exercise id="fs-id1165137660582"><problem id="fs-id1165137660584">
+<title>Calcular el número de permutaciones mediante la fórmula</title>
+<para id="fs-id1165137677568">Una profesora está creando un examen de 9 preguntas a partir de un banco de pruebas de 12 preguntas. ¿De cuántas maneras puede seleccionar y ordenar las preguntas?</para>
+</problem>
+<solution id="fs-id1165137597587">
+<para id="fs-id1165137597589">Sustituya <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>12</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>9</m:mn>
+ </m:mrow>
+</m:math> en la fórmula de permutación y simplifique.</para>
+<equation id="eip-id1165134385701" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext> </m:mtext><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>!</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn><m:mo>!</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>- −</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn><m:mo>!</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>!</m:mo>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>79</m:mn><m:mtext>,</m:mtext><m:mn>833</m:mn><m:mtext>,</m:mtext><m:mn>600</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137543052">¡Hay 79.833.600 permutaciones posibles de preguntas de examen!</para>
+</solution>
+<commentary id="fs-id1165137805377">
+<title>Análisis </title>
+<para id="fs-id1165137553609">También podemos utilizar una calculadora para hallar permutaciones. Para este problema, introducimos 12, pulsamos la función <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mspace width="0.5em"/>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>P</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+
+ </m:mrow>
+</m:math>, introducimos 9 y luego pulsamos el signo de igual. La función <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mspace width="0.5em"/>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>P</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+
+ </m:mrow>
+</m:math> se encuentra en el menú MATH con los comandos de probabilidad.</para></commentary>
+</exercise></example>
+
+<note id="fs-id1165137386959" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137939711"><emphasis>¿Podríamos resolver el <link target-id="Example_11_05_04"/> utilizando el principio de multiplicación?</emphasis></para>
+<para id="fs-id1165137442220"><emphasis effect="italics">Sí. Podríamos multiplicar</emphasis> <m:math>
+ <m:mrow>
+ <m:mn>1</m:mn><m:mn>2 </m:mn><m:mo>⋅</m:mo><m:mn>1</m:mn><m:mn>1</m:mn><m:mo>⋅</m:mo><m:mn>1</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:mn>9</m:mn><m:mo>⋅</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:mn>7</m:mn><m:mo>⋅</m:mo><m:mn>6</m:mn><m:mo>⋅</m:mo><m:mn>5</m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> <emphasis effect="italics">para hallar la misma respuesta</emphasis>.</para></note>
+
+<para id="eip-333">Una obra de teatro tiene un elenco de 7 actores que se preparan para subir el telón. Use la fórmula de permutación para calcular lo siguiente.</para>
+<note id="eip-id1636733" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_06">
+<problem id="fs-id1165137444344"><para id="fs-id1165137444345">¿De cuántas maneras se pueden alinear los 7 actores?</para></problem>
+<solution id="fs-id1165135241065"><para id="fs-id1165135241066"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>040</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+<note id="eip-id1681009" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_07">
+<problem id="fs-id1165137603651"><para id="fs-id1165137603652">¿De cuántas maneras se puede elegir la alineación de 5 de los 7 actores?</para></problem>
+<solution id="fs-id1165137933936"><para id="fs-id1165137933937"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>520</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section></section><section id="fs-id1165137648225"><title>Calcular el número de combinaciones mediante la fórmula</title><para id="fs-id1165135193615">Hasta ahora, hemos visto problemas que nos piden que pongamos los objetos en orden. Hay muchos problemas en los que queremos seleccionar algunos objetos de un grupo de objetos, pero no nos importa el orden. Cuando estamos seleccionando objetos y el orden no importa, estamos tratando con <term id="term-00011">combinaciones</term>. Una selección de <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos de un conjunto de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos en los que no importa el orden se puede escribir como <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Al igual que con las permutaciones, <m:math>
+ <m:mrow>
+ <m:mtext>C</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> también puede escribirse como <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mspace width="0.5em"/>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>C</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En este caso, la fórmula general es la siguiente.</para>
+<equation id="eip-399" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>C</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137654882">En un problema anterior se trataba de elegir 3 de 4 cuadros posibles para colgar en una pared. Hallamos que había 24 maneras de seleccionar 3 de los 4 cuadros en orden. Pero, ¿y si no nos importa el orden? Esperaríamos un número menor porque seleccionar los cuadros 1, 2, 3 sería lo mismo que seleccionar los cuadros 2, 3, 1. Para hallar el número de maneras de seleccionar 3 de los 4 cuadros, sin tener en cuenta el orden, divida el número de permutaciones entre el número de maneras de ordenar 3 cuadros. Hay <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>!</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> maneras de ordenar 3 cuadros. Hay <m:math>
+ <m:mrow>
+<m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o 4 maneras de seleccionar 3 de los 4 cuadros. Este número tiene sentido porque cada vez que seleccionamos 3 cuadros, <emphasis effect="italics">no</emphasis> estamos seleccionando 1 cuadro. Hay 4 cuadros que podríamos elegir <emphasis effect="italics">no</emphasis> seleccionar, por lo que hay 4 maneras de seleccionar 3 de los 4 cuadros.</para><note id="fs-id1165137731115">
+
+<title>Fórmula para combinaciones de <emphasis effect="italics">n</emphasis> objetos distintos</title>
+<para id="fs-id1165137500953">Dados <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos, el número de maneras de seleccionar <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos del conjunto es</para>
+<equation id="fs-id1165135531485" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>C</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+</note>
+
+<note id="fs-id1165137433362" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137659772"><emphasis>Dado un número de opciones, determine el número posible de combinaciones.</emphasis></para>
+<list id="fs-id1165137411159" list-type="enumerated" number-style="arabic">
+<item>Identifique <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> a partir de la información dada.</item>
+<item>Identifique <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> a partir de la información dada.</item>
+<item>Sustituya <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> en la fórmula con los valores dados.</item>
+<item>Evalúe.</item>
+</list>
+</note>
+
+<example id="Example_11_05_05">
+<exercise id="fs-id1165137666917">
+<problem id="fs-id1165137463613">
+<title>Calcular el número de combinaciones utilizando la fórmula</title>
+<para id="fs-id1165137407735">Un restaurante de comida rápida ofrece cinco opciones de guarniciones. Su comida viene con dos guarniciones.</para>
+<list id="fs-id1165137454885" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>¿De cuántas maneras puede seleccionar sus guarniciones?</item>
+<item><span class="token">Ⓑ</span>¿De cuántas maneras puede seleccionar 3 guarniciones?</item>
+</list>
+</problem>
+<solution id="fs-id1165137593658">
+<list id="fs-id1165137593660" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Queremos elegir 2 guarniciones de entre 5 opciones.
+<equation id="eip-id1165137805004" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>C</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math> </equation></item>
+<item><span class="token">Ⓑ</span>Queremos elegir 3 guarniciones de entre 5 opciones.
+<equation id="eip-id1165137667309" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>C</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math> </equation></item>
+</list></solution>
+<commentary id="fs-id1165137465106">
+<title>Análisis </title>
+<para id="fs-id1165137427098">También podemos utilizar una calculadora gráfica para hallar combinaciones. Introduzca 5 y presione <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mspace width="0.5em"/>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>C</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> introduzca 3 y luego presione el signo de igual. La función <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mspace width="0.5em"/>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:msub>
+   <m:mi>C</m:mi>
+   <m:mi>r</m:mi>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> se encuentra en el menú MATH con los comandos de probabilidad.</para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137558537" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137402033"><emphasis>¿Es una coincidencia que las partes (a) y (b) del <link target-id="Example_11_05_05"/> tengan las mismas respuestas?</emphasis></para>
+<para id="fs-id1165137452885"><emphasis effect="italics">No. Cuando elegimos r objetos entre n objetos, <emphasis>no</emphasis> estamos eligiendo <m:math>
+ <m:mrow>
+ <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> objetos. Por lo tanto, <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </emphasis></para>
+</note>
+
+<note id="fs-id1165137457211" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_08">
+<problem id="fs-id1165137535204"><para id="fs-id1165137535205">Una heladería ofrece 10 sabores de helado. ¿De cuántas maneras se pueden elegir 3 sabores para un banana split?</para></problem>
+<solution id="fs-id1165137862737"><para id="fs-id1165137727648"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>120</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137438950">
+<title>Hallar el número de subconjuntos de un conjunto</title>
+<para id="fs-id1165135191446">Solo hemos visto problemas de combinación en los que elegimos exactamente <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos. En algunos problemas, queremos considerar la elección de todos los números posibles de objetos. Pensemos, por ejemplo, en una pizzería que ofrece 5 ingredientes. Se puede pedir cualquier número de ingredientes. ¿Cuántas pizzas diferentes son posibles?</para><para id="fs-id1165137599617">Para responder esta pregunta tenemos que considerar las pizzas con cualquier número de ingredientes. Hay <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> maneras de pedir una pizza sin ingredientes. Hay <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> maneras de pedir una pizza con exactamente un ingrediente. Si continuamos este proceso, obtenemos</para><equation id="eip-163" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>32</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137803898">Hay 32 pizzas posibles. Este resultado es igual a <m:math>
+ <m:mrow>
+ <m:msup>
+   <m:mn>2</m:mn>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137473516">Se nos presenta una secuencia de opciones. Para cada uno de los <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos tenemos dos opciones: incluirlo en el subconjunto o no. Así que para todo el subconjunto hemos hecho <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> elecciones, cada una con dos opciones. Así que hay un total de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mo>…</m:mo><m:mo>·</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> posibles subconjuntos resultantes, desde el subconjunto vacío, que obtenemos al decir "no" cada vez, hasta el propio conjunto original, que obtenemos al decir "sí" cada vez.</para><note id="fs-id1165135252247">
+
+<title>Fórmula del número de subconjuntos de un conjunto </title>
+<para id="fs-id1165137767403">Un conjunto que contiene <emphasis effect="italics">n</emphasis> objetos distintos tiene <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mn>2</m:mn>
+   <m:mi>n</m:mi>
+  </m:msup>
+ </m:mrow>
+</m:math> subconjuntos.</para></note>
+
+<example id="Example_11_05_06">
+<exercise id="fs-id1165137767690"><problem id="fs-id1165137767692">
+<title>Hallar el número de subconjuntos de un conjunto</title>
+<para id="fs-id1165137594426">Un restaurante ofrece mantequilla, queso, cebolla de verdeo y crema agria como aderezos para una papa al horno. ¿De cuántas maneras diferentes se puede pedir una papa?</para>
+</problem>
+<solution id="fs-id1165137532383">
+<para id="fs-id1165137532385">Buscamos el número de subconjuntos de un conjunto con 4 objetos. Sustituya <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> en la fórmula.</para><equation id="eip-id1165134050650" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mn>2 </m:mn>
+       <m:mi>n</m:mi>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mn>2</m:mn>
+       <m:mn>4</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>   </m:mtext><m:mo>=</m:mo><m:mn>16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137901345">Hay 16 maneras posibles de pedir una papa.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137605248" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_09">
+<problem id="fs-id1165137410962"><para id="fs-id1165137410963">Una barra de helados en una boda tiene 6 ingredientes para elegir. Se puede elegir cualquier número de ingredientes. ¿Cuántos helados diferentes son posibles?</para></problem>
+<solution id="fs-id1165137628240"><para id="fs-id1165137592089">64 helados</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137472540">
+<title>Hallar el número de permutaciones de <emphasis effect="italics">n</emphasis> objetos no distintos</title>
+<para id="fs-id1165137532439">Hemos estudiado permutaciones en las que todos los objetos implicados eran distintos. ¿Qué ocurre si algunos de los objetos no son diferentes? Por ejemplo, supongamos que hay una hoja de 12 pegatinas. Si todas las pegatinas fueran distintas, habría <m:math><m:mrow><m:mn>12</m:mn><m:mo>!</m:mo></m:mrow></m:math> maneras de ordenarlas. Sin embargo, 4 de las pegatinas son estrellas idénticas y 3 son lunas idénticas. Debido a que todos los objetos no son diferentes, muchas de las <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:mo>!</m:mo>
+ </m:mrow>
+</m:math> permutaciones que hemos contado son duplicados. La fórmula general para esta situación es la siguiente.</para><equation id="eip-425" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>!</m:mo><m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>!</m:mo><m:mo>…</m:mo><m:msub>
+     <m:mi>r</m:mi>
+     <m:mi>k</m:mi>
+    </m:msub>
+    <m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137416703">En este ejemplo, tenemos que dividir entre el número de maneras de ordenar las 4 estrellas y las maneras de ordenar las 3 lunas para hallar el número de permutaciones únicas de las pegatinas. Hay <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mo>!</m:mo>
+ </m:mrow>
+</m:math> maneras de ordenar las estrellas y <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>!</m:mo>
+ </m:mrow>
+</m:math> maneras de ordenar las lunas.</para><equation id="eip-660" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>12</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>!</m:mo><m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>3</m:mn><m:mtext>,</m:mtext><m:mn>326</m:mn><m:mtext>,</m:mtext><m:mn>400</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137442396">Hay 3.326.400 maneras de ordenar la hoja de pegatinas.</para>
+
+<note id="fs-id1165137442399">
+
+<title>Fórmula para hallar el número de permutaciones de <emphasis effect="italics">n</emphasis> objetos no distintos</title>
+<para id="fs-id1165137452296">Si hay <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> elementos de un conjunto y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> son iguales, <m:math>
+ <m:mrow>
+ <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> son iguales, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> son iguales, y así hasta <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>r</m:mi>
+   <m:mi>k</m:mi>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el número de permutaciones se puede calcular mediante</para><equation id="fs-id1165135203543" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>!</m:mo><m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>!</m:mo><m:mo>…</m:mo><m:msub>
+     <m:mi>r</m:mi>
+     <m:mi>k</m:mi>
+    </m:msub>
+    <m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+</note>
+
+<example id="Example_11_05_07"><exercise id="fs-id1165135699142">
+<problem id="fs-id1165137436259">
+<title>Hallar el número de permutaciones de <emphasis effect="italics">n</emphasis> objetos no distintos</title>
+<para id="fs-id1165137532048">Calcule el número de reorganizaciones de las letras de la palabra DISTINCT.</para>
+</problem>
+<solution id="fs-id1165137466241">
+<para id="fs-id1165137450987">Hay 8 letras. Tanto I como T se repiten 2 veces. Sustituya <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mo> </m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+ <m:mo> </m:mo><m:msub>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>2</m:mn><m:mo> </m:mo>
+ </m:mrow>
+</m:math> en la fórmula.</para>
+<equation id="eip-id1165134371141" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>10</m:mn><m:mtext>,</m:mtext><m:mn>080</m:mn><m:mo> </m:mo>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137404564">Hay 10.080 organizaciones.</para>
+</solution>
+</exercise>
+</example><note id="fs-id1165135160178" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_05_10">
+<problem id="fs-id1165137648088"><para id="fs-id1165137648089">Calcule el número de reorganizaciones de las letras de la palabra CARRIER.</para></problem>
+<solution id="fs-id1165135149841"><para id="fs-id1165135149842">840</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137462566" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165137507102">Acceda a estos recursos en línea para obtener más información y practicar combinaciones y permutaciones.</para>
+<list id="fs-id1165137417044" list-type="bulleted">
+<item><link url="http://openstax.org/l/combinations">Combinaciones</link></item>
+<item><link url="http://openstax.org/l/permutations">Permutaciones</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165137898988" class="key-equations">
+<title>Ecuaciones clave</title>
+<table id="eip-id1165135178140" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>número de permutaciones de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos tomados <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> a la vez</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry>número de combinaciones de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos tomados <m:math>
+ <m:mrow>
+ <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> a la vez</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mo>!</m:mo><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry>número de permutaciones de <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos no distintos</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>!</m:mo><m:msub>
+     <m:mi>r</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>!</m:mo><m:mo>…</m:mo><m:msub>
+     <m:mi>r</m:mi>
+     <m:mi>k</m:mi>
+    </m:msub>
+    <m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table></section>
+<section id="fs-id1165137772409" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137475706" list-type="bulleted"><item>Si un evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras y un segundo evento sin resultados comunes puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras, entonces el primer o el segundo evento puede ocurrir de <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras. Vea el <link target-id="Example_11_05_01"/>.</item>
+<item>Si un evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras y un segundo evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras después de que el primer evento haya ocurrido, entonces los dos eventos pueden ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>×</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras. Vea el <link target-id="Example_11_05_02"/>.</item>
+<item>Una permutación es una ordenación de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos.</item>
+<item>Si tenemos un conjunto de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos y queremos elegir <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos del conjunto en orden, escribimos <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Los problemas de permutación se pueden resolver utilizando el principio de multiplicación o la fórmula de <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vea el <link target-id="Example_11_05_03"/> y el <link target-id="Example_11_05_04"/>.</item>
+<item>Una selección de objetos cuyo orden no importa es una combinación.</item>
+<item>Dados <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos, el número de maneras de seleccionar <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos del conjunto es <m:math>
+ <m:mrow>
+  <m:mtext>C</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y se puede calcular mediante una fórmula. Vea el <link target-id="Example_11_05_05"/>.</item>
+<item>Un conjunto que contiene <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos distintos tiene <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mn>2</m:mn>
+   <m:mi>n</m:mi>
+  </m:msup>
+ </m:mrow>
+</m:math> subconjuntos. Vea el <link target-id="Example_11_05_06"/>.</item>
+<item>Para los problemas de conteo que implican objetos no distintos, necesitamos dividir para evitar contar permutaciones duplicadas. Vea el <link target-id="Example_11_05_07"/>.</item>
+</list></section>
+<section id="fs-id1165135638474" class="section-exercises">
+<title>Ejercicios de la sección</title>
+<section id="fs-id1165135638477">
+<title>Verbales</title>
+<para id="fs-id1165137634891">En los siguientes ejercicios, suponga que hay <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras en las que un evento <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> puede ocurrir, <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras en las que un evento <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> puede ocurrir, y que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mspace width="0.5em"/><m:mtext>y </m:mtext><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> no se superponen.</para><exercise id="fs-id1165137659838">
+<problem id="fs-id1165137659840"><para id="fs-id1165137659841">Utilice el principio de adición del conteo para explicar de cuántas maneras el evento <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mspace width="0.5em"/><m:mtext>o </m:mtext><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> pueden ocurrir.</para></problem>
+<solution id="fs-id1165137543839"><para id="fs-id1165137543840">Hay <m:math>
+ <m:mrow>
+ <m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras para que ocurra tanto el evento <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> como el evento <m:math>
+ <m:mrow>
+ <m:mi>B</m:mi>
+ </m:mrow>
+</m:math>.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137436857">
+<problem id="fs-id1165137436859"><para id="fs-id1165137436860">Utilice el principio de multiplicación de conteo para explicar de cuántas maneras el evento <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi><m:mspace width="0.5em"/><m:mtext>y </m:mtext><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> pueden ocurrir.</para></problem>
+</exercise>
+
+<para id="fs-id1165137735417">Responda las siguientes preguntas.</para>
+<exercise id="fs-id1165137735420">
+<problem id="fs-id1165137451089"><para id="fs-id1165137451090">Ante dos eventos distintos, ¿cómo sabemos si debemos aplicar el principio de adición o el de multiplicación al calcular los posibles resultados? ¿Qué conjunciones pueden ayudar a determinar qué operaciones hay que utilizar?</para></problem>
+<solution id="fs-id1165137582620">
+<para id="fs-id1165137582622">El principio de adición se aplica para determinar el total de resultados posibles de cualquiera de los dos eventos. El principio de multiplicación se aplica para determinar el total de resultados posibles de que se produzcan ambos eventos. La palabra "o" suele implicar un problema de adición. La palabra "y" suele implicar un problema de multiplicación.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135501159">
+<problem id="fs-id1165137416164">
+<para id="fs-id1165137416166">Describa cómo la permutación de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos difiere de la permutación de elegir <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos de un conjunto de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos. Incluya cómo se calcula cada una de ellas.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137758968">
+<problem id="fs-id1165137758970"><para id="fs-id1165137758972">¿Cómo se denomina el ordenamiento que selecciona <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos de un conjunto de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> objetos cuando el orden de los <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> objetos no es importante? ¿Cuál es la fórmula para calcular el número de resultados posibles para este tipo de ordenamiento?</para></problem>
+<solution id="fs-id1165137806120"><para id="fs-id1165137806121">Una combinación; <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>!</m:mo><m:mi>r</m:mi><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137646270"><title>Numéricos</title><para id="fs-id1165137641893">En los siguientes ejercicios, determine si debe utilizar el principio de adición o el principio de multiplicación. Luego, realice los cálculos.</para>
+<exercise id="fs-id1165137643865">
+<problem id="fs-id1165137643867">
+<para id="fs-id1165137443617">Supongamos que el conjunto <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>{</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿De cuántas maneras se puede elegir un número negativo o par de <m:math>
+ <m:mrow>
+  <m:mi>A?</m:mi>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137469306" class="material-set-2">
+<problem id="fs-id1165137469308"><para id="fs-id1165137569701">Supongamos que el conjunto <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mo>{</m:mo><m:mo>- −</m:mo><m:mn>23</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mn>48</m:mn><m:mo>,</m:mo><m:mn>72</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿De cuántas maneras se puede elegir un número positivo o impar de <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135191547"><para id="fs-id1165135191548"> <m:math>
+ <m:mrow>
+ <m:mn>4</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137423222">
+<problem id="fs-id1165137423224"><para id="fs-id1165137423225">¿De cuántas maneras se puede elegir un as rojo o un trébol de una baraja de cartas estándar?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137803944">
+<problem id="fs-id1165137803946"><para id="fs-id1165137566060">¿De cuántas maneras se puede elegir un color de pintura entre 5 tonos de verde, 4 tonos de azul o 7 tonos de amarillo?</para></problem>
+<solution id="fs-id1165137566064"><para id="fs-id1165137407678"> <m:math>
+ <m:mrow>
+ <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>16</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137657858">
+<problem id="fs-id1165137657860"><para id="fs-id1165135484160">¿Cuántos resultados son posibles al lanzar un par de monedas?</para></problem>
+</exercise>
+<exercise id="fs-id1165135484165">
+<problem id="fs-id1165137851823"><para id="fs-id1165137851824">¿Cuántos resultados son posibles al lanzar una moneda y un dado de 6 caras?</para></problem>
+<solution id="fs-id1165135187115"><para id="fs-id1165135187116"> <m:math>
+ <m:mrow>
+ <m:mn>2</m:mn><m:mo>×</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>12</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137874279">
+<problem id="fs-id1165137874281">
+<para id="fs-id1165137453743">¿Cuántas cadenas de dos letras, con la primera letra <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> y la segunda letra <m:math>
+ <m:mrow>
+ <m:mi>B</m:mi><m:mo>—</m:mo>
+ </m:mrow>
+</m:math> se pueden formar a partir de los conjuntos <m:math>
+ <m:mrow>
+ <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>{</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>,</m:mo><m:mi>d</m:mi><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+ <m:mi>B</m:mi><m:mo>=</m:mo><m:mo>{</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>e</m:mi><m:mo>,</m:mo><m:mi>i</m:mi><m:mo>,</m:mo><m:mi>i</m:mi><m:mo>,</m:mo><m:mi>u</m:mi><m:mo>}</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137549744">
+<problem id="fs-id1165137549746"><para id="fs-id1165137749653">¿De cuántas maneras se puede construir una cadena de 3 dígitos si los números se pueden repetir?</para></problem>
+<solution id="fs-id1165137749656"><para id="fs-id1165137749658"> <m:math>
+ <m:mrow>
+ <m:msup>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1.000</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137455842">
+<problem id="fs-id1165135159869"><para id="fs-id1165135159870">¿De cuántas maneras se puede construir una cadena de 3 dígitos si los números no se pueden repetir?</para></problem>
+</exercise>
+
+<para id="fs-id1165137925521">En los siguientes ejercicios, calcule el valor de la expresión.</para>
+<exercise id="fs-id1165137925524">
+<problem id="fs-id1165135190749"><para id="fs-id1165135190750"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135191532"><para id="fs-id1165135191534"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137593442">
+<problem id="fs-id1165135192212">
+<para id="fs-id1165135192214"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137759795">
+<problem id="fs-id1165137759797"><para id="fs-id1165137759798"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135194382"><para id="fs-id1165135194383"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137438758">
+<problem id="fs-id1165137438760"><para id="fs-id1165137806524"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+<exercise id="fs-id1165137841491">
+<problem id="fs-id1165137841494"><para id="fs-id1165137422912"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137771782"><para id="fs-id1165137771784"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>55</m:mn><m:mo>,</m:mo><m:mn>440</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137736251">
+<problem id="fs-id1165137736253"><para id="fs-id1165137762924"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+<exercise id="fs-id1165137874584">
+<problem id="fs-id1165137874586"><para id="fs-id1165137824360"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137423187"><para id="fs-id1165137423188"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>495</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137854863">
+<problem id="fs-id1165137529228"><para id="fs-id1165137529229"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>26</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+<exercise id="fs-id1165137659864">
+<problem id="fs-id1165137838063"><para id="fs-id1165137838064"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137722860"><para id="fs-id1165137722861"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135196857">
+<problem id="fs-id1165135196859"><para id="fs-id1165135196860"> <m:math>
+ <m:mrow>
+ <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137806510">En los siguientes ejercicios, calcule el número de subconjuntos en cada conjunto dado.</para>
+<exercise id="fs-id1165137806514">
+<problem id="fs-id1165137560474"><para id="fs-id1165137560475"> <m:math>
+ <m:mrow>
+ <m:mo>{</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135570081"><para id="fs-id1165135570082"> <m:math>
+ <m:mrow>
+ <m:msup>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1024</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137447686">
+<problem id="fs-id1165137447688"><para id="fs-id1165137447689"> <m:math>
+ <m:mrow>
+ <m:mo>{</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>,</m:mo><m:mi>c</m:mi><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137549605">
+<problem id="fs-id1165137451844"><para id="fs-id1165137451845">Un conjunto que contiene 5 números distintos, 4 letras distintas y 3 símbolos distintos</para></problem>
+<solution id="fs-id1165137451849"><para id="fs-id1165137451850"> <m:math>
+ <m:mrow>
+ <m:msup>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>4096</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137723939">
+<problem id="fs-id1165137643752"><para id="fs-id1165137643753">El conjunto de números pares del 2 al 28</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137643757">
+<problem id="fs-id1165137871919">
+<para id="fs-id1165137871921">El conjunto de números de dos dígitos entre 1 y 100 que contienen el dígito 0</para></problem>
+<solution id="fs-id1165137654642">
+<para id="fs-id1165137654644"> <m:math>
+ <m:mrow>
+ <m:msup>
+   <m:mn>2</m:mn>
+   <m:mn>9</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>512</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137628110">En los siguientes ejercicios, calcule el número distinto de ordenaciones.</para>
+<exercise id="fs-id1165135459875">
+<problem id="fs-id1165135459877"><para id="fs-id1165135459878">Las letras de la palabra "juggernaut"</para></problem>
+</exercise>
+<exercise id="fs-id1165137848972">
+<problem id="fs-id1165137848975"><para id="fs-id1165137677635">Las letras de la palabra "academia"</para></problem>
+<solution id="fs-id1165137677638"><para id="fs-id1165137677639"> <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mn>8</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6720 </m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137476778">
+<problem id="fs-id1165137755596"><para id="fs-id1165137755597">Las letras de la palabra "academia" que comienzan y terminan en "a"</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137641802">
+<problem id="fs-id1165137641804"><para id="fs-id1165137641805">Los símbolos de la cadena #, #, #, @, @, $, $, $, %, %, %</para></problem>
+<solution id="fs-id1165137641808"><para id="fs-id1165135185348"> <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mn>12</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo><m:mn>3</m:mn><m:mo>!</m:mo><m:mn>4</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137838339">
+<problem id="fs-id1165137838341">
+<para id="fs-id1165137838343">Los símbolos de la cadena #, #, #, @, @, $, $, %, %, % que comienzan y terminan con "%"</para></problem>
+</exercise>
+</section><section id="fs-id1165137832402">
+<title>Extensiones</title>
+<exercise id="fs-id1165137832407">
+<problem id="fs-id1165137548734"><para id="fs-id1165137548736">El conjunto, <m:math>
+ <m:mrow>
+ <m:mi>S</m:mi>
+ </m:mrow>
+</m:math> se compone de <m:math>
+ <m:mrow>
+ <m:mtext>900.000.000</m:mtext>
+ </m:mrow>
+</m:math> números naturales, cada uno de los cuales tiene el mismo número de dígitos. ¿Cuántos dígitos tiene un número de <m:math>
+ <m:mrow>
+ <m:mi>S</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> (<emphasis effect="italics">Pista:</emphasis> utilice el hecho de que un número natural no puede comenzar con el dígito 0).</para></problem>
+<solution id="fs-id1165137936758"><para id="fs-id1165137936760">9</para></solution>
+</exercise>
+<exercise id="fs-id1165135188310">
+<problem id="fs-id1165135188312"><para id="fs-id1165135188313">El número de subconjuntos de 5 elementos de un conjunto que contiene <m:math>
+ <m:mrow>
+ <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> elementos es igual al número de subconjuntos de 6 elementos del mismo conjunto. ¿Cuál es el valor de <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> (<emphasis effect="italics">Pista:</emphasis> el orden en que se eligen los elementos para los subconjuntos no es importante).</para></problem>
+</exercise>
+<exercise id="fs-id1165134056947">
+<problem id="fs-id1165134056949"><para id="fs-id1165137731098">¿Puede <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> siempre igualar a <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Explique.</para></problem>
+<solution id="fs-id1165137572461"><para id="fs-id1165137572462">Sí, para los casos triviales <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mtext>. </m:mtext>
+ </m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137410375">
+<problem id="fs-id1165137410377"><para id="fs-id1165137704803">Supongamos que un conjunto <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> tiene 2.048 subconjuntos. ¿Cuántos objetos distintos contiene <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137772252">
+<problem id="fs-id1165137772254"><para id="fs-id1165137772255">¿Cuántas ordenaciones se pueden hacer con las letras de la palabra "mountains" si todas las vocales deben formar una cadena?</para></problem>
+<solution id="fs-id1165135528964"><para id="fs-id1165135528965"> <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>×</m:mo><m:mn>4</m:mn><m:mo>!</m:mo><m:mo>=</m:mo><m:mn>8640 </m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135526953">
+<title>Aplicaciones en el mundo real</title>
+<exercise id="fs-id1165137694985">
+<problem id="fs-id1165137694987">
+<para id="fs-id1165135593559">Una familia compuesta por 2 padres y 3 hijos debe posar para una foto con 2 miembros de la familia en la parte delantera y 3 en la trasera.</para>
+<list id="fs-id1165135593564" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>¿Cuántas ordenaciones son posibles sin restricciones?</item>
+<item><span class="token">Ⓑ</span>¿Cuántas ordenaciones son posibles si los padres deben sentarse delante?</item>
+<item><span class="token">Ⓒ</span>¿Cuántas ordenaciones son posibles si los padres deben estar uno al lado del otro?</item>
+</list>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134373515">
+<problem id="fs-id1165134373517"><para id="fs-id1165134056951">Una compañía de telefonía móvil ofrece 6 paquetes de voz y 8 de datos diferentes. De ellos, 3 paquetes incluyen tanto voz como datos. ¿De cuántas maneras se puede elegir la voz o los datos, pero no ambos?</para></problem>
+<solution id="fs-id1165134056956"><para id="fs-id1165134056957"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137409043">
+<problem id="fs-id1165137409046"><para id="fs-id1165137409047">En las carreras de caballos, se produce una "trifecta" cuando un apostante gana seleccionando a los tres primeros clasificados en el orden exacto (1.er lugar, 2.º lugar y 3.er lugar). ¿Cuántas trifectas diferentes son posibles si hay 14 caballos en una carrera?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137660533">
+<problem id="fs-id1165137409049"><para id="fs-id1165137409050">Una compañía de venta de camisetas al por mayor ofrece tallas pequeñas, medianas, grandes y extragrandes en algodón orgánico o no orgánico y colores blanco, negro, gris, azul y rojo. ¿Cuántas camisetas diferentes hay para elegir?</para></problem>
+<solution id="fs-id1165137722285"><para id="fs-id1165137722286"> <m:math>
+ <m:mrow>
+ <m:mn>4</m:mn><m:mo>×</m:mo><m:mn>2</m:mn><m:mo>×</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>40</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135572090">
+<problem id="fs-id1165135572092"><para id="fs-id1165135572093">Héctor quiere publicar anuncios en vallas publicitarias por todo el condado para su nuevo negocio. ¿De cuántas maneras Héctor puede elegir 15 vecindarios para anunciarse si hay 30 vecindarios en el condado?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137433487">
+<problem id="fs-id1165137433489"><para id="fs-id1165137433490">Una tienda de arte tiene 4 marcas de rotuladores de 12 colores diferentes y 3 tipos de tinta. ¿Cuántos rotuladores hay para elegir?</para></problem>
+<solution id="fs-id1165137724923"><para id="fs-id1165137724924"> <m:math>
+ <m:mrow>
+ <m:mn>4</m:mn><m:mo>×</m:mo><m:mn>12</m:mn><m:mo>×</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>144</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165134108402">
+<problem id="fs-id1165134108404"><para id="fs-id1165134108405">¿De cuántas maneras se puede formar un comité de 3 estudiantes de primer año y 4 de tercer año a partir de un grupo de <m:math>
+ <m:mrow>
+ <m:mn>8</m:mn>
+ </m:mrow>
+</m:math> estudiantes de primer año y <m:math>
+ <m:mrow>
+ <m:mn>11</m:mn>
+ </m:mrow>
+</m:math> de tercer año?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137454186">
+<problem id="fs-id1165137454188"><para id="fs-id1165135195564">¿De cuántas maneras un entrenador de béisbol puede organizar el orden de 9 bateadores si hay 15 jugadores en el equipo?</para></problem>
+<solution id="fs-id1165135195567"><para id="fs-id1165135195568"> <m:math>
+ <m:mrow>
+ <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>816</m:mn><m:mo>,</m:mo><m:mn>214</m:mn><m:mo>,</m:mo><m:mn>400</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135193138">
+<problem id="fs-id1165137433600"><para id="fs-id1165137433601">Un director de orquesta necesita 5 violonchelistas y 5 violinistas para tocar en un evento diplomático. Para ello, clasifica a los 10 chelistas y a los 16 violinistas de la orquesta por orden de habilidad musical. ¿Cuál es la proporción entre la clasificación total de violonchelistas posible y la clasificación total de violinistas posible?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137735343">
+<problem id="fs-id1165137433604"><para id="fs-id1165137433605">Una tienda de motocicletas tiene 10 choppers, 6 bobbers y 5 café racers: diferentes tipos de motocicletas de época. ¿De cuántas maneras puede la tienda elegir 3 choppers, 5 bobbers y 2 café racers para una exhibición de fin de semana?</para></problem>
+<solution id="fs-id1165137673621"><para id="fs-id1165137673622"> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>×</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>×</m:mo><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>200</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137612015">
+<problem id="fs-id1165137612017"><para id="fs-id1165137612018">Una tienda de patinetas dispone de 10 tipos de tablas, 3 tipos de trucks y 4 tipos de ruedas. ¿Cuántas patinetas diferentes se pueden construir?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137936941">
+<problem id="fs-id1165137936943"><para id="fs-id1165137936944">Just-For-Kicks Sneaker Company ofrece un servicio de personalización en línea. ¿De cuántas maneras se puede diseñar un par de zapatos deportivos personalizados de Just-For-Kicks si un cliente puede elegir desde un zapato básico hasta 11 opciones personalizables?</para></problem>
+<solution id="fs-id1165137803145"><para id="fs-id1165137803146"> <m:math>
+ <m:mrow>
+ <m:msup>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>2.048</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135207528">
+<problem id="fs-id1165137454284"><para id="fs-id1165137454285">Un autolavado ofrece los siguientes servicios opcionales al lavado básico: cera de capa transparente, pulido de triple espuma, lavado de carrocería inferior, inhibidor de óxido, abrillantador de ruedas, ambientador y champú para interiores. ¿Cuántos lavodas son posibles si se puede añadir cualquier número de opciones al lavado básico?</para></problem>
+</exercise>
+<exercise id="fs-id1165137454292">
+<problem id="fs-id1165137713907"><para id="fs-id1165137713908">Suni compró 20 plantas para colocarlas en el borde de su jardín. ¿Cuántos arreglos distintos puede hacer si las plantas están compuestas por 6 tulipanes, 6 rosas y 8 margaritas?</para></problem>
+<solution id="fs-id1165137713912"><para id="fs-id1165137405697"> <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mn>20</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>!</m:mo><m:mn>6</m:mn><m:mo>!</m:mo><m:mn>8</m:mn><m:mo>!</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>116</m:mn><m:mo>,</m:mo><m:mn>396</m:mn><m:mo>,</m:mo><m:mn>280</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137668309">
+<problem id="fs-id1165137668312"><para id="fs-id1165137668313">¿De cuántas maneras únicas se puede disponer una ristra de luces de Navidad con 9 bombillas rojas, 10 verdes, 6 blancas y 12 doradas?</para></problem>
+</exercise>
+</section>
+</section>
+</content>
+
+
+<glossary>
+<definition id="fs-id1165135255272">
+<term>Principio de adición</term>
+<meaning id="fs-id1165135255277">si un evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras y un segundo evento sin resultados comunes puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras, entonces el primer o el segundo evento puede ocurrir de <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras</meaning>
+</definition>
+<definition id="fs-id1165137645178">
+<term>combinación</term>
+<meaning id="fs-id1165135160429">una selección de objetos en la que no importa el orden</meaning>
+</definition>
+
+<definition id="fs-id1165135160433">
+<term>principio fundamental de conteo</term>
+<meaning id="fs-id1165137668328">si un evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras y un segundo evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras después de que el primer evento haya ocurrido, entonces los dos eventos pueden ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>×</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras; también conocido como el principio de multiplicación</meaning>
+</definition>
+
+<definition id="fs-id1165137651693">
+<term>principio de multiplicación</term>
+<meaning id="fs-id1165137651698">si un evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi>
+ </m:mrow>
+</m:math> maneras y un segundo evento puede ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras después de que el primer evento haya ocurrido, entonces los dos eventos pueden ocurrir en <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>×</m:mo><m:mi>n</m:mi>
+ </m:mrow>
+</m:math> maneras; también conocido como el principio fundamental de conteo</meaning>
+</definition>
+<definition id="fs-id1165137871530">
+<term>permutación</term>
+<meaning id="fs-id1165137551518">una selección de objetos en la que el orden es importante</meaning>
+</definition>
+</glossary>
+</document>

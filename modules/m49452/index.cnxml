@@ -1,0 +1,4430 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Hallar los límites: Enfoques numéricos y gráficos</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49452</md:content-id>
+  <md:title>Hallar los límites: Enfoques numéricos y gráficos</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Comprender la notación de límites.</item>
+<item>Hallar un límite mediante un gráfico.</item>
+<item>Hallar un límite mediante una tabla.</item>
+</list></md:abstract>
+  <md:uuid>9f4191da-785c-4c01-a89d-c9f42621b795</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165137925422">Intuitivamente, sabemos lo que es un <term class="no-emphasis" id="term-00001">límite</term>. Un automóvil solo puede ir hasta cierta velocidad y no más rápido. Un cubo de basura puede contener 33 galones y no más. Es natural que las cantidades medidas tengan límites. ¿Cuál es, por ejemplo, el límite de la altura de una mujer? La mujer más alta de quien se tiene constancia es Jinlian Zeng, de China, que mide 8 ft, 1 in.<footnote id="ch12mod00_fn01">https://en.wikipedia.org/wiki/Human_height y http://en.wikipedia.org/wiki/List_of_tallest_people</footnote> ¿Este es el límite de altura que pueden alcanzar las mujeres? Tal vez no, pero es probable que haya un límite que podríamos describir en pulgadas si fuéramos capaces de determinar cuál es.</para><para id="fs-id1165137850323">Por decirlo de forma matemática, la función cuya entrada es una mujer y cuya salida es una altura medida en pulgadas tiene un límite. En esta sección examinaremos enfoques numéricos y gráficos para identificar límites.</para>
+<section id="fs-id1165137635196">
+<title>Comprender la notación de límites.</title>
+<para id="fs-id1165137838708">Hemos visto cómo una <term class="no-emphasis" id="term-00002">secuencia</term> puede tener un límite, un valor hacia el que se mueve la secuencia de términos a medida que aumenta el número de términos. Por ejemplo, los términos de la secuencia</para>
+<equation id="eip-131" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mn>...</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137444282">se acercan cada vez más a 0. Una secuencia es un tipo de función, pero las funciones que no son secuencias también pueden tener límites. Podemos describir el comportamiento de la función a medida que los valores de entrada se acercan a un valor específico. Si el límite de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mtext>,</m:mtext>
+ </m:mrow>
+</m:math> entonces a medida que la entrada <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca cada vez más a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la coordenada <emphasis effect="italics">y</emphasis> de salida se acerca cada vez más a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Decimos que la salida "se acerca a" <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135180159">La <link target-id="CNX_Precalc_Figure_12_01_001"/> proporciona una representación visual del concepto matemático de límite. A medida que el valor de entrada <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el valor de salida <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="CNX_Precalc_Figure_12_01_001" class="small">
+<media id="fs-id1165137762261" alt="Gráfico que representa cómo una función con un agujero en (a, L) se acerca a un límite.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_001.jpg"/>
+</media>
+<caption>La salida (coordenada <emphasis effect="italics">y</emphasis>) se acerca a <m:math>
+ <m:mi>L</m:mi>
+</m:math> a medida que la entrada (coordenada <emphasis effect="italics">x</emphasis>) se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </caption></figure>
+
+<para id="fs-id1165137432096">Escribimos la ecuación de un límite como</para>
+<equation id="eip-473" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137750115">Esta notación indica que a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> tanto desde la izquierda de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y desde la derecha de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el valor de salida se acerca a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137939716">Considere la función</para>
+<equation id="eip-464" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165135159879">Podemos factorizar la función como se muestra.</para>
+<equation id="eip-424" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:menclose notation="updiagonalstrike">
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+        </m:menclose>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:menclose notation="updiagonalstrike">
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+         </m:mrow>
+        </m:menclose>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Anule los factores similares en el numerador y el denominador.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplifique.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137728388">Observe que <m:math>
+ <m:mi>x</m:mi>
+</m:math> no puede ser 7, o estaríamos dividiendo entre 0, por lo que 7 no está en el dominio de la función original. Para no cambiar la función cuando simplificamos, ponemos la misma condición, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> para la función simplificada. Podemos representar la función gráficamente como se muestra en la <link target-id="CNX_Precalc_Figure_12_01_002"/>.</para><figure id="CNX_Precalc_Figure_12_01_002" class="small">
+<media id="fs-id1165135187205" alt="Gráfico de una función creciente, f(x) = (x^2 – 6x – 7)/(x –7), con un agujero en (7, 8).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_002.jpg"/>
+</media>
+<caption>Como el 7 no está permitido como entrada, no hay ningún punto en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7.</m:mn>
+ </m:mrow>
+</m:math> </caption></figure>
+<para id="fs-id1165137453923">¿Qué sucede en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> es completamente diferente de lo que ocurre en los puntos cercanos a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> a cada lado. La notación</para><equation id="eip-923" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>7</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137725500">indica que a medida que la entrada <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7 desde la izquierda o desde la derecha, la salida se acerca a 8. La salida puede acercarse tanto a 8 como queramos si la entrada está lo suficientemente cerca de 7. </para><para id="fs-id1165137645158">¿Qué sucede en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> no hay ninguna salida correspondiente. Lo escribimos como</para><equation id="eip-85" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mtext> no existe.</m:mtext>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137405977">Esta notación indica que 7 no está en el dominio de la función. Ya lo habíamos indicado cuando escribimos la función como</para>
+<equation id="eip-120" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo>
+  <m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7.</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137398854">Observe que el límite de una función puede existir incluso cuando <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no está definida en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Gran parte de nuestro trabajo posterior consistirá en determinar límites de funciones a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> aunque la salida en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> no existe.</para><note id="fs-id1165137601862">
+
+<title>El límite de una función</title>
+<para id="fs-id1165137550226">Una cantidad <m:math>
+ <m:mi>L</m:mi>
+</m:math> es el <term id="term-00003">límite</term> de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> si, a medida que los valores de entrada de <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acercan a <m:math>
+ <m:mi>a</m:mi>
+</m:math> (pero no son iguales a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> los valores de salida correspondientes de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se acercan a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Observe que el valor del límite no se ve afectado por el valor de salida de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ambos <m:math>
+ <m:mi>a</m:mi>
+</m:math> y <m:math>
+ <m:mi>L</m:mi>
+</m:math> deben ser números reales. Lo escribimos como</para>
+<equation id="eip-999" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi>
+ </m:mrow>
+</m:math> </equation></note>
+
+<example id="Example_12_01_01">
+<exercise id="fs-id1165137471278">
+<problem id="fs-id1165137432651">
+<title>Entender el límite de una función</title>
+<para id="fs-id1165135173264">Para el siguiente límite, defina <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><equation id="fs-id1165137939783" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>11</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165137529517">
+<para id="fs-id1165137637805">Primero, reconocemos la notación de un límite. Si el límite existe, a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> escribimos</para><equation id="fs-id1165137658390" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135242810">Se nos da</para>
+<equation id="fs-id1165137595675" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>11.</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137604024">Esto significa que <m:math>
+ <m:mrow>
+<m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext> y </m:mtext><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>11.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+<commentary id="fs-id1165137554286">
+<title>Análisis</title>
+<para id="fs-id1165137704715">Recordemos que <m:math>
+ <m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> es una línea sin interrupciones. A medida que los valores de entrada se acerquen a 2, los valores de salida se acercarán a 11. Esto se puede expresar con la ecuación <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11</m:mn>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> lo que significa que a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 2 (pero no es exactamente 2), la salida de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> se acerca todo lo que queramos a <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> u 11, que es el límite <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> al tomar valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> suficientemente cerca de 2 pero no en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137823415" class="precalculus try"><label>Ejercicio</label>
+<exercise id="fs-id1165137506591"><problem id="fs-id1165137452463">
+<para id="fs-id1165137452464">Para el siguiente límite, defina <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<equation id="eip-id1165135634095" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>46</m:mn>
+ </m:mrow>
+</m:math> </equation>
+
+</problem>
+<solution id="fs-id1165137539287">
+<para id="fs-id1165137446227"> <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>=</m:mo><m:mn>46.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise></note><section id="fs-id1165137803305">
+<title>Comprender los límites izquierdo y derecho</title>
+<para id="fs-id1165137626935">Podemos acercarnos a la entrada de una función desde cualquier lado de un valor, desde la izquierda o la derecha. La <link target-id="CNX_Precalc_Figure_12_01_013"/> muestra los valores de</para>
+<equation id="eip-466" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137452506">como se han descrito anteriormente y se han representado en la <link target-id="CNX_Precalc_Figure_12_01_002"/>.</para>
+<figure id="CNX_Precalc_Figure_12_01_013">
+<media id="fs-id1165137749229" alt="Tabla que muestra que f(x) se acerca a 8 desde cualquier lado cuando x se acerca a 7 desde cualquier lado.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_013.jpg"/>
+</media>
+</figure>
+<para id="fs-id1165137810143">Los valores descritos como "desde la izquierda" son menores que el valor de entrada 7 y, por lo tanto, aparecerían a la izquierda del valor en una línea numérica. Los valores de entrada que se acercan a 7 desde la izquierda en la <link target-id="CNX_Precalc_Figure_12_01_013"/> son <m:math>
+ <m:mrow>
+  <m:mn>6,9</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mn>6,99</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>6,999.</m:mn>
+ </m:mrow>
+</m:math> Las salidas correspondientes son <m:math>
+ <m:mrow>
+  <m:mn>7,9</m:mn><m:mo>,</m:mo><m:mn>7,99</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>7,999.</m:mn>
+ </m:mrow>
+</m:math> Estos valores se acercan a 8. El límite de los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca por la izquierda se conoce como el límite izquierdo. Para esta función, 8 es el límite izquierdo de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7.</para><para id="fs-id1165137758638">Los valores descritos como "desde la derecha" son mayores que el valor de entrada 7 y, por tanto, aparecerían a la derecha del valor en una línea numérica. Los valores de entrada que se acercan a 7 desde la derecha en la <link target-id="CNX_Precalc_Figure_12_01_013"/> son <m:math>
+ <m:mrow>
+  <m:mn>7,1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mn>7,01</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>7,001.</m:mn>
+ </m:mrow>
+</m:math> Las salidas correspondientes son <m:math>
+ <m:mrow>
+  <m:mn>8,1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mn>8,01</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>8,001.</m:mn>
+ </m:mrow>
+</m:math> Estos valores se acercan a 8. El límite de los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca por la derecha se conoce como el límite derecho. Para esta función, 8 es también el límite derecho de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7.</para><para id="fs-id1165137698446">La <link target-id="CNX_Precalc_Figure_12_01_013"/> muestra que podemos obtener la salida de la función a una distancia de 0,1 de 8 utilizando una entrada a una distancia de 0,1 de 7. En otras palabras, necesitamos una entrada de <m:math>
+ <m:mi>x</m:mi>
+</m:math> dentro del intervalo <m:math>
+ <m:mrow>
+  <m:mn>6,9</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>7,1</m:mn>
+ </m:mrow>
+</m:math> para producir un valor de salida de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> dentro del intervalo <m:math>
+ <m:mrow>
+  <m:mn>7,9</m:mn><m:mo>&lt;</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mn>8,1.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137549583">También vemos que podemos obtener valores de salida de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> sucesivamente más cerca de 8 al seleccionar valores de entrada más cercanos a 7. De hecho, podemos obtener valores de salida dentro de cualquier intervalo especificado si elegimos los valores de entrada adecuados.</para>
+<para id="fs-id1165137410687">La <link target-id="CNX_Precalc_Figure_12_01_003"/> proporciona una representación visual de los límites izquierdo y derecho de la función. A partir del gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> observamos que la salida puede acercarse infinitesimalmente a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7 por la izquierda y a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7 por la derecha.</para><para id="fs-id1165137573088">Para indicar el límite izquierdo, escribimos</para>
+<equation id="eip-605" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>7</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8.</m:mn>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137828524">Para indicar el límite derecho, escribimos</para>
+<equation id="eip-538" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>7</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8.</m:mn>
+ </m:mrow>
+</m:math>
+</equation><figure id="CNX_Precalc_Figure_12_01_003" class="small">
+<media id="fs-id1165137474244" alt="Gráfico de la función anterior que explica el límite de la función en (7, 8)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_003.jpg"/>
+</media>
+<caption>Los límites izquierdo y derecho son los mismos para esta función.</caption>
+</figure>
+
+<note id="fs-id1165137580289">
+
+<title>Límites izquierdo y derecho</title>
+<para id="fs-id1165135209798">El <term id="term-00004">límite izquierdo</term> de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> desde la izquierda es igual a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> denotado por</para><equation id="eip-65" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137874684">Los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> pueden acercarse al límite <m:math>
+ <m:mi>L</m:mi>
+</m:math> tanto como queramos tomando valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> lo suficientemente cerca de <m:math>
+ <m:mi>a</m:mi>
+</m:math> de manera que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165135187836">El <term id="term-00005">límite derecho</term> de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> desde la derecha, es igual a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> denotado por</para><equation id="eip-11" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>+</m:mo>
+    </m:msup>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137827812">Los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> pueden acercarse al límite <m:math>
+ <m:mi>L</m:mi>
+</m:math> tanto como queramos tomando valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> lo suficientemente cerca de <m:math>
+ <m:mi>a</m:mi>
+</m:math> pero mayores que <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ambos <m:math>
+ <m:mi>a</m:mi>
+</m:math> y <m:math>
+ <m:mi>L</m:mi>
+</m:math> son números reales.</para>
+</note>
+</section>
+
+<section id="fs-id1165137528365">
+<title>Comprender los límites laterales</title>
+<para id="fs-id1165137507493">En el ejemplo anterior, los límites izquierdo y derecho a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> son iguales. Si los límites izquierdo y derecho son iguales, decimos que la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> tiene un <term id="term-00006">límites laterales</term> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Más comúnmente, nos referimos a un límite lateral simplemente como un límite. Si el límite izquierdo no es igual al límite derecho, o si uno de ellos no existe, decimos que el límite no existe.</para>
+<note id="fs-id1165137406395">
+
+<title>Los límites laterales de la función a medida que <emphasis effect="italics">x</emphasis> se acerca a <emphasis effect="italics">a</emphasis> </title>
+
+<para id="fs-id1165137855356">El límite de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es igual a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es decir,</para><equation id="eip-390" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi><m:mspace width="0.5em"/>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137548233">si y solo si</para>
+<equation id="eip-45" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137553600">En otras palabras, el límite izquierdo de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> es igual al límite derecho de la misma función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si existe tal límite, nos referimos al límite como límites laterales. En caso contrario, diremos que el límite no existe.</para>
+</note>
+</section>
+</section>
+
+<section id="fs-id1165137544463"><title>Hallar un límite utilizando un gráfico</title><para id="fs-id1165137602375">Para determinar visualmente si existe un límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> observamos el gráfico de la función cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> está muy cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En la <link target-id="CNX_Precalc_Figure_12_01_004"/> observamos el comportamiento del gráfico a ambos lados de <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="CNX_Precalc_Figure_12_01_004" class="small"><media id="fs-id1165137742229" alt="Gráfico de una función que explica el comportamiento de un límite en (a, L) donde la función es creciente cuando x es menor que a y decreciente cuando x es mayor que a.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_004F.jpg"/>
+</media>
+</figure><para id="fs-id1165137425915">Para determinar si existe un límite izquierdo, observamos la rama del gráfico a la izquierda de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Aquí es donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vemos que las salidas se acercan a algún número real <m:math>
+ <m:mi>L</m:mi>
+</m:math> por lo que hay un límite izquierdo.</para><para id="fs-id1165135194329">Para determinar si existe un límite derecho, observe la rama del gráfico a la derecha de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Aquí es donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vemos que las salidas se acercan a algún número real <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que hay un límite derecho.</para><para id="fs-id1165137435863">Si el límite izquierdo y el límite derecho son iguales, como ocurre en la <link target-id="CNX_Precalc_Figure_12_01_004"/>, entonces sabemos que la función tiene límites laterales. Normalmente, cuando nos referimos a un "límite", nos referimos a límites laterales, a menos que lo llamemos límite de un lado.</para>
+
+<para id="fs-id1165137464069">Por último, podemos buscar un valor de salida para la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando el valor de entrada <m:math>
+ <m:mi>x</m:mi>
+</m:math> es igual a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El par de coordenadas del punto sería <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>a</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si ese punto existe, entonces <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> tiene un valor. Si el punto no existe, como en la <link target-id="CNX_Precalc_Figure_12_01_004"/>, entonces decimos que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe.</para>
+
+<note id="fs-id1165137595258" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137589907"><emphasis>Dada una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> utilice un gráfico para hallar los límites y el valor de una función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </emphasis></para>
+<list id="fs-id1165137434383" list-type="enumerated" number-style="arabic"><item>Examine el gráfico para determinar si existe un límite izquierdo.</item>
+<item>Examine el gráfico para determinar si existe un límite derecho.</item>
+<item>Si los dos límites de un lado existen y son iguales, entonces hay límites laterales, lo que normalmente llamamos "límite".</item>
+<item>Si hay un punto en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es el valor de la función correspondiente.</item>
+</list></note>
+
+<example id="Example_12_01_02">
+<exercise id="fs-id1165137695155">
+<problem id="fs-id1165135185339">
+<title>Hallar un límite utilizando un gráfico</title>
+<list id="fs-id1165137612073" list-type="enumerated" number-style="lower-alpha">
+<item>Determine los siguientes límites y el valor de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> como se muestra en la <link target-id="CNX_Precalc_Figure_12_01_005"/>. <list id="fs-id1165137653673" list-type="enumerated" number-style="lower-roman">
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+    </list>
+<figure id="CNX_Precalc_Figure_12_01_005" class="small">
+<media id="fs-id1165135190959" alt="Gráfico de una función definida a trozos que tiene una parábola positiva centrada en el origen y va desde el infinito negativo hasta (2, 8), un punto abierto, y una línea decreciente desde (2, 3), un punto cerrado, hasta el infinito positivo en el eje x.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_005.jpg"/>
+</media>
+</figure>
+</item>
+<item>Determine los siguientes límites y el valor de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> como se muestra en la <link target-id="CNX_Precalc_Figure_12_01_006"/>. <list id="fs-id1165137532278" list-type="enumerated" number-style="lower-roman">
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</item>
+<item>
+ <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+    </list>
+
+<figure id="CNX_Precalc_Figure_12_01_006" class="small">
+<media id="fs-id1165135209438" alt="Gráfico de una función definida a trozos que tiene una parábola positiva desde el infinito negativo hasta 2 en el eje x, una línea decreciente desde 2 hasta el infinito positivo en el eje x y un punto en (2, 4).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_006.jpg"/>
+</media>
+</figure>
+</item>
+</list>
+</problem>
+
+<solution id="fs-id1165135191136">
+<list id="fs-id1165137460655" list-type="enumerated" number-style="lower-alpha">
+<item>Si miramos la <link target-id="CNX_Precalc_Figure_12_01_005"/>: <list id="fs-id1165135187119" list-type="enumerated" number-style="lower-roman"><item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero infinitesimalmente cerca de 2, los valores de salida se acercan a <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero infinitesimalmente cerca de 2, los valores de salida se acercan a <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no existe porque <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≠</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> los límites izquierdo y derecho no son iguales.</item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>2 </m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> porque el gráfico de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> pasa por el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>2 </m:mn>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+    </list></item>
+<item>Si miramos la <link target-id="CNX_Precalc_Figure_12_01_006"/>: <list id="fs-id1165137705643" list-type="enumerated" number-style="lower-roman"><item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> pero infinitesimalmente cerca de 2, los valores de salida se acercan a <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> pero infinitesimalmente cerca de 2, los valores de salida se acercan a <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8.</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> porque <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>2</m:mn><m:msup>
+     <m:mspace width="0.5em"/>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> los límites izquierdo y derecho son iguales.</item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>2 </m:mn>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> porque el gráfico de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> pasa por el punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mn>2 </m:mn>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></item>
+</list>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137415152" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137665107">
+<problem id="fs-id1165137665109">
+<para id="fs-id1165137936962">Utilizando el gráfico de la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> que se muestra en la <link target-id="CNX_Precalc_Figure_12_01_007"/>, estime los siguientes límites.</para>
+<list id="fs-id5379835430" list-type="enumerated" number-style="arabic" class="circled">
+  <item><m:math><m:munder><m:mrow><m:mtext>lím</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>0</m:mn><m:mo> </m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mtext>lím</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>0</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mi>l</m:mi><m:mi>i</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>0</m:mn></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mtext>lím</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>2</m:mn><m:mo> </m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mtext>lím</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>2</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mi>l</m:mi><m:mi>i</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>2</m:mn></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mtext>lím</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>4</m:mn><m:mo> </m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mtext>lím</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:msup><m:mn>4</m:mn><m:mo>+</m:mo></m:msup></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes.</item>
+  <item><m:math><m:munder><m:mrow><m:mi>l</m:mi><m:mi>i</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>→</m:mo><m:mn>4</m:mn></m:mrow></m:munder><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math></item>
+</list>
+<figure id="CNX_Precalc_Figure_12_01_007" class="small"><media id="fs-id1165137827279" alt="Gráfico de una función definida a trozos que tiene tres segmentos: 1) del infinito negativo al 0, 2) del 0 al 2 y 3) del 2 al infinito positivo, que tiene una discontinuidad en (4, 4)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_007n.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165137722857">
+<para id="fs-id1165137843999">a. 0; b. 2; c. no existe; d. <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> e. 0; f. no existe; g. 4; h. 4; i. 4</para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137925464"><title>Hallar un límite utilizando una tabla</title><para id="fs-id1165135184041">La creación de una tabla es una forma de determinar límites mediante información numérica. Creamos una tabla de valores en la que los valores de entrada de <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acercan a <m:math>
+ <m:mi>a</m:mi>
+</m:math> de ambos lados. Luego determinamos si los valores de salida se acercan cada vez más a algún valor real, el <term class="no-emphasis" id="term-00007">límite</term> <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137643253">Veamos un ejemplo con la siguiente función:</para>
+<equation id="fs-id1165135160473" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>125</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137605239">Para crear la tabla, evaluamos la función en valores cercanos a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.</m:mn>
+ </m:mrow>
+</m:math> Utilizamos algunos valores de entrada menores que 5 y otros mayores que 5 como en la <link target-id="CNX_Precalc_Figure_12_01_008"/>. Los valores de la tabla muestran que cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> pero acercándose a 5, la salida correspondiente se acerca a 75. Cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> pero acercándose a 5, la salida correspondiente también se acerca a 75.</para>
+
+<figure id="CNX_Precalc_Figure_12_01_008"><media id="fs-id1165135192197" alt="La tabla muestra que a medida que los valores x se acercan a 5 desde la dirección positiva o negativa, f(x) se acerca mucho a 75. Pero cuando x es igual a 5, y es indefinida.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_008n.jpg"/>
+</media>
+</figure><para id="fs-id1165137849102">Dado que</para>
+<equation id="fs-id1165137849104" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>5</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>5</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135190216">entonces</para>
+<equation id="fs-id1165137849543" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>75.</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137757782">Recuerde que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mn>5</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe.</para>
+
+<note id="fs-id1165137422676" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137749697"><emphasis>Dada una función</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <emphasis>utilice una tabla para hallar el límite a medida que</emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> <emphasis>se acerca a</emphasis> <m:math>
+ <m:mi>a</m:mi>
+</m:math> <emphasis>y el valor de</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <emphasis>si existe.</emphasis></para>
+<list id="fs-id1165135187460" list-type="enumerated" number-style="arabic">
+<item>Elija varios valores de entrada que se acerquen a <m:math>
+ <m:mi>a</m:mi>
+</m:math> tanto desde la izquierda como desde la derecha. Anótelos en una tabla.</item>
+<item>Evalúe la función en cada valor de entrada. Anótelos en la tabla.</item>
+<item>Determine si los valores de la tabla indican un límite izquierdo y un límite derecho.</item>
+<item>Si los límites izquierdo y derecho existen y son iguales, hay límites laterales.</item>
+<item>Sustituya <m:math>
+ <m:mi>x</m:mi>
+</m:math> con la <m:math>
+ <m:mi>a</m:mi>
+</m:math> para calcular el valor de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_12_01_03"><exercise id="fs-id1165137409211"><problem id="fs-id1165137409214">
+<title>Hallar un límite utilizando una tabla</title>
+<para id="fs-id1165137556975">Estime numéricamente el límite de la siguiente expresión mediante una tabla de valores a ambos lados del límite.</para>
+<equation id="fs-id1165137414947" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+
+<solution id="fs-id1165135241237">
+<para id="fs-id1165135241239">Podemos estimar el valor de un límite, si existe, evaluando la función en valores cercanos a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> No podemos hallar un valor de la función para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> directamente porque el resultado tendría un denominador igual a 0, y por lo tanto sería indefinido.</para><equation id="fs-id1165137431312" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137749246">Para crear la <link target-id="CNX_Precalc_Figure_12_01_009"/> elegimos varios valores de entrada cercanos a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> con la mitad de ellos menores que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y la mitad de ellos mayores que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Tenga en cuenta que tenemos que estar seguros de que estamos utilizando el modo radián. Evaluamos la función en cada valor de entrada para completar la tabla.</para><para id="fs-id1165137803332">Los valores de la tabla indican que cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> pero acercándose a 0, la salida correspondiente se acerca a <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137464761">Cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> pero acercándose a 0, la salida correspondiente también se acerca a <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<figure id="CNX_Precalc_Figure_12_01_009">
+<media id="fs-id1165135205799" alt="La tabla muestra que a medida que los valores x se acercan a 0 desde la dirección positiva o negativa, f(x) se acerca mucho a 5 sobre 3. Pero cuando x es igual a 0, y es indefinida.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_009.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137644331">Dado que</para>
+<equation id="fs-id1165137644333" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> </equation> <para id="fs-id1165137585327">entonces</para> <equation id="fs-id1165135174902" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+</solution>
+</exercise></example><note id="fs-id1165135173500" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137735738"><emphasis>¿Es posible comprobar nuestra respuesta utilizando una herramienta gráfica?</emphasis></para>
+<para id="fs-id1165135181885"><emphasis effect="italics">Sí. Anteriormente utilizamos una tabla para hallar un límite de 75 para la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>- −</m:mo><m:mn>125</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 5. Para comprobarlo, graficamos la función en una ventana de visualización como se muestra en la <link target-id="CNX_Precalc_Figure_12_01_010"/>. Una comprobación gráfica muestra que ambas ramas del gráfico de la función se acercan a la salida 75 a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 5. Además, podemos utilizar la función de "trace" de una calculadora gráfica. Al acercarse a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> podemos observar numéricamente que las salidas correspondientes se acercan a <m:math>
+ <m:mrow>
+  <m:mn>75.</m:mn>
+ </m:mrow>
+</m:math> </emphasis></para>
+<figure id="CNX_Precalc_Figure_12_01_010" class="small"><media id="fs-id1165135203666" alt="Gráfico de una función creciente con una discontinuidad en (5, 75)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_010F.jpg"/>
+</media>
+</figure></note>
+
+<note id="fs-id1165137823374" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137627985"><problem id="fs-id1165137807064">
+<para id="fs-id1165137807066">Estime numéricamente el límite de la siguiente función mediante una tabla:</para>
+<equation id="eip-id1165135421681" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>20</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</equation>
+</problem>
+<solution id="fs-id1165137400205">
+<para id="fs-id1165137828348"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>20</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </para>
+<media id="fs-id1165135168310" alt="Tabla que muestra que f(x) se acerca a 5 desde cualquier lado cuando x se acerca a 0 desde cualquier lado.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_014.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<note id="fs-id1165137862682" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137628139"><emphasis>¿Hay un método para determinar un límite mejor que el otro?</emphasis></para>
+<para id="fs-id1165137715279"><emphasis effect="italics">No. Ambos métodos tienen ventajas. Los gráficos permiten una inspección rápida. Las tablas se pueden usar cuando no se dispone de herramientas gráficas, y se pueden calcular con una precisión mayor que la que podría verse a simple vista inspeccionando un gráfico.</emphasis></para>
+</note>
+
+<example id="Example_12_01_04">
+<exercise id="fs-id1165137736471"><problem id="fs-id1165137736473">
+<title>Usar una herramienta gráfica para determinar un límite</title>
+<para id="fs-id1165137923456">Con el uso de una herramienta gráfica, si es posible, determine los límites izquierdo y derecho de la siguiente función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0. Si la función tiene un límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0, indíquelo. Si no es así, discuta por qué no hay límite.</para>
+<equation id="fs-id1165137803382" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+
+<solution id="fs-id1165137749255">
+<para id="fs-id1165137749257">Podemos utilizar una herramienta gráfica para investigar el comportamiento del gráfico cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Centrándonos alrededor de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> elegimos dos ventanas de visualización de manera que la segunda se amplíe más cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> que la primera. El resultado se parecería a la <link target-id="CNX_Precalc_Figure_12_01_011"/> para <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">]</m:mo>
+ </m:mrow>
+</m:math> entre <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="CNX_Precalc_Figure_12_01_011" class="small"><media id="fs-id1165137585796" alt="Gráfico de una función sinusoidal ampliada en [–2, 2] por [–3, 3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_011F.jpg"/>
+</media>
+</figure><para id="fs-id1165135195640">El resultado se parecería a la <link target-id="CNX_Precalc_Figure_12_01_012"/> para <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>-0,1</m:mn><m:mo>,</m:mo><m:mn>0,1</m:mn><m:mo stretchy="false">]</m:mo>
+ </m:mrow>
+</m:math> entre <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>−3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">]</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="CNX_Precalc_Figure_12_01_012" class="small"><media id="fs-id1165137727192" alt="Gráfico de la misma función sinusoidal que la imagen anterior ampliada en [–0,1, 0,1] por [–3. 3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_012F.jpg"/>
+</media>
+
+<caption>Incluso más cerca de cero, somos aún menos capaces de distinguir cualquier límite.</caption></figure><para id="fs-id1165137844208">Cuanto más nos acerquemos a 0, mayores serán las oscilaciones de los valores de salida. Ese no es el comportamiento de una función con límite izquierdo o derecho. Y si no hay límite izquierdo ni derecho, ciertamente no hay límite para la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0.</para>
+<para id="fs-id1165135168247">Escribimos</para>
+<equation id="fs-id1165137827988" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mtext> no existe</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+
+<equation id="fs-id1165137841685" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mtext> no existe</m:mtext><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</equation>
+
+<equation id="fs-id1165137807514" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mtext> no existe</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> </equation>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165135209453" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137473075">
+<problem id="fs-id1165137473077">
+<para id="fs-id1165135173681">Estime numéricamente el siguiente límite <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137834117">
+<para id="fs-id1165137834119">no existe</para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137588596" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165135195553">Acceda a estos recursos en línea para obtener instrucciones adicionales y practicar el cálculo de límites. <list id="url-list" display="block">
+<item><link url="http://openstax.org/l/introtolimits">Introducción a los límites</link></item>
+<item><link url="http://openstax.org/l/formaldeflimit">Definición formal de un límite</link></item>
+</list>
+</para></note>
+</section><section id="fs-id1165137619853" class="key-concepts"><title>Conceptos clave</title><list id="fs-id1165135192061" list-type="bulleted"><item>Una función tiene un límite si los valores de salida se acercan a algún valor <m:math>
+ <m:mi>L</m:mi>
+</m:math> a medida que los valores de entrada se acercan a alguna cantidad <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vea el <link target-id="Example_12_01_01"/>.</item>
+<item>Se utiliza una notación abreviada para describir el límite de una función según la forma <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mspace width="0.5em"/><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que indica que a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> tanto desde la izquierda de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y desde la derecha de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el valor de salida se acerca a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Una función tiene un límite izquierdo si <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se acerca a <m:math>
+ <m:mi>L</m:mi>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Una función tiene un límite derecho si <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se acerca a <m:math>
+ <m:mi>L</m:mi>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Existen límites laterales si el límite izquierdo y el límite derecho de una función son iguales. Se dice que una función tiene un límite si tiene límites laterales.</item>
+<item>Un gráfico proporciona un método visual para determinar el límite de una función.</item>
+<item>Si la función tiene un límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> las ramas del gráfico se acercarán a la misma coordenada <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mtext> </m:mtext>
+ </m:mrow>
+</m:math> cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> desde la izquierda y desde la derecha. Vea el <link target-id="Example_12_01_02"/>.</item>
+<item>Se puede utilizar una tabla para determinar si una función tiene un límite. La tabla debe mostrar los valores de entrada que se acercan a <m:math>
+ <m:mi>a</m:mi>
+</m:math> desde ambas direcciones para poder evaluar los valores de salida resultantes. Si los valores de salida se acercan a algún número, la función tiene un límite. Vea el <link target-id="Example_12_01_03"/>.</item>
+<item>También se puede utilizar una herramienta gráfica para hallar un límite. Vea el <link target-id="Example_12_01_04"/>.</item>
+</list>
+</section><section id="fs-id1165135208868" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165135208872">
+<title>Verbales</title>
+<exercise id="fs-id1165137810884">
+<problem id="fs-id1165137810886">
+<para id="fs-id1165137836816"> Explique la diferencia entre un valor en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y el límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137732254"><para id="fs-id1165137732255"> El valor de la función, la salida, en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> es <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Cuando el <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se toma, los valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acercan infinitamente a <m:math>
+ <m:mi>a</m:mi>
+</m:math> pero nunca son iguales a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> A medida que los valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acercan a <m:math>
+ <m:mi>a</m:mi>
+</m:math> desde la izquierda y desde la derecha, el límite es el valor al que se acerca la función.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137759820">
+<problem id="fs-id1165137759822">
+<para id="fs-id1165137548760">Explique por qué decimos que una función no tiene límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> si, a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el límite izquierdo no es igual al límite derecho.</para></problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137871104">
+<title>Gráficos</title>
+<para id="fs-id1165137692141">En los siguientes ejercicios, estime los valores funcionales y los límites a partir del gráfico de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> proporcionado en la <link target-id="CNX_Precalc_Figure_12_01_201"/>.</para><figure id="CNX_Precalc_Figure_12_01_201" class="small">
+<media id="fs-id1165137642887" alt="Una función definida a trozos con discontinuidades en x = –2, x = 1 y x = 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_201.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165135183014">
+<problem id="fs-id1165135183016">
+<para id="fs-id1165135183018"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:msup>
+     <m:mn>2 </m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137475675">
+<para id="fs-id1165137475677">-4</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135187409">
+<problem id="fs-id1165135187411">
+<para id="fs-id1165135187413"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:msup>
+     <m:mn>2 </m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137806213">
+<problem id="fs-id1165137806215">
+<para id="fs-id1165137423223"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137416310">
+<para id="fs-id1165137727539">-4</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137727545">
+<problem id="fs-id1165137455383">
+<para id="fs-id1165137455385"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>−2</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137935628">
+<problem id="fs-id1165137935630">
+<para id="fs-id1165135192366"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137600935">
+<para id="fs-id1165137600937">2 </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137641346"><problem id="fs-id1165137641348">
+<para id="fs-id1165137911654"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise><exercise id="fs-id1165135181688">
+<problem id="fs-id1165135181690">
+<para id="fs-id1165137807031"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137444321"><para id="fs-id1165137444322">no existe</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137425250"><problem id="fs-id1165137425252">
+<para id="fs-id1165137425254"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para>
+</problem></exercise><exercise id="fs-id1165137455877">
+<problem id="fs-id1165137663687">
+<para id="fs-id1165137663689"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135160838">
+<para id="fs-id1165135160840">4</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137620043"><problem id="fs-id1165135188312">
+<para id="fs-id1165135188314"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise><exercise id="fs-id1165137794235">
+<problem id="fs-id1165137794237">
+<para id="fs-id1165137704787"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137891511"><para id="fs-id1165137891512">no existe</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137770220">
+<problem id="fs-id1165137770222">
+<para id="fs-id1165137770224"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165135176566">En los siguientes ejercicios, dibuje el gráfico de una función a partir de los valores funcionales y los límites proporcionados.</para><exercise id="fs-id1165137863496">
+<problem id="fs-id1165137863498"><para id="fs-id1165137863499"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>, <m:math><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>3</m:mn></m:math>, <m:math><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>1</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mtext> no existe</m:mtext><m:mo>.</m:mo>
+</m:math> </para></problem>
+<solution id="fs-id1165135188168"><para id="fs-id1165135188169">Las respuestas variarán.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137761674">
+<problem id="fs-id1165137761676">
+<para id="fs-id1165137737269"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>2</m:mn></m:math>, <m:math><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137626929"><para id="fs-id1165137626930">Las respuestas variarán.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137849412">
+<problem id="fs-id1165137849414">
+<para id="fs-id1165137849417"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:math> </para></problem>
+<solution id="fs-id1165137583874">
+<para id="fs-id1165137583876">Las respuestas variarán.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137450784">
+<problem id="fs-id1165137450786">
+<para id="fs-id1165135205749"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>3</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>3</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mtext> no existe</m:mtext><m:mo>.</m:mo>
+</m:math> </para></problem>
+<solution id="fs-id1165135169568">
+<para id="fs-id1165135169570">Las respuestas variarán.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137832056">
+<problem id="fs-id1165137758765">
+<para id="fs-id1165137758768"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>6</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn>
+</m:math> </para></problem>
+<solution id="fs-id1165137705097">
+<para id="fs-id1165137722594">Las respuestas variarán.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137722599">
+<problem id="fs-id1165137920793">
+<para id="fs-id1165137920795"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:math> </para></problem>
+<solution id="fs-id1165137629020"><para id="fs-id1165137629021">Las respuestas variarán.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137664609">
+<problem id="fs-id1165137664611">
+<para id="fs-id1165137664613"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>π</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow></m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>–</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+</m:math>, <m:math><m:mspace width="0.5em"/><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>–</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mn>2</m:mn>
+  </m:msqrt>
+</m:math>, <m:math><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mtext> no existe</m:mtext><m:mo>.</m:mo>
+</m:math> </para></problem>
+<solution id="fs-id1165137605454"><para id="fs-id1165137605456">Las respuestas variarán.</para></solution>
+</exercise>
+
+<para id="fs-id1165137605460">En los siguientes ejercicios, utilice una calculadora gráfica para determinar el límite con 5 decimales a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0.</para><exercise id="fs-id1165137651685">
+<problem id="fs-id1165137651688"><para id="fs-id1165137651689"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+
+</exercise>
+
+<exercise id="fs-id1165137582737">
+<problem id="fs-id1165137582740">
+<para id="fs-id1165137582742"> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>2 </m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137848967">
+<para id="fs-id1165137804347">7,38906</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137804353"><problem id="fs-id1165135173556">
+<para id="fs-id1165135173558"> <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise><exercise id="fs-id1165135188780">
+<problem id="fs-id1165135188782">
+<para id="fs-id1165137612119"> <m:math>
+ <m:mrow>
+  <m:mi>i</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137843838"><para id="fs-id1165137843839">54,59815</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137843843">
+<problem id="fs-id1165137723452">
+<para id="fs-id1165137723454"> <m:math>
+ <m:mrow>
+  <m:mi>j</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>5</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+
+</exercise>
+
+<exercise id="fs-id1165135209990">
+<problem id="fs-id1165135209993">
+<para id="fs-id1165135209995">Basándose en el patrón que ha observado en los ejercicios anteriores, haga una conjetura sobre el límite de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>6</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>7</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mtext>y </m:mtext><m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>n</m:mi>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137550666">
+<para id="fs-id1165137550668"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mn>6</m:mn>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>403,428794</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mn>7</m:mn>
+  </m:msup>
+  <m:mo>≈</m:mo><m:mn>1.096,633158</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137629352">En los siguientes ejercicios, utilice una herramienta gráfica para hallar pruebas gráficas para determinar los límites izquierdo y derecho de la función dada a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si la función tiene un límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> indíquelo. Si no es así, discuta por qué no hay límite.</para><exercise id="fs-id1165135191600" class="material-set-2"><problem id="fs-id1165135191602">
+<para id="fs-id1165135191604"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>3</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </para></problem></exercise><exercise id="fs-id1165135190449" class="material-set-2">
+<problem id="fs-id1165135190452">
+<para id="fs-id1165137658199"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mrow>
+         <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+        </m:mrow>
+       </m:mfrac>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:msup>
+        <m:mrow>
+         <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+        </m:mrow>
+        <m:mn>2</m:mn>
+       </m:msup>
+       <m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mtext>si </m:mtext><m:mi>x</m:mi><m:mo>≠</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+  </m:mrow> </m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137762161">
+<para id="fs-id1165137762163"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137641339">
+<title>Numéricos</title>
+<para id="fs-id1165135194505">En los siguientes ejercicios, utilice evidencias numéricas para determinar si el límite existe en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En caso contrario, describa el comportamiento del gráfico de la función cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Redondee las respuestas a dos decimales.</para><exercise id="fs-id1165135190088">
+<problem id="fs-id1165135190090">
+<para id="fs-id1165135195067"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>16</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135195366">
+<problem id="fs-id1165135195368">
+<para id="fs-id1165135195370"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135193227"><para id="fs-id1165135193228"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>0,83</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137407491"><problem id="fs-id1165137407493">
+<para id="fs-id1165137651084"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>–</m:mo><m:mspace width="0.5em"/><m:mn>7</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise><exercise id="fs-id1165137836967">
+<problem id="fs-id1165137836969">
+<para id="fs-id1165137836971"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>–</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137920648"><para id="fs-id1165137920650"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2,00</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137643505">
+<problem id="fs-id1165137643507"><para id="fs-id1165137643508"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+
+</exercise>
+
+<exercise id="fs-id1165137770148">
+<problem id="fs-id1165137770150">
+<para id="fs-id1165137770152"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mo>–</m:mo><m:mn>10</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135177789">
+<para id="fs-id1165135177791"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>10</m:mn><m:mo>–</m:mo><m:mn>10</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>20,00</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135186250">
+<problem id="fs-id1165135186252">
+<para id="fs-id1165135186254"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mn>6</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+
+</exercise>
+
+<exercise id="fs-id1165135209740">
+<problem id="fs-id1165135209742"><para id="fs-id1165137848974"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mi>x</m:mi>
+   <m:mrow>
+    <m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mi>a</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137635211"><para id="fs-id1165137936785"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mrow>
+      <m:mn>4</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> no existe. Los valores de la función disminuyen sin límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a –0,5 desde la izquierda o desde la derecha.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137749781">
+<problem id="fs-id1165137749783">
+<para id="fs-id1165135173888"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137749630">En los siguientes ejercicios, utilice una calculadora para estimar el límite preparando una tabla de valores. Si no hay límite, describa el comportamiento de la función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca al valor dado.</para><exercise id="fs-id1165135188629">
+<problem id="fs-id1165135188632">
+<para id="fs-id1165137692601"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>tan</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165135169220">
+<para id="fs-id1165135169222"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>tan</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>7</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137851910" alt="La tabla muestra que a medida que la función se acerca a 0, el valor es 7 sobre 3, pero la función es indefinida en 0.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_202.jpg"/>
+</media>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137793763">
+<problem id="fs-id1165137793765">
+<para id="fs-id1165137793768"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137755682">
+<media id="fs-id1165137836663" alt="La tabla muestra que a medida que la función se acerca a 4, el valor no existe, ya que acercarse al valor límite por la izquierda es infinito negativo y acercarse al valor límite por la derecha es infinito positivo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_01_203.jpg"/>
+</media>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137755675"><problem id="fs-id1165135190249">
+<para id="fs-id1165135190251"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>sen</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>tan</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</problem>
+<!-- <solution id="fs-id1165135172168">
+<para id="fs-id1165135172170"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lim</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo stretchy="false">&#8594;</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>sin</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>tan</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+
+<media id="fs-id1165137645179" alt="Table shows as the function approaches 0, the value is 1 over 2, but the function is undefined at 0.">
+<image mime-type="image/jpg" src="CNX_Precalc_Figure_12_01_204.jpg"/>
+</media>
+</solution> -->
+</exercise><para id="fs-id1165135188582">En los siguientes ejercicios, utilice una herramienta gráfica para hallar pruebas numéricas o gráficas para determinar los límites izquierdo y derecho de la función dada a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si la función tiene un límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> indíquelo. Si no es así, discuta por qué no hay límite.</para><exercise id="fs-id1165137693450">
+<problem id="fs-id1165137693452">
+<para id="fs-id1165137693454"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:msup>
+     <m:mi>e</m:mi>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+
+</exercise>
+
+<exercise id="fs-id1165137731539">
+<problem id="fs-id1165135190313"><para id="fs-id1165135190314"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:msup>
+     <m:mi>e</m:mi>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135188349">
+<para id="fs-id1165135188351"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:msup>
+     <m:mi>e</m:mi>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1,0</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137641661"><problem id="fs-id1165137641663">
+<para id="fs-id1165137641665"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>x</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise><exercise id="fs-id1165135241604">
+<problem id="fs-id1165135241606">
+<para id="fs-id1165135241608"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137836723">
+<para id="fs-id1165137836725"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:msup>
+     <m:mn>1</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> ya que el límite derecho no es igual al límite izquierdo, <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> no existe.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135176743">
+<problem id="fs-id1165135176745">
+<para id="fs-id1165135176747"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+
+</exercise>
+
+<exercise id="fs-id1165137862201">
+<problem id="fs-id1165137862204">
+<para id="fs-id1165137862206"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137771751">
+<para id="fs-id1165137771754"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> no existe. La función aumenta sin límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> desde cualquier lado.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137761799"><problem id="fs-id1165137761802">
+<para id="fs-id1165137761804"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise><exercise id="fs-id1165137722474">
+<problem id="fs-id1165137722476">
+<para id="fs-id1165137722478"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>e</m:mi>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137657196">
+<para id="fs-id1165137657198"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mi>e</m:mi>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> no existe. Los valores de la función se acercan a 5 por la izquierda y se acercan a 0 por la derecha.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135187324">
+<problem id="fs-id1165135187327">
+<para id="fs-id1165135187329">Utilice pruebas numéricas y gráficas para comparar y contrastar los límites de dos funciones cuyas fórmulas parecen similares: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:mn>1</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+    </m:mrow>
+    <m:mi>x</m:mi>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+    </m:mrow>
+    <m:mi>x</m:mi>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0. Utilice una herramienta gráfica, si es posible, para determinar los límites izquierdo y derecho de las funciones <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0. Si las funciones tienen un límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0, indíquelo. Si no es así, discuta por qué no hay límite.</para></problem>
+
+</exercise>
+</section>
+
+<section id="fs-id1165135187666">
+<title>Extensiones</title>
+
+<exercise id="fs-id1165135187671" class="material-set-2"><problem id="fs-id1165135187674">
+<para id="fs-id1165135187676">Según la teoría de la relatividad, la masa <m:math>
+ <m:mi>m</m:mi>
+</m:math> de una partícula depende de su velocidad <m:math>
+ <m:mi>v</m:mi>
+</m:math>. Es decir,</para>
+<equation id="eip-id1165132035340" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>m</m:mi>
+     <m:mi>i</m:mi>
+    </m:msub>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>v</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>/</m:mo><m:msup>
+       <m:mi>c</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137762396">donde <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>m</m:mi>
+   <m:mi>i</m:mi>
+  </m:msub>
+
+ </m:mrow>
+</m:math> es la masa cuando la partícula está en reposo y <m:math>
+ <m:mi>c</m:mi>
+</m:math> es la velocidad de la luz. Halle el límite de la masa, <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>v</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>c</m:mi>
+   <m:mo>- −</m:mo>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137838647">
+<para id="fs-id1165137838649">Mediante el examen de los postulados y la comprensión de la física relativista, a medida que <m:math>
+ <m:mrow>
+  <m:mi>v</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>∞</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Lleve esto un paso más allá de la solución,</para>
+<equation id="fs-id1165135186921" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>v</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>c</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>m</m:mi><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>v</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>c</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>m</m:mi>
+     <m:mi>i</m:mi>
+    </m:msub>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>v</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>/</m:mo><m:msup>
+       <m:mi>c</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>∞</m:mi>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise><exercise id="fs-id1165137725087" class="material-set-2"><problem id="fs-id1165137725090">
+<para id="fs-id1165137725092">Permita que la velocidad de la luz, <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> sea igual a 1,0. Si la masa, <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es 1, ¿qué ocurre con <m:math>
+ <m:mi>m</m:mi>
+</m:math> a medida que <m:math>
+ <m:mrow>
+  <m:mi>v</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Utilizando los valores que aparecen en la <link target-id="Table_12_01_01"/>, haga una conjetura sobre cuál es la masa a medida que <m:math>
+ <m:mi>v</m:mi>
+</m:math> se acerca a 1,00.</para><table id="Table_12_01_01" summary="">
+<title/>
+<tgroup cols="7">
+<thead>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>v</m:mi></m:math> </emphasis></entry>
+<entry align="center"><emphasis> <m:math><m:mi>m</m:mi></m:math> </emphasis></entry></row>
+</thead><tbody>
+<row>
+<entry align="center">0,5</entry><entry align="center">1,15</entry></row>
+<row>
+<entry align="center">0,9</entry><entry align="center">2,29</entry>
+</row>
+<row>
+<entry align="center">0,95</entry><entry align="center">3,20</entry>
+</row>
+<row>
+<entry align="center">0,99</entry><entry align="center">7,09</entry>
+</row>
+<row>
+<entry align="center">0,999</entry><entry align="center">22,36</entry>
+</row>
+<row>
+<entry align="center">0,99999</entry><entry align="center">223,61</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise></section>
+</section>
+
+</content>
+<glossary>
+<definition id="fs-id1165137935677">
+<term>límite izquierdo</term>
+<meaning id="fs-id1165137935682">el límite de los valores de <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> desde la izquierda, denotado como <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Los valores de <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> pueden acercarse al límite <m:math>
+ <m:mi>L</m:mi>
+</m:math> tanto como queramos tomando valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> lo suficientemente cerca de <m:math>
+ <m:mi>a</m:mi>
+</m:math> de manera que <m:math display="block">
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>a</m:mi>
+ </m:mrow>
+</m:math> y <m:math display="block">
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ambos <m:math>
+ <m:mi>a</m:mi>
+</m:math> y <m:math>
+ <m:mi>L</m:mi>
+</m:math> son números reales.</meaning>
+</definition>
+
+<definition id="fs-id1165137673875">
+<term>límite</term>
+<meaning id="fs-id1165137673880">cuando existe, el valor, <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> al que la salida de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se acerca a medida que la entrada <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca cada vez más a <m:math>
+ <m:mi>a</m:mi>
+</m:math> pero no es igual a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El valor de la salida, <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> puede acercarse tanto a <m:math>
+ <m:mi>L</m:mi>
+</m:math> como decidamos hacerlo utilizando los valores de entrada de <m:math>
+ <m:mi>x</m:mi>
+</m:math> suficientemente cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> pero no necesariamente en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ambos <m:math>
+ <m:mi>a</m:mi>
+</m:math> y <m:math>
+ <m:mi>L</m:mi>
+</m:math> son números reales, y <m:math>
+ <m:mi>L</m:mi>
+</m:math> se denota <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165137832351">
+<term>límite derecho</term>
+<meaning id="fs-id1165137832357">el límite de los valores de <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> cuando <m:math display="block">
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> desde la derecha, denotado como <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Los valores de <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> pueden acercarse al límite <m:math display="block">
+ <m:mi>L</m:mi>
+</m:math> tanto como queramos tomando valores de <m:math>
+ <m:mi>x</m:mi>
+</m:math> lo suficientemente cerca de <m:math>
+ <m:mi>a</m:mi>
+</m:math> donde <m:math display="block">
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math display="block">
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ambos <m:math display="block">
+ <m:mi>a</m:mi>
+</m:math> y <m:math>
+ <m:mi>L</m:mi>
+</m:math> son números reales.</meaning>
+</definition>
+
+<definition id="fs-id1165137641237">
+<term>límites laterales</term>
+<meaning id="fs-id1165137641242">el límite de una función <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es igual a <m:math>
+ <m:mrow>
+  <m:mi>L</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es decir, <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>L</m:mi>
+ </m:mrow>
+</m:math> si y solo si <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mi>a</m:mi>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+
+</glossary>
+</document>

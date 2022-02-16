@@ -1,0 +1,3447 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Secuencias geométricas</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49446</md:content-id>
+  <md:title>Secuencias geométricas</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Hallar el cociente común de una secuencia geométrica.</item>
+<item>Enumerar los términos de una secuencia geométrica.</item>
+<item>Utilizar una fórmula recursiva para una secuencia geométrica.</item>
+<item>Utilizar una fórmula explícita para una secuencia geométrica.</item>
+</list></md:abstract>
+  <md:uuid>94ee3a01-1ca8-4d05-8e23-a5baba74e1a6</md:uuid>
+</metadata>
+
+<content>
+<section id="eip-462" class="coreq-skills"><section id="eip-272" class="learning-objectives"><title>Objetivos de aprendizaje</title><list id="eip-651"><item>Determinar si una secuencia es geométrica (AI 12.3.1).</item>
+<item>Hallar el término general (enésimo término) de una secuencia geométrica (AI 12.3.2).</item></list></section><section id="eip-762"><title>Objetivo 1: Determinar si una secuencia es geométrica (AI 12.3.1)</title><para id="eip-73">Se denomina <term id="term-00001">secuencia geométrica</term> si el cociente entre términos consecutivos es siempre igual.
+</para><para id="eip-502">El cociente entre términos consecutivos en una secuencia geométrica es <emphasis effect="italics">r</emphasis>, el <term id="term-00002">cociente común</term>, donde <emphasis effect="italics">n</emphasis> es mayor o igual a dos.
+</para><equation id="eip-295" class="unnumbered"><label/> <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:msub><m:mi>a</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mfrac></m:math> </equation>
+<media id="eip-idm198533616" alt="Esta figura muestra dos conjuntos de secuencias en las que r es la razón común.">
+    <image mime-type="image/png" src="../../media/CNX_IntAlg_Figure_12_03_001_img.png"/>
+  </media><example id="eip-133"><exercise id="fs-id1167832057866">
+<problem id="fs-id1167835361068">
+<para id="fs-id1167835217802">Determine si cada secuencia es geométrica. En caso afirmativo, indique la razón común.</para>
+<para id="fs-id1167831920432"><span class="token">Ⓐ</span> <m:math><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>32</m:mn><m:mo>,</m:mo><m:mn>64</m:mn><m:mo>,</m:mo><m:mn>128</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mtext>…</m:mtext></m:mrow></m:math> </para>
+<para id="fs-id1167835330694"><span class="token">Ⓑ</span> <m:math><m:mrow><m:mn>−2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>–12</m:mn><m:mo>,</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mn>-72</m:mn><m:mo>,</m:mo><m:mn>216</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mtext>…</m:mtext></m:mrow></m:math> </para>
+
+</problem>
+<solution id="fs-id1167835360295">
+<para id="fs-id1167830702675">Para determinar si la secuencia es geométrica, hallamos la razón de los términos consecutivos indicados.</para>
+<para id="fs-id1167834432782"><span class="token">Ⓐ</span><newline/> <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtable><m:mtr/><m:mtr/><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mtext>Halle la razón de</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>los términos consecutivos.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mspace width="7em"/><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>4</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>8</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>16</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>32</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>64</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>128</m:mn><m:mo>,</m:mo><m:mtext>…</m:mtext></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd columnalign="center"><m:mfrac><m:mn>8</m:mn><m:mn>4</m:mn></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>8</m:mn></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>32</m:mn></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>64</m:mn></m:mrow><m:mrow><m:mn>32</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>128</m:mn></m:mrow><m:mrow><m:mn>64</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd/></m:mtr>
+<m:mtr><m:mtd columnalign="center"><m:mn>2</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>2 </m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>2 </m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>2 </m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>2</m:mn></m:mtd><m:mtd/><m:mtd/></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mspace width="3em"/><m:mtext>La secuencia es geométrica. La razón común es</m:mtext><m:mspace width="0.2em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </para>
+<para id="fs-id1167834064474"><span class="token">Ⓑ</span><newline/> <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="left"><m:mtable><m:mtr/><m:mtr/><m:mtr/><m:mtr/><m:mtr><m:mtd columnalign="left"><m:mtext>Halle la razón de</m:mtext></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mtext>los términos consecutivos.</m:mtext></m:mtd></m:mtr></m:mtable></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mspace width="7em"/><m:mtable><m:mtr><m:mtd columnalign="center"><m:mn>−2</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>6</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>–12</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>36</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>-72</m:mn><m:mo>,</m:mo></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>216</m:mn><m:mo>,</m:mo><m:mtext>…</m:mtext></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>6</m:mn></m:mrow><m:mrow><m:mn>−2</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>−12</m:mn></m:mrow><m:mrow><m:mn>6</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>36</m:mn></m:mrow><m:mrow><m:mn>−12</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>-72</m:mn></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mfrac><m:mrow><m:mn>216</m:mn></m:mrow><m:mrow><m:mn>-72</m:mn></m:mrow></m:mfrac></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="center"><m:mn>−3</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>−2</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>−3</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>−2</m:mn></m:mtd><m:mtd/><m:mtd columnalign="center"><m:mn>−3</m:mn></m:mtd><m:mtd/><m:mtd/></m:mtr></m:mtable></m:mtd></m:mtr><m:mtr/><m:mtr/>
+<m:mtr><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="left"><m:mspace width="3em"/><m:mtext>La secuencia no es geométrica. No hay una razón común.</m:mtext></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </para>
+
+</solution>
+</exercise>
+</example><section id="eip-235" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-933">
+Determine si cada secuencia es geométrica. En caso afirmativo, indique la razón común.
+
+</para><exercise id="eip-390"><problem id="eip-359">
+  <para id="eip-1000"><m:math><m:mn>−150</m:mn></m:math>, <m:math><m:mn>−30</m:mn></m:math>, <m:math><m:mn>−15</m:mn></m:math>, <m:math><m:mn>−5</m:mn></m:math>, <m:math><m:mo>–</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>2</m:mn></m:mfrac></m:math>, …</para>
+<table id="eip-idm517051264" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><tbody>
+<row>
+<entry>Halle la razón de los términos consecutivos.</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+</exercise><exercise id="eip-192"><problem id="eip-492">
+  <para id="eip-385">8, 4, 2, 1, <m:math><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math>, <m:math><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:math>, …</para>
+<table id="eip-idm395374512" summary="." class="unnumbered"><label/>
+<tgroup cols="2"><tbody>
+<row>
+<entry>Halle la razón de los términos consecutivos.</entry>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+
+</exercise></section><example id="eip-343"><exercise id="fs-id1167831923581">
+<problem id="fs-id1167835342807">
+<para id="fs-id1167835341879">Escriba los cinco primeros términos de la secuencia donde el primer término es 3 y el cociente común es <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2</m:mn><m:mo>.</m:mo></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1167835192426">
+<para id="fs-id1167834195479">Empezamos por el primer término y lo multiplicamos por la razón común. Luego, multiplicamos ese resultado por la razón común para obtener el siguiente término, y así sucesivamente.</para>
+<equation id="fs-id1167835327493" class="unnumbered"><label/> <m:math><m:mrow><m:mtable><m:mtr><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>4</m:mn></m:msub></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:msub><m:mi>a</m:mi><m:mn>5</m:mn></m:msub></m:mtd></m:mtr>
+<m:mtr><m:mtd columnalign="center"><m:mn>3</m:mn></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>3</m:mn><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo/><m:mn>−6</m:mn><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo/><m:mn>12</m:mn><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mo/><m:mn>−24</m:mn><m:mo>·</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>−2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mtd></m:mtr>
+<m:mtr><m:mtd/><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>−6</m:mn></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>12</m:mn></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>−24</m:mn></m:mtd><m:mtd/><m:mtd/><m:mtd columnalign="center"><m:mn>48</m:mn></m:mtd></m:mtr></m:mtable></m:mrow></m:math> </equation>
+<para id="fs-id1167834382518">La secuencia es <m:math><m:mrow><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>–6</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>−24</m:mn><m:mo>,</m:mo><m:mn>48</m:mn><m:mtext>,</m:mtext><m:mspace width="0.2em"/><m:mtext>…</m:mtext></m:mrow></m:math> </para>
+</solution>
+</exercise>
+</example><section id="eip-150" class="practice-perfect"><title>La práctica hace la perfección</title><exercise id="eip-idm228385216"><problem id="eip-idm228385088"><para id="eip-794">
+Escriba los cinco primeros términos de la secuencia donde el primer término es 7 y la razón común es <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo> </m:mo><m:mn>3</m:mn></m:math>.
+
+</para><table id="eip-319" summary="." class="unnumbered"><tgroup cols="5">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <colspec colnum="5" colname="c5"/>
+<tbody>
+  <row>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> </entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>2</m:mn></m:msub></m:math> </entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>3</m:mn></m:msub></m:math> </entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>4</m:mn></m:msub></m:math> </entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>5</m:mn></m:msub></m:math> </entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+  </row>
+  <row>
+    <entry namest="c1" nameend="c5">La secuencia es: ________________________________________</entry>
+
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></problem></exercise></section></section><section id="eip-233"><title>Objetivo 2: Hallar el término general (enésimo término) de una sucesión geométrica (AI 12.3.2)</title><para id="eip-241">Hallemos la fórmula del término general de una secuencia geométrica.
+</para><para id="eip-195">Escribamos los primeros términos de la secuencia donde el primer término es <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> y la razón común es <m:math><m:mi>r</m:mi></m:math>. A continuación, buscaremos un patrón.
+</para>
+<media id="eip-idm192241360" alt="Esta figura muestra una imagen de una secuencia geométrica.">
+    <image mime-type="image/png" src="../../media/CNX_IntAlg_Figure_12_03_002_img.png"/>
+  </media><note id="eip-214"><title>Término general (enésimo término) de una secuencia geométrica</title>El término general de una secuencia geométrica con primer término <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub></m:math> y la razón común <m:math><m:mi>r</m:mi></m:math> es<newline/> <m:math><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mi>r</m:mi><m:msup><m:mrow/><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math>
+</note>
+<example id="eip-156"><exercise id="eip-idm326238624"><problem id="eip-idm342645152"><title>Halle el término general (enésimo término) de una secuencia geométrica.</title>
+<list id="eip-idm504403376" list-type="labeled-item"><item><span class="token">Ⓐ</span> Halle el decimotercer término de una secuencia en la que el primer término es 81 y la razón común es r=1/3.</item>
+<item><span class="token">Ⓑ</span> Halle el noveno término de la secuencia 6, 18, 54, 162, 486, 1458, ... Luego, halle el término general de la secuencia.</item>
+</list></problem>
+<solution id="eip-idm326796016">
+<list id="eip-idm342164560" list-type="labeled-item"><item><span class="token">Ⓐ</span> 
+<para id="eip-idm326795760">Halle el decimotercer término de una secuencia en la que el primer término es 81 y la razón común es r=1/3.
+</para>
+<table id="eip-13" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Para dar con el decimotercer término, utilice la fórmula con <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>81</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn><m:mo> </m:mo><m:mi>a</m:mi><m:mi>n</m:mi><m:mi>d</m:mi><m:mo> </m:mo><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>13</m:mn></m:math> </entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>r</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> </entry>
+  </row>
+  <row>
+    <entry>Sustituya</entry>
+    <entry> <m:math><m:msub><m:mi>a</m:mi><m:mn>13</m:mn></m:msub><m:mo>=</m:mo><m:mn>81</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>13</m:mn><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:math> </entry>
+  </row>
+  <row>
+    <entry>Simplifique</entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>13</m:mn></m:msub><m:mo>=</m:mo><m:mn>81</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>13</m:mn><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>13</m:mn></m:msub><m:mo>=</m:mo><m:mn>81</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mn>12</m:mn></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>13</m:mn></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>729</m:mn></m:mfrac></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+</item>
+<item><span class="token">Ⓑ</span> 
+<para id="eip-idm354439696">Halle el noveno término de la secuencia 6, 18, 54, 162, 486, 1458, ... Luego, halle el término general de la secuencia.</para><table id="eip-379" summary="." class="unnumbered unstyled">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Determinemos en primer lugar <m:math><m:msub><m:mi>a</m:mi><m:mi>1</m:mi></m:msub></m:math> y la razón común <m:math><m:mi>r</m:mi></m:math> </entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:mi>La</m:mi><m:mo> </m:mo><m:mi>primer</m:mi><m:mo> </m:mo><m:mi>término</m:mi><m:mo> </m:mo><m:mi>es</m:mi><m:mo> </m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>así que</m:mi><m:mo> </m:mo><m:mo> </m:mo><m:msub><m:mi mathvariant="normal">a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>6</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>La</m:mi><m:mo> </m:mo><m:mi>razón</m:mi><m:mo> </m:mo><m:mi>es</m:mi><m:mo>:</m:mo><m:mo> </m:mo><m:mfrac><m:mn>18</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>54</m:mn><m:mn>18</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>162</m:mn><m:mn>54</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>482</m:mn><m:mn>162</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1458 </m:mn><m:mn>486</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>3</m:mn></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+  <row>
+    <entry>Para hallar el 9.º término, utilice la fórmula con <m:math><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math> y n = 9.<newline/>Sustituya estos valores y simplifique</entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>r</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>9</m:mn></m:msub><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>9</m:mn><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>9</m:mn></m:msub><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>8</m:mn></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mn>9</m:mn></m:msub><m:mo>=</m:mo><m:mn>39366</m:mn></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+  <row>
+    <entry>Para hallar el término general, sustituya <m:math><m:msub><m:mi>a</m:mi><m:mi>1</m:mi></m:msub><m:mo>=</m:mo><m:mn>6</m:mn></m:math> y <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math> en la fórmula
+</entry>
+    <entry> <m:math><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mn>1</m:mn></m:msub><m:msup><m:mi>r</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>6</m:mn><m:msup><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:msup></m:mtd></m:mtr></m:mtable></m:math> </entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list></solution>
+</exercise></example>
+<section id="eip-257" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-649">
+Halle el término general (enésimo término) de una secuencia geométrica.
+</para><exercise id="eip-910"><problem id="eip-525">
+  <para id="eip-225">
+Halle el decimosexto término de una secuencia donde el primer término es 11 y la razón común es –6.
+  </para>
+</problem>
+
+</exercise><exercise id="eip-14"><problem id="eip-111">
+  <para id="eip-700">Halle el 10.º término de la secuencia 9, 18, 36, 72, 144, 288, .... Luego, dé la fórmula del término general.
+
+  </para></problem>
+
+</exercise></section><note id="eip-179" class="try"><para id="eip-idm329170608">Halle el término general (enésimo término) de una secuencia geométrica.
+</para><para id="eip-601">Un paciente toma una cápsula de antibiótico de 30 mg. Al final de cualquier hora, la cantidad de antibiótico que queda en su cuerpo es solo el 90 % de la cantidad al principio de esa hora. La siguiente tabla muestra la cantidad de medicamento que queda en el cuerpo al principio de cada hora.
+</para>
+<table id="eip-342" summary="." class="unnumbered">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Tiempo <emphasis effect="italics">t</emphasis></entry>
+    <entry>Dosis restante después del tiempo <emphasis effect="italics">t</emphasis></entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>30 mg</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>27 mg</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>24,3 mg</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>21,87 mg</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>19,68 mg</entry>
+  </row>
+</tbody></tgroup>
+</table>
+<list id="eip-869" list-type="labeled-item"><item><span class="token">Ⓐ</span> Halle la razón de los términos consecutivos. ¿Es una secuencia geométrica?</item>
+<item><span class="token">Ⓑ</span> Halle una fórmula para el término general de esta secuencia.</item>
+<item><span class="token">Ⓒ</span> ¿Qué cantidad de medicamento queda al comienzo de la hora 7? ¿De la hora 12? ¿De la hora 24? </item>
+</list></note></section></section><para id="fs-id1165137639564">Muchos puestos de trabajo ofrecen un aumento anual por el costo de vida para mantener los salarios en consonancia con la inflación. Supongamos, por ejemplo, que un recién graduado de educación superior encuentra un puesto de gerente de ventas con un salario anual de 26.000 dólares. Se le promete un aumento del 2 % por el costo de la vida cada año. Su salario anual en un año determinado se puede calcular al multiplicar su salario del año anterior por el 102 %. Su salario será de 26.520 dólares al cabo de un año, 27.050,40 dólares al cabo de dos años, 27.591,41 dólares al cabo de tres años, y así sucesivamente. Cuando un salario se incrementa en una tasa constante cada año, el salario crece en un factor constante. En esta sección veremos secuencias que crecen de esta manera.</para>
+
+<section id="fs-id1165137715137"><title>Hallar razones comunes</title><para id="fs-id1165137894517">Los valores salariales anuales descritos forman una <emphasis>secuencia geométrica</emphasis> porque cambian por un factor constante cada año. Cada término de una secuencia geométrica aumenta o disminuye en un factor constante llamado <emphasis>razón común</emphasis>. La siguiente secuencia es un ejemplo de secuencia geométrica porque cada término aumenta en un factor constante de 6. La multiplicación de cualquier término de la secuencia por la razón común 6 genera el término siguiente.</para>
+<para id="eip-id2205317"><media id="fs-id1165137730802" alt="Una secuencia {1, 6, 36, 216, 1.296, ...} que muestra que todos los números tienen una razón común de 6." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_001.jpg"/>
+</media></para>
+<note id="fs-id1165137749987">
+
+<title>Definición de secuencia geométrica</title>
+<para id="fs-id1165137855264">La <term id="term-00003">secuencia geométrica</term> es aquella en la que cualquier término dividido entre el anterior es una constante. Esta constante se denomina <term id="term-00004">cociente común</term> de la secuencia. La razón común se puede calcular al dividir cualquier término de la secuencia entre el término anterior. Si los valores de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> es el término inicial de una secuencia geométrica y <m:math>
+ <m:mi>r</m:mi>
+</m:math> es la razón común, la secuencia será</para>
+
+<equation id="eip-246" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo><m:mo> </m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mi>r</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</equation></note>
+
+<note id="fs-id1165137417317" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135388542"><emphasis>Dado un conjunto de números, determine si representan una secuencia geométrica.</emphasis></para>
+<list id="fs-id1165137399185" list-type="enumerated" number-style="arabic">
+<item>Divida cada término entre el término anterior.</item>
+<item>Compare los cocientes. Si son iguales, existe una razón común y la secuencia es geométrica.</item>
+</list>
+</note>
+
+<example id="Example_11_03_01">
+<exercise id="fs-id1165137594043">
+<problem id="fs-id1165137736734">
+<title>Hallar razones comunes</title>
+<para id="fs-id1165137462087">¿La secuencia es geométrica? Si es así, halle la razón común.</para>
+<list id="fs-id1165137911197" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>2 </m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>4</m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>8</m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>16</m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>...</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mn>48</m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>12</m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>4</m:mn><m:mtext>, </m:mtext><m:mn>2 </m:mn><m:mtext>,</m:mtext><m:mspace width="0.5em"/><m:mn>...</m:mn>
+ </m:mrow>
+</m:math>
+
+</item>
+</list></problem>
+<solution id="fs-id1165137430766">
+<para id="fs-id1165137635400">Divida cada término entre el término anterior para determinar si existe una razón común.</para>
+<list id="fs-id1165137410224" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>8</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+<para id="fs-id1165137837038">La secuencia es geométrica porque hay una razón común. La razón común es de 2.</para>
+</item>
+<item><span class="token">Ⓑ</span> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>48</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mrow>
+        <m:mn>12</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+
+
+<para id="fs-id1165137603152">La secuencia no es geométrica porque no hay una razón común.</para>
+</item>
+</list></solution>
+<commentary id="fs-id1165137667273">
+<title>Análisis</title>
+<para id="fs-id1165137448166">El gráfico de cada secuencia se muestra en la <link target-id="CNX_Precalc_Figure_11_03_002"/>. A partir de los gráficos parece que tanto (a) como (b) tienen la forma del gráfico de una función exponencial en esta ventana de visualización. Sin embargo, sabemos que (a) es geométrico y, por tanto, esta interpretación es válida, pero (b) no lo es.</para><figure id="CNX_Precalc_Figure_11_03_002">
+<media id="fs-id1165137644904" alt="Gráfico de dos secuencias donde el gráfico (a) es geométrico y el gráfico (b) es exponencial.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_002.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137742586" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137611774"><emphasis>Si le dicen que una secuencia es geométrica, ¿tiene que dividir cada término entre el anterior para calcular la razón común?</emphasis></para>
+<para id="fs-id1165137803401"><emphasis effect="italics">No. Si sabe que la secuencia es geométrica, puede elegir un término cualquiera de la secuencia y dividirlo entre el término anterior para hallar la razón común.</emphasis></para></note>
+
+<note id="fs-id1165135241213" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_01">
+<problem id="fs-id1165137506295"><para id="fs-id1165135408468">¿La secuencia es geométrica? Si es así, halle la razón común.</para>
+<equation id="eip-id1491662" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165137783622">
+<para id="fs-id1165137667314">La secuencia no es geométrica porque <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>≠</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>.</para></solution>
+</exercise>
+</note><note id="eip-234" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_02">
+<problem id="fs-id1165137645227">
+<para id="fs-id1165137462478">¿La secuencia es geométrica? Si es así, halle la razón común.</para>
+<equation id="eip-id2227162" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>100</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165135169375">
+<para id="fs-id1165135560821">La secuencia es geométrica. La razón común es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>.</para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137433726"><title>Escribir términos de secuencias geométricas</title><para id="fs-id1165137659713">Ahora que podemos identificar una secuencia geométrica, aprenderemos a hallar los términos de una secuencia geométrica si nos dan el primer término y la razón común. Los términos de una secuencia geométrica se pueden calcular ao comenzar por el primer término y multiplicar por la razón común repetidamente. Por ejemplo, si el primer término de una secuencia geométrica es <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> y la razón común es <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>4, </m:mn>
+ </m:mrow>
+</m:math> podemos hallar los términos posteriores multiplicando <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> para obtener <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> y luego multiplicar el resultado <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> para obtener <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>32</m:mn>
+ </m:mrow>
+</m:math> y así sucesivamente.</para>
+<equation id="eip-245" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>32</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:mn>32</m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>128</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137472075">Los cuatro primeros términos son <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>-2</m:mn><m:mtext>, </m:mtext><m:mn>–8</m:mn><m:mtext>, </m:mtext><m:mn>-32</m:mn><m:mtext>, </m:mtext><m:mn>-128</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<note id="fs-id1165137939702" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137473764"><emphasis>Dado el primer término y el factor común, halle los cuatro primeros términos de una sucesión geométrica.</emphasis></para>
+<list id="fs-id1165137409884" list-type="enumerated" number-style="arabic"><item>Multiplique el término inicial, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por la razón común para hallar el siguiente término, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Repita el proceso, utilizando <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> para calcular <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> y luego <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> para calcular <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>4,</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> hasta que se hayan identificado los cuatro términos.</item>
+<item>Escriba los términos separados por comas entre corchetes.</item>
+</list></note><example id="Example_11_03_02">
+<exercise id="fs-id1165137573089"><problem id="fs-id1165137462497">
+<title>Escribir los términos de una secuencia geométrica</title>
+<para id="fs-id1165137640196">Enumere los cuatro primeros términos de la secuencia geométrica con <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>–2.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137758063">
+<para id="fs-id1165137811084">Multiplique <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> entre <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> para calcular <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Repita el proceso, utilizando <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> para calcular <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y así sucesivamente.</para>
+<equation id="eip-id1165135160893" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>20</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>40</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137560200">Los cuatro primeros términos son <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>-10</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>–40</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise></example>
+
+<note id="fs-id1165137416531" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_03">
+<problem id="fs-id1165137619295"><para id="fs-id1165137619296">Enumere los cinco primeros términos de la secuencia geométrica con <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>18</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137655223">
+<para id="fs-id1165137560204"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>18</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>2</m:mn>
+    <m:mn>9</m:mn>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165135694573"><title>Usar fórmulas recursivas para secuencias geométricas</title><para id="fs-id1165137641691">Una <term class="no-emphasis" id="term-00005">fórmula recursiva</term> nos permite calcular cualquier término de una secuencia geométrica utilizando el término anterior. Cada término es el producto del cociente común y del término anterior. Por ejemplo, supongamos que la razón común es 9. Entonces cada término es nueve veces el término anterior. Como en cualquier fórmula recursiva, hay que dar el término inicial.</para>
+<note id="fs-id1165137448332">
+
+<title>Fórmula recursiva para una secuencia geométrica</title>
+<para id="fs-id1165137463184">La fórmula recursiva de una secuencia geométrica con razón común <m:math>
+ <m:mi>r</m:mi>
+</m:math> y primer término <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> se</para>
+<equation id="fs-id1165137662634" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mi>r</m:mi><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>,</m:mo><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </equation>
+ </note>
+
+<note id="fs-id1165135207482" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137559120"><emphasis>Dados los primeros términos de una secuencia geométrica, escriba su fórmula recursiva.</emphasis></para>
+<list id="fs-id1165137442323" list-type="enumerated" number-style="arabic">
+<item>Indique el término inicial.</item>
+<item>Halle la razón común dividiendo un término cualquiera entre el término anterior.</item>
+<item>Sustituya la razón común en la fórmula recursiva de una secuencia geométrica.</item>
+</list>
+</note>
+
+<example id="Example_11_03_03">
+<exercise id="fs-id1165137593409"><problem id="fs-id1165137640113">
+<title>Usar fórmulas recursivas para secuencias geométricas</title>
+<para id="fs-id1165137470342">Escriba una fórmula recursiva para la siguiente secuencia geométrica.</para>
+<equation id="eip-id1165132059630" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>6</m:mn><m:mtext>, </m:mtext><m:mn>9</m:mn><m:mtext>, </m:mtext><m:mn>13,5</m:mn><m:mtext>, </m:mtext><m:mn>20,25</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165135190538">
+<para id="fs-id1165137645992">El primer término se da como 6. La razón común se puede calcular dividiendo el segundo término entre el primero.</para>
+<equation id="eip-id1165134410969" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1,5</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137539505">Sustituya la razón común en la fórmula recursiva de las secuencias geométricas y defina <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<equation id="eip-id1165135694281" class="unnumbered"><label/> <m:math display="block">
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mi>n</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo><m:mi>r</m:mi><m:msub>
+     <m:mi>a</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msub>
+
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mi>n</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo><m:mn>1,5</m:mn><m:msub>
+     <m:mi>a</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msub>
+    <m:mspace width="0.5em"/><m:mtext>para </m:mtext><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo><m:mn>6</m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </equation>
+</solution>
+<commentary id="fs-id1165137629524">
+<title>Análisis</title>
+<para id="fs-id1165137409471">La secuencia de puntos de datos sigue un patrón exponencial. La razón común es también la base de una función exponencial, como se muestra en la <link target-id="CNX_Precalc_Figure_11_03_003"/></para><figure id="CNX_Precalc_Figure_11_03_003">
+<media id="fs-id1165137804290" alt="Gráfico de la secuencia geométrica.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_003.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137804164" class="precalculus qa">
+
+<para id="fs-id1165137594708"><emphasis>¿Tenemos que dividir el segundo término entre el primero para hallar la razón común?</emphasis></para>
+<para id="fs-id1165135593534"><emphasis effect="italics">No. Podemos dividir cualquier término de la secuencia entre el término anterior. Sin embargo, lo más habitual es dividir el segundo término entre el primero porque suele ser el método más sencillo para hallar la razón común.</emphasis></para>
+</note>
+
+<note id="fs-id1165137461314" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_05">
+<problem id="fs-id1165137538955">
+<para id="fs-id1165137418734">Escriba una fórmula recursiva para la siguiente secuencia geométrica.</para>
+<equation id="eip-id1264736" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>2 </m:mn><m:mtext>, </m:mtext><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mtext>, </m:mtext><m:mfrac>
+   <m:mn>8</m:mn>
+   <m:mn>9</m:mn>
+  </m:mfrac>
+  <m:mtext>, </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>27</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137605332"><para id="fs-id1165137779221"> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo><m:mn>2 </m:mn>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mi>n</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mn>2 </m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:msub>
+     <m:mi>a</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msub>
+    <m:mspace width="0.5em"/><m:mtext>para </m:mtext><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2 </m:mn>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math> </para></solution>
+</exercise>
+</note></section><section id="fs-id1165137656805"><title>Usar fórmulas explícitas para secuencias geométricas</title><para id="fs-id1165137507452">Como una secuencia geométrica es una función exponencial cuyo dominio es el conjunto de enteros positivos, y la razón común es la base de la función, podemos escribir fórmulas explícitas que nos permitan hallar términos particulares.</para>
+<equation id="eip-520" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137410536">Veamos la secuencia <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>18</m:mn><m:mtext>, </m:mtext><m:mn>36</m:mn><m:mtext>, </m:mtext><m:mn>72</m:mn><m:mtext>, </m:mtext><m:mn>144</m:mn><m:mtext>, </m:mtext><m:mn>288</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Se trata de una secuencia geométrica con una razón común de 2 y una función exponencial de base 2. Una fórmula explícita para esta secuencia es</para><equation id="eip-422" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>18</m:mn><m:mo>·</m:mo><m:msup>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137473099">El gráfico de la secuencia se muestra en la <link target-id="CNX_Precalc_Figure_11_03_004"/>.</para>
+
+<figure id="CNX_Precalc_Figure_11_03_004" class="small">
+<media id="fs-id1165137423053" alt="Gráfico de la secuencia geométrica.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_004.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165137647200"><title>Fórmula explícita para una secuencia geométrica</title>
+
+<para id="fs-id1165137835426">El <m:math><m:mi>n</m:mi></m:math> término de una secuencia geométrica viene dado por la <term class="no-emphasis" id="term-00006">fórmula explícita</term>:</para>
+<equation id="fs-id1165137461602" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+</note><example id="Example_11_03_04">
+<exercise id="fs-id1165137453521"><problem id="fs-id1165137811825">
+<title>Escribir términos de secuencias geométricas mediante la fórmula explícita</title>
+<para id="fs-id1165137874642">Dada una secuencia geométrica con <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>24</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> calcule <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137408599">
+<para id="fs-id1165137566318">La secuencia puede escribirse en términos del término inicial y de la razón común <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<equation id="eip-id1165134060418" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mi>r</m:mi><m:mo>,</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137432346">Halle la razón común utilizando el cuarto término dado.</para>
+<equation id="eip-id1165137444653" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msup>
+       <m:mi>r</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Escriba el cuarto término de la secuencia en términos de </m:mtext><m:msub>
+       <m:mi>α</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mspace width="0.5em"/><m:mtext>y </m:mtext><m:mi>r</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>24</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya </m:mtext><m:mn>24</m:mn><m:mspace width="0.5em"/><m:mtext>para</m:mtext><m:mspace width="0.5em"/><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>4</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mn>8</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Divida</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para obtener la razón común</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137455556">Halle el segundo término multiplicando el primer término por la razón común.</para>
+<equation id="eip-id1165135426318" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation></solution>
+<commentary id="fs-id1165137725528">
+<title>Análisis</title>
+<para id="fs-id1165137789060">La razón común se multiplica por el primer término una vez para hallar el segundo término, dos veces para hallar el tercer término, tres veces para hallar el cuarto término, y así sucesivamente. El décimo término podría hallarse multiplicando el primer término por la razón común nueve veces o multiplicando por la razón común elevada a la novena potencia.</para>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137444993" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_04">
+<problem id="fs-id1165137459454">
+<para id="fs-id1165137653766">Dada una secuencia geométrica con <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>32</m:mn>
+ </m:mrow>
+</m:math>, calcule <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>6</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137447458">
+<para id="fs-id1165137532391"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>6</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>384</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<example id="Example_11_03_05">
+<exercise id="fs-id1165137611787"><problem id="fs-id1165135255552">
+<title>Escribir una fórmula explícita para el <m:math><m:mi> </m:mi></m:math> enésimo término de una secuencia geométrica</title>
+<para id="fs-id1165137414859">Escriba una fórmula explícita para el <m:math>
+ <m:mrow>
+  <m:mi> </m:mi><m:mtext>enésimo</m:mtext>
+ </m:mrow>
+</m:math> término de la siguiente secuencia geométrica.</para>
+<equation id="eip-id1165134113698" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>2 </m:mn><m:mtext>, </m:mtext><m:mn>10</m:mn><m:mtext>, </m:mtext><m:mn>50</m:mn><m:mtext>, </m:mtext><m:mn>250</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137911060">
+<para id="fs-id1165137466492">El primer término es 2. La razón común se puede calcular al dividir el segundo término entre el primero.</para>
+<equation id="eip-id1165134085791" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137407052">La razón común es 5. Sustituya la razón común y el primer término de la secuencia en la fórmula.</para>
+<equation id="eip-id1165137558360" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:msup>
+       <m:mi>r</m:mi>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>2</m:mn><m:mo>⋅</m:mo><m:msup>
+       <m:mn>5</m:mn>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137841605">El gráfico de esta secuencia en la <link target-id="CNX_Precalc_Figure_11_03_005"/> muestra un patrón exponencial.</para>
+
+<figure id="CNX_Precalc_Figure_11_03_005">
+<media id="fs-id1165137460332" alt="Gráfico de la secuencia geométrica.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_005.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137600603" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_06">
+<problem id="fs-id1165137762502">
+<para id="fs-id1165137528367">Escriba una fórmula explícita para la siguiente secuencia geométrica.</para>
+<equation id="eip-id1673413" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>-1</m:mn><m:mtext>, </m:mtext><m:mn>3</m:mn><m:mtext>, </m:mtext><m:mn>-9</m:mn><m:mtext>, </m:mtext><m:mn>27</m:mn><m:mtext>, </m:mtext><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1165137532482">
+<para id="fs-id1165137435217"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+</section><section id="fs-id1165135251448"><title>Resolver problemas de aplicación con secuencias geométricas</title><para id="fs-id1165137436841">En escenarios del mundo real que involucran secuencias geométricas podemos necesitar usar un término inicial de <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> en vez de <m:math>
+ <m:mrow>
+<m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En estos problemas, podemos alterar ligeramente la fórmula explícita utilizando la siguiente fórmula:</para><equation id="fs-id1165137455099" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation>
+<example id="Example_11_03_06">
+<exercise id="fs-id1165137675504">
+<problem id="fs-id1165135207496">
+<title>Resolver problemas de aplicación con secuencias geométricas</title>
+<para id="fs-id1165137724701">En 2013, el número de estudiantes de una escuela pequeña es de 284. Se calcula que la población estudiantil aumentará un 4 % cada año.</para>
+<list id="fs-id1165137724573" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Escriba una fórmula para la población estudiantil.</item>
+<item><span class="token">Ⓑ</span>Estime la población estudiantil en 2020.</item>
+</list>
+</problem>
+<solution id="fs-id1165137603324">
+<list id="fs-id1165137812960" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>
+<para id="fs-id1165137475561">La situación puede modelarse mediante una secuencia geométrica con un término inicial de 284. La población estudiantil será el 104 % del año anterior, por lo que la razón común es de 1,04.</para>
+<para id="fs-id1165135345013">Supongamos que <m:math>
+ <m:mi>P</m:mi>
+</m:math> es la población estudiantil y <m:math>
+ <m:mi>n</m:mi>
+</m:math> es el número de años después de 2013. Utilizando la fórmula explícita de una secuencia geométrica obtenemos</para><equation id="eip-id1165134384459" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>P</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo> </m:mo><m:mo>=</m:mo><m:mn>284</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mn>1,04</m:mn>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</equation></item>
+<item><span class="token">Ⓑ</span>
+<para id="fs-id1165137472563">Podemos calcular el número de años desde 2013 mediante la resta.</para>
+<equation id="eip-id1165137664601" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>2020</m:mn><m:mo>- −</m:mo><m:mn>2013</m:mn><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137453691">Buscamos la población después de 7 años. Podemos sustituir 7 por <m:math>
+ <m:mi>n</m:mi>
+</m:math> para estimar la población en 2020.</para>
+<equation id="eip-id1165135699078" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msub>
+   <m:mi>P</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+<m:mo>=</m:mo><m:mn>284</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mn>1,04</m:mn>
+   </m:mrow>
+   <m:mn>7</m:mn>
+  </m:msup>
+<m:mo>≈</m:mo><m:mn>374</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137528682">La población estudiantil será de unos 374 estudiantes en 2020.</para>
+</item>
+</list></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137768542" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_11_03_07"><problem id="fs-id1165137410731">
+<para id="fs-id1165137834028">Una empresa pone en marcha un nuevo sitio web. Inicialmente el número de visitas es de 293 debido al factor curiosidad. La empresa estima que el número de visitas aumentará un 2,6 % por semana.</para>
+<para id="eip-id1697422">
+<list id="eip-id1165134294794" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span>Escriba una fórmula para el número de visitas.</item>
+<item><span class="token">Ⓑ</span>Calcule el número de visitas para dentro de 5 semanas.</item>
+</list>
+</para>
+</problem>
+<solution id="fs-id1165137455278">
+<para id="eip-id1165137422969"><list id="eip-id1165135538601" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>P</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>293</m:mn><m:mo>⋅</m:mo><m:mn>1,026</m:mn><m:msup>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</item>
+<item><span class="token">Ⓑ</span>El número de visitas será de unas 333.</item>
+</list></para></solution>
+</exercise></note>
+<note id="fs-id1165137443318" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165137817563">Acceda a estos recursos en línea para obtener más información y practicar con las secuencias geométricas.</para>
+<list id="url-list" list-type="bulleted" display="block">
+<item><link url="http://openstax.org/l/geometricseq">Secuencias geométricas</link></item>
+<item><link url="http://openstax.org/l/sequencetype">Determinar el tipo de secuencia</link></item>
+<item><link url="http://openstax.org/l/sequenceformula">Hallar la fórmula de una secuencia</link></item>
+</list>
+</note>
+</section><section id="fs-id1165135264797" class="key-equations">
+<title>Ecuaciones clave</title>
+<table id="eip-id1165133155748" summary=".." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>fórmula recursiva para <m:math><m:mrow><m:mi>n</m:mi><m:mi>t</m:mi><m:mi>h</m:mi></m:mrow></m:math> término de una secuencia geométrica</entry>
+<entry> <m:math>
+ <m:mrow>
+ <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mi>r</m:mi>
+<m:msub>
+     <m:mi>a</m:mi>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msub>
+<m:mo>,</m:mo><m:mi>n</m:mi><m:mo>≥</m:mo>
+    <m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+
+
+<row>
+<entry>fórmula explícita para <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mi>t</m:mi><m:mi>h</m:mi>
+ </m:mrow>
+</m:math> término de una secuencia geométrica</entry>
+<entry> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></section><section id="fs-id1165137611739" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165135189853" list-type="bulleted"><item>Una sucesión geométrica es una secuencia en la que la razón entre dos términos consecutivos cualesquiera es una constante.</item>
+<item>La razón constante entre dos términos consecutivos se llama razón común.</item>
+<item>La razón común se puede calcular la dividir cualquier término de la secuencia entre el término anterior. Vea el <link target-id="Example_11_03_01"/>.</item>
+<item>Los términos de una secuencia geométrica se pueden calcular al empezar por el primer término y multiplicar por la razón común repetidamente. Vea el <link target-id="Example_11_03_02"/> y el <link target-id="Example_11_03_04"/>.</item>
+<item>Una fórmula recursiva para una secuencia geométrica con razón común <m:math>
+ <m:mi>r</m:mi>
+</m:math> viene dada por <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mi>r</m:mi><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+
+ </m:mrow>
+</m:math> para <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>.</item>
+<item>Como en cualquier fórmula recursiva, hay que dar el término inicial de la secuencia. Vea el <link target-id="Example_11_03_03"/>.</item>
+<item>Una fórmula explícita para una secuencia geométrica con razón común <m:math>
+ <m:mi>r</m:mi>
+</m:math> viene dada por <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vea el <link target-id="Example_11_03_05"/>.</item>
+<item>En los problemas de aplicación, a veces alteramos ligeramente la fórmula explícita por <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>r</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+Vea el <link target-id="Example_11_03_06"/>.
+
+
+<section id="fs-id1165137695322" class="section-exercises">
+<title>Ejercicios de la sección</title>
+<section id="fs-id1165137603819">
+<title>Verbales</title>
+<exercise id="fs-id1165137415276">
+<problem id="fs-id1165137601852"><para id="fs-id1165137460182">¿Qué es una secuencia geométrica?</para></problem>
+<solution id="fs-id1165137413921"><para id="fs-id1165137419043">Una secuencia en la que la razón entre dos términos consecutivos cualesquiera es constante.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135386446">
+<problem id="fs-id1165137430484"><para id="fs-id1165137430485">¿Cómo se calcula la razón común de una secuencia geométrica?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137651855">
+<problem id="fs-id1165137871059"><para id="fs-id1165137666549">¿Cuál es el procedimiento para determinar si una secuencia es geométrica?</para></problem>
+<solution id="fs-id1165137571584"><para id="fs-id1165137645826">Dividir cada término de una secuencia entre el término anterior. Si los cocientes resultantes son iguales, la secuencia es geométrica.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137786269">
+<problem id="fs-id1165137698332"><para id="fs-id1165137767192">¿Cuál es la diferencia entre una secuencia aritmética y una secuencia geométrica?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137806166">
+<problem id="fs-id1165137812741"><para id="fs-id1165137812742">Describa en qué se parecen las funciones exponenciales y las secuencias geométricas. ¿En qué se diferencian?</para></problem>
+<solution id="fs-id1165137410439"><para id="fs-id1165137735983">Tanto las secuencias geométricas como las funciones exponenciales tienen una razón constante. Sin embargo, sus dominios no son los mismos. Las funciones exponenciales se definen para todos los números reales, y las secuencias geométricas se definen solo para los enteros positivos. Otra diferencia es que la base de una secuencia geométrica (la razón común) puede ser negativa, pero la base de una función exponencial debe ser positiva.</para></solution>
+</exercise>
+</section>
+<section id="fs-id1165135185333">
+<title>Algebraicos</title>
+<para id="fs-id1165137481390">En los siguientes ejercicios, halle la razón común de la secuencia geométrica.</para>
+<exercise id="fs-id1165137656402">
+<problem id="fs-id1165137628207">
+<para id="fs-id1165137643000"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>81</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137698185">
+<problem id="fs-id1165137433830">
+<para id="fs-id1165137936860"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>0,125</m:mn><m:mo>,</m:mo><m:mn>0,25</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>0,5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137560236">
+<para id="fs-id1165137626648">La razón común es <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137696255">
+<problem id="fs-id1165137666722">
+<para id="fs-id1165137925247"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>32</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>128</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137648090">En los siguientes ejercicios, determine si la secuencia es geométrica. Si es así, halle la razón común.</para>
+<exercise id="fs-id1165137533956">
+<problem id="fs-id1165137643508">
+<para id="fs-id1165137725448"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>24</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>48</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>96</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137660469">
+<para id="fs-id1165137550725">La secuencia es geométrica. La razón común es de 2.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137462907">
+<problem id="fs-id1165137452609">
+<para id="fs-id1165137803618"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>5,2</m:mn><m:mo>,</m:mo><m:mn>5,4</m:mn><m:mo>,</m:mo><m:mn>5,6</m:mn><m:mo>,</m:mo><m:mn>5,8</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137823090">
+<problem id="fs-id1165137433632">
+<para id="fs-id1165137823320"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134047692">
+<para id="fs-id1165137911673">La secuencia es geométrica. La razón común es de <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137935634">
+<problem id="fs-id1165137517318">
+<para id="fs-id1165137723782"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137841659">
+<problem id="fs-id1165137841662">
+<para id="fs-id1165137542166"> <m:math>
+ <m:mrow>
+  <m:mn>0,8</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>500</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137849116">
+<para id="fs-id1165137849119">La secuencia es geométrica. La razón común es de <m:math>
+ <m:mn>5.</m:mn>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137578676">En los siguientes ejercicios, escriba los cinco primeros términos de la sucesión geométrica, dado el primer término y la razón común.</para><exercise id="fs-id1165135175313">
+<problem id="fs-id1165137566099">
+<para id="fs-id1165137566101"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0,3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137447376">
+<problem id="fs-id1165137539733">
+<para id="fs-id1165135172312"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137444326">
+<para id="fs-id1165135149206"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>25</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>125</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165135152167">En los siguientes ejercicios, escriba los cinco primeros términos de la sucesión geométrica, dados dos términos cualesquiera.</para><exercise id="fs-id1165135195397">
+<problem id="fs-id1165137898879">
+<para id="fs-id1165135666802"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>7</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>64</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:mo>=</m:mo><m:mn>512</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137694067">
+<problem id="fs-id1165137694069">
+<para id="fs-id1165137806803"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>6</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>25</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>8</m:mn>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:mo>=</m:mo><m:mn>6,25</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137405237">
+<para id="fs-id1165137405239"> <m:math>
+ <m:mrow>
+  <m:mn>800</m:mn><m:mo>,</m:mo><m:mn>400</m:mn><m:mo>,</m:mo><m:mn>200</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>50</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137889906">En los siguientes ejercicios, halle el término especificado para la secuencia geométrica, dado el primer término y la razón común.</para>
+
+<exercise id="fs-id1165137635538">
+<problem id="fs-id1165137723274">
+<para id="fs-id1165137529044">El primer término es <m:math>
+ <m:mn>2, </m:mn>
+</m:math> y la razón común es de <m:math>
+ <m:mn>3.</m:mn>
+</m:math> Halle el 5.º<sup/> término.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135193320">
+<problem id="fs-id1165137557071">
+<para id="fs-id1165137602820">El primer término es 16 y la razón común es de <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Halle el 4.º<sup/> término.</para></problem>
+<solution id="fs-id1165135173567">
+<para id="fs-id1165135173569"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>16</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>27</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137460391">En los siguientes ejercicios, halle el término especificado para la secuencia geométrica, dados los cuatro primeros términos.</para><exercise id="fs-id1165137415713">
+<problem id="fs-id1165137772362">
+<para id="fs-id1165135174888"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Halle <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137727503">
+<problem id="fs-id1165135191604">
+<para id="fs-id1165135187574"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+    <m:mn>2 </m:mn>
+    <m:mn>9</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>2</m:mn>
+    <m:mrow>
+     <m:mn>27</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Halle <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137450967">
+<para id="fs-id1165137450969"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>7</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mrow>
+    <m:mn>729</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137642161">En los siguientes ejercicios, escriba los cinco primeros términos de la sucesión geométrica.</para><exercise id="fs-id1165137849215">
+<problem id="fs-id1165137811176">
+<para id="fs-id1165137476786"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>486</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135195370">
+<problem id="fs-id1165135195372">
+<para id="fs-id1165134108412"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>0,2</m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137922652">
+<para id="fs-id1165135381368"> <m:math>
+ <m:mrow>
+  <m:mn>7</m:mn><m:mo>,</m:mo><m:mn>1,4</m:mn><m:mo>,</m:mo><m:mn>0,28</m:mn><m:mo>,</m:mo><m:mn>0,056</m:mn><m:mo>,</m:mo><m:mn>0,0112</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137698447">En los siguientes ejercicios, escriba una fórmula recursiva para cada secuencia geométrica.</para>
+
+<exercise id="fs-id1165137771764">
+<problem id="fs-id1165135496654">
+<para id="fs-id1165135496656"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mn>125</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137679367">
+<problem id="fs-id1165137679369">
+<para id="fs-id1165137599938"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>32</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137422756">
+<para id="fs-id1165137653539"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>a</m:mi><m:mmultiscripts>
+       <m:mo>=</m:mo>
+       <m:mprescripts/>
+       <m:mn>1</m:mn>
+       <m:none/>
+      </m:mmultiscripts>
+      <m:mo>-</m:mo><m:mn>32</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137447992">
+<problem id="fs-id1165135543366">
+<para id="fs-id1165135543368"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>14</m:mn><m:mo>,</m:mo><m:mn>56</m:mn><m:mo>,</m:mo><m:mn>224</m:mn><m:mo>,</m:mo><m:mn>896</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137895431">
+<problem id="fs-id1165137895433">
+<para id="fs-id1165135203531"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>10</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0,9</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>0,27</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135181595">
+<para id="fs-id1165137785100"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>0,3</m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137595167">
+<problem id="fs-id1165137757979">
+<para id="fs-id1165137757981"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>0,61</m:mn><m:mo>,</m:mo><m:mn>1,83</m:mn><m:mo>,</m:mo><m:mn>5,49</m:mn><m:mo>,</m:mo><m:mn>16,47</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137434224">
+<problem id="fs-id1165137434226">
+<para id="fs-id1165137731174"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>3</m:mn>
+    <m:mn>5</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>10</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>60</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>360</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137749862">
+<para id="fs-id1165137726435"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137784928">
+<problem id="fs-id1165137784930">
+<para id="fs-id1165137447912"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>4</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>- −</m:mo><m:mfrac>
+    <m:mn>8</m:mn>
+    <m:mn>9</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>16</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>27</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135536510">
+<problem id="fs-id1165135536513">
+<para id="fs-id1165137758236"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>512</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>128</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>32</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>8</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137827871">
+<para id="fs-id1165137595578"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>512</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137610897">En los siguientes ejercicios, escriba los cinco primeros términos de la sucesión geométrica.</para><exercise id="fs-id1165137847172">
+<problem id="fs-id1165135185964">
+<para id="fs-id1165135185966"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mn>5</m:mn>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137725946">
+<problem id="fs-id1165137725948">
+<para id="fs-id1165137651833"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>12</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135161218">
+<para id="fs-id1165137653407"> <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165135194312">En los siguientes ejercicios, escriba una fórmula explícita para cada secuencia geométrica.</para>
+
+<exercise id="fs-id1165137425294">
+<problem id="fs-id1165137425296">
+<para id="fs-id1165137549377"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137740800">
+<problem id="fs-id1165135397968">
+<para id="fs-id1165135397970"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137531020">
+<para id="fs-id1165137531022"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>n =</m:mo><m:msup>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135177742">
+<problem id="fs-id1165135177745">
+<para id="fs-id1165137760709"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>36</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>108</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137737769">
+<problem id="fs-id1165137726013">
+<para id="fs-id1165137726015"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>0,8</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137446409">
+<para id="fs-id1165137446411"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>0,8</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137422465">
+<problem id="fs-id1165137451895">
+<para id="fs-id1165137451897"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>{</m:mo><m:mo>- −</m:mo><m:mn>1,25</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>80</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137666609">
+<problem id="fs-id1165137472730">
+<para id="fs-id1165137472732"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+    <m:mn>4</m:mn>
+    <m:mn>5</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>- −</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>16</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>25</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>- −</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>64</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>125</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137447709">
+<para id="fs-id1165137598008"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137565688">
+<problem id="fs-id1165137666683">
+<para id="fs-id1165137666685"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>2 </m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>18</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>108</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137583712">
+<problem id="fs-id1165137583714">
+<para id="fs-id1165137666916"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>3</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>3</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mo>-</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>9</m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137779044">
+<para id="fs-id1165137779046"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>n =</m:mo><m:mn>3</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137936625">En los siguientes ejercicios, halle el término especificado para la secuencia geométrica dada.</para>
+
+<exercise id="fs-id1165137653204">
+<problem id="fs-id1165137653206">
+<para id="fs-id1165135173345">Supongamos que <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Halle <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>8</m:mn>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135191652">
+<problem id="fs-id1165135546049"><para id="fs-id1165135546050">Supongamos que <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Halle <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137793557">
+<para id="fs-id1165137793559"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>177</m:mn><m:mo>,</m:mo><m:mn>147</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<para id="fs-id1165137871199">En los siguientes ejercicios, halle el número de términos de la secuencia geométrica finita dada.</para>
+
+<exercise id="fs-id1165137455508">
+<problem id="fs-id1165137455510">
+<para id="fs-id1165137581440"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo>- −</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:mn>2187</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137635269">
+<problem id="fs-id1165137417215">
+<para id="fs-id1165137417217"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2 </m:mn>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mn>...</m:mn><m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>1024</m:mn>
+    </m:mrow>
+   </m:mfrac>
+
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137675968">
+<para id="fs-id1165137675970">Hay <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn>
+ </m:mrow>
+</m:math> términos en la secuencia.</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137638147"><title>Gráficos</title><para id="fs-id1165135531584">En los siguientes ejercicios, determine si el gráfico mostrado representa una secuencia geométrica.</para>
+<exercise id="fs-id1165137506987" class="material-set-2"><problem id="fs-id1165137898910">
+<media id="fs-id1165137570178" alt="Gráfico de un diagrama de dispersión con puntos marcados: (1, –3), (2, –1), (3, 1), (4, 3) y (5, 5). El eje x está marcado como n y el eje y está marcado como a_n." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_201.jpg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="fs-id1165137759706" class="material-set-2"><problem id="fs-id1165137748460">
+
+<media id="fs-id1165137601995" alt="Gráfico de un diagrama de dispersión con puntos marcados: (1, –0,5), (2, 0,25), (3, 1,375), (4, 3,0625) y (5, 5,5938). El eje x está marcado como n y el eje y está marcado como a_n." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_202.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137663534">
+<para id="fs-id1165137663536">El gráfico no representa una secuencia geométrica.</para>
+</solution>
+</exercise><para id="fs-id1165137627922">En los siguientes ejercicios, utilice la información proporcionada para graficar los primeros cinco términos de la secuencia geométrica.</para><exercise id="fs-id1165137445372">
+<problem id="fs-id1165137612112">
+<para id="fs-id1165137612114"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135309772"><problem id="fs-id1165135309774">
+<para id="fs-id1165137578258"> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>2 </m:mn><m:msub>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137784836">
+
+<media id="fs-id1165137634212" alt="Gráfico de un diagrama de dispersión con puntos marcados: (1, 3), (2, 6), (3, 12), (4, 24) y (5, 48). El eje x está marcado como n y el eje y está marcado como a_n.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_11_03_203.jpg"/>
+</media>
+</solution>
+</exercise><exercise id="fs-id1165137824382">
+<problem id="fs-id1165137659846">
+<para id="fs-id1165137659848"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>27</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mn>0,3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+</section><section id="fs-id1165137611626">
+<title>Extensiones </title>
+<exercise id="fs-id1165137705671">
+<problem id="fs-id1165135195117">
+<para id="fs-id1165135195119">Utilice fórmulas recursivas para dar dos ejemplos de secuencias geométricas cuyos 3.º<sup/> términos son <m:math>
+ <m:mrow>
+  <m:mn>200.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135191920">
+<para id="fs-id1165135191922">Las respuestas variarán. Ejemplos: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:msub>
+         <m:mi>a</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>800</m:mn><m:mo>,</m:mo>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd>
+       <m:mrow>
+        <m:msub>
+         <m:mi>a</m:mi>
+         <m:mi>n</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>0,5</m:mn><m:mi>a</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mrow>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mrow>
+        <m:msub>
+         <m:mi>a</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>12,5</m:mn><m:mo>,</m:mo>
+       </m:mrow>
+      </m:mtd>
+      <m:mtd>
+       <m:mrow>
+        <m:msub>
+         <m:mi>a</m:mi>
+         <m:mi>n</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo><m:mn>4</m:mn><m:mi>a</m:mi>
+       </m:mrow>
+      </m:mtd>
+     </m:mtr>
+
+    </m:mtable>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msub>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137706990">
+<problem id="fs-id1165137431466">
+<para id="fs-id1165137431468">Utilice fórmulas explícitas para dar dos ejemplos de secuencias geométricas cuyos 7.º<sup/> términos son <m:math>
+ <m:mrow>
+  <m:mn>1024.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137847161">
+<problem id="fs-id1165137399742">
+<para id="fs-id1165137399744">Halle el 5.º<sup/> término de la secuencia geométrica <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>b</m:mi><m:mo>,</m:mo><m:mn>16</m:mn><m:mi>b</m:mi><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137419654">
+<para id="fs-id1165137419656"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>5</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>256</m:mn><m:mi>b</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137705775">
+<problem id="fs-id1165137705777">
+<para id="fs-id1165137570885">Halle el 7.<sup>º</sup> término de la secuencia geométrica <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>64</m:mn><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mn>32</m:mn><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mn>16</m:mn><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mo>- −</m:mo><m:mn>9</m:mn><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mn>...</m:mn><m:mo>}</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137823109">
+<problem id="fs-id1165137823111">
+<para id="fs-id1165135194604">¿En qué término la secuencia <m:math>
+ <m:mrow>
+  <m:mo>{</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>14,4</m:mn><m:mo>,</m:mo><m:mn>17,28</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext/><m:mn>...</m:mn><m:mo>}</m:mo>
+ </m:mrow>
+</m:math> supera el <m:math>
+ <m:mrow>
+  <m:mn>100</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137439223"><para id="fs-id1165137439224">La secuencia supera el <m:math>
+ <m:mrow>
+  <m:mn>100</m:mn>
+ </m:mrow>
+</m:math> en el 14.º<sup/> término, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:mn>14</m:mn>
+   </m:mrow>
+  </m:msub>
+  <m:mo>≈</m:mo><m:mn>107.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135208918">
+<problem id="fs-id1165137823336">
+<para id="fs-id1165137823338">¿En qué término la secuencia <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>2187</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>729</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>243</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>,</m:mo><m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+     <m:mn>81</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mspace width="0.5em"/><m:mtext/><m:mn>...</m:mn>
+  </m:mrow> <m:mo>}</m:mo></m:mrow>
+ </m:mrow>
+</m:math> comienza a tener valores enteros?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137445687">
+<problem id="fs-id1165137675569">
+<para id="fs-id1165137675572">¿Para cuál término la secuencia geométrica <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mrow>
+    <m:msub>
+     <m:mrow/>
+     <m:mn>n</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>36</m:mn><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> tiene el primer valor no entero?
+</para></problem>
+<solution id="fs-id1165137660698">
+<para id="fs-id1165135377151"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo><m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>32</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> es el primer valor no entero</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137732788">
+<problem id="fs-id1165137732790">
+<para id="fs-id1165137735668">Utilice la fórmula recursiva para escribir una secuencia geométrica cuya razón común sea un número entero. Muestre los cuatro primeros términos, y luego halle el 10.º<sup/> término.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137400201">
+<problem id="fs-id1165137400203">
+<para id="fs-id1165137809947">Utilice la fórmula explícita para escribir una secuencia geométrica cuya razón común sea un número decimal entre 0 y 1. Muestre los 4 primeros términos y luego halle el 8.º<sup/> término.</para>
+</problem>
+<solution id="fs-id1165137666622">
+<para id="fs-id1165137666624">Las respuestas variarán. Ejemplo: Fórmula explícita con una razón común decimal: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>a</m:mi>
+   <m:mi>n</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>400</m:mn><m:mo>⋅</m:mo><m:msup>
+   <m:mrow>
+    <m:mn>0,5</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> Primeros 4 términos: <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mn>400</m:mn><m:mo>,</m:mo><m:mn>200</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>50</m:mn><m:mo>;</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd>
+     <m:mrow>
+      <m:msub>
+       <m:mi>a</m:mi>
+       <m:mn>8</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mn>3,125</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135187388">
+<problem id="fs-id1165135187390">
+<para id="fs-id1165135187392">¿Es posible que una secuencia sea a la vez aritmética y geométrica? Si es así, dé un ejemplo.</para>
+</problem>
+</exercise>
+</section>
+</section>
+
+<glossary>
+<definition id="fs-id1165137740810">
+<term>razón común</term>
+<meaning id="fs-id1165137849293">la razón entre dos términos consecutivos cualesquiera de una secuencia geométrica</meaning>
+</definition>
+<definition id="fs-id1165137611024">
+<term>secuencia geométrica</term>
+<meaning id="fs-id1165137673421">una secuencia en la que la razón entre un término y un término anterior es una constante</meaning>
+</definition>
+</glossary>
+</m:math></item></list></section></content></document>

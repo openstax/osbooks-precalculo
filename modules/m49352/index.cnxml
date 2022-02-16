@@ -1,0 +1,4385 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Inversas y funciones radicales</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49352</md:content-id>
+  <md:title>Inversas y funciones radicales</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Hallar la inversa de una función polinómica.</item>
+<item>Restringir el dominio para hallar la inversa de una función polinómica.</item>
+</list></md:abstract>
+  <md:uuid>21c3824b-8bf5-4dd5-a711-da57da5dc909</md:uuid>
+</metadata>
+
+<content>
+
+<para id="fs-id1165137793975">Los guardaparques y otros administradores de senderos pueden construir pilas de rocas, apilamientos u otros arreglos, normalmente llamados mojones, para marcar senderos u otros puntos de referencia (los guardaparques y los científicos medioambientales desaconsejan que los excursionistas hagan lo mismo, para evitar confusiones y preservar los hábitats de plantas y animales). Un mojón en forma de montículo de grava tiene forma de cono con una altura igual al doble del radio.</para>
+
+<figure id="Figure_03_08_001" class="small">
+<media id="fs-id1165137939558" alt="Grava en forma de cono.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_001.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137411369">El volumen se calcula con una fórmula de geometría elemental.</para>
+<equation id="eip-854" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>π</m:mi><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mi>h</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>π</m:mi><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>π</m:mi><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137727278">Hemos escrito el volumen <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi>
+ </m:mrow>
+</m:math> en términos de radio <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sin embargo, en algunos casos, podemos empezar con el volumen y querer determinar el radio. Por ejemplo: Un cliente compra 100 pies cúbicos de grava para construir un montículo en forma de cono con una altura del doble del radio. ¿Cuáles son el radio y la altura del nuevo cono? Para responder esta pregunta, utilizamos la fórmula</para>
+<equation id="eip-931" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>V</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165134129769">Esta función es la inversa de la fórmula de <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165137656509">En esta sección, exploraremos las inversas de las funciones polinómicas y racionales y, en particular, las funciones radicales que encontramos en el proceso.</para>
+
+<section id="fs-id1165135500723">
+<title>Hallar la inversa de una función polinómica</title>
+<para id="fs-id1165137439029">Dos funciones <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi>
+ </m:mrow>
+</m:math> son funciones inversas si para cada par de coordenadas en <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> existe un par de coordenadas correspondiente en la función inversa, <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En otras palabras, los pares de coordenadas de las funciones inversas tienen la entrada y la salida intercambiadas.</para><para id="fs-id1165137475924">Para que una función tenga una <term class="no-emphasis" id="term-00001">inversa</term>, debe crear una función que sea <term class="no-emphasis" id="term-00002">biunívoca</term> y que tendría una inversa.</para>
+<para id="fs-id1165137448308">Por ejemplo, supongamos que el Club de Sostenibilidad construye un colector de escorrentía con forma de artesa parabólica, como se ilustra en la <link target-id="Figure_03_08_002"/>. Podemos utilizar la información en la figura para hallar el área superficial en la artesa como función de la profundidad del agua.</para>
+
+<figure id="Figure_03_08_002" class="small">
+<media id="fs-id1165137471735" alt="Diagrama de artesa parabólica de 18&quot; de altura, 3' de longitud y 12&quot; de anchura.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_002-1d36.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137793665">Ya que será útil tener una ecuación para la forma de sección transversal parabólica, impondremos un sistema de coordenadas, donde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> se mide horizontalmente, mientras que <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> se mide verticalmente, con el origen en el vértice de la parábola. Vea el <link target-id="Figure_03_08_003"/>.</para>
+
+<figure id="Figure_03_08_003" class="small">
+<media id="fs-id1165137727320" alt="Gráfico de una parábola.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_003.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137771677">A partir de esto hallamos una ecuación para la forma parabólica. Hemos situado el origen en el vértice de la parábola, por lo que sabemos que la ecuación tendrá la forma <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Nuestra ecuación deberá pasar por el punto (6, 18), a partir del cual podemos resolver el factor de estiramiento <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="eip-893" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>18</m:mn><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+       <m:mn>6</m:mn>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>a</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>18</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>36</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137633973">Nuestra sección transversal parabólica tiene la ecuación</para>
+<equation id="eip-420" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137770004">Nos interesa el <term class="no-emphasis" id="term-00003">área superficial</term> del agua, por lo que debemos determinar la anchura en la parte de arriba como función de la profundidad del agua. Para cualquier profundidad <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> la anchura vendrá dada por <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> así que tenemos que resolver la ecuación anterior para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> y hallar la función inversa. Sin embargo, observe que la función original no es biunívoca, y de hecho, dada cualquier salida hay dos entradas que producen la misma salida: una positiva y otra negativa.</para>
+<para id="fs-id1165137638570">Para hallar una inversa, podemos restringir nuestra función original a un dominio limitado en el que <emphasis effect="italics">sea</emphasis> biunívoca. En este caso, tiene sentido limitarse a los valores positivos de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>. En este dominio, podemos hallar una inversa al resolver la variable de entrada:</para>
+<equation id="eip-598" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>y</m:mi>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137453965">Esto no es una función tal y como está escrita. Nos limitamos a los valores positivos de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>, por lo que eliminamos la solución negativa, lo que arroja la función inversa que buscamos.</para>
+<equation id="eip-793" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137643958">Dado que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es la distancia desde el centro de la parábola hasta cualquier lado, toda la anchura del agua en la parte superior será <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La artesa tiene 3 pies (36 pulgadas) de largo, por lo que el área superficial será entonces:</para>
+<equation id="eip-491" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Área</m:mtext><m:mo>=</m:mo><m:mi>l</m:mi><m:mo>⋅</m:mo><m:mi>w</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>36</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>72</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mo>=</m:mo><m:mn>72</m:mn><m:msqrt>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>y</m:mi>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137407432">Este ejemplo ilustra dos puntos importantes:</para>
+<list id="fs-id1165135545666" list-type="enumerated" number-style="arabic">
+<item>Al momento de hallar la inversa de una cuadrática, tenemos que limitarnos a un dominio en el que la función sea biunívoca.</item>
+<item>La inversa de una función cuadrática es una función de raíz cuadrada. Ambas son funciones de la caja de herramientas y diferentes tipos de funciones de potencia.</item>
+</list>
+<para id="fs-id1165137618975">Las funciones que implican raíces suelen llamarse <term class="no-emphasis" id="term-00004">funciones radicales</term>. Aunque no es posible hallar la inversa de la mayoría de las funciones polinómicas, algunos polinomios básicos tienen inversa. Tales funciones se denominan <term id="term-00005">funciones invertibles</term> y utilizamos la notación <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165135185952">Advertencia: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> no es lo mismo que el recíproco de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Este uso de "–1" está reservado para denotar funciones inversas. Para denotar el recíproco de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> tendríamos que escribir <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mi>x</m:mi>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165137561919">Una relación importante entre las funciones inversas es que se "deshacen" entre sí. Si los valores de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> es la inversa de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> es la inversa de la función <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En otras palabras, lo que sea que la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> haga a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> lo deshace, y viceversa. Más formalmente, escribimos</para><equation id="eip-519" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>para todos </m:mtext><m:mi>x</m:mi><m:mtext> en el ámbito de </m:mtext><m:mi>f</m:mi>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135503755">y</para>
+<equation id="eip-590" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>f</m:mi>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>para todos </m:mtext><m:mi>x</m:mi><m:mtext> en el ámbito de </m:mtext><m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+ </m:mrow>
+</m:math>
+</equation><note id="fs-id1165137735698">
+
+<title>Comprobar que dos funciones son inversas</title>
+<para id="fs-id1165137852132">Dos funciones, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> son inversas entre sí si para todo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en el dominio de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="eip-973" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</equation></note>
+
+<note id="fs-id1165137646263" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137501372"><emphasis>Dada una función polinómica, hallar la inversa de la función al restringir el dominio de tal manera que la nueva función sea biunívoca.</emphasis></para>
+<list id="fs-id1165133276230" list-type="enumerated" number-style="arabic">
+<item>Sustituya <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Intercambie la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Resuelva para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y renombre la función <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+</list>
+</note>
+
+<example id="Example_03_08_01">
+<exercise id="fs-id1165135150650"><problem id="fs-id1165135620877">
+<title>Verificar funciones inversas</title>
+<para id="fs-id1165134148383">Demuestre que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>–</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> son inversas, para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>.</para>
+</problem>
+<solution id="fs-id1165137724950">
+<para id="fs-id1165137834138">Debemos demostrar que <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>f</m:mi>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<equation id="eip-id1165131967953" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mi>x</m:mi>
+        </m:mfrac>
+        <m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mfrac>
+           <m:mn>1</m:mn>
+           <m:mi>x</m:mi>
+          </m:mfrac>
+          <m:mo>–</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mi>x</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135168183">Por lo tanto, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+  <m:mo>–</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> son inversas.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137594492" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_03_08_01">
+<problem id="fs-id1165137552094"><para id="fs-id1165137426116">Demuestre que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> son inversas.</para></problem>
+<solution id="fs-id1165135502962"><para id="fs-id1165137696615"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>f</m:mi>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_03_08_02">
+<exercise id="fs-id1165137600799"><problem id="fs-id1165135160775">
+<title>Hallar la inversa de una función cúbica</title>
+<para id="fs-id1165137569920">Halle la inversa de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137676384">
+<para id="fs-id1165135412872">Esta es una transformación de la función cúbica básica de la caja de herramientas, y basándonos en nuestro conocimiento de esa función, sabemos que es biunívoca. Resolver para la inversa mediante la resolución de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<equation id="eip-id1165133077998" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>         </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>3</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:msup>
+       <m:mi>y</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+         </m:mrow>
+         <m:mn>5</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mroot>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165137635322">
+<title>Análisis </title>
+<para id="fs-id1165137641602">Observe el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Observe que los dos gráficos son simétricos respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Este es siempre el caso cuando se grafica una función y su función inversa. </para><para id="fs-id1165137793468">Además, dado que el método implicaba intercambiar la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> note los puntos correspondientes. Si los valores de <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Dado que <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Del mismo modo, dado que <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vea la <link target-id="Figure_03_08_004"/>.</para><figure id="Figure_03_08_004" class="small">
+<media id="fs-id1165137891279" alt="Gráfico de f(x)=5x^3+1 y su inversa, f^(-1)(x)=3sqrt((x-1)/(5)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_004.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137583696" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_03_08_02">
+<problem id="fs-id1165137704564"><para id="fs-id1165133047522">Calcule la función inversa de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137737307"><para id="fs-id1165137529408"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165137847291">
+<title>Delimitar del dominio para calcular la inversa de una función polinómica</title>
+<para id="fs-id1165137471808">Hasta ahora, hemos hallado las inversas de las <term class="no-emphasis" id="term-00006">funciones cúbicas</term> sin tener que restringir sus dominios. Sin embargo, como sabemos, no todos los polinomios cúbicos son biunívocos. Puede que el dominio en algunas funciones que no son biunívocas se restrinja para que sea biunívoco, pero únicamente con respecto a ese dominio. La función sobre el dominio restringido tendría entonces una <term class="no-emphasis" id="term-00007">función inversa</term>. Dado que las funciones cuadráticas no biunívocas, debemos restringir su dominio para hallar sus inversas.</para><note id="fs-id1165137434585">
+
+<title>Restringir el dominio</title>
+<para id="fs-id1165137409777">Si una función no es biunívoca, no puede tener ninguna inversa. Si restringimos el dominio de la función para que sea biunívoco, y creamos así otra función, esta última tendrá una inversa.</para>
+</note>
+
+<note id="fs-id1165137431545" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137656706"><emphasis>Dada una función polinómica, restringir el dominio de una función que no sea biunívoca y luego hallar la inversa.</emphasis></para>
+<list id="fs-id1165137532171" list-type="enumerated" number-style="arabic">
+<item>Restrinja el dominio al determinar un dominio en el que la función original sea biunívoca.</item>
+<item>Sustituya <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mspace width="0.5em"/><m:mtext>con</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Intercambie la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Resuelva para <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y renombre la función o el par de funciones <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Repase la fórmula para <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>; verifique que las salidas de la función inversa correspondan al dominio restringido de la función original.</item>
+</list>
+</note>
+
+<example id="Example_03_08_03">
+<exercise id="fs-id1165137737103"><problem id="fs-id1165137668130">
+<title>Delimitar del dominio para calcular la inversa de una función polinómica</title>
+<para id="fs-id1165137482766">Calcule la función inversa de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>:</m:mo>
+ </m:mrow>
+</m:math> </para><list id="fs-id1165137638318" list-type="enumerated" number-style="lower-alpha">
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</item>
+</list>
+</problem>
+<solution id="fs-id1165137606152">
+<para id="fs-id1165137506731">La función original <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> no es biunívoca, sino que está restringida a un dominio de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> en la que es biunívoca. Vea el <link target-id="Figure_03_08_005"/>.</para>
+
+
+<figure id="Figure_03_08_005" class="medium">
+<media id="fs-id1165137532798" alt="Dos gráficos de f(x)=(x-4)^2 donde el primero es cuando x>=4 y el segundo es cuando x&lt;=4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_005.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137706306">Para hallar la inversa, empiece por sustituir <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la variable simple <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165133259004" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Intercambie la</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tome la raíz cuadrada</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>±</m:mo><m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mspace width="0.5em"/>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume</m:mtext><m:mspace width="0.5em"/><m:mn>4</m:mn><m:mspace width="0.5em"/><m:mtext>a ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>±</m:mo><m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137444285">Esto no es una función tal y como está escrita. Tenemos que examinar las restricciones en el dominio de la función original para determinar la inversa. Ya que invertimos los papeles de la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> para la <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> original, miramos el dominio: podrían suponerse los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>. Cuando invertimos los papeles de la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> esto nos dio los valores que <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math>. Para esta función, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> así como para la inversa, deberíamos tener <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que es lo que da nuestra función inversa.</para>
+
+<list id="fs-id1165137735027" list-type="enumerated" number-style="arabic" class="circled">
+  <item><span class="token">Ⓐ</span>El dominio de la función original se restringió a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que las salidas de la inversa tienen que ser las mismas, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>≥</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y debemos utilizar el caso +:
+<equation id="eip-id1165134294825" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</equation></item>
+<item><span class="token">Ⓑ</span> El dominio de la función original se restringió a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que las salidas de la inversa tienen que ser las mismas, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>≤</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y debemos utilizar el caso -:
+<equation id="eip-id1165137482501" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</equation></item>
+</list></solution>
+<commentary id="fs-id1165137736620">
+<title>Análisis </title>
+<para id="fs-id1165137534054">En los gráficos que se indican en la <link target-id="Figure_03_08_006"/>, vemos la función original graficada en el mismo conjunto de ejes que su función inversa. Observe que los gráficos muestran juntos una simetría en torno a la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El par de coordenadas <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> y el par de coordenadas <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Para cualquier par de coordenadas, si <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>a</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Por último, observe que el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> interseca el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> en la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Puntos de intersección de los gráficos de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> como <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> siempre estará en la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<figure id="Figure_03_08_006">
+<media id="fs-id1165137471020" alt="Dos gráficos de una función parabólica con la mitad de su inversa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_006.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<example id="Example_03_08_04">
+<exercise id="fs-id1165137786597"><problem id="fs-id1165135481235">
+<title>Hallar la inversa de una función cuadrática cuando la restricción no está especificada</title>
+<para id="fs-id1165137410909">Restringir el dominio y luego hallar la inversa de</para>
+<equation id="eip-id1165133355860" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>3,</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+</problem>
+<solution id="fs-id1165135394334">
+<para id="fs-id1165137414415">Podemos ver que se trata de una parábola con vértice en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>–</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> que se abre hacia arriba. Dado que el gráfico será decreciente a un lado del vértice y creciente al otro, podemos restringir esta función a un dominio en el que sea biunívoca al restringir el dominio a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+
+<para id="fs-id1165137842529">Para hallar la inversa, utilizaremos la forma de vértice de la cuadrática. Empezamos por sustituir <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con una simple variable, <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y luego resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<equation id="eip-id1165133305354" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>-</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>Intercambie la</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mspace width="0.5em"/><m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>.</m:mo>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 3 a ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Tome la raíz cuadrada</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Añada 2 a ambos lados</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Renombre la función</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137419504">Ahora tenemos que determinar qué caso utilizar. Dado que hemos restringido nuestra función original a un dominio de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> las salidas de la inversa deberían ser las mismas, lo que nos indica que debemos utilizar el caso +</para>
+<equation id="eip-id1165132193808" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:msqrt>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137827988">Si la cuadrática no se hubiera dado en forma de vértice, reescribirla así sería el primer paso. De esta manera podemos observar fácilmente las coordenadas del vértice para restringir el dominio.</para>
+</solution>
+<commentary id="fs-id1165134362839">
+<title>Análisis	</title>
+<para id="fs-id1165135259538">Observe que hemos decidido arbitrariamente restringir el dominio en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> Podríamos haber optado fácilmente por restringir el dominio en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en cuyo caso <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Observe la función original graficada en el mismo conjunto de ejes que su función inversa en la <link target-id="Figure_03_08_007"/>. Observe que ambos gráficos muestran simetría respecto a la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El par de coordenadas <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> y el par de coordenadas <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> está en el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Observe a partir del gráfico de ambas funciones sobre el mismo conjunto de ejes que </para>
+
+<equation id="eip-id1165134122215" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>dominio de </m:mtext><m:mi>f</m:mi><m:mo>=</m:mo><m:mtext>rango de</m:mtext><m:mspace width="0.5em"/><m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137642128">y</para>
+<equation id="eip-id1165134279478" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtext>dominio de </m:mtext><m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo><m:mtext>rango de</m:mtext><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>–</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137723812">Por último, observe que el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> interseca el gráfico de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> a lo largo de la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<figure id="Figure_03_08_007" class="small">
+<media id="fs-id1165135194279" alt="Gráfico de una función parabólica con la mitad de su inversa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_007.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137419950" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_03_08_03">
+<problem id="fs-id1165137600895"><para id="fs-id1165135596379">Halle la inversa de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en el dominio <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137737548"><para id="fs-id1165137737550"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<section id="fs-id1165137894462">
+<title>Resolver aplicaciones de funciones radicales</title>
+<para id="fs-id1165137696560">Observe que las funciones de los ejemplos anteriores eran todas polinomios, y sus inversas eran funciones radicales. Si queremos hallar la <term class="no-emphasis" id="term-00008">inversa de una función radical</term>, tendremos que restringir el dominio de la respuesta porque el rango de la función original es limitado.</para><note id="fs-id1165137415876" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137455923"><emphasis>Dada una función radical, hallar la inversa.</emphasis></para>
+<list id="fs-id1165137542989" list-type="enumerated" number-style="arabic">
+<item>Determine el rango de la función original.</item>
+<item>Sustituya <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y luego resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Si es necesario, restrinja el dominio de la función inversa al rango de la función original.</item>
+</list>
+</note>
+
+<example id="Example_03_08_05">
+<exercise id="fs-id1165135173813"><problem id="fs-id1165137399685">
+<title>Hallar la inversa de una función radical</title>
+<para id="fs-id1165135570491">Restrinja el dominio y luego calcule la inversa de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137766917">
+<para id="fs-id1165135545767">Observe que la función original tiene rango <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>≥</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Sustituya <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y luego resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165135508330" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr columnalign="left">
+       <m:mtd columnalign="right">
+        <m:mi>y</m:mi></m:mtd>
+<m:mtd><m:mo>=</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+         </m:mrow>
+        </m:msqrt></m:mtd>
+<m:mtd>
+        <m:mtext>Sustituya </m:mtext><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext> con </m:mtext><m:mi>y</m:mi><m:mo>.</m:mo>
+       </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+<m:mi>x</m:mi></m:mtd>
+<m:mtd><m:mo>=</m:mo><m:msqrt>
+<m:mrow> <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>       </m:mrow>
+      </m:msqrt>
+
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Intercambie la </m:mtext><m:mi>x</m:mi><m:mtext> y </m:mtext><m:mi>y</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+      <m:mi>x</m:mi></m:mtd>
+<m:mtd><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+       </m:mrow>
+      </m:msqrt>
+          </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Eleve al cuadrado cada lado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow>
+    <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup></m:mrow></m:mtd>
+<m:mtd><m:mrow>
+      <m:mo>=</m:mo><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 4</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:mrow><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:mtd>
+<m:mtd><m:mrow><m:mo>=</m:mo><m:mi>y</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Renombre la función </m:mtext><m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="right">
+     <m:msup>
+       <m:mi>f</m:mi>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mtd>
+<m:mtd>
+<m:mo>=</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>4</m:mn>
+    </m:mtd>
+    <m:mtd/>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135209570">Recordemos que el dominio de esta función deberá limitarse al rango de la función original.</para>
+<equation id="eip-id1165135452086" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1165137750058">
+<title>Análisis</title>
+<para id="fs-id1165135173239">Observe en la <link target-id="Figure_03_08_008"/> que la inversa es una reflexión de la función original sobre la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Dado que la función original tiene únicamente salidas positivas, la función inversa solo tiene entradas positivas.</para>
+
+<figure id="Figure_03_08_008" class="small">
+<media id="fs-id1165137803321" alt="Gráfico de f(x)=cuadrado(x-4) y su inversa, f^(-1)(x)=x^2+4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_008.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<note id="fs-id1165137662048" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_03_08_04">
+<problem id="fs-id1165135524557"><para id="fs-id1165137784775">Restrinja el dominio y luego calcule la inversa de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+ </para></problem>
+<solution id="fs-id1165137784778"><para id="fs-id1165137419726"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id1165137761571">
+<title/><para id="fs-id1165135435831">Las funciones radicales son comunes en los modelos físicos, como vimos en la sección inicial. Ahora tenemos suficientes herramientas para poder resolver el problema planteado al principio de la sección.</para>
+
+<example id="Example_03_08_06">
+<exercise id="fs-id1165137634475"><problem id="fs-id1165137531120">
+<title>Resolver una aplicación con una función cúbica</title>
+<para id="fs-id1165137771982">Los guardaparques construyen un montículo de grava en forma de cono con una altura igual al doble del radio. El volumen del cono en función del radio viene dado por</para>
+<equation id="eip-id1165132187568" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135181305">Halle la inversa de la función <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> que determina el volumen <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi>
+ </m:mrow>
+</m:math> de un cono y es una función del radio <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> A continuación, utilice la función inversa para calcular el radio de dicho montículo de grava que mide 100 pies cúbicos. Utilice <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>=</m:mo><m:mn>3,14.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137405142">
+<para id="fs-id1165137405144">Comience con la función dada para <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Observe que el dominio significativo de la función es <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> ya que los radios negativos no tendrían sentido en este contexto. Observe igualmente que el rango de la función (por ende, el dominio de la función inversa) es <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>≥</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Resuelva para <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> con el método descrito anteriormente<newline count="1"/></para><equation id="eip-id1165133447890" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>π</m:mi><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>V</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:msup>
+       <m:mi>r</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>r</m:mi><m:mo>=</m:mo><m:mroot>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mi>V</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>2</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mroot>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>r</m:mi><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137730324">Este es el resultado que se indica al principio de la sección. Ahora evalúe esto para <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>=</m:mo><m:mn>100</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>=</m:mo><m:mn>3,14.</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165135203234" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mi>r</m:mi><m:mo>=</m:mo><m:mroot>
+           <m:mrow>
+            <m:mfrac>
+             <m:mrow>
+              <m:mn>3</m:mn><m:mi>V</m:mi>
+             </m:mrow>
+             <m:mrow>
+              <m:mn>2</m:mn><m:mi>π</m:mi>
+             </m:mrow>
+            </m:mfrac>
+
+           </m:mrow>
+           <m:mn>3</m:mn>
+          </m:mroot>
+          <m:mtext>     </m:mtext>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mroot>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mo>⋅</m:mo><m:mn>100</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>3,14</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mroot>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>≈</m:mo><m:mroot>
+       <m:mrow>
+        <m:mn>47,7707</m:mn>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mroot>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>≈</m:mo><m:mn>3,63</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137706279">Por lo tanto, el radio es de unos 3,63 pies.</para>
+</solution>
+</exercise></example>
+</section>
+<section id="fs-id1165137580023">
+<title>Determinar el dominio de una función radical compuesta con otras funciones</title>
+<para id="fs-id1165134042947">Cuando las funciones radicales se componen con otras funciones, puede complicarse la determinación del dominio.</para>
+
+<example id="Example_03_08_07">
+<exercise id="fs-id1165135378774"><problem id="fs-id1165135378776">
+<title>Hallar el dominio de una función radical compuesta con una función racional</title>
+<para id="fs-id1165137658778">Halle el dominio de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137550072">
+<para id="fs-id1165137665549">Dado que una raíz cuadrada está definida solamente cuando la cantidad bajo el radical es no negativa, tenemos que determinar dónde <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>≥</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> La salida de una función racional puede cambiar de signo (pasar de positivo a negativo y viceversa) en las intersecciones en <emphasis effect="italics">x</emphasis> y en las asíntotas verticales. Para esta ecuación, el gráfico podría cambiar de signo en <m:math><m:mrow><m:mi>x</m:mi></m:mrow></m:math> = -2, 1 y 3.
+</para><para id="fs-id1165135686721">Para determinar los intervalos en los que la expresión racional es positiva, podríamos probar algunos valores de la expresión o dibujar un gráfico. Aunque ambos enfoques funcionan igualmente bien, para este ejemplo utilizaremos un gráfico como el que se indica en la <link target-id="Figure_03_08_009"/>.</para>
+
+<figure id="Figure_03_08_009" class="medium">
+<media id="fs-id1165132950041" alt="Gráfico de una función radical que muestra dónde las salidas son no negativas.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_009.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137694167">Esta función tiene dos intersecciones en <emphasis effect="italics">x</emphasis>, ambas de las cuales muestran un comportamiento lineal cerca de las intersecciones en <emphasis effect="italics">x</emphasis>. Hay una asíntota vertical, que corresponde a un factor lineal; este comportamiento es similar al de la función recíproca básica de la caja de herramientas, y no hay asíntota horizontal porque el grado del numerador es mayor que el grado del denominador. Hay una intersección en <emphasis effect="italics">y</emphasis> en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>6</m:mn>
+   </m:mrow>
+  </m:msqrt><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165135333589">A partir de la intersección en <emphasis effect="italics">y</emphasis>, así como de la intersección en <emphasis effect="italics">x</emphasis> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> podemos dibujar el lado izquierdo del gráfico. A partir del comportamiento en la asíntota, podemos esbozar el lado derecho del gráfico.</para>
+<para id="fs-id1165137664081">A partir del gráfico, ahora podemos saber en qué intervalos las salidas serán no negativas, por lo que podemos estar seguros de que la función original <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se definirá. <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> tiene dominio <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mspace width="0.5em"/><m:mtext>o</m:mtext><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o en notación de intervalo, <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">[</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise></example>
+
+</section>
+<section id="fs-id1165135173899"><title>Hallar las inversas de las funciones racionales</title><para id="fs-id1165135475898">Al igual que con la búsqueda de las inversas de las funciones cuadráticas, a veces es deseable hallar la <term class="no-emphasis" id="term-00009">inversa de una función racional</term>, especialmente de las que son el cociente de las funciones lineales, como en las aplicaciones de concentración.</para><example id="Example_03_08_08">
+<exercise id="fs-id1165137642525"><problem id="fs-id1165137642528">
+<title>Hallar la inversa de una función racional</title>
+<para id="fs-id1165135332364">La función <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>20</m:mn><m:mo>+</m:mo><m:mn>0,4</m:mn><m:mi>n</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>100</m:mn><m:mo>+</m:mo><m:mi>n</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> representa la concentración <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> de una solución ácida después de añadir <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> mL de solución al 40 % a 100 mL de una solución al 20 %. En primer lugar, halle la inversa de la función; es decir, defina una expresión para <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> A continuación, utilice su resultado para determinar qué cantidad de la solución al 40 % debe añadirse para que la mezcla final sea una solución al 35 %.</para>
+
+</problem>
+<solution id="fs-id1165134223201">
+<para id="fs-id1165134223203">Primero queremos la inversa de la función. Resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<equation id="eip-id1165132957110" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>C</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>20</m:mn><m:mo>+</m:mo><m:mn>0,4</m:mn><m:mi>n</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>100</m:mn><m:mo>+</m:mo><m:mi>n</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow><m:mspace width="0.5em"/><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo>+</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>+</m:mo><m:mn>0,4</m:mn><m:mi>n</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mn>100</m:mn><m:mi>C</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>+</m:mo><m:mn>0,4</m:mn><m:mi>n</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mn>100</m:mn><m:mi>C</m:mi><m:mo>- −</m:mo><m:mn>20</m:mn><m:mo>=</m:mo><m:mn>0,4</m:mn><m:mi>n</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mi>n</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mn>100</m:mn><m:mi>C</m:mi><m:mo>- −</m:mo><m:mn>20</m:mn><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0,4</m:mn><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mi>n</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>100</m:mn><m:mi>C</m:mi><m:mo>- −</m:mo><m:mn>20</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>0,4</m:mn><m:mo>- −</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137637474">Ahora evalúe esta función para <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0,35</m:mn><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>35</m:mn><m:mi>%</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="eip-id1165131986931" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>100</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0,35</m:mn><m:mo stretchy="false">)</m:mo><m:mo>- −</m:mo><m:mn>20</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>0,4</m:mn><m:mo>- −</m:mo><m:mn>0,35</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>15</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>0,05</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mo>=</m:mo><m:mn>300</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137706154">Podemos concluir que hay que añadir 300 mL de la solución al 40 %.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137697102" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_03_08_05">
+<problem id="fs-id1165134042922"><para id="fs-id1165134042923">Halle la inversa de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137731924"><para id="fs-id1165137731925"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137551968" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165137761312">Acceda a estos recursos en línea para obtener más información y practicar con las inversas y funciones radicales.</para>
+<list id="fs-id1165134306731" list-type="bulleted"><item><link url="http://openstax.org/l/graphsquareroot">Graficar la función básica de raíz cuadrada</link></item>
+
+<item><link url="http://openstax.org/l/inversesquare">Hallar la inversa de una función de raíz cuadrada</link></item>
+
+<item><link url="http://openstax.org/l/inverserational">Hallar la inversa de una función racional</link></item>
+
+<item><link url="http://openstax.org/l/rationalinverse">Hallar la inversa de una función racional y un valor de función inversa</link></item>
+<item><link url="http://openstax.org/l/inversefunction">Funciones inversas</link></item>
+</list></note>
+
+</section></section>
+
+<section id="fs-id1165135192373" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165135528386" list-type="bulleted"><item>La inversa de una función cuadrática es una función de raíz cuadrada.</item>
+<item>Si los valores de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math> es la inversa de una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi>
+ </m:mrow>
+</m:math> es la inversa de la función <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+Vea el <link target-id="Example_03_08_01"/>.
+<item>Aunque no es posible hallar la inversa de la mayoría de las funciones polinómicas, algunos polinomios básicos son invertibles. Vea el <link target-id="Example_03_08_02"/>.</item>
+<item>Para hallar la inversa de determinada función, debemos restringirla a un dominio en el que sea biunívoca. Vea el <link target-id="Example_03_08_03"/> y el <link target-id="Example_03_08_04"/>.</item>
+<item>Cuando hallamos la inversa de una función radical, necesitamos una restricción en el dominio de la respuesta. Vea el <link target-id="Example_03_08_05"/> y el <link target-id="Example_03_08_07"/>.</item>
+<item>Las funciones inversas y radicales se utilizan para resolver problemas de aplicación. Vea el <link target-id="Example_03_08_06"/> y el <link target-id="Example_03_08_08"/>.</item>
+
+
+
+<section id="fs-id1165137414774" class="section-exercises">
+
+<title>Ejercicios de la sección</title><section id="fs-id1165137414778">
+<title>Verbales</title>
+<exercise id="fs-id1165137678194"><problem id="fs-id1165137452992"><para id="fs-id1165137452993">Explique por qué no podemos hallar funciones inversas para todas las funciones polinómicas.</para></problem>
+<solution id="fs-id1165137452997"><para id="fs-id1165137723132">Puede ser muy difícil o imposible de resolver para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137648362"><problem id="fs-id1165137854841"><para id="fs-id1165137854842">¿Por qué hay que restringir el dominio de una función cuadrática al momento de hallar su inversa?</para></problem></exercise>
+
+<exercise id="fs-id1165137854845"><problem id="fs-id1165135356600"><para id="fs-id1165135356601">Al momento de hallar la inversa de una función radical, ¿qué restricción tendremos que hacer?</para></problem>
+<solution id="fs-id1165135356605"><para id="fs-id1165137590162">Necesitaremos una restricción en el dominio de la respuesta.</para></solution></exercise>
+<exercise id="fs-id1165137590165"><problem id="fs-id1165137590166"><para id="fs-id1165137661780">¿Qué forma tendrá siempre la inversa de una función cuadrática?</para></problem></exercise>
+
+</section>
+<section id="fs-id1165137661784">
+<title>Algebraicos</title>
+<para id="fs-id1165137936804">En los siguientes ejercicios, halle la inversa de la función en el dominio dado.</para>
+<exercise id="fs-id1165135193880"><problem id="fs-id1165135193881"><para id="fs-id1165135193882"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137472528"><para id="fs-id1165137472529"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137706126"><problem id="fs-id1165137706127"><para id="fs-id1165137706128"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+<exercise id="fs-id1165137405850"><problem id="fs-id1165137405851"><para id="fs-id1165137405852"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135572106"><para id="fs-id1165135572107"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137476413"><problem id="fs-id1165137476414"><para id="fs-id1165137476415"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135209972"><problem id="fs-id1165135209973"><para id="fs-id1165137425962"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>(</m:mo> <m:mrow>
+  <m:mo>-</m:mo> <m:mi>∞</m:mi><m:mo>,</m:mo><m:mn>0</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135436476"><para id="fs-id1165135436478"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+<exercise id="fs-id1165134042512"><problem id="fs-id1165137696696"><para id="fs-id1165137696698"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>- −</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+<exercise id="fs-id1165137579624"><problem id="fs-id1165137404972"><para id="fs-id1165137404973"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135194244"><para id="fs-id1165137862827"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>9</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165134555020"><problem id="fs-id1165134555021"><para id="fs-id1165134555022"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<para id="fs-id1165137603367">En los siguientes ejercicios, calcule la inversa de las funciones.</para>
+<exercise id="fs-id1165137725343"><problem id="fs-id1165137725344"><para id="fs-id1165137725345"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137885943"><para id="fs-id1165137885944"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137728086"><problem id="fs-id1165137728087"><para id="fs-id1165137728088"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135530666"><problem id="fs-id1165133035997"><para id="fs-id1165133035998"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137767092"><para id="fs-id1165137767093"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135500747"><problem id="fs-id1165135500748"><para id="fs-id1165135500749"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>–</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<para id="fs-id1165135530341">En los siguientes ejercicios, calcule la inversa de las funciones.</para>
+
+<exercise id="fs-id1165135530344"><problem id="fs-id1165135530345"><para id="fs-id1165137656262"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135250674"><para id="fs-id1165135250675"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>–</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id1165135424684"><problem id="fs-id1165137463046"><para id="fs-id1165137463047"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137502900"><problem id="fs-id1165137502901"><para id="fs-id1165137502902"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137871173"><para id="fs-id1165137871174"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>9</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id1165135319426"><problem id="fs-id1165137662665"><para id="fs-id1165137662666"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>8</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137471620"><problem id="fs-id1165137471621"><para id="fs-id1165137471622"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mroot>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137735210"><para id="fs-id1165137735211"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135699114"><problem id="fs-id1165135699115"><para id="fs-id1165137461567"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mroot>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137544702"><problem id="fs-id1165137544703"><para id="fs-id1165137660257"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137737152"><para id="fs-id1165137737153"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>8</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+   <m:mrow/>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137436932"><problem id="fs-id1165137436933"><para id="fs-id1165137436934"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137442675"><problem id="fs-id1165137442676"><para id="fs-id1165137442677"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137466246"><para id="fs-id1165137466248"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135701622"><problem id="fs-id1165135701623"><para id="fs-id1165135701624"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135333251"><problem id="fs-id1165137443976"><para id="fs-id1165137443977"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137668289"><para id="fs-id1165137668290"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137642936"><problem id="fs-id1165137642938"><para id="fs-id1165137642939"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137760837"><problem id="fs-id1165137408974"><para id="fs-id1165137408975"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135176553"><para id="fs-id1165135176554"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165137662088"><problem id="fs-id1165137662089"><para id="fs-id1165137436907"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+<exercise id="fs-id1165133184252"><problem id="fs-id1165133184253"><para id="fs-id1165137675697"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">[</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137760888"><para id="fs-id1165137760889"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+</section>
+
+<section id="fs-id1165135193360">
+<title>Gráficos</title>
+<para id="fs-id1165135193366">En los siguientes ejercicios, halle la inversa de la función y grafique tanto la función como su inversa.</para>
+
+<exercise id="fs-id1165137715400"><problem id="fs-id1165137715401"><para id="fs-id1165137715402"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137640498"><problem id="fs-id1165137640500"><para id="fs-id1165137640501"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137502874"><para id="fs-id1165137437197"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137462220" alt="Gráfico de f(x)=4- x^2 y su inversa, f^(-1)(x)= cuadrado(4-x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_202.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165135547140"><problem id="fs-id1165135547141"><para id="fs-id1165135547142"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137452181"><problem id="fs-id1165137452182"><para id="fs-id1165137452184"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137459688"><para id="fs-id1165137459689"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137811172" alt="Gráfico de f(x)= (x-4)^2 y su inversa, f^(-1)(x)= cuadrado(x)+4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_204.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165135187190"><problem id="fs-id1165135187191"><para id="fs-id1165135187192"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135651499"><problem id="fs-id1165135651500"><para id="fs-id1165135651501"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137462309"><para id="fs-id1165137462310"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135694369" alt="Gráfico de f(x)= 1-x^3 y su inversa, f^(-1)(x)= (1-x)^(1/3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_206.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165135368483"><problem id="fs-id1165135368484"><para id="fs-id1165135368485"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mo>- −</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137454354"><problem id="fs-id1165137454356"><para id="fs-id1165137454357"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137742528"><para id="fs-id1165137742529"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135678741" alt="Gráfico de f(x)= x^2-6x+1 y su inversa, f^(-1)(x)= cuadrado(x+8)+3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_208.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165135206104"><problem id="fs-id1165135206105"><para id="fs-id1165135206106"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137651509"><problem id="fs-id1165137651510"><para id="fs-id1165137651511"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134557344"><para id="fs-id1165137634193"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135187198" alt="Gráfico de f(x)= 1/x^2 y su inversa, f^(-1)(x)= cuadrado(1/x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_210.jpg"/>
+</media>
+</solution></exercise><para id="fs-id1165137451122">En los siguientes ejercicios, utilice un gráfico para determinar el dominio de las funciones.</para>
+<exercise id="fs-id1165137480291"><problem id="fs-id1165137480292"><para id="fs-id1165137480293"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137422286"><problem id="fs-id1165137422287"><para id="fs-id1165137422288"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137407593"><para id="fs-id1165137407594"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">[</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165134557316" alt="Gráfico de f(x)= cuadrado((x+2)(x-3)/(x-1)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_212.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165135173418"><problem id="fs-id1165135173419"><para id="fs-id1165137772203"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137550583"><problem id="fs-id1165137550584"><para id="fs-id1165137550585"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>20</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137758690"><para id="fs-id1165137539722"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>∪</m:mo><m:mo stretchy="false">[</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135536640" alt="Gráfico de f(x)= cuadrado((x^2-x-20)/(x-2)).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_214.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165137898053"><problem id="fs-id1165137898054"><para id="fs-id1165137898056"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>9</m:mn><m:mo>-</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+ </section>
+<section id="fs-id1165137676077">
+<title>En tecnología</title>
+<para id="fs-id1165137551626">En los siguientes ejercicios, utilice la calculadora para graficar la función. A continuación, indique tres puntos en el gráfico de la inversa con las coordenadas dadas de <emphasis effect="italics">y</emphasis>.</para><exercise id="fs-id1165137855040" class="material-set-2"><problem id="fs-id1165137575507"><para id="fs-id1165137575508"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137724899"><para id="fs-id1165137724900"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>22</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<media id="fs-id1165137470403" alt="Gráfico de f(x)= x^3-x-2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_216.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165137571412" class="material-set-2"><problem id="fs-id1165137571413"><para id="fs-id1165137571414"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165135336074" class="material-set-2"><problem id="fs-id1165135336075"><para id="fs-id1165135336076"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135445799"><para id="fs-id1165135445800"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165135613310" alt="Gráfico de f(x)= x^3+3x-4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_218.jpg"/>
+</media>
+</solution></exercise><exercise id="fs-id1165137768493" class="material-set-2"><problem id="fs-id1165137414579"><para id="fs-id1165137414580"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165137812553" class="material-set-2"><problem id="fs-id1165137812554"><para id="fs-id1165137812555"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137413936"><para id="fs-id1165137413937"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+
+<media id="fs-id1165137427214" alt="Gráfico de f(x)= x^4+5x+1.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_03_08_220.jpg"/>
+</media>
+</solution></exercise></section>
+<section id="fs-id1165137833145">
+<title> Extensiones</title>
+<para id="fs-id1165137427625">En los siguientes ejercicios, halle la inversa de las funciones con <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>c</m:mi>
+ </m:mrow>
+</m:math> números reales positivos.</para><exercise id="fs-id1165137601481"><problem id="fs-id1165137601482"><para id="fs-id1165137601483"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>a</m:mi><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1165132960779"><problem id="fs-id1165132960780"><para id="fs-id1165137660236"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137564896"><para id="fs-id1165137564897"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mi>b</m:mi>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1165135187946"><problem id="fs-id1165135187947"><para id="fs-id1165137548784"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mi>a</m:mi><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<exercise id="fs-id1165137590488"><problem id="fs-id1165137590489"><para id="fs-id1165137590490"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137934451"><para id="fs-id1165137934452"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>f</m:mi>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+   <m:mi>a</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137597719"><problem id="fs-id1165137597720"><para id="fs-id1165137597721"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>c</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+</section>
+<section id="fs-id1165135347473">
+<title>Aplicaciones en el mundo real</title>
+
+
+<para id="fs-id1165137667466">En los siguientes ejercicios, determine la función descrita y luego utilícela para responder la pregunta.</para>
+
+<exercise id="fs-id1165137667470"><problem id="fs-id1165137543382"><para id="fs-id1165137543383">Un objeto lanzado desde una altura de 200 metros tiene una altura <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en metros después de que <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> segundos hayan transcurrido, de manera que <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>-</m:mo><m:mn>4,9</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Exprese <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> en función de la altura, <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y calcule el tiempo que tarda para alcanzar una altura de 50 metros.</para></problem>
+<solution id="fs-id1165133112798"><para id="fs-id1165133112799"> <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>200</m:mn><m:mo>- −</m:mo><m:mi>h</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4,9</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> 5,53 segundos</para></solution></exercise>
+<exercise id="fs-id1165137735080"><problem id="fs-id1165137735081"><para id="fs-id1165137735082">Un objeto lanzado desde una altura de 600 pies tiene una altura <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en pies después de que <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> segundos han transcurrido, de manera que <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>600</m:mn><m:mo>- −</m:mo><m:mn>16</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Exprese <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> en función de la altura <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y calcule el tiempo que tarda para alcanzar una altura de 400 pies.</para></problem></exercise>
+<exercise id="fs-id1165137451866"><problem id="fs-id1165137451867"><para id="fs-id1165137451868">El volumen, <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> de una esfera en función de su radio, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> viene dado por <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Exprese <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> en función de <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y halle el radio de una esfera con un volumen de 200 pies cúbicos.</para></problem>
+<solution id="fs-id1165137894368"><para id="fs-id1165137894369"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>V</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mroot>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> 3,63 pies</para></solution></exercise>
+<exercise id="fs-id1165137619689"><problem id="fs-id1165137619690"><para id="fs-id1165137446018">El área superficial, <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> de una esfera en función de su radio, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> viene dada por <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Exprese <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> en función de <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y halle el radio de una esfera con un área superficial de 1000 pulgadas cuadradas.</para></problem></exercise>
+<exercise id="fs-id1165135199586"><problem id="fs-id1165137611961"><para id="fs-id1165137611962">Un recipiente contiene 100 ml de una solución que tiene 25 ml de ácido. Si se añaden <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> ml de una solución ácida al 60 %, la función <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>25</m:mn><m:mo>+</m:mo><m:mn>0,6</m:mn><m:mi>n</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>100</m:mn><m:mo>+</m:mo><m:mi>n</m:mi>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> da la concentración, <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en función de la cantidad de ml añadidos, <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Exprese <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> en función de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> y determine cuántos mL hay que añadir para tener una solución ácida al 50 %.</para></problem>
+<solution id="fs-id1165137677899"><para id="fs-id1165137677900"> <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>100</m:mn><m:mi>C</m:mi><m:mo>- −</m:mo><m:mn>25</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>0,6</m:mn><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> 250 mL</para></solution></exercise>
+<exercise id="fs-id1165137400716"><problem id="fs-id1165137400717"><para id="fs-id1165137400718">El periodo <m:math>
+ <m:mrow>
+  <m:mi>T</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en segundos, de un péndulo simple en función de su longitud <m:math>
+ <m:mrow>
+  <m:mi>l</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en pies, viene dado por <m:math>
+ <m:mrow>
+  <m:mi>T</m:mi><m:mo stretchy="false">(</m:mo><m:mi>l</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>l</m:mi>
+     <m:mrow>
+      <m:mn>32,2</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>. Exprese <m:math>
+ <m:mrow>
+  <m:mi>l</m:mi>
+ </m:mrow>
+</m:math> en función de <m:math>
+ <m:mrow>
+  <m:mi>T</m:mi>
+ </m:mrow>
+</m:math> y determine la longitud de un péndulo con período de 2 segundos.</para></problem></exercise>
+<exercise id="fs-id1165137855335"><problem id="fs-id1165137855336"><para id="fs-id1165137855337">El volumen de un cilindro, <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en términos de radio, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la altura, <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> viene dado por <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mi>h</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si un cilindro tiene una altura de 6 metros, exprese el radio en función de <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi>
+ </m:mrow>
+</m:math> y halle el radio de un cilindro con un volumen de 300 metros cúbicos.</para></problem>
+<solution id="fs-id1165135524559"><para id="fs-id1165135524560"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>V</m:mi>
+     <m:mrow>
+      <m:mn>6</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> 3,99 metros</para></solution></exercise>
+<exercise id="fs-id1165135543521"><problem id="fs-id1165135543522"><para id="fs-id1165135543524">El área superficial, <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> de un cilindro en función de su radio, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la altura, <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> viene dada por <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>r</m:mi><m:mi>h</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si la altura del cilindro es de 4 pies, exprese el radio en función de <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> y determine el radio si el área superficial es de 200 pies cuadrados.</para></problem></exercise>
+<exercise id="fs-id1165135209080"><problem id="fs-id1165135209081"><para id="fs-id1165135209082">El volumen de un cono circular recto, <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en términos de su radio, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y su altura, <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> viene dado por <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>π</m:mi><m:msup>
+   <m:mi>r</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mi>h</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Exprese <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi>
+ </m:mrow>
+</m:math> si la altura del cono es de 12 pulgadas y determine el radio de un cono con volumen de 50 pulgadas cúbicas.</para></problem>
+<solution id="fs-id1165135389876"><para id="fs-id1165135389877"> <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>V</m:mi>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> 1,99 pulgadas</para></solution></exercise>
+
+<exercise id="fs-id1165137783419"><problem id="fs-id1165137783420"><para id="fs-id1165137783421">Considere un cono con una altura de 30 pies. Exprese el radio, <m:math>
+ <m:mrow>
+  <m:mi>r</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en términos de volumen, <m:math>
+ <m:mrow>
+  <m:mi>V</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y determine el radio de un cono con un volumen de 1000 pies cúbicos.</para></problem></exercise>
+
+</section>
+
+</section>
+
+<glossary>
+
+<definition id="fs-id1165135169260"><term>función invertible</term><meaning id="fs-id1165135169263">cualquier función que tenga una función inversa</meaning></definition>
+</glossary>
+</m:math></item></list></section></content></document>

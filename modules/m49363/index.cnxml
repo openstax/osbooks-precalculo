@@ -1,0 +1,4359 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Funciones logarítmicas</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49363</md:content-id>
+  <md:title>Funciones logarítmicas</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para><list id="list-00001">
+<item>Convertir de forma logarítmica a exponencial.</item>
+<item>Convertir de forma exponencial a logarítmica.</item>
+<item>Evaluar logaritmos.</item>
+<item>Utilizar logaritmos comunes.</item>
+<item>Utilizar logaritmos naturales.</item>
+</list></md:abstract>
+  <md:uuid>746b4be7-5dfd-4d01-8293-06ef750e0365</md:uuid>
+</metadata>
+
+<content>
+<section id="eip-566" class="coreq-skills"><section id="fs-idm408684752" class="learning-objectives"><title>Objetivos de aprendizaje</title><list id="eip-768" list-type="enumerated" number-style="arabic"><item> Convertir de forma logarítmica a exponencial. (IA 10.3.1)</item>
+<item>Evalúe funciones logarítmicas. (IA 10.3.2)</item></list></section><section id="eip-823"><title>Objetivo 1: Convertir de forma logarítmica a exponencial. (IA 10.3.1)</title><section id="eip-513" class="practice-perfect"><title>La práctica hace la perfección</title><exercise id="eip-211"><problem id="eip-659">
+  <para id="eip-441">Grafique la función exponencial <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math> haciendo una tabla.
+  <table id="eip-123" class="unnumbered" summary="."><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table><media id="fs-id1167834017914" alt="Dibujo en blanco.">
+<image mime-type="image/png" src="../../media/blankplot5.5.png"/>
+</media>
+<list id="eip-idm204680288" list-type="enumerated" number-style="lower-alpha"><item>¿Es biunívoco?</item>
+<item>¿Dominio?</item>
+<item>¿Rango?</item>
+<item>Grafique la inversa de <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math> en la cuadrícula anterior al intercambiar las coordenadas de la x y de la y en la tabla.
+ <table id="eip-122" class="unnumbered" summary="."><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center"> <m:math>
+<m:mi>x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math> </entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+<row>
+<entry/>
+<entry/>
+  </row>
+
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table></item>
+<item>¿La función inversa es biunívoca?</item>
+<item>¿Dominio? </item>
+<item>¿Rango?</item></list></para>
+</problem>
+
+</exercise></section>
+
+<example id="eip-825"><exercise id="eip-313"><problem id="eip-686">
+  <para id="eip-142">
+Halle la inversa de <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math> </para>
+</problem>
+
+<solution id="eip-383">
+  <para id="eip-63">
+    <table id="eip-627" class="unstyled unnumbered" summary="."><label/>
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>Reescriba con <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> grandes. </entry>
+    <entry> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math> </entry>
+  </row>
+  <row>
+    <entry>Intercambie las variables de <m:math><m:mi>x</m:mi></m:math> como <m:math><m:mi>y</m:mi></m:math>.</entry>
+    <entry> <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>y</m:mi></m:msup></m:math> </entry>
+  </row>
+  <row>
+    <entry>Resuelva para <m:math><m:mi>y</m:mi></m:math>.</entry>
+    <entry>¡Uy! No tenemos forma de resolver <m:math><m:mi>y</m:mi></m:math>.</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+
+Damos a la y una nueva notación<newline/> <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mmultiscripts><m:mi>x</m:mi><m:mprescripts/><m:mn>2</m:mn></m:mmultiscripts></m:math> <newline/> " <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mmultiscripts><m:mi>x</m:mi><m:mprescripts/><m:mn>2</m:mn></m:mmultiscripts></m:math> " léase "<emphasis effect="bold">el logaritmo de base 2 de <emphasis effect="italics">x</emphasis></emphasis>", significa "la potencia a la que elevamos 2 para obtener <emphasis effect="italics">x</emphasis>". La función <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mmultiscripts><m:mi>a</m:mi><m:mprescripts/><m:mn>x</m:mn></m:mmultiscripts></m:math> <emphasis effect="bold"> equivale a </emphasis> <m:math><m:msup><m:mi>a</m:mi><m:mi>y</m:mi></m:msup><m:mo>=</m:mo><m:mi>x</m:mi></m:math> <emphasis effect="bold">es la función logarítmica de base</emphasis> <m:math><m:mi>a</m:mi></m:math>, donde <m:math><m:mi>a</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:math>, <m:math><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn></m:math></para></solution>
+</exercise></example><para id="eip-775">Dado que las ecuaciones <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mi>a</m:mi></m:msub><m:mi>x</m:mi></m:mrow></m:math> y <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup><m:mi>a</m:mi><m:mi>y</m:mi></m:msup></m:mrow></m:math> son equivalentes, podemos ir de un lado a otro entre estas. Este será a menudo el método para resolver algunas ecuaciones exponenciales y logarítmicas. Para ayudar con la conversión entre una y otra, veamos las ecuaciones con detenimiento. Observe las posiciones del exponente y la base.</para><figure id="CNX_IntAlg_Figure_10_03_001"><media id="fs-id1167834505632" alt="Esta figura muestra que la expresión y es igual a log subíndice a de x, donde y es el exponente y a es la base. Junto a esta expresión tenemos que x es igual a “a la y”, donde de nuevo y es el exponente y a es la base.">
+<image mime-type="image/jpeg" src="../../media/CNX_IntAlg_Figure_10_03_001.jpg"/>
+</media></figure><para id="eip-444">Si recordamos que el logaritmo es el exponente, se facilita la conversión. Puede repetir: "la base al exponente nos da el número”.</para><example id="eip-202"><para id="eip-379">
+Convierta entre forma exponencial y logarítmica.</para><exercise id="eip-470"><problem id="eip-987">
+  <para id="eip-924"><span class="token">Ⓐ</span> Convierta a forma logarítmica: <m:math><m:msup><m:mn>2</m:mn><m:mn>3</m:mn></m:msup><m:mo>=</m:mo><m:mn>8</m:mn></m:math> </para></problem>
+
+<solution id="eip-611">
+  <para id="eip-71">Identifique la base y el exponente: la base es 2 y el exponente es 3. <newline/> Entonces tenemos <m:math><m:mn>3</m:mn><m:mo>=</m:mo><m:msub><m:mtext>log</m:mtext><m:mn>2</m:mn></m:msub><m:mn>8</m:mn></m:math>.</para></solution>
+</exercise><exercise id="eip-471"><problem id="eip-774">
+  <para id="eip-680">
+<span class="token">Ⓑ</span> Convierta en forma exponencial: <m:math><m:msub><m:mtext>log</m:mtext><m:mi>b</m:mi></m:msub><m:mi>m</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:math> </para>
+</problem>
+
+<solution id="eip-551">
+  <para id="eip-431">Identifique la base y el exponente: la base es <emphasis effect="italics">b</emphasis> y el exponente es <emphasis effect="italics">a</emphasis>. <newline/> Entonces tenemos <m:math><m:msup><m:mi>b</m:mi><m:mi>a</m:mi></m:msup><m:mo>=</m:mo><m:mi>m</m:mi></m:math>.</para></solution>
+</exercise>
+</example><section id="eip-814" class="practice-perfect"><title>La práctica hace la perfección</title><para id="eip-418">
+Convierta entre forma exponencial y logarítmica.</para><para id="eip-118">Recuerde estas notaciones logarítmicas para completar lo siguiente:<newline/> <emphasis effect="bold"> Logaritmo común</emphasis> <m:math><m:mtext>log</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>log</m:mtext><m:mmultiscripts><m:mi>x</m:mi><m:mprescripts/><m:mn>10</m:mn></m:mmultiscripts></m:math> <newline/> <emphasis effect="bold"> Logaritmo natural</emphasis> <m:math><m:mtext>ln</m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>log</m:mtext><m:mmultiscripts><m:mi>x</m:mi><m:mprescripts/><m:mi>e</m:mi></m:mmultiscripts></m:math> </para><exercise id="eip-642"><problem id="eip-907">
+  <para id="eip-373">
+Convierta a forma logarítmica. <list id="eip-idm516412080" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> <m:math><m:mn>8</m:mn><m:mo>=</m:mo><m:msup><m:mn>2 </m:mn><m:mi>x</m:mi></m:msup></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓑ</span> <m:math><m:msup><m:mn>10</m:mn><m:mn>-2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0,01</m:mn></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓒ</span> <m:math><m:msup><m:mi>e</m:mi><m:mi>x</m:mi></m:msup><m:mo>=</m:mo><m:mn>40</m:mn></m:math>
+     </item></list>
+</para>
+</problem>
+</exercise><exercise id="eip-633"><problem id="eip-917">
+  <para id="eip-371">
+Convierta a forma exponencial. <list id="eip-idm516422080" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mn>81</m:mn><m:mprescripts/><m:mn>3</m:mn></m:mmultiscripts><m:mo>=</m:mo><m:mn>4</m:mn></m:math> </item>
+     <item>
+          <span class="token">Ⓑ</span> <m:math><m:mi>ln</m:mi><m:mo> </m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓒ</span> <m:math><m:mi>log</m:mi><m:mn>10.000</m:mn><m:mo>=</m:mo><m:mn>4</m:mn></m:math>
+     </item></list>
+</para>
+</problem>
+</exercise></section></section><section id="eip-69"><title>Objetivo 2: Evaluar funciones logarítmicas (AI 10.3.2).</title><para id="eip-939">
+Podemos resolver y evaluar ecuaciones logarítmicas con la técnica de convertir la ecuación en su forma exponencial equivalente.</para><example id="eip-815"><exercise id="fs-id1167835218009">
+<problem id="fs-id1167834505593">
+<para id="fs-id1167835306719">Calcule el valor de <emphasis effect="italics">x</emphasis>: <span class="token">Ⓐ</span> <m:math><m:mrow><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mi>x</m:mi></m:msub><m:mn>36</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo></m:mrow></m:math> <span class="token">Ⓑ</span> <m:math><m:mrow><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mn>4</m:mn></m:msub><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:mrow></m:math> y <span class="token">Ⓒ</span> <m:math><m:mrow><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow></m:msub><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1167834431960">
+<para id="fs-id1167834535355"><span class="token">Ⓐ</span><newline/>
+<table id="fs-idm194976016" class="unnumbered unstyled" summary=".">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry> <m:math><m:mrow><m:mspace width="3.8em"/><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mi>x</m:mi></m:msub><m:mn>36</m:mn><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>2 </m:mn></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Convierta en forma exponencial.</entry>
+<entry> <m:math><m:mrow><m:mspace width="5.6em"/><m:msup><m:mi>x</m:mi><m:mn>2 </m:mn></m:msup><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>36</m:mn></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Resuelva la cuadrática.</entry>
+<entry> <m:math><m:mrow><m:mspace width="3.8em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="2em"/><m:menclose notation="updiagonalstrike"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn></m:mrow></m:menclose></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>La base de la función logarítmica deberá ser positiva, por lo que eliminamos <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn></m:mrow></m:math>.</entry>
+<entry> <m:math><m:mrow><m:mspace width="6.2em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>6</m:mn><m:mspace width="2.5em"/><m:mtext>Por lo tanto,</m:mtext><m:mspace width="0.2em"/><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mn>6</m:mn></m:msub><m:mn>36</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo></m:mrow></m:math> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167831040444"><span class="token">Ⓑ</span><newline/>
+<table id="fs-idm215119104" class="unnumbered unstyled" summary=".">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry> <m:math><m:mrow><m:mspace width="6.8em"/><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mn>4</m:mn></m:msub><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>3</m:mn></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Convierta en forma exponencial.</entry>
+<entry> <m:math><m:mrow><m:mspace width="8.2em"/><m:msup><m:mn>4</m:mn><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Simplifique.</entry>
+<entry> <m:math><m:mrow><m:mspace width="8.6em"/><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>64</m:mn><m:mspace width="1.3em"/><m:mtext>Por lo tanto,</m:mtext><m:mspace width="0.2em"/><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mn>4</m:mn></m:msub><m:mn>64</m:mn><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mo>.</m:mo></m:mrow></m:math> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+<para id="fs-id1167828395816"><span class="token">Ⓒ</span><newline/>
+<table id="fs-idm216826672" class="unnumbered unstyled" summary=".">
+<label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry/>
+<entry> <m:math><m:mrow><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow></m:msub><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mi>x</m:mi></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Convierta en forma exponencial.</entry>
+<entry> <m:math><m:mspace width="0.4em"/><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>x</m:mi></m:msup><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Reescriba <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> cuando <m:math><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:math>.</entry>
+<entry> <m:math><m:mspace width="0.4em"/><m:mrow><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mi>x</m:mi></m:msup><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:msup><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mn>3</m:mn></m:msup></m:mrow></m:math> </entry>
+</row>
+<row>
+<entry>Con la misma base, los exponentes deberán ser iguales.</entry>
+<entry> <m:math><m:mspace width="2.4em"/><m:mrow><m:mi>x</m:mi><m:mspace width="0.2em"/><m:mo>=</m:mo><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mspace width="2em"/><m:mtext>Por lo tanto,</m:mtext><m:mspace width="0.2em"/><m:msub><m:mrow><m:mtext>log</m:mtext></m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow></m:msub><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> </entry>
+</row>
+</tbody>
+</tgroup>
+</table></para>
+</solution>
+</exercise>
+</example><section id="eip-115" class="practice-perfect"><title>La práctica hace la perfección</title><exercise id="eip-606"><problem id="eip-927">
+  <para id="eip-475"><title>Evalúe funciones logarítmicas.</title>Calcule el valor de <m:math><m:mi>x</m:mi></m:math> . <list id="eip-idm516722080" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mn>25</m:mn><m:mprescripts/><m:mi>x</m:mi></m:mmultiscripts><m:mo>=</m:mo><m:mn>2 </m:mn></m:math> </item>
+     <item>
+          <span class="token">Ⓑ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mi>x</m:mi><m:mprescripts/><m:mn>4</m:mn></m:mmultiscripts><m:mo>=</m:mo><m:mn>2 </m:mn></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓒ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mi>x</m:mi><m:mprescripts/><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mmultiscripts><m:mo>=</m:mo><m:mn>2 </m:mn></m:math>
+     </item></list></para></problem>
+
+</exercise><exercise id="eip-340"><problem id="eip-929">
+  <para id="eip-479">Evalúe cada uno de los siguientes: <list id="eip-idm516792090" list-type="enumerated" number-style="arabic" class="circled"><item>
+          <span class="token">Ⓐ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mn>100</m:mn><m:mprescripts/><m:mi>10</m:mi></m:mmultiscripts></m:math> </item>
+     <item>
+          <span class="token">Ⓑ</span> <m:math><m:mi>log</m:mi><m:mn>0,1</m:mn></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓒ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mn>2</m:mn><m:mprescripts/><m:mn>4</m:mn></m:mmultiscripts></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓓ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mn>1</m:mn><m:mprescripts/><m:mn>20</m:mn></m:mmultiscripts></m:math>
+     </item>
+     <item>
+          <span class="token">Ⓔ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mn>4</m:mn><m:mprescripts/><m:mn>4</m:mn></m:mmultiscripts></m:math> </item>
+     <item>
+          <span class="token">Ⓕ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac><m:mprescripts/><m:mn>3</m:mn></m:mmultiscripts></m:math> </item>
+     <item>
+          <span class="token">Ⓖ</span> <m:math><m:mi>log</m:mi><m:mmultiscripts><m:msqrt><m:mn>2</m:mn></m:msqrt><m:mprescripts/><m:mn>2</m:mn></m:mmultiscripts></m:math> </item>
+     <item>
+          <span class="token">Ⓗ</span> <m:math><m:mi>ln</m:mi><m:mo> </m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo> </m:mo><m:mn>5</m:mn></m:mrow></m:msup></m:math> </item></list>
+</para></problem>
+
+</exercise></section></section></section><figure id="CNX_Precalc_Figure_04_03_001" class="small"><media id="fs-id1165137526877" alt="Foto de las secuelas del terremoto en Japón con un primer plano en la bandera japonesa.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_03_001.jpg"/>
+</media>
+<caption>Devastación del terremoto del 11 de marzo de 2011 en Honshu, Japón. (créditos: Daniel Pierce)</caption> </figure><para id="fs-id1165137557013">En 2010, un gran terremoto azotó Haití y causó estragos en más de 285.000 hogares<footnote id="fs-id1165137805048">http://earthquake.usgs.gov/earthquakes/eqinthenews/2010/us2010rja6/#summary. Consultado el 4 de marzo de 2013.</footnote>. Un año después, otro terremoto más fuerte devastó Honshu, Japón, con destrucción y daños a más de 332.000 edificaciones,<footnote id="fs-id1165137457231">http://earthquake.usgs.gov/earthquakes/eqinthenews/2011/usc0001xgp/#summary. Consultado el 4 de marzo de 2013.</footnote> como las que se muestran en la <link target-id="CNX_Precalc_Figure_04_03_001"/>. Aunque ambos infligieron daños considerables, el terremoto de 2011 fue 100 veces más fuerte que el de Haití. ¿Cómo lo sabemos? La magnitud de los movimientos telúricos se mide en lo que se conoce como la escala de Richter. El terremoto de Haití registró una magnitud de 7,0 en la escala de Richter,<footnote id="fs-id1165137827715">http://earthquake.usgs.gov/earthquakes/eqinthenews/2010/us2010rja6/. Consultado el 4 de marzo de 2013.</footnote> mientras que el sismo en Japón registró una magnitud de 9,0.<footnote id="fs-id1165137611326">http://earthquake.usgs.gov/earthquakes/eqinthenews/2011/usc0001xgp/#details. Consultado el 4 de marzo de 2013.</footnote></para>
+
+<para id="fs-id1165137760714">La escala de Richter es una escala logarítmica de base diez. En otras palabras, un sismo de magnitud 8 no es dos veces mayor que uno de magnitud 4. Es <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>- −</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>10.000</m:mn>
+</m:mrow>
+</m:math> veces más grande. En esta lección, investigaremos la naturaleza de la escala de Richter y la función de base diez de la que depende.</para><section id="fs-id1165137644550"><title>Convertir de la forma logarítmica a la exponencial</title><para id="fs-id1165135192781">Para analizar la magnitud de un movimiento telúrico o compararla con la de otro, debemos estar en capacidad de convertir entre la forma logarítmica y la exponencial. Por ejemplo, supongamos que la cantidad de energía que libera un terremoto es 500 veces mayor que la cantidad de energía que libera otro. Queremos calcular la diferencia en la magnitud. La ecuación que representa este problema es <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>500</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> representa la diferencia de magnitud en la <term class="no-emphasis" id="term-00001">escala de Richter</term>. ¿Cómo podríamos resolver <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>?</m:mo>
+</m:mrow>
+</m:math> </para><para id="fs-id1165135160312">Todavía no hemos aprendido el método para resolver ecuaciones exponenciales. Ninguna de las herramientas algebraicas que se han analizado hasta ahora basta para resolver <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>500.</m:mn>
+</m:mrow>
+</m:math> Sabemos que <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>100</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1.000</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por lo que está claro que <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> deberá ser algún valor entre 2 y 3, ya que <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> aumenta. Podemos examinar un gráfico, como en la <link target-id="CNX_Precalc_Figure_04_03_002"/><emphasis effect="bold">,</emphasis> para estimar mejor la solución.</para><figure id="CNX_Precalc_Figure_04_03_002" class="small">
+<media id="fs-id1165137645275" alt="Gráfico de las intersecciones de las ecuaciones y=10^x e y=500.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_03_002.jpg"/>
+</media>
+</figure>
+<para id="fs-id1165137662989">Sin embargo, la estimación a partir de un gráfico es imprecisa. Para hallar una solución algebraica, debemos introducir una nueva función. Observe que el gráfico en la <link target-id="CNX_Precalc_Figure_04_03_002"/> pasa la prueba de la línea horizontal. La función exponencial <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> es <term class="no-emphasis" id="term-00002">biunívoca</term>, por lo que su inversa, <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> también es una función. Como ocurre con todas las funciones inversas, simplemente intercambiamos la <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> como <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math>, a la vez que resolvemos para <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> con el fin de dar con la función inversa. Para representar <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> en función de <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> utilizamos una función logarítmica de la forma <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> La base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> <emphasis effect="bold">logaritmo</emphasis> de un número es el exponente por el que debemos elevar <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> para obtener esa cifra.</para><para id="fs-id1165137404844">Leemos una expresión logarítmica como: "El logaritmo con base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> es igual a <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> " o, simplificado, la "base logarítmica <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> «”. También podemos enunciar: " <m:math>
+<m:mrow>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math> elevado a la potencia de <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> ¿es <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> " porque los logaritmos son exponentes. Por ejemplo, el logaritmo de base 2 de 32 es 5, porque 5 es el exponente que debemos aplicar a 2 para obtener 32. Dado que <m:math>
+<m:mrow><m:msup>
+<m:mn>2</m:mn>
+<m:mn>5</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>32</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> podemos escribir <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mn>32</m:mn><m:mo>=</m:mo><m:mn>5.</m:mn>
+</m:mrow>
+</m:math> Lo leemos como “la base logarítmica 2 de 32 es 5".</para><para id="fs-id1165137597501">Podemos expresar la relación entre la forma logarítmica y su correspondiente forma exponencial como sigue:</para>
+
+<equation id="eip-604" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi><m:mo stretchy="false">⇔</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mtext>	</m:mtext><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137678993">Tenga en cuenta que la base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> es siempre positiva.</para>
+
+
+<media id="fs-id1165137696233" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_03_004.jpg"/>
+</media>
+
+<para id="fs-id1165137400957">Dado que el logaritmo es una función, la manera más correcta de escribirlo es: <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> con paréntesis para denotar la evaluación de la función, al igual que haríamos con <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Sin embargo, cuando la entrada es una sola variable o un número, es común ver los paréntesis eliminados y la expresión escrita sin paréntesis, como <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Tenga en cuenta que muchas calculadoras requieren paréntesis alrededor de la <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><para id="fs-id1165137827516">Podemos ilustrar la notación de los logaritmos de la siguiente manera:</para>
+
+
+
+<media id="fs-id1165137771679" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_04_03_003.jpg"/>
+</media>
+
+
+<para id="fs-id1165137575165">Observe que, al comparar la función logarítmica y la función exponencial, la entrada y la salida se intercambian. Esto significa que <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y de <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> son funciones inversas.</para>
+
+<note id="fs-id1165137472937"><title>Definición de la función logarítmica</title>
+
+<para id="fs-id1165137704597">Una base <term id="term-00003">logarítmica</term> <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> de un número positivo <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> cumple la siguiente definición.</para>
+
+<para id="fs-id1165137584967">Para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165137433829" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mspace width="0.5em"/><m:mtext>equivale a </m:mtext><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137893373">donde,</para><list id="fs-id1165135530561" list-type="bulleted"><item>leemos <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> como, "el logaritmo con base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> " o la "base logarítmica <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo><m:mo>"</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>el logaritmo <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> es el exponente al que hay que elevar <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list><para id="fs-id1165137547773">Además, ya que las funciones logarítmicas y exponenciales cambian los valores de la <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> como <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math>, el dominio y el rango de la función exponencial se intercambian por la función logarítmica. Por lo tanto,</para>
+<list id="fs-id1165137643167">
+<item>el dominio de la función logarítmica con base <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo> </m:mo><m:mtext>es</m:mtext><m:mo> </m:mo><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>el rango de la función logarítmica con base <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo> </m:mo><m:mtext>es</m:mtext><m:mo> </m:mo><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list>
+</note><note id="fs-id1165137677696" class="precalculus qa"><label>PREGUNTAS Y RESPUESTAS</label>
+<para id="eip-id1549475"><emphasis>¿Podemos tomar el logaritmo de un número negativo?</emphasis></para>
+
+<para id="fs-id1165137653864"><emphasis effect="italics">No. Como la base de una función exponencial siempre es positiva, ninguna potencia de esa base puede ser nunca negativa. Nunca podemos tomar el logaritmo de un número negativo. Además, no podemos tomar el logaritmo de cero. Las calculadoras pueden emitir un logaritmo de un número negativo cuando están en modo complejo, pero el logaritmo de un número negativo no es un número real.</emphasis></para>
+</note><note id="fs-id1165137874700" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137806301"><emphasis>Dada una ecuación en forma logarítmica</emphasis> <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <emphasis> convertirla en forma exponencial.</emphasis></para><list id="fs-id1165137641669" list-type="enumerated" number-style="arabic"><item>Examine la ecuación <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+</m:mrow>
+</m:math> e identifique <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>,</m:mo><m:mo/><m:mi>y</m:mi><m:mo>,</m:mo><m:mo/><m:mtext>y</m:mtext><m:mo/><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Reescriba <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> cuando <m:math>
+<m:mrow><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+</list></note>
+
+<example id="Example_04_03_01"><exercise id="fs-id1165135570363">
+<problem id="fs-id1165137557855">
+<title>Convertir de la forma logarítmica a la forma exponencial</title>
+<para id="fs-id1165137580570">Escriba las siguientes ecuaciones logarítmicas en forma exponencial.</para>
+<list id="fs-id1165137705346" list-type="enumerated" number-style="arabic" class="circled"><item> <span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </item>
+<item> <span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>9</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </item>
+</list>
+</problem>
+<solution id="fs-id1165135613330">
+<para id="fs-id1165137408172">En primer lugar, identifique los valores de <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>y </m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces, escriba la ecuación en la forma <m:math>
+<m:mrow><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><list id="fs-id1165137705659" list-type="labeled-item"><item> <span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+<para id="fs-id1165137602796">Aquí, <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo>,</m:mo><m:mtext>y</m:mtext><m:mo> </m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt>
+<m:mrow>
+<m:mn>6.</m:mn>
+</m:mrow>
+</m:msqrt>
+
+</m:mrow>
+</m:math> Por lo tanto, la ecuación <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> equivale a <m:math display="block">
+<m:mrow><m:msup>
+<m:mn>6</m:mn>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para></item>
+<item> <span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>9</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+<para id="fs-id1165137698078">Aquí, <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mtext>y</m:mtext><m:mo> </m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn>
+</m:mrow>
+</m:math> Por lo tanto, la ecuación <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mn>9</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>9.</m:mn>
+</m:mrow>
+</m:math> </para></item>
+</list></solution>
+</exercise>
+</example><note id="fs-id1165137640140" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_01">
+<problem id="fs-id1165135208926">
+<para id="fs-id1165137418681">Escriba las siguientes ecuaciones logarítmicas en forma exponencial. </para>
+<list id="fs-id1165137772342" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span><m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,</m:mn><m:mn>000,</m:mn><m:mn>000</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span><m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </item>
+</list></problem>
+<solution id="fs-id1165135195688">
+<list id="fs-id1165137414337" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span><m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+</m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span><m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msup>
+<m:mn>5</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>25</m:mn>
+</m:mrow>
+</m:math> </item>
+</list>
+</solution>
+</exercise>
+</note></section><section id="fs-id1165137585244">
+<title>Convertir de la forma exponencial a la forma logarítmica</title>
+
+<para id="fs-id1165137933968">Para convertir de exponentes a logaritmos, seguimos los mismos pasos, pero a la inversa. Identificamos la base <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> exponente <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y salida <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces escribimos <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<example id="Example_04_03_02">
+<exercise id="fs-id1165135168111">
+<problem id="fs-id1165137727912">
+<title>Convertir de la forma exponencial a la forma logarítmica</title>
+<para id="fs-id1165137804412">Escriba las siguientes ecuaciones exponenciales en forma logarítmica.</para>
+<list id="fs-id1165135192287" list-type="enumerated" number-style="lower-alpha"><item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>25</m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>10.000</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </item>
+</list></problem>
+<solution id="fs-id1165137702205">
+<para id="fs-id1165137474116">En primer lugar, identifique los valores de <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo>,</m:mo><m:mtext>y</m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces, escriba la ecuación en la forma <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><list id="fs-id1165137573458" list-type="enumerated" number-style="lower-alpha"><item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math>
+<para id="fs-id1165137466396">Aquí, <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8.</m:mn>
+</m:mrow>
+</m:math> Por lo tanto, la ecuación <m:math>
+<m:mrow><m:msup>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> </para></item>
+<item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>25</m:mn>
+</m:mrow>
+</m:math>
+<para id="fs-id1165135193035">Aquí, <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>25.</m:mn>
+</m:mrow>
+</m:math> Por lo tanto, la ecuación <m:math>
+<m:mrow><m:msup>
+<m:mn>5</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>25</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>25</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> </para></item>
+<item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>10.000</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+<para id="fs-id1165135187822">Aquí, <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>10.000</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Por lo tanto, la ecuación <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>10.000</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>10.000</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>4.</m:mn>
+</m:mrow>
+</m:math> </para></item>
+</list></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137438165" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_04_03_02">
+<problem id="fs-id1165135190969">
+<para id="fs-id1165137566762">Escriba las siguientes ecuaciones exponenciales en forma logarítmica.</para>
+<list id="fs-id1165137771963" list-type="enumerated" number-style="lower-alpha" class="circled">
+<item>  <span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>9</m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>125</m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </item>
+</list>
+</problem>
+<solution id="fs-id1165134065138">
+<list id="fs-id1165137469846" list-type="enumerated" number-style="arabic" class="circled"><item> <span class="token">Ⓐ</span> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>9</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <span class="token">Ⓑ</span> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>125</m:mn>
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>125</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> </item>
+<item> <span class="token">Ⓒ</span> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> equivale a <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math> </item>
+</list>
+</solution>
+</exercise>
+</note></section>
+
+<section id="fs-id1165137530906">
+<title>Evaluar logaritmos</title>
+
+<para id="fs-id1165137422589">Conocer los cuadrados, cubos y raíces de los números nos permite evaluar mentalmente muchos logaritmos. Por ejemplo, considere <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mn>8.</m:mn>
+</m:mrow>
+</m:math> Nos preguntamos: "¿A qué exponente hay que elevar <m:math>
+<m:mrow><m:mn>2</m:mn>
+</m:mrow>
+</m:math> para obtener el 8?”. Dado que ya sabemos que <m:math>
+<m:mrow><m:msup>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> se deduce que <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mn>8</m:mn><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> </para><para id="fs-id1165137733822">Ahora, considere resolver <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>7</m:mn>
+</m:msub>
+<m:mn>49</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:math> mentalmente.</para><list id="fs-id1165137937690" list-type="bulleted"><item>Preguntamos: "¿A qué exponente hay que elevar 7 para obtener 49?”. Sabemos que <m:math>
+<m:mrow><m:msup>
+<m:mn>7</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>49.</m:mn>
+</m:mrow>
+</m:math> Por lo tanto, <m:math>
+<m:msub>
+<m:mi>log</m:mi>
+<m:mn>7</m:mn>
+</m:msub>
+<m:mn>49</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:math>
+</item>
+<item>Preguntamos: "¿A qué exponente hay que elevar 3 para obtener 27?”. Sabemos que <m:math>
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>27.</m:mn>
+</m:mrow>
+</m:math> Por lo tanto, <m:math>
+<m:msub>
+<m:mi>log</m:mi>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mn>27</m:mn><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:math>
+</item>
+</list><para id="fs-id1165137456358">Incluso algunos logaritmos aparentemente más complicados pueden evaluarse sin necesidad de la calculadora. Por ejemplo, evaluemos <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msub>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> mentalmente.</para>
+
+<list id="fs-id1165137584208" list-type="bulleted"><item>Preguntamos: "¿A qué exponente hay que elevar <m:math>
+<m:mrow><m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+<m:mo>?</m:mo>
+</m:mrow>
+</m:math> “. Sabemos que <m:math>
+<m:mrow><m:msup>
+<m:mn>2</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> tal que <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Por lo tanto, <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>9</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math>
+</item>
+</list>
+<note id="fs-id1165137455840" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137453770"><emphasis>Dado un logaritmo de la forma <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> evaluarlo mentalmente.</emphasis></para><list id="fs-id1165134079724" list-type="enumerated" number-style="arabic"><item>Reescriba el argumento <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> como potencia de <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>:</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Utilice el conocimiento previo de las potencias de <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> identifique <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> al preguntar: "¿A qué exponente hay que elevar <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>?</m:mo>
+</m:mrow>
+</m:math> “.</item></list></note>
+
+<example id="Example_04_03_03"><exercise id="fs-id1165137732842">
+<problem id="fs-id1165135296345">
+<title>Resolver logaritmos mentalmente</title>
+<para id="fs-id1165135393440">Resuelva <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>64</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> sin usar la calculadora.</para>
+</problem>
+<solution id="fs-id1165137852123">
+<para id="fs-id1165137611276">Primero reescribimos el logaritmo en forma exponencial: <m:math>
+<m:mrow><m:msup>
+<m:mn>4</m:mn>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>64.</m:mn>
+</m:mrow>
+</m:math> A continuación, preguntamos: "¿A qué exponente hay que elevar 4 para obtener 64?”. </para>
+<para id="fs-id1165137661814">Sabemos que</para>
+<equation id="eip-id1165134583995" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msup>
+<m:mn>4</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>64</m:mn>
+</m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137619013">Por lo tanto,</para>
+<equation id="eip-id1165135606935" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>log</m:mi><m:mmultiscripts>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>64</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mprescripts/>
+<m:mn>4</m:mn>
+<m:none/>
+</m:mmultiscripts>
+<m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> </equation></solution>
+</exercise>
+</example>
+<note id="fs-id1165137731430" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_03">
+<problem id="fs-id1165137704553">
+<para id="fs-id1165137745041">Resuelva <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>121</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> sin usar la calculadora.</para></problem>
+<solution id="fs-id1165137693554">
+<para id="fs-id1165137639199"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>121</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> (recordando que <m:math>
+<m:mrow><m:msqrt>
+<m:mrow>
+<m:mn>121</m:mn>
+</m:mrow>
+</m:msqrt>
+<m:mo>=</m:mo><m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>121</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>11</m:mn>
+</m:mrow>
+</m:math> ).</para>
+</solution>
+</exercise>
+</note><example id="Example_04_03_04"><exercise id="fs-id1165137663658">
+<problem id="fs-id1165137680390">
+<title>Evaluar el logaritmo de un recíproco</title>
+<para id="fs-id1165137938805">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> sin usar la calculadora.</para>
+</problem>
+<solution id="fs-id1165135526087">
+<para id="fs-id1165137638179">Primero reescribimos el logaritmo en forma exponencial: <m:math>
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> A continuación, preguntamos: "¿A qué exponente hay que elevar 3 para obtener <m:math>
+<m:mrow><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>?</m:mo>
+</m:mrow>
+</m:math> “.</para>
+<para id="fs-id1165137552085">Sabemos que <m:math>
+<m:mrow><m:msup>
+<m:mn>3</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>27</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> pero, ¿qué hay que hacer para obtener el recíproco, <m:math>
+<m:mrow><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>?</m:mo>
+</m:mrow>
+</m:math> Recordemos del trabajo con exponentes que <m:math>
+<m:mrow><m:msup>
+<m:mi>b</m:mi>
+<m:mrow>
+<m:mo>–</m:mo><m:mi>a</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mi>a</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Utilizamos esta información para escribir</para>
+<equation id="eip-id1165137550550" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:msup>
+<m:mn>3</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137585807">Por lo tanto, <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>27</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>3,</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165137575754" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_04">
+<problem id="fs-id1165137768727">
+<para id="fs-id1165135437134">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>32</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> sin usar la calculadora.</para>
+</problem>
+<solution id="fs-id1165137812401">
+<para id="fs-id1165137806792"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>32</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note></section>
+
+<section id="fs-id1165137547253">
+<title>Usar logaritmos comunes</title>
+<para id="fs-id1165137574205">A veces podemos ver un logaritmo escrito sin base. En este caso, suponemos que la base es 10. En otras palabras, la expresión <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> significa <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Llamamos <emphasis effect="bold">logaritmo común</emphasis> a un logaritmo de base 10. Los logaritmos comunes se utilizan para medir la escala de Richter que se menciona al principio de la sección. Las escalas para medir el brillo de las estrellas y el pH de los ácidos y las bases también utilizan logaritmos comunes.</para>
+
+<note id="fs-id1165137401037"><title>Definición del logaritmo común</title>
+
+
+<para id="fs-id1165135609332">El <term id="term-00004">logaritmo común</term> es un logaritmo con base <m:math>
+<m:mrow><m:mn>10.</m:mn>
+</m:mrow>
+</m:math> Escribimos <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> simplemente como <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> El logaritmo común de un número positivo <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> cumple la siguiente definición.</para>
+<para id="fs-id1165137601579">Para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165137475905" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mspace width="0.5em"/><m:mtext>equivale a </m:mtext><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137559681">Leemos <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> como, "el logaritmo con base <m:math>
+<m:mrow><m:mn>10</m:mn>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> " o "base logarítmica 10 de <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:math> “.</para>
+
+<para id="fs-id1165137771789">El logaritmo <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> es el exponente al que hay que elevar <m:math>
+<m:mrow><m:mn>10</m:mn>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</note><note id="fs-id1165137579434" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137810781"><emphasis>Dado un logaritmo común de la forma <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> evaluarlo mentalmente.</emphasis></para><list id="fs-id1165137828334" list-type="enumerated" number-style="arabic">
+<item>Reescriba el argumento <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> como potencia de <m:math>
+<m:mrow><m:mn>10</m:mn><m:mo>:</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Utilice el conocimiento previo de las potencias de <m:math>
+<m:mrow><m:mn>10</m:mn>
+</m:mrow>
+</m:math> para identificar <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> al preguntar: "¿A qué exponente hay que elevar <m:math>
+<m:mrow><m:mn>10</m:mn>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>?</m:mo>
+</m:mrow>
+</m:math> “.</item>
+</list>
+</note>
+
+<example id="Example_04_03_05"><exercise id="fs-id1165137742366">
+<problem id="fs-id1165137418239">
+<title>Hallar mentalmente el valor de un logaritmo común</title>
+<para id="fs-id1165137658546">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.000</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> sin usar la calculadora.</para>
+</problem>
+<solution id="fs-id1165137634154">
+<para id="fs-id1165137444192">Primero reescribimos el logaritmo en forma exponencial: <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1000.</m:mn>
+</m:mrow>
+</m:math> A continuación, nos preguntamos: "¿A qué exponente hay que elevar <m:math>
+<m:mrow><m:mn>10</m:mn>
+</m:mrow>
+</m:math> para obtener 1000?”. Sabemos que </para>
+<equation id="eip-id1165134331119" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1.000</m:mn>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137584125">Por lo tanto, <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1.000</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165135503827" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_05">
+<problem id="fs-id1165137673696">
+<para id="fs-id1165137393877">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1,</m:mn><m:mn>000,</m:mn><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137768485">
+<para id="fs-id1165137436094"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1165137552804" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137827812"><emphasis effect="bold">Dado un logaritmo común con la forma <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> evaluarlo con la calculadora.</emphasis></para><list id="fs-id1165137418685" list-type="enumerated" number-style="arabic">
+<item>Presione <emphasis effect="bold">[LOG]</emphasis>.</item>
+<item>Introduzca el valor indicado para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> seguido de <emphasis effect="bold">[ ) ]</emphasis>.</item>
+<item>Presione <emphasis effect="bold">[ENTER]</emphasis>.</item>
+</list>
+</note>
+
+<example id="Example_04_03_06"><exercise id="fs-id1165137793928">
+<problem id="fs-id1165137892249">
+<title>Calcular el valor de un logaritmo común con la calculadora</title>
+<para id="fs-id1165137667877">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>321</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> a cuatro decimales utilizando la calculadora.</para>
+</problem>
+<solution id="fs-id1165137404714">
+<list id="fs-id1165137786486" list-type="bulleted">
+<item>Presione <emphasis effect="bold">[LOG]</emphasis>.</item>
+<item>Introduzca 321<emphasis effect="italics">,</emphasis> seguido de <emphasis effect="bold">[ ) ]</emphasis>.</item>
+<item>Presione <emphasis effect="bold">[ENTER]</emphasis>.</item>
+</list>
+<para id="fs-id1165137735413">Si redondeamos a cuatro decimales, <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>321</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>2,5065.</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+<commentary id="fs-id1165135195967">
+<title>Análisis </title>
+<para id="fs-id1165137789015">Observe que <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>100</m:mn>
+</m:mrow>
+</m:math> y que <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>1000.</m:mn>
+</m:mrow>
+</m:math> Dado que 321 está entre 100 y 1000, sabemos que <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>321</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> deberá estar entre <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1.000</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Esto nos da lo siguiente:</para>
+<equation id="eip-id1165134280435" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mo>&lt;</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>321</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mo>&lt;</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>1.000</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>2</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mo>&lt;</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mrow>
+<m:mn>2,5065</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd>
+<m:mo>&lt;</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mn>3</m:mn>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math> </equation>
+</commentary>
+</exercise>
+</example>
+<note id="fs-id1165137780842" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_06">
+<problem id="fs-id1165135241210">
+<para id="fs-id1165137735373">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>123</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> a cuatro decimales utilizando la calculadora.</para>
+</problem>
+<solution id="fs-id1165137550190">
+<para id="fs-id1165137844052"> <m:math>
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>123</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>2,0899</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note><example id="Example_04_03_07"><exercise id="fs-id1165137603561">
+<problem id="fs-id1165135704023">
+<title>Reescribir y resolver un modelo exponencial del mundo real</title>
+<para id="fs-id1165135194300">La cantidad de energía que liberó un terremoto fue 500 veces mayor que la cantidad de energía que liberó otro. La ecuación <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>500</m:mn>
+</m:mrow>
+</m:math> representa esta situación, en la que <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> es la diferencia en la magnitud en la escala de Richter. A la milésima más cercana, ¿cuál fue la diferencia en la magnitud?</para>
+</problem>
+<solution id="fs-id1165137784516">
+<para id="fs-id1165137827621">Comenzamos por reescribir la ecuación exponencial en forma logarítmica.</para>
+<equation id="eip-id1165134048114" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mn>500</m:mn>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow/>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>500</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Utilice la definición del logaritmo común</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137419444">A continuación, evaluamos el logaritmo con la calculadora:</para>
+<list id="fs-id1165137736356" list-type="bulleted"><item>Presione <emphasis effect="bold">[LOG]</emphasis>.</item>
+<item>Ingrese <m:math>
+<m:mrow><m:mn>500</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> seguido de <emphasis effect="bold">[ ) ]</emphasis>.</item>
+<item>Presione <emphasis effect="bold">[ENTER]</emphasis>.</item>
+<item>A la milésima más cercana, <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>500</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>2,699.</m:mn>
+</m:mrow>
+</m:math> </item>
+</list><para id="fs-id1165137422793">La diferencia en la magnitud fue aproximadamente <m:math>
+<m:mrow><m:mn>2,699.</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</example>
+<note id="fs-id1165137749635" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_07">
+<problem id="fs-id1165135195254">
+<para id="fs-id1165137736970">La cantidad de energía liberada por un terremoto fue <m:math>
+<m:mrow><m:mtext>8.500</m:mtext>
+</m:mrow>
+</m:math> veces mayor que la liberada por otro. La ecuación <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>8500 </m:mn>
+</m:mrow>
+</m:math> representa esta situación, en la que <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> es la diferencia en la magnitud en la escala de Richter. A la milésima más cercana, ¿cuál fue la diferencia en la magnitud?</para></problem>
+<solution id="fs-id1165137656499">
+<para id="fs-id1165137438675">La diferencia en la magnitud fue aproximadamente <m:math>
+<m:mrow><m:mn>3,929.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note></section>
+
+<section id="fs-id1165137405741">
+<title>Usar logaritmos naturales</title>
+<para id="fs-id1165137661970">La base más utilizada para los logaritmos es <m:math>
+<m:mrow><m:mi>e</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>Los logaritmos con base <m:math>
+<m:mrow><m:mi>e</m:mi>
+</m:mrow>
+</m:math> son importantes en el cálculo y en algunas aplicaciones científicas; reciben el nombre de <emphasis effect="bold">logaritmos naturales</emphasis>. El logaritmo con base <m:math>
+<m:mrow><m:mi>e</m:mi>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>e</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> tiene su propia notación, <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para><para id="fs-id1165137473872">La mayoría de los valores de <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> se hallan únicamente con la calculadora. La mayor excepción es esa, porque el logaritmo de 1 es siempre 0 en cualquier base, <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> Para otros logaritmos naturales, podemos utilizar la tecla <m:math>
+<m:mrow><m:mi>ln</m:mi>
+</m:mrow>
+</m:math>, que se encuentra en la mayoría de las calculadoras científicas. También podemos hallar el logaritmo natural de cualquier potencia de <m:math>
+<m:mrow><m:mi>e</m:mi>
+</m:mrow>
+</m:math> utilizando la propiedad inversa de los logaritmos.</para>
+
+<note id="fs-id1165137452317"><title>Definición del logaritmo natural</title>
+
+
+<para id="fs-id1165137579241">Un <term id="term-00005">logaritmo natural</term> es un logaritmo con base <m:math>
+<m:mrow><m:mi>e</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Escribimos <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>e</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> simplemente como <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> El logaritmo natural de un número positivo <m:math>
+<m:mrow>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> cumple la siguiente definición.</para>
+<para id="fs-id1165135613642">Para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> </para><equation id="fs-id1165137580230" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mspace width="0.5em"/><m:mtext>equivale a </m:mtext><m:msup>
+<m:mi>e</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </equation><para id="fs-id1165137658264">Leemos <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> como, "el logaritmo con base <m:math>
+<m:mrow><m:mi>e</m:mi>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math>" o "el logaritmo natural de <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math>“.</para><para id="fs-id1165137566720">El logaritmo <m:math>
+<m:mrow><m:mi>y</m:mi>
+</m:mrow>
+</m:math> es el exponente al que hay que elevar <m:math>
+<m:mrow><m:mi>e</m:mi>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165137705251">Dado que las funciones <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>e</m:mi><m:mmultiscripts>
+<m:mprescripts/>
+<m:none/>
+<m:mi>x</m:mi>
+</m:mmultiscripts>
+
+</m:mrow>
+</m:math> como <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> son funciones inversas, <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> para todos los valores <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mi>e</m:mi><m:mmultiscripts>
+<m:mo>=</m:mo>
+<m:mprescripts/>
+<m:none/>
+<m:mrow>
+<m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mmultiscripts>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> </para></note><note id="fs-id1165137409558" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137832169"><emphasis>Dado un logaritmo natural con la forma <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> evaluarlo con la calculadora.</emphasis></para><list id="fs-id1165135407195" list-type="enumerated" number-style="arabic"><item>Presione <emphasis effect="bold">[LN]</emphasis>.</item>
+<item>Introduzca el valor indicado para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> seguido de <emphasis effect="bold">[ ) ]</emphasis>.</item>
+<item>Presione <emphasis effect="bold">[ENTER]</emphasis>.</item>
+</list></note>
+
+<example id="Example_04_03_08">
+<exercise id="fs-id1165137731536">
+<problem id="fs-id1165137434974">
+<title>Evaluar un logaritmo natural con la calculadora</title>
+<para id="fs-id1165137573341">Evalúe <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>500</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> a cuatro decimales utilizando la calculadora.</para>
+</problem>
+<solution id="fs-id1165137702133">
+<list id="fs-id1165137563770" list-type="bulleted">
+<item>Presione <emphasis effect="bold">[LN]</emphasis>.</item>
+<item>Ingrese <m:math>
+<m:mrow><m:mn>500</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> seguido de <emphasis effect="bold">[ ) ]</emphasis>.</item>
+<item>Presione <emphasis effect="bold">[ENTER]</emphasis>.</item>
+</list>
+<para id="fs-id1165137645024">Si redondeamos a cuatro decimales, <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>500</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>6,2146</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137676028" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_04_03_08">
+<problem id="fs-id1165137431140">
+<para id="fs-id1165137435623">Evalúe <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>-500</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137737001">
+<para id="fs-id1165137639598">No es posible tomar el logaritmo de un número negativo en el conjunto de los números reales.</para>
+</solution>
+</exercise>
+</note>
+<note id="fs-id1165137648012" class="media-notitle">
+<label>Media</label>
+<para id="fs-id1165137451079">Acceda a este recurso en línea para obtener instrucciones adicionales y practicar con los logaritmos.</para>
+<list id="fs-id1165137732886" list-type="bulleted">
+<item><link url="http://openstax.org/l/intrologarithms">Introducción a los logaritmos</link></item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165137870892" class="key-equations">
+<title>Ecuaciones clave</title>
+
+<table id="fs-id1983134" summary="..." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Definición de la función logarítmica</entry>
+<entry>Para <m:math>
+ <m:mrow>
+ <m:mtext/><m:mo> </m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <newline/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+   <m:mrow>
+    <m:mi>log</m:mi>
+   </m:mrow>
+   <m:mi>b</m:mi>
+  </m:msub>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> si y solo si <m:math>
+ <m:mrow>
+ <m:mtext/><m:msup>
+   <m:mi>b</m:mi>
+   <m:mi>y</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+<row>
+<entry>Definición del logaritmo común</entry>
+<entry>Para <m:math>
+ <m:mrow>
+ <m:mtext/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> si y solo si <m:math>
+ <m:mrow>
+ <m:mtext/><m:msup>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mi>y</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry>Definición del logaritmo natural</entry>
+<entry>Para <m:math>
+ <m:mrow>
+ <m:mtext/><m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> si y solo si <m:math>
+ <m:mrow>
+ <m:mtext/><m:msup>
+   <m:mi>e</m:mi>
+   <m:mi>y</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></section><section id="fs-id1165135699130" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137574258" list-type="bulleted">
+<item>La inversa de una función exponencial es una función logarítmica, y la inversa de una función logarítmica es una función exponencial.</item>
+<item>Las ecuaciones logarítmicas se pueden escribir en una forma exponencial equivalente, utilizando la definición de logaritmo. Vea el <link target-id="Example_04_03_01"/>.</item>
+<item>Las ecuaciones exponenciales pueden escribirse en su forma logarítmica equivalente utilizando la definición de logaritmo. Vea el <link target-id="Example_04_03_02"/>.</item>
+<item>Las funciones logarítmicas con base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> pueden evaluarse mentalmente utilizando el conocimiento previo de las potencias de <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Vea el <link target-id="Example_04_03_03"/> y el <link target-id="Example_04_03_04"/>.</item>
+<item>Los logaritmos comunes pueden evaluarse mentalmente utilizando los conocimientos previos de las potencias de <m:math>
+<m:mrow><m:mn>10.</m:mn>
+</m:mrow>
+</m:math> Vea el <link target-id="Example_04_03_05"/><emphasis effect="bold">.</emphasis></item>
+<item>Cuando los logaritmos comunes no pueden evaluarse mentalmente, se utiliza la calculadora. Vea el <link target-id="Example_04_03_06"/><emphasis effect="bold">.</emphasis></item>
+<item>Los problemas exponenciales del mundo real con base <m:math>
+<m:mrow><m:mn>10</m:mn>
+</m:mrow>
+</m:math> pueden reescribirse como un logaritmo común y luego evaluarse con la calculadora. Vea el <link target-id="Example_04_03_07"/><emphasis effect="bold">.</emphasis></item>
+<item>Los logaritmos naturales se pueden evaluar con la calculadora. <link target-id="Example_04_03_08"/><emphasis effect="bold">.</emphasis></item>
+</list>
+</section>
+
+<section id="fs-id1165135192789" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165137427076">
+<title>Verbales</title>
+<exercise id="fs-id1165137817361">
+<problem id="fs-id1165137559978">
+<para id="fs-id1165137445179">¿Qué es el logaritmo con base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math>? Analice el significado interpretando cada parte de las ecuaciones equivalentes <m:math>
+<m:mrow><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> por <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>≠</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137411524">
+<para id="fs-id1165137410615">El logaritmo es un exponente. Específicamente, es el exponente al que se eleva una base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> para producir un valor determinado. En las expresiones dadas, la base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> tiene el mismo valor. El exponente, <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> en la expresión <m:math>
+<m:mrow><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+
+</m:mrow>
+</m:math> también puede escribirse como el logaritmo, <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y el valor de <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> es el resultado de elevar <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> a la potencia de <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137574896">
+<problem id="fs-id1165137658231">
+<para id="fs-id1165137529141">¿De qué manera se relaciona la función logarítmica <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math> con la función exponencial <m:math>
+<m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+<m:mi>b</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>?</m:mo>
+</m:mrow>
+</m:math> ¿Cuál es el resultado de componer estas dos funciones?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137446568">
+<problem id="fs-id1165137602953">
+<para id="fs-id1165137557324">¿Cómo puede la ecuación logarítmica <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> resolverse para <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> con las propiedades de los exponentes?</para>
+</problem>
+<solution id="fs-id1165135203815">
+<para id="fs-id1165137530592">Dado que la ecuación de un logaritmo es equivalente a una ecuación exponencial, el logaritmo se puede convertir en la ecuación exponencial <m:math>
+<m:mrow><m:msup>
+<m:mi>b</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>x</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y luego se pueden aplicar las propiedades de los exponentes para resolver <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137470358">
+<problem id="fs-id1165135526986">
+<para id="fs-id1165137697077">Comente acerca el significado del logaritmo común. ¿Cuál es su relación con un logaritmo de base <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y en qué se diferencia la notación?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137507578">
+<problem id="fs-id1165137828407">
+<para id="fs-id1165135417853">Comente acerca del significado del logaritmo natural. ¿Cuál es su relación con un logaritmo de base <m:math>
+<m:mrow><m:mi>b</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y en qué se diferencia la notación?</para></problem>
+<solution id="fs-id1165135397958">
+<para id="fs-id1165137596568">El logaritmo natural es un caso especial del logaritmo con base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> en que el logaritmo natural siempre tiene base <m:math>
+<m:mrow><m:mi>e</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> En lugar de anotar el logaritmo natural como <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>e</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> la notación que se utiliza es <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137447239">
+<title>Algebraicos </title>
+<para id="fs-id1165137414571">En los siguientes ejercicios, reescriba cada ecuación en forma exponencial.</para>
+
+<exercise id="fs-id1165137646887">
+<problem id="fs-id1165137664870">
+<para id="fs-id1165137726644"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>q</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137473551">
+<problem id="fs-id1165137454663">
+<para id="fs-id1165137736589"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mi>a</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>c</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135191877">
+<para id="fs-id1165137531424"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>a</m:mi>
+<m:mi>c</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>b</m:mi>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137506749">
+<problem id="fs-id1165135536326">
+<para id="fs-id1165137430583"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>16</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>y</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137410961">
+<problem id="fs-id1165137602136">
+<para id="fs-id1165137654948"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>64</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137428120">
+<para id="fs-id1165135192141"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mi>y</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>64</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137673422">
+<problem id="fs-id1165135585639">
+<para id="fs-id1165135516961"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>y</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>−11</m:mn>
+</m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135356538">
+<problem id="fs-id1165137501385">
+<para id="fs-id1165137629520"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>a</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>b</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135191871">
+<para id="fs-id1165135500732"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>a</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137580855">
+<problem id="fs-id1165137438413">
+<para id="fs-id1165137656672"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>y</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>137</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137611652">
+<problem id="fs-id1165134038222">
+<para id="fs-id1165137645621"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>142</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137580134">
+<para id="fs-id1165135174998"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+<m:mi>a</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>142</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137724172">
+<problem id="fs-id1165137724174">
+<para id="fs-id1165134077330"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>t</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137735890">
+<problem id="fs-id1165137735892">
+<para id="fs-id1165137560511"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>n</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135185210">
+<para id="fs-id1165135185212"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>w</m:mi>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137810335">En los siguientes ejercicios, reescriba cada ecuación en forma logarítmica.</para>
+
+<exercise id="fs-id1165135186264">
+<problem id="fs-id1165135203858">
+<para id="fs-id1165135203860"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mn>4</m:mn>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135194695">
+<problem id="fs-id1165137724816">
+<para id="fs-id1165137724818"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>c</m:mi>
+<m:mi>d</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>k</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137742265">
+<para id="fs-id1165137742268"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mi>c</m:mi>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137698394">
+<problem id="fs-id1165137434093">
+<para id="fs-id1165137434095"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>m</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mi>n</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135384408">
+<problem id="fs-id1165135384410">
+<para id="fs-id1165137534920"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>19</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135296129">
+<para id="fs-id1165137771226"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>19</m:mn>
+</m:mrow>
+</m:msub>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135358961">
+<problem id="fs-id1165137627327">
+<para id="fs-id1165137911046"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mo>-</m:mo><m:mspace width="0.5em"/><m:mfrac>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>13</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mi>y</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165132971714">
+<problem id="fs-id1165132971716">
+<para id="fs-id1165137728409"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>n</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>103</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134032258">
+<para id="fs-id1165137447080"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>103</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137564489">
+<problem id="fs-id1165137564491">
+<para id="fs-id1165137404398"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>m</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>n</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137731983">
+<problem id="fs-id1165137597971">
+<para id="fs-id1165137597973"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mi>x</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>39</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135194466">
+<para id="fs-id1165135194469"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>y</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>39</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>x</m:mi>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137827739">
+<problem id="fs-id1165137762434">
+<para id="fs-id1165137762436"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>a</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>b</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135296148">
+<problem id="fs-id1165134040600">
+<para id="fs-id1165134040602"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mi>k</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mi>h</m:mi>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135191801">
+<para id="fs-id1165135191803"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>k</m:mi>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<para id="fs-id1165137762947">En los siguientes ejercicios, resuelva para <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> al convertir la ecuación logarítmica en forma exponencial.</para>
+
+<exercise id="fs-id1165137438777">
+<problem id="fs-id1165137438779">
+<para id="fs-id1165137823075"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137482919">
+<problem id="fs-id1165137628211">
+<para id="fs-id1165137628213"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137443266">
+<para id="fs-id1165137834752"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mn>2 </m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>8</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137726345">
+<problem id="fs-id1165137726348">
+<para id="fs-id1165137473443"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137389073">
+<problem id="fs-id1165137639044">
+<para id="fs-id1165137639046"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137409760">
+<para id="fs-id1165137409762"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mn>3</m:mn>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>27</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137661950">
+<problem id="fs-id1165137726952">
+<para id="fs-id1165137475701"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137627690">
+<problem id="fs-id1165137657454">
+<para id="fs-id1165137444979"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>9</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137469004">
+<para id="fs-id1165137651832"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mn>9</m:mn>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135203739"><problem id="fs-id1165135203742">
+<para id="fs-id1165137427716"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+</exercise><exercise id="fs-id1165135613168">
+<problem id="fs-id1165137414109">
+<para id="fs-id1165137414111"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135253754">
+<para id="fs-id1165137543450"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mn>6</m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>216</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137937666">
+<problem id="fs-id1165137937668">
+<para id="fs-id1165137758189"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137736080">
+<problem id="fs-id1165137442469">
+<para id="fs-id1165137442471"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135524549">
+<para id="fs-id1165135524551"> <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137634430">En los siguientes ejercicios, utilice la definición de logaritmos comunes y naturales para simplificar.</para>
+
+<exercise id="fs-id1165137634434">
+<problem id="fs-id1165137732545">
+<para id="fs-id1165137732547"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:msup>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137936925">
+<problem id="fs-id1165137936927">
+<para id="fs-id1165135526105"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>32</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137436613">
+<para id="fs-id1165137942473"> <m:math>
+<m:mrow>
+<m:mn>32</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137529000">
+<problem id="fs-id1165137529002">
+<para id="fs-id1165135152291"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>0,0001</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165134079645">
+<problem id="fs-id1165137566210">
+<para id="fs-id1165137566212"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>1,06</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137455559">
+<para id="fs-id1165137464570"> <m:math>
+<m:mrow>
+<m:mn>1,06</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137400162">
+<problem id="fs-id1165137400164">
+<para id="fs-id1165135259620"> <m:math>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>5,03</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes. </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137543862">
+<problem id="fs-id1165137543865">
+<para id="fs-id1165135434891"> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>10,125</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:msup>
+<m:mo>+</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137605063">
+<para id="fs-id1165137605065"> <m:math>
+<m:mrow>
+<m:mn>14,125</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+</section>
+<section id="fs-id1165137451809">
+<title>Numéricos </title>
+
+<para id="fs-id1165137564770">En los siguientes ejercicios, evalúe la expresión logarítmica con base <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> sin utilizar la calculadora.</para>
+
+<exercise id="fs-id1165137676437">
+<problem id="fs-id1165137676439">
+<para id="fs-id1165137728122"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mrow>
+    <m:mtext>log</m:mtext>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msub>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mrow>
+      <m:mn>27</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137590077">
+<problem id="fs-id1165137590079">
+<para id="fs-id1165134108525"> <m:math>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:msqrt>
+<m:mn>6</m:mn>
+</m:msqrt>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135706822">
+<para id="fs-id1165137911553"> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137415151">
+<problem id="fs-id1165137423807">
+<para id="fs-id1165137423810"> <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mrow>
+    <m:mtext>log</m:mtext>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msub>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135190140">
+<problem id="fs-id1165137806053">
+<para id="fs-id1165137806055"> <m:math>
+<m:mrow>
+<m:mn>6</m:mn><m:msub>
+<m:mrow>
+<m:mtext>log</m:mtext>
+</m:mrow>
+<m:mn>8</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137454533">
+<para id="fs-id1165137454536"> <m:math>
+<m:mn>4</m:mn>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137532658">En los siguientes ejercicios, evalúe la expresión logarítmica común sin utilizar la calculadora.</para>
+
+<exercise id="fs-id1165137542512">
+<problem id="fs-id1165135613435">
+<para id="fs-id1165135613437"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>.</m:mo><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137755960">
+<problem id="fs-id1165137736340">
+<para id="fs-id1165137736342"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>0,001</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135431079">
+<para id="fs-id1165135431081"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mtext>3</m:mtext>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135190197">
+<problem id="fs-id1165135190199">
+<para id="fs-id1165137422196"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>7</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137432736">
+<problem id="fs-id1165137655695">
+<para id="fs-id1165137655697"> <m:math>
+<m:mrow>
+<m:mn>2</m:mn><m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137588216">
+<para id="fs-id1165137588218"> <m:math>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>12</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137570442">En los siguientes ejercicios, evalúe la expresión logarítmica natural sin utilizar la calculadora.</para>
+
+<exercise id="fs-id1165137619029">
+<problem id="fs-id1165137619032">
+<para id="fs-id1165134047613"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137736480">
+<problem id="fs-id1165137736482">
+<para id="fs-id1165137645639"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137645466">
+<para id="fs-id1165135207524"> <m:math>
+<m:mn>0</m:mn>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137804477">
+<problem id="fs-id1165137474568">
+<para id="fs-id1165137474570"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mo>- −</m:mo><m:mn>0,225</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137762957">
+<problem id="fs-id1165135570229">
+<para id="fs-id1165135570231"> <m:math>
+<m:mrow>
+<m:mn>25</m:mn><m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+
+</m:mrow>
+</m:msup>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137418633">
+<para id="fs-id1165137418635"> <m:math>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137527430">
+<title>En tecnología</title>
+
+<para id="fs-id1165137401108">En los siguientes ejercicios, evalúe cada expresión con la calculadora. Redondee a la milésima más cercana.</para>
+
+<exercise id="fs-id1165137626617">
+<problem id="fs-id1165137626619">
+<para id="fs-id1165137793717"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>0,04</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137640432">
+<problem id="fs-id1165137640434">
+<para id="fs-id1165135194090"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137696603">
+<para id="fs-id1165137679201"> <m:math>
+<m:mrow>
+<m:mtext>2</m:mtext><m:mo>.</m:mo><m:mtext>7</m:mtext><m:mn>0</m:mn><m:mtext>8</m:mtext>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137731720">
+<problem id="fs-id1165137731722">
+<para id="fs-id1165137463176"> <m:math>
+ <m:mrow>
+  <m:mtext>ln</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137527828">
+<problem id="fs-id1165137527830">
+<para id="fs-id1165137657921"> <m:math>
+<m:mrow>
+<m:mtext>log</m:mtext><m:mo stretchy="false">(</m:mo><m:msqrt>
+<m:mn>2 </m:mn>
+</m:msqrt>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165137658294">
+<para id="fs-id1165137405172"> <m:math>
+<m:mrow>
+<m:mn>0,151</m:mn>
+</m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137655087">
+<problem id="fs-id1165137655089">
+<para id="fs-id1165137757908"> <m:math>
+<m:mrow>
+<m:mtext>ln</m:mtext><m:mo stretchy="false">(</m:mo><m:msqrt>
+<m:mn>2 </m:mn>
+</m:msqrt>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137932472">
+<title>Extensiones </title>
+
+<exercise id="fs-id1165137435099">
+<problem id="fs-id1165137593336">
+<para id="fs-id1165137593338">¿Es <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> en el dominio de la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Si es así, ¿cuál es el valor de la función cuando <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Compruebe el resultado.</para>
+</problem>
+<solution id="fs-id1165137474123">
+<para id="fs-id1165137911451">No, la función no tiene ningún valor definido para <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math> Para comprobarlo, supongamos que <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> está en el dominio de la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces hay algún número <m:math>
+<m:mrow><m:mi>n</m:mi>
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Reescribiendo como ecuación exponencial da <m:math>
+<m:mrow><m:msup>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:msup>
+<m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> lo cual es imposible, ya que no existe tal número real <m:math>
+<m:mrow><m:mi>n</m:mi>
+</m:mrow>
+</m:math>. Por lo tanto, <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> <emphasis effect="italics">no</emphasis> es el dominio de la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137597455">
+<problem id="fs-id1165137597458">
+<para id="fs-id1165137627827">¿Es <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> en el rango de la función <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>log</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Si es así, para qué valor de <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Compruebe el resultado.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137548869">
+<problem id="fs-id1165137548871">
+<para id="fs-id1165135613701">¿Existe un número <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Si es así, ¿cuál es ese número? Compruebe el resultado.</para>
+</problem>
+<solution id="fs-id1165137659786">
+<para id="fs-id1165137806408">Sí. Supongamos que exista un número real <m:math>
+<m:mrow><m:mi>x</m:mi>
+</m:mrow>
+</m:math> de manera que <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> Reescribiendo como ecuación exponencial se obtiene <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math> que es un número real. Para comprobarlo, supongamos que <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces, por definición, <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137640809">
+<problem id="fs-id1165137603717">
+<para id="fs-id1165137603719">¿Es cierto lo siguiente?: <m:math>
+<m:mrow><m:mfrac>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:msub>
+<m:mo stretchy="false">(</m:mo><m:mn>27</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>64</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>−1</m:mn><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Compruebe el resultado.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137453751">
+<problem id="fs-id1165137453754">
+<para id="fs-id1165137413735">¿Es cierto lo siguiente?: <m:math>
+<m:mrow><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>1,725</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>1,725</m:mn><m:mo>?</m:mo>
+</m:mrow>
+</m:math> Compruebe el resultado.</para>
+</problem>
+<solution id="fs-id1165137749907">
+<para id="fs-id1165137559774">No; <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> por lo que <m:math>
+<m:mrow><m:mfrac>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mrow>
+<m:mn>1,725</m:mn>
+</m:mrow>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>1</m:mn>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> es indefinida.</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135437184">
+<title>Aplicaciones en el mundo real </title>
+
+<exercise id="fs-id1165137732791">
+<problem id="fs-id1165137913993">
+<para id="fs-id1165137913995">El índice de exposición <m:math>
+<m:mrow><m:mi>E</m:mi><m:mi>I</m:mi>
+</m:mrow>
+</m:math> de una cámara es una medida de la cantidad de luz que incide en el receptor de la imagen. Se determina mediante la ecuación <m:math>
+<m:mrow><m:mi>E</m:mi><m:mi>I</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mi>f</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mi>t</m:mi>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow><m:mi>f</m:mi>
+</m:mrow>
+</m:math> es el ajuste "f-stop" de la cámara, y <m:math>
+<m:mrow>
+<m:mi>t</m:mi>
+</m:mrow>
+</m:math> es el tiempo de exposición en segundos. Supongamos que el ajuste de f-stop es <m:math>
+<m:mrow><m:mn>8</m:mn>
+</m:mrow>
+</m:math> y el tiempo de exposición deseado es <m:math>
+<m:mrow><m:mn>2</m:mn>
+</m:mrow>
+</m:math> segundos. ¿Cuál será el índice de exposición resultante?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137602359">
+<problem id="fs-id1165137838750">
+<para id="fs-id1165137838752">Consulte el ejercicio anterior. Supongamos que el medidor de luz de una cámara indica un <m:math>
+<m:mrow><m:mi>E</m:mi><m:mi>I</m:mi>
+</m:mrow>
+</m:math> de <m:math>
+<m:mrow><m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y el tiempo de exposición deseado es de 16 segundos. ¿Cuál debería ser el ajuste de f-stop?</para></problem>
+<solution id="fs-id1165137570610">
+<para id="fs-id1165137417561"> <m:math>
+<m:mn>2 </m:mn>
+</m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135192763">
+<problem id="fs-id1165135192765">
+<para id="fs-id1165137697043">Los niveles de intensidad <emphasis effect="italics">I</emphasis> de dos terremotos medidos en un sismógrafo pueden compararse mediante la fórmula <m:math>
+<m:mrow><m:mi>log</m:mi><m:mfrac>
+<m:mrow>
+<m:msub>
+<m:mi>I</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>I</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:msub>
+<m:mi>M</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>- −</m:mo><m:msub>
+<m:mi>M</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:math> donde <m:math>
+<m:mrow><m:mi>M</m:mi>
+</m:mrow>
+</m:math> es la magnitud dada por la escala de Richter. En agosto de 2009, un terremoto de magnitud 6,1 sacudió Honshu, Japón. En marzo de 2011, esa misma región sufrió otro terremoto más devastador, esta vez de magnitud 9,0.<footnote id="fs-id1165137863319">http://earthquake.usgs.gov/earthquakes/world/historical.php. Consultado el 4 de marzo de 2014.</footnote> ¿Cuántas veces fue mayor la intensidad del terremoto de 2011? Redondee al número natural más cercano.</para>
+</problem>
+</exercise>
+</section>
+</section>
+</content>
+<glossary>
+<definition id="fs-id1165135160066">
+<term>logaritmo común</term>
+<meaning id="fs-id1165137571387">el exponente al que hay que elevar 10 para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>;</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> se escribe simplemente como <m:math>
+<m:mrow><m:mi>log</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </meaning>
+</definition>
+<definition id="fs-id1165137780762">
+<term>logaritmo</term>
+<meaning id="fs-id1165137849198">el exponente al que hay que elevar <m:math>
+<m:mrow><m:mi>b</m:mi>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>;</m:mo>
+</m:mrow>
+</m:math> se escribe como <m:math>
+<m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>b</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165137507853">
+<term>logaritmo natural</term>
+<meaning id="fs-id1165134037589">el exponente al que hay que elevar el número <m:math>
+<m:mrow><m:mi>e</m:mi>
+</m:mrow>
+</m:math> para obtener <m:math>
+<m:mrow><m:mi>x</m:mi><m:mo>;</m:mo>
+</m:mrow>
+</m:math> <m:math>
+<m:mrow><m:msub>
+<m:mrow>
+<m:mi>log</m:mi>
+</m:mrow>
+<m:mi>e</m:mi>
+</m:msub>
+<m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> se escribe como <m:math>
+<m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </meaning>
+</definition>
+</glossary>
+</document>

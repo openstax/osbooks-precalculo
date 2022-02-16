@@ -1,0 +1,3832 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Funciones lineales</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49324</md:content-id>
+  <md:title>Funciones lineales</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Representar una función lineal.</item>
+<item>Determinar si una función lineal es creciente, decreciente o constante.</item>
+<item>Calcular e interpretar la pendiente.</item>
+<item>Escribir la forma punto-pendiente de una ecuación.</item>
+<item>Escribir e interpretar una función lineal.</item>
+</list></md:abstract>
+  <md:uuid>9520ff9d-9def-4937-a92b-8b0e9d58103b</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Precalc_Figure_02_01_001"><media id="fs-id1165137433758" alt="Vista frontal de un vagón de metro, el tren de levitación magnética.">
+<image src="../../media/CNX_Precalc_Figure_02_01_011.jpg" mime-type="image/jpg" width="325"/>
+</media>
+
+<caption>Tren MagLev de Shanghai (créditos: "kanegen"/Flickr)</caption></figure><para id="fs-id1165137697072">Al igual que el crecimiento de una planta de bambú, hay muchas situaciones que implican un cambio constante con el paso del tiempo. Pensemos, por ejemplo, en el primer tren comercial de levitación magnética del mundo, el Tren MagLev de Shaghai (<link target-id="CNX_Precalc_Figure_02_01_001"/>). Transporta cómodamente a los pasajeros en un viaje de 30 kilómetros desde el aeropuerto hasta la estación de metro en apenas ocho minutos.<footnote id="ch02mod01_fn01">http://www.chinahighlights.com/shanghai/transportation/maglev-train.htm</footnote></para>
+<para id="fs-id1165134340085">Supongamos que un tren de levitación magnética recorre una larga distancia, a una velocidad constante de 83 metros por segundo durante un tiempo una vez que se aleja 250 metros de la estación. ¿Cómo analizaríamos la distancia del tren a la estación en función del tiempo? En esta sección, investigaremos un tipo de función que sirve para este propósito, y la utilizaremos para investigar situaciones del mundo real como la distancia del tren a la estación en un momento dado.</para>
+<section id="fs-id1165137444281">
+<title>Representar funciones lineales</title>
+<para id="fs-id1165137573850">La función que describe el movimiento del tren es una <emphasis>función lineal</emphasis>, la cual se define como una función con una tasa de cambio constante, es decir, un polinomio de grado 1. Hay varias formas de representar una función lineal, entre ellas la forma verbal, la notación de funciones, la forma tabular y la forma gráfica. Describiremos el movimiento del tren como una función mediante el empleo de cada método.</para>
+<section id="fs-id1165137759903">
+<title>Representar una función lineal en forma verbal</title>
+<para id="fs-id1165137588695">Empecemos por describir la función lineal con palabras. Para el problema del tren que acabamos de considerar, se puede utilizar la siguiente frase para describir la relación de funciones.</para>
+<list id="fs-id1165135526954" list-type="bulleted">
+<item><emphasis effect="italics">La distancia entre el tren y la estación es una función del tiempo durante el cual el tren se mueve a una velocidad constante más su distancia original a la estación cuando comenzó a moverse a velocidad constante.</emphasis></item>
+</list>
+<para id="fs-id1165135188466">La velocidad es la tasa de cambio. Recordemos que la tasa de cambio es una medida de la rapidez con la que cambia la variable dependiente con respecto a la variable independiente. La tasa de cambio para este ejemplo es constante, lo que significa que es la misma para cada valor de entrada. A medida que el tiempo (entrada) aumenta en 1 segundo, la distancia correspondiente (salida) aumenta en 83 metros. El tren comenzó a moverse a esta velocidad constante a una distancia de 250 metros de la estación.</para>
+</section>
+
+<section id="fs-id1165135639903"><title>Representar una función lineal en notación de funciones</title><para id="fs-id1165137833100">Otro enfoque para representar funciones lineales es utilizar la notación de funciones. Un ejemplo de notación de funciones es una ecuación escrita en lo que se conoce como <term id="term-00001">forma pendiente-intersección</term> de una línea, donde <m:math>
+<m:mi>x</m:mi>
+</m:math> es el valor de entrada, <m:math>
+<m:mi>m</m:mi>
+</m:math> es la tasa de cambio y <m:math>
+<m:mi>b</m:mi>
+</m:math> es el valor inicial de la variable dependiente.</para>
+<equation id="Equation_02_01_01" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Forma de la ecuación</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Notación de la ecuación</m:mtext>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137411219">En el ejemplo del tren, podríamos utilizar la notación <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> en la que la distancia total <m:math>
+<m:mi>D</m:mi>
+</m:math> es una función del tiempo <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La tasa, <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> es de 83 metros por segundo. El valor inicial de la variable dependiente <m:math>
+<m:mi>b</m:mi>
+</m:math> es la distancia original de la estación, 250 metros. Podemos escribir una ecuación generalizada para representar el movimiento del tren.</para>
+<equation id="fs-id1165137559254" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>83</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>250</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+</section><section id="fs-id1165135415800"><title>Representar una función lineal en forma tabular</title><para id="fs-id1165137438406">Un tercer método para representar una función lineal es mediante el uso de una tabla. La relación entre la distancia de la estación y el tiempo se representa en la <link target-id="CNX_Precalc_Figure_02_01_015"/>. En la tabla, podemos ver que la distancia cambia en 83 metros por cada aumento de 1 segundo en el tiempo.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_015" class="medium">
+<media id="fs-id1165137759688" alt="Tabla con la primera fila, denominada t, que contiene los segundos de 0 a 3, y con la segunda fila, denominada D(t), que contiene los metros de 250 a 499. La primera fila sube 1 segundo y la segunda sube 83 metros.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_015.jpg"/>
+</media>
+<caption>Representación tabular de la función <emphasis effect="italics">D</emphasis> con los valores de entrada y salida seleccionados</caption>
+</figure>
+
+<note id="fs-id1165137482942" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137828205"><emphasis>¿La entrada en el ejemplo anterior puede ser cualquier número real?</emphasis></para>
+<para id="fs-id1165135209002"><emphasis effect="italics">No. La entrada representa el tiempo, por lo que, si bien los números racionales e irracionales no negativos son posibles, los números reales negativos no son posibles para este ejemplo. La entrada consiste en números reales no negativos.</emphasis></para>
+</note>
+</section><section id="fs-id1165137619188"><title>Representar una función lineal de forma gráfica</title><para id="fs-id1165137827353">Otra forma de representar las funciones lineales es visualmente, mediante un gráfico. Podemos utilizar la relación de funciones de arriba, <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>83</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>250</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> para dibujar un gráfico, representado en la <link target-id="CNX_Precalc_Figure_02_01_012"/>. Observe que el gráfico es una línea. Cuando trazamos una función lineal, el gráfico es siempre una recta.</para><para id="fs-id1165137451297">La tasa de cambio, que es constante, determina la inclinación o <emphasis>pendiente</emphasis> de la línea. El punto en el que el valor de entrada es cero es la intersección vertical, o <emphasis>intersección en <emphasis effect="italics">y</emphasis>, de la línea. Podemos ver en el gráfico de la <link target-id="CNX_Precalc_Figure_02_01_012"/> que la intersección en <emphasis effect="italics">y</emphasis> en el ejemplo del tren que acabamos de ver es <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y representa la distancia del tren a la estación cuando comenzó a moverse a velocidad constante.
+<figure id="CNX_Precalc_Figure_02_01_012" class="small">
+<media id="fs-id1165137698181" alt="Gráfico de una función creciente con puntos en (-2, -4) y (0, 2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_012.jpg"/>
+</media>
+
+<caption>El gráfico de <m:math>
+<m:mrow>
+<m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>83</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>250.</m:mn>
+</m:mrow>
+</m:math> Los gráficos de las funciones lineales son líneas porque la tasa de cambio es constante.</caption></figure>
+
+<para id="fs-id1165137715509">Observe que el gráfico de del ejemplo del tren está restringido, pero no siempre es así. Considere el gráfico de la línea <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:msub>
+<m:mi>x</m:mi>
+</m:msub>
+<m:mn>+1.</m:mn>
+</m:mrow>
+</m:math> Pregúntese qué números se pueden introducir en la función, es decir, cuál es el dominio de la función El dominio está compuesto por todos los números reales porque cualquier número puede duplicarse, y luego sumar uno al producto.</para>
+
+<note id="fs-id1165137726089">
+
+<title>Función lineal</title>
+<para id="fs-id1165137454496">La <term id="term-00002">función lineal</term> es aquella cuya representación gráfica es una línea. Las funciones lineales se escriben en la forma pendiente-intersección de una línea.</para>
+<equation id="Equation_02_01_02" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137784222">donde <m:math>
+<m:mi>b</m:mi>
+</m:math> es el valor inicial o de partida de la función (cuando se introduce, <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:mrow>
+</m:math> ), y <m:math>
+<m:mi>m</m:mi>
+</m:math> es la tasa de cambio constante de la función, o <term id="term-00003">pendiente</term> de la función. Así que la intersección en <term id="term-00004"><emphasis effect="italics">y</emphasis></term> está en <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+</note>
+
+<example id="Example_02_01_01">
+<exercise id="fs-id1165137583894"><problem id="fs-id1165135209144">
+<title>Usar una función lineal para hallar la presión en un buceador</title>
+<para id="fs-id1165135184177">La presión, <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> en libras por pulgada cuadrada (PSI) en el buceador en la <link target-id="CNX_Precalc_Figure_02_01_003"/> depende de su profundidad bajo la superficie del agua, <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> en pies. Esta relación puede modelarse mediante la ecuación <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,434</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>14,696.</m:mn>
+</m:mrow>
+</m:math> Repita esta función con palabras.</para><figure id="CNX_Precalc_Figure_02_01_003" class="small">
+<media id="fs-id1165137565865" alt="Buceador.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_003.jpg"/>
+</media>
+<caption>(Crédito: Ilse Reijs y Jan-Noud Hutten)</caption>
+</figure>
+</problem>
+<solution id="fs-id1165135181728">
+<para id="fs-id1165137398472">Para replantear la función en palabras, tenemos que describir cada parte de la ecuación. La presión en función de la profundidad es igual a cuatrocientos treinta y cuatro milésimas de la profundidad más catorce y seiscientos noventa y seis milésimas.</para>
+</solution>
+<commentary id="fs-id1165137738187">
+<title>Análisis</title>
+<para id="fs-id1165137740917">El valor inicial, 14,696, es la presión en PSI sobre el buceador a una profundidad de 0 pies, que es la superficie del agua. La tasa de cambio, o pendiente, es de 0,434 PSI por pie. Esto nos indica que la presión sobre el buceador aumenta 0,434 PSI por cada pie que aumenta su profundidad.</para>
+</commentary>
+</exercise></example>
+
+<section id="fs-id1165137749252">
+<title>Determinar si una función lineal es creciente, decreciente o constante</title>
+<para id="fs-id1165135482019">Las funciones lineales que hemos utilizado en los dos ejemplos anteriores aumentan con el tiempo, pero no todas lo hacen. La función lineal puede ser creciente, decreciente o constante. En el caso de una <term class="no-emphasis" id="term-00005">función creciente</term>, como en el ejemplo del tren, los valores de salida aumentan a medida que aumentan los valores de entrada. El gráfico de la función creciente tiene una pendiente positiva. Una línea con pendiente positiva se inclina hacia arriba de izquierda a derecha como en <link target-id="CNX_Precalc_Figure_02_01_004abc"/><emphasis>(a)</emphasis>. En el caso de una <term class="no-emphasis" id="term-00006">función decreciente</term>, la pendiente es negativa. Los valores de salida disminuyen a medida que aumentan los valores de entrada. Una línea con pendiente negativa se inclina hacia abajo de izquierda a derecha como en la <link target-id="CNX_Precalc_Figure_02_01_004abc"/><emphasis>(b)</emphasis>. Si la función es constante, los valores de salida son los mismos para todos los valores de entrada, por lo que la pendiente es cero. Una línea con pendiente cero es horizontal como en la <link target-id="CNX_Precalc_Figure_02_01_004abc"/><emphasis>(c)</emphasis>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_004abc">
+<media id="fs-id1165137453957" alt="Tres gráficos que representan una función creciente, una función decreciente y una función constante.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_004abc.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165137446154"><title>Funciones crecientes y decrecientes</title>
+
+<para id="fs-id1165134085973">La pendiente determina si la función es una <term id="term-00007">función lineal creciente</term>, una <term id="term-00008">función lineal decreciente</term> o una función constante.</para>
+<list id="eip-643" list-type="bulleted" bullet-style="none"><item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mtext> es una función creciente si </m:mtext><m:mi>m</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mtext> es una función decreciente si </m:mtext><m:mi>m</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mtext> es una función constante si </m:mtext><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </item></list></note><example id="Example_02_01_02">
+<exercise id="fs-id1165137405281">
+<problem id="fs-id1165135571684">
+<title>Decidir si una función es creciente, decreciente o constante</title>
+<para id="fs-id1165137400625">Los estudios de principios de la primera década del siglo XXI indicaban que los adolescentes enviaban unos 60 mensajes de texto al día, mientras que los datos más recientes indican tasas de mensajería mucho más elevadas entre todos los usuarios, sobre todo teniendo en cuenta las diversas aplicaciones con las que la gente puede comunicarse. Para cada una de las siguientes situaciones, halle la función lineal que describa la relación entre el valor de entrada y el valor de salida. A continuación, determine si el gráfico de la función es creciente, decreciente o constante.</para>
+<list id="fs-id1165137807449" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> El número total de textos que envía un adolescente se considera en función del tiempo en días. La entrada es el número de días, y la salida es el número total de textos enviados.</item>
+<item><span class="token">Ⓑ</span> Una persona tiene un límite de 500 mensajes de texto al mes en su plan de datos. La entrada es el número de días, y la salida es el número total de textos que quedan para el mes.</item>
+<item><span class="token">Ⓒ</span> Una persona tiene un número ilimitado de mensajes de texto en su plan de datos por un costo de 50 dólares al mes. La entrada es el número de días, y la salida es el costo total de los mensajes de texto cada mes.</item>
+</list>
+</problem>
+<solution id="fs-id1165137435336">
+<para id="fs-id1165137508045">Analice cada función.</para>
+<list id="fs-id1165137778959" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> La función puede representarse como <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>60</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mi>x</m:mi>
+</m:math> es el número de días. La pendiente, 60, es positiva, por lo que la función es creciente. Esto tiene sentido porque el número total de textos aumenta cada día.</item>
+<item><span class="token">Ⓑ</span> La función puede representarse como <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>500</m:mn><m:mo>- −</m:mo><m:mn>60</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math> donde <m:math>
+<m:mi>x</m:mi>
+</m:math> es el número de días. En este caso, la pendiente es negativa, por lo que la función es decreciente. Esto tiene sentido porque el número de textos restantes disminuye cada día y esta función representa el número de textos restantes en el plan de datos después de <m:math>
+<m:mi>x</m:mi>
+</m:math> días.</item>
+<item><span class="token">Ⓒ</span> La función de costo puede representarse como <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>50</m:mn>
+</m:mrow>
+</m:math> porque el número de días no incide en el costo total. La pendiente es 0, por lo que la función es constante.</item>
+</list></solution>
+</exercise>
+</example>
+</section>
+
+<section id="fs-id1165137837055"><title>Calcular e interpretar la pendiente</title><para id="fs-id1165137573268">En los ejemplos que hemos visto hasta ahora, nos han proporcionado la pendiente. Sin embargo, a menudo necesitamos calcular la <term class="no-emphasis" id="term-00009">pendiente</term> dados los valores de entrada y salida. Dados dos valores de entrada, <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>x</m:mi>
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msub>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y dos valores correspondientes para la salida, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+</m:mrow>
+</m:math>, que puede representarse mediante un conjunto de puntos, <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mtext>,  </m:mtext><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mtext>,  </m:mtext><m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>, podemos calcular la pendiente <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> como sigue</para>
+<equation id="fs-id1165137757690" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>cambio en la salida (subida)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>cambio en la entrada (recorrido)</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>y</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>Δ</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>y</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msub>
+    <m:mo>-</m:mo><m:msub>
+     <m:mi>y</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msub>
+    <m:mo>-</m:mo><m:msub>
+     <m:mi>x</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137767606">donde <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>y</m:mi> </m:mrow></m:math> es el desplazamiento vertical y <m:math> <m:mrow>  <m:mtext>Δ</m:mtext><m:mi>x</m:mi></m:mrow></m:math> es el desplazamiento horizontal. Observe en la notación de la función dos valores correspondientes a la salida <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub>  </m:mrow></m:math> y <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2 </m:mn></m:msub></m:mrow></m:math> para la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:math> y de <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2 </m:mn></m:msub><m:mo>=</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>x</m:mi><m:mn>2 </m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> por lo que podríamos escribir de forma equivalente</para>
+
+<equation id="fs-id1165137438737" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo><m:mo>–</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137452099">la <link target-id="CNX_Precalc_Figure_02_01_005"/> indica cómo se calcula la pendiente de la línea entre los puntos, <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1,</m:mn>
+</m:msub>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2,</m:mn>
+</m:msub>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math>. Recordemos que la pendiente mide la inclinación. Cuanto mayor sea el valor absoluto de la pendiente, más pronunciada será la línea.</para>
+<figure id="CNX_Precalc_Figure_02_01_005" class="medium">
+<media id="fs-id1165137415842" alt="Gráfico que muestra cómo calcular la pendiente de una línea">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_005.jpg"/>
+</media>
+
+<caption>La pendiente de una función se calcula mediante el cambio en <m:math>
+<m:mi>y</m:mi>
+</m:math> dividido entre el cambio en <m:math>
+<m:mrow>
+<m:mi>x”</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Es indiferente la coordenada que se utilice como <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/>
+</m:mrow>
+</m:msub>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y cuál es <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>,</m:mo><m:mspace width="0.5em"/><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> siempre que cada cálculo se inicie con los elementos del mismo par de coordenadas.</caption></figure><note id="fs-id1165137831952" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137501372"><emphasis>¿Las unidades de la pendiente son siempre <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>unidades para la salida</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>unidades para la entrada</m:mtext>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>?</emphasis></para>
+<para id="fs-id1165137462769"><emphasis effect="italics">Sí. Piense en las unidades como el cambio del valor de salida por cada unidad de cambio en el valor de entrada. Un ejemplo de pendiente podría ser millas por hora o dólares por día. Observe que las unidades aparecen como el cociente de unidades para la salida por unidades para la entrada.</emphasis></para>
+</note>
+
+<note id="fs-id1165135161219">
+
+<title>Calcular la pendiente</title>
+<para id="fs-id1165134069119">La pendiente, o tasa de cambio, de una función <m:math><m:mi>m</m:mi></m:math> puede calcularse de acuerdo con lo siguiente:</para>
+<equation id="Equation_02_01_03" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>cambio en la salida (subida)</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>cambio en la entrada (recorrido)</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>-</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>-</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165135414432">donde <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+</m:mrow>
+</m:math> son valores de entrada, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+</m:mrow>
+</m:math> son valores de salida.</para></note>
+
+<note id="fs-id1165137539010" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137675584"><emphasis>Dados dos puntos a partir de una función lineal, calcule e interprete la pendiente.</emphasis></para>
+<list id="fs-id1165137820100" list-type="enumerated" number-style="arabic">
+<item>Determine las unidades relativas a los valores de salida y entrada.</item>
+<item>Calcule el cambio de los valores de salida y de entrada.</item>
+<item>Interprete la pendiente como el cambio en los valores de salida por unidad del valor de entrada.</item>
+</list>
+</note>
+
+<example id="Example_02_01_03"><exercise id="fs-id1165137641892"><problem id="fs-id1165137811167">
+<title>Hallar la pendiente de una función lineal</title>
+<para id="fs-id1165137724908">Si los valores de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> es una función lineal, y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3, -2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>8, 1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> son puntos de la recta, calcule la pendiente. ¿Esta función es creciente o decreciente?</para>
+</problem>
+<solution id="fs-id1165137415954">
+<para id="fs-id1165137714054">Los pares de coordenadas son <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3, -2</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>8, 1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Para calcular la tasa de cambio, dividimos el cambio en la producción entre el cambio en la entrada.</para>
+<equation id="eip-id1165137437221" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>cambio en la salida</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>cambio en la entrada</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mn>8</m:mn><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137469338">También podríamos escribir la pendiente como <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>0,6.</m:mn>
+</m:mrow>
+</m:math> La función es creciente porque <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+<commentary id="fs-id1165137727715">
+<title>Análisis</title>
+<para id="fs-id1165137842413">Como se ha señalado anteriormente, el orden en el que escribimos los puntos no importa cuando calculamos la pendiente de la línea siempre que el primer valor de salida, o coordenada <emphasis effect="italics">y</emphasis>, que se utilice se corresponda con el primer valor de entrada, o coordenada <emphasis effect="italics">x</emphasis>, utilizado.</para>
+</commentary>
+</exercise>
+</example><note id="fs-id1165137645977" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_01_01">
+<problem id="fs-id1165137704588">
+<para id="fs-id1165137451238">Si los valores de <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> es una función lineal, y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> son puntos de la recta, calcule la pendiente. ¿Esta función es creciente o decreciente?</para>
+</problem>
+<solution id="fs-id1165137731951">
+<para id="fs-id1165137422589"> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math>; decreciente porque <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_02_01_04">
+<exercise id="fs-id1165135307935">
+<problem id="fs-id1165135307937">
+<title>Determinar el cambio demográfico a partir de una función lineal</title>
+<para id="fs-id1165135386495">La población de la ciudad aumentó de 23.400 a 27.800 habitantes entre 2008 y 2012. Halle la variación de la población por año si suponemos que el cambio fue constante desde 2008 hasta 2012.</para>
+</problem>
+<solution id="fs-id1165137925518">
+<para id="fs-id1165137415969">La tasa de cambio relaciona el cambio en la población con el cambio en el tiempo. La población aumentó en <m:math><m:mrow><m:mn>27</m:mn><m:mo>,</m:mo><m:mn>800</m:mn><m:mo>- −</m:mo><m:mn>23</m:mn><m:mo>,</m:mo><m:mn>400</m:mn><m:mo>=</m:mo><m:mn>4400</m:mn></m:mrow>
+</m:math> habitantes en el intervalo de cuatro años. Para hallar la tasa de cambio, hay que dividir el cambio en el número de personas entre el número de años.</para><equation id="fs-id1165137701368" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>4400</m:mn><m:mtext> personas</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mn>4</m:mn><m:mtext> años</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>1,100</m:mn><m:mspace width="0.5em"/><m:mfrac>
+<m:mrow>
+<m:mtext>personas</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>año</m:mtext>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137705484">Así que la población aumentó en 1.100 habitantes al año.</para>
+</solution>
+<commentary id="fs-id1165137605140">
+<title>Análisis</title>
+<para id="fs-id1165137451439">Como se nos dice que la población aumentó, esperaríamos que la pendiente sea positiva. Por lo tanto, esta pendiente positiva que hemos calculado es razonable.</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137410528" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_01_02">
+<problem id="fs-id1165137425640">
+<para id="fs-id1165137425642">La población de una pequeña ciudad aumentó de 1.442 a 1.868 habitantes entre 2009 y 2012. Halle la variación de la población por año si suponemos que el cambio fue constante desde 2009 hasta 2012.</para>
+</problem>
+<solution id="fs-id1165137416648">
+<para id="fs-id1165137767759">
+ <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn><m:mo>,</m:mo><m:mn>868</m:mn><m:mo>- −</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>442</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>012</m:mn><m:mo>- −</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>009</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mn>426</m:mn>
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>142</m:mn><m:mtext> personas al año</m:mtext>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165135208792"><title>Escribir la forma punto-pendiente de una ecuación lineal</title><para id="fs-id1165137639245">Hasta ahora, hemos utilizado la forma pendiente-intersección de la ecuación lineal para describir funciones lineales. Aquí aprenderemos otra forma de escribir una función lineal, la <term id="term-00010">forma punto-pendiente</term>.</para>
+
+<equation id="fs-id1165137452508" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137551238">La forma punto-pendiente se deriva de la fórmula de la pendiente.</para>
+<equation id="eip-301" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mtable columnalign="left">
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>suponiendo que </m:mtext><m:mi>x</m:mi><m:mo>≠</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Multiplique ambos lados por </m:mtext><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Simplifique</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr columnalign="left">
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>Reacomode</m:mtext><m:mtext>.</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+
+</m:mtable>
+</m:mrow>
+</m:math>
+</equation><para id="fs-id1165137844021">Tenga presente que la forma pendiente-intersección y la forma punto-pendiente pueden utilizarse para describir la misma función. Podemos pasar de una forma a otra con el álgebra básica. Por ejemplo, supongamos que nos dan una ecuación en forma de punto-pendiente, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>. Podemos convertirla a la forma pendiente-intersección, como se indica.</para>
+<equation id="eip-424" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribuya el </m:mtext><m:mo>- −</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 4 a cada lado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137409234">Por lo tanto, la misma línea puede describirse en forma de pendiente-intersección como <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2 </m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+
+<note id="fs-id1165137461941">
+
+<title>Forma punto-pendiente de una ecuación lineal</title>
+<para id="fs-id1165137647838">La <emphasis>forma punto-pendiente</emphasis> de una ecuación lineal tiene la forma</para>
+<equation id="Equation_02_01_04" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137663648">donde <m:math>
+<m:mi>m</m:mi>
+</m:math> es la pendiente, <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mn>1</m:mn><m:mspace width="0.5em"/>
+</m:mrow>
+</m:msub>
+<m:mtext>y</m:mtext><m:mspace width="0.5em"/><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+</m:math> son las coordenadas de la <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mtext> </m:mtext><m:mtext> y de la </m:mtext><m:mi>y</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> de un punto concreto por el que pasa la línea.</para></note>
+
+<section id="fs-id1165137745298"><title>Escribir la ecuación de una recta mediante un punto y la pendiente</title><para id="fs-id1165137444576">La forma punto-pendiente es especialmente útil si conocemos un punto y la pendiente de una línea. Supongamos, por ejemplo, que nos dicen que una línea tiene una pendiente de 2 y pasa por el punto <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Sabemos que <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math> y que <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>4</m:mn>
+</m:mrow>
+</m:math> en tanto que <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mn>1.</m:mn>
+</m:mrow>
+</m:math> Podemos sustituir estos valores en la ecuación general de punto-pendiente.</para>
+<equation id="fs-id1165134380388" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+
+</m:math>
+</equation>
+<para id="fs-id1165137639550">Si quisiéramos reescribir la ecuación en forma de pendiente-intersección, aplicaríamos técnicas algebraicas.</para>
+<equation id="eip-420" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribuya el </m:mtext><m:mn>2.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 1 a cada lado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135333698">Ambas ecuaciones, <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y de <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> describen la misma línea. Vea el <link target-id="CNX_Precalc_Figure_02_01_013"/>.</para><figure id="CNX_Precalc_Figure_02_01_013" class="small">
+<media id="fs-id1165137925529" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_013.jpg"/>
+</media>
+</figure>
+
+<example id="Example_02_01_05">
+<exercise id="fs-id1165137423582"><problem id="fs-id1165137423584">
+<title>Escribir ecuaciones lineales mediante el empleo de un punto y la pendiente</title>
+<para id="fs-id1165137736482">Escriba la forma punto-pendiente de la ecuación de una línea con pendiente 3 que pasa por el punto <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>6</m:mn><m:mo>,</m:mo><m:mn>-1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces, reescríbala en la forma pendiente-intersección.</para>
+</problem>
+<solution id="fs-id1165137548489">
+<para id="fs-id1165137530790">Averigüemos lo que sabemos a partir de la información dada. La pendiente es 3, por lo que <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn></m:mrow></m:math> También conocemos un punto, por lo que sabemos que <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> y que <m:math><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn>
+</m:msub><m:mo>=</m:mo><m:mn>−1.</m:mn></m:mrow>
+</m:math> Ahora podemos sustituir estos valores en la ecuación general de punto-pendiente.</para>
+
+<equation id="eip-id1165135340596" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>- −</m:mo><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituya los valores conocidos</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribuya </m:mtext><m:mo>- −</m:mo><m:mn>1</m:mn><m:mtext> para hallar la forma punto-pendiente</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137594974">Luego usamos el álgebra para hallar la forma pendiente-intersección.</para>
+
+<equation id="eip-id1165135181326" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribuya 3</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>19</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplifique a la forma pendiente-intersección</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137911315" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_01_03">
+<problem id="fs-id1165137731405">
+<para id="fs-id1165137731407">Escriba la forma punto-pendiente de una ecuación de una línea con una pendiente de <m:math>
+<m:mrow>
+<m:mn>-2</m:mn>
+</m:mrow>
+</m:math> que pasa por el punto <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>-2</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces, reescríbala en la forma pendiente-intersección.</para></problem>
+<solution id="fs-id1165137847204">
+<para id="fs-id1165137541146"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> ; <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137804818"><title>Escribir la ecuación de una línea con dos puntos </title><para id="fs-id1165137413780">La forma punto-pendiente de una ecuación también sirve si conocemos dos puntos cualesquiera por los que pasa una línea. Supongamos, por ejemplo, que sabemos que una línea pasa por los puntos <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Podemos utilizar las coordenadas de los dos puntos para calcular la pendiente.</para>
+<equation id="fs-id1165137566741" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mo>–</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>-</m:mo><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165135431090">Ahora podemos utilizar la pendiente que hemos calculado y las coordenadas de uno de los puntos para hallar la ecuación de la línea. Utilicemos (0, 1) para nuestro punto.</para>
+<equation id="fs-id1165137468831" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>0</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165137638900">Como antes, podemos utilizar el álgebra para reescribir la ecuación en la forma pendiente-intersección.</para>
+<equation id="eip-403" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Distribuya el </m:mtext><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sume 1 a cada lado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135456723">Ambas ecuaciones describen la línea mostrada en la <link target-id="CNX_Precalc_Figure_02_01_014"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_014" class="small">
+<media id="fs-id1165135154190" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_014.jpg"/>
+</media>
+</figure>
+
+<example id="Example_02_01_06">
+<exercise id="fs-id1165137736140">
+<problem id="fs-id1165137736142">
+<title>Escribir ecuaciones lineales con dos puntos</title>
+<para id="fs-id1165137634384">Escriba la forma punto-pendiente de la ecuación de una línea que pasa por los puntos (5, 1) y (8, 7). Luego reescríbala en la forma pendiente-intersección.</para>
+</problem>
+<solution id="fs-id1165137749761">
+<para id="fs-id1165137749763">Empecemos por hallar la pendiente.</para>
+<equation id="fs-id1165137422633" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mo>-</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mo>- −</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135530557">Así que <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn>
+</m:mrow>
+</m:math> A continuación, sustituimos la pendiente y las coordenadas de uno de los puntos en la ecuación general punto-pendiente. Podemos elegir cualquiera de los dos puntos, pero utilizaremos <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<equation id="fs-id1165137603384" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165135431079">La ecuación punto-pendiente de la línea es <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>–</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Para reescribir la ecuación en forma de pendiente-intersección, utilizamos el álgebra.</para>
+<equation id="fs-id1165137932576" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>10</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135445782">La ecuación punto-intersección de la línea es <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>9.</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165135183971" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_01_04">
+<problem id="fs-id1165137863825">
+<para id="fs-id1165137863827">Escriba la forma punto-pendiente de la ecuación de una línea que pasa por los puntos <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>-1</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces, reescríbala en la forma pendiente-intersección.</para></problem>
+<solution id="fs-id1165137766941">
+<para id="fs-id1165137656111"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>0</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>; <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section></section><section id="fs-id1165137770240"><title>Escribir e interpretar una ecuación para una función lineal</title><para id="fs-id1165137911671">Ahora que hemos escrito las ecuaciones de las funciones lineales tanto en la forma pendiente-intersección como en la forma punto-pendiente, podemos elegir qué método utilizar en función de la información que nos brinden. Esa información puede proporcionarse en forma de gráfico, un punto y una pendiente, dos puntos, etc. Mire el gráfico de la función <m:math>
+<m:mi>f</m:mi></m:math> en la <link target-id="CNX_Precalc_Figure_02_01_006"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_006" class="small">
+<media id="fs-id1165135182766" alt="Gráfico que muestra cómo calcular la pendiente de una línea">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_006.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137657203">No se nos da la pendiente de la línea, pero podemos elegir dos puntos cualesquiera para determinar la pendiente. Elijamos <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>7</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Podemos utilizar estos puntos para calcular la pendiente.</para>
+<equation id="fs-id1165137666429" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+           <m:mrow>
+            <m:mn>4</m:mn><m:mo>-</m:mo><m:mn>7</m:mn>
+           </m:mrow>
+           <m:mrow>
+            <m:mn>4</m:mn><m:mo>-</m:mo><m:mn>0</m:mn>
+           </m:mrow>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+           <m:mn>3</m:mn>
+           <m:mn>4</m:mn>
+          </m:mfrac>
+
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135176567">Ahora podemos sustituir la pendiente y las coordenadas de uno de los puntos en la forma punto-pendiente.</para>
+<equation id="fs-id1165135450369" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137634475">Si queremos reescribir la ecuación en la forma pendiente-intersección, hallaríamos</para>
+<equation id="fs-id1165137768649" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137769983">Si quisiéramos determinar la forma pendiente-intersección sin escribir primero la forma punto-pendiente, podríamos haber reconocido que la línea cruza el eje <emphasis effect="italics">y</emphasis> cuando el valor de salida es 7. Por lo tanto, <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>7.</m:mn></m:mrow></m:math> Ahora tenemos el valor inicial <m:math><m:mi>b</m:mi></m:math> y la pendiente <m:math><m:mi>m</m:mi></m:math> por lo que podemos sustituir <m:math><m:mi>m</m:mi></m:math> y <m:math><m:mi>b</m:mi></m:math> en la forma pendiente-intersección de una línea.</para><media id="fs-id1165137548391" display="block" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_007.jpg"/>
+</media>
+
+
+<para id="fs-id1165137705273">Así que la función es <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> y la ecuación lineal sería <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7.</m:mn>
+</m:mrow>
+</m:math>
+</para><note id="fs-id1165137824876" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137824881"><emphasis>Dado el gráfico de una función lineal, escribir una ecuación que represente la función.</emphasis></para>
+<list id="fs-id1165137803240" list-type="enumerated" number-style="arabic">
+<item>Identifique dos puntos de la línea.</item>
+<item>Utilice los dos puntos para calcular la pendiente.</item>
+<item>Determine dónde la línea cruza el eje <emphasis effect="italics">y</emphasis> para identificar la intersección en <emphasis effect="italics">y</emphasis> mediante una inspección visual.</item>
+<item>Sustituya la pendiente y la intersección en <emphasis effect="italics">y</emphasis> en la forma pendiente-intersección de una ecuación lineal.</item>
+</list>
+</note>
+
+<example id="Example_02_01_07">
+<exercise id="fs-id1165137602269"><problem id="fs-id1165137602271">
+<title>Escribir una ecuación para una función lineal</title>
+<para id="fs-id1165137481145">Escriba una ecuación para una función lineal dado un gráfico de <m:math>
+<m:mi>f</m:mi></m:math>, que se muestra en la <link target-id="CNX_Precalc_Figure_02_01_008a"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_01_008a" class="small">
+<media id="fs-id1165137439448" alt="Gráfico de una función creciente con puntos en (-3, 0) y (0, 1).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_008a.jpg"/>
+</media>
+</figure>
+</problem>
+
+<solution id="fs-id1165135536535">
+<para id="fs-id1165135536538">Identifique dos puntos en la línea, como <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mtext>–4</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Utilice los puntos para calcular la pendiente.</para>
+<equation id="fs-id1165137824250" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>–</m:mo><m:mn>4</m:mn><m:mo>–</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>0</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>6</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137732234">Sustituya la pendiente y las coordenadas de uno de los puntos en la forma punto-pendiente.</para>
+<equation id="fs-id1165134305424" class="unnumbered"><label/> <m:math display="block">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>- −</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>4</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>–</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</equation>
+<para id="fs-id1165137731540">Podemos utilizar el álgebra para reescribir la ecuación en la forma de pendiente-intersección.</para>
+<equation id="fs-id1165137460061" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+</solution>
+<commentary id="fs-id1165135194076">
+<title>Análisis</title>
+<para id="fs-id1165135496505">Esto tiene sentido porque podemos ver en la <link target-id="CNX_Precalc_Figure_02_01_008b"/> que la línea cruza el eje y en el punto <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow>  <m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>2 </m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>, que es la intersección en <emphasis effect="italics">y</emphasis>, por lo tanto <m:math><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>2.</m:mn></m:math> </para>
+<figure id="CNX_Precalc_Figure_02_01_008b" class="small">
+<media id="fs-id1165137407613" alt="Gráfico de una recta creciente con puntos en (0, 2) y (-2, -4).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_008b.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise></example>
+
+<example id="Example_02_01_08">
+<exercise id="fs-id1165137426936"><problem id="fs-id1165137757806">
+<title>Escribir una ecuación para una función de costo lineal</title>
+<para id="fs-id1165137638162">Supongamos que Ben crea una empresa en la que incurre en un costo fijo de 1.250 dólares al mes por los gastos generales, que incluyen el alquiler de su oficina. Su costo de producción es de 37,50 dólares por artículo. Escriba una función lineal <m:math><m:mi>C</m:mi></m:math> donde <m:math><m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> es el costo de <m:math><m:mi>x</m:mi></m:math> artículos producidos en un mes determinado.</para>
+</problem>
+<solution id="fs-id1165137406776">
+<para id="fs-id1165137406778">El costo fijo está presente cada mes, 1.250 dólares. El costo variable abarca el costo de producción de cada artículo, que es de 37,50 dólares para Ben. El costo variable, denominado costo marginal, viene representado por <m:math><m:mrow><m:mn>37,5.</m:mn></m:mrow></m:math> El costo en el que incurre Ben es la suma de estos dos costos, representados por <m:math> <m:mrow>
+<m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.250</m:mn><m:mo>+</m:mo><m:mn>37,5</m:mn><m:mi>x</m:mi><m:mo>.</m:mo></m:mrow></m:math> </para>
+</solution>
+<commentary id="fs-id1165137767515">
+<title>Análisis </title>
+<para id="fs-id1165135511326">Si Ben produce 100 artículos en un mes, su costo mensual viene representado por</para>
+<equation id="fs-id1165137417815" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1.250</m:mn><m:mo>+</m:mo><m:mn>37,5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mo>=</m:mo><m:mn>5.000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137862645">Así que su costo mensual sería de 5.000 dólares.</para>
+</commentary>
+</exercise></example>
+
+<example id="Example_02_01_09">
+<exercise id="fs-id1165137459731">
+<problem id="fs-id1165135259656">
+<title>Escribir una ecuación para una función lineal dados dos puntos</title>
+<para id="fs-id1165135259662">Si los valores de <m:math><m:mi>f</m:mi></m:math> es una función lineal, con <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn></m:mrow></m:math> y <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, halle una ecuación para la función en la forma pendiente-intersección.</para></problem>
+<solution id="fs-id1165137730073">
+<para id="fs-id1165137730075">Podemos escribir los puntos dados mediante el empleo de coordenadas. </para>
+<equation id="fs-id1165137639761" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−2</m:mn><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>–2</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137603531">A continuación, podemos utilizar los puntos para calcular la pendiente.</para>
+<equation id="fs-id1165137582561" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+         <m:mrow>
+          <m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>8</m:mn><m:mo>-</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137851970">Sustituya la pendiente y las coordenadas de uno de los puntos en la forma punto-pendiente.</para>
+<equation id="fs-id1165137583929" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+       <m:mi>y</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo><m:mi>m</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+       <m:mi>x</m:mi>
+       <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>- −</m:mo><m:mo stretchy="false">(</m:mo><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137629473">Podemos utilizar el álgebra para reescribir la ecuación en la forma de pendiente-intersección.</para>
+<equation id="fs-id1165135543458" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>- −</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>19</m:mn>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137762684" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_2_01_05">
+<problem id="fs-id1165135456744">
+<para id="fs-id1165135456746">Si los valores de <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> es una función lineal, con <m:math>
+<m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>11</m:mn><m:mo>,</m:mo></m:mrow></m:math> y <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>25</m:mn><m:mo>,</m:mo></m:mrow></m:math> halle una ecuación para la función en la forma pendiente-intersección.</para>
+</problem>
+<solution id="fs-id1165137654874">
+<para id="fs-id1165137654876"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>7</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165137894282">
+<title>Modelar problemas del mundo real con funciones lineales</title>
+<para id="fs-id1165137594074">En el mundo real, los problemas no siempre se plantean explícitamente en términos de una función o se representan con un gráfico. Afortunadamente, podemos analizar el problema al representarlo primero como una función lineal y luego interpretar los componentes de la función. Siempre que conozcamos, o podamos averiguar, el valor inicial y la tasa de cambio de una función lineal, podremos resolver muchos tipos de problemas del mundo real.</para>
+
+<note id="fs-id1165137900351" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137404879"><emphasis>Dada una función lineal <m:math><m:mi>f</m:mi></m:math> y el valor inicial y la tasa de cambio, evaluar <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> </emphasis></para>
+
+<list id="fs-id1165137660790" list-type="enumerated" number-style="arabic">
+<item>Determine el valor inicial y la tasa de cambio (pendiente).</item>
+<item>Sustituya los valores en <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> </item>
+<item>Evalúe la función en <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>.</m:mo></m:mrow></m:math> </item>
+</list>
+</note>
+
+<example id="Example_02_01_10"><exercise id="fs-id1165137836747">
+<problem id="fs-id1165137836750">
+<title>Usar la función lineal para determinar el número de canciones en una colección musical</title>
+<para id="fs-id1165137740859">Marcus tiene actualmente 200 canciones en su colección de música. Cada mes, añade 15 canciones. Escriba una fórmula para el número de canciones, <m:math>
+ <m:mrow>
+  <m:mi>N</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en su colección en función del tiempo, <m:math><m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow></m:math> el número de meses. ¿Cuántas canciones tendrá en un año?</para></problem>
+<solution id="fs-id1165135411391">
+<para id="fs-id1165135411394">El valor inicial de esta función es 200 porque actualmente posee 200 canciones, por lo que <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>,</m:mo></m:mrow></m:math> lo que significa que <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>200.</m:mn></m:mrow></m:math> </para>
+<para id="fs-id1165137738190">El número de canciones aumenta en 15 al mes, por lo que la tasa de cambio es de 15 canciones al mes. Por lo tanto, sabemos que <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>15.</m:mn></m:mrow></m:math> Podemos sustituir el valor inicial y la tasa de cambio en la forma pendiente-intersección de una línea.</para>
+<figure id="CNX_Precalc_Figure_02_01_010" class="unnumbered"><media id="fs-id1165137417445" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_010.jpg"/>
+</media>
+</figure><para id="fs-id1165137810258">Podemos escribir la fórmula <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>15</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>200.</m:mn></m:mrow></m:math> </para>
+<para id="fs-id1165137454711">Con esta fórmula, podemos predecir cuántas canciones tendrá Marcus en 1 año (12 meses). En otras palabras, podemos evaluar la función en <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>12.</m:mn></m:mrow></m:math> </para>
+<equation id="fs-id1165137462736" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>15</m:mn><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mo>=</m:mo><m:mn>180</m:mn><m:mo>+</m:mo><m:mn>200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mo>=</m:mo><m:mn>380</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137694205">Marcus tendrá 380 canciones en 12 meses.</para>
+</solution>
+<commentary id="fs-id1165135296377">
+<title>Análisis </title>
+<para id="fs-id1165134065131">Observe que <emphasis effect="italics">N</emphasis> es una función lineal creciente. A medida que aumenta la entrada (el número de meses), también aumenta la salida (el número de canciones).</para>
+</commentary>
+</exercise>
+</example><example id="Example_02_01_11">
+<exercise id="fs-id1165137803740">
+<problem id="fs-id1165137766973">
+<title>Usar una función lineal para calcular el salario más las comisiones</title>
+<para id="fs-id1165137742312">Trabajando como vendedor de seguros, Ilya gana un salario base más una comisión por cada nueva póliza. Por lo tanto, el ingreso semanal de Ilya, <m:math><m:mrow><m:mi>I</m:mi><m:mo>,</m:mo></m:mrow></m:math> depende del número de pólizas, <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> que vende durante la semana. La semana pasada vendió 3 pólizas y ganó 760 dólares en la semana. La semana anterior, vendió 5 pólizas y ganó 920 dólares. Halle una ecuación para <m:math><m:mrow><m:mi>I</m:mi><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> e interprete el significado de los elementos de la ecuación.</para></problem>
+<solution id="fs-id1165135169132">
+<para id="fs-id1165135169134">La información dada nos da dos pares de entrada-salida <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3,760</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5,920</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> Empezamos por estimar la tasa de cambio.</para>
+
+<equation id="fs-id1165135195046" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>920</m:mn><m:mo>- −</m:mo><m:mn>760</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mo>-</m:mo><m:mn>3</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>160 dólares</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mtext>2 pólizas</m:mtext>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>80 dólares</m:mn><m:mtext> por cada póliza</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137855034">Llevar la cuenta de las unidades nos permite interpretar esta cantidad. Los ingresos aumentaron en 160 dólares cuando el número de pólizas aumentó en 2, por lo que la tasa de variación es de 80 dólares por cada póliza. Por lo tanto, Ilya gana una comisión de 80 dólares por cada póliza que venda durante la semana.</para>
+<para id="fs-id1165137855040">Entonces podemos resolver el valor inicial.</para>
+<equation id="fs-id1165135484088" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>            </m:mtext><m:mn>760</m:mn><m:mo>=</m:mo><m:mn>80</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>cuando </m:mtext><m:mi>n</m:mi><m:mo>n =</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>760</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>760</m:mn><m:mo>- −</m:mo><m:mn>80</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>            </m:mtext><m:mn>520</m:mn><m:mo>=</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137400716">El valor de <m:math><m:mi>b</m:mi></m:math> es el valor inicial de la función y representa los ingresos de Ilya cuando <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> o cuando no se vendan nuevas pólizas. Podemos interpretarlo como el salario base de Ilya para la semana, que no depende del número de pólizas vendidas.</para>
+<para id="fs-id1165135203653">Ahora podemos escribir la ecuación final.</para>
+<equation id="fs-id1165137506449" class="unnumbered"><label/> <m:math display="block">
+<m:mrow>
+<m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>80</m:mn><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>520</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137655487">Nuestra interpretación final es que el salario base de Ilya es de 520 dólares semanales y que gana una comisión adicional de 80 dólares por cada póliza que venda.</para>
+</solution>
+</exercise>
+</example>
+
+<example id="Example_02_01_12">
+<exercise id="fs-id1165137705959">
+<problem id="fs-id1165137705961">
+<title>Usar la forma tabular para escribir la ecuación de una función lineal</title>
+<para id="fs-id1165135161325">La <link target-id="Table_02_01_02"/> relaciona el número de ratas de una población con el tiempo, en semanas. Utilice la tabla para escribir la ecuación lineal.</para>
+
+<table id="Table_02_01_02" summary="La tabla tiene dos filas y cinco columnas. La primera fila está marcada como &quot;w, el número de semanas&quot;. La segunda fila está marcada como &quot;P(w), número de ratas&quot;. Al leer las filas restantes como pares ordenados (es decir, (w, P(w)), tenemos los siguientes valores: (0, 1000), (2, 1080), (4, 1160), y (6, 1240)."><tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center"><emphasis><emphasis effect="italics">w</emphasis>, número de semanas</emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center"><emphasis><emphasis effect="italics">P(w)</emphasis>, número de ratas</emphasis></entry>
+<entry align="center">1.000</entry>
+<entry align="center">1080</entry>
+<entry align="center">1160</entry>
+<entry align="center">1240</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137643331">
+<para id="fs-id1165137530990">Podemos ver en la tabla que el valor inicial del número de ratas es 1000, por lo que <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1000.</m:mn></m:mrow></m:math> </para>
+<para id="fs-id1165137935601">En lugar de resolver para <m:math><m:mrow><m:mi>m</m:mi><m:mo>,</m:mo></m:mrow></m:math> podemos decir, a partir de la tabla, que la población aumenta en 80 por cada 2 semanas que pasan. Esto significa que la tasa de cambio es de 80 ratas cada 2 semanas, lo que puede simplificarse a 40 ratas por semana.</para>
+<equation id="fs-id1165137737900" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>40</m:mn><m:mi>w</m:mi><m:mo>+</m:mo><m:mn>1.000</m:mn>
+</m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137465125">Si no nos fijamos en la tasa de cambio de la tabla, aún podemos resolver la pendiente con dos puntos cualesquiera de la tabla. Por ejemplo, al utilizar <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>1080</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>1240</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+
+<equation id="fs-id1165137627069" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>1240</m:mn><m:mo>- −</m:mo><m:mn>1080</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>160</m:mn>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mn>40</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137725510" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137920800"><emphasis>¿El valor inicial se proporciona siempre en una tabla de valores como en la <link target-id="Table_02_01_02"/>?</emphasis></para>
+<para id="fs-id1165137762000"><emphasis effect="italics">No. A veces el valor inicial se proporciona en una tabla de valores, pero otras veces no. Si se ve una entrada de 0, entonces el valor inicial sería la salida correspondiente. Si no se proporciona el valor inicial porque no hay ningún valor de entrada en la tabla igual a 0, halle la pendiente, sustituya un par de coordenadas y la pendiente en <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo></m:mrow></m:math> y resolver para <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> </emphasis></para>
+</note>
+
+<note id="fs-id1165137399688" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_01_06">
+<problem id="fs-id1165137645253"><para id="fs-id1165137645254">Se introdujo un nuevo abono en un árbol joven para probar su efecto en la altura. La <link target-id="Table_02_01_03"/> muestra la altura del árbol en pies, <m:math><m:mi>x</m:mi></m:math> meses desde que comenzaron las mediciones. Escriba una función lineal, <m:math><m:mrow><m:mi>H</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> donde <m:math><m:mi>x</m:mi></m:math> es el número de meses transcurridos desde el inicio del experimento.</para><table id="Table_02_01_03" summary="Esta tabla tiene dos filas y seis columnas. La primera fila está marcada como &quot;x&quot;. La segunda fila está marcada como &quot;H(x)&quot;. Al leer las filas restantes como pares ordenados (es decir, (x, H(x)), tenemos los siguientes valores: (0, 12.5), (2, 13.5), (4, 14.5), (8, 16.5), y (12, 18.5).">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<tbody>
+<row><entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">8</entry>
+<entry align="center">12</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>H</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center">12,5</entry>
+<entry align="center">13,5</entry>
+<entry align="center">14,5</entry>
+<entry align="center">16,5</entry>
+<entry align="center">18,5</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165134155192">
+<para id="fs-id1165135195573"> <m:math>
+<m:mrow>
+<m:mi>H</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12,5</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137418481" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165135419862">Acceda a este recurso en línea para obtener más información y practicar con las funciones lineales.</para>
+<list id="fs-id1165137570221" list-type="bulleted" display="block">
+<item>
+<link url="http://openstax.org/l/linearfunctions">Funciones lineales</link>
+</item>
+</list>
+</note>
+</section>
+
+<section id="fs-id1165137784950" class="key-equations"><title>Ecuaciones clave</title><table id="fs-id1165137784956" summary="..." class="unnumbered unstyled"><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">forma pendiente-intersección de la línea</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">pendiente</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>cambio en la salida (subida)</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>cambio en la entrada (recorrido)</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext>Δ</m:mtext><m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msub>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>-</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msub>
+<m:mo>-</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</entry>
+</row>
+<row>
+<entry align="center">forma punto-pendiente de una línea</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>y</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>–</m:mo><m:msub>
+<m:mi>x</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math>
+</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></section><section id="fs-id1165135696154" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137736447" list-type="bulleted"><item>Los pares ordenados y dados por una función lineal representan los puntos en una línea.</item>
+<item>Las funciones lineales se representan con palabras, en notación de funciones, en forma tabular y en forma gráfica. Vea el <link target-id="Example_02_01_01"/>.</item>
+<item>La tasa de cambio de una función lineal también se conoce como la pendiente.</item>
+<item>Una ecuación en la forma pendiente-intersección de una línea incluye la pendiente y el valor inicial de la función.</item>
+<item>El valor inicial, o intersección en <emphasis effect="italics">y</emphasis>, es el valor de salida cuando la entrada de una función lineal es cero. Es el valor de <emphasis effect="italics">y</emphasis> del punto en el que la línea cruza el eje de <emphasis effect="italics">y</emphasis>.</item>
+<item>La función lineal creciente da lugar a un gráfico que se inclina hacia arriba, de izquierda a derecha, y tiene una pendiente positiva.</item>
+<item>La función lineal decreciente da lugar a un gráfico que se inclina hacia abajo, de izquierda a derecha, y tiene una pendiente negativa.</item>
+<item>La función lineal constante da lugar a un gráfico que es una línea horizontal.</item>
+<item>El análisis de la pendiente en el contexto de un problema indica si la función lineal es creciente, decreciente o constante. Vea el <link target-id="Example_02_01_02"/>.</item>
+<item>La pendiente de una función lineal puede calcularse al dividir la diferencia entre los valores de <emphasis effect="italics">y</emphasis> entre la diferencia de los correspondientes valores de <emphasis effect="italics">x</emphasis> de dos puntos cualesquiera de la línea. Vea el <link target-id="Example_02_01_03"/> y el <link target-id="Example_02_01_04"/>.</item>
+<item>La pendiente y el valor inicial se pueden determinar dado un gráfico o dos puntos cualesquiera en la línea.</item>
+<item>Un tipo de notación de función es la forma pendiente-intersección de una ecuación.</item>
+<item>La forma punto-pendiente sirve para determinar una ecuación lineal cuando se da la pendiente de una línea y un punto. Vea el <link target-id="Example_02_01_05"/>.</item>
+<item>La forma punto-pendiente también es conveniente para hallar una ecuación lineal cuando se dan dos puntos por los que pasa una línea. Vea el <link target-id="Example_02_01_06"/>.</item>
+<item>La ecuación de una función lineal se puede escribir si la pendiente <m:math><m:mi>m</m:mi></m:math> y el valor inicial <m:math><m:mi>b</m:mi></m:math> son conocidas. Vea el <link target-id="Example_02_01_07"/>, el <link target-id="Example_02_01_08"/>, y el <link target-id="Example_02_01_09"/>.</item>
+<item>La función lineal puede utilizarse para resolver problemas del mundo real. Vea el <link target-id="Example_02_01_10"/> y el <link target-id="Example_02_01_11"/>.</item>
+<item>La función lineal puede escribirse de forma tabular. Vea el <link target-id="Example_02_01_12"/>.</item>
+</list></section>
+
+<section id="fs-id1165135502059" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165135502062">
+<title>Verbales</title>
+<exercise id="fs-id1165135176742">
+<problem id="fs-id1165135176744">
+<para id="fs-id1165137854790">Terry esquía por una colina empinada. La elevación de Terry, <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> en pies después de que <m:math><m:mi>t</m:mi></m:math> segundos viene dada por <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3.000</m:mn><m:mo>- −</m:mo><m:mn>70</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Escriba una frase completa que describa la elevación inicial de Terry y cómo cambia con el tiempo.</para></problem>
+<solution id="fs-id1165137942439">
+<para id="fs-id1165137942441">Terry comienza a una elevación de 3000 pies y desciende 70 pies por segundo.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137641273">
+<problem id="fs-id1165137641275">
+<para id="fs-id1165137475310">María escala una montaña. La elevación de María, <m:math><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow></m:math> en pies después de que <m:math><m:mi>t</m:mi></m:math> minutos viene dada por <m:math><m:mrow>
+<m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1200</m:mn><m:mo>+</m:mo><m:mn>40</m:mn><m:mi>t</m:mi><m:mo>.</m:mo></m:mrow></m:math> Escriba una frase completa que describa la elevación inicial de María y cómo va cambiando con el tiempo.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135184124">
+<problem id="fs-id1165135184127">
+<para id="fs-id1165135184129">Jessica se dirige caminando a su casa desde la casa de un amigo. Después de 2 minutos está a 1,4 millas de su casa. Doce minutos después de salir, está a 0,9 millas de su casa. ¿Cuál es su velocidad en millas por hora?</para>
+</problem>
+<solution id="fs-id1165135389019">
+<para id="fs-id1165137771919">3 millas por hora</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137771924">
+<problem id="fs-id1165137452891">
+<para id="fs-id1165137452893">Sonya se encuentra actualmente a 10 millas de su casa y se aleja caminando a 2 millas por hora. Escriba una ecuación para la distancia que le separa de su casa en <emphasis effect="italics">t</emphasis> horas a partir de ahora.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135514592">
+<problem id="fs-id1165137740804">
+<para id="fs-id1165137740806">Un barco está a 100 millas de la marina y navega directamente hacia esta a 10 millas por hora. Escriba una ecuación para la distancia que separa el barco de la marina después de <emphasis effect="italics">t</emphasis> horas.</para>
+</problem>
+<solution id="fs-id1165135701592">
+<para id="fs-id1165137812013"> <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>- −</m:mo><m:mn>10</m:mn><m:mi>t</m:mi>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137935611">
+<problem id="fs-id1165137935613">
+<para id="fs-id1165137935615">Timmy va a la feria con 40 dólares. Cada atracción cuesta 2 dólares. ¿Cuánto dinero le quedará después de <m:math><m:mi>n</m:mi></m:math> atracciones?</para>
+</problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137854917">
+<title>Algebraicos</title>
+<para id="fs-id1165137854922">En los siguientes ejercicios, determine si la ecuación de la curva puede escribirse como una función lineal.</para>
+
+<exercise id="fs-id1165135188236">
+<problem id="fs-id1165135188238">
+<para id="fs-id1165135369203"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137726430">
+<para id="fs-id1165137726432">Sí.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134261662">
+<problem id="fs-id1165134261664">
+<para id="fs-id1165135311618"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137651695">
+<problem id="fs-id1165137651697">
+<para id="fs-id1165135245530"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>-</m:mo><m:mn>2 </m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137695218">
+<para id="fs-id1165137695221">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137759700">
+<problem id="fs-id1165137759702">
+<para id="fs-id1165137735640"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>15</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137759992">
+<problem id="fs-id1165137759994">
+<para id="fs-id1165137759996"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>5</m:mn><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>15</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137550988">
+<para id="fs-id1165137550990">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135386510">
+<problem id="fs-id1165135386512">
+<para id="fs-id1165137842456"> <m:math>
+<m:mrow>
+<m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:msup>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>15</m:mn>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137561867">
+<problem id="fs-id1165137561870">
+<para id="fs-id1165137561872"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mn>2 </m:mn><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:mn>3</m:mn><m:msup>
+<m:mi>y</m:mi>
+<m:mn>2 </m:mn>
+</m:msup>
+<m:mo>=</m:mo><m:mn>6</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id1165137817407">
+<para id="fs-id1165137817409">No.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137659078">
+<problem id="fs-id1165137659080">
+<para id="fs-id1165135187250"> <m:math>
+<m:mrow>
+<m:mo>-</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>y</m:mi>
+</m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165137476477">En los siguientes ejercicios, determine si cada función es creciente o decreciente.</para>
+
+<exercise id="fs-id1165137476480">
+<problem id="fs-id1165135253230">
+<para id="fs-id1165135253233"> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn> </m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137834141">
+<para id="fs-id1165137834143">Creciente.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137447357">
+<problem id="fs-id1165137447359">
+<para id="fs-id1165137447361"> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137766929">
+<problem id="fs-id1165137766932">
+<para id="fs-id1165135176589"> <m:math><m:mrow><m:mi>a</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137401253">
+<para id="fs-id1165137401255">Decreciente.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165134042261">
+<problem id="fs-id1165134042263">
+<para id="fs-id1165137434551"> <m:math><m:mrow><m:mi>b</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137427578">
+<problem id="fs-id1165135502034">
+<para id="fs-id1165135502036"> <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165137408154">
+<para id="fs-id1165137408156">Decreciente.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135310669">
+<problem id="fs-id1165135310671">
+<para id="fs-id1165135310673"> <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137653326">
+<problem id="fs-id1165137653328">
+<para id="fs-id1165137653331"> <m:math><m:mrow><m:mi>j</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165134231524">
+<para id="fs-id1165134231526">Creciente.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137477116">
+<problem id="fs-id1165137477118">
+<para id="fs-id1165137477120"> <m:math><m:mrow><m:mi>p</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137849191">
+<problem id="fs-id1165137849193">
+<para id="fs-id1165137849195"> <m:math><m:mrow><m:mi>n</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165135445820">
+<para id="fs-id1165135445822">Decreciente.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135198574">
+<problem id="fs-id1165135198576">
+<para id="fs-id1165135198578"> <m:math><m:mrow><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137871801">En los siguientes ejercicios, calcule la pendiente de la línea que pasa por los dos puntos dados.</para>
+
+<exercise id="fs-id1165135481153">
+<problem id="fs-id1165135481155">
+<para id="fs-id1165135481157"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2 </m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 10</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165135496634">
+<para id="fs-id1165137896183">3</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137896188">
+<problem id="fs-id1165135528401">
+<para id="fs-id1165135528403"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> 5</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 11</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137639531">
+<problem id="fs-id1165137639533">
+<para id="fs-id1165137639535"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo>,</m:mo><m:mtext>4</m:mtext><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext>2 </m:mtext><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137698130">
+<para id="fs-id1165137698132"> <m:math><m:mrow><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137758750">
+<problem id="fs-id1165137758752">
+<para id="fs-id1165137758754"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>–2</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135150657">
+<problem id="fs-id1165135150659">
+<para id="fs-id1165135150661"> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>6</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>11</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135195303">
+<para id="fs-id1165137936942"> <m:math><m:mrow><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<para id="fs-id1165137738035">En los siguientes ejercicios, dado cada conjunto de información, halle una ecuación lineal que satisfaga las condiciones, si es posible.</para>
+
+<exercise id="fs-id1165135536493">
+<problem id="fs-id1165135536495">
+<para id="fs-id1165135536498"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137431158">
+<problem id="fs-id1165137923493">
+<para id="fs-id1165137923495"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137911547">
+<para id="fs-id1165137911549"> <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2 </m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>7</m:mn><m:mn>2 </m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137542042">
+<problem id="fs-id1165137542044">
+<para id="fs-id1165137410630"> <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137470485">
+<problem id="fs-id1165137560300">
+<para id="fs-id1165137560302">Pasa por <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>11</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165137659686">
+<para id="fs-id1165137659688"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135191249">
+<problem id="fs-id1165137463110">
+<para id="fs-id1165137463112">Pasa por <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> 4</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext> 2 </m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137812693">
+<problem id="fs-id1165137556841">
+<para id="fs-id1165137556844">Pasa por <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mtext> 8</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mo>,</m:mo><m:mtext> 6</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137602554">
+<para id="fs-id1165137602556"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137433429">
+<problem id="fs-id1165137433431">
+<para id="fs-id1165135264784">intersección <emphasis effect="italics">x</emphasis> en <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>–</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mtext> 0</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y la intersección <emphasis effect="italics">y</emphasis> en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>−3</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135435811">
+<problem id="fs-id1165135435813">
+<para id="fs-id1165135435815">intersección <emphasis effect="italics">x</emphasis> en <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mtext> 0</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y la intersección <emphasis effect="italics">y</emphasis> en <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 4</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165137831238">
+<para id="fs-id1165137831240"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137629486">
+<title>Gráficos</title>
+<para id="fs-id1165137737089">En los siguientes ejercicios, halle la pendiente de las líneas graficadas.</para>
+
+<exercise id="fs-id1165137737092" class="material-set-2"><problem id="fs-id1165137737094">
+
+<media id="fs-id1165137638038" display="block" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_201.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165135195937" class="material-set-2"><problem id="fs-id1165135195939">
+
+<media id="fs-id1165137405241" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_202-314b.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137871684">
+<para id="fs-id1165135245503"> <m:math><m:mrow><m:mo>-</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137470735"><problem id="fs-id1165137851787">
+<media id="fs-id1165137851792" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_203-9ba5.jpg"/>
+</media>
+</problem>
+</exercise><para id="fs-id1165137454184">En los siguientes ejercicios, escriba una ecuación para las líneas graficadas.</para>
+
+<exercise id="fs-id1165137454188" class="material-set-2"><problem id="fs-id1165135189842">
+<media id="fs-id1165135189848" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_205-2fc2.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165135186682">
+<para id="fs-id1165135186684"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mn>2 </m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165137661374" class="material-set-2"><problem id="fs-id1165137692090">
+<media id="fs-id1165137692095" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_206-cf9d.jpg"/>
+</media>
+</problem>
+</exercise><exercise id="fs-id1165137828363" class="material-set-2"><problem id="fs-id1165137828365">
+
+<media id="fs-id1165137394600" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_207.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137772003">
+<para id="fs-id1165137772005"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise><exercise id="fs-id1165137677631" class="material-set-2"><problem id="fs-id1165137677633">
+
+<media id="fs-id1165135160253" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_208-5f32.jpg"/>
+</media>
+
+</problem>
+</exercise><exercise id="fs-id1165137663997" class="material-set-2"><problem id="fs-id1165137663999">
+
+<media id="fs-id1165135175196" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_209-ffd3.jpg"/>
+</media>
+
+</problem>
+<solution id="fs-id1165137447987">
+<para id="fs-id1165137447989"> <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137767831" class="material-set-2"><problem id="fs-id1165137767833">
+
+<media id="fs-id1165137785002" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_210-0a01.jpg"/>
+</media>
+
+</problem>
+</exercise></section>
+
+<section id="fs-id1165137472087">
+<title>Numéricos</title>
+<para id="fs-id1165137772386">En los siguientes ejercicios, ¿cuál de las tablas podría representar una función lineal? Para cada uno de los que podrían ser lineales, halle una ecuación lineal que modele los datos.</para>
+
+<exercise id="fs-id1165137772391"><problem id="fs-id1165137772393">
+  <table id="Table_02_01_04" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como &quot;g(x)&quot;. Al leer las filas restantes como pares ordenados (es decir, (x, g(x)), tenemos los siguientes valores: (0, 5), (5, -10), (10, -25), y (15, -40)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">-10</entry>
+<entry align="center">-25</entry>
+<entry align="center">–40</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137673870">
+<para id="fs-id1165137673872">Lineal, <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137445427"><problem id="fs-id1165137450858">
+<table id="Table_02_01_05" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como 'h(x)'. Al leer las filas restantes como pares ordenados (es decir, (x, h(x)), tenemos los siguientes valores: (0, 5), (5, 30), (10, 105), y (15, 230)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>h</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">30</entry>
+<entry align="center">105</entry>
+<entry align="center">230</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165135187440"><problem id="fs-id1165137406153">
+<table id="Table_02_01_06" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como 'f(x)'. Al leer las filas restantes como pares ordenados (es decir, (x, f(x)), tenemos los siguientes valores: (0, 5), (5, 20), (10, 45), y (15, 70)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">15</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">–5</entry>
+<entry align="center">20</entry>
+<entry align="center">45</entry>
+<entry align="center">70</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137423425">
+<para id="fs-id1165135421660">Lineal, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137462170"><problem id="fs-id1165137758412">
+<table id="Table_02_01_07" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como &quot;k(x)&quot;. Al leer las filas restantes como pares ordenados (es decir, (x, k(x)), tenemos los siguientes valores: (5, 13), (10, 28), (20, 58), y (25, 73)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">5</entry>
+<entry align="center">10</entry>
+<entry align="center">20</entry>
+<entry align="center">25</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">13</entry>
+<entry align="center">28</entry>
+<entry align="center">58</entry>
+<entry align="center">73</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137574907"><problem id="fs-id1165137727508">
+<table id="Table_02_01_08" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como &quot;g(x)&quot;. Al leer las filas restantes como pares ordenados (es decir, (x, g(x)), tenemos los siguientes valores: (0, 6), (5, -10), (10, -25), y (15, -40)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">6</entry>
+<entry align="center">-19</entry>
+<entry align="center">–44</entry>
+<entry align="center">-69</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137652768">
+<para id="fs-id1165137652771">Lineal, <m:math><m:mrow><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mfrac><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>2 </m:mn></m:mfrac><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137804591"><problem id="fs-id1165137469550">
+  <table id="Table_02_01_09" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como 'h(x)'. Al leer las filas restantes como pares ordenados (es decir, (x, h(x)), tenemos los siguientes valores: (2, 13), (4, 23), (8, 43), y (10, 53)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">-4</entry>
+<entry align="center">16</entry>
+<entry align="center">36</entry>
+<entry align="center">56</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></problem>
+</exercise><exercise id="fs-id1165137603214"><problem id="fs-id1165137603216">
+<table id="Table_02_01_10" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como 'f(x)'. Al leer las filas restantes como pares ordenados (es decir, (x, f(x)), tenemos los siguientes valores: (2, -4), (4, 16), (6, 36), y (8, 56)." class="unnumbered"><label/>
+<tgroup cols="5"><colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">2 </entry>
+<entry align="center">4</entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">-4</entry>
+<entry align="center">16</entry>
+<entry align="center">36</entry>
+<entry align="center">56</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165137410202">
+<para id="fs-id1165137410204">Lineal, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>24</m:mn></m:mrow></m:math> </para></solution>
+</exercise><exercise id="fs-id1165137634322"><problem id="fs-id1165137694058">
+<table id="Table_02_01_11" summary="Esta tabla tiene dos columnas y cinco filas. La primera columna está marcada como &quot;x&quot;. La segunda columna está marcada como &quot;k(x)&quot;. Al leer las filas restantes como pares ordenados (es decir, (x, k(x)), tenemos los siguientes valores: (0, 6), (2, 31), (6, 106), y (8, 231)." class="unnumbered"><label/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="20%"/>
+<colspec colnum="2" colname="c2" colwidth="20%"/>
+<colspec colnum="3" colname="c3" colwidth="20%"/>
+<colspec colnum="4" colname="c4" colwidth="20%"/>
+<colspec colnum="5" colname="c5" colwidth="20%"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math><m:mi>x</m:mi></m:math> </emphasis></entry>
+<entry align="center">0</entry>
+<entry align="center">2 </entry>
+<entry align="center">6</entry>
+<entry align="center">8</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math><m:mrow><m:mi>k</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </emphasis></entry>
+<entry align="center">6</entry>
+<entry align="center">31</entry>
+<entry align="center">106</entry>
+<entry align="center">231</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+</exercise></section>
+
+<section id="fs-id1165137474626">
+<title>En tecnología</title>
+
+<exercise id="fs-id1165137474632">
+<problem id="fs-id1165137823746">
+<para id="fs-id1165137823748">Si los valores de <m:math><m:mi>f</m:mi></m:math> es una función lineal, <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11,5</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext> y</m:mtext><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>5,9</m:mn><m:mo>,</m:mo></m:mrow></m:math> hallar una ecuación para la función.</para>
+</problem>
+<solution id="fs-id1165137844202">
+<para id="fs-id1165137844204"> <m:math>
+<m:mrow>
+<m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>58</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>17,3</m:mn>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137552899">
+<problem id="fs-id1165137936768">
+<para id="fs-id1165137936770">Grafique la función <m:math><m:mi>f</m:mi></m:math> en un dominio de <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>–</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>10</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>:</m:mo><m:mspace width="0.5em"/><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,02</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>0,01.</m:mn></m:mrow></m:math> Introduzca la función en una herramienta gráfica. Para la ventana de visualización, establezca el valor mínimo de <m:math><m:mi>x</m:mi></m:math> para que sea <m:math><m:mrow><m:mo>- −</m:mo><m:mn>10</m:mn></m:mrow></m:math> y el valor máximo de <m:math><m:mi>x</m:mi></m:math> para que sea <m:math><m:mrow><m:mn>10.</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137502934"><problem id="fs-id1165137502936">
+<para id="fs-id1165137502938">Grafique la función <m:math><m:mi>f</m:mi></m:math> en un dominio de <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>–</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>10</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>:</m:mo><m:mi>f</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>500</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137678561">
+
+<media id="fs-id1165137817569" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_214.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165135403547">
+<problem id="fs-id1165135403550">
+<para id="fs-id1165135403552"><link target-id="Table_02_01_12"/> muestra la entrada, <m:math><m:mrow><m:mi>w</m:mi><m:mo>, </m:mo></m:mrow></m:math> y la salida, <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> para una función lineal <m:math><m:mrow><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow></m:math> a. Rellene los valores que faltan en la tabla. b. Escriba la función lineal <m:math><m:mrow><m:mi>k</m:mi><m:mo>,</m:mo></m:mrow></m:math> redondee a 3 decimales.</para><table id="Table_02_01_12" summary="La tabla tiene dos filas y cinco columnas. La primera fila está marcada como &quot;w&quot;. La segunda fila está marcada como &quot;k&quot;. Al leer las filas restantes como pares ordenados (es decir, (w, k), tenemos los siguientes valores (-10, 30), (5,5, -26), (67,5, a) y (b, -44).">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>w</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">-10</entry>
+<entry align="center">5,5</entry>
+<entry align="center">67,5</entry>
+<entry align="center">b</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>k</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">30</entry>
+<entry align="center">-26</entry>
+<entry align="center">a</entry>
+<entry align="center">–44</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-id1165135319509">
+<problem id="fs-id1165137935676">
+<para id="fs-id1165137935678"><link target-id="Table_02_01_13"/> muestra la entrada, <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math> y la salida, <m:math><m:mrow><m:mi>q</m:mi><m:mo>,</m:mo></m:mrow></m:math> para una función lineal <m:math><m:mrow><m:mi>q</m:mi><m:mo>.</m:mo></m:mrow></m:math> a. Rellene los valores que faltan en la tabla. b. Escriba la función lineal <m:math><m:mrow><m:mi>k</m:mi><m:mo>.</m:mo></m:mrow></m:math> </para><table id="Table_02_01_13" summary="La tabla tiene dos filas y cinco columnas. La primera fila está marcada como &quot;w&quot;. La segunda fila está marcada como &quot;k&quot;. Al leer las filas restantes como pares ordenados (es decir, (p, q), tenemos los siguientes valores: (0,5, 400), (0,8, 700), (12, a. y b, 1.000.000).">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>p</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">0,5</entry>
+<entry align="center">0,8</entry>
+<entry align="center">12</entry>
+<entry align="center">b</entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>q</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center">400</entry>
+<entry align="center">700</entry>
+<entry align="center">a</entry>
+<entry align="center">1.000.000</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+<solution id="fs-id1165135500746">
+<para id="fs-id1165135500748">a. <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>11</m:mn><m:mo>,</m:mo><m:mn>900</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>1000,1</m:mn></m:mrow></m:math> b. <m:math><m:mrow><m:mi>q</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1.000</m:mn><m:mi>p</m:mi><m:mo>- −</m:mo><m:mn>100</m:mn></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135543284">
+<problem id="fs-id1165135543286">
+<para id="fs-id1165135543288">Represente gráficamente la función lineal <m:math><m:mi>f</m:mi></m:math> en un dominio de <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>- −</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>10</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math> para la función cuya pendiente es <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:math> y la intersección en <emphasis effect="italics">y</emphasis> es <m:math><m:mrow><m:mfrac><m:mrow><m:mn>31</m:mn></m:mrow><m:mrow><m:mn>16</m:mn></m:mrow></m:mfrac></m:mrow></m:math>. Marque los puntos para los valores de entrada de <m:math><m:mrow><m:mo>- −</m:mo><m:mn>10</m:mn></m:mrow></m:math> y <m:math><m:mrow><m:mn>10.</m:mn></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137742298"><problem id="fs-id1165137742300">
+<para id="fs-id1165137742302">Represente gráficamente la función lineal <m:math><m:mi>f</m:mi></m:math> en un dominio de <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>- −</m:mo><m:mn>0,1</m:mn><m:mo>,</m:mo><m:mn>0,1</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math> para la función cuya pendiente es 75 y la intersección en <emphasis effect="italics">y</emphasis> es <m:math><m:mrow><m:mo>- −</m:mo><m:mn>22,5</m:mn></m:mrow></m:math>. Marque los puntos para los valores de entrada de <m:math><m:mrow><m:mo>- −</m:mo><m:mn>0,1</m:mn></m:mrow></m:math> y <m:math><m:mrow><m:mn>0,1.</m:mn></m:mrow></m:math> </para>
+</problem>
+<solution id="fs-id1165137540098">
+
+<media id="fs-id1165137540104" alt="..">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_01_216.jpg"/>
+</media>
+
+</solution>
+</exercise><exercise id="fs-id1165134148520"><problem id="fs-id1165134148522">
+<para id="fs-id1165135203736">Represente gráficamente la función lineal <m:math><m:mi>f</m:mi></m:math> donde <m:math><m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>a</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> en el mismo conjunto de ejes en un dominio de <m:math><m:mrow><m:mrow><m:mo>[</m:mo> <m:mrow><m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>4</m:mn></m:mrow> <m:mo>]</m:mo></m:mrow></m:mrow></m:math> para los siguientes valores de <m:math><m:mi>a</m:mi></m:math> y <m:math><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math> <list id="fs-id1165137811104" list-type="enumerated" number-style="lower-alpha"><item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> </item>
+<item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo><m:mtext>​</m:mtext><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> </item>
+<item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn></m:mrow></m:math> </item>
+<item> <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>5</m:mn> </m:mrow></m:math> </item></list></para></problem></exercise></section>
+
+<section id="fs-id1165135699138">
+<title>Extensiones</title>
+
+<exercise id="fs-id1165135485955">
+<problem id="fs-id1165135485957">
+<para id="fs-id1165135485959">Calcule el valor de <m:math><m:mi>x</m:mi></m:math> si una función lineal pasa por los siguientes puntos y tiene la siguiente pendiente: <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> </para></problem>
+<solution id="fs-id1165134085980">
+<para id="fs-id1165134085982"> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137874831">
+<problem id="fs-id1165137874833">
+<para id="fs-id1165137804686">Calcule el valor de<emphasis effect="italics"> y </emphasis>si una función lineal pasa por los siguientes puntos y tiene la siguiente pendiente: <m:math><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mo stretchy="false">(</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>m</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn></m:mrow></m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135248539">
+<problem id="fs-id1165135248541">
+<para id="fs-id1165137817599">Halle la ecuación de la línea que pasa por los siguientes puntos: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> grandes.
+</para>
+</problem>
+<solution id="fs-id1165137757960">
+<para id="fs-id1165137757962"> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi></m:mrow></m:math> </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135532360">
+<problem id="fs-id1165135417742">
+<para id="fs-id1165135417744">Halle la ecuación de la línea que pasa por los siguientes puntos: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2 </m:mn><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165134065117">
+<problem id="fs-id1165134065120">
+<para id="fs-id1165134065122">Halle la ecuación de la línea que pasa por los siguientes puntos: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> y <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>c</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>d</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> grandes. </para>
+</problem>
+<solution id="fs-id1165135500791">
+<para id="fs-id1165135190790"> <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>d</m:mi><m:mrow><m:mi>c</m:mi><m:mo>-</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac><m:mi>x</m:mi><m:mo>–</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mi>d</m:mi></m:mrow><m:mrow><m:mi>c</m:mi><m:mo>-</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow></m:math> </para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137541587"><title>Aplicaciones en el mundo real</title><exercise id="fs-id1165137541592">
+<problem id="fs-id1165137673440">
+<para id="fs-id1165137673442">A mediodía, una camarera se da cuenta de que tienen 20 dólares en el tarro de las propinas. Si la camarera gana un promedio de 0,50 dólares de cada cliente, ¿cuánto tendrán en su tarro de propinas si atiende a <m:math><m:mi>n</m:mi></m:math> más clientes durante su turno?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165137653532">
+<problem id="fs-id1165137653534">
+<para id="fs-id1165137784771">La suscripción al gimnasio con dos sesiones de entrenamiento personal cuesta 125 dólares, comparado con 260 dólares por cinco sesiones. ¿Cuál es el costo por sesión?</para>
+</problem>
+<solution id="fs-id1165137784777">
+<para id="fs-id1165137784779">45 dólares por cada sesión de entrenamiento.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137921688">
+<problem id="fs-id1165137921690">
+<para id="fs-id1165137921693">Una empresa de confección descubre que existe una relación lineal entre el número de camisas, <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> que puede vender y el precio, <m:math><m:mrow><m:mi>p</m:mi><m:mo>,</m:mo></m:mrow></m:math> que puede cobrar por cada una. En concreto, los datos históricos muestran que se pueden vender 1.000 camisas a un precio de <m:math><m:mrow><m:mi>$</m:mi><m:mn>30</m:mn></m:mrow></m:math>, mientras que 3.000 camisas pueden venderse a un precio de 22 dólares. Halle una ecuación lineal de la forma <m:math><m:mrow><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> que da el precio <m:math><m:mi>p</m:mi></m:math> que se puede cobrar por <m:math><m:mi>n</m:mi></m:math> camisas.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135501016">
+<problem id="fs-id1165135501019">
+<para id="fs-id1165135501021">Una compañía telefónica cobra el servicio según la fórmula <m:math><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>24</m:mn><m:mo>+</m:mo><m:mn>0,1</m:mn><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> donde <m:math><m:mi>n</m:mi></m:math> es el número de minutos de conversación telefónica, y <m:math><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> es la tarifa mensual, en dólares. Halle e interprete la tasa de cambio y el valor inicial.</para>
+</problem>
+<solution id="fs-id1165135191396">
+<para id="fs-id1165137476619">La tasa de cambio es de 0,1. Por cada minuto adicional de conversación telefónica, la tarifa mensual aumenta en 0,1 dólares o 10 céntimos. El valor inicial es 24. Cuando no hay minutos de conversación telefónica, inicialmente el cargo es de 24 dólares.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137476626">
+<problem id="fs-id1165137851861">
+<para id="fs-id1165137851863">Un agricultor descubre que existe una relación lineal entre el número de tallos de judías, <m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo></m:mrow></m:math> que planta y el rendimiento, <m:math><m:mrow><m:mi>y</m:mi><m:mo>,</m:mo></m:mrow></m:math> que produce cada planta. Cuando siembra 30 tallos, cada planta produce 30 onzas de judías. Cuando siembra 34 tallos, cada planta produce 28 onzas de judías. Halle una relación lineal de la forma <m:math><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> que da el rendimiento cuando se siembran <m:math><m:mi>n</m:mi></m:math> tallos.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137742676">
+<problem id="fs-id1165137673496">
+<para id="fs-id1165137673498">La población de una ciudad en el año 1960 era de 287.500 habitantes. En 1989 la población era de 275.900 habitantes. Calcule la tasa de crecimiento demográfico y formule un enunciado acerca de la tasa de cambio de la población en habitantes por año.</para>
+</problem>
+<solution id="fs-id1165137653495">
+<para id="fs-id1165137653498">La pendiente es <m:math><m:mrow><m:mo>- −</m:mo><m:mn>400.</m:mn></m:mrow></m:math> Esto significa que, por cada año entre 1960 y 1989, la población disminuyó en 400 habitantes por año en la ciudad.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137643978">
+<problem id="fs-id1165137643980">
+<para id="fs-id1165135173497">La población de una ciudad ha crecido linealmente. En 2003, la población era de 45.000 habitantes, y ha ido creciendo en 1.700 habitantes cada año. Escriba una ecuación, <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math> para la población <m:math><m:mi>t</m:mi></m:math> años después de 2003.</para></problem>
+</exercise>
+<exercise id="eip-id1165135320034">
+<problem id="eip-id1165135320037">
+<para id="eip-id1165135320039">Supongamos que el promedio de renta anual (en dólares) de los años 1990 a 1999 viene dado por la función lineal <m:math><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1054</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>23</m:mn><m:mo>,</m:mo><m:mn>286</m:mn><m:mo>,</m:mo></m:mrow></m:math> donde <m:math><m:mi>x</m:mi></m:math> es el número de años posteriores a 1990. ¿Cuál de las siguientes opciones interpreta la pendiente en el contexto del problema?</para><list id="fs-id1165137475692" list-type="enumerated" number-style="lower-alpha">
+<item>En 1990, el promedio de renta anual era de 23.286 dólares.</item>
+<item>En el periodo de diez años comprendido entre 1990 y 1999, el promedio de renta anual aumentó un total de 1.054 dólares.</item>
+<item>Cada año de la década de los 90, el promedio de renta anual aumentó en 1.054 dólares.</item>
+<item>El promedio de renta anual aumentó hasta un nivel de 23.286 dólares a finales de 1999.</item>
+</list>
+</problem>
+<solution id="fs-id1165137901249">
+<para id="fs-id1165137901251">c.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165137811773">
+<problem id="fs-id1165137811775">
+<para id="fs-id1165137811777">Cuando la temperatura es de 0 grados Celsius, la temperatura Fahrenheit es de 32. Cuando la temperatura Celsius es 100, la temperatura Fahrenheit correspondiente es 212. Exprese la temperatura Fahrenheit como una función lineal de <m:math><m:mrow><m:mi>C</m:mi><m:mo>,</m:mo></m:mrow></m:math> la temperatura Celsius, <m:math><m:mrow><m:mi>F</m:mi><m:mrow><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>)</m:mo></m:mrow><m:mo>.</m:mo></m:mrow></m:math> </para><list id="fs-id1165137692075" list-type="enumerated" number-style="lower-alpha"><item>Calcule la tasa de cambio de temperatura Fahrenheit para cada unidad de cambio de temperatura Celsius.</item>
+<item>Halle e interprete <m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>28</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow></m:math> </item>
+<item>Halle e interprete <m:math><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">(</m:mo><m:mn>–40</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:mrow>
+</m:math>
+</item>
+</list></problem>
+</exercise>
+</section></section>
+
+
+<glossary>
+<definition id="fs-id1165137405111">
+<term>función lineal decreciente</term>
+<meaning id="fs-id1165137405116">función con pendiente negativa: Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>entonces</m:mtext><m:mspace width="0.5em"/><m:mi>m</m:mi><m:mo>&lt;</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</meaning>
+</definition>
+
+<definition id="fs-id1165137863356">
+<term>función lineal creciente</term>
+<meaning id="fs-id1165135188274">función con pendiente positiva: Si los valores de <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mtext>entonces</m:mtext><m:mspace width="0.5em"/><m:mi>m</m:mi><m:mo>></m:mo><m:mn>0,</m:mn></m:mrow></m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165135429388">
+<term>función lineal</term>
+<meaning id="fs-id1165135429394">una función con una tasa de cambio constante que es un polinomio de grado 1, y cuyo gráfico es una línea recta</meaning>
+</definition>
+
+<definition id="fs-id1165134389091">
+<term>forma punto-pendiente </term>
+<meaning id="fs-id1165134389097">la ecuación de una línea que representa una función lineal de la forma <m:math><m:mrow><m:mi>y</m:mi><m:mo>–</m:mo><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>x</m:mi><m:mo>–</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165137635132">
+<term>pendiente</term>
+<meaning id="fs-id1165137635137">el cociente entre el cambio en los valores de salida y el cambio en los valores de entrada; una medida de la inclinación de una línea</meaning>
+</definition>
+
+<definition id="fs-id1165137817449">
+<term>forma de pendiente-intersección</term>
+<meaning id="fs-id1165137817454">la ecuación de una recta que representa una función lineal de la forma <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math> </meaning>
+</definition>
+
+<definition id="fs-id1165135195656">
+<term>intersección en <emphasis effect="italics">y</emphasis></term>
+<meaning id="fs-id1165137635107">el valor de una función cuando el valor de entrada es cero; también conocido como valor inicial</meaning>
+</definition>
+</glossary>
+</emphasis></para></section></section></content></document>

@@ -1,0 +1,4335 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Gráficos de las funciones seno y coseno</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49387</md:content-id>
+  <md:title>Gráficos de las funciones seno y coseno</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+    <list id="list-00001"><item>Graficar variaciones de <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>sen</m:mtext><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> y de <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mtext>cos</m:mtext><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>.</item>
+    <item>Utilizar los desplazamientos de fase de las curvas seno y coseno.</item></list></md:abstract>
+  <md:uuid>ec87ee19-d627-4c06-89a0-2bd96aa3f402</md:uuid>
+</metadata>
+
+<content>
+<figure id="Figure_06_01_001" class="small"><media id="fs-id1165135160648" alt="Foto de un haz de luz del color del arco iris que se extiende por el suelo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_001.jpg"/>
+</media>
+<caption>La luz puede separarse en colores debido a sus propiedades ondulatorias (créditos: "wonderferret"/ Flickr)</caption></figure><para id="fs-id1165135329803">La luz blanca, como la del sol, no es realmente blanca. En cambio, es una composición de todos los colores del arco iris en forma de ondas. Cada uno de los colores se ve únicamente cuando la luz blanca pasa por un prisma óptico que separa las ondas según sus longitudes de onda para formar un arco iris.</para>
+<para id="fs-id1165134544966">Las ondas luminosas se representan gráficamente mediante la función seno. En el capítulo sobre <link document="m49369">Funciones trigonométricas</link>, hemos examinado funciones trigonométricas como la función seno. En esta sección, interpretaremos y crearemos gráficos de las funciones seno y coseno.</para><section id="fs-id1165135169322">
+<title>Graficar funciones seno y coseno</title>
+<para id="fs-id1165135241395">Recordemos que las funciones seno y coseno relacionan valores de números reales con las coordenadas de la <emphasis effect="italics">x</emphasis> y de la <emphasis effect="italics">y</emphasis> de un punto en el círculo unitario. ¿Qué aspecto tienen en un gráfico en un plano de coordenadas? Empecemos con la <term class="no-emphasis" id="term-00001">función seno</term>. Podemos crear una tabla de valores y utilizarla para dibujar una gráfica. La <link target-id="Table_06_01_01"/> enumera algunos de los valores de la función seno en un círculo unitario.</para><table id="Table_06_01_01" summary="..">
+<tgroup cols="10"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+<colspec colnum="10" colname="c10"/>
+
+<tbody>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mi>x</m:mi>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"><emphasis> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165137694159">Al trazar los puntos de la tabla y continuar a lo largo del eje <emphasis effect="italics">x</emphasis> se obtiene la forma de la función seno. Vea el <link target-id="Figure_06_01_002"/>.</para><figure id="Figure_06_01_002" class="small"><media id="fs-id1165135385050" alt="Gráfico de sen(x). Máximo local en (pi/2, 1). Mínimo local en (3pi/2, -1). Periodo de 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_002.jpg"/>
+</media>
+<caption>La función seno</caption></figure><para id="fs-id1165137410832">Obsérvese que los valores del seno son positivos entre 0 y <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que corresponden a los valores de la función seno en los cuadrantes I y II del círculo unitario, y los valores del seno son negativos entre <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que corresponden a los valores de la función seno en los cuadrantes III y IV del círculo unitario. Vea el <link target-id="Figure_06_01_003"/>.</para>
+
+<figure id="Figure_06_01_003" class="small"><media id="fs-id1165134360899" alt="Gráfico paralelo de un círculo unitario y gráfico de sen(x). Los dos gráficos muestran la equivalencia de las coordenadas.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_003.jpg"/>
+</media>
+<caption>Trazar los valores de la función seno</caption></figure><para id="fs-id1165137849285">Ahora echemos un vistazo a la <term class="no-emphasis" id="term-00002">función coseno</term>. Una vez más, podemos crear una tabla de valores y utilizarlos para trazar un gráfico. La <link target-id="Table_06_01_02"/> enumera algunos de los valores de la función coseno en un círculo unitario.</para>
+
+
+<table id="Table_06_01_02" summary="..">
+<tgroup cols="10"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+<colspec colnum="10" colname="c10"/>
+
+<tbody>
+<row>
+<entry align="center"> <m:math>
+ <m:mi mathvariant="bold">x</m:mi>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mi>π</m:mi>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi mathvariant="bold">cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi mathvariant="bold">x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </entry>
+<entry align="center"> <m:math>
+ <m:mn>1</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mn>0</m:mn>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math display="block">
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="fs-id1165135531416">Al igual que con la función seno, podemos trazar puntos para crear un gráfico de la función coseno como en <link target-id="Figure_06_01_004"/>.</para>
+
+<figure id="Figure_06_01_004" class="medium"><media id="fs-id1165135536490" alt="Gráfico de cos(x). Máximos locales en (0,1) y (2pi, 1). Mínimo local en (pi, -1). Periodo de 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_004.jpg"/>
+</media>
+<caption>La función coseno</caption></figure><para id="fs-id1165135628668">Dado que podemos evaluar el seno y el coseno de cualquier número real, ambas funciones están definidas para todos los números reales. Al pensar en los valores del seno y del coseno como coordenadas de puntos en un círculo unitario, es evidente que el rango de ambas funciones deberá ser el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137727184">En ambos gráficos, la forma se repite después de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> lo que significa que las funciones son periódicas con un período de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La <term id="term-00003">función periódica</term> es una función para la que un determinado <term class="no-emphasis" id="term-00004">desplazamiento horizontal</term>, <emphasis effect="italics">P</emphasis>, da como resultado una función igual a la función original <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>P</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para todos los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en el dominio de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Cuando esto ocurre, llamamos el menor desplazamiento horizontal de este tipo <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>, que es el <term class="no-emphasis" id="term-00005">periodo</term> de la función. La <link target-id="Figure_06_01_005"/> muestra varios periodos de las funciones seno y coseno.</para>
+
+<figure id="Figure_06_01_005" class="small">
+<media id="fs-id1165137627720" alt="Gráficos lado a lado de sen(x) y cos(x). Los gráficos muestran las longitudes de los periodos para ambas funciones, que es de 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_005.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137447360">Observar de nuevo las funciones seno y coseno en un dominio centrado en el eje <emphasis effect="italics">y</emphasis> sirve para revelar las simetrías. Como podemos ver en la <link target-id="Figure_06_01_006"/>, la <term class="no-emphasis" id="term-00006">función seno</term> es simétrica respecto al origen. Recordemos que en <link document="m49387">Las otras funciones trigonométricas</link> determinamos a partir del círculo unitario que la función seno es una función impar porque <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>-</m:mi><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Ahora podemos ver claramente esta propiedad en el gráfico.</para><figure id="Figure_06_01_006" class="small"><media id="fs-id1165137588091" alt="Gráfico de sen(x) que muestra que sen(x) es una función impar debido a la simetría impar en el gráfico.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_006.jpg"/>
+</media>
+<caption>Simetría impar de la función seno</caption></figure><para id="fs-id1165135484164">La <link target-id="Figure_06_01_007"/> muestra que la función coseno es simétrica respecto al eje <emphasis effect="italics">y</emphasis>. De nuevo, determinamos que la función coseno es una función par. Ahora podemos ver en el gráfico que <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><figure id="Figure_06_01_007" class="small"><media id="fs-id1165131958299" alt="Gráfico de cos(x) que muestra que cos(x) es una función par debido a la simetría par del gráfico.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_007.jpg"/>
+</media>
+<caption>Simetría par de la función coseno</caption></figure><note id="fs-id1165135187674">
+<label>Una etiqueta de nota general</label>
+<title>Características de las funciones seno y coseno</title>
+<para id="fs-id1165137628764">Las funciones seno y coseno tienen varias características distintas:</para>
+<list id="fs-id1165137662423" list-type="bulleted"><item>Son funciones periódicas con un período de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>El dominio de cada función es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>∞</m:mi><m:mo>,</m:mo><m:mi>∞</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y el rango es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>El gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es simétrico respecto al origen, porque es una función impar.</item>
+<item>El gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es simétrico respecto del eje de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math>, porque es una función par.</item>
+</list></note>
+</section>
+
+<section id="fs-id1165134032223">
+<title>Investigar funciones sinusoidales</title>
+<para id="fs-id1165137410921">Como podemos ver, las funciones seno y coseno tienen un período y un rango regulares. Si observamos las olas del mar o las ondas de un estanque, veremos que se parecen a las funciones seno o coseno. Sin embargo, no son necesariamente idénticas. Algunas son más altas o más largas que otras. Una función con la misma forma general que una función seno o <term class="no-emphasis" id="term-00007">coseno</term> se conoce como <term id="term-00008">función sinusoidal</term>. Las formas generales de las funciones sinusoidales son:</para>
+<equation id="fs-id1165135512530" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>y</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+
+<section id="fs-id1165135458566">
+<title>Determinar el periodo de las funciones sinusoidales</title>
+<para id="fs-id1165135708019">Al observar las formas de las funciones sinusoidales, nos damos cuenta de que son transformaciones de las funciones seno y coseno. Podemos utilizar lo que sabemos acerca de las transformaciones para determinar el periodo.</para>
+<para id="fs-id1165137639577">En la fórmula general, <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> se relaciona con el periodo por <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>></m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces el periodo es menor que <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> y la función sufre una compresión horizontal, mientras que, si <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces el periodo es mayor que <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> y la función sufre un estiramiento horizontal. Por ejemplo, <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>1,</m:mn>
+ </m:mrow>
+</m:math> por lo que el periodo es <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>,</m:mi><m:mtext/>
+ </m:mrow>
+</m:math> que ya conocíamos. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>2,</m:mn>
+ </m:mrow>
+</m:math> por lo que el periodo es <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi>
+ </m:mrow>
+</m:math> y el gráfico se comprime. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que el periodo es <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> y el gráfico se estira. Observe en la <link target-id="Figure_06_01_008"/> cómo el periodo se relaciona indirectamente con <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><figure id="Figure_06_01_008" class="small">
+<media id="fs-id1165137583924" alt="Gráfico con tres elementos. El eje x va de 0 a 2pi. El eje y va de -1 a 1. El primer elemento es el gráfico de sen(x) para un periodo completo. El segundo es el gráfico de sin(2x) en dos periodos. El tercero es el gráfico de sen(x/2) para la mitad de un periodo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_008.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165137697004"><label>Una etiqueta de nota general</label><title>Periodo de las funciones sinusoidales</title>
+
+<para id="fs-id1165137766762">Supongamos que <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> en las ecuaciones de forma general de las funciones seno y coseno, obtenemos las formas</para>
+<equation id="fs-id1165137855068" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </equation>
+<equation id="fs-id1165134371173" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137413926">El periodo es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></note><example id="Example_06_01_01">
+<exercise id="fs-id1165137772370"><problem id="fs-id1165137772372">
+<title>Identificar el periodo de una función seno o coseno</title>
+<para id="fs-id1165137389619">Determine el periodo de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137434852">
+<para id="fs-id1165135188750">Comencemos comparando la ecuación con la forma general <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165134482743">En la ecuación dada, <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que el periodo será</para>
+<equation id="fs-id1165137646911" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>2 </m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mo>|</m:mo><m:mi>B</m:mi><m:mo>|</m:mo>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+       <m:mn>6</m:mn>
+       <m:mi>π</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137465427" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_01"><problem id="fs-id1165135187453"><para id="fs-id1165135208858">Determine el periodo de la función <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137507692"><para id="fs-id1165137675634"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise></note>
+</section>
+
+<section id="fs-id1165135699141"><title>Determinar la amplitud</title><para id="fs-id1165135207425">Volviendo a la fórmula general de una función sinusoidal, hemos analizado cómo la variable <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> se refiere al periodo. Ahora pasemos a la variable <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> por lo que podemos analizar cómo se relaciona con la <emphasis>amplitud</emphasis>, o mayor distancia desde el reposo. <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> representa el factor de estiramiento vertical, y su valor absoluto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es la amplitud. El máximo local será una distancia <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> por encima de la <emphasis>línea media</emphasis> horizontal del gráfico, que es la línea <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> porque <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> en este caso, la línea media, es el eje <emphasis effect="italics">x</emphasis>. Los mínimos locales estarán a la misma distancia por debajo de la línea media. Si los valores de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>></m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función se estira. Por ejemplo, la amplitud de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es el doble de la amplitud de <m:math display="block">
+ <m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función se comprime. La <link target-id="Figure_06_01_009"/> compara varias funciones sinusoidales con diferentes amplitudes.</para><figure id="Figure_06_01_009">
+<media id="fs-id1165137482990" alt="Gráfico con cuatro elementos. El eje x va de -6pi a 6pi. El eje y va de -4 a 4. El primer elemento es el gráfico de sen(x), que tiene una amplitud de 1. El segundo es el gráfico de 2sin(x), que tiene una amplitud de 2. El tercero es el gráfico de 3sin(x), que tiene una amplitud de 3. El cuarto es el gráfico de 4 sin(x) con una amplitud de 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_009.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165134284498"><label>Una etiqueta de nota general</label><title>Amplitud de las funciones sinusoidales</title>
+
+<para id="fs-id1165134497141">Supongamos que <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> en las ecuaciones de forma general de las funciones seno y coseno, obtenemos las formas</para><equation id="fs-id1165135177658" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mtext> y </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137464064">La <term id="term-00009">amplitud</term> es <m:math>
+ <m:mrow>
+  <m:mo>|</m:mo><m:mi>A</m:mi><m:mtext>|</m:mtext><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que es la altura vertical desde la <term id="term-00010">línea media</term> <m:math>
+ <m:mrow>
+<m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Además, observe en el ejemplo que</para><equation id="fs-id1165135460914" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mtext> = amplitud = </m:mtext><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>|</m:mo> <m:mrow>
+   <m:mtext>máximo </m:mtext><m:mo>- −</m:mo><m:mtext> mínimo</m:mtext>
+  </m:mrow> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</equation></note><example id="Example_06_01_02">
+<exercise id="fs-id1165137653911">
+<problem id="fs-id1165134377968">
+<title>Identificar la amplitud de la función seno o coseno</title>
+<para id="fs-id1165137932594">¿Cuál es la amplitud de la función sinusoidal <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>-4</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> ¿La función se estira o se comprime verticalmente?</para></problem>
+<solution id="fs-id1165135195832">
+<para id="fs-id1165135195834">Comencemos por comparar la función con la forma simplificada <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137930335">En la función dada, <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>-4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que la amplitud es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+<m:mn>-4</m:mn>
+  </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> La función se estira.</para></solution>
+<commentary id="fs-id1165134226786">
+<title>Análisis</title>
+<para id="fs-id1165137410615">El valor negativo de <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> resulta en una reflexión a través del eje <emphasis effect="italics">x</emphasis> de la <term class="no-emphasis" id="term-00011">función seno</term>, como se muestra en la <link target-id="Figure_06_01_010"/>.</para><figure id="Figure_06_01_010" class="small">
+<media id="fs-id1165137425512" alt="Gráfico de -4sin(x). La función tiene una amplitud de 4. Mínimos locales en (-3pi/2, -4) y (pi/2, -4). Máximos locales en (-pi/2, 4) y (3pi/2, 4). Periodo de 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_010.jpg"/>
+</media>
+</figure>
+
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135471236" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_02">
+<problem id="fs-id1165137771980"><para id="fs-id1165137771982">¿Cuál es la amplitud de la función sinusoidal <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> ¿La función se estira o se comprime verticalmente?</para></problem>
+<solution id="fs-id1165137531120"><para id="fs-id1165137531121"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> comprimida</para>
+</solution>
+</exercise>
+</note>
+</section></section>
+
+<section id="fs-id1165137834807"><title>Analizar los gráficos de las variaciones de <emphasis effect="italics">y</emphasis> = sen<emphasis effect="italics"> x</emphasis> y de <emphasis effect="italics">y</emphasis> = cos <emphasis effect="italics">x</emphasis></title><para id="fs-id1165135193998">Ahora, que entendemos cómo <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi>
+ </m:mrow>
+</m:math> se relacionan con la ecuación de forma general para las funciones seno y coseno, exploraremos las variables <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Recordemos la forma general:</para>
+<equation id="fs-id1165134122886" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> y </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>i</m:mi><m:mi> </m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>- −</m:mo><m:mfrac>
+           <m:mi>C</m:mi>
+           <m:mi>B</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> y </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>B</m:mi><m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>- −</m:mo><m:mfrac>
+           <m:mi>C</m:mi>
+           <m:mi>B</m:mi>
+          </m:mfrac>
+
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165134187254">El valor <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> para una función sinusoidal se denomina <emphasis>desplazamiento de fase</emphasis>, o el desplazamiento horizontal de la función básica del seno o del <term class="no-emphasis" id="term-00012">coseno</term>. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el gráfico se desplaza hacia la derecha. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el gráfico se desplaza hacia la izquierda. Cuanto mayor sea el valor de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>C</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> más se desplazará el gráfico. La <link target-id="Figure_06_01_011"/> muestra que el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> se desplaza hacia la derecha en <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi>
+ </m:mrow>
+</m:math> unidades, que es más de lo que vemos en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que se desplaza hacia la derecha en <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> unidades.</para><figure id="Figure_06_01_011" class="small">
+<media id="fs-id1165137425737" alt="Gráfico con tres elementos. El primer elemento es un gráfico de sen(x). El segundo elemento es el gráfico de sen(x-pi/4), que es lo mismo que sen(x) excepto que está desplazado a la derecha por pi/4. El tercer elemento es el gráfico de sen(x-pi), que es lo mismo que sen(x) excepto que está desplazado a la derecha por pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_011.jpg"/>
+</media>
+</figure>
+
+  <para id="fs-id1165137663752">Mientras que <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> se refiere al desplazamiento horizontal, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> indica el desplazamiento vertical desde la línea media en la fórmula general de una función sinusoidal. Vea el <link target-id="Figure_06_01_012"/>. La función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> tiene su línea media en <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<figure id="Figure_06_01_012" class="small">
+<media id="fs-id1165135353057" alt="Gráfico de y=Asen(x)+D. El gráfico muestra la línea media de la función en y=D.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_012.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165135242867">Cualquier valor de <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> distinto de cero desplaza el gráfico hacia arriba o hacia abajo. La <link target-id="Figure_06_01_013"/> compara <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que se desplaza 2 unidades hacia arriba en un gráfico.</para><figure id="Figure_06_01_013" class="small">
+<media id="fs-id1165135536497" alt="Gráfico con dos elementos. El primer elemento es un gráfico de sen(x). El segundo elemento es el gráfico de sen(x)+2, que es lo mismo que sen(x), pero desplazado hacia arriba en 2 unidades.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_013.jpg"/>
+</media>
+</figure>
+
+<note id="fs-id1165135571809">
+<label>Una etiqueta de nota general</label>
+<title>Variaciones de las funciones seno y coseno</title>
+<para id="fs-id1165133201875">Dada una ecuación de la forma <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> es el <term id="term-00013">desplazamiento de fase</term> y <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> es el <term class="no-emphasis" id="term-00014">desplazamiento vertical</term>.</para>
+</note>
+
+<example id="Example_06_01_03">
+<exercise id="fs-id1165137696922"><problem id="fs-id1165137696924">
+<title>Identificar el desplazamiento de fase de una función</title>
+<para id="fs-id1165137804482">Determine la dirección y la magnitud del desplazamiento de fase para <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134483435">
+<para id="fs-id1165134483437">Comencemos comparando la ecuación con la forma general <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137461008">En la ecuación dada, observe que <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Así que el desplazamiento de fase es</para>
+<equation id="fs-id1165137693976" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="right">
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>C</m:mi>
+       <m:mi>B</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>6</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+       <m:mn>1</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="right">
+    <m:mtd columnalign="right">
+     <m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135696189">o <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> unidades a la izquierda.</para>
+</solution>
+<commentary id="fs-id1165134156073">
+<title>Análisis</title>
+<para id="fs-id1165137664617">Debemos prestar atención al signo de la ecuación para la forma general de una función sinusoidal. La ecuación muestra un signo menos antes de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Por lo tanto <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> puede reescribirse como <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> Si el valor de <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> es negativo, el desplazamiento es hacia la izquierda.</para>
+</commentary>
+ </exercise></example>
+
+<note id="fs-id1165137806038" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_03">
+<problem id="fs-id1165137461117"><para id="fs-id1165137461118">Determine la dirección y la magnitud del desplazamiento de fase para <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165131959464"><para id="fs-id1165131959465"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> derecha</para></solution>
+</exercise>
+</note>
+
+<example id="Example_06_01_04">
+<exercise id="fs-id1165137410966">
+<problem id="fs-id1165137410968">
+<title>Identificar el desplazamiento vertical de una función</title>
+<para id="fs-id1165135186656">Determine la dirección y la magnitud del desplazamiento vertical para <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>3,</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137427502">
+<para id="fs-id1165137427504">Comencemos comparando la ecuación con la forma general <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165135503692">En la ecuación dada, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>−3</m:mn>
+ </m:mrow>
+</m:math> por lo que el desplazamiento es de 3 unidades hacia abajo.</para></solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137742086" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_04">
+<problem id="fs-id1165137410879"><para id="fs-id1165137410880">Determine la dirección y la magnitud del desplazamiento vertical para <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137432579"><para id="fs-id1165137432580">2 unidades hacia arriba</para></solution>
+</exercise>
+
+</note>
+
+<note id="fs-id1165137824883" class="how-to-notitle">
+<label>Elemento Cómo</label>
+<para id="fs-id1165135417813"><emphasis>Dada una función sinusoidal de la forma</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <emphasis>identificar la línea media, la amplitud, el periodo y el desplazamiento de fase.</emphasis></para>
+<list id="fs-id1165137805755" list-type="enumerated" number-style="arabic">
+<item>Determine la amplitud como <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine el periodo como <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine el desplazamiento de fase como <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Determine la línea media como <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list>
+</note>
+
+<example id="Example_06_01_05">
+<exercise id="fs-id1165137457010">
+<problem id="fs-id1165137457013">
+<title>Identificar las variaciones de una función sinusoidal a partir de una ecuación</title>
+<para id="fs-id1165137416718">Determine la línea media, la amplitud, el periodo y el desplazamiento de fase de la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137454382">
+<para id="fs-id1165137454384">Comencemos comparando la ecuación con la forma general <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137408417"> <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que la amplitud es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137438431">Luego, <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que el periodo es <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1165137637576">No se ha sumado ninguna constante dentro de los paréntesis, por lo que <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y el desplazamiento de fase es <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>0</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137697063">Finalmente, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que la línea media es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1.</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+<commentary id="fs-id1165137701755">
+<title>Análisis</title>
+<para id="fs-id1165135414237">Al inspeccionar el gráfico, podemos determinar que el periodo es <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la línea media es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la amplitud es de 3. Vea el <link target-id="Figure_06_01_014"/>.</para><figure id="Figure_06_01_014" class="small">
+<media id="fs-id1165135185294" alt="Gráfico de y=3sen(2x)+1. El gráfico tiene una amplitud de 3. Hay una línea media en y=1. Hay un periodo de pi. Máximo local en (pi/4, 4) y mínimo local en (3pi/4, -2).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_014.jpg"/>
+</media>
+</figure>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137447405" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_05">
+<problem id="fs-id1165137447552"><para id="fs-id1165137447553">Determine la línea media, la amplitud, el periodo y el desplazamiento de fase de la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mo>- −</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134042357"><para id="fs-id1165134042358">línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> amplitud: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> periodo: <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento de fase: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<example id="Example_06_01_06"><exercise id="fs-id1165137659478"><problem id="fs-id1165134040573">
+<title>Identificar la ecuación de una función sinusoidal a partir de un gráfico</title>
+<para id="fs-id1165137871008">Determine la fórmula de la función coseno en la <link target-id="Figure_06_01_015"/>.</para>
+
+<figure id="Figure_06_01_015" class="small">
+<media id="fs-id1165137772064" alt="Gráfico de -0,5cos(x)+0,5. El gráfico tiene una amplitud de 0,5. El gráfico tiene un periodo de 2pi. El gráfico tiene un rango de [0, 1]. El gráfico también se refleja sobre el eje x a partir de la función matriz cos(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_015.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135329784">
+<para id="fs-id1165137726017">Para determinar la ecuación, tenemos que identificar cada valor en la forma general de una función sinusoidal.</para>
+<equation id="fs-id1165137726021" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137704661">El gráfico podría representar una función seno o <term class="no-emphasis" id="term-00015">coseno</term> desplazada o reflejada. Cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el gráfico tiene un punto extremo, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Dado que la función coseno tiene un punto extremo para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> escribamos nuestra ecuación en términos de función coseno.</para><para id="fs-id1165135536557">Empecemos por la línea media. Vemos que el gráfico sube y baja una distancia igual por encima y por debajo de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0,5.</m:mn>
+ </m:mrow>
+</m:math> Este valor, que es la línea media, es <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> en la ecuación, por lo que <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0,5.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137938642">La mayor distancia por encima y por debajo de la línea media es la amplitud. Los máximos están 0,5 unidades por encima de la línea media y los mínimos están 0,5 unidades por debajo. Así que <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,5.</m:mn>
+ </m:mrow>
+</m:math> Otra forma en la que podríamos haber determinado la amplitud es al reconocer que la diferencia entre la altura de los máximos y mínimos locales es 1, por lo que <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0,5.</m:mn>
+ </m:mrow>
+</m:math> Además, el gráfico se refleja alrededor del eje <emphasis effect="italics">x</emphasis>, de manera que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,5.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165134204425">El gráfico no se estira ni se comprime horizontalmente, por lo que <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mn>1;</m:mn>
+ </m:mrow>
+</m:math> y el gráfico no se desplaza horizontalmente, por lo que <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135347312">Si lo agrupamos todo,</para><equation id="fs-id1165137401884" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,5</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>0,5</m:mn>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise>
+</example><note id="fs-id1165137702221" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_06">
+<problem id="fs-id1165135582221"><para id="fs-id1165135582222">Determine la fórmula de la función seno en <link target-id="Figure_06_01_016"/>.</para>
+
+<figure id="Figure_06_01_016" class="small">
+<media id="fs-id1165134224521" alt="Gráfico de sen(x)+2. Periodo de 2pi, amplitud de 1 y rango de [1, 3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_016.jpg"/>
+</media>
+</figure></problem>
+ <solution id="fs-id1165137526465"><para id="fs-id1165137526466"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<example id="Example_06_01_07"><exercise id="fs-id1165134164950"><problem id="fs-id1165134058400">
+<title>Identificar la ecuación de una función sinusoidal a partir de un gráfico</title>
+<para id="fs-id1165134059763">Determine la ecuación de la función sinusoidal en la <link target-id="Figure_06_01_017"/>.</para><figure id="Figure_06_01_017" class="medium">
+<media id="fs-id1165135253132" alt="Gráfico de 3cos(pi/3x-pi/3)-2. El gráfico tiene una amplitud de 3, un periodo de 6 y un rango de [-5,1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_017.jpg"/>
+</media>
+</figure>
+
+</problem>
+<solution id="fs-id1165137598813">
+<para id="fs-id1165137598815">Con el valor más alto en 1 y el más bajo en <m:math>
+ <m:mrow>
+  <m:mn>−5</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la línea media estará a medio camino entre en <m:math>
+ <m:mrow>
+  <m:mn>-2.</m:mn>
+ </m:mrow>
+</m:math> Así que <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>–2.</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165133281392">La distancia desde la línea media hasta el valor más alto o más bajo da una amplitud de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165137824298">El periodo del gráfico es 6, que puede medirse desde el pico en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> hasta el siguiente pico en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o de la distancia entre los puntos más bajos. Por lo tanto, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6.</m:mn>
+ </m:mrow>
+</m:math> Si utilizamos el valor positivo para <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> hallamos que</para>
+<equation id="fs-id1165135196958" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mi>P</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165137611526">Hasta ahora, nuestra ecuación es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> Para la forma y el desplazamiento, tenemos más de una opción. Podríamos escribirlo como cualquiera de los siguientes:</para><list id="fs-id1165137466148" list-type="bulleted"><item>un coseno desplazado a la derecha</item>
+<item>un coseno negativo desplazado a la izquierda</item>
+<item>un seno desplazado a la izquierda</item>
+<item>un seno negativo desplazado a la derecha</item>
+</list><para id="fs-id1165137619397">Aunque cualquiera de ellos sería correcto, los desplazamientos del coseno son más fáciles de trabajar que los del seno en este caso porque implican valores enteros. Así que nuestra función se convierte en</para><equation id="fs-id1165137619402" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>2 </m:mn><m:mtext> o </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135704043">De nuevo, estas funciones son equivalentes, por lo que ambas dan lugar al mismo gráfico.</para>
+</solution>
+</exercise></example><note id="fs-id1165137805588" class="precalculus try"><label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_07"><problem id="fs-id1165137436869"><para id="fs-id1165137436870">Escriba una fórmula para la función graficada en la <link target-id="Figure_06_01_018"/>.</para>
+
+<figure id="Figure_06_01_018" class="medium"><media id="fs-id1165137647462" alt="Gráfico de 4sen((pi/5)x-pi/5)+4. El gráfico tiene un período de 10, una amplitud de 4 y un rango de [0,8].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_018n-0a72.jpg"/>
+</media>
+</figure></problem>
+
+<solution id="fs-id1165135173772"><para id="fs-id1165135173773">dos posibilidades: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise></note></section><section id="fs-id1165137735424"><title>Graficar las variaciones de <emphasis effect="italics">y</emphasis> = sen <emphasis effect="italics">x</emphasis> y de <emphasis effect="italics">y</emphasis> = cos <emphasis effect="italics">x</emphasis></title><para id="fs-id1165134148513">A lo largo de esta sección, hemos aprendido sobre los tipos de variaciones de las funciones seno y coseno y hemos utilizado esa información para escribir ecuaciones a partir de gráficos. Ahora podemos utilizar la misma información para crear gráficos a partir de ecuaciones.</para>
+<para id="fs-id1165137456137">En lugar de centrarnos en las ecuaciones de forma general</para>
+<equation id="fs-id1165137456140" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> y </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137807234">supondremos que <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> y trabajaremos con una forma simplificada de las ecuaciones en los siguientes ejemplos.</para><note id="fs-id1165135380117" class="how-to-notitle">
+<label>Elemento Cómo</label>
+<para id="fs-id1165135329942"><emphasis>Dada la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> dibujar su gráfico.</emphasis></para><list id="fs-id1165137542466" list-type="enumerated" number-style="arabic"><item>Identifique la amplitud, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Identifique el periodo, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Empiece en el origen, donde la función aumenta hacia la derecha si <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> es positivo o decreciente si <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> es negativo.</item>
+<item>A <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> hay un máximo local para <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> o un mínimo para <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>La curva vuelve al eje <emphasis effect="italics">x</emphasis> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Hay un mínimo local para <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> (máximo para <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> ) en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mi>A</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>La curva regresa al eje <emphasis effect="italics">x</emphasis> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow><m:mn>2 </m:mn><m:mi>π</m:mi></m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note>
+<!--CONTINUE HERE-->
+<example id="Example_06_01_08"><exercise id="fs-id1165134156046"><problem id="fs-id1165137565145">
+<title>Graficar una función e identificar la amplitud y el periodo</title>
+<para id="fs-id1165137565150">Dibuje un gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>π</m:mi><m:mi>x</m:mi>
+     </m:mrow>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165134190732">
+<para id="fs-id1165134190734">Comencemos por comparar la ecuación con la forma <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<list id="eip-id1165135169452" mark-suffix="" list-type="labeled-item"><item><emphasis effect="italics">Paso 1.</emphasis> Podemos ver en la ecuación que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>,</m:mi>
+ </m:mrow>
+</m:math> por lo que la amplitud es de 2.
+<equation id="fs-id1165135400292" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> </equation></item>
+<item><emphasis effect="italics">Paso 2.</emphasis> La ecuación muestra que <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que el periodo es
+<equation id="fs-id1165134178538" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>2 </m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+       <m:mn>2</m:mn>
+       <m:mi>π</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+ <m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+</item>
+<item><emphasis effect="italics">Paso 3.</emphasis> Dado a que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> es negativo, el gráfico desciende a medida que nos desplazamos a la derecha del origen.</item>
+<item><emphasis effect="italics">Pasos 4 a 7.</emphasis> Las intersecciones en <emphasis effect="italics">x</emphasis> están al principio de un periodo, <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> los puntos medios horizontales están en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> y al final de un periodo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> </item>
+</list><para id="fs-id1165137786248">Los puntos del trimestre incluyen el mínimo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> y el máximo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> Se producirá un mínimo local en 2 unidades por debajo de la línea media, en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y se producirá un máximo local en 2 unidades por encima de la línea media, a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+La </m:math> <link target-id="Figure_06_01_019"/> muestra el gráfico de la función.</para><figure id="Figure_06_01_019" class="small">
+<media id="fs-id1165137414262" alt="Gráfico de -2sen((pi/2)x). El gráfico tiene un rango de [-2,2], un periodo de 4 y una amplitud de 2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_019.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example><note id="fs-id1165137539724" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_08"><problem id="fs-id1165137409841"><para id="fs-id1165137628752">Dibuje un gráfico de <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,8</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine la línea media, la amplitud, el periodo y el desplazamiento de fase. </para></problem>
+<solution id="fs-id1165135342790"><media id="fs-id1165135397949" alt="Gráfico de -0,8cos(2x). El gráfico tiene un rango de [-0.8, 0.8], un periodo de pi, una amplitud de 0,8, y se refleja alrededor del eje x en comparación con el de su función matriz cos(x).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_020.jpg"/>
+</media>
+<para id="eip-id1165137938401">línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> amplitud: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,8</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> periodo: <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento de fase: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> o ninguna de las anteriores</para></solution>
+</exercise></note>
+
+
+<note id="fs-id1165137425929" class="how-to-notitle"><label>Elemento Cómo</label>
+<para id="fs-id1165137661914"><emphasis>Dada una función sinusoidal con un desplazamiento de fase y un desplazamiento vertical, dibujar su gráfico.</emphasis></para>
+<list id="fs-id1165135503706" list-type="enumerated" number-style="arabic"><item>Exprese la función en la forma general <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext> o </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Identifique la amplitud, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Identifique el periodo, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Identifique el desplazamiento de fase, <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>Dibuje el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> desplazado a la derecha o a la izquierda en <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y hacia arriba o hacia abajo en <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+</list></note><example id="Example_06_01_09"><exercise id="fs-id1165134116767">
+    <problem id="fs-id1165134116769">
+        <title>Graficar una sinusoide transformada</title>
+        <para id="fs-id1165137723733">Dibuje un gráfico de <m:math>
+            <m:mrow><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+                        <m:mrow>
+                            <m:mfrac>
+                                <m:mi>π</m:mi>
+                                <m:mn>4</m:mn>
+                            </m:mfrac>
+                            <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+                                <m:mi>π</m:mi>
+                                <m:mn>4</m:mn>
+                            </m:mfrac>
+
+                        </m:mrow>
+                        <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+            </m:mrow>
+        </m:math> </para>
+    </problem>
+    <solution id="fs-id1165135209894">
+
+        <list id="eip-id1165137474346" list-type="labeled-item"><item><emphasis effect="italics">Paso 1.</emphasis> La función ya está escrita de forma general: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Este gráfico tendrá la forma de una <term class="no-emphasis" id="term-00016">función seno</term>, comenzando en la línea media y aumentando hacia la derecha.</item>
+            <item><emphasis effect="italics">Paso 2.</emphasis> <m:math>
+                <m:mrow>
+<m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mn>3</m:mn> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>3.</m:mn>
+                </m:mrow>
+            </m:math> La amplitud es de 3.</item>
+            <item><emphasis effect="italics">Paso 3.</emphasis> Dado que <m:math>
+                <m:mrow>
+<m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>|</m:mo> <m:mrow>
+                        <m:mfrac>
+                            <m:mi>π</m:mi>
+                            <m:mn>4</m:mn>
+                        </m:mfrac>
+
+                    </m:mrow> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>4</m:mn>
+                    </m:mfrac>
+                    <m:mo>,</m:mo>
+                </m:mrow>
+            </m:math> determinamos el período de la siguiente manera.
+                <equation id="fs-id1165137572143" class="unnumbered"><label/> <m:math>
+                    <m:mrow>
+                        <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+                            <m:mrow>
+                                <m:mn>2 </m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+                            </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mfrac>
+                            <m:mrow>
+                                <m:mn>2 </m:mn><m:mi>π</m:mi>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mfrac>
+                                    <m:mi>π</m:mi>
+                                    <m:mn>4</m:mn>
+                                </m:mfrac>
+
+                            </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+                            <m:mn>4</m:mn>
+                            <m:mi>π</m:mi>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mn>8</m:mn>
+                    </m:mrow>
+                </m:math>
+                </equation>
+                <para id="fs-id1165137757960">El período es de 8.</para>
+            </item>
+            <item><emphasis effect="italics">Paso 4.</emphasis> Dado que <m:math>
+                <m:mrow>
+<m:mi>C</m:mi><m:mo>=</m:mo><m:mfrac>
+                        <m:mi>π</m:mi>
+                        <m:mn>4</m:mn>
+                    </m:mfrac>
+                    <m:mo>,</m:mo>
+                </m:mrow>
+            </m:math> el desplazamiento de fase es
+                <equation id="fs-id1165135684362" class="unnumbered"><label/> <m:math>
+                    <m:mrow>
+                        <m:mfrac>
+                            <m:mi>C</m:mi>
+                            <m:mi>B</m:mi>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mfrac>
+                            <m:mrow>
+                                <m:mfrac>
+                                    <m:mi>π</m:mi>
+                                    <m:mn>4</m:mn>
+                                </m:mfrac>
+
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mfrac>
+                                    <m:mi>π</m:mi>
+                                    <m:mn>4</m:mn>
+                                </m:mfrac>
+
+                            </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo><m:mn>1.</m:mn>
+                    </m:mrow>
+                </m:math>
+                </equation>
+                <para id="fs-id1165137634941">El desplazamiento de fase es de 1 unidad.</para>
+            </item>
+            <item><emphasis effect="italics">Paso 5.</emphasis> La <link target-id="Figure_06_01_021"/> muestra el gráfico de la función.
+                <figure id="Figure_06_01_021" class="small">
+                    <media id="fs-id1165137693945" alt="Gráfico de 3sen(*(pi/4)x-pi/4). El gráfico tiene una amplitud de 3, un periodo de 8 y un desplazamiento de fase de 1 hacia la derecha.">
+                        <image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_021.jpg"/>
+                    </media>
+                    <caption>Una sinusoide comprimida horizontalmente, estirada verticalmente y desplazada horizontalmente.</caption>
+                </figure>
+            </item>
+        </list></solution>
+</exercise>
+</example><note id="fs-id1165135181399" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_09"><problem id="fs-id1165137638347"><para id="fs-id1165137638348">Dibuje un gráfico de <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Determine la línea media, la amplitud, el periodo y el desplazamiento de fase.</para></problem>
+<solution id="fs-id1165137480594">
+<media id="fs-id1165137442771" alt="Gráfico de -2cos((pi/3)x+(pi/6)). El gráfico tiene una amplitud de 2, un periodo de 6 y un desplazamiento de fase de 0,5 hacia la izquierda.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_022.jpg"/>
+</media>
+<para id="fs-id1165137627836">línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> amplitud: <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> periodo: <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>6</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento de fase: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise></note>
+
+
+<example id="Example_06_01_10"><exercise id="fs-id1165137749524"><problem id="fs-id1165137749526">
+<title>Identificar las propiedades de una función sinusoidal</title>
+<para id="fs-id1165137406791">Dados <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>π</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> determine la amplitud, el periodo, el desplazamiento de fase y el desplazamiento vertical. A continuación, grafique la función.</para>
+</problem>
+<solution id="fs-id1165135487183">
+<para id="fs-id1165137431258">Empiece por comparar la ecuación con la forma general y siga los pasos indicados en el <link target-id="Example_06_01_09"/>.</para>
+<equation id="fs-id1165134225658" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> </equation>
+<list id="eip-id1165134311998" list-type="labeled-item"><item><emphasis effect="italics">Paso 1.</emphasis> La función ya está escrita de forma general.</item>
+<item><emphasis effect="italics">Paso 2.</emphasis> Dado que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la amplitud es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><emphasis effect="italics">Paso 3.</emphasis> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que el periodo es <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mi>π</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>4.</m:mn>
+ </m:mrow>
+</m:math> El período es de 4.</item>
+<item><emphasis effect="italics">Paso 4.</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que calculamos el desplazamiento de fase como <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>π</m:mi><m:mo>,</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mi>π</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> El desplazamiento de fase es <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><emphasis effect="italics">Paso 5.</emphasis> <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que la línea media es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>, </m:mo>
+ </m:mrow>
+</m:math> y el desplazamiento vertical es en 3 unidades hacia arriba.</item>
+</list><para id="fs-id1165137936633">Dado que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> es negativo, el gráfico de la función coseno se ha reflejado alrededor del eje <emphasis effect="italics">x</emphasis>.</para><para id="fs-id1165137761033">La <link target-id="Figure_06_01_028"/> muestra un ciclo del gráfico de la función.</para>
+
+<figure id="Figure_06_01_028" class="small">
+<media id="fs-id1165137794283" alt="Gráfico de -2cos((pi/2)x+pi)+3. El gráfico muestra una amplitud de 2, una línea media en y=3 y un período de 4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_028.jpg"/>
+</media>
+</figure>
+</solution>
+</exercise></example></section><section id="fs-id1165137939840">
+<title>Usar las transformaciones de las funciones seno y coseno</title>
+<para id="fs-id1165137891269">Podemos utilizar las transformaciones de las funciones seno y coseno en numerosas aplicaciones. Como se mencionó al principio del capítulo, el <term class="no-emphasis" id="term-00017">movimiento circular</term> puede modelarse con la función seno o <term class="no-emphasis" id="term-00018">coseno</term>.</para><example id="Example_06_01_11">
+<exercise id="fs-id1165137612101">
+<problem id="fs-id1165137612103">
+<title>Hallar la componente vertical del movimiento circular</title>
+<para id="fs-id1165137731540">Un punto gira alrededor de un círculo de radio 3 centrado en el origen. Dibuje un gráfico de la coordenada de la <emphasis effect="italics">y</emphasis> del punto como función del ángulo de rotación.</para></problem>
+<solution id="fs-id1165137552985">
+<para id="fs-id1165137552987">Recordemos que, para un punto en un círculo de radio <emphasis effect="italics">r</emphasis>, la coordenada de la <emphasis effect="italics">y</emphasis> del punto es <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que en este caso, obtenemos la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La constante 3 provoca un estiramiento vertical de los valores de <emphasis effect="italics">y</emphasis> de la función por un factor de 3, que podemos ver en el gráfico en la <link target-id="Figure_06_01_023"/>.</para><figure id="Figure_06_01_023" class="small">
+<media id="fs-id1165137603461" alt="Gráfico de 3sen(x). El gráfico tiene un período de 2pi, una amplitud de 3 y un rango de [-3,3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_023.jpg"/>
+</media>
+</figure>
+</solution>
+
+<commentary id="fs-id1165137556901">
+<title>Análisis</title>
+<para id="fs-id1165137400109">Obsérvese que el periodo de la función sigue siendo <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> al recorrer el círculo, volvemos al punto <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>6</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>...</m:mn><m:mo/>
+ </m:mrow>
+</m:math> Porque las salidas del gráfico oscilarán ahora entre <m:math>
+ <m:mrow>
+  <m:mo>–</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la amplitud de la onda sinusoidal es <m:math>
+ <m:mrow>
+  <m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> </para></commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165135319496" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_10"><problem id="fs-id1165135403587"><para id="fs-id1165135403588">¿Cuál es la amplitud de la función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>7</m:mn><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Dibuje un gráfico de esta función.</para></problem>
+<solution id="fs-id1165137534006"><para id="fs-id1165137534008">7</para>
+
+<media id="fs-id1165134187242" alt="Gráfico de 7cos(x). El gráfico tiene una amplitud de 7, un periodo de 2pi y un rango de [-7,7].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_024.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<example id="Example_06_01_12">
+<exercise id="fs-id1165135190936"><problem id="fs-id1165135190938">
+<title>Hallar la componente vertical del movimiento circular</title>
+<para id="fs-id1165135210138">Un círculo con un radio de 3 pies se monta con su centro a 4 pies del suelo. El punto más cercano al suelo está marcado como <emphasis effect="italics">P</emphasis>, como se muestra en la <link target-id="Figure_06_01_025"/>. Dibuje un gráfico de la altura sobre el suelo del punto <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> al girar el círculo; a continuación, halle una función que dé la altura en términos del ángulo de rotación.</para>
+
+<figure id="Figure_06_01_025" class="small">
+<media id="fs-id1165137597150" alt="Ilustración de un círculo levantado a 4 pies del suelo. El círculo tiene un radio de 3 pies. Hay un punto P marcado en la circunferencia del círculo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_025.jpg"/>
+</media>
+</figure>
+
+</problem>
+<solution id="fs-id1165137863854">
+<para id="fs-id1165137863856">Al dibujar la altura, observamos que comenzará a 1 pie sobre el suelo, luego aumentará hasta 7 pies sobre el suelo y continuará oscilando 3 pies por encima y por debajo del valor central de 4 pies, como se muestra en la <link target-id="Figure_06_01_026"/>.</para>
+
+
+<figure id="Figure_06_01_026" class="small">
+<media id="fs-id1165137618998" alt="Gráfico de -3cox(x)+4. El gráfico tiene una línea media en y=4, una amplitud de 3 y un periodo de 2pi.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_026.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137601519">Aunque podríamos utilizar una transformación de la función seno o coseno, empezamos por buscar las características que harían que una función fuera más fácil de utilizar que la otra. Utilizaremos una función coseno porque comienza en el valor más alto o más bajo, mientras que la <term class="no-emphasis" id="term-00019">función seno</term> comienza en el valor medio. Un coseno estándar comienza en el valor más alto, y este gráfico comienza en el valor más bajo, por lo que necesitamos incorporar una reflexión vertical.</para><para id="fs-id1165137601522">En segundo lugar, vemos que el gráfico oscila 3 por encima y por debajo del centro, mientras que un coseno básico tiene una amplitud de 1, por lo que este gráfico se ha estirado verticalmente en 3, como en el último ejemplo.</para><para id="fs-id1165134401716">Finalmente, para desplazar el centro del círculo hasta una altura de 4, el gráfico se ha desplazado verticalmente hacia arriba en 4 unidades. Si agrupamos estas transformaciones, hallamos que</para>
+<equation id="fs-id1165133047569" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </equation></solution>
+</exercise></example>
+
+<note id="fs-id1165137692182" class="precalculus try">
+<label>Elemento Ejercicio</label>
+<exercise id="ti_06_01_11"><problem id="fs-id1165137447011"><para id="fs-id1165137447012">Se fija un peso a un resorte, que luego se cuelga de una tabla, como se muestra en la <link target-id="Figure_06_01_029"/>. Al oscilar el resorte hacia arriba y hacia abajo, la posición <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> del peso en relación con el tablero oscila entre <m:math>
+ <m:mrow>
+  <m:mn>-1</m:mn>
+ </m:mrow>
+</m:math> pulgadas (en el tiempo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> con <m:math>
+ <m:mrow>
+  <m:mn>–7</m:mn>
+ </m:mrow>
+</m:math> pulgadas (en el tiempo <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> debajo del tablero. Supongamos que la posición de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> se da como una función sinusoidal de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Dibuje un gráfico de la función y luego halle una función coseno que dé la posición <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> en términos de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><figure id="Figure_06_01_029" class="small">
+<media id="fs-id1165137811089" alt="Ilustración de un resorte con longitud y.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_029.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165137736527">
+<para id="fs-id1165137736529"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> </para>
+<media id="fs-id1165137786551" alt="Gráfico de coseno con rango [-1,-7]. El periodo es de 2 pi. Máximos locales en (0,-1), (2pi,-1) y (4pi, -1). Mínimos locales en (pi,-7) y (3pi, -7).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_027.jpg"/>
+</media>
+</solution>
+</exercise></note>
+
+<example id="Example_06_01_13">
+<exercise id="fs-id1165135187190"><problem id="fs-id1165137812716">
+<title>Determinar la altura de un pasajero en una rueda de la fortuna</title>
+<para id="fs-id1165137500935">El London Eye es una enorme rueda de la fortuna de 135 metros de diámetro. Efectúa una rotación cada 30 minutos. Los pasajeros suben desde una plataforma a 2 metros del suelo. Exprese la altura de un pasajero sobre el suelo como función del tiempo en minutos.</para></problem>
+<solution id="fs-id1165137837117">
+<para id="fs-id1165137837120">Con un diámetro de 135 m, la rueda de la fortuna tiene un radio de 67,5 m. La altura oscilará con una amplitud de 67,5 m por encima y por debajo del centro.</para>
+<para id="fs-id1165134086000">Los pasajeros suben a 2 m sobre el nivel del suelo, por lo que el centro de la rueda de la fortuna deberá situarse a <m:math>
+ <m:mrow>
+  <m:mn>67,5</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>69,5</m:mn>
+ </m:mrow>
+</m:math> m sobre el nivel del suelo. La línea media de la oscilación estará a 69,5 m.</para>
+<para id="fs-id1165137578349">La rueda de fortuna tarda 30 minutos en completar una revolución, por lo que la altura oscilará con un período de 30 minutos.</para><para id="fs-id1165137529532">Por último, dado que el pasajero sube al punto más bajo, la altura comenzará en el valor más pequeño y aumentará, siguiendo la forma de una curva coseno, reflejada verticalmente.</para>
+<list id="fs-id1165137529537" list-type="bulleted"><item>Amplitud: <m:math>
+ <m:mrow>
+  <m:mn>67,5;</m:mn>
+ </m:mrow>
+</m:math> por lo que <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:mn>67,5</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Línea media <m:math>
+ <m:mrow>
+  <m:mn>69,5;</m:mn>
+ </m:mrow>
+</m:math> por lo que <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>=</m:mo><m:mn>69,5</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item>Periodo: <m:math>
+ <m:mrow>
+  <m:mn>30,</m:mn>
+ </m:mrow>
+</m:math> por lo que <m:math>
+ <m:mrow>
+  <m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>30</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </item>
+<item>Forma: <m:math>
+ <m:mrow>
+  <m:mi>-cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </item>
+</list><para id="fs-id1165137767318">Una ecuación para la altura del pasajero sería</para>
+<equation id="fs-id1165135403551" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>67,5</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mrow>
+      <m:mn>15</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    <m:mi>t</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>69,5</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137634889">donde <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> está en minutos, mientras que <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> se mide en metros.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137540365" class="precalculus media media-notitle">
+<label>Etiqueta de Recursos multimedia</label>
+<para id="fs-id1165137761688">Acceda a estos recursos en línea para obtener más información y practicar con los gráficos de las funciones seno y coseno.</para>
+<list id="fs-id1165137761692" list-type="bulleted"><item><link url="http://openstax.org/l/ampperiod">Amplitud y período del seno y del coseno</link></item>
+<item><link url="http://openstax.org/l/translasincos">Traslación del seno y del coseno</link></item>
+<item><link url="http://openstax.org/l/transformsincos">Graficar transformaciones seno y coseno</link></item>
+<item><link url="http://openstax.org/l/graphsinefunc">Graficar la función seno</link></item>
+</list></note>
+
+
+</section>
+<section id="fs-id1165137574576" class="key-equations"><title>Ecuaciones clave</title><table id="eip-id1165133087385" summary=".." class="unnumbered unstyled"><label/>
+<title/>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry>Funciones sinusoidales</entry>
+<entry> <m:math>
+ <m:mtable columnalign="left">
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mi>x</m:mi>
+    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+
+</m:math>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section><section id="fs-id1165137540392" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165137762207" list-type="bulleted"><item>Las funciones periódicas se repiten a partir de un valor determinado. El valor más pequeño es el periodo. Las funciones básicas seno y coseno tienen un periodo de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>La función <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es impar, por lo que su gráfico es simétrico respecto al origen. La función <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es par, por lo que su gráfico es simétrico con respecto al eje <emphasis effect="italics">y</emphasis>.</item>
+<item>El gráfico de una función sinusoidal tiene la misma forma general que una función seno o coseno.</item>
+<item>En la fórmula general de una función sinusoidal, el periodo es <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mi>B</m:mi> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Vea el <link target-id="Example_06_01_01"/>.</item>
+<item>En la fórmula general de una función sinusoidal, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow>
+ </m:mrow>
+</m:math> representa la amplitud. Si los valores de <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>></m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función se estira, mientras que si <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>|</m:mo> <m:mi>A</m:mi> <m:mo>|</m:mo></m:mrow><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la función se comprime. Vea el <link target-id="Example_06_01_02"/>.</item>
+<item>El valor <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> en la fórmula general de una función sinusoidal indica el desplazamiento de fase. Vea el <link target-id="Example_06_01_03"/>.</item>
+<item>El valor <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> en la fórmula general de una función sinusoidal indica el desplazamiento vertical desde la línea media. Vea el <link target-id="Example_06_01_04"/>.</item>
+<item>Las combinaciones de variaciones de funciones sinusoidales se determinan a partir de una ecuación. Vea el <link target-id="Example_06_01_05"/>.</item>
+<item>La ecuación de una función sinusoidal se determina a partir de un gráfico. Vea el <link target-id="Example_06_01_06"/> y el <link target-id="Example_06_01_07"/>.</item>
+<item>Una función se puede graficar al identificar su amplitud y su periodo. Vea el <link target-id="Example_06_01_08"/> y el <link target-id="Example_06_01_09"/>.</item>
+<item>Una función también se puede graficar al identificar su amplitud, periodo, desplazamiento de fase y desplazamiento horizontal. Vea el <link target-id="Example_06_01_10"/>.</item>
+<item>Las funciones sinusoidales pueden utilizarse para resolver problemas del mundo real. Vea el <link target-id="Example_06_01_11"/>, el <link target-id="Example_06_01_12"/> y el <link target-id="Example_06_01_13"/>.</item>
+</list></section>
+<section id="fs-id1165137842570" class="section-exercises"><title>Ejercicios de la sección</title><section id="fs-id1165137475812">
+<title>Verbales</title>
+<exercise id="fs-id1165137432049">
+<problem id="fs-id1165137415633"><para id="fs-id1165137415634">¿Por qué las funciones seno y coseno reciben el nombre de funciones periódicas?</para></problem>
+<solution id="fs-id1165137415637"><para id="fs-id1165137415638">Las funciones seno y coseno tienen la propiedad de que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>P</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para un determinado <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Esto significa que los valores de la función se repiten para cada <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> unidades en el eje <emphasis effect="italics">x</emphasis>.</para></solution>
+</exercise>
+<exercise id="fs-id1165135305829">
+<problem id="fs-id1165135305831"><para id="fs-id1165135305832">¿Cómo se compara el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> con el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> Explique cómo podría trasladar horizontalmente el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> para obtener <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134290285">
+<problem id="fs-id1165134290287"><para id="fs-id1165134290288">Para la ecuación <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> ¿qué constantes afectan el rango de la función y cómo lo afectan?</para></problem>
+<solution id="fs-id1165137811265"><para id="fs-id1165137431114">El valor absoluto de la constante <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> (amplitud) aumenta el alcance total y la constante <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> (desplazamiento vertical) desplaza el gráfico verticalmente.</para></solution>
+</exercise>
+<exercise id="fs-id1165137810849">
+<problem id="fs-id1165137810851"><para id="fs-id1165137810852">¿Cómo se relaciona el rango de una función seno trasladada con la ecuación <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>A</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137410268">
+<problem id="fs-id1165137432413"><para id="fs-id1165137432414">¿Cómo se puede utilizar el círculo unitario para construir el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>?</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137407584"><para id="fs-id1165137407585">En el punto en el que el lado terminal de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> interseca el círculo unitario, se puede determinar que el <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> es igual a la coordenada de la <emphasis effect="italics">y</emphasis> del punto.</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165137663688">
+<title>Gráficos</title>
+<para id="fs-id1165137742733">En los siguientes ejercicios, grafique dos periodos completos de cada función e indique la amplitud, el periodo y la línea media. Indique los valores máximos y mínimos de <emphasis effect="italics">y</emphasis> así como sus valores correspondientes de <emphasis effect="italics">x</emphasis> en un periodo para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Redondee las respuestas a dos decimales, si es necesario.</para><exercise id="fs-id1165137570454">
+<problem id="fs-id1165137570456"><para id="fs-id1165137570457"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137423636"><problem id="fs-id1165137423638"><para id="fs-id1165137423639"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135456747">
+
+<media id="fs-id1165137871371" alt="Gráfico de (2/3)cos(x). El gráfico tiene una amplitud de 2/3, un periodo de 2pi y un rango de [-2/3, 2/3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_202.jpg"/>
+</media>
+
+<para id="fs-id1165137817435">amplitud: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> periodo: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>2 </m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> para un periodo, el gráfico comienza en 0 y termina en <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135663289">
+<problem id="fs-id1165135663292">
+<para id="fs-id1165135663294"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi>
+  <m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137678150"><problem id="fs-id1165135160163"><para id="fs-id1165135160164"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137407212">
+
+<media id="fs-id1165135151296" alt="Gráfico de 4sen(x). El gráfico tiene una amplitud de 4, un periodo de 2pi y un rango de [-4, 4].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_204.jpg"/>
+</media>
+
+<para id="fs-id1165137535655">amplitud: 4; periodo: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> un periodo completo ocurre desde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> hasta <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><exercise id="fs-id1165137451618">
+<problem id="fs-id1165137451620"><para id="fs-id1165137451622"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137794096"><problem id="fs-id1165137794099"><para id="fs-id1165137585075"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137871346">
+
+<media id="fs-id1165135386486" alt="Gráfico de cos(2x). El gráfico tiene una amplitud de 1, un periodo de pi y un rango de [-1,1].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_206.jpg"/>
+</media>
+
+<para id="fs-id1165137827174">amplitud: 1; periodo: <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> un periodo completo se grafica desde <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> hasta <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135241360">
+<problem id="fs-id1165137531898"><para id="fs-id1165137531899"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165137793956"><problem id="fs-id1165137793958"><para id="fs-id1165137793959"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>π</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137804069">
+<media id="fs-id1165137874893" alt="Gráfico de 4cos(pi*x). El gráfico tiene una amplitud de 4, un periodo de 2 y un rango de [-4, 4].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_208.jpg"/>
+</media>
+
+<para id="fs-id1165137434223">amplitud: 4; periodo: 2; línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135487094">
+<problem id="fs-id1165135181423"><para id="fs-id1165135181424"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>6</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+<exercise id="fs-id1165134277994"><problem id="fs-id1165134277996"><para id="fs-id1165134277997"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165137843946">
+
+<media id="fs-id1165137424209" alt="Gráfico de 3sen(8(x+4))+5. El gráfico tiene una amplitud de 3, un rango de [2, 8] y un periodo de pi/4.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_210.jpg"/>
+</media>
+
+<para id="fs-id1165134107350">amplitud: 3; periodo: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>8</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,12</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,516</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento horizontal: <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>4</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> traslación vertical 5; se produce un periodo de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> hasta <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165137870948">
+<problem id="fs-id1165135457711"><para id="fs-id1165135457712"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>21</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135675218"><problem id="fs-id1165137414495"><para id="fs-id1165137414496"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165134284471">
+
+<media id="fs-id1165135487190" alt="Gráfico de 5sen(5x+20)-2. El gráfico tiene una amplitud de 5, un periodo de 2pi/5 y un rango de [-7,3].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_212.jpg"/>
+</media>
+
+<para id="fs-id1165137862366">amplitud: 5; periodo: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−2</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,08</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>−7</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,71;</m:mn>
+ </m:mrow>
+</m:math> desplazamiento de fase: <m:math>
+ <m:mrow>
+  <m:mn>-4</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> traslación vertical: <m:math>
+ <m:mrow>
+  <m:mn>−2;</m:mn>
+ </m:mrow>
+</m:math> un periodo completo puede graficarse en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> hasta <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><para id="fs-id1165137803788">En los siguientes ejercicios, grafique un periodo completo de cada función, empezando por <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Para cada función, indique la amplitud, el periodo y la línea media. Indique los valores máximos y mínimos de <emphasis effect="italics">y</emphasis> así como sus valores correspondientes de <emphasis effect="italics">x</emphasis> en un periodo para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Indique el desplazamiento de fase y la traslación vertical, si procede. Redondee las respuestas a dos decimales, si es necesario.</para><exercise id="fs-id1165135154308">
+<problem id="fs-id1165137694190"><para id="fs-id1165137694191"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>- −</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para>
+</problem></exercise>
+
+<exercise id="fs-id1165137898084"><problem id="fs-id1165137898086"><para id="fs-id1165137898087"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165134541171">
+
+<media id="fs-id1165135411369" alt="Gráfica de -cos(t+pi/3)+1. El gráfico tiene una amplitud de 1, un periodo de 2pi y un rango de [0,2]. Desplazamiento de fase pi/3 hacia la izquierda.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_214.jpg"/>
+</media>
+
+<para id="fs-id1165137911368">amplitud: 1; periodo: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2,09</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2,09</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5,24</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento de fase: <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> traslación vertical: 1; un periodo completo es de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> a <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise><exercise id="fs-id1165135250664">
+<problem id="fs-id1165135250666"><para id="fs-id1165135250667"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137552971"><problem id="fs-id1165137552973"><para id="fs-id1165137552974"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac>
+     <m:mrow>
+      <m:mn>5</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137541180">
+<media id="fs-id1165135349231" alt="Gráfico de -sen((1/2)*t + 5pi/3). El gráfico tiene una amplitud de 1, un rango de [-1,1], un periodo de 4pi y un desplazamiento de fase de -10pi/3.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_216.jpg"/>
+</media>
+<para id="fs-id1165135511335">amplitud: 1; periodo: <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>π</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> máximo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>11,52</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> mínimo: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> se produce en <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5,24</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento de fase: <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>;</m:mo>
+ </m:mrow>
+</m:math> desplazamiento vertical: 0 </para>
+</solution>
+</exercise><exercise id="fs-id1165135247503">
+<problem id="fs-id1165135247505"><para id="fs-id1165135247506"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+<exercise id="fs-id1165137658354" class="media-set-2"><problem id="fs-id1165137658356"><para id="fs-id1165137823542">Determine la amplitud, la línea media, el periodo y una ecuación que implique la función seno para el gráfico que se muestra en la <link target-id="Figure_06_01_218"/>.</para>
+<figure id="Figure_06_01_218" class="small">
+<media id="fs-id1165134378625" alt="Gráfico sinusoidal con amplitud de 2, rango de [-5, -1], periodo de 4 y línea media en y=-3." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_218.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135708054"><para id="fs-id1165135708055">amplitud: 2; línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> periodo: 4; ecuación: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise><exercise id="fs-id1165137705148" class="media-set-2"><problem id="fs-id1165135169261"><para id="fs-id1165135169262">Determine la amplitud, el periodo, la línea media y una ecuación que implique el coseno para el gráfico que se muestra en la <link target-id="Figure_06_01_219"/>.</para>
+<figure id="Figure_06_01_219" class="small">
+<media id="fs-id1165135192938" alt="Gráfico con una función coseno matriz, con amplitud de 3, periodo de pi, línea media en y=-1, y rango de [-4,2]" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_219.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise><exercise id="fs-id1165135688798" class="media-set-2">
+<problem id="fs-id1165135688800"><para id="fs-id1165135688801">Determine la amplitud, el periodo, la línea media y una ecuación que implique el coseno para el gráfico que se muestra en la <link target-id="Figure_06_01_220"/>.</para>
+<figure id="Figure_06_01_220" class="small">
+<media id="fs-id1165134045717" alt="Gráfico con una función coseno matriz, con amplitud de 2, periodo de 5, línea media en y=3, y rango de [1,5].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_220.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165134378700"><para id="fs-id1165134378701">amplitud: 2; periodo: 5; línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> ecuación: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135333824" class="media-set-2">
+<problem id="fs-id1165135333826"><para id="fs-id1165135333827">Determine la amplitud, el periodo, la línea media y una ecuación que implique el seno para el gráfico que se muestra en la <link target-id="Figure_06_01_221"/>.</para>
+<figure id="Figure_06_01_221" class="small">
+<media id="fs-id1165134262487" alt="Gráfico sinusoidal con amplitud de 4, periodo de 10, línea media en y=0, y rango [-4,4].">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_221.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise>
+<exercise id="fs-id1165137473550" class="media-set-2">
+<problem id="fs-id1165134389954"><para id="fs-id1165134389955">Determine la amplitud, el periodo, la línea media y una ecuación que implique el coseno para el gráfico que se muestra en <link target-id="Figure_06_01_222"/>.</para>
+<figure id="Figure_06_01_222" class="small">
+<media id="fs-id1165137676946" alt="Gráfico con una función coseno matriz, donde el rango de la función es [-4,4], la amplitud de 4 y el periodo de 2.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_222.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165135534972"><para id="fs-id1165135534973">amplitud: 4; periodo: 2; línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> ecuación: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137425686" class="media-set-2">
+<problem id="fs-id1165137425688"><para id="fs-id1165137425689">Determine la amplitud, el periodo, la línea media y una ecuación que implique el seno para el gráfico que se muestra en la <link target-id="Figure_06_01_223"/>.</para>
+<figure id="Figure_06_01_223" class="small">
+<media id="fs-id1165137445238" alt="Gráfico con la función seno matriz. Amplitud 2, periodo 2, línea media y=0">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_223.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+<exercise id="fs-id1165137588535" class="media-set-2">
+<problem id="fs-id1165137588538"><para id="fs-id1165137588539">Determine la amplitud, el periodo, la línea media y una ecuación que implique el coseno para el gráfico que se muestra en la <link target-id="Figure_06_01_224"/>.</para>
+<figure id="Figure_06_01_224" class="small">
+<media id="fs-id1165135252106" alt="Gráfico con la función coseno matriz. Amplitud 2, periodo 2, línea media y=1">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_224.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1165137600948"><para id="fs-id1165137600949">amplitud: 2; periodo: 2; línea media: <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> ecuación: <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165135530674" class="media-set-2">
+<problem id="fs-id1165137823256"><para id="fs-id1165137823257">Determine la amplitud, el periodo, la línea media y una ecuación que implique el seno para el gráfico que se muestra en la <link target-id="Figure_06_01_225"/>.</para>
+
+<figure id="Figure_06_01_225" class="small">
+<media id="fs-id1165133362029" alt="Gráfico con una función seno matriz. Amplitud 1, periodo 4 y línea media y=0.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_06_01_225.jpg"/>
+</media>
+</figure></problem>
+</exercise>
+</section>
+
+
+
+<section id="fs-id1165134043561">
+<title>Algebraicos</title>
+<para id="fs-id1165134043566">En los siguientes ejercicios, supongamos que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><exercise id="fs-id1165135471271"><problem id="fs-id1165135471273"><para id="fs-id1165137650837">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> resuelva <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm685047824">
+<para id="eip-idm685047568"> <m:math>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>π</m:mn>
+
+</m:math> </para></solution></exercise><exercise id="fs-id1165137400540"><problem id="fs-id1165137400542"><para id="fs-id1165137400543">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> resuelva <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137832261"><para id="fs-id1165137784896"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise id="fs-id1165137637941"><problem id="fs-id1165137637943"><para id="fs-id1165137637944">Evalúe <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm498263712">
+<para id="eip-idm438787472"> <m:math>
+<m:mtext>sen</m:mtext><m:mo>(</m:mo><m:mfrac><m:mn>π</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
+</m:math> </para></solution>
+</exercise><exercise id="fs-id1165137804692"><problem id="fs-id1165137442246"><para id="fs-id1165137442247">En <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>2 </m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Calcule todos los valores de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137837133"><para id="fs-id1165137837134"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise id="fs-id1165137416978"><problem id="fs-id1165135189866"><para id="fs-id1165135189867">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> el valor o los valores máximos de la función se producen en qué valor o valores de <emphasis effect="italics">x</emphasis>?</para></problem>
+<solution id="eip-idm232022464">
+<para id="eip-idm232022208">
+ <m:math>
+<m:mfrac><m:mn>π</m:mn><m:mn>2</m:mn></m:mfrac>
+</m:math>
+</para>
+</solution></exercise><exercise id="fs-id1165137942464"><problem id="fs-id1165137942466"><para id="fs-id1165137942467">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> ¿en qué valores de <emphasis effect="italics">x</emphasis> se producen los valores mínimos de la función?</para></problem>
+<!--<solution id="fs-id1165134042136"><para id="fs-id1165134042137"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise id="fs-id1165137633931"><problem id="fs-id1165137633933"><para id="fs-id1165137633934">Demuestre que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Esto significa que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es una función impar y posee simetría con respecto a ________________.</para></problem>
+<solution id="eip-idm468422592">
+<para id="eip-idm468422336"> <m:math>
+<m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mtext>sen</m:mtext><m:mi>x</m:mi>
+</m:math> es simétrico.</para></solution></exercise><para id="fs-id1165137806520">En los siguientes ejercicios, supongamos que <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><exercise id="fs-id1165137844202"><problem id="fs-id1165137844204"><para id="fs-id1165137844205">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> resuelva la ecuación <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<!--<solution id="fs-id1165134129955"><para id="fs-id1165134129956"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise id="fs-id1165134043804"><problem id="fs-id1165135191893"><para id="fs-id1165135191894">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> resuelva <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm503657376">
+<para id="eip-idm456116448">
+ <m:math>
+<m:mfrac><m:mn>π</m:mn><m:mn>3</m:mn></m:mfrac><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mn>π</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac>
+</m:math>
+</para>
+</solution>
+</exercise><exercise id="fs-id1165137423113"><problem id="fs-id1165137423115"><para id="fs-id1165137447173">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> halle las intersecciones en <emphasis effect="italics">x</emphasis> de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<!--<solution id="fs-id1165135440505"><para id="fs-id1165135440506"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise><exercise id="fs-id1165134394631"><problem id="fs-id1165134394633"><para id="fs-id1165134230442">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> halle los valores de <emphasis effect="italics">x</emphasis> en los que la función tiene un valor máximo o mínimo.</para></problem>
+<solution id="eip-idm649466192">
+<para id="eip-idm649465936">Máximo: <m:math>
+<m:mn>1</m:mn>
+</m:math> en <m:math>
+<m:mi>x</m:mi><m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>; mínimo: <m:math>
+<m:mn>-1</m:mn>
+</m:math> a las <m:math>
+<m:mi>x</m:mi><m:mo>=</m:mo>
+<m:mn>π</m:mn>
+</m:math> </para></solution></exercise><exercise id="fs-id1165137442136"><problem id="fs-id1165137442139"><para id="fs-id1165137442140">En <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>),</m:mo></m:mrow>
+ </m:mrow>
+</m:math> resuelva la ecuación <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<!--<solution id="fs-id1165137933103"><para id="fs-id1165137933104"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>&#960;</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>&#960;</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>-->
+</exercise></section>
+
+<section id="fs-id1165137638455">
+<title>En tecnología</title>
+<exercise id="fs-id1165135193041"><problem id="fs-id1165135193043">
+  <para id="fs-id1165137639606">Grafique <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Explique por qué el gráfico aparece como lo hace.</para></problem>
+<solution id="eip-idm501526848">
+<para id="eip-idm466138656">Se añade una función lineal a una función seno periódica. El gráfico no tiene amplitud porque, al aumentar la función lineal sin límite, la función combinada <m:math>
+<m:mi>h</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mtext>sen</m:mtext><m:mi>x</m:mi>
+</m:math> también aumentará sin límites. El gráfico está acotado entre los gráficos de <m:math>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+</m:math> y <m:math>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mn>1</m:mn>
+</m:math> porque el seno oscila entre -1 y 1.
+
+<media id="eip-idm358410368" alt=""><image mime-type="jpeg" src="../../media/CNX_Precalc_Figure_06_01_226.jpg"/></media></para></solution></exercise><exercise id="fs-id1165137736577"><problem id="fs-id1165137736579"><para id="fs-id1165137637316">Grafique <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>- −</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>100</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿El gráfico apareció como se predijo en el ejercicio anterior?</para></problem>
+<!--<solution id="fs-id1165137433807">
+<para id="fs-id1165137433809">The graph appears linear. The linear functions dominate the shape of the graph for large values of <m:math>
+ <m:mrow>
+  <m:mtext>&#8201;</m:mtext><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<media id="fs-id1165137604843" alt="A sinusoidal graph that increases like the function y=x, shown from 0 to 100.">
+<image mime-type="image/jpg" src="CNX_Precalc_Figure_06_01_227.jpg"/>
+</media>
+
+</solution>-->
+</exercise><exercise id="fs-id1165137891285"><problem id="fs-id1165137891288">
+<para id="fs-id1165137891290">Grafique <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y explique cómo varía el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="eip-idm304745008">
+<para id="eip-idm451079760">No hay amplitud porque la función no está acotada.
+<media id="eip-idm586629920" alt=""><image mime-type="jpeg" src="../../media/CNX_Precalc_Figure_06_01_228.jpg"/></media></para></solution>
+</exercise><exercise id="fs-id1165133085093"><problem id="fs-id1165133085095"><para id="fs-id1165133085096">Grafique <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> en la ventana <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>−10</m:mn><m:mo>,</m:mo><m:mn>10</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y explique lo que muestra el gráfico.</para></problem>
+<!--<solution id="fs-id1165135322029">
+<para id="fs-id1165134283628">The graph is symmetric with respect to the <emphasis effect="italics">y</emphasis>-axis and there is no amplitude because the function is not periodic.</para>
+
+
+<media id="fs-id1165137570542" alt="A sinusoidal graph that has increasing peaks and decreasing lows as the absolute value of x increases.">
+<image mime-type="image/jpg" src="CNX_Precalc_Figure_06_01_229.jpg"/>
+</media>
+
+</solution>-->
+</exercise><exercise id="fs-id1165137433574"><problem id="fs-id1165137433577">
+<para id="fs-id1165137696192">Grafique <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> en la ventana <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mn>−5</m:mn><m:mi>π</m:mi><m:mo>,</m:mo><m:mn>5</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> y explique lo que muestra el gráfico.</para></problem>
+<solution id="eip-idm420606880">
+<para id="eip-idm420606304">El gráfico es simétrico con respecto al eje y; además, no hay amplitud porque los límites de la función disminuyen a medida que <m:math>
+<m:mo>|</m:mo><m:mi>x</m:mi><m:mo>|</m:mo>
+</m:math> aumenta. Parece que hay una asíntota horizontal en <m:math>
+<m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:math>.
+<media id="eip-idm1385291856" alt=""><image mime-type="jpeg" src="../../media/CNX_Precalc_Figure_06_01_230.jpg"/></media>
+</para></solution></exercise></section>
+
+<section id="fs-id1165135333770">
+<title>Aplicaciones en el mundo real</title>
+<exercise id="fs-id1165135333775" class="media-set-2"><problem id="fs-id1165137435670"><para id="fs-id1165137435671">Una rueda de la fortuna tiene 25 metros de diámetro y se aborda desde una plataforma que está a 1 metro del suelo. La posición de las seis en punto de la rueda de la fortuna está al nivel de la plataforma de carga. La rueda completa 1 revolución completa en 10 minutos. La función <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> da la altura de una persona en metros sobre el suelo <emphasis effect="italics">t</emphasis> minutos después de que la rueda de la fortuna comience a girar.</para><list id="fs-id1165135194497" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Halle la amplitud, la línea media y el periodo de <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> Halle una fórmula para la función de altura <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓒ</span> ¿A qué altura se encuentra una persona después de 5 minutos?</item>
+</list>
+</problem>
+<!--
+<solution id="fs-id1165135205671">
+<list id="fs-id1165135205673" list-type="enumerated" number-style="lower-alpha"><item>Amplitude: 12.5; period: 10; midline: <m:math>
+ <m:mrow>
+  <m:mtext>&#8201;</m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>13.5</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item> <m:math>
+ <m:mrow>
+  <m:mi>h</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12.5</m:mn><m:mi>sin</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>&#960;</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>t</m:mi><m:mo>&#8722;</m:mo><m:mn>2.5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>13.5</m:mn><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> </item>
+<item>26 ft</item>
+</list></solution> -->
+</exercise></section></section></content>
+<glossary>
+<definition id="fs-id1165137414167">
+<term>amplitud</term>
+<meaning id="fs-id1165137463141">la altura vertical de una función; la constante <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi>
+ </m:mrow>
+</m:math> que aparece en la definición de una función sinusoidal</meaning>
+</definition>
+<definition id="fs-id1165137602032">
+<term>línea media</term>
+<meaning id="fs-id1165137602037">la línea horizontal <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> aparece en la forma general de una función sinusoidal</meaning>
+</definition>
+<definition id="fs-id1165137678058">
+<term>función periódica</term>
+<meaning id="fs-id1165137678063">una función <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> que satisface <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>P</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> para una constante específica <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> y cualquier valor de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+<definition id="fs-id1165137939683">
+<term>desplazamiento de fase</term>
+<meaning id="fs-id1165137939688">el desplazamiento horizontal de la función básica seno o coseno; la constante <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>C</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+<definition id="fs-id1165135160153">
+<term>función sinusoidal</term>
+<meaning id="fs-id1165137737500">cualquier función que se exprese en la forma <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>A</m:mi><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>B</m:mi><m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>C</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mi>D</m:mi>
+ </m:mrow>
+</m:math> </meaning>
+</definition>
+</glossary>
+</document>

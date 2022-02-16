@@ -1,0 +1,6071 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Resolver ecuaciones trigonométricas</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49398</md:content-id>
+  <md:title>Resolver ecuaciones trigonométricas</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Resolver ecuaciones trigonométricas lineales en seno y coseno.</item>
+<item>Resolver ecuaciones que impliquen una sola función trigonométrica.</item>
+<item>Resolver ecuaciones trigonométricas con la calculadora.</item>
+<item>Resolver ecuaciones trigonométricas de forma cuadrática.</item>
+<item>Resolver ecuaciones trigonométricas con las identidades fundamentales.</item>
+<item>Resolver ecuaciones trigonométricas con múltiples ángulos. </item>
+<item>Resolver problemas de triángulos rectángulos.</item>
+</list></md:abstract>
+  <md:uuid>69e57171-120c-4f0e-9e17-a6274a61e474</md:uuid>
+</metadata>
+
+<content>
+<figure id="Figure_07_05_001"><media id="fs-id2249164" alt="Foto de las pirámides egipcias cerca de una ciudad moderna.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_05_001.jpg"/>
+</media>
+
+<caption>Pirámides egipcias cerca de una ciudad moderna (créditos: Oisin Mulvihill)</caption></figure><para id="fs-id2261754">Tales de Mileto (circa 625-547 a.C.) es conocido por ser el fundador de la geometría. La leyenda cuenta que calculó la altura de la Gran Pirámide de Guiza en Egipto con base en la teoría de los <emphasis effect="italics">triángulos semejantes</emphasis>, que desarrolló al medir la sombra de su bastón. Basada en las proporciones, esta teoría tiene aplicaciones en varios ámbitos, como la geometría fractal, la ingeniería y la arquitectura. A menudo, el ángulo de elevación y el ángulo de depresión se encuentran mediante el empleo de triángulos  semejantes.</para>
+<para id="fs-id2612701">En secciones anteriores de este capítulo, hemos visto las identidades trigonométricas. Las identidades son verdaderas para todos los valores en el dominio de la variable. En esta sección, comenzamos nuestro estudio de las ecuaciones trigonométricas para explorar escenarios del mundo real como el de calcular las dimensiones de las pirámides.</para>
+
+<section id="fs-id2123717">
+<title>Resolver ecuaciones trigonométricas lineales en seno y coseno</title>
+<para id="fs-id2123619">Las ecuaciones trigonométricas, como su nombre lo indica, implican funciones trigonométricas. Semejante en muchos aspectos a la resolución de ecuaciones polinómicas o racionales, solo los valores específicos de la variable serán soluciones, si es que las hay. A menudo resolveremos una ecuación trigonométrica en un intervalo determinado. Sin embargo, con la misma frecuencia, se nos pedirá que hallemos todas las soluciones posibles, y como las funciones trigonométricas son periódicas, las soluciones se repiten dentro de cada período. En otras palabras, las ecuaciones trigonométricas pueden tener infinidad de soluciones. Además, al igual que las ecuaciones racionales, hay que tener en cuenta el dominio de la función antes de asumir que cualquier solución sea válida. El <term class="no-emphasis" id="term-00001">periodo</term> de la función seno y de la función coseno es <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En otras palabras, cada <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> unidades, los valores de <emphasis effect="italics">y</emphasis> se repiten. Si necesitamos hallar todas las soluciones posibles, entonces debemos sumar <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math> es un número entero, a la solución inicial. Recordemos la regla que da el formato para enunciar todas las posibles soluciones de una función cuyo periodo es <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>:</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="fs-id2152442" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1783046">Existen reglas similares para indicar todas las posibles soluciones de las demás funciones trigonométricas. La resolución de ecuaciones trigonométricas exige las mismas técnicas que la resolución de ecuaciones algebraicas. Leemos la ecuación de izquierda a derecha, en horizontal, como una frase. Buscamos patrones conocidos, factorizamos, hallamos denominadores comunes y sustituimos ciertas expresiones con una variable para que la resolución sea un proceso más sencillo. Sin embargo, con las ecuaciones trigonométricas, también tenemos la ventaja de utilizar las identidades que hemos desarrollado en las secciones anteriores.</para>
+
+<example id="Example_07_05_01">
+<exercise id="fs-id2059781">
+<problem id="fs-id2103256">
+<title>Resolver una ecuación trigonométrica lineal con la función coseno</title>
+<para id="fs-id1618310">Halle todas las soluciones posibles exactas de la ecuación <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1754047">
+<para id="fs-id1130359">A partir del <term class="no-emphasis" id="term-00002">círculo unitario</term>, sabemos que</para>
+<equation id="fs-id2168355" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id2823310">Estas son las soluciones en el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Todas las soluciones posibles vienen dadas por</para>
+<equation id="fs-id1137041" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi><m:mtext>  y  </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>k</m:mi><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1346657">donde <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math> es un número entero.</para>
+</solution>
+</exercise>
+</example>
+
+<example id="Example_07_05_02">
+<exercise id="fs-id2449058">
+<problem id="fs-id1327858">
+<title>Resolver una ecuación lineal con la función seno</title>
+<para id="fs-id1984971">Halle todas las soluciones posibles exactas de la ecuación <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1617496">
+
+<para id="fs-id2109893">Resolver para todos los valores posibles de <emphasis effect="italics">t</emphasis> significa que las soluciones incluyen ángulos más allá del periodo de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> A partir de la <link document="m49395" target-id="Figure_07_02_008"/>, podemos ver que las soluciones son <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> No obstante, el problema pide todos los valores posibles que resuelven la ecuación. Por lo tanto, la respuesta es</para>
+<equation id="fs-id2234866" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mtext>  y  </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1972612">donde <m:math>
+ <m:mrow>
+  <m:mi>k</m:mi>
+ </m:mrow>
+</m:math> es un número entero.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1588467" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1335125"><emphasis>Dada una ecuación trigonométrica, resolverla con el álgebra</emphasis>.</para><list id="fs-id1753734" list-type="enumerated" number-style="arabic">
+<item>Busque un patrón que sugiera una propiedad algebraica, como la diferencia de cuadrados o una oportunidad de factorización.</item>
+<item>Sustituya la expresión trigonométrica con una sola variable, como <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</item>
+<item>Resuelva la ecuación del mismo modo que se resolvería una ecuación algebraica.</item>
+<item>Sustituya de nuevo la expresión trigonométrica por la variable en las expresiones resultantes.</item>
+<item>Resuelva el ángulo.</item>
+</list></note>
+
+
+<example id="Example_07_05_03">
+<exercise id="fs-id1936439">
+<problem id="fs-id1419992">
+<title>Resolver la ecuación trigonométrica en forma lineal</title>
+<para id="fs-id2754158">Resuelva la ecuación exactamente: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2023140">
+
+<para id="fs-id2617859">Utilice técnicas algebraicas para resolver la ecuación.</para>
+<equation id="fs-id1350790" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>              </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+<note id="fs-id1332935" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_07_05_01">
+<problem id="fs-id1440965"><para id="fs-id1936123">Resuelva exactamente la siguiente ecuación lineal en el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>:</m:mo><m:mspace width="0.5em"/><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1691784">
+<para id="fs-id1597318"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+</section>
+<section id="fs-id2257766">
+<title>Resolver ecuaciones con una sola función trigonométrica</title>
+<para id="fs-id2244514">Cuando se nos dan ecuaciones que implican solo una de las seis funciones trigonométricas, sus soluciones implican el uso de técnicas algebraicas y del círculo unitario (vea la <link document="m49395" target-id="Figure_07_02_008"/>). Tenemos que hacer varias consideraciones cuando la ecuación implica funciones trigonométricas distintas del seno y del coseno. Los problemas en los que intervienen los recíprocos de las funciones trigonométricas primarias deben considerarse desde una perspectiva algebraica. En otras palabras, escribiremos la función recíproca, y resolveremos los ángulos por medio de la función. Además, una ecuación en la que interviene la función tangente es ligeramente diferente de la que contiene una función seno o coseno. En primer lugar, como sabemos, el periodo de la tangente es <m:math>
+ <m:mrow>
+<m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> no <m:math>
+ <m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Además, el dominio de la tangente son todos los números reales, a excepción de los múltiplos enteros impares de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> a menos que, por supuesto, un problema imponga sus propias restricciones al dominio.</para><example id="Example_07_05_04">
+<exercise id="fs-id1081089">
+<problem id="fs-id1290420">
+<title>Resolver un problema con una sola función trigonométrica</title>
+<para id="fs-id1354845">Resuelva el problema con exactitud: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1552358">
+
+<para id="fs-id1631304">Ya que este problema no se factoriza fácilmente, lo resolveremos con la propiedad de la raíz cuadrada. En primer lugar, utilizamos el álgebra para aislar <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Entonces determinaremos los ángulos.</para>
+<equation id="fs-id1368172" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mi>sen</m:mi>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>2 </m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>±</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>2</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>               </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+ <example id="Example_07_05_05">
+<exercise id="fs-id1161963">
+<problem id="fs-id1267566">
+<title>Resolver una ecuación trigonométrica con cosecante</title>
+<para id="fs-id1256970">Resuelva exactamente la siguiente ecuación: <m:math>
+ <m:mrow>
+  <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1056498">
+
+
+<para id="fs-id1114095">Queremos que todos los valores de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> para los cuales <m:math>
+ <m:mrow>
+  <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> en el intervalo <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="fs-id730511" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>     </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>19</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>23</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+  <commentary id="fs-id1246169">
+<title>Análisis </title>
+
+
+<para id="fs-id1210585">Dado que <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> observe que las cuatro soluciones están en el tercer y cuarto cuadrante.</para></commentary>
+</exercise>
+</example>
+<example id="Example_07_05_06">
+<exercise id="fs-id1495254">
+<problem id="fs-id1304871">
+<title>Resolver una ecuación con tangente</title>
+<para id="fs-id2252191">Resuelva la ecuación exactamente: <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>θ</m:mi><m:mo>- −</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id2239854">
+
+
+<para id="fs-id1326580">Recordemos que la función tangente tiene un periodo de <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y en el ángulo de <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la tangente tiene un valor de 1. Sin embargo, el ángulo que queremos es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>θ</m:mi><m:mo>- −</m:mo><m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Por lo tanto, si <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces</para>
+<equation id="fs-id2141246" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>- −</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+      <m:mo>±</m:mo><m:mi>k</m:mi><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1079211">En el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> tenemos dos soluciones:</para>
+<equation id="fs-id3684964" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+ <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mtext>  y </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mi>π</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id761316" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_07_05_02">
+<problem id="fs-id1337984"><para id="fs-id2886407">Halle todas las soluciones para <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1376410"><para id="fs-id1232529"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_07_05_07">
+<exercise id="fs-id1784033">
+<problem id="fs-id2464356">
+<title>Identificar todas las soluciones de la ecuación que implica la tangente</title>
+<para id="fs-id2031213">Identifique todas las soluciones exactas de la ecuación <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1916214">
+
+
+<para id="fs-id708547">Podemos resolver esta ecuación solamente con el álgebra. Aísle la expresión <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math> a la izquierda del signo de igualdad.</para>
+
+<equation id="fs-id2587807" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd columnalign="right">
+      <m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mi>tan</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mtd><m:mtd columnalign="left">
+<m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mi>tan</m:mi><m:mi>x</m:mi>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+    <m:mn>2</m:mn><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+</m:mtd><m:mtd columnalign="left">
+<m:mo>=</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right">
+      <m:mtext>  </m:mtext><m:mn>2</m:mn><m:mi>tan</m:mi><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>tan</m:mi><m:mi>x</m:mi>
+</m:mtd><m:mtd columnalign="left">
+<m:mo>=</m:mo><m:mn>5</m:mn><m:mo>- −</m:mo><m:mn>6</m:mn>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd columnalign="right"><m:mi>tan</m:mi><m:mi>x</m:mi>
+</m:mtd><m:mtd columnalign="left">
+<m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+    </m:mtd>
+   </m:mtr>
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1517904">Hay dos ángulos en el círculo unitario que tienen un valor tangente de <m:math>
+ <m:mrow>
+  <m:mn>−1</m:mn><m:mo>:</m:mo><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</example>
+
+</section>
+
+  <section id="fs-id2352803">
+<title>Resolver ecuaciones trigonométricas con la calculadora</title>
+<para id="fs-id1925665">No todas las funciones pueden resolverse exactamente solo con el círculo unitario. Cuando tengamos que resolver una ecuación que implique un ángulo, que no sea ninguno de los ángulos especiales, tendremos que recurrir a la calculadora. Asegúrese de que esté configurada en el modo adecuado, ya sea grados o radianes, dependiendo de los criterios del problema dado.</para>
+
+<example id="Example_07_05_08">
+<exercise id="fs-id1366869">
+<problem id="fs-id1805763">
+<title>Usar la calculadora para resolver una ecuación trigonométrica que implica el seno</title>
+<para id="fs-id2764602">Utilice una calculadora para resolver la ecuación <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,8</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> está en radianes.</para></problem>
+<solution id="fs-id1133260">
+
+
+<para id="fs-id2644555">Asegúrese de que el modo esté ajustado a radianes. Para hallar <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> utilice la función del seno inverso. En la mayoría de las calculadoras, tendrá que pulsar el botón 2ND y luego el botón SIN para que aparezca la función <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>. Lo que se muestra en la pantalla es <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La calculadora está lista para la entrada dentro del paréntesis. Para este problema, introducimos <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0,8</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y pulsamos ENTER. Por lo tanto, a cuatro decimales,</para>
+<equation id="fs-id2031037" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mn>0,8</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>0,9273</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1112311">La solución es</para>
+<equation id="fs-id2177508" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mn>0,9273</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id2780464">La medida del ángulo en grados es:</para>
+<equation id="fs-id2067729" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>θ</m:mi><m:mo>≈</m:mo><m:msup>
+         <m:mn>53,1</m:mn>
+         <m:mo>∘</m:mo>
+        </m:msup>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>θ</m:mi><m:mo>≈</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>180</m:mn>
+       </m:mrow>
+       <m:mo>∘</m:mo>
+      </m:msup>
+      <m:mo>- −</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>53,1</m:mn>
+       </m:mrow>
+       <m:mo>∘</m:mo>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>≈</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>126,9</m:mn>
+       </m:mrow>
+       <m:mo>∘</m:mo>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+<commentary id="fs-id1354896">
+<title>Análisis </title>
+
+
+
+<para id="fs-id1093114">Tenga en cuenta que la calculadora solo arrojará un ángulo en los cuadrantes I o IV para la función seno, ya que ese es el rango del seno inverso. El otro ángulo se obtiene al utilizar <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>-</m:mo><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</commentary>
+</exercise>
+</example>
+
+<example id="Example_07_05_09">
+<exercise id="fs-id2105271"><problem id="fs-id1622846">
+<title>Usar una calculadora para resolver una ecuación trigonométrica que implica la secante</title>
+<para id="fs-id1359705">Utilice una calculadora para resolver la ecuación <m:math>
+ <m:mrow>
+  <m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>-4</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> dando su respuesta en radianes.</para></problem>
+<solution id="fs-id1862382">
+<para id="fs-id1625296">Podemos empezar con algo de álgebra.</para>
+<equation id="fs-id2713214" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id2176861">Compruebe que el MODO esté en radianes. Ahora, utilice la función coseno inversa.</para>
+<equation id="fs-id1350281" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1,8235</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mi>θ</m:mi><m:mo>≈</m:mo><m:mn>1,8235</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1471997">Dado que <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>≈</m:mo><m:mn>1,57</m:mn>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>≈</m:mo><m:mn>3,14</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> 1,8235 está entre estos dos números, por lo que <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>≈</m:mo><m:mtext>1</m:mtext><m:mtext>0,8235</m:mtext>
+ </m:mrow>
+</m:math> está en el cuadrante II. El coseno también es negativo en el cuadrante III. Tenga en cuenta que una calculadora solo devolverá un ángulo en los cuadrantes I o II para la función coseno, ya que ese es el rango del coseno inverso. Vea el <link target-id="Figure_07_05_005"/>.</para>
+
+<figure id="Figure_07_05_005" class="medium"><media id="fs-id2343074" alt="Gráfico de ángulos theta =aproximadamente 1,8235, theta primo =aproximadamente pi - 1,8235 = aproximadamente 1,3181, y luego theta primo = pi + 1,3181 = aproximadamente 4,4597">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_05_005.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1631910">Por lo tanto, también necesitamos hallar la medida del ángulo en el cuadrante III. En el cuadrante III, el ángulo de referencia es <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mi> </m:mi><m:mo>'</m:mo><m:mo>≈</m:mo><m:mi>π</m:mi><m:mo>-</m:mo><m:mtext>1</m:mtext><m:mtext>0,8235</m:mtext><m:mo>≈</m:mo><m:mtext>1</m:mtext><m:mtext>0,3181</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> La otra solución del cuadrante III es <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>+</m:mo><m:mtext>1</m:mtext><m:mtext>0,3181</m:mtext><m:mo>≈</m:mo><m:mtext>4</m:mtext><m:mtext>0,4597</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1327393">Las soluciones son <m:math>
+ <m:mrow>
+  <m:mn>1,8235</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mn>4,4597</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise></example>
+
+<note id="fs-id2168685" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_07_05_03">
+<problem id="fs-id1868122"><para id="fs-id2142937">Resuelva <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>0,2.</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1562435"><para id="fs-id1334489"> <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>≈</m:mo><m:mn>1,7722</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>≈</m:mo><m:mn>4,5110</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id2461424">
+<title>Resolver ecuaciones trigonométricas en forma cuadrática</title>
+<para id="fs-id2590665">Resolver una <term class="no-emphasis" id="term-00003">ecuación cuadrática</term> puede ser más complicado, pero una vez más, podemos utilizar el álgebra como lo haríamos para cualquier ecuación cuadrática. Mire el patrón de la ecuación. ¿Hay más de una función trigonométrica en la ecuación o solo hay una? ¿Qué función trigonométrica es al cuadrado? Si solo hay una función representada y uno de los términos está elevado al cuadrado, piense en la forma estándar de una cuadrática. Sustituya la función trigonométrica por una variable como <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>u</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Si la sustitución hace que la ecuación parezca una ecuación cuadrática, entonces podemos utilizar los mismos métodos para resolver cuadráticas y, por consiguiente, las ecuaciones trigonométricas.</para>
+
+<example id="Example_07_05_10">
+<exercise id="fs-id1335579">
+<problem id="fs-id1897958">
+<title>Resolver una ecuación trigonométrica en forma cuadrática</title>
+<para id="fs-id2201479">Resuelva la ecuación exactamente: <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id761598">
+
+
+<para id="fs-id1378461">Comenzamos por utilizar la sustitución y reemplazar cos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> No es necesario utilizar la sustitución, pero puede hacer que el problema sea más fácil de resolver visualmente. Supongamos que <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Tenemos</para>
+
+<equation id="fs-id1875852" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1356287">La ecuación no se puede factorizar, por lo que utilizaremos la <term class="no-emphasis" id="term-00004">fórmula cuadrática</term> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>b</m:mi><m:mo>±</m:mo><m:msqrt>
+     <m:mrow>
+      <m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mi>c</m:mi>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>a</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="fs-id2294578" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>13</m:mn>
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id926524">Sustituya <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> con la <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y resolvemos. Por lo tanto,</para>
+
+<equation id="fs-id1408206" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>±</m:mo><m:msqrt>
+         <m:mrow>
+          <m:mn>13</m:mn>
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:msqrt>
+           <m:mrow>
+            <m:mn>13</m:mn>
+           </m:mrow>
+          </m:msqrt>
+
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1355539">Observe que solo se utiliza el signo +. Esto se debe a que obtenemos un error cuando resolvemos <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>- −</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>13</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> en una calculadora, ya que el dominio de la función coseno inversa es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sin embargo, existe una segunda solución:</para>
+<equation id="fs-id1236551" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:msqrt>
+           <m:mrow>
+            <m:mn>13</m:mn>
+           </m:mrow>
+          </m:msqrt>
+
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>≈</m:mo><m:mn>1,26</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1298252">Este lado terminal del ángulo se encuentra en el cuadrante I. Debido a que el coseno también es positivo en el cuadrante IV, la segunda solución es</para>
+<equation id="fs-id2160568" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:msqrt>
+           <m:mrow>
+            <m:mn>13</m:mn>
+           </m:mrow>
+          </m:msqrt>
+
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mo>≈</m:mo><m:mn>5,02</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<example id="Example_07_05_11">
+<exercise id="fs-id1343020">
+<problem id="fs-id1334881">
+<title>Resolver una ecuación trigonométrica en forma cuadrática mediante factorización</title>
+<para id="fs-id1403865">Resuelva la ecuación exactamente: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>- −</m:mo><m:mn>5</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1218136">
+
+
+
+<para id="fs-id2286251">Usando la agrupación, esta cuadrática puede factorizarse. Alternativamente, hacer la sustitución real, <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>u</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o imaginarla, ya que factorizamos:</para>
+
+<equation id="fs-id2676123" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>- −</m:mo><m:mn>5</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1235701">Ahora, lleve cada factor igual a cero.</para>
+<equation id="fs-id1634817" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>       </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mtext>         </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1352656">Luego, resuelva para <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>:</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>≠</m:mo><m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> ya que el rango de la función seno es <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>−1</m:mn><m:mo>,</m:mo><m:mn>1</m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Sin embargo, el que <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> dando la solución <m:math>
+ <m:mrow>
+   <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+  <commentary id="fs-id1220222">
+<title>Análisis </title>
+
+
+<para id="fs-id1161788">Asegúrese de comprobar todas las soluciones en el dominio dado, ya que algunos factores no tienen solución.</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1094265" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_07_05_04">
+<problem id="fs-id1213671"><para id="fs-id1213672">Resuelva <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> [Pista: Haga una sustitución para expresar la ecuación solo en términos de coseno].</para></problem>
+<solution id="fs-id1333795"><para id="fs-id2262028"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<example id="Example_07_05_12">
+<exercise id="fs-id1145666"><problem id="fs-id1137947">
+<title>Resolver una ecuación trigonométrica mediante el álgebra</title>
+<para id="fs-id1692291">Resuelva exactamente:</para>
+<equation id="fs-id1469870" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id1344665">
+
+
+<para id="fs-id3291905">Este problema debería parecerle familiar, ya que es similar a una cuadrática. Supongamos que <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La ecuación se convierte en <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Comenzamos por la factorización:</para>
+
+<equation id="fs-id1137525" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mn>2 </m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1764865">Lleve cada factor igual a cero.</para>
+<equation id="fs-id1577636" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mtext>  </m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>           </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1577605">A continuación, sustituya de nuevo en la ecuación la expresión original <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> por <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Así,</para>
+	<equation id="fs-id1118862" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1933215">Las soluciones dentro del dominio <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+ </m:mrow>
+</m:math> son <m:math>
+ <m:mrow>
+  <m:mn> 0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1347182">Si preferimos no sustituir, podemos resolver la ecuación al seguir el mismo patrón de factorización y llevar cada factor igual a cero.</para>
+<equation id="fs-id1348761" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+       <m:mrow>
+        <m:mi>sen</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                  </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                       </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                  </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                       </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+  <commentary id="fs-id2204025">
+<title>Análisis</title>
+
+
+<para id="fs-id2602112">Podemos ver las soluciones en el gráfico en la <link target-id="Figure_07_05_004"/>. En el intervalo <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el gráfico cruza el eje <emphasis effect="italics">x</emphasis> cuatro veces, en las soluciones señaladas. Observe que las ecuaciones trigonométricas que tienen forma cuadrática pueden dar hasta cuatro soluciones en lugar de las dos esperadas que se encuentran con las ecuaciones cuadráticas. En este ejemplo, cada solución (ángulo) correspondiente a un valor de seno positivo arrojarán dos ángulos que darían lugar a ese valor.</para><figure id="Figure_07_05_004" class="medium"><media id="fs-id1859724" alt="Gráfico de 2*(sen(theta))^2 + sen(theta) de 0 a 2pi. Los ceros están en 0, pi, 7pi/6 y 11pi/6.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_05_004.jpg"/>
+</media>
+</figure><para id="fs-id1836123">También podemos verificar las soluciones en el círculo unitario en la <link document="m49395" target-id="Figure_07_02_008"/>.</para></commentary>
+</exercise></example>
+
+<example id="Example_07_05_13">
+<exercise id="fs-id1352751">
+<problem id="fs-id1807178">
+<title>Resolver una ecuación trigonométrica cuadrática en forma</title>
+<para id="fs-id1365104">Resuelva la ecuación cuadrática en forma exacta: <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2748877">
+
+
+<para id="fs-id1676751">Podemos factorizar mediante la agrupación. Los valores de solución de <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> se hallan en el círculo unitario:</para>
+<equation id="fs-id3654429" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                  </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                           </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                           </m:mtext><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                                </m:mtext><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example>
+
+<note id="fs-id1892509" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_07_05_05">
+<problem id="fs-id2737020"><para id="fs-id1743088">Resuelva la ecuación cuadrática <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3549256"><para id="fs-id3549257"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+</section>
+
+<section id="fs-id1597424">
+<title>Resolver ecuaciones trigonométricas mediante identidades fundamentales</title>
+<para id="fs-id1396319">Aunque se puede utilizar el álgebra para resolver una serie de ecuaciones trigonométricas, también podemos utilizar las identidades fundamentales porque hacen que la resolución de ecuaciones sea más sencilla. Recuerde que las técnicas que utilizamos para resolver no son las mismas que para verificar las identidades. Aquí se aplican las reglas básicas del álgebra, a diferencia de reescribir un lado de la identidad para que coincida con el otro lado. En el siguiente ejemplo, utilizamos dos identidades para simplificar la ecuación.</para>
+
+<example id="Example_07_05_14">
+<exercise id="fs-id2017029">
+<problem id="fs-id2017031">
+<title>Utilizar las identidades para resolver una ecuación</title>
+<para id="fs-id2031219">Utilice las identidades para resolver exactamente la ecuación trigonométrica sobre el intervalo <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<equation id="fs-id3523452" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation></problem>
+<solution id="fs-id2045157">
+
+
+<para id="fs-id2045159">Observe que el lado izquierdo de la ecuación es la fórmula de la diferencia del coseno.</para>
+<equation id="fs-id2045162" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                       </m:mtext><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mtable>
+       <m:mtr>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+        <m:mtd>
+         <m:mrow/>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Fórmula de la diferencia del coseno</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                           </m:mtext><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>-</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Utilice la identidad de ángulo negativo</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mtext>                                  </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msqrt>
+         <m:mn>3</m:mn>
+        </m:msqrt>
+
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1186086">A partir del círculo unitario en la <link document="m49395" target-id="Figure_07_02_008"/>, vemos que <m:math>
+ <m:mrow><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math> cuando <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</example>
+
+<example id="Example_07_05_15">
+<exercise id="fs-id1916902">
+<problem id="fs-id1916904">
+<title>Resolver la ecuación mediante una fórmula de doble ángulo</title>
+<para id="fs-id1916909">Resuelva la ecuación con exactitud mediante una fórmula de doble ángulo: <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id697866">
+
+
+<para id="fs-id697868">Tenemos tres opciones de expresiones para sustituir el doble ángulo del coseno. Ya que es más sencillo resolver una función trigonométrica a la vez, elegiremos la identidad de doble ángulo que involucra solo el coseno:</para>
+<equation id="fs-id2070377" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                       </m:mtext><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                 </m:mtext><m:mn>2</m:mn><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>θ</m:mi><m:mo>-</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                   </m:mtext><m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                            </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                     </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                            </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id2052787">Por lo tanto, si <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mo>;</m:mo>
+ </m:mrow>
+</m:math> si <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> entonces <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</example>
+
+<example id="Example_07_05_16">
+<exercise id="fs-id2123696">
+<problem id="fs-id2123698">
+<title>Resolver una ecuación mediante el empleo de una identidad</title>
+<para id="fs-id2123703">Resuelva la ecuación exactamente con una identidad: <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2131508">
+
+<para id="fs-id2131510">Si reescribimos el lado derecho, podemos escribir la ecuación en términos de coseno:</para>
+<equation id="fs-id3026861" class="unnumbered"><label/> <m:math display="block">
+    <m:mtable>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mn>3 cos</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:msup>          <m:mn>2 sen</m:mn>         <m:mn>2</m:mn></m:msup><m:mi>θ</m:mi></m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mn>3 cos</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mtext>cos</m:mtext><m:mn>2</m:mn>
+        </m:msup>
+        <m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mn>3 cos</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:msup><m:mi>cos</m:mi><m:mn>2</m:mn></m:msup>       <m:mi>θ</m:mi>      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup><m:mi>cos</m:mi><m:mn>2</m:mn></m:msup><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>3 cos</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right">
+        <m:mo stretchy="false">(</m:mo><m:mn>2 cos</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mn>2 cos</m:mn><m:mspace width="0.5em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac> <m:mn>1</m:mn> <m:mn>2</m:mn> </m:mfrac>      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mi>θ</m:mi></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>2 </m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mo>,</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>4</m:mn><m:mi>π</m:mi>
+         </m:mrow>
+         <m:mn>3</m:mn>
+        </m:mfrac>      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right"><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mn>0</m:mn>      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right">
+      <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd columnalign="right">
+       <m:mi>θ</m:mi></m:mtd>
+<m:mtd columnalign="left"><m:mo>=</m:mo><m:mi>π</m:mi> </m:mtd>
+     </m:mtr>
+    </m:mtable></m:math> </equation><para id="fs-id3483085">Nuestras soluciones son <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></solution>
+
+</exercise>
+</example>
+
+</section>
+
+<section id="fs-id1518803">
+<title>Resolver ecuaciones trigonométricas con ángulos múltiples</title>
+<para id="fs-id1518808">A veces no es posible resolver una ecuación trigonométrica con identidades que tienen un ángulo múltiple, como por ejemplo <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Cuando se enfrente a estas ecuaciones, recuerde que <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es una <term class="no-emphasis" id="term-00005">compresión horizontal</term> por un factor de 2 de la función <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En un intervalo de <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> podemos graficar dos periodos de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> frente a un ciclo de <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Esta compresión del gráfico nos lleva a pensar que puede haber el doble de intersecciones en <emphasis effect="italics">x</emphasis> o soluciones a <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> en comparación con <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,</m:mn>
+ </m:mrow>
+</m:math> Esta información nos ayudará a resolver la ecuación.</para><example id="Example_07_05_17">
+<exercise id="fs-id2223187">
+<problem id="fs-id2223189">
+<title>Resolver una ecuación trigonométrica de ángulos múltiples</title>
+<para id="fs-id2223194">Resuelva exactamente <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+</problem>
+<solution id="fs-id2740923">
+
+<para id="fs-id2740926">Podemos ver que esta es la ecuación estándar con un múltiplo de un ángulo. Si los valores de <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>α</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> sabemos que <m:math>
+ <m:mrow>
+  <m:mi>α</m:mi>
+ </m:mrow>
+</m:math> está en los cuadrantes I y IV. Mientras que <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> solo arrojará soluciones en los cuadrantes I y II, reconocemos que las soluciones de la ecuación <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> estará en los cuadrantes I y IV.</para><para id="fs-id3162261">Por lo tanto, los ángulos posibles son <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Así que, <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> lo que significa que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> o <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> ¿Tiene esto sentido? Sí, porque <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>6</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1966562">¿Hay otras respuestas posibles? Volvamos a nuestro primer paso.</para>
+<para id="fs-id1966566">En el cuadrante I, <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> como se indica. Volvamos a girar alrededor del círculo:</para>
+<equation id="fs-id1893406" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>7</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id3511391">por lo que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1805664">Una rotación más produce</para>
+<equation id="fs-id1805667" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mi>π</m:mi>
+         <m:mn>3</m:mn>
+        </m:mfrac>
+        <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>π</m:mi>
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mi>π</m:mi>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>13</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id3654355"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>13</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>></m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que este valor para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es mayor que <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que no es una solución en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id2748825">En el cuadrante IV, <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> como se indica. Volvamos a girar alrededor del círculo:</para>
+<equation id="fs-id1154337" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>6</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>11</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id2123784">por lo que <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<para id="fs-id2123818">Una rotación más produce</para>
+<equation id="fs-id2123822" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>12</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>17</m:mn><m:mi>π</m:mi>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1217412"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>17</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>></m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que este valor para <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es mayor que <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que no es una solución en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para><para id="fs-id1676669">Nuestras soluciones son <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mtext>y </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Observe que, siempre que resolvemos un problema en forma de <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> debemos rodear el círculo unitario <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> veces.</para></solution>
+
+</exercise>
+</example>
+
+</section>
+
+<section id="fs-id1401253">
+<title>Resolver problemas de triángulos rectángulos</title>
+<para id="fs-id1401258">Ahora podemos utilizar todos los métodos que hemos aprendido para resolver problemas que impliquen la aplicación de las propiedades de los triángulos rectángulos y del <term class="no-emphasis" id="term-00006">teorema de Pitágoras</term>. Comenzamos con el conocido teorema de Pitágoras, <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>c</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y modelamos una ecuación que se ajuste a una situación.</para><example id="Example_07_05_18"><exercise id="fs-id2638947">
+<problem id="fs-id2638949">
+<title>Usar el teorema de Pitágoras para modelar una ecuación</title>
+<para id="fs-id2638954">Utilice el teorema de Pitágoras y las propiedades de los triángulos rectángulos para modelar una ecuación que se ajuste al problema.</para>
+<para id="fs-id2638958">Uno de los cables que ancla el centro de la rueda de la fortuna del London Eye al suelo necesita reemplazo. El centro de la rueda está a 69,5 metros del suelo, y el segundo anclaje en el suelo está a 23 metros de su base ¿Qué longitud tiene el cable, aproximadamente, y cuál es el ángulo de elevación (desde el suelo hasta el centro de la rueda de la fortuna)? Vea el <link target-id="Figure_07_05_002"/>.</para>
+
+<figure id="Figure_07_05_002" class="small"><media id="fs-id1187455" alt="Esquema básico de una rueda de la fortuna (círculo) y sus cables de soporte (forman un triángulo rectángulo). Un cable va desde el centro del círculo hasta el suelo (fuera del círculo), es perpendicular al suelo y tiene una longitud de 69,5. Otro cable de longitud desconocida (la hipotenusa) va desde el centro del círculo hasta el suelo a 23 pies de distancia del otro cable con un ángulo de theta grados con el suelo. Así que, para terminar, hay un triángulo rectángulo con base 23, altura 69,5, hipotenusa desconocida y ángulo entre base e hipotenusa de theta grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_05_002.jpg"/>
+</media>
+</figure></problem>
+<solution id="fs-id1187466">
+
+
+<para id="fs-id1187468">Con la información dada, podemos dibujar un triángulo rectángulo. Podemos determinar la longitud del cable con el teorema de Pitágoras.</para>
+<equation id="fs-id1187472" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtable columnalign="left">
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtable columnalign="left">
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow/>
+            </m:mtd>
+           </m:mtr>
+           <m:mtr columnalign="left">
+            <m:mtd columnalign="left">
+             <m:mrow>
+              <m:mtext>            </m:mtext><m:msup>
+               <m:mi>a</m:mi>
+               <m:mn>2 </m:mn>
+              </m:msup>
+              <m:mo>+</m:mo><m:msup>
+               <m:mi>b</m:mi>
+               <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo><m:msup>
+               <m:mi>c</m:mi>
+               <m:mn>2</m:mn>
+              </m:msup>
+
+             </m:mrow>
+            </m:mtd>
+           </m:mtr>
+
+          </m:mtable>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mn>23</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>+</m:mo><m:msup>
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mn>69,5</m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>≈</m:mo><m:mn>5359</m:mn>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+       <m:mtr columnalign="left">
+        <m:mtd columnalign="left">
+         <m:mrow>
+          <m:mtext>               </m:mtext><m:msqrt>
+           <m:mrow>
+            <m:mn>5359</m:mn>
+           </m:mrow>
+          </m:msqrt>
+          <m:mo>≈</m:mo><m:mn>73,2</m:mn><m:mtext> m</m:mtext>
+         </m:mrow>
+        </m:mtd>
+       </m:mtr>
+
+      </m:mtable>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1112183">El ángulo de elevación es <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> formado por el segundo anclaje en el suelo y el cable que llega al centro de la rueda. Podemos utilizar la función tangente para hallar su medida. Redondee a dos decimales.</para>
+<equation id="fs-id1112201" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>              </m:mtext><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>69,5</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>23</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>tan</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mn>69,5</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>23</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1,2522</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                    </m:mtext><m:mo>≈</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>71,69</m:mn>
+       </m:mrow>
+       <m:mo>∘</m:mo>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1185825">El ángulo de elevación es aproximadamente <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>71,7</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la longitud del cable es de 73,2 metros.</para></solution>
+</exercise>
+</example><example id="Example_07_05_19"><exercise id="fs-id1739568">
+<problem id="fs-id1739570">
+<title>Uso del teorema de Pitágoras para modelar un problema abstracto</title>
+<para id="fs-id1739575">Las normas de seguridad de la  Administración de Seguridad y Salud Ocupacional (Occupational Safety and Health Administration, OSHA) exigen que la base de una escalera se sitúe a 1 pie de la pared por cada 4 pies de longitud de la escalera. Halle el ángulo que forma una escalera de cualquier longitud con el suelo y la altura a la que toca la pared.</para>
+</problem>
+<solution id="fs-id1739582">
+
+<para id="fs-id1739584">Para cualquier longitud de la escalera, la base debe estar a una distancia de la pared igual a la cuarta parte de la longitud de la escalera. Por equivalencia, si la base de la escalera está a "<emphasis effect="italics">a"</emphasis> pies de la pared, la longitud de la escalera será de 4<emphasis effect="italics">a</emphasis> pies. Vea el <link target-id="Figure_07_05_003"/>.</para>
+
+<figure id="Figure_07_05_003" class="small"><media id="fs-id1739605" alt="Diagrama de un triángulo rectángulo con base de longitud a, altura de longitud b, hipotenusa de longitud 4a. Frente a la altura hay un ángulo de theta grados, y frente a la hipotenusa hay un ángulo de 90 grados.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_07_05_003.jpg"/>
+</media>
+</figure><para id="fs-id1739615">El lado adyacente a <m:math>
+ <m:mrow>
+  <m:mi>θ</m:mi>
+ </m:mrow>
+</m:math> es <emphasis effect="italics">a </emphasis>y la hipotenusa es <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Así,</para>
+<equation id="fs-id2846620" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mi>a</m:mi>
+       <m:mrow>
+        <m:mn>4</m:mn><m:mi>a</m:mi>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mi>cos</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+      </m:msup>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mn>1</m:mn>
+         <m:mn>4</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:msup>
+       <m:mrow>
+        <m:mn>75,5</m:mn>
+       </m:mrow>
+       <m:mo>∘</m:mo>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id3523522">La elevación de la escalera forma un ángulo de <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>75,5</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math> con el suelo. La altura a la que la escalera toca la pared se puede calcular con el teorema de Pitágoras:</para>
+<equation id="fs-id1789882" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>16</m:mn><m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>        </m:mtext><m:msup>
+       <m:mi>b</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mn>15</m:mn><m:msup>
+       <m:mi>a</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>          </m:mtext><m:mi>b</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>15</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mi>a</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id3704663">Así, la escalera toca la pared a <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mi>a</m:mi>
+ </m:mrow>
+</m:math> pies del suelo.</para>
+</solution>
+
+</exercise>
+</example><note id="fs-id2267036" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id2267042">Acceda a estos recursos en línea para obtener instrucciones adicionales y practicar la resolución de ecuaciones trigonométricas.</para>
+
+<list id="fs-id2267047" list-type="bulleted"><item><link url="http://openstax.org/l/solvetrigeqI">Resolver ecuaciones trigonométricas I</link></item>
+<item><link url="http://openstax.org/l/solvetrigeqII">Resolver ecuaciones trigonométricas II</link></item>
+<item><link url="http://openstax.org/l/solvetrigeqIII">Resolver ecuaciones trigonométricas III</link></item>
+<item><link url="http://openstax.org/l/solvetrigeqIV">Resolver ecuaciones trigonométricas IV</link></item>
+<item><link url="http://openstax.org/l/solvetrigeqV">Resolver ecuaciones trigonométricas V</link></item>
+<item><link url="http://openstax.org/l/solvetrigeqVI">Resolver ecuaciones trigonométricas VI</link></item>
+</list></note>
+</section>
+<section id="fs-id2267085" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id2267091" list-type="bulleted">
+<item>A la hora de resolver ecuaciones trigonométricas lineales, podemos utilizar técnicas algebraicas al igual que lo hacemos para resolver ecuaciones algebraicas. Busque patrones, como la diferencia de cuadrados, la forma cuadrática o una expresión que se preste a la sustitución. Vea el <link target-id="Example_07_05_01"/>, el <link target-id="Example_07_05_02"/> y el <link target-id="Example_07_05_03"/>.</item>
+<item>Las ecuaciones que implican una sola función trigonométrica pueden resolverse o verificarse con el círculo unitario. Vea el <link target-id="Example_07_05_04"/>, el <link target-id="Example_07_05_05"/>, el <link target-id="Example_07_05_06"/> y el <link target-id="Example_07_05_07"/>.</item>
+<item>También podemos resolver ecuaciones trigonométricas con la calculadora gráfica. Vea el <link target-id="Example_07_05_08"/> y el <link target-id="Example_07_05_09"/>.</item>
+<item>Muchas ecuaciones tienen forma cuadrática. Podemos utilizar la sustitución para que la ecuación parezca más sencilla, y luego utilizar las mismas técnicas que utilizamos para resolver una cuadrática algebraica: la factorización, la fórmula cuadrática, etc. Vea el <link target-id="Example_07_05_10"/>, el <link target-id="Example_07_05_11"/>, el <link target-id="Example_07_05_12"/> y el <link target-id="Example_07_05_13"/>.</item>
+<item>Igualmente, podemos utilizar las identidades para resolver la ecuación trigonométrica. Vea el <link target-id="Example_07_05_14"/>, el <link target-id="Example_07_05_15"/> y el <link target-id="Example_07_05_16"/>.</item>
+<item>Podemos utilizar la sustitución para resolver una ecuación trigonométrica de ángulo múltiple, que es la compresión de una función trigonométrica estándar. Tendremos que tener en cuenta la compresión y comprobar que hemos encontrado todas las soluciones en el intervalo dado. Vea el <link target-id="Example_07_05_17"/>.</item>
+<item>Las situaciones en el mundo real se pueden modelar y resolver con el teorema de Pitágoras y las funciones trigonométricas. Vea el <link target-id="Example_07_05_18"/>.</item>
+</list>
+</section>
+
+<section id="fs-id1869641" class="section-exercises">
+<title>Ejercicios de la sección</title>
+<section id="fs-id1869645">
+<title>Verbales</title>
+<exercise id="fs-id2188996"><problem id="fs-id2188997"><para id="fs-id2188998">¿Habrá siempre soluciones a las ecuaciones de las funciones trigonométricas? Si no es así, describa una ecuación que no tenga solución. Explique por qué sí o por qué no.</para></problem>
+<solution id="fs-id2189002"><para id="fs-id2189003">No siempre habrá soluciones a las ecuaciones de las funciones trigonométricas. Para un ejemplo básico, <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>−5.</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2189033"><problem id="fs-id2189034"><para id="fs-id2189035">Cuando se resuelve una ecuación trigonométrica en la que interviene más de una función trigonométrica, ¿queremos siempre intentar reescribir la ecuación para que se exprese en términos de una sola función trigonométrica? ¿Por qué o por qué no?</para></problem></exercise>
+<exercise id="fs-id2189040"><problem id="fs-id2189042"><para id="fs-id2189043">Cuando se resuelven ecuaciones trigonométricas lineales en términos solo de seno o coseno, ¿cómo sabemos si habrá soluciones?</para></problem>
+<solution id="fs-id2189047"><para id="fs-id2189048">Si la función seno o coseno tiene un coeficiente de uno, aísle el término a un lado del signo de igualdad. Si el número al que se iguala tiene un valor absoluto menor o igual que uno, la ecuación tiene solución, en caso contrario, no. Si el seno o el coseno no tienen un coeficiente igual a uno, aísle el término, pero divida ambos lados de la ecuación entre el coeficiente principal. Entonces, si el número al que se iguala tiene un valor absoluto mayor que uno, la ecuación no tiene solución.</para></solution></exercise>
+
+</section>
+<section id="fs-id2189057">
+<title>Algebraicos</title>
+<para id="fs-id2189062">En los siguientes ejercicios, halle todas las soluciones exactamente en el intervalo <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>θ</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id1956710"><problem id="fs-id1956711"><para id="fs-id1956712"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>-</m:mn><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1956737"><problem id="fs-id1956738"><para id="fs-id1956740"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1956763"><para id="fs-id1956764"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1581304"><problem id="fs-id1581305"><para id="fs-id1581306"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1581326"><problem id="fs-id1581327"><para id="fs-id1581328"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>-</m:mn><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1581354"><para id="fs-id1581355"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1757348"><problem id="fs-id1757349"><para id="fs-id1757350"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>–1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1757370"><problem id="fs-id1757371"><para id="fs-id1757372"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1757391"><para id="fs-id1757392"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1478153"><problem id="fs-id1478154"><para id="fs-id1478155"> <m:math>
+ <m:mrow>
+  <m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1478178"><problem id="fs-id1478179"><para id="fs-id1478180"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1478215"><para id="fs-id1478216"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2338975"><problem id="fs-id2338976"><para id="fs-id2338977"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>csc</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id1977608">En los siguientes ejercicios, resuelva exactamente en <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id1977637"><problem id="fs-id1977638"><para id="fs-id1977640"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1977664"><para id="fs-id1977665"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1977700"><problem id="fs-id1977701"><para id="fs-id1977702"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>–1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1478021"><problem id="fs-id1478022"><para id="fs-id1478024"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>–1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1478046"><para id="fs-id1478047"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1478088"><problem id="fs-id1478089"><para id="fs-id1478090"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>-</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1794563"><problem id="fs-id1794564"><para id="fs-id1794565"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1794598"><para id="fs-id1794599"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:mfrac>
+</m:mrow></m:math>, <m:math><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:mfrac>
+</m:math>, <m:math><m:mfrac>
+   <m:mrow>
+    <m:mn>13</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+ </m:mfrac></m:math>, <m:math><m:mfrac>
+   <m:mrow>
+    <m:mn>17</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:mfrac>
+</m:math>, <m:math><m:mfrac>
+   <m:mrow>
+    <m:mn>25</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:mfrac>
+</m:math>, <m:math><m:mfrac>
+   <m:mrow>
+    <m:mn>29</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>18</m:mn>
+   </m:mrow>
+  </m:mfrac>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3490890"><problem id="fs-id3490891"><para id="fs-id3490892"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1860552"><problem id="fs-id1860553"><para id="fs-id1860554"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:msqrt>
+   <m:mn>2 </m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1860592"><para id="fs-id1860593"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>13</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>19</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>21</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id2253557"><problem id="fs-id2253558"><para id="fs-id2253559"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>3</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2271373"><problem id="fs-id2271374"><para id="fs-id2271375"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2271408"><para id="fs-id2271410"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>13</m:mn>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>17</m:mn>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>25</m:mn>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>29</m:mn>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>37</m:mn>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1880680"><problem id="fs-id1880681"><para id="fs-id1880682"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+    <m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id1477710">En los siguientes ejercicios, halle todas las soluciones exactas en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id1477744"><problem id="fs-id1477745"><para id="fs-id1477746"> <m:math>
+ <m:mrow>
+  <m:mi>sec</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3627009"><para id="fs-id3627010"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3627055"><problem id="fs-id3627056"><para id="fs-id3627057"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2505431"><problem id="fs-id2505432"><para id="fs-id2505433"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2505478"><para id="fs-id2505479"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2505519" class="material-set-2"><problem id="fs-id2505520"><para id="fs-id2505521"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>sec</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+<exercise id="fs-id1477862" class="material-set-2"><problem id="fs-id1477863"><para id="fs-id1477864"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1961630"><para id="fs-id1961631"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1961683"><problem id="fs-id1961684"><para id="fs-id1961685"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1961721"><problem id="fs-id1961722"><para id="fs-id1961723"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sec</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2894453"><para id="fs-id2894454"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mi>π</m:mi>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2894470"><problem id="fs-id2894471"><para id="fs-id2894472"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem></exercise>
+<exercise id="fs-id2894532"><problem id="fs-id2894533"><para id="fs-id2894534"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>6</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2047166"><para id="fs-id2047167"> <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>11</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id1598831"><problem id="fs-id1598832"><para id="fs-id1598834"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>tan</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id2259162">En los siguientes ejercicios, resuelva con los métodos mostrados en esta sección exactamente en el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id2259191" class="material-set-2"><problem id="fs-id2259192"><para id="fs-id2259194"> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>-0,9</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2880279"><para id="fs-id2880280"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow></m:math> <m:math><m:mrow>
+<m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow></m:math> <m:math><m:mrow>
+<m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow></m:math> <m:math><m:mrow>
+<m:mi>π</m:mi><m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow></m:math> <m:math><m:mrow>
+<m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+</m:mrow></m:math> <m:math><m:mrow>
+<m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:msup>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>9</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id1434673" class="material-set-2"><problem id="fs-id1434674"><para id="fs-id1434675"> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mi>sen</m:mi><m:mo stretchy="false">(</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>-0,1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2575418" class="material-set-2"><problem id="fs-id2575419"><para id="fs-id2575420"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2575479"><para id="fs-id2575480"> <m:math>
+ <m:mn>0</m:mn>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2575488" class="material-set-2"><problem id="fs-id2575489"><para id="fs-id2575490"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>t</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mn>9</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem></exercise>
+
+<exercise id="fs-id1973210"><problem id="fs-id1973211"><para id="fs-id1973212"> <m:math>
+ <m:mrow>
+  <m:mn>9</m:mn><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>θ</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>9</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>- −</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1973264"><para id="fs-id1973265"> <m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:msup><m:mi>sen</m:mi><m:mrow><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mfenced><m:mfrac><m:mn>2 </m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced><m:mo>,</m:mo></m:math> <m:math><m:mi mathvariant="normal">π</m:mi><m:mo> </m:mo><m:msup><m:mi>sen</m:mi><m:mrow><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mfenced><m:mfrac><m:mn>2 </m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced><m:mo>,</m:mo></m:math> <m:math><m:mi mathvariant="normal">π</m:mi><m:mo>+</m:mo><m:msup><m:mi>sen</m:mi><m:mrow><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mfenced><m:mfrac><m:mn>2 </m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced><m:mo>,</m:mo></m:math> <m:math><m:mn>2</m:mn><m:mi mathvariant="normal">π</m:mi><m:mo> </m:mo><m:msup><m:mi>sen</m:mi><m:mrow><m:mo> </m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mfenced><m:mfrac><m:mn>2 </m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced></m:math>
+</para></solution></exercise>
+<exercise id="fs-id3522511"><problem id="fs-id3522512"><para id="fs-id3522514"> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>t</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3522547"><problem id="fs-id3522548"><para id="fs-id3522549"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>t</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3522582"><para id="fs-id3522583"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>6</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1810183"><problem id="fs-id1810184"><para id="fs-id1810185"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id1810227">En los siguientes ejercicios, resuelva exactamente en el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi>
+  </m:mrow> <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Utilice la fórmula cuadrática si las ecuaciones no son factorizables.</para>
+<exercise id="fs-id2042636"><problem id="fs-id2042637"><para id="fs-id2042638"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+  <m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2042679"><para id="fs-id2042680"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2042724"><problem id="fs-id2042725"><para id="fs-id1969530"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1969569"><problem id="fs-id1969570"><para id="fs-id1969571"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1969613"><para id="fs-id1969614">No hay soluciones.</para></solution></exercise><exercise id="fs-id1969617"><problem id="fs-id1969618"><para id="fs-id1969619"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2237019"><problem id="fs-id2237020"><para id="fs-id2237021"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2237064"><para id="fs-id2237066"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>-</m:mo><m:msqrt>
+       <m:mn>7</m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>-</m:mo><m:msqrt>
+       <m:mn>7</m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id1742842"><problem id="fs-id1742843"><para id="fs-id1742844"> <m:math>
+ <m:mrow>
+  <m:mn>5</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2765422"><problem id="fs-id2765423"><para id="fs-id2765424"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2765466"><para id="fs-id2765467"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>29</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>- −</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>29</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>- −</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>29</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>- −</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>29</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>- −</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id2772991"><problem id="fs-id2772992"><para id="fs-id2772994"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cot</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mi>cot</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2773027"><problem id="fs-id2773028"><para id="fs-id2773029"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2773070"><para id="fs-id2773071">No hay soluciones.</para></solution></exercise>
+
+<para id="fs-id2773075">En los siguientes ejercicios, halle soluciones exactas en el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Busque las oportunidades para utilizar las identidades trigonométricas.</para>
+<exercise id="fs-id2089483"><problem id="fs-id2089484"><para id="fs-id2089485"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2089537"><problem id="fs-id2089538"><para id="fs-id2089540"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3639884"><para id="fs-id3639885">No hay soluciones.</para></solution></exercise>
+<exercise id="fs-id3639888"><problem id="fs-id3639889"><para id="fs-id3639890"> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3639928"><problem id="fs-id3639929"><para id="fs-id3639930"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3639967"><para id="fs-id3639968"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>4</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3575425"><problem id="fs-id3575426"><para id="fs-id3575427"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mo>- −</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>sec</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3575510"><problem id="fs-id3575511"><para id="fs-id1187258"> <m:math>
+ <m:mrow>
+  <m:mn>1</m:mn><m:mo>-</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1187304"><para id="fs-id1187305"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>7</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3275800"><problem id="fs-id3275801"><para id="fs-id3275802"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sec</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3275831"><problem id="fs-id3275832"><para id="fs-id3275833"> <m:math>
+ <m:mrow>
+  <m:mn>10</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3275862"><para id="fs-id3275863"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>5</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2266943"><problem id="fs-id2266944"><para id="fs-id2266945"> <m:math>
+ <m:mrow>
+  <m:mn>−3</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mspace width="0.3em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2266976"><problem id="fs-id2266977"><para id="fs-id2266978"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>15</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3649416"><para id="fs-id3649417"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow></m:math>, <m:math><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id2301415"><problem id="fs-id2301416"><para id="fs-id2301417"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2301460"><problem id="fs-id2301462"><para id="fs-id2301463"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>θ</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2301502"><para id="fs-id2301503"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1541337"><problem id="fs-id1541338"><para id="fs-id1541340"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2819462"><problem id="fs-id2819463"><para id="fs-id2819464"> <m:math>
+ <m:mrow>
+  <m:mn>12</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>+</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi><m:mo>- −</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2819506"><para id="fs-id2819507"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mfrac>
+     <m:mn>2 </m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mfrac>
+     <m:mn>2 </m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow></m:math>, <m:math><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id2575077"><problem id="fs-id2575078"><para id="fs-id2575079"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2575102"><problem id="fs-id2575103"><para id="fs-id2575104"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>t</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2575135"><para id="fs-id2575136"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+</section>
+<section id="fs-id2575181">
+<title>Gráficos</title>
+<para id="fs-id2575186">En los siguientes ejercicios, determine algebraicamente todas las soluciones de la ecuación trigonométrica con exactitud, luego verifique los resultados al graficar la ecuación y hallar los ceros.</para>
+<exercise id="fs-id1872347" class="material-set-2"><problem id="fs-id1872348"><para id="fs-id1872349"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1872393" class="material-set-2"><problem id="fs-id1872394"><para id="fs-id1872395"> <m:math>
+ <m:mrow>
+  <m:mn>8</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1872439"><para id="fs-id1872440"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+<m:mn>−1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mrow>
+<m:mn>−1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1804381" class="material-set-2"><problem id="fs-id1804382"><para id="fs-id1804383"> <m:math>
+ <m:mrow>
+  <m:mn>100</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3684248" class="material-set-2"><problem id="fs-id3684249"><para id="fs-id3684250"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id3684291"><para id="fs-id3684292">No hay soluciones.</para></solution></exercise>
+<exercise id="fs-id3684296" class="material-set-2"><problem id="fs-id3684297"><para id="fs-id3684298"> <m:math>
+ <m:mrow>
+  <m:mn>20</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>27</m:mn><m:mspace width="0.5em"/><m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id3684342" class="material-set-2"><problem id="fs-id3684343"><para id="fs-id3684344"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2438512"><para id="fs-id2438513"> 
+  <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+<m:mn>–1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>−2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow></m:math>, <m:math><m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+<m:mn>–1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:math> <m:math>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mrow>
+<m:mn>–1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+<m:mn>−2</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo></m:math> <m:math>
+ <m:mrow> 
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mo>+</m:mo>
+  <m:msup>
+    <m:mi>tan</m:mi>
+<m:mn>–1</m:mn>
+  </m:msup>
+  <m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>-</m:mo>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo>
+
+</m:mrow>
+</m:math> grandes.
+</para></solution></exercise>
+<exercise id="fs-id1840080"><problem id="fs-id1840082"><para id="fs-id1840083"> <m:math>
+ <m:mrow>
+  <m:mn>130</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>69</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>130</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+</section>
+<section id="fs-id1728260">
+<title>En tecnología</title>
+<para id="fs-id1728266">En los siguientes ejercicios, utilice la calculadora para hallar todas las soluciones a cuatro decimales.</para>
+<exercise id="fs-id1728269"><problem id="fs-id1728270"><para id="fs-id1728271"> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,27</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1728289"><para id="fs-id1728290"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>0,2734</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>2,8682</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1728323"><problem id="fs-id1728324"><para id="fs-id1728326"> <m:math>
+ <m:mrow>
+  <m:mi>sen</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>-0,55</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1728346"><problem id="fs-id1728347"><para id="fs-id1728348"> <m:math>
+ <m:mrow>
+  <m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>-0,34</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2793486"><para id="fs-id2793488"> <m:math>
+ <m:mrow>
+  <m:mi>π</m:mi><m:mi>k</m:mi><m:mo>- −</m:mo><m:mn>0,3277</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2793506"><problem id="fs-id2793507"><para id="fs-id2793508"> <m:math>
+ <m:mrow>
+  <m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0,71</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+<para id="fs-id2793526">En los siguientes ejercicios, resuelva las ecuaciones algebraicamente y luego utilice la calculadora para estimar los valores en el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Redondee a cuatro decimales.</para>
+<exercise id="fs-id2793559"><problem id="fs-id2793560"><para id="fs-id2793561"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2462145"><para id="fs-id2462146"> <m:math>
+ <m:mrow>
+  <m:mn>0,6694</m:mn><m:mo>,</m:mo><m:mn>1,8287</m:mn><m:mo>,</m:mo><m:mn>3,8110</m:mn><m:mo>,</m:mo><m:mn>4,9703</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2462170"><problem id="fs-id2462171"><para id="fs-id2462172"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>13</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>−6</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2462214"><problem id="fs-id2462215"><para id="fs-id2462216"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>- −</m:mo><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2462251"><para id="fs-id2462252"> <m:math>
+ <m:mrow>
+  <m:mn>1,0472</m:mn><m:mo>,</m:mo><m:mn>3,1416</m:mn><m:mo>,</m:mo><m:mn>5,2360</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2618056" class="material-set-2"><problem id="fs-id2618057"><para id="fs-id2618058"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2618106" class="material-set-2"><problem id="fs-id2618107"><para id="fs-id2618108"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>9</m:mn><m:mspace width="0.5em"/><m:mi>tan</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2618152"><para id="fs-id2618153"> <m:math>
+ <m:mrow>
+  <m:mn>0,5326</m:mn><m:mo>,</m:mo><m:mn>1,7648</m:mn><m:mo>,</m:mo><m:mn>3,6742</m:mn><m:mo>,</m:mo><m:mn>4,9064</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2763905" class="material-set-2"><problem id="fs-id2763906"><para id="fs-id2763907"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mi>sec</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+</section>
+<section id="fs-id2763967">
+<title>Extensiones</title>
+<para id="fs-id2763972">En los siguientes ejercicios, halle todas las soluciones exactas de las ecuaciones en el intervalo <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">[</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para>
+<exercise id="fs-id2764002" class="material-set-2"><problem id="fs-id2764003"><para id="fs-id2764004"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>csc</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mspace width="0.5em"/><m:mi>csc</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1697743"><para id="fs-id1697744"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>π</m:mi><m:mo>- −</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:msup>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>4</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2593798" class="material-set-2"><problem id="fs-id2593800"><para id="fs-id2593801"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2593851" class="material-set-2"><problem id="fs-id2593852"><para id="fs-id2593853"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+     <m:mrow>
+      <m:mi>sen</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2052633"><para id="fs-id2052634"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id2052669" class="material-set-2"><problem id="fs-id2052670"><para id="fs-id2052672"> <m:math>
+ <m:mrow>
+  <m:mn>3</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>sec</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2173695" class="material-set-2"><problem id="fs-id2173696"><para id="fs-id2173697"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mspace width="0.5em"/><m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2173768"><para id="fs-id2173769">No hay soluciones.</para></solution></exercise>
+<exercise id="fs-id2173773" class="material-set-2"><problem id="fs-id2173774"><para id="fs-id2173775"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mi>tan</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sec</m:mi>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mspace width="0.3em"/><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id2431728" class="material-set-2"><problem id="fs-id2431729"><para id="fs-id2431730"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sec</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2431787"><para id="fs-id2431788"> <m:math>
+ <m:mrow>
+  <m:mn>0</m:mn><m:mo>,</m:mo><m:mfrac>
+   <m:mi>π</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>π</m:mi><m:mo>,</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn><m:mi>π</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1777474" class="material-set-2"><problem id="fs-id1777475"><para id="fs-id1777476"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>2 </m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:msup>
+     <m:mrow>
+      <m:mi>csc</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+<exercise id="fs-id1777536" class="material-set-2"><problem id="fs-id1777537"><para id="fs-id1777538"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>-</m:mo><m:mi>cos</m:mi><m:mspace width="0.3em"/><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id2796208"><para id="fs-id2796209">No hay soluciones.</para></solution></exercise>
+<exercise id="fs-id2796212" class="material-set-2"><problem id="fs-id2796213"><para id="fs-id2796214"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mi>sec</m:mi>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>x</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:msup>
+   <m:mrow>
+    <m:mi>sen</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn><m:mspace width="0.5em"/><m:msup>
+   <m:mrow>
+    <m:mi>cos</m:mi>
+   </m:mrow>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem></exercise>
+
+</section>
+<section id="fs-id2796297">
+<title>Aplicaciones en el mundo real</title>
+<exercise id="fs-id2796302">
+<problem id="fs-id2796303"><para id="fs-id2796304">Un avión tiene gasolina suficiente únicamente para volar hasta una ciudad situada a 200 millas al noreste de su ubicación actual. Si el piloto sabe que la ciudad está a 25 millas al norte, ¿a cuántos grados al norte del este debe volar el avión?</para></problem>
+<solution id="fs-id2796309"><para id="fs-id2796310"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>7,2</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3461883"><problem id="fs-id3461884"><para id="fs-id3461886">Si se coloca una rampa de carga junto a un camión, a una altura de 4 pies, y la rampa tiene 15 pies de longitud, ¿qué ángulo forma la rampa con el suelo?</para></problem></exercise>
+<exercise id="fs-id3461890"><problem id="fs-id3461891"><para id="fs-id3461892">Si se coloca una rampa de carga junto a un camión, a una altura de 2 pies, y la rampa tiene 20 pies de longitud, ¿qué ángulo forma la rampa con el suelo?</para></problem>
+<solution id="fs-id3461897"><para id="fs-id3461898"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>5,7</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3461919"><problem id="fs-id3461920"><para id="fs-id3461921">Una mujer observa el lanzamiento de un cohete a 11 millas de altitud. Si está de pie a 4 millas de la plataforma de lanzamiento, ¿en qué ángulo mira hacia arriba desde la horizontal?</para></problem></exercise>
+<exercise id="fs-id3461926"><problem id="fs-id3461927"><para id="fs-id3461928">Una astronauta se encuentra en un cohete lanzado a 15 millas de altitud. Si un hombre está de pie a 2 millas de la plataforma de lanzamiento, ¿en qué ángulo ella lo mira a él desde la horizontal? (Pista: esto recibe el nombre de ángulo de depresión).</para></problem>
+<solution id="fs-id3461933"><para id="fs-id3461934"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>82,4</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3461956"><problem id="fs-id3461957"><para id="fs-id3461958">Una mujer está de pie a 8 metros de un edificio de 10 metros de altura. ¿En qué ángulo mira hacia la parte superior del edificio?</para></problem></exercise>
+<exercise id="fs-id3461962"><problem id="fs-id3461963"><para id="fs-id3461964">Un hombre está de pie a 10 metros de un edificio de 6 metros de altura. Alguien lo mira desde la parte superior del edificio. ¿En qué ángulo lo mira esta persona?</para></problem>
+<solution id="fs-id3461969"><para id="fs-id3461970"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>31,0</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id3461991"><problem id="fs-id3461992"><para id="fs-id3461994">Un edificio de 20 pies de altura proyecta una sombra de 55 pies de largo. ¿Cuál es el ángulo de elevación del sol?</para></problem></exercise>
+ <exercise id="fs-id1468071"><problem id="fs-id1468072"><para id="fs-id1468073">Un edificio de 90 pies de altura proyecta una sombra de 2 pies de largo. ¿Cuál es el ángulo de elevación del sol?</para></problem>
+<solution id="fs-id1468076"><para id="fs-id1468077"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>88,7</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1468098" class="material-set-2"><problem id="fs-id1468099"><para id="fs-id1468100">Un reflector en el suelo a 3 metros de un hombre de 2 metros de altura proyecta una sombra de 6 metros en una pared situada a 6 metros de él. ¿En qué ángulo está la luz?</para></problem></exercise>
+<exercise id="fs-id1468105" class="material-set-2"><problem id="fs-id1468106"><para id="fs-id1468107">Un reflector en el suelo a 1 metro de una mujer de 1,5 metros de altura proyecta una sombra de 1,5 metros de altura en una pared situada a 1,8 metros de ella. ¿En qué ángulo está la luz?</para></problem>
+<solution id="fs-id1468112"><para id="fs-id1468113"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>59,0</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+
+<para id="fs-id1468134">En los siguientes ejercicios, halle la solución del problema de forma algebraica. A continuación, utilice la calculadora para verificar el resultado. Redondee la respuesta a la décima de grado más cercana.</para><exercise id="fs-id1468139"><problem id="fs-id1468140"><para id="fs-id1468141">Una persona hace una parada de manos; los pies tocan la pared y las manos están a 1,5 pies de la pared. Si la persona mide 1,83 metros, ¿qué ángulo forman sus pies con la pared?</para></problem></exercise>
+<exercise id="fs-id1468146"><problem id="fs-id1468147"><para id="fs-id1468148">Una persona hace una parada de manos; los pies tocan la pared y las manos están a un metro de la pared. Si la persona mide 1,52 metros, ¿qué ángulo forman sus pies con la pared? </para></problem>
+<solution id="fs-id1468153"><para id="fs-id1468154"> <m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mrow>
+    <m:mn>36,9</m:mn>
+   </m:mrow>
+   <m:mo>∘</m:mo>
+  </m:msup>
+
+ </m:mrow>
+</m:math>
+</para></solution></exercise>
+<exercise id="fs-id1468175"><problem id="fs-id1468176"><para id="fs-id1468177">Una escalera de 23 pies está colocada junto a una casa. Si la escalera resbala a 2 metros de la casa cuando no hay suficiente tracción, ¿qué ángulo debe formar la escalera con el suelo para no resbalar?</para></problem></exercise>
+</section>
+</section></content>
+</document>

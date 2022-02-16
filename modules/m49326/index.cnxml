@@ -1,0 +1,1976 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Modelado con funciones lineales</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49326</md:content-id>
+  <md:title>Modelado con funciones lineales</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Identificar los pasos para modelar y resolver.</item>
+<item>Construir modelos lineales a partir de descripciones verbales.</item>
+<item>Construir sistemas de modelos lineales.</item>
+</list></md:abstract>
+  <md:uuid>37fdc422-18e5-4d89-8ec8-5cad101057b8</md:uuid>
+</metadata>
+
+<content>
+<figure id="CNX_Precalc_Figure_02_03_001"><media id="fs-id1165137836734" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_001.jpg"/>
+</media>
+<caption>(Crédito: EEK Photography/Flickr)</caption></figure><para id="fs-id1165134221808">Elan es una estudiante universitaria que planea pasar el verano en Seattle. Ahorró 3.500 dólares para su viaje y prevé gastar 400 dólares cada semana en alquiler, comida y actividades. ¿Cómo podemos escribir un modelo lineal que represente la situación? ¿Cuál sería la intersección en <emphasis effect="italics">x</emphasis> y qué puede aprender Elan de ella? Para responder estas y otras interrogantes por el estilo, podemos crear un modelo por medio de una función lineal. Los modelos como este pueden ser extremadamente útiles para analizar las relaciones y hacer predicciones basadas en estas. En esta sección, exploraremos ejemplos de modelos de <term class="no-emphasis" id="term-00001">función lineal</term>.</para>
+
+<section id="fs-id1947137">
+<title>Identificar los pasos para modelar y resolver problemas</title>
+<para id="fs-id1815085">Cuando se <term class="no-emphasis" id="term-00002">modelan</term> escenarios con funciones lineales y se resuelven problemas que implican cantidades con una <term class="no-emphasis" id="term-00003">tasa de cambio constante</term>, solemos seguir las mismas estrategias de problemas que utilizaríamos para cualquier tipo de función. Repasémoslos brevemente:</para>
+<list id="fs-id1748897" list-type="enumerated" number-style="arabic">
+<item>Identifique las cantidades cambiantes y, a continuación, defina las variables descriptivas que representen esas cantidades. Cuando sea pertinente, haga un dibujo o defina un sistema de coordenadas.</item>
+<item>Lea atentamente el problema para identificar la información importante. Busque información que proporcione valores para las variables o valores para partes del modelo funcional, como la pendiente y el valor inicial.</item>
+<item>Lea detenidamente el problema para determinar qué es lo que queremos encontrar, identificar, resolver o interpretar.</item>
+<item>A partir de la información suministrada, identifique una vía de solución a lo que tratamos de hallar. A menudo, esto implicará la comprobación y el seguimiento de las unidades, la construcción de una tabla o incluso la búsqueda de una fórmula para la función que se utiliza para modelar el problema.</item>
+<item>Cuando sea necesario, escriba una fórmula para la función.</item>
+<item>Resuelva o evalúe la función con la fórmula.</item>
+<item>Reflexione si su respuesta es razonable para la situación dada y si tiene sentido matemático.</item>
+<item>Exprese claramente su resultado con las unidades adecuadas, y responda con frases completas cuando sea necesario.</item>
+</list>
+</section>
+
+<section id="fs-id2064743"><title>Construir modelos lineales</title><para id="fs-id2420068">Ahora echemos un vistazo a la estudiante en Seattle. En la situación de Elan hay dos cantidades cambiantes: el tiempo y el dinero. La cantidad de dinero que le queda mientras está de vacaciones depende del tiempo que se quede. Podemos utilizar esta información para definir nuestras variables, incluidas las unidades.</para>
+ <list id="fs-id1165137542562" list-type="bulleted" bullet-style="none">
+<item>Salida: <m:math>
+<m:mrow><m:mi>M</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> dinero restante, en dólares</item>
+<item>Entrada: <m:math>
+<m:mrow><m:mi>t</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> tiempo, en semanas</item>
+</list>
+<para id="fs-id1165137629546">Por lo tanto, la cantidad de dinero restante depende del número de semanas: <m:math>
+<m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </para>
+<para id="fs-id1165137548592">También podemos identificar el valor inicial y la tasa de cambio.</para>
+<list id="fs-id1165137851605" list-type="bulleted" bullet-style="none">
+<item>Valor inicial: Ahorró 3.500 dólares, por lo que 3.500 dólares es el valor inicial de <m:math>
+<m:mrow><m:mi>M</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </item>
+<item>Tasa de cambio: Prevé gastar 400 dólares cada semana, por lo que –400 dólares semanales es la tasa de cambio, o la pendiente.</item>
+</list>
+
+<para id="fs-id1165137851819">Observe que la unidad de dólares por semana coincide con la unidad de nuestra variable de salida dividida entre nuestra variable de entrada. Además, dado que la pendiente es negativa, la función lineal es decreciente. Esto debería tener sentido porque gasta dinero cada semana.</para>
+
+<para id="fs-id1165137793547">La <term class="no-emphasis" id="term-00004">tasa de cambio</term> es constante, por lo que podemos empezar con el <term class="no-emphasis" id="term-00005">modelo lineal</term> <m:math>
+<m:mrow><m:mi>M</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>t</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Entonces podemos sustituir la intersección y la pendiente que se han proporcionado.</para>
+<media id="fs-id1165137619312" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_002-e897.jpg"/>
+</media>
+
+<para id="fs-id1165137651962">Para calcular la intersección en <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> llevamos la salida a cero y resolvemos para la entrada.</para>
+
+<equation id="fs-id1165137738077" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>400</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>3500</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>3500</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>400</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mn>8,75</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137767967">Las intersecciones en <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> es de 8,75 semanas. Ya que esto representa el valor de entrada cuando la salida sea cero, podríamos decir que a Elan no le quedará dinero después de 8,75 semanas.</para>
+
+<para id="fs-id1165137661938">Al modelar cualquier situación de la vida real con funciones, suele haber un dominio limitado en el que ese modelo será válido: casi ninguna tendencia continúa indefinidamente. Aquí el dominio se refiere al número de semanas. En este caso, no tiene sentido hablar de valores de entrada inferiores a cero. Un valor negativo de entrada podría referirse a un número de semanas antes de que Elan ahorrara 3.500 dólares, pero el escenario analizado plantea la pregunta una vez que ahorró 3.500 dólares porque es cuando comienza su viaje y su gasto posterior. También es probable que este modelo no sea válido después de la intersección en <m:math>
+<m:mrow><m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math>, a no ser que Elan utilice una tarjeta de crédito y se endeude. El dominio representa el conjunto de valores de entrada, por lo que el dominio razonable para esta función es: <m:math>
+<m:mrow><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>t</m:mi><m:mo>≤</m:mo><m:mn>8,75.</m:mn>
+</m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165137838719">En el ejemplo anterior, se nos dio una descripción escrita de la situación. Hemos seguido los pasos para el modelado de un problema con el fin de analizar la información. Sin embargo, no siempre se suministra la misma información. A veces se nos proporciona una intersección. Otras veces se nos da un valor de salida. Debemos tener cuidado de analizar la información que se nos suministra y utilizarla adecuadamente para construir un modelo lineal.</para>
+
+<section id="fs-id1165137834217">
+<title>Utilizar una intersección dada para construir un modelo</title>
+<para id="fs-id1165134374048">Algunos problemas del mundo real proporcionan la intersección en <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math>, que es la constante o valor inicial. Una vez que se conoce la intersección en <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math>, la intersección en <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> puede calcularse. Supongamos, por ejemplo, que Hannah planea pagar un préstamo sin intereses que contrajo de sus padres. El saldo de su préstamo es de 1.000 dólares. Tiene previsto pagar 250 dólares al mes hasta que su saldo sea de 0. La intersección en <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> es el importe inicial de su deuda, es decir, 1.000 dólares. La tasa de cambio, o pendiente, es de -250 dólares al mes. Podemos entonces utilizar la forma pendiente-intersección y la información dada para elaborar un modelo lineal.</para>
+<equation id="fs-id1165135375305" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>250</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+<para id="fs-id1165137583557">Ahora podemos establecer la función igual a 0, y resolver para <m:math>
+<m:mrow>
+<m:mi>x</m:mi></m:mrow>
+</m:math> para hallar la intersección en <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math>.</para>
+
+<equation id="fs-id1165137932472" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>250</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1.000</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>1.000</m:mn><m:mo>=</m:mo><m:mn>250</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mn>4</m:mn><m:mo>=</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137714175">Las intersecciones en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext> </m:mtext>
+ </m:mrow>
+</m:math> es el número de meses que tarde en llevar el saldo a 0 dólares. La intersección en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> es 4 meses, por lo que Hannah tardará cuatro meses para pagar su préstamo.</para></section>
+
+<section id="fs-id1165137473595">
+<title> Utilizar una entrada y una salida dadas para construir un modelo</title>
+<para id="fs-id1165137529516">Muchas aplicaciones en el mundo real no son tan directas como las que acabamos de considerar. En cambio, nos exigen que identifiquemos algún aspecto de una función lineal. A veces se nos pide que evaluemos el modelo lineal con una entrada determinada o que establezcamos la ecuación del modelo lineal igual a una salida especificada.</para>
+
+<note id="fs-id1165137827442" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137745268"><emphasis>Dado un problema verbal que incluya dos pares de valores de entrada y salida, utilizar la función lineal para resolver un problema.</emphasis></para>
+<list id="fs-id1165135536506" list-type="enumerated" number-style="arabic">
+<item>Identifique los valores de entrada y salida.</item>
+<item>Convierta los datos en dos pares de coordenadas.</item>
+<item>Calcule la pendiente.</item>
+<item>Escriba el modelo lineal.</item>
+<item>Utilice el modelo para hacer una predicción al evaluar la función en un determinado valor de <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math>.</item>
+<item>Utilice el modelo para identificar un valor de <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> que resulte en un determinado valor de <m:math>
+<m:mrow>
+<m:mi>y</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math>.</item>
+<item>Responda la pregunta planteada.</item>
+</list>
+</note>
+
+<example id="Example_02_03_01">
+<exercise id="fs-id1165137434850">
+<problem id="fs-id1165137563668">
+<title>Usar un modelo lineal para investigar la población de una ciudad</title>
+<para id="fs-id1165137694033">La población de una ciudad ha crecido linealmente. En 2004 la población era de 6.200 habitantes. En 2009 la población había crecido hasta los 8.100 habitantes. Supongamos que esta tendencia se mantiene.</para>
+<list id="fs-id1165137409850" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Prediga la población en 2013.</item>
+<item><span class="token">Ⓑ</span> Identifique el año en el que la población alcanzará los 15.000 habitantes.</item>
+</list>
+</problem>
+<solution id="fs-id1165137730330">
+<para id="fs-id1165137567172">Las dos cantidades que cambian son el tamaño de la población y el tiempo. Aunque podríamos utilizar el valor real del año como cantidad de entrada, hacerlo así tiende a llevar a ecuaciones muy engorrosas, porque la intersección en <m:math>
+<m:mrow><m:mi>y</m:mi><m:mtext> </m:mtext>
+</m:mrow>
+</m:math> correspondería al año 0, ¡hace más de 2000 años!</para>
+
+<para id="fs-id1165137725296">Para que el cálculo sea más llevadero, definiremos nuestra entrada como el número de años desde 2004:</para>
+<list id="fs-id1165137469859" display="block">
+<item>Entrada: <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> años desde 2004</item>
+<item>Salida: <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo></m:mrow>
+</m:math> la población de la ciudad</item>
+</list>
+<para id="fs-id1165137578260">Para predecir la población en 2013 <m:math>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mo stretchy="false">),</m:mo></m:mrow></m:math> necesitaríamos primero una ecuación para la población. Del mismo modo, para determinar cuándo la población alcanzaría los 15.000 habitantes, tendríamos que resolver la entrada que proporcionaría una salida de 15.000. Para escribir una ecuación, necesitamos el valor inicial y la tasa de cambio o la pendiente.</para><para id="fs-id1165137786450">Para determinar la tasa de cambio, utilizaremos el cambio en la salida con respecto al cambio en la entrada.</para>
+<equation id="fs-id1165137463371" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mtext>cambio en la salida</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>cambio en la entrada</m:mtext>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137574501">El problema nos da dos pares de entrada-salida. Convirtiéndolos para que coincidan con nuestras variables definidas, el año 2004 correspondería a <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+</m:mrow>
+</m:math> lo que da el punto <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>6200</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Observe que mediante nuestra elección inteligente de la definición de la variable, nos hemos "dado" la intersección en <emphasis effect="italics">y</emphasis> de la función. El año 2009 correspondería a <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mtext>5,</m:mtext>
+</m:mrow>
+</m:math> lo que da el punto <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>,</m:mo><m:mtext>8100</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<para id="fs-id1165137535681">Los dos pares de coordenadas son: <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mtext>6200</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>5</m:mn><m:mo>,</m:mo><m:mtext>8100</m:mtext>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Recordemos que anteriormente en el capítulo nos topamos con ejemplos en los que se nos proporcionaban dos puntos. Podemos utilizar estos valores para calcular la pendiente.</para>
+
+<equation id="fs-id1165135160119" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mtable columnalign="left">
+      <m:mtr>
+       <m:mtd>
+        <m:mrow/>
+       </m:mtd>
+      </m:mtr>
+      <m:mtr>
+       <m:mtd>
+        <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>8100</m:mn><m:mo>- −</m:mo><m:mn>6200</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mn>5</m:mn><m:mo>- −</m:mo><m:mn>0</m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mtd>
+      </m:mtr>
+     </m:mtable>
+
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>1900</m:mn>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>   </m:mtext><m:mo>=</m:mo><m:mn>380</m:mn><m:mtext> personas al año</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137675970">Ya conocemos la intersección en <emphasis effect="italics">y</emphasis> de la línea, por lo que podemos escribir inmediatamente la ecuación:</para>
+
+<equation id="fs-id1165137645456" class="unnumbered"><label/> <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>380</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>6200</m:mn>
+</m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137935572">Para predecir la población en 2013, evaluamos nuestra función en <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>=</m:mo><m:mn>9.</m:mn>
+</m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165137581859" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>380</m:mn><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>620</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137644160">Si la tendencia se mantiene, nuestro modelo prevé una población de 9.620 habitantes en 2013.</para>
+
+<para id="fs-id1165137528049">Para saber cuándo la población alcanzará los 15.000 habitantes, podemos establecer <m:math>
+<m:mrow>
+<m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>15000</m:mn>
+</m:mrow>
+</m:math> y resolver para <m:math>
+<m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+</m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165135260731" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>15000</m:mn><m:mo>=</m:mo><m:mn>380</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>6200</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>  </m:mtext><m:mn>8800</m:mn><m:mo>=</m:mo><m:mn>380</m:mn><m:mi>t</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>         </m:mtext><m:mi>t</m:mi><m:mo>≈</m:mo><m:mn>23,158</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137641856">Nuestro modelo predice que la población alcanzará los 15.000 habitantes en poco más de 23 años después de 2004, es decir, alrededor del año 2027.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="fs-id1165137573887" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_03_01">
+<problem id="fs-id1165137453776"><para id="fs-id1165137453777">Una empresa vende rosquillas. Tienen un costo fijo de 25.000 dólares por concepto de alquiler, seguro y otros gastos. El costo de producción de cada rosquilla es de 0,25 dólares. </para><para id="para-00002"><span class="token">Ⓐ</span> Escriba un modelo lineal para representar el costo <m:math>
+  <m:mrow>
+  <m:mi>C</m:mi>
+  </m:mrow>
+  </m:math> de la empresa como función de <m:math>
+  <m:mrow><m:mi>x</m:mi><m:mo>,</m:mo>
+  </m:mrow>
+  </m:math> es el número de rosquillas que se producen. <newline/>
+  <span class="token">Ⓑ</span> Halle e interprete la intersección en <emphasis effect="italics">y</emphasis>.</para>
+</problem>
+<solution id="fs-id1165137724926">
+<para id="fs-id1165137658966">
+<list id="fs-id1169827658966" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+<m:mrow><m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,25</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+</m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> La intersección en <emphasis effect="italics">y</emphasis> es <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>0</m:mn><m:mo>,</m:mo><m:mn>25</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+</m:mrow>
+</m:math> Aunque la empresa no produzca ni una sola rosquilla, sigue teniendo un costo de 25.000 dólares.</item>
+</list>
+</para></solution>
+</exercise>
+</note>
+<note id="fs-id1165137770198" class="precalculus try"><label>Ejercicio</label>
+<exercise id="ti_02_03_02">
+<problem id="fs-id1165137662386">
+<para id="fs-id1165137652976">La población de una ciudad ha crecido linealmente. En 2008, la población era de 28.200 habitantes. En 2012, la población era de 36.800 habitantes. Supongamos que esta tendencia se mantiene.</para>
+<list id="fs-id1165137589129" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Prediga la población en 2014.</item>
+<item><span class="token">Ⓑ</span> Identifique el año en que la población alcanzará los 54.000 habitantes.</item>
+</list>
+</problem>
+<solution id="fs-id1165137406790"><para id="fs-id1165137406791"><list id="fs-id1165137702127" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> 41,100</item>
+<item><span class="token">Ⓑ</span> 2020</item>
+</list>
+</para></solution>
+</exercise>
+</note></section>
+
+<section id="fs-id1165137549020">
+<title>Utilizar un diagrama para modelar un problema</title>
+<para id="fs-id1165135208395">En muchas aplicaciones del mundo real es útil hacer un dibujo para tener una idea de cómo las variables que representan la entrada y la salida se utilizan para responder una pregunta. Para dibujar el cuadro, primero hay que considerar lo que pide el problema. A continuación, determine la entrada y la salida. El diagrama debería relacionar las variables. Con frecuencia se dibujan formas o figuras geométricas. A menudo, las distancias se trazan. Si se dibuja un triángulo rectángulo, el teorema de Pitágoras relaciona los lados. Si se dibuja un rectángulo, es útil etiquetar la anchura y la altura.</para>
+
+<example id="Example_02_03_02">
+<exercise id="fs-id1165135414297"><problem id="fs-id1165137435372">
+<title>Usar un diagrama para modelar la distancia recorrida</title>
+<para id="fs-id1165137852122">Anna y Emanuel comienzan en la misma intersección. Anna camina hacia el este, a 4 millas por hora, mientras que Emanuel camina hacia el sur, a 3 millas por hora. Se comunican con una radio bidireccional que tiene un alcance de 3 kilómetros. ¿Cuánto tiempo después de que empiecen a caminar dejarán de estar en contacto a través de la radio?</para>
+</problem>
+<solution id="fs-id1165135194981">
+<para id="fs-id1165137415274">En esencia, podemos responder parcialmente a esta pregunta al afirmar que dejarán de tener contacto por radio cuando estén a 2 millas de distancia, lo que nos lleva a plantear una nueva pregunta:
+</para><para id="eip-idm1250387072">"¿Cuánto tiempo les llevará estar a 2 millas de distancia?”.</para>
+<para id="fs-id1165137585729">En este problema, nuestras cantidades cambiantes son el tiempo y la posición. Sin embargo, en última instancia, necesitamos saber cuánto tiempo tardarán en estar a 2 millas de distancia. Vemos que el tiempo será nuestra variable de entrada, así que definiremos nuestras variables de entrada y salida.</para>
+ <list id="fs-id1165137732789" display="block" list-type="bulleted" bullet-style="none">
+<item>Entrada: <m:math>
+<m:mrow><m:mi>t</m:mi><m:mo>,</m:mo>
+</m:mrow>
+</m:math> tiempo en horas.</item>
+<item>Salida: <m:math>
+<m:mrow><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> distancia en millas, y <m:math>
+<m:mrow><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo>
+</m:mrow>
+</m:math> distancia en millas</item>
+</list>
+
+<para id="fs-id1165137427530">Ya que no es obvio cómo definir nuestra variable de salida, empezaremos por hacer un dibujo como <link target-id="CNX_Precalc_Figure_02_03_003"/>.</para>
+
+<figure id="CNX_Precalc_Figure_02_03_003"><media id="fs-id1165137422298" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_003.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137565989">Valor inicial: ambos comienzan en la misma intersección, así que cuando <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo></m:mrow></m:math> la distancia recorrida por cada persona también debería ser 0. Por lo tanto, el valor inicial de cada uno es 0.</para>
+<para id="fs-id1165137704564">Tasa de cambio: Anna camina 4 millas por hora y Emanuel camina 3 millas por hora, que son ambas tasas de cambio. La pendiente para <m:math><m:mi>A</m:mi></m:math> es 4 y la pendiente para <m:math><m:mi>E</m:mi></m:math> es 3.</para>
+<para id="fs-id1165137456247">Con esos valores podemos escribir fórmulas para la distancia que ha caminado cada persona.</para>
+
+<equation id="fs-id1165137638569" class="unnumbered"><label/> <m:math display="block"><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>t</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>t</m:mi></m:mtd></m:mtr></m:mtable></m:math>
+</equation>
+
+<para id="fs-id1165135315572">Para este problema, las distancias desde el punto de partida son importantes. Para anotarlos, podemos definir un sistema de coordenadas al identificar el "punto de partida" en la intersección en la que ambos comenzaron. Entonces podemos utilizar la variable, <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que hemos introducido anteriormente, para representar la posición de Anna y definirla como una medida desde el punto de partida en dirección hacia el este. Asimismo, podemos utilizar la variable <m:math>
+ <m:mrow>
+  <m:mi>E</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> para representar la posición de Emanuel, medida desde el punto de partida en dirección hacia el sur. Tenga en cuenta que al definir el sistema de coordenadas, hemos especificado tanto el punto de partida de la medida como su dirección.</para>
+<para id="fs-id1165137827769">Podemos entonces definir una tercera variable, <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> para que sea la medida de la distancia entre Anna y Emanuel. Mostrar las variables en el diagrama suele ser útil, como podemos apreciar en la <link target-id="CNX_Precalc_Figure_02_03_004"/>.</para>
+<para id="fs-id1165134042627">Recordemos que necesitamos saber el tiempo que tarda <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la distancia entre ellos, para que sea igual a 2 millas. Observe que, para cualquier entrada dada <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> las salidas <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mi>E</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> representan las distancias.</para>
+
+<figure id="CNX_Precalc_Figure_02_03_004"><media id="fs-id1165137748481" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_004.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165135408576">La <link target-id="CNX_Precalc_Figure_02_03_003"/> nos muestra que podemos utilizar el teorema de Pitágoras porque hemos dibujado un ángulo recto.</para>
+<para id="fs-id1165137841698">Con el teorema de Pitágoras obtenemos<newline count="1"/></para>
+<equation id="fs-id1165137640232" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>D</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:mi>A</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mi>E</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mn>16</m:mn><m:msup>
+       <m:mi>t</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>9</m:mn><m:msup>
+       <m:mi>t</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mn>25</m:mn><m:msup>
+       <m:mi>t</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>±</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>25</m:mn><m:msup>
+         <m:mi>t</m:mi>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Resuelva para </m:mtext><m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mtext> con la raíz cuadrada</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mo>=</m:mo><m:mo>±</m:mo><m:mn>5</m:mn><m:mo>|</m:mo><m:mi>t</m:mi><m:mo>|</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137628905">En este escenario solo consideramos valores positivos de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> por lo que nuestra distancia <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> siempre será positiva. Podemos simplificar esta respuesta a <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Esto significa que la distancia entre Anna y Emanuel es también una función lineal. Dado que <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi>
+ </m:mrow>
+</m:math> es una función lineal, ahora podemos responder la pregunta de cuándo la distancia entre ellos será de 2 millas. Estableceremos la salida <m:math>
+ <m:mrow>
+  <m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+ </m:mrow>
+</m:math> y resolvemos para <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<equation id="fs-id1165137646150" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>D</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>    </m:mtext><m:mn>5</m:mn><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
+       <m:mn>2 </m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mn>0,4</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137600652">Saldrán del contacto por radio en 0,4 horas o 24 minutos.</para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137784873" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165135189863"><emphasis>¿Debería dibujar diagramas cuando me dan información con base en una forma geométrica?</emphasis></para>
+<para id="fs-id1165137551553"><emphasis effect="italics">Sí. Haga un croquis de la cifra y marque las cantidades y las incógnitas en este.</emphasis></para>
+</note>
+
+<example id="Example_02_03_03">
+<exercise id="fs-id1165135210156">
+<problem id="fs-id1165137552331">
+<title>Usar un diagrama para modelar la distancia entre ciudades</title>
+<para id="fs-id1165137451170">Hay una carretera recta que va desde la ciudad de Westborough hasta Agritown, a 30 millas al este y 10 millas al norte. A mitad de camino, esta carretera se une a otra, perpendicular a la primera, que conduce a la ciudad de Eastborough. Si la ciudad de Eastborough está situada a 20 millas directamente al este de la ciudad de Westborough, ¿a qué distancia está el cruce de carreteras de Westborough?</para>
+</problem>
+<solution id="fs-id1165137463078">
+<para id="fs-id1165137423022">En este caso valdría la pena hacer un dibujo de la situación. Vea el <link target-id="CNX_Precalc_Figure_02_03_005"/>. A continuación, sería útil introducir un sistema de coordenadas. Aunque podríamos situar el origen en cualquier lugar, situarlo en Westborough luce conveniente. Esto sitúa a Agritown en las coordenadas <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>3</m:mtext><m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 1</m:mtext><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y a Eastborough en <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>2 </m:mtext><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+
+<figure id="CNX_Precalc_Figure_02_03_005">
+<media id="fs-id1165137664330" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_005.jpg"/>
+</media>
+</figure>
+<para id="fs-id1165137911037">Usando este punto junto con el origen, podemos calcular la pendiente de la línea de Westborough a Agritown:</para>
+
+<equation id="fs-id1165137443510" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn><m:mo>- −</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>30</m:mn><m:mo>-</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-id1165137601785">La ecuación de la carretera de Westborough a Agritown sería:</para>
+
+<equation id="fs-id1165137482707" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>x</m:mi>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137528722">A partir de esto, podemos determinar que la carretera perpendicular a Eastborough tendrá la pendiente <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>3.</m:mn>
+ </m:mrow>
+</m:math> Debido a que la ciudad de Eastborough está en el punto (20, 0), podemos hallar la ecuación:</para>
+
+<equation id="fs-id1165137646500" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mn>0</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>b</m:mi>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituir en (20, 0)</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>b</m:mi><m:mo>=</m:mo><m:mn>60</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>60</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165135541860">Ahora podemos hallar las coordenadas del cruce de las carreteras al dar con la intersección de estas líneas. Igualarlas,</para>
+
+<equation id="fs-id1165137731579" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mspace width="0.5em"/><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>60</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>60</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>10</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>180</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>18</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Sustituir esto de nuevo en </m:mtext><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mi>y</m:mi><m:mo>=</m:mo><m:mi>W</m:mi><m:mo stretchy="false">(</m:mo><m:mn>18</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>     </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo><m:mn>18</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>      </m:mtext><m:mo>=</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation><para id="fs-id1165137394045">Las carreteras se cruzan en el punto (18, 6). Con la fórmula de la distancia, ahora podemos hallar la distancia desde Westborough hasta el cruce<newline count="1"/></para>
+
+<equation id="fs-id1165137759862" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>distancia</m:mtext><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>x</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msub>
+          <m:mo>-</m:mo><m:msub>
+           <m:mi>y</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>              </m:mtext><m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mn>18</m:mn><m:mo>- −</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+        <m:mo>+</m:mo><m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2 </m:mn>
+        </m:msup>
+
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mo>≈</m:mo><m:mn>18,974</m:mn><m:mtext> millas</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+
+<commentary id="fs-id1165137598858">
+<title>Análisis</title>
+<para id="fs-id1165135460918">Un buen uso de los modelos lineales es aprovechar el hecho de que los gráficos de estas funciones son líneas. Esto significa que las aplicaciones en el mundo real que hablan de mapas necesitan funciones lineales para modelar las distancias entre los puntos de referencia.</para>
+</commentary>
+</exercise>
+</example>
+
+<note id="fs-id1165137575117" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="ti_02_03_03">
+<problem id="fs-id1165137793470"><para id="fs-id1165137534313">Hay una carretera recta que va de la ciudad de Timpson a Ashburn 60 millas al este y 12 millas al norte. A mitad de camino, la carretera se cruza con una segunda vía, perpendicular a la primera, que conduce a la ciudad de Garrison. Si la ciudad de Garrison está situada a 22 millas directamente al este de la ciudad de Timpson, ¿a qué distancia está el cruce de carreteras de Timpson?</para></problem>
+<solution id="fs-id1165137676368">
+<para id="fs-id1165135185983">21,57 millas</para></solution>
+</exercise>
+</note>
+</section>
+</section><section id="fs-id1165137475998"><title>Construir sistemas de modelos lineales</title><para id="fs-id1165135176498">Las situaciones en el mundo real que incluyen dos o más funciones lineales pueden modelarse con un <term class="no-emphasis" id="term-00006">sistema de ecuaciones lineales</term>. Recuerde que, al resolver un sistema de ecuaciones lineales, buscamos los puntos que tienen en común las dos líneas. Normalmente, hay tres tipos de respuestas posibles, como se indica en la <link target-id="Figure_02_03_006"/>.</para>
+
+<figure id="Figure_02_03_006"><media id="eip-id1165135414368" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_006abc.jpg"/>
+</media>
+</figure><note id="fs-id1165137898012" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137677560"><emphasis>Dada una situación que representa un sistema de ecuaciones lineales, escribir el sistema de ecuaciones e identificar la solución.</emphasis></para>
+<list id="fs-id1165137693916" list-type="enumerated" number-style="arabic"><item>Identifique la entrada y la salida de cada modelo lineal.</item>
+<item>Identifique la pendiente y la intersección en <emphasis effect="italics">y</emphasis> de cada modelo lineal.</item>
+<item>Halle la solución al igualar las dos funciones lineales y resolver para <m:math>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> o halle el punto de intersección en un gráfico.</item>
+</list></note>
+
+<example id="Example_02_03_04">
+<exercise id="fs-id1165137714280">
+<problem id="fs-id1165137676055">
+<title>Construir un sistema de modelos lineales para elegir una empresa de alquiler de camiones</title>
+<para id="fs-id1165137423863">Jamal está eligiendo entre dos empresas de alquiler de camiones. La primera, Keep on Trucking, Inc., cobra una cuota inicial de 20 dólares y luego 59 céntimos por kilómetro. La segunda, Move It Your Way, cobra una cuota inicial de 16 dólares y luego 63 céntimos por kilómetro.<footnote id="fs-id1165137645119">Tarifas obtenidas el 2 de agosto de 2010 de http://www.budgettruck.com y http://www.uhaul.com/</footnote>. ¿Cuándo será Keep on Trucking, Inc. la mejor opción para Jamal?</para>
+</problem>
+<solution id="fs-id1165137939801">
+<para id="fs-id1165137653015">Las dos cantidades importantes en este problema son el costo y el número de kilómetros recorridos. Dado que tenemos que considerar dos empresas, definiremos dos funciones.</para>
+
+ <table id="fs-id1165137566638" summary="La tabla tiene tres filas y tres columnas. En la primera columna están los años 1950 y 2000. En las segundas columnas están los valores de las casas de Indiana, que son 37700 para 1950 y 94300 para 2000. En las terceras columnas están los valores de las viviendas en Alabama, que son 27100 para 1950 y 85100 para 2000.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<tbody>
+<row>
+<entry align="center">Entrada</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>d</m:mi><m:mo>,</m:mo></m:mrow>
+</m:math> distancia recorrida en millas.</entry>
+</row>
+<row>
+<entry align="center">Salidas</entry>
+<entry align="center"> <m:math>
+<m:mrow>
+<m:mi>K</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>:</m:mo>
+</m:mrow>
+</m:math> costo, en dólares, del alquiler de Keep on Trucking<newline count="1"/> <m:math>
+<m:mrow>
+<m:mi>M</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mi>d</m:mi>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> costo, en dólares, del alquiler en Move It Your Way.</entry>
+</row>
+<row>
+<entry align="center">Valor inicial</entry>
+<entry align="center">Anticipo: <m:math>
+<m:mrow>
+<m:mi>K</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>0</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>2 </m:mtext><m:mn>0</m:mn>
+</m:mrow>
+</m:math> y <m:math>
+<m:mrow>
+<m:mi>M</m:mi><m:mrow><m:mo>(</m:mo>
+<m:mn>0</m:mn>
+<m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mtext>16</m:mtext>
+</m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Tasa de cambio</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:mi>K</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>$</m:mtext><m:mn>0,</m:mn><m:mtext>59</m:mtext>
+ </m:mrow>
+</m:math> /milla y <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>$</m:mtext><m:mn>0,</m:mn><m:mtext>63</m:mtext>
+ </m:mrow>
+</m:math> /milla</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="fs-id1165135209833">La función lineal es de la forma <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Con las tasas de cambio y los cobros iniciales podemos escribir las ecuaciones</para>
+
+<equation id="fs-id1165137435497" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>K</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,59</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>20</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr>
+    <m:mtd>
+     <m:mrow>
+      <m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0,63</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165137726240">Con estas ecuaciones podemos determinar cuándo Keep on Trucking, Inc. será la mejor opción. Ya que lo único que tenemos para tomar esa decisión son los costos, buscamos cuándo Move It Your Way, costará menos o cuándo <m:math>
+ <m:mrow>
+  <m:mi>K</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>&lt;</m:mo><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> El camino de la solución nos llevará a dar con las ecuaciones de las dos funciones, hallar la intersección y luego ver dónde la función <m:math>
+ <m:mrow>
+  <m:mi>K</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>d</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> es menor.</para>
+<para id="fs-id1165137874768">Estos gráficos se encuentran en la <link target-id="CNX_Precalc_Figure_02_03_007"/>, con <m:math>
+ <m:mrow>
+  <m:mi>K</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>d</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> en azul.</para>
+
+<figure id="CNX_Precalc_Figure_02_03_007">
+<media id="fs-id1165137526514" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_007-35ee.jpg"/>
+</media>
+</figure>
+
+<para id="fs-id1165137731943">Para hallar la intersección, igualamos las ecuaciones y resolvemos:</para>
+<equation id="fs-id1165137448488" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>K</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mn>0,59</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>20</m:mn><m:mo>=</m:mo><m:mn>0,63</m:mn><m:mi>d</m:mi><m:mo>+</m:mo><m:mn>16</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>0,04</m:mn><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mn>100</m:mn><m:mo>=</m:mo><m:mi>d</m:mi>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow><m:mspace width="0.5em"/><m:mi>d</m:mi><m:mo>=</m:mo><m:mn>100</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+ <para id="fs-id1165137628623">Esto nos indica que el costo de las dos compañías será el mismo si se recorren 100 millas. Ya sea al observar el gráfico o al notar que <m:math>
+  <m:mrow><m:mi>K</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> crece a un ritmo más lento, podemos concluir que Keep on Trucking, Inc. será el precio más barato cuando se recorran más de 100 millas, es decir: <m:math>
+   <m:mrow>
+    <m:mi>d</m:mi><m:mo>></m:mo><m:mn>100.</m:mn>
+   </m:mrow>
+  </m:math>
+ </para>
+</solution>
+</exercise></example>
+
+<note id="fs-id1165137702134" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165135593590">Acceda a este recurso en línea para obtener más información y practicar con los modelos de funciones lineales.</para>
+<list id="fs-id1165137655182"><item><link url="http://openstax.org/l/interpretlinear">Interpretación de una función lineal</link></item></list>
+</note>
+</section><section id="fs-id1165137725020" class="key-concepts">
+<list id="fs-id1165137563372">
+<item>Podemos utilizar las mismas estrategias de problemas que utilizaríamos para cualquier tipo de función.</item>
+<item>Al modelar y resolver un problema, identifique las variables y busque los valores clave, incluso la pendiente y la intersección en <emphasis effect="italics">y</emphasis>. Vea el <link target-id="Example_02_03_01"/>.</item>
+<item>Dibuje un diagrama, si procede. Vea el <link target-id="Example_02_03_02"/> y el <link target-id="Example_02_03_03"/>.</item>
+<item>Compruebe si la respuesta es razonable.</item>
+<item>Los modelos lineales pueden construirse al identificar o calcular la pendiente y utilizar la intersección en <emphasis effect="italics">y</emphasis>.</item>
+<item>La intercepción en <emphasis effect="italics">x</emphasis> se halla al establecer <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> que iguala la expresión <m:math>
+ <m:mrow>
+  <m:mi>m</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+ </m:mrow>
+</m:math> a 0.</item>
+<item>El punto de intersección de un sistema de ecuaciones lineales es el punto en el que los valores de <emphasis effect="italics">x</emphasis> y de <emphasis effect="italics">y</emphasis> son iguales. Vea el <link target-id="Example_02_03_04"/>.</item>
+<item>Se puede utilizar un gráfico del sistema para identificar los puntos en los que una línea cae por debajo (o por encima) de la otra línea.</item>
+</list></section>
+
+<section id="fs-id1165137595359" class="section-exercises">
+<section id="fs-id1165137771231">
+<title>Verbales</title>
+<exercise id="fs-id1165135441752">
+<problem id="fs-id1165137611904"><para id="fs-id1165137534468">Explique cómo encontrar la variable de entrada en un problema matemático que utiliza una función lineal.</para></problem>
+<solution id="fs-id1165135175112"><para id="fs-id1165135342998">Determine la variable independiente. Es la variable de la que depende la salida.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137611226">
+<problem id="fs-id1165137580524"><para id="fs-id1165137580525">Explique cómo hallar la variable de salida en un problema matemático que utiliza una función lineal.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135160081">
+<problem id="fs-id1165137694006"><para id="fs-id1165137463916">Explique cómo interpretar el valor inicial en un problema matemático que utiliza una función lineal.</para></problem>
+<solution id="fs-id1165137640071"><para id="fs-id1165137772377">Para determinar el valor inicial, halle la salida cuando la entrada sea igual a cero.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135175102">
+<problem id="fs-id1165137645745"><para id="fs-id1165137645746">Explique cómo determinar la pendiente en un problema matemático que utiliza una función lineal.</para></problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137734545">
+<title>Algebraicos</title>
+<exercise id="fs-id1165135333614"><problem id="fs-id1165137455023"><para id="fs-id1165137455024">Halle el área de un paralelogramo delimitado por el eje <emphasis effect="italics">y</emphasis>, la línea <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la línea <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la línea paralela a <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> pasando por <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>2 </m:mtext><m:mo>,</m:mo><m:mtext> 7</m:mtext>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+
+<solution id="fs-id1165137766877"><para id="fs-id1165137570435">6 unidades cuadradas</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135169146">
+<problem id="fs-id1165137560774"><para id="fs-id1165137560775">Halle el área de un triángulo delimitado por el eje <emphasis effect="italics">x</emphasis>, la línea <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>–</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+  <m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la línea perpendicular a <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> que pasa por el origen.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137675451">
+<problem id="fs-id1165135160785"><para id="fs-id1165135160786">Halle el área de un triángulo delimitado por el eje <emphasis effect="italics">y</emphasis>, la línea <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>9</m:mn><m:mo>–</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mn>7</m:mn>
+  </m:mfrac>
+  <m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la línea perpendicular a <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> que pasa por el origen.</para></problem>
+<solution id="fs-id1165137437950"><para id="fs-id1165137667644">20,012 unidades cuadradas</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137422208">
+<problem id="fs-id1165137463531"><para id="fs-id1165137463532">Halle el área de un paralelogramo delimitado por el eje <emphasis effect="italics">x</emphasis>, la línea <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> la línea <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y la línea paralela a <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> pasando por <m:math>
+ <m:mrow>
+  <m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<para id="fs-id1165137771613">En los siguientes ejercicios, considere este escenario: La población de una ciudad ha disminuido a un ritmo constante. En 2010 la población era de 5.900 habitantes. Para 2012, la población había aumentado a 4.700. Supongamos que esta tendencia se mantiene.</para>
+<exercise id="fs-id1165137594523">
+<problem id="fs-id1165137581184"><para id="fs-id1165137747996">Prediga la población en 2016.</para></problem>
+<solution id="fs-id1165137644909"><para id="fs-id1165137666138">2.300</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137540032">
+<problem id="fs-id1165137448335">
+<para id="fs-id1165137476323">Identifique el año en el que la población llegará a 0.</para>
+</problem>
+</exercise>
+
+<para id="fs-id1165137565242">En los siguientes ejercicios, considere este escenario: La población de una ciudad ha aumentado a un ritmo constante. En 2010 la población era de 46.020 habitantes. En 2012 la población se había incrementado a 52.070 habitantes. Supongamos que esta tendencia se mantiene.</para>
+<exercise id="fs-id1165137635148">
+<problem id="fs-id1165137470361"><para id="fs-id1165137470362">Prediga la población en 2016.</para></problem>
+<solution id="fs-id1165137598282"><para id="fs-id1165137598283">64,170</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137558707">
+<problem id="fs-id1165135435779">
+<para id="fs-id1165137594407">Identifique el año en que la población alcanzará los 75.000 habitantes.</para>
+ </problem>
+</exercise>
+
+<para id="fs-id1165137629115">En los siguientes ejercicios, considere este escenario: Una ciudad tiene una población inicial de 75.000 habitantes. Crece a un ritmo constante de 2.500 al año durante 5 años.</para>
+
+<exercise id="fs-id1165137473147">
+<problem id="fs-id1165137573290"><para id="fs-id1165137405602">Halle la función lineal que modela la población de la ciudad <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math> en función del año, <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> es el número de años transcurridos desde el inicio del modelo.</para></problem>
+<solution id="fs-id1165135570354"><para id="fs-id1165137629399"> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>+</m:mo><m:mn>2,500</m:mn><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137441928">
+<problem id="fs-id1165137727161"><para id="fs-id1165137727162">Halle un dominio y un rango razonables para la función <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165137446563">
+<problem id="fs-id1165137418136"><para id="fs-id1165137627523">Si se grafica la función <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math>, halle e interprete las intersecciones en <emphasis effect="italics">x</emphasis> y en <emphasis effect="italics">y</emphasis>.</para></problem>
+<solution id="fs-id1165137471495"><para id="fs-id1165137471496">(-30, 0) Treinta años antes del inicio de este modelo, la ciudad no tenía habitantes. (0, 75.000) Inicialmente, la ciudad tenía una población de 75.000 habitantes.</para></solution>
+</exercise>
+<exercise id="fs-id1165137434902">
+<problem id="fs-id1165135596394"><para id="fs-id1165137824470">Si la función <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi>
+ </m:mrow>
+</m:math>, halle e interprete la pendiente de la función.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137433212">
+<problem id="fs-id1165137780834"><para id="fs-id1165137432699">¿Cuándo se llegará a los 100.000?</para></problem>
+<solution id="fs-id1165137771800"><para id="fs-id1165137424286">Diez años después del inicio del modelo.</para></solution>
+</exercise>
+<exercise id="fs-id1165137740791">
+<problem id="fs-id1165137474307"><para id="fs-id1165137474308">¿Cuál es la salida en el año 12 desde el inicio del modelo?</para></problem>
+</exercise>
+
+<para id="fs-id1165137442404">Para los siguientes ejercicios, considere este escenario: Un bebé pesa 7,5 libras al nacer. Aumenta media libra al mes durante su primer año.</para>
+
+<exercise id="fs-id1165135242837">
+<problem id="fs-id1165137666941"><para id="fs-id1165137793712">Halle la función lineal que modele el peso del bebé <m:math>
+ <m:mrow>
+  <m:mi>W</m:mi>
+ </m:mrow>
+</m:math> en función de su edad, en meses, <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137640807"><para id="fs-id1165137619260"> <m:math>
+ <m:mrow>
+  <m:mi>W</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,</m:mn><m:mtext>5</m:mtext><m:mi>t</m:mi><m:mo>+</m:mo><m:mtext>7</m:mtext><m:mo>.</m:mo><m:mtext>5</m:mtext>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135593508">
+<problem id="fs-id1165137664691"><para id="fs-id1165137664692">Halle un dominio y un rango razonables para la función <m:math><m:mi>W</m:mi></m:math>.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137465208">
+<problem id="fs-id1165137863600"><para id="fs-id1165134042704">Si se grafica la función <m:math>
+ <m:mrow><m:mi>W</m:mi></m:mrow>
+</m:math>, halle e interprete las intersecciones en <emphasis effect="italics">x</emphasis> y en <emphasis effect="italics">y</emphasis>.</para></problem>
+<solution id="fs-id1165137561117"><para id="fs-id1165137561118"> <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>0</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>: La intersección en <emphasis effect="italics">x</emphasis> no es un conjunto de datos plausible para este modelo porque significa que el bebé pesaba 0 libras a los 15 meses antes de nacer <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0</m:mn><m:mo>,</m:mo><m:mtext> 7</m:mtext><m:mo>.</m:mo><m:mtext>5</m:mtext>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>: El bebé pesaba 7,5 libras al nacer.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137824577">
+<problem id="fs-id1165137779056"><para id="fs-id1165137640333">Si se representa gráficamente la función <emphasis effect="italics">W</emphasis>, halle e interpreta la pendiente de la función.</para></problem>
+</exercise>
+<exercise id="fs-id1165137414113">
+<problem id="fs-id1165137474863"><para id="fs-id1165137474864">¿Cuándo pesó el bebé 10,4 libras?</para></problem>
+<solution id="fs-id1165135210090"><para id="fs-id1165135210091">A la edad de 5,8 meses.</para></solution>
+</exercise>
+<exercise id="fs-id1165137897935">
+<problem id="fs-id1165137461464"><para id="fs-id1165135516949">¿Cuál es la salida cuando la entrada es 6,2? Interprete su respuesta.</para></problem>
+</exercise>
+
+<para id="fs-id1165137812310">En los siguientes ejercicios, considere este escenario: El número de personas afectadas por el resfriado común en los meses de invierno se redujo en 205 cada año desde 2005 hasta 2010. En 2005, 12.025 personas se vieron afectadas.</para><exercise id="fs-id1165137762955">
+<problem id="fs-id1165137938809"><para id="fs-id1165137595577">Halle la función lineal que modela el número de personas afectadas por el resfriado común <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math> en función del año, <m:math>
+ <m:mrow>
+<m:mi>t</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135593471"><para id="fs-id1165135593472"> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>025</m:mn><m:mo>- −</m:mo><m:mn>205</m:mn><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137678164">
+<problem id="fs-id1165135512587"><para id="fs-id1165137409113">Halle un dominio y un rango razonables para la función <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+<exercise id="fs-id1165135689566">
+<problem id="fs-id1165137705776"><para id="fs-id1165137705777">Si se grafica la función <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math>, halle e interprete las intersecciones en <emphasis effect="italics">x</emphasis> y en <emphasis effect="italics">y</emphasis>.</para></problem>
+<solution id="fs-id1165137590427"><para id="fs-id1165137550386"> <m:math>
+ <m:mrow>
+  <m:mtext>(58,7, 0)</m:mtext>
+ </m:mrow>
+</m:math>: En aproximadamente 59 años, el número de personas afectadas por el resfriado común sería 0 <m:math>
+ <m:mrow>
+  <m:mtext>(0,12,025)</m:mtext>
+ </m:mrow>
+</m:math>: Inicialmente había 12.025 personas afectadas por el resfriado común.</para></solution>
+</exercise>
+<exercise id="fs-id1165137425867">
+<problem id="fs-id1165135148947"><para id="fs-id1165135203638">Si se grafica la función <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi>
+ </m:mrow>
+</m:math>, halle e interprete la pendiente de la función.</para></problem>
+</exercise>
+<exercise id="fs-id1165137460661">
+<problem id="fs-id1165137611488"><para id="fs-id1165137693558">¿Cuándo llegará la salida a 0?</para></problem>
+<solution id="fs-id1165137572511"><para id="fs-id1165137938737">2064</para></solution>
+</exercise>
+<exercise id="fs-id1165137531548">
+<problem id="fs-id1165137921789"><para id="fs-id1165137921790">¿En qué año el número de personas será de 9.700?</para></problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137603776"><title>Gráficos</title><para id="fs-id1165137436965">En los siguientes ejercicios, utilice el gráfico de la <link target-id="CNX_Precalc_Figure_02_03_201"/>, que muestra el beneficio, <m:math>
+ <m:mrow>
+  <m:mtext fontstyle="italic">y,</m:mtext>
+ </m:mrow>
+</m:math> en miles de dólares, de una empresa en un año determinado, <m:math>
+ <m:mrow>
+  <m:mtext fontstyle="italic">t,</m:mtext>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> representa el número de años desde 1980.</para>
+
+<figure id="CNX_Precalc_Figure_02_03_201" class="small">
+<media id="fs-id1165135443886" alt="Gráfico de una línea desde (15, 150) hasta (25, 130).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_201-467d.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165137656125">
+<problem id="fs-id1165137407280"><para id="fs-id1165137407282">Calcule la función lineal <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> depende de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el número de años desde 1980.</para></problem>
+<solution id="fs-id1165137637295"><para id="fs-id1165137644781"> <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>t</m:mi><m:mtext>+180</m:mtext>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+<exercise id="fs-id1165137455589">
+<problem id="fs-id1165135485196"><para id="fs-id1165137652000">Halle e interprete la intersección en <emphasis effect="italics">y</emphasis>.</para></problem>
+</exercise>
+<exercise id="fs-id1165137734981">
+<problem id="fs-id1165135190888"><para id="fs-id1165135400231">Halle e interprete la intersección en <emphasis effect="italics">x</emphasis>.</para></problem>
+<solution id="fs-id1165137462728"><para id="fs-id1165137462729">En 2070, el beneficio de la empresa será cero.</para></solution>
+</exercise>
+<exercise id="fs-id1165137629060">
+<problem id="fs-id1165137732530"><para id="fs-id1165137732531">Halle e interprete la pendiente.</para></problem>
+</exercise>
+
+<para id="fs-id1165135319515">En los siguientes ejercicios, utilice el gráfico de la <link target-id="CNX_Precalc_Figure_02_03_202"/>, que muestra el beneficio, <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> en miles de dólares, de una empresa en un año determinado, <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi>
+ </m:mrow>
+</m:math> representa el número de años desde 1980.</para><figure id="CNX_Precalc_Figure_02_03_202" class="small">
+<media id="fs-id1165137742230" alt="Gráfico de una línea desde (15, 150) hasta (25, 450).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_02_03_202.jpg"/>
+</media>
+</figure>
+
+<exercise id="fs-id1165137771789">
+<problem id="fs-id1165137823711"><para id="fs-id1165135504999">Calcule la función lineal <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>y</m:mi>
+ </m:mrow>
+</m:math> depende de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> el número de años desde 1980.</para></problem>
+<solution id="fs-id1165137401223"><para id="fs-id1165137401224"> <m:math>
+ <m:mrow>
+ <m:mi>y</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mi>t</m:mi><m:mo>- −</m:mo><m:mn>300</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165137628242">
+<problem id="fs-id1165137679365"><para id="fs-id1165137679366">Halle e interprete la intersección en <emphasis effect="italics">y</emphasis>.</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137415903">
+<problem id="fs-id1165137727795"><para id="fs-id1165137727796">Halle e interprete la intersección en <emphasis effect="italics">x</emphasis>.</para></problem>
+<solution id="fs-id1165137833242"><para id="fs-id1165137833243">(10, 0) en 1990, el beneficio fue cero.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137414650">
+<problem id="fs-id1165137925253"><para id="fs-id1165134038222">Halle e interprete la pendiente.</para></problem>
+</exercise>
+</section><section id="fs-id1165135191475">
+<title>Numéricos</title>
+<para id="fs-id1165137849590">En los siguientes ejercicios, utilice la mediana del valor de la vivienda en Misisipi y Hawái (ajustado a la inflación) que aparece en la <link target-id="Table_02_03_03"/>. Supongamos que el valor de la vivienda cambia linealmente.</para>
+
+<table id="Table_02_03_03" summary="..">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center">Año</entry>
+<entry align="center">Misisipi</entry>
+<entry align="center">Hawái</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1950</entry>
+<entry align="center">$25.200</entry>
+<entry align="center">$74.400</entry>
+</row>
+<row>
+<entry align="center">2000</entry>
+<entry align="center">$71.400</entry>
+<entry align="center">$272.700</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><exercise id="fs-id1165137698679">
+<problem id="fs-id1165137507648"><para id="fs-id1165137507649">¿En qué estado ha aumentado más el valor de la vivienda?</para></problem>
+<solution id="fs-id1165134092402"><para id="fs-id1165137438957">Hawái</para></solution>
+</exercise>
+<exercise id="fs-id1165137646906">
+<problem id="fs-id1165137454971"><para id="fs-id1165137454972">Si estas tendencias se mantienen, ¿cuál sería la mediana del valor de la vivienda en Misisipi en 2010?</para></problem>
+</exercise>
+
+<exercise id="fs-id1165137731356">
+<problem id="fs-id1165135196575"><para id="fs-id1165135196576">Si suponemos que la tendencia lineal existía antes de 1950 y continúa después de 2000, ¿en cuántos años la mediana del valor de las viviendas en los dos estados será (o era) igual? (La respuesta puede ser absurda).</para></problem>
+<solution id="fs-id1165137761470"><para id="fs-id1165137480696">Durante el año 1933</para></solution>
+</exercise>
+
+<para id="fs-id1165137589871">En los siguientes ejercicios, utilice la mediana del valor de las vivienda en Indiana y Alabama (ajustado a la inflación) que aparece en la <link target-id="Table_02_03_04"/>. Supongamos que el valor de la vivienda cambia linealmente.</para>
+
+<table id="Table_02_03_04" summary="..">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry align="center">Año</entry>
+<entry align="center">Indiana</entry>
+<entry align="center">Alabama</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">1950</entry>
+<entry align="center">$37.700</entry>
+<entry align="center">$27.100</entry>
+</row>
+<row>
+<entry align="center">2000</entry>
+<entry align="center">$94.300</entry>
+<entry align="center">$85.100</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><exercise id="fs-id1165137805771">
+<problem id="fs-id1165137824552"><para id="fs-id1165137824553">¿En qué estado ha aumentado más el valor de la vivienda?</para></problem>
+</exercise>
+<exercise id="fs-id1165137433274">
+<problem id="fs-id1165137453864"><para id="fs-id1165137453865">Si estas tendencias se mantienen, ¿cuál sería la mediana del valor de la vivienda en Indiana en 2010?</para></problem>
+<solution id="fs-id1165137644719"><para id="fs-id1165137483071">$105.620</para></solution>
+</exercise>
+<exercise id="fs-id1165137782373">
+<problem id="fs-id1165137433653"><para id="fs-id1165137433654">Si suponemos que la tendencia lineal existía antes de 1950 y continúa después de 2000, ¿en cuántos años la mediana del valor de la vivienda en los dos estados será (o era) igual? (La respuesta puede ser absurda).</para></problem>
+</exercise>
+</section>
+
+<section id="fs-id1165137823055">
+<title>Aplicaciones en el mundo real</title>
+<exercise id="fs-id1165134042823">
+<problem id="fs-id1165135187306">
+<para id="fs-id1165137651791">En 2004, la población escolar era de 1.001 estudiantes. En 2008 la población había crecido hasta los 1.697 estudiantes. Supongamos que la población cambia linealmente.</para><list id="fs-id1165137427098" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> ¿Cuánto creció la población entre el año 2004 y 2008?</item>
+<item><span class="token">Ⓑ</span> ¿Cuánto tiempo tardó la población en pasar de 1.001 a 1.697 estudiantes?</item>
+<item><span class="token">Ⓒ</span> ¿Cuál es el crecimiento promedio de la población por año?</item>
+<item><span class="token">Ⓓ</span> ¿Cuál era la población en el año 2000?</item>
+<item><span class="token">Ⓔ</span> Halle una ecuación para la población, <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> de la escuela <emphasis effect="italics">t</emphasis> años después del 2000.</item>
+<item><span class="token">Ⓕ</span> Utilizando su ecuación, prediga la población escolar en 2011.</item>
+</list></problem>
+<solution id="fs-id1165137399208"><para id="fs-id1165137598924"><list id="fs-idm311911792" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> 696 estudiantes</item>
+<item><span class="token">Ⓑ</span> 4 años</item>
+<item><span class="token">Ⓒ</span> 174 estudiantes al año</item>
+<item><span class="token">Ⓓ</span> 305 estudiantes</item>
+ <item><span class="token">Ⓔ</span> <m:math>
+  <m:mrow>
+   <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>305</m:mn><m:mo>+</m:mo><m:mn>174</m:mn><m:mi>t</m:mi>
+  </m:mrow>
+ </m:math>
+ </item>
+<item><span class="token">Ⓕ</span> 2.219 estudiantes</item>
+</list>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137597954">
+<problem id="fs-id1165137694071">
+<para id="fs-id1165137694073">En 2003, la población de una ciudad era de 1.431 habitantes. En 2007 la población había crecido hasta los 2.134 habitantes. Supongamos que la población cambia linealmente.</para><list id="fs-id1165137411457" list-type="enumerated" number-style="arabic" class="circled"><item><span class="token">Ⓐ</span> ¿Cuánto creció la población entre el año 2003 y 2007?</item>
+<item><span class="token">Ⓑ</span> ¿Cuánto tiempo tardó la población en pasar de 1.431 a 2.134 habitantes?</item>
+<item><span class="token">Ⓒ</span> ¿Cuál es el crecimiento promedio de la población por año?</item>
+<item><span class="token">Ⓓ</span> ¿Cuál era la población en el año 2000?</item>
+<item><span class="token">Ⓔ</span> Halle una ecuación para la población, <m:math><m:mi>P</m:mi></m:math> de la ciudad <m:math><m:mi>t</m:mi></m:math> años después del 2000.</item>
+<item><span class="token">Ⓕ</span> Utilizando su ecuación, prediga la población de la ciudad en 2014.</item>
+</list></problem>
+</exercise>
+<exercise id="fs-id1165135169467">
+<problem id="fs-id1165135169469">
+<para id="fs-id1165137654510">Una compañía telefónica tiene un plan mensual de telefonía móvil en el que el cliente paga una cuota mensual fija y luego una determinada cantidad de dinero por minuto utilizado para las llamadas de voz y video. Si un cliente utiliza 410 minutos, el costo mensual será de 71,50 dólares. Si el cliente utiliza 720 minutos, el costo mensual será de 118 dólares.</para>
+<list id="fs-id1165137714866" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Halle una ecuación lineal para el costo mensual del plan de telefonía móvil en función de <emphasis effect="italics">x</emphasis>, el número de minutos mensuales utilizados.</item>
+<item><span class="token">Ⓑ</span> Interprete la pendiente y la intersección en <emphasis effect="italics">y</emphasis> de la ecuación.</item>
+<item><span class="token">Ⓒ</span> Utilice su ecuación para calcular el costo mensual total si se utilizan 687 minutos.</item>
+</list>
+</problem>
+<solution id="fs-id1165137834138">
+<para id="fs-id1165137425169"><list id="eip-idm1227129216" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mi>C</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0,15</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>10</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> La tarifa plana mensual es de 10 dólares y hay una tarifa adicional de 0,15 dólares por cada minuto adicional utilizado.</item>
+<item><span class="token">Ⓒ</span> $113,05</item>
+</list>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137597676">
+<problem id="fs-id1165137597678">
+<para id="fs-id1165137851718">Una compañía telefónica tiene un plan mensual de datos para teléfonos móviles en el que el cliente paga una cuota mensual fija de 10 dólares y luego una determinada cantidad de dinero por megabyte (MB) de datos utilizados en el teléfono. Si el cliente utiliza 20 MB, el costo mensual será de 11,20 dólares. Si el cliente utiliza 130 MB, el costo mensual será de 17,80 dólares.</para>
+<list id="fs-id1165137851720" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Halle una ecuación lineal para el costo mensual del plan de datos en función de <m:math><m:mi>x</m:mi></m:math>, el número de MB utilizados.</item>
+<item><span class="token">Ⓑ</span> Interprete la pendiente y la intersección en <emphasis effect="italics">y</emphasis> de la ecuación.</item> <item><span class="token">Ⓒ</span> Utilice su ecuación para calcular el costo mensual total si se utilizan 250 MB.</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1165137468815">
+<problem id="fs-id1165137468818">
+<para id="fs-id1165137679650">En 1991, la población de alces en un parque se midió en 4.360 ejemplares. En 1999, la población se elevó a 5.880 ejemplares. Supongamos que la población sigue cambiando linealmente.</para>
+<list id="fs-id1165137558874" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Halle una fórmula para la población de alces, <emphasis effect="italics">P </emphasis>desde 1990.</item>
+<item><span class="token">Ⓑ</span> ¿Cuál es la previsión de su modelo con respecto a la población de alces en 2003?</item>
+</list>
+</problem>
+<solution id="fs-id1165137749029">
+<para id="fs-id1165137749031"><list id="eip-idm393486912" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>190</m:mn><m:mi>t</m:mi><m:mo>+</m:mo><m:mn>4360</m:mn>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> 6.640 alces</item>
+</list>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137461327">
+<problem id="fs-id1165137461329">
+<para id="fs-id1165137850306">En 2003, la población de búhos en un parque se midió en 340. En 2007, la población se elevó a 285 búhos. La población cambia linealmente. Supongamos que la entrada sean los años desde 1990.</para>
+<list id="fs-id1165137612032" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Halle una fórmula para la población de búhos, <m:math><m:mi>P.</m:mi></m:math> Supongamos que la entrada sean los años desde 2003.</item>
+<item><span class="token">Ⓑ</span> ¿Cuál es la población de búhos que su modelo predice para 2012?</item>
+</list>
+</problem></exercise>
+<exercise id="fs-id1165137529717">
+<problem id="fs-id1165137543548">
+<para id="fs-id1165137543550">La Reserva Federal de Helio tenía unos 16.000 millones de pies cúbicos de helio en 2010 y se está agotando en unos 2.100 millones de pies cúbicos cada año.</para>
+<list id="fs-id1165137454274" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Dé una ecuación lineal para el resto de las reservas federales de helio, <m:math><m:mi>R,</m:mi></m:math> en términos de <m:math><m:mi>t,</m:mi></m:math> el número de años desde 2010.</item>
+<item><span class="token">Ⓑ</span> En 2015, ¿cuáles serán las reservas de helio?</item>
+<item><span class="token">Ⓒ</span> Si el ritmo de agotamiento no cambia, ¿en qué año se agotará la Reserva Federal de Helio?</item>
+</list>
+</problem>
+<solution id="fs-id1165137692085">
+<para id="fs-id1165137823644"><list id="eip-idm988319056" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> <m:math>
+ <m:mrow>
+  <m:mi>R</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>t</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>16</m:mn><m:mo>- −</m:mo><m:mn>2,1</m:mn><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> </item>
+<item><span class="token">Ⓑ</span> 5.5000 millones de pies cúbicos</item>
+<item><span class="token">Ⓒ</span> Durante el año 2017</item>
+</list>
+</para></solution>
+</exercise>
+<exercise id="fs-id1165137894362">
+<problem id="fs-id1165137629223">
+<para id="fs-id1165137629225">Supongamos que las reservas mundiales de petróleo en 2014 son de 1,8 mil millones de barriles. Si, en promedio, las reservas totales disminuyen en 25.000 millones de barriles de petróleo cada año:</para>
+<list id="fs-id1165137698727" list-type="enumerated" number-style="arabic" class="circled">
+<item><span class="token">Ⓐ</span> Dé una ecuación lineal para el resto de las reservas de petróleo, <m:math><m:mi>R,</m:mi></m:math> en términos de <m:math><m:mi>t,</m:mi></m:math> el número de años desde ahora.</item>
+<item><span class="token">Ⓑ</span> Dentro de siete años, ¿cuáles serán las reservas de petróleo?</item>
+<item><span class="token">Ⓒ</span> Si el ritmo de disminución de las reservas es constante, ¿cuándo se agotarán las reservas mundiales de petróleo?</item>
+</list>
+</problem>
+</exercise>
+<exercise id="fs-id1165135613120">
+<problem id="fs-id1165135613122"><para id="fs-id1165137771621">Está eligiendo entre dos planes diferentes de telefonía móvil de prepago. El primero cobra una tarifa de 26 céntimos por minuto. El segundo cobra una cuota mensual de 19,95 dólares <emphasis effect="italics">más</emphasis> 11 céntimos por minuto. ¿Cuántos minutos tendría que utilizar en un mes para que el segundo plan sea preferible?</para></problem>
+<solution id="fs-id1165137573235"><para id="fs-id1165137573236">Más de 133 minutos</para></solution>
+</exercise>
+<exercise id="fs-id1165137806410">
+<problem id="fs-id1165135184242"><para id="fs-id1165135184244">Está eligiendo entre dos empresas diferentes de lavado de ventanas. La primera cobra 5 dólares por cada ventana. La segunda cobra una tarifa base de 40 dólares más 3 dólares por cada ventana. ¿Cuántas ventanas necesitaría tener para que la segunda empresa sea preferible?</para></problem>
+</exercise>
+<exercise id="fs-id1165137584580">
+<problem id="fs-id1165137584583">
+<para id="fs-id1165135149018">Al momento de contratarlo en un nuevo empleo de venta de joyas, le dan dos opciones de pago: <list id="fs-id1165135149020" list-type="bulleted" bullet-style="none">
+<item>Opción A: Salario base de 17.000 dólares al año con una comisión del 12 % de las ventas que realice.</item>
+<item>Opción B: Salario base de 20.000 dólares al año con una comisión del 5 % de las ventas que realice.</item>
+</list></para>
+<para id="fs-id1165137561689">¿Cuántas joyas tendría que vender para que la opción A devengue mayores ingresos?</para>
+</problem>
+<solution id="fs-id1165137714328"><para id="fs-id1165137714329">Más de 42.857,14 dólares en joyas.</para></solution>
+</exercise>
+
+<exercise id="fs-id1165137653540">
+<problem id="fs-id1165135190880">
+<para id="fs-id1165135190882">Al momento de contratarlo en un nuevo empleo de venta de productos electrónicos, le dan dos opciones de pago: <list id="fs-id1165137714136" list-type="bulleted" bullet-style="none">
+<item>Opción A: Salario base de 14.000 dólares al año con una comisión del 10 % de las ventas que realice.</item>
+<item>Opción B: Salario base de 19.000 dólares al año con una comisión del 4 % de las ventas que realice.</item>
+</list>
+</para>
+<para id="fs-id1165134036057">¿Cuántos aparatos electrónicos tendría que vender para que la opción A produjera mayores ingresos?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165137416871">
+<problem id="fs-id1165137416873">
+<para id="fs-id1165137922572">Al momento de contratarlo en un nuevo empleo de venta de productos electrónicos, le dan dos opciones de pago: <list id="fs-id1165137922574" list-type="bulleted" bullet-style="none">
+<item>Opción A: Salario base de 20.000 dólares al año con una comisión del 12 % de las ventas que realice.</item>
+<item>Opción B: Salario base de 26.000 dólares al año con una comisión del 3 % de las ventas que realice.</item>
+</list>
+</para>
+<para id="fs-id1165135149053">¿Cuántos aparatos electrónicos tendría que vender para que la opción A produjera mayores ingresos?</para>
+</problem>
+<solution id="fs-id1165137823044"><para id="fs-id1165137784379">$66.666,67</para></solution>
+</exercise>
+<exercise id="fs-id1165135178371">
+<problem id="fs-id1165135178373">
+<para id="fs-id1165137406550">Al momento de contratarlo en un nuevo empleo de venta de productos electrónicos, le dan dos opciones de pago: <list id="fs-id1165137406552" list-type="bulleted" bullet-style="none">
+<item>Opción A: Salario base de 10.000 dólares al año con una comisión del 9 % de las ventas que realice.</item>
+<item>Opción B: Salario base de 20.000 dólares al año con una comisión del 4 % de las ventas que realice.</item>
+</list>
+</para>
+<para id="fs-id1165137794120">¿Cuántos aparatos electrónicos tendría que vender para que la opción A produjera mayores ingresos?</para>
+</problem>
+</exercise>
+</section>
+</section>
+</content>
+</document>

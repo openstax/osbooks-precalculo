@@ -1,0 +1,4397 @@
+﻿<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Hallar los límites: Propiedades de los límites</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m49453</md:content-id>
+  <md:title>Hallar los límites: Propiedades de los límites</md:title>
+  <md:abstract><para id="para-00001">En esta sección, podrá:</para>
+<list id="list-00001">
+<item>Halle el límite de una suma, una diferencia y un producto.</item>
+<item>Hallar el límite de un polinomio.</item>
+<item>Hallar el límite de una potencia o una raíz.</item>
+<item>Hallar el límite de un cociente.</item>
+</list></md:abstract>
+  <md:uuid>72a4d1bc-d706-47e8-8ac3-138d637bdcef</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-id1165135193943">Considere la <term class="no-emphasis" id="term-00001">función racional</term></para> <equation id="fs-id1165135496662" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math> </equation><para id="fs-id1165135190178">La función se puede factorizar de la siguiente manera:</para>
+<equation id="fs-id1165137793774" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:menclose notation="updiagonalstrike">
+     <m:mrow>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:menclose>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:menclose notation="updiagonalstrike">
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:menclose>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+ <m:mtext> que nos da </m:mtext>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>7.</m:mn>
+ </m:mrow></m:math>
+</equation>
+
+<para id="fs-id1165137771861">¿Esto significa que la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> es lo mismo que la función <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>?</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165137894578">La respuesta es no. La función <m:math>
+ <m:mi>f</m:mi>
+</m:math> no tiene <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> en su dominio, pero <m:math>
+ <m:mi>g</m:mi>
+</m:math> sí lo tiene. Gráficamente, observamos que hay un agujero en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> como se muestra en la <link target-id="CNX_Precalc_Figure_12_02_001"/> y no hay tal agujero en el gráfico de <m:math>
+ <m:mrow>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> como se muestra en la <link target-id="CNX_Precalc_Figure_12_02_002"/>.</para><figure id="CNX_Precalc_Figure_12_02_001" class="small"><media id="fs-id1165135369319" alt="Gráfico de una función creciente donde f(x) = (x^2 – 6x –7)\(x – 7) con una discontinuidad en (7, 8)">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_02_001.jpg"/>
+</media>
+
+<caption>El gráfico de la función <m:math>
+ <m:mi>f</m:mi>
+</m:math> contiene una interrupción en <emphasis effect="underline"> <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+</m:math> </emphasis> y por lo tanto no es continuo en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7.</m:mn>
+ </m:mrow>
+</m:math> </caption></figure><figure id="CNX_Precalc_Figure_12_02_002" class="small">
+<media id="fs-id1165137693695" alt="Gráfico de una función creciente donde g(x) = x + 1">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_02_002.jpg"/>
+</media>
+<caption>El gráfico de la función <m:math>
+ <m:mi>g</m:mi>
+</m:math> es continuo.</caption>
+</figure>
+
+<para id="fs-id1165137443775">Entonces, ¿estas dos funciones diferentes también tienen límites diferentes a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7?</para>
+
+<para id="fs-id1165135192845">No necesariamente. Recuerde que al determinar el <term class="no-emphasis" id="term-00002">límite</term> de una función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> lo que importa es si la salida se acerca a un número real a medida que nos acercamos a <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> La existencia de un límite no depende de lo que ocurra cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> es igual a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135332986">Mire de nuevo la <link target-id="CNX_Precalc_Figure_12_02_001"/> y la <link target-id="CNX_Precalc_Figure_12_02_002"/>. Observe que en ambos gráficos, a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 7, los valores de salida se acercan a 8. Esto significa que</para>
+<equation id="fs-id1165135306822" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>7</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>7</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+
+<para id="fs-id1165135191649">Recuerde que cuando se determina un límite, la preocupación es lo que ocurre cerca de <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> no en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> En esta sección utilizaremos una variedad de métodos, como reescribir funciones por factorización, para evaluar el límite. Estos métodos nos permitirán verificar formalmente lo que antes conseguíamos por intuición.</para><section id="fs-id1165137851439">
+<title>Hallar el límite de una suma, una diferencia y un producto</title>
+<para id="fs-id1165137824105">Graficar una función o explorar una tabla de valores para determinar un límite puede ser engorroso y llevar mucho tiempo. Cuando es posible, es más eficiente utilizar las <term id="term-00003">propiedades de los límites</term>, lo cual es una colección de teoremas para hallar límites.</para>
+<para id="fs-id1165137407621">Conocer las propiedades de los límites nos permite calcularlos directamente. Podemos sumar, restar, multiplicar y dividir los límites de las funciones como si estuviéramos realizando las operaciones sobre las propias funciones para hallar el límite del resultado. Del mismo modo, podemos hallar el límite de una función elevada a una potencia llevando el límite a esa potencia. También podemos hallar el límite de la raíz de una función tomando la raíz del límite. Utilizando estas operaciones sobre los límites, podemos hallar los límites de funciones más complejas hallando los límites de sus funciones componentes más simples.</para>
+
+<note id="fs-id1165137673669">
+
+<title>Propiedades de los límites</title>
+
+<para id="fs-id1165137665911">Supongamos que <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>k</m:mi><m:mo>,</m:mo><m:mspace width="0.5em"/><m:mi>A</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mi>B</m:mi>
+</m:math> representan números reales, y <m:math>
+ <m:mi>f</m:mi>
+</m:math> y <m:math>
+ <m:mi>g</m:mi>
+</m:math> son funciones, de manera que <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi>
+ </m:mrow>
+</m:math> y <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>B</m:mi><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> Para los límites que existen y son finitos, las propiedades de los límites se resumen en la <link target-id="Table_12_02_01"/></para><table id="Table_12_02_01" summary="..">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left"/>
+<colspec colnum="2" colname="c2" align="left"/>
+<tbody>
+<row>
+<entry align="center">Constante <emphasis effect="italics">k</emphasis></entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>k</m:mi><m:mo>=</m:mo><m:mi>k</m:mi>
+ </m:mrow>
+</m:math> </entry>
+</row>
+
+<row>
+<entry align="center">Constante por una función</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mi>k</m:mi><m:mo>⋅</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:mi>k</m:mi><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>k</m:mi><m:mi>A</m:mi>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Suma de funciones</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>+</m:mo><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Diferencia de funciones</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>-</m:mo><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Producto de funciones</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+  </m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>=</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>A</m:mi><m:mo>⋅</m:mo><m:mi>B</m:mi>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Cociente de funciones</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:munder>
+     <m:mrow>
+      <m:mi>lím</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+     </m:mrow>
+    </m:munder>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:munder>
+     <m:mrow>
+      <m:mi>lím</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+     </m:mrow>
+    </m:munder>
+    <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mi>A</m:mi>
+   <m:mi>B</m:mi>
+  </m:mfrac>
+  <m:mo>,</m:mo><m:mi>B</m:mi><m:mo>≠</m:mo><m:mn>0</m:mn>
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Función elevada a un exponente</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:msup>
+   <m:mrow>
+    <m:mo stretchy="false">[</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>[</m:mo> <m:mrow>
+     <m:munder>
+      <m:mrow>
+       <m:mi>lím</m:mi>
+      </m:mrow>
+      <m:mrow>
+       <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+      </m:mrow>
+     </m:munder>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+    </m:mrow> <m:mo>]</m:mo></m:mrow>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>=</m:mo><m:msup>
+   <m:mi>A</m:mi>
+   <m:mi>n</m:mi>
+  </m:msup>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> donde <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi>
+ </m:mrow>
+</m:math> es un número entero positivo</entry>
+</row>
+<row>
+<entry align="center">raíz <emphasis effect="italics">enésima</emphasis> de una función, donde n es un número entero positivo</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mroot>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:mroot>
+  <m:mo>=</m:mo><m:mroot>
+   <m:mrow>
+    <m:munder>
+     <m:mrow>
+      <m:mi>lím</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+     </m:mrow>
+    </m:munder>
+    <m:mrow><m:mo>[</m:mo> <m:mrow>
+     <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+    </m:mrow> <m:mo>]</m:mo></m:mrow>
+   </m:mrow>
+   <m:mi>n</m:mi>
+  </m:mroot>
+  <m:mo>=</m:mo><m:mroot>
+   <m:mi>A</m:mi>
+   <m:mi>n</m:mi>
+  </m:mroot>
+
+ </m:mrow>
+</m:math> </entry>
+</row>
+<row>
+<entry align="center">Función polinómica</entry>
+<entry align="center"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>a</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </entry>
+</row>
+</tbody>
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></note><example id="Example_12_02_01">
+<exercise id="fs-id1165137462229"><problem id="fs-id1165137898950">
+<title>Evaluar el límite de una función de forma algebraica</title>
+<para id="fs-id1165137471760">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137595675">
+<equation id="fs-id1165137574639" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Propiedad de la suma de funciones</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                     </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Constante por una propiedad de la función</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                     </m:mtext><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Evalúe</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                     </m:mtext><m:mo>=</m:mo><m:mn>11</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+<note id="ti_12_02_01" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137640927">
+<problem id="fs-id1165137464133"><para id="fs-id1165137464134">Evalúe el siguiente límite: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>12</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mo>–</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137544686">
+<para id="fs-id1165137480844">26</para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="fs-id1165137605562"><title>Hallar el límite de un polinomio</title><para id="fs-id1165137542731">No todas las funciones o sus límites implican una simple suma, resta o multiplicación. Algunos pueden incluir polinomios. Recordemos que un polinomio es una expresión que consiste en la suma de dos o más términos, cada uno de los cuales está formado por una constante y una variable elevada a una potencia entera no negativa. Para hallar el límite de una función polinómica, podemos encontrar los límites de cada uno de los términos de la función y luego sumarlos. Además, el <term class="no-emphasis" id="term-00004">límite</term> de una función polinómica a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> equivale a evaluar simplemente la función para <m:math>
+ <m:mi>a</m:mi>
+</m:math>.</para>
+<note id="fs-id1165135193626" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137726409"><emphasis>Dada una función que contiene un polinomio, halle su límite.</emphasis> <list id="fs-id1165137415162" list-type="enumerated" number-style="arabic">
+<item>Utilice las propiedades de los límites para descomponer el polinomio en términos individuales.</item>
+<item>Halle los límites de los términos individuales.</item>
+<item>Sume los límites.</item>
+<item>Alternativamente, evalúe la función para <m:math>
+ <m:mi>a</m:mi>
+</m:math>.</item>
+</list>
+</para></note>
+
+<example id="Example_12_02_02"><exercise id="fs-id1165137452463"><problem id="fs-id1165137571564">
+<title>Evaluar el límite de una función de forma algebraica</title>
+<para id="fs-id1165137448325">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>5</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137432040">
+<equation id="eip-id1165134174912" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Constante por una propiedad de la función</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mn>3</m:mn>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Función elevada a una propiedad de exponente</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                </m:mtext><m:mo>=</m:mo><m:mn>45</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise>
+</example><note id="ti_12_02_02" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137754622">
+<problem id="fs-id1165137540447">
+<para id="fs-id1165137476545">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mo stretchy="false">(</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137714560">
+<para id="fs-id1165137660953">59</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_12_02_03">
+<exercise id="fs-id1165137643380"><problem id="fs-id1165137692596">
+<title>Evaluar el límite de un polinomio de forma algebraica</title>
+<para id="fs-id1165137862060">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>2 </m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135193309">
+<equation id="eip-id1165134178498" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Suma de funciones</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mn>2</m:mn><m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:munder>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Constante por una función</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">(</m:mo><m:msup>
+       <m:mn>5</m:mn>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Función elevada a un exponente</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:mn>236</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Evalúe</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation></solution>
+</exercise></example>
+
+
+<note id="ti_12_02_03" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135319512">
+<problem id="fs-id1165135319514">
+<para id="fs-id1165135369598">Evalúe el siguiente límite: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>4</m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>4</m:mn><m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>3</m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135241281">
+<para id="fs-id1165135241284">10</para>
+</solution>
+</exercise>
+</note>
+</section><section id="fs-id1165135241291"><title>Hallar el límite de una potencia o una raíz</title><para id="fs-id1165135438506">Cuando un límite incluye una potencia o una raíz, necesitamos otra propiedad que nos permita evaluarlo. El cuadrado del <term class="no-emphasis" id="term-00005">límite</term> de una función es igual al límite del cuadrado de la función; lo mismo ocurre con las potencias superiores. Asimismo, la raíz cuadrada del límite de una función es igual al límite de la raíz cuadrada de la función; lo mismo ocurre con las raíces superiores.</para><example id="Example_12_02_04">
+<exercise id="fs-id1165135369511">
+<problem id="fs-id1165135369513">
+<title>Evaluar el límite de una potencia</title>
+<para id="fs-id1165135369519">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>5</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135256155">
+<para id="fs-id1165135256157">Tomaremos el límite de la función a medida cuando <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 2 y elevaremos el resultado a la 5.ª<sup/> potencia.</para>
+<equation id="fs-id1165135311808" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:munder>
+         <m:mrow>
+          <m:mi>lím</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+         </m:mrow>
+        </m:munder>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:msup>
+       <m:mn>7</m:mn>
+       <m:mn>5</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:mtext>16.807</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</equation>
+</solution>
+</exercise>
+</example>
+
+<note id="ti_12_02_04" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165137749541">
+<problem id="fs-id1165137749543"> <para id="fs-id1165137749545">Evalúe el siguiente límite: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:msup>
+   <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+     <m:mrow>
+      <m:mn>10</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>36</m:mn>
+     </m:mrow>
+    <m:mo>)</m:mo></m:mrow>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135421726">
+<para id="fs-id1165135421728"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>64</m:mn>
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165137642913" class="precalculus qa">
+<label>PREGUNTAS Y RESPUESTAS</label>
+<para id="fs-id1165137642923"><emphasis>Si no podemos aplicar directamente las propiedades de un límite, por ejemplo en <m:math>
+ <m:munder>
+  <m:mrow>
+   <m:mi>lím</m:mi>
+  </m:mrow>
+  <m:mrow>
+   <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+  </m:mrow>
+ </m:munder>
+ <m:mrow><m:mo stretchy="false">(</m:mo>
+  <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:msup>
+      <m:mi>x</m:mi>
+      <m:mn>2 </m:mn>
+     </m:msup>
+     <m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+    </m:mrow>
+   </m:mfrac>
+
+  </m:mrow>
+ <m:mo stretchy="false">)</m:mo></m:mrow>
+</m:math>, ¿podemos aún determinar el límite de la función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math>?</emphasis></para><para id="fs-id1165135203503"><emphasis effect="italics">Sí. Algunas funciones se pueden reordenar algebraicamente de modo que se pueda evaluar el límite de una forma equivalente simplificada de la función.</emphasis></para>
+</note>
+</section><section id="fs-id1165135203513"><title>Hallar el límite de un cociente</title><para id="fs-id1165135203522">Hallar el límite de una función expresada como cociente puede ser más complicado. A menudo, tenemos que reescribir la función algebraicamente antes de aplicar las propiedades de un límite. Si el denominador se evalúa a 0 cuando aplicamos las propiedades de un límite directamente, debemos reescribir el cociente en una forma diferente. Un enfoque es escribir el cociente en forma factorizada y simplificar.</para>
+
+<note id="fs-id1165137925330" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165137925336"><emphasis>Dado el límite de una función en forma de cociente, utilice la factorización para evaluarla.</emphasis></para>
+<list id="fs-id1165137925341" list-type="enumerated" number-style="arabic">
+<item>Factorice completamente el numerador y el denominador.</item>
+<item>Simplifique dividiendo los factores comunes al numerador y al denominador.</item>
+<item>Evalúe el límite resultante, y recuerde utilizar el dominio correcto.</item>
+</list>
+</note>
+
+<example id="Example_12_02_05">
+<exercise id="fs-id1165135245681"><problem id="fs-id1165135245683">
+<title>Evaluar el límite de un cociente mediante factorización</title>
+<para id="fs-id1165135245692">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135369622">
+<para id="fs-id1165135369624">Factorice cuando sea posible, y simplifique.</para>
+<equation id="fs-id1165135369626" class="unnumbered"><label/> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msup>
+           <m:mi>x</m:mi>
+           <m:mn>2 </m:mn>
+          </m:msup>
+          <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factorice el numerador</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                              </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:menclose notation="updiagonalstrike">
+           <m:mrow>
+            <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo stretchy="false">)</m:mo>
+           </m:mrow>
+          </m:menclose>
+          <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mrow>
+          <m:menclose notation="updiagonalstrike">
+           <m:mrow>
+            <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+           </m:mrow>
+          </m:menclose>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Anule los factores comunes</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                              </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Evalúe</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                              </m:mtext><m:mo>=</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </equation>
+</solution>
+<commentary id="fs-id1165135190673">
+<title>Análisis</title>
+<para id="fs-id1165137832396">Cuando el límite de una función racional no se puede evaluar directamente, las formas factorizadas del numerador y del denominador se pueden simplificar a un resultado que puede ser evaluado.</para>
+<para id="fs-id1165137832400">Observe que la función</para>
+<equation id="fs-id1165137832402" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>8</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165137767178">es equivalente a la función</para>
+<equation id="fs-id1702020" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mi>x</m:mi><m:mo>≠</m:mo><m:mn>2.</m:mn>
+ </m:mrow>
+</m:math> </equation>
+<para id="fs-id1165135377151">Observe que el límite existe aunque la función no esté definida en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mtext> = 2</m:mtext><m:mtext>.</m:mtext>
+ </m:mrow>
+</m:math> </para></commentary>
+</exercise></example>
+
+<note id="ti_12_02_05" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135255647">
+<problem id="fs-id1165135255649"><para id="fs-id1165135255650">Evalúe el siguiente límite: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>7</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>11</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>28</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>7</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135173279"><para id="fs-id1165135173280"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+</note>
+
+<example id="Example_12_02_06">
+<exercise id="fs-id1165135173298"><problem id="fs-id1165135173300">
+<title>Evaluar el límite de un cociente hallando el mínimo común denominador</title>
+<para id="fs-id1165135173305">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+      <m:mo>–</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165137673434">
+<para id="fs-id1165137673436">Halle el mínimo común denominador para los denominadores de los dos términos del numerador y convierta ambas fracciones para que tengan el mínimo común denominador como denominador.</para>
+<para id="eip-id1165135390875"><media id="eip-id1165134431197" alt="" display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_EQ_12_02_001.jpg"/>
+</media></para></solution>
+<commentary id="fs-id1165135319290">
+<title>Análisis</title>
+<para id="fs-id1165135319296">Cuando se determina el <term class="no-emphasis" id="term-00006">límite</term> de una función racional que tiene términos sumados o restados en el numerador o en el denominador, el primer paso es hallar el denominador común de los términos sumados o restados; luego, convertir ambos términos para que tengan ese denominador o simplificar la función racional multiplicando numerador y denominador por el mínimo común denominador. Luego compruebe si el numerador y el denominador resultantes tienen algún factor común.</para></commentary>
+</exercise></example>
+
+<note id="ti_12_02_06" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135332863">
+<problem id="fs-id1165135332865">
+<para id="fs-id1165135332867">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>5</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>5</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mn>10</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135332953">
+<para id="fs-id1165135332955"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>50</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165135332980" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135264733"><emphasis>Dado un límite de una función que contiene una raíz, utilice un conjugado para evaluar.</emphasis></para><list id="fs-id1165135264743" list-type="enumerated" number-style="arabic"><item>Si el cociente dado no está en forma indeterminada <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>0</m:mn>
+     <m:mn>0</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> evalúe directamente.</item>
+<item>En caso contrario, reescriba la suma (o diferencia) de dos cocientes como un único cociente, utilizando el <term class="no-emphasis" id="term-00007">mínimo común denominador</term>.</item>
+<item>Si el numerador incluye una raíz, racionalice el numerador; multiplique el numerador y el denominador por el <term class="no-emphasis" id="term-00008">conjugado</term> del numerador. Recordemos que <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>±</m:mo><m:msqrt>
+   <m:mi>b</m:mi>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math> son conjugados.</item>
+<item>Simplifique.</item>
+<item>Evalúe el límite resultante.</item>
+</list></note>
+
+<example id="Example_12_02_07">
+<exercise id="fs-id1165135264819">
+<problem id="fs-id1165135264821">
+<title>Evaluar un límite que contiene una raíz mediante un conjugado</title>
+<para id="fs-id1165135264826">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>-</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165137851474">
+<para id="fs-id1165137851476"> <m:math>
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:msqrt>
+           <m:mrow>
+            <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+           </m:mrow>
+          </m:msqrt>
+          <m:mo>-</m:mo><m:mn>5</m:mn>
+         </m:mrow>
+         <m:mi>x</m:mi>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mrow>
+              <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+             </m:mrow>
+            </m:msqrt>
+            <m:mo>-</m:mo><m:mn>5</m:mn>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+         <m:mi>x</m:mi>
+        </m:mfrac>
+        <m:mo>⋅</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mrow>
+              <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+             </m:mrow>
+            </m:msqrt>
+            <m:mo>+</m:mo><m:mn>5</m:mn>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mrow>
+              <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+             </m:mrow>
+            </m:msqrt>
+            <m:mo>+</m:mo><m:mn>5</m:mn>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique el numerador y el denominador por el conjugado</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>25</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mrow>
+              <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+             </m:mrow>
+            </m:msqrt>
+            <m:mo>+</m:mo><m:mn>5</m:mn>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Multiplique: </m:mtext><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+         </m:mrow>
+        </m:msqrt>
+        <m:mo>-</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+         </m:mrow>
+        </m:msqrt>
+        <m:mo>+</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>25.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mo>-</m:mo><m:mi>x</m:mi>
+         </m:mrow>
+         <m:mrow>
+          <m:mi>x</m:mi><m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mrow>
+              <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+             </m:mrow>
+            </m:msqrt>
+            <m:mo>+</m:mo><m:mn>5</m:mn>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Combine términos similares</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mfrac>
+         <m:mrow>
+          <m:mo>-</m:mo><m:menclose notation="updiagonalstrike">
+           <m:mi>x</m:mi>
+          </m:menclose>
+
+         </m:mrow>
+         <m:mrow>
+          <m:menclose notation="updiagonalstrike">
+           <m:mi>x</m:mi>
+          </m:menclose>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mrow>
+            <m:msqrt>
+             <m:mrow>
+              <m:mn>25</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+             </m:mrow>
+            </m:msqrt>
+            <m:mo>+</m:mo><m:mn>5</m:mn>
+           </m:mrow>
+          <m:mo>)</m:mo></m:mrow>
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Simplifique </m:mtext><m:mfrac>
+       <m:mrow>
+        <m:mo>- −</m:mo><m:mi>x</m:mi>
+       </m:mrow>
+       <m:mi>x</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>1.</m:mn>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>25</m:mn><m:mo>- −</m:mo><m:mn>0</m:mn>
+         </m:mrow>
+        </m:msqrt>
+        <m:mo>+</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Evalúe</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                               </m:mtext><m:mo>=</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo>-</m:mo><m:mn>1</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mo>+</m:mo><m:mn>5</m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo><m:mo>-</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mrow>
+        <m:mn>10</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math>
+</para></solution>
+<commentary id="fs-id1165135205629">
+<title>Análisis</title>
+<para id="fs-id1165135205634">Al determinar un <term id="term-00009">límite</term> de una función con una raíz como uno de los dos términos en los que no podemos evaluar directamente, piense en multiplicar el numerador y el denominador por el conjugado de los términos.</para></commentary>
+</exercise>
+</example>
+
+<note id="ti_12_02_07" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135205649"><problem id="fs-id1165135205650">
+<para id="fs-id1165135205652">Evalúe el siguiente límite: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>16</m:mn><m:mo>- −</m:mo><m:mi>h</m:mi>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>- −</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+     <m:mi>h</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135205724">
+<para id="fs-id1165135205726"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+<example id="Example_12_02_08">
+<exercise id="fs-id1165135205752"><problem id="fs-id1165135381240">
+<title>Evaluar el límite de un cociente de una función mediante factorización</title>
+<para id="fs-id1165135381245">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+      <m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135381318">
+<para id="fs-id1165135381320"> <m:math display="block">
+ <m:mrow>
+  <m:mtable columnalign="left">
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:msqrt>
+         <m:mi>x</m:mi>
+        </m:msqrt>
+        <m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:msqrt>
+         <m:mi>x</m:mi>
+        </m:msqrt>
+        <m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:msqrt>
+         <m:mi>x</m:mi>
+        </m:msqrt>
+        <m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:msqrt>
+         <m:mi>x</m:mi>
+        </m:msqrt>
+        <m:mo>-</m:mo><m:mn>2 </m:mn>
+       </m:mrow>
+      </m:mfrac>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factorice.</m:mtext>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo stretchy="false">(</m:mo><m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:msqrt>
+         <m:mi>x</m:mi>
+        </m:msqrt>
+        <m:mo stretchy="false">)</m:mo><m:menclose notation="updiagonalstrike">
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:msqrt>
+           <m:mi>x</m:mi>
+          </m:msqrt>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+        </m:menclose>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mo>-</m:mo><m:menclose notation="updiagonalstrike">
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>-</m:mo><m:msqrt>
+           <m:mi>x</m:mi>
+          </m:msqrt>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+        </m:menclose>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Factorice </m:mtext><m:mn>−1</m:mn><m:mtext> fuera del denominador</m:mtext><m:mtext>. Simplifique</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:munder>
+       <m:mrow>
+        <m:mi>lím</m:mi>
+       </m:mrow>
+       <m:mrow>
+        <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+       </m:mrow>
+      </m:munder>
+      <m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>Evalúe</m:mtext><m:mo>.</m:mo>
+     </m:mrow>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:mo>-</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mo>+</m:mo><m:msqrt>
+       <m:mn>4</m:mn>
+      </m:msqrt>
+      <m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+   <m:mtr columnalign="left">
+    <m:mtd columnalign="left">
+     <m:mrow>
+      <m:mtext>                      </m:mtext><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn>
+     </m:mrow>
+    </m:mtd>
+    <m:mtd columnalign="left">
+     <m:mrow/>
+    </m:mtd>
+   </m:mtr>
+
+  </m:mtable>
+ </m:mrow>
+</m:math> </para></solution>
+<commentary id="fs-id1165135353096">
+<title>Análisis</title>
+<para id="fs-id1165135353101">Multiplicar por un conjugado ampliaría el numerador; busque en cambio factores en el numerador. El cuatro es un cuadrado perfecto por lo que el numerador tiene la forma</para><equation id="fs-id1165135353105" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:msup>
+   <m:mi>a</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:msup>
+   <m:mi>b</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+
+ </m:mrow>
+</m:math> </equation> <para id="fs-id1438999">y se puede factorizar como</para> <equation id="fs-id1165135353134" class="unnumbered"><label/> <m:math display="block">
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </equation>
+</commentary>
+</exercise></example>
+
+<note id="ti_12_02_08" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135344873">
+<problem id="fs-id1165135344875">
+<para id="fs-id1165135344877">Evalúe el siguiente límite: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+      <m:mo>-</m:mo><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para>
+</problem>
+<solution id="fs-id1165135344952">
+<para id="fs-id1165135344954"> <m:math>
+ <m:mrow>
+  <m:mn>2</m:mn><m:msqrt>
+   <m:mn>3</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+</note>
+
+<note id="fs-id1165135344974" class="how-to-notitle">
+<label>Cómo</label>
+<para id="fs-id1165135344979"><emphasis>Dado un cociente con valores absolutos, evalúe su límite.</emphasis></para>
+<list id="fs-id1165135344985" list-type="enumerated" number-style="arabic"><item>Intente factorizar o calcular el mínimo común denominador.</item>
+<item>Si no se puede hallar el <term id="term-00010">límite</term>, elija varios valores cercanos y a ambos lados de la entrada donde la función es indefinida.</item>
+<item>Utilice las pruebas numéricas para calcular los límites de ambos lados.</item>
+</list></note>
+
+<example id="Example_12_02_09">
+<exercise id="fs-id1165135345005">
+<problem id="fs-id1165135345007">
+<title>Evaluar el límite de un cociente con valores absolutos</title>
+<para id="fs-id1165135345013">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>7</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135388411">
+<para id="fs-id1165135388413">La función es indefinida en <m:math>
+ <m:mrow>
+  <m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> así que probaremos valores cercanos a 7 por la izquierda y por la derecha.</para>
+<para id="fs-id1165135388430">Límite por la izquierda: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>6,9</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>6,9</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>6,99</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>6,99</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>6,999</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>6,999</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para><para id="fs-id1165135408407">Límite por la derecha: <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>7,1</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>7,1</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>7,01</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>7,01</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mn>7,001</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>7,001</m:mn><m:mo>- −</m:mo><m:mn>7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> </para>
+<para id="fs-id1165135408531">Como los límites izquierdo y derecho no son iguales, no hay límite.</para>
+</solution>
+</exercise>
+</example>
+
+<note id="ti_12_02_09" class="precalculus try">
+<label>Ejercicio</label>
+<exercise id="fs-id1165135408544">
+<problem id="fs-id1165135408546">
+<para id="fs-id1165135408548">Evalúe <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>6</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mrow><m:mo>|</m:mo> <m:mrow>
+     <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>6</m:mn>
+    </m:mrow> <m:mo>|</m:mo></m:mrow>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135255384">
+<para id="fs-id1165135255386"> <m:math>
+ <m:mrow>
+<m:mn>−1</m:mn>
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</note>
+
+<note id="fs-id1165135255403" class="precalculus media media-notitle">
+<label>Media</label>
+<para id="fs-id1165135255409">Acceda al siguiente recurso en línea para obtener instrucciones adicionales y practicar con las propiedades de los límites.</para>
+<list id="url-list" display="block">
+<item><link url="http://openstax.org/l/limitanalytic">Determinar un límite de forma analítica</link></item>
+</list>
+</note>
+</section><section id="fs-id1165135255425" class="key-concepts">
+<title>Conceptos clave</title>
+<list id="fs-id1165135255431" list-type="bulleted"><item>Las propiedades de los límites se pueden utilizar para realizar operaciones sobre los límites de las funciones en vez de las propias funciones. Vea el <link target-id="Example_12_02_01"/>.</item>
+<item>El límite de una función polinómica puede hallarse calculando la suma de los límites de los términos individuales. Vea el <link target-id="Example_12_02_02"/> y el <link target-id="Example_12_02_03"/>.</item>
+<item>El límite de una función elevada a una potencia es igual a la misma potencia del límite de la función. Otro método es la sustitución directa. Vea el <link target-id="Example_12_02_04"/>.</item>
+<item>El límite de la raíz de una función es igual a la raíz correspondiente del límite de la función.</item>
+<item>Una forma de hallar el límite de una función expresada como cociente es escribir el cociente en forma factorizada y simplificar. Vea el <link target-id="Example_12_02_05"/>.</item>
+<item>Otro método para hallar el límite de una fracción compleja es hallar el mínimo común denominador. Vea el <link target-id="Example_12_02_06"/>.</item>
+<item>Un límite que contenga una función que contenga una raíz se puede evaluar mediante un conjugado. Vea el <link target-id="Example_12_02_07"/>.</item>
+<item>Los límites de algunas funciones expresadas como cocientes se pueden hallar mediante la factorización. Vea el <link target-id="Example_12_02_08"/>.</item>
+<item>Una forma de evaluar el límite de un cociente que contenga valores absolutos es utilizando evidencias numéricas. También puede ser útil configurarlas por trozos. Vea el <link target-id="Example_12_02_09"/>.</item>
+</list></section>
+
+<section id="fs-id1165135255500" class="section-exercises">
+<title>Ejercicios de la sección</title><section id="fs-id1165135255503">
+    <title>Verbales</title>
+    <exercise id="fs-id1165135255509">
+        <problem id="fs-id1165135255511"><para id="fs-id1165135255512">Dé un ejemplo de un tipo de función <m:math>
+ <m:mi>f</m:mi>
+</m:math> cuyo límite, a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>a</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> es <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+    <solution id="fs-id1165135332647"><para id="fs-id1165135332648">Si <m:math>
+ <m:mi>f</m:mi>
+</m:math> es una función polinómica, el límite de una función polinómica a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> siempre será <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para></solution>
+    </exercise>
+
+<exercise id="fs-id1165135332693">
+<problem id="fs-id1165135332695">
+<para id="fs-id1165135332698">Cuando se utiliza la sustitución directa para evaluar el límite de una función racional a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>a</m:mi>
+</m:math> y el resultado es <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>a</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>0</m:mn>
+   <m:mn>0</m:mn>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+ </m:mrow>
+</m:math> ¿esto significa que el límite de <m:math>
+ <m:mi>f</m:mi>
+</m:math> no existe? </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135332756">
+<problem id="fs-id1165135332758">
+<para id="fs-id1165135332760">¿Qué significa decir el límite de <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+<m:mo>,</m:mo></m:math> a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mi>c</m:mi>
+<m:mo>,</m:mo></m:math> es indefinido?</para></problem>
+<solution id="fs-id1165135332797">
+<para id="fs-id1165135332799">Puede significar (1) que los valores de la función aumentan o disminuyen sin límite a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a <m:math>
+ <m:mrow>
+  <m:mi>c</m:mi><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> o (2) los límites izquierdo y derecho no son iguales.</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135332823">
+<title>Algebraicos</title>
+<para id="fs-id1165135332829">En los siguientes ejercicios, evalúe los límites algebraicamente.</para><exercise id="fs-id1165135332832">
+<problem id="fs-id1165135332834">
+<para id="fs-id1165135332836"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mn>3</m:mn>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135390918">
+<problem id="fs-id1165135390920">
+<para id="fs-id1165135390922"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi>
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135390994"><para id="fs-id1165135390996"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>- −</m:mo><m:mn>10</m:mn>
+   </m:mrow>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> </para></solution>
+</exercise>
+
+<exercise id="fs-id1165135391020">
+<problem id="fs-id1165135391022">
+<para id="fs-id1165135391024"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135190687">
+<problem id="fs-id1165135190689"><para id="fs-id1165135190690"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135190762">
+<para id="fs-id1165135190765">6</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135190770">
+<problem id="fs-id1165135190772">
+<para id="fs-id1165135190774"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135190857">
+<problem id="fs-id1165135190860">
+<para id="fs-id1165135190862"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>6</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>17</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>12</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135445848">
+<para id="fs-id1165135445850"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>2 </m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135445871">
+<problem id="fs-id1165135445873">
+<para id="fs-id1165135445875"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mfrac>
+     <m:mn>7</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>8</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>18</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>35</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135445969">
+<problem id="fs-id1165135445971">
+<para id="fs-id1165135445973"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135186067">
+<para id="fs-id1165135186069">6</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135186074">
+<problem id="fs-id1165135186076">
+<para id="fs-id1165135186079"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mo>- −</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>7</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>21</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mo>-</m:mo><m:mn>12</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>4</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>108</m:mn><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135186187">
+<problem id="fs-id1165135186190">
+<para id="fs-id1165135186192"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>3</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135255099">
+<para id="fs-id1165135255102">no existe</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135255107">
+<problem id="fs-id1165135255109">
+<para id="fs-id1165135255111"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>3</m:mn><m:mo>+</m:mo><m:mi>h</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>27</m:mn>
+     </m:mrow>
+     <m:mi>h</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135255196">
+<problem id="fs-id1165135255199">
+<para id="fs-id1165135255201"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mn>2 </m:mn><m:mo>- −</m:mo><m:mi>h</m:mi>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>8</m:mn>
+     </m:mrow>
+     <m:mi>h</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135332326">
+<para id="fs-id1165135332328"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>12</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135332344">
+<problem id="fs-id1165135332346">
+<para id="fs-id1165135332348"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:mi>h</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+         </m:mrow>
+        <m:mo>)</m:mo></m:mrow>
+       </m:mrow>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>9</m:mn>
+     </m:mrow>
+     <m:mi>h</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135332434">
+<problem id="fs-id1165135332436">
+<para id="fs-id1165135332438"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>h</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>5</m:mn><m:mo>- −</m:mo><m:mi>h</m:mi>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>- −</m:mo><m:msqrt>
+       <m:mn>5</m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+     <m:mi>h</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135332512">
+<para id="fs-id1165135332514"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mn>5</m:mn>
+    </m:msqrt>
+
+   </m:mrow>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135315553">
+<problem id="fs-id1165135315555">
+<para id="fs-id1165135315557"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>3</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>-</m:mo><m:msqrt>
+       <m:mn>3</m:mn>
+      </m:msqrt>
+
+     </m:mrow>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135315632">
+<problem id="fs-id1165135315634">
+<para id="fs-id1165135315636"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>9</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>81</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>3</m:mn><m:mo>-</m:mo><m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135315713">
+<para id="fs-id1165135315715"> <m:math>
+ <m:mrow>
+  <m:mo>- −</m:mo><m:mn>108</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135315731">
+<problem id="fs-id1165135315733">
+<para id="fs-id1165135315735"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>1</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+      <m:mo>–</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>-</m:mo><m:msqrt>
+       <m:mi>x</m:mi>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135456747">
+<problem id="fs-id1165135456749">
+<para id="fs-id1165135456751"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>x</m:mi>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135456824">
+<para id="fs-id1165135456826">1</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135456831">
+<problem id="fs-id1165135456833">
+<para id="fs-id1165135456836"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2 </m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>–</m:mo><m:mfrac>
+       <m:mn>1</m:mn>
+       <m:mn>4</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135456925">
+<problem id="fs-id1165135456927">
+<para id="fs-id1165135456929"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>- −</m:mo><m:mn>64</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+      <m:mo>-</m:mo><m:mn>16</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135307958">
+<para id="fs-id1165135307960">6</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135307966">
+<problem id="fs-id1165135307968">
+<para id="fs-id1165135307970"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo>|</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn><m:mo>|</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo stretchy="false">-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135308054">
+<problem id="fs-id1165135308056">
+<para id="fs-id1165135308059"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135308141">
+<para id="fs-id1165135308143">1</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135438640">
+<problem id="fs-id1165135438642">
+<para id="fs-id1165135438644"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135438722">
+<problem id="fs-id1165135438724">
+<para id="fs-id1165135438726"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>-</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135438810">
+<para id="fs-id1165135438812">1</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135438817">
+<problem id="fs-id1165135438819">
+<para id="fs-id1165135438821"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>4</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135329750">
+<problem id="fs-id1165135329752">
+<para id="fs-id1165135329754"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mrow><m:mo>|</m:mo> <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+      </m:mrow> <m:mo>|</m:mo></m:mrow>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>4</m:mn><m:mo>-</m:mo><m:mi>x</m:mi>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135329830">
+<para id="fs-id1165135329832">no existe</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135329837">
+<problem id="fs-id1165135329839">
+<para id="fs-id1165135329842"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo>- −</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mi>x</m:mi><m:mo>–</m:mo><m:msup>
+       <m:mi>x</m:mi>
+       <m:mn>2 </m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<para id="fs-id1165135329924">Para el siguiente ejercicio, utilice la información dada para evaluar los límites: <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mi>g</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn>
+ </m:mrow>
+</m:math>.</para><exercise id="fs-id1165135406979">
+<problem id="fs-id1165135406981">
+<para id="fs-id1165135406983"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mspace width="0.5em"/><m:mn>2</m:mn><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msqrt>
+    <m:mrow>
+     <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+   </m:msqrt>
+   <m:mspace width="0.5em"/>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135407055">
+<para id="fs-id1165135407057"> <m:math>
+ <m:mrow>
+  <m:mn>6</m:mn><m:mo>+</m:mo><m:msqrt>
+   <m:mn>5</m:mn>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135407079">
+<problem id="fs-id1165135407081">
+<para id="fs-id1165135407083"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mspace width="0.5em"/><m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mspace width="0.5em"/><m:mn>3</m:mn><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:msqrt>
+    <m:mrow>
+     <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+   </m:msqrt>
+   <m:mspace width="0.5em"/>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math> </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135407156">
+<problem id="fs-id1165135407158">
+<para id="fs-id1165135407160"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mi>c</m:mi>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>g</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> grandes. </para></problem>
+<solution id="fs-id1165135407223">
+<para id="fs-id1165135407225"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135449533">En los siguientes ejercicios, evalúe los siguientes límites.</para><exercise id="fs-id1165135449536">
+<problem id="fs-id1165135449539">
+<para id="fs-id1165135449541"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>cos</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135449591">
+<problem id="fs-id1165135449593">
+<para id="fs-id1165135449595"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mi>π</m:mi><m:mi>x</m:mi>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135449644">
+<para id="fs-id1165135449646">0</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135449652">
+<problem id="fs-id1165135449654">
+<para id="fs-id1165135449656"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>sen</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>π</m:mi>
+     <m:mi>x</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135449709" class="material-set-2">
+<problem id="fs-id1165135449711"><para id="fs-id1165135449712"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtext>; </m:mtext><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135415682">
+<para id="fs-id1165135415684"> <m:math>
+ <m:mrow>
+  <m:mo>-</m:mo><m:mn>3</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135415700" class="material-set-2">
+<problem id="fs-id1165135415702">
+<para id="fs-id1165135415704"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtext>; </m:mtext><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>0</m:mn>
+     <m:mo>- −</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes. </para></problem>
+</exercise>
+
+<exercise id="fs-id1165135415855" class="material-set-2">
+<problem id="fs-id1165135415858">
+<para id="fs-id1165135415860"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>{</m:mo> <m:mrow>
+   <m:mtable columnalign="left">
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mn>2 </m:mn><m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2 </m:mn>
+       </m:msup>
+       <m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+    <m:mtr columnalign="left">
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>3</m:mn><m:mo>,</m:mo>
+      </m:mrow>
+     </m:mtd>
+     <m:mtd columnalign="left">
+      <m:mrow>
+       <m:mi>x</m:mi><m:mo>></m:mo><m:mn>0</m:mn>
+      </m:mrow>
+     </m:mtd>
+    </m:mtr>
+
+   </m:mtable>
+  </m:mrow> </m:mrow><m:mtext>; </m:mtext><m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>0</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135403520">
+<para id="fs-id1165135403522">no existe; el límite derecho no es el mismo que el límite izquierdo.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135403527" class="material-set-2">
+<problem id="fs-id1165135403529">
+<para id="fs-id1165135403532"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>4</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>5</m:mn>
+     </m:mrow>
+    </m:msqrt>
+    <m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mn>4</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135403600" class="material-set-2">
+<problem id="fs-id1165135403602">
+<para id="fs-id1165135403604"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>2</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mo stretchy="false">(</m:mo><m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mo stretchy="false">[</m:mo><m:mi>x</m:mi><m:mo stretchy="false">]</m:mo><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> </para></problem>
+<solution id="fs-id1165135403667">
+<para id="fs-id1165135360947">2 </para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135360952">
+<problem id="fs-id1165135360955">
+<para id="fs-id1165135360957"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:mn>2</m:mn>
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>7</m:mn>
+     </m:mrow>
+    </m:msqrt>
+    <m:mo>-</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2 </m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135361037">
+<problem id="fs-id1165135361039">
+<para id="fs-id1165135361041"> <m:math>
+ <m:mrow>
+  <m:munder>
+   <m:mrow>
+    <m:mi>lím</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mrow><m:mo stretchy="false">→</m:mo></m:mrow><m:msup>
+     <m:mn>3</m:mn>
+     <m:mo>+</m:mo>
+    </m:msup>
+
+   </m:mrow>
+  </m:munder>
+  <m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>-</m:mo><m:mn>9</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135361112">
+<para id="fs-id1165135361115">El límite no existe; el límite se acerca al infinito.</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135361120">En los siguientes ejercicios, calcule la tasa media de cambio <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>h</m:mi>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+ </m:mrow>
+</m:math> </para><exercise id="fs-id1165135361171">
+<problem id="fs-id1165135361173">
+<para id="fs-id1165135361175"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135361207">
+<problem id="fs-id1165135361210">
+<para id="fs-id1165135361212"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>–</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135394114">
+<para id="fs-id1165135394116"> <m:math>
+ <m:mrow>
+  <m:mn>4</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2 </m:mn><m:mi>h</m:mi>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135394138">
+<problem id="fs-id1165135394140">
+<para id="fs-id1165135394143"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>3</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135394188">
+<problem id="fs-id1165135394191">
+<para id="fs-id1165135394193"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>4</m:mn><m:mi>x</m:mi><m:mo>- −</m:mo><m:mn>100</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135394238">
+<para id="fs-id1165135394240"> <m:math>
+ <m:mrow>
+  <m:mn>2 </m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>+</m:mo><m:mn>4</m:mn>
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135394264">
+<problem id="fs-id1165135394266">
+<para id="fs-id1165135394268"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>3</m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135330885">
+<problem id="fs-id1165135330888">
+<para id="fs-id1165135330890"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math> grandes.
+</para></problem>
+<solution id="fs-id1165135330969">
+<para id="fs-id1165135330971"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo><m:mo>-</m:mo><m:mi>cos</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mi>h</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135331021">
+<problem id="fs-id1165135331023">
+<para id="fs-id1165135331025"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2 </m:mn><m:msup>
+   <m:mi>x</m:mi>
+   <m:mn>3</m:mn>
+  </m:msup>
+  <m:mo>-</m:mo><m:mn>4</m:mn><m:mi>x</m:mi>
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135331069">
+<problem id="fs-id1165135331071">
+<para id="fs-id1165135331073"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mi>x</m:mi>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135331106">
+<para id="fs-id1165135331108"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> grandes.
+</para></solution>
+</exercise>
+
+<exercise id="fs-id1165135417736">
+<problem id="fs-id1165135417738">
+<para id="fs-id1165135417741"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+</exercise>
+
+<exercise id="fs-id1165135417784">
+<problem id="fs-id1165135417786">
+<para id="fs-id1165135417789"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:msqrt>
+   <m:mi>x</m:mi>
+  </m:msqrt>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165135417869">
+<para id="fs-id1165135417871"> <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo>-</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mo>+</m:mo><m:mi>h</m:mi>
+     </m:mrow>
+    </m:msqrt>
+    <m:mo>+</m:mo><m:msqrt>
+     <m:mi>x</m:mi>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135417921">
+<title>Gráficos</title>
+<exercise id="fs-id1165135417939">
+<problem id="fs-id1165135417941">
+<para id="fs-id1165135417943">Halle una ecuación que se pueda representar por la <link target-id="CNX_Precalc_Figure_12_02_201"/>.</para>
+<figure id="CNX_Precalc_Figure_12_02_201" class="small">
+<media id="fs-id1165135417929" alt="Gráfico de la función creciente con una discontinuidad removible en (2, 3).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_02_201.jpg"/>
+</media>
+</figure>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135417965">
+<problem id="fs-id1165135417967">
+<para id="fs-id1165135417969">Halle una ecuación que se pueda representar por la <link target-id="CNX_Precalc_Figure_12_02_202"/>.</para>
+<figure id="CNX_Precalc_Figure_12_02_202" class="small">
+<media id="fs-id1165135417955" alt="Gráfico de la función creciente con una discontinuidad removible en (–3, –1).">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_02_202.jpg"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-id1165135417976">
+<para id="fs-id1165135417978"> <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mi>x</m:mi>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>x</m:mi>
+     <m:mn>2 </m:mn>
+    </m:msup>
+    <m:mo>+</m:mo><m:mn>5</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>+</m:mo><m:mn>3</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+
+<para id="fs-id1165135453072">En los siguientes ejercicios, consulte la <link target-id="CNX_Precalc_Figure_12_02_203"/>.</para><figure id="CNX_Precalc_Figure_12_02_203" class="small"><media id="fs-id1165135453082" alt="Gráfico de la función creciente de cero a infinito positivo.">
+<image mime-type="image/jpg" src="../../media/CNX_Precalc_Figure_12_02_203F.jpg"/>
+</media>
+</figure><exercise id="fs-id1165135453092">
+<problem id="fs-id1165135453094">
+<para id="fs-id1165135453096">¿Cuál es el límite derecho de la función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135453101">
+<problem id="fs-id1165135453103">
+<para id="fs-id1165135453105">¿Cuál es el límite izquierdo de la función a medida que <m:math>
+ <m:mi>x</m:mi>
+</m:math> se acerca a 0?</para>
+</problem>
+<solution id="fs-id1165135453110">
+<para id="fs-id1165135453112">no existe</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-id1165135453118">
+<title>Aplicaciones en el mundo real</title>
+<exercise id="fs-id1165135453124">
+<problem id="fs-id1165135453126">
+<para id="fs-id1165135453128">La función de posición <m:math>
+ <m:mrow>
+  <m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>16</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>144</m:mn><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> da la posición de un proyectil como una función de tiempo. Halle la velocidad media (tasa media de cambio) en el intervalo <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>[</m:mo> <m:mrow>
+   <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2 </m:mn>
+  </m:mrow> <m:mo>]</m:mo></m:mrow>
+ </m:mrow>
+</m:math>.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-id1165135453159">
+<problem id="fs-id1165135453161">
+<para id="fs-id1165135453163">La altura de un proyectil está dada por <m:math>
+ <m:mrow>
+  <m:mi>s</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>- −</m:mo><m:mn>64</m:mn><m:msup>
+   <m:mi>t</m:mi>
+   <m:mn>2 </m:mn>
+  </m:msup>
+  <m:mo>+</m:mo><m:mn>192</m:mn><m:mi>t</m:mi>
+ </m:mrow>
+</m:math> Halle la tasa media de cambio de la altura de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> segundo a <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1,5</m:mn>
+ </m:mrow>
+</m:math> segundos.</para></problem>
+<solution id="fs-id1165135453237">
+<para id="fs-id1165135453239">52</para>
+</solution>
+</exercise>
+
+<exercise id="fs-id1165135453244">
+<problem id="fs-id1165135453246">
+<para id="fs-id1165135453249">La cantidad de dinero en una cuenta después de <m:math>
+ <m:mi>t</m:mi>
+</m:math> años calculada continuamente a un interés del 4,25 % está dada por la fórmula <m:math>
+ <m:mrow>
+  <m:mi>A</m:mi><m:mo>=</m:mo><m:msub>
+   <m:mi>A</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+  <m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mn>0,0425</m:mn><m:mi>t</m:mi>
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+<m:mo>,</m:mo></m:math> donde <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>A</m:mi>
+   <m:mn>0</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> es la cantidad inicial invertida. Halle la tasa media de cambio del saldo de la cuenta de <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math> año a <m:math>
+ <m:mrow>
+  <m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+ </m:mrow>
+</m:math> años si la cantidad inicial invertida es de 1.000,00 dólares.</para></problem>
+</exercise>
+</section>
+</section>
+</content>
+
+<glossary>
+<definition id="fs-id1165135453295">
+<term>propiedades de los límites</term>
+<meaning id="fs-id1165135453300">una colección de teoremas para hallar los límites de las funciones mediante la realización de operaciones matemáticas en los límites</meaning>
+</definition>
+</glossary>
+</document>
